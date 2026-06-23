@@ -1,8 +1,8 @@
-# ns.webcivics.org
+# ns.webcivics.net
 
 **The Web Civics Ontology Namespace**
 
-Welcome to `ns.webcivics.org`, the foundational namespace and semantic registry for Web Civics.
+Welcome to `ns.webcivics.net`, the foundational namespace and semantic registry for Web Civics.
 
 While initiatives like `schema.org` provide vocabularies optimized for search engines and commercial discoverability, this namespace is designed specifically for **Human-Centric** systems. It provides the RDF vocabularies, SHACL shapes, and Context Markup Language (CML) architectures necessary to codify human rights instruments, fundamental freedoms, and the modalities of human agency into the fabric of the Semantic Web.
 
@@ -37,6 +37,6 @@ When resolving URIs, this server uses content negotiation to return either human
 
 ## Contributing
 
-`ns.webcivics.org` is an evolving, open-source effort heavily aligned with W3C community standards, including paradigms emerging from the Human-Centric AI Community Group and the broader Web Science community.
+`ns.webcivics.net` is an evolving, open-source effort heavily aligned with W3C community standards, including paradigms emerging from the Human-Centric AI Community Group and the broader Web Science community.
 
 *(Contribution guidelines and repository links to be added.)*

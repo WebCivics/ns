@@ -37,7 +37,7 @@ const OntologyViewer = () => {
             console.error(err);
           } else if (quad) {
             parsedQuads.push(quad);
-            if (quad.predicate.value === 'https://ns.webcivics.org/values/source' || 
+            if (quad.predicate.value === 'https://ns.webcivics.net/values/source' || 
                 quad.predicate.value === 'http://purl.org/dc/terms/source') {
               sourceUri = quad.object.value;
             }
@@ -115,7 +115,7 @@ const OntologyViewer = () => {
           {id.replace(/-/g, ' ')}
         </h1>
         <div style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-          <strong>Canonical URI:</strong> <code>https://ns.webcivics.org/ontologies/{ontologyFile}</code><br />
+          <strong>Canonical URI:</strong> <code>https://ns.webcivics.net/ontologies/{ontologyFile}</code><br />
           <strong>Promulgating Institution / Scope:</strong> <span style={{ textTransform: 'capitalize' }}>{pathSegments.join(', ')}</span><br />
           <strong>Triples Extracted:</strong> {quads.length}
         </div>

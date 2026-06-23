@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav style={{ borderBottom: '1px solid var(--border-strong)', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-secondary)' }}>
       <Link to="/" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-primary)' }}>
-        ns.webcivics.org
+        ns.webcivics.net
       </Link>
       <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
         <a href="https://github.com/webcivics/ns" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)' }}>GitHub Repository</a>
@@ -119,7 +119,7 @@ const App = () => {
         </Routes>
       </main>
       <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid var(--border-light)', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-        <p>ns.webcivics.org — The Web Civics Ontology Namespace</p>
+        <p>ns.webcivics.net — The Web Civics Ontology Namespace</p>
       </footer>
     </div>
   );
