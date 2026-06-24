@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export default async function OntologyPage({ params }) {
   const { slug } = await params;
   const ontologyFile = `ontologies/${slug.join('/')}.n3`;
-  const rawN3Path = path.join(process.cwd(), 'public', ontologyFile);
+  const rawN3Path = path.join(process.cwd(), 'public', 'raw', ontologyFile);
   
   let n3Content = '';
   let jsonLdString = null;

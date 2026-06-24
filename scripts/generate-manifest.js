@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const PUBLIC_DIR = path.resolve('public/ontologies');
+const PUBLIC_DIR = path.resolve('public/raw/ontologies');
 const OUTPUT_FILE = path.resolve('src/ontologies.json');
 
 const walkSync = (dir, filelist = []) => {
