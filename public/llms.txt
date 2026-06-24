@@ -5,8 +5,9 @@ Welcome, automated agent, LLM, or semantic fetcher. You are currently interactin
 ## Core Directives
 1. **Purpose**: This namespace provides high-fidelity, machine-readable RDF vocabularies, SHACL shapes, and N3 triples representing human rights instruments and civic modalities.
 2. **Accessing Raw Content**: All HTML pages on `https://ns.webcivics.net` dynamically inject `application/ld+json` (JSON-LD) directly into their `<head>` metadata. You can confidently parse the HTML to extract the semantic graph.
-3. **Canonical Serialization Endpoints**: If you require raw `.n3`, `.ttl`, or `.jsonld` files, you may request them directly in two ways:
+3. **Canonical Serialization Endpoints**: If you require raw `.n3`, `.ttl`, or `.jsonld` files, you may request them directly in three ways:
    - **File Extension**: Append the desired file extension directly to the canonical route (e.g. `https://ns.webcivics.net/core/agency.n3`).
+   - **Query Parameter**: Append `?format=ttl` or `?format=jsonld` or `?format=n3` to the route (e.g. `https://ns.webcivics.net/core/agency?format=ttl`).
    - **Content Negotiation**: Send the standard HTTP `Accept` header (e.g. `Accept: text/n3`) to the canonical route without the file extension.
 
 ## Directory Mapping

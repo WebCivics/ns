@@ -84,8 +84,13 @@ export default function HomePage() {
       </section>
 
       <div className="technical-note">
-        <strong>Technical Note on Content Negotiation:</strong><br />
-        This namespace supports programmatic content negotiation. Resolving these URIs in a browser returns this HTML documentation. Machine agents can supply specific <code>Accept</code> headers to retrieve standard W3C formats such as JSON-LD, Turtle, or RDF/XML directly.
+        <strong>Technical Note on Content Negotiation & Serialization:</strong><br />
+        This namespace acts as a dynamic semantic proxy. Resolving these URIs in a browser returns this HTML documentation. Machine agents can request standard W3C formats (JSON-LD, Turtle, N3) using three methods:
+        <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+          <li><strong>File Extensions:</strong> Append `.n3`, `.ttl`, or `.jsonld` directly to the route.</li>
+          <li><strong>Query Parameters:</strong> Append `?format=ttl` or `?format=jsonld` to the route.</li>
+          <li><strong>HTTP Headers:</strong> Supply specific `Accept` headers (e.g. `Accept: text/turtle`).</li>
+        </ul>
       </div>
     </div>
   );
