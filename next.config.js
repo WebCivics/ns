@@ -6,16 +6,16 @@ const nextConfig = {
     return [
       // Explicit File Extension Serialization Rewrites
       {
-        source: '/:path*.n3',
-        destination: '/raw/ontologies/:path*.n3',
+        source: '/:path(.+\\.n3)',
+        destination: '/raw/ontologies/:path',
       },
       {
-        source: '/:path*.ttl',
-        destination: '/raw/ontologies/:path*.ttl',
+        source: '/:path(.+\\.ttl)',
+        destination: '/raw/ontologies/:path',
       },
       {
-        source: '/:path*.jsonld',
-        destination: '/raw/ontologies/:path*.jsonld',
+        source: '/:path(.+\\.jsonld)',
+        destination: '/raw/ontologies/:path',
       },
       // UI / HTML Fallback Rewrites
       {
