@@ -8,7 +8,7 @@ export default function sitemap() {
       const parts = ont.path.replace('.n3', '').split('/');
       const slug = parts.slice(1).join('/');
       routes.push({
-        url: `https://ns.webcivics.net/ontologies/${slug}`,
+        url: `https://ns.webcivics.net/${slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,
