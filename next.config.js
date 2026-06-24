@@ -17,18 +17,37 @@ const nextConfig = {
   },
   
   async rewrites() {
-    return [
-      // HTML documentation lives under /ontologies internally; public links use
-      // the shorter canonical namespace paths.
-      {
-        source: '/core/:path*',
-        destination: '/ontologies/core/:path*',
-      },
-      {
-        source: '/institutions/:path*',
-        destination: '/ontologies/institutions/:path*',
-      }
-    ];
+    return {
+      beforeFiles: [
+        {
+          source: '/:path*',
+          has: [{ type: 'query', key: 'format', value: 'ttl' }],
+          destination: '/:path*.ttl',
+        },
+        {
+          source: '/:path*',
+          has: [{ type: 'query', key: 'format', value: 'jsonld' }],
+          destination: '/:path*.jsonld',
+        },
+        {
+          source: '/:path*',
+          has: [{ type: 'query', key: 'format', value: 'n3' }],
+          destination: '/:path*.n3',
+        },
+      ],
+      fallback: [
+        // HTML documentation lives under /ontologies internally; public links use
+        // the shorter canonical namespace paths.
+        {
+          source: '/core/:path*',
+          destination: '/ontologies/core/:path*',
+        },
+        {
+          source: '/institutions/:path*',
+          destination: '/ontologies/institutions/:path*',
+        }
+      ]
+    };
   },
 
   async headers() {
