@@ -28,7 +28,7 @@ export default async function OntologyPage({ params }) {
   if (fs.existsSync(rawN3Path)) {
     n3Content = fs.readFileSync(rawN3Path, 'utf-8');
     try {
-      const parser = new N3.Parser();
+      const parser = new N3.Parser({ format: 'N3' });
       const quads = parser.parse(n3Content);
       const writer = new N3.Writer({ format: 'N-Quads' });
       writer.addQuads(quads);

@@ -57,14 +57,26 @@ export default function HomePage() {
                 /{category}
               </h3>
               <div className="directory-grid">
-                {items.map((ont) => (
-                  <Link href={`/${ont.path.replace('.n3', '')}`} key={ont.id} className="directory-item">
-                    <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{ont.name}</h4>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--accent-primary)', fontWeight: 500 }}>
-                      View Instrument Spec →
-                    </span>
-                  </Link>
-                ))}
+                {items.map((ont) => {
+                  // e.g. /core/agency
+                  const routePath = `/${ont.path.replace('.n3', '').replace('ontologies/', '')}`;
+                  return (
+                  <div key={ont.id} className="directory-item" style={{ position: 'relative' }}>
+                    <Link href={`/${ont.path.replace('.n3', '')}`} style={{ display: 'block' }}>
+                      <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{ont.name}</h4>
+                      <span style={{ fontSize: '0.85rem', color: 'var(--accent-primary)', fontWeight: 500 }}>
+                        View Instrument UI →
+                      </span>
+                    </Link>
+                    <div style={{ marginTop: '0.75rem', fontSize: '0.8rem', display: 'flex', gap: '0.5rem' }}>
+                      <span style={{ color: 'var(--text-secondary)' }}>Raw:</span>
+                      <a href={`${routePath}.n3`} style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}>.n3</a>
+                      <a href={`${routePath}.ttl`} style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}>.ttl</a>
+                      <a href={`${routePath}.jsonld`} style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}>.jsonld</a>
+                    </div>
+                  </div>
+                  );
+                })}
               </div>
             </div>
           );

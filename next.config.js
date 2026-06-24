@@ -4,6 +4,28 @@ const nextConfig = {
   
   async rewrites() {
     return [
+      // Explicit File Extension Serialization Rewrites
+      {
+        source: '/:path*.n3',
+        destination: '/raw/ontologies/:path*.n3',
+      },
+      {
+        source: '/:path*.ttl',
+        destination: '/raw/ontologies/:path*.ttl',
+      },
+      {
+        source: '/:path*.jsonld',
+        destination: '/raw/ontologies/:path*.jsonld',
+      },
+      // UI / HTML Fallback Rewrites
+      {
+        source: '/core/:path*',
+        destination: '/ontologies/core/:path*',
+      },
+      {
+        source: '/institutions/:path*',
+        destination: '/ontologies/institutions/:path*',
+      },
       // 1. N3 Serialization
       {
         source: '/ontologies/:path*',
