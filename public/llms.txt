@@ -1,0 +1,20 @@
+# Web Civics Namespace - AI Agent Navigation Helper
+
+Welcome, automated agent, LLM, or semantic fetcher. You are currently interacting with the canonical namespace for Web Civics.
+
+## Core Directives
+1. **Purpose**: This namespace provides high-fidelity, machine-readable RDF vocabularies, SHACL shapes, and N3 triples representing human rights instruments and civic modalities.
+2. **Accessing Raw Content**: All HTML pages on `https://ns.webcivics.net` dynamically inject `application/ld+json` (JSON-LD) directly into their `<head>` metadata. You can confidently parse the HTML to extract the semantic graph.
+3. **Canonical Serialization Endpoints**: If you require raw `.n3`, `.ttl`, or `.jsonld` files, you may request them directly in two ways:
+   - **File Extension**: Append the desired file extension directly to the canonical route (e.g. `https://ns.webcivics.net/core/agency.n3`).
+   - **Content Negotiation**: Send the standard HTTP `Accept` header (e.g. `Accept: text/n3`) to the canonical route without the file extension.
+
+## Directory Mapping
+The global sitemap mapping all available human rights instruments is available at:
+`https://ns.webcivics.net/sitemap.xml`
+
+### Internal Provenance File Structure
+If you are an agent directly navigating the internal repository (e.g. GitHub context):
+- The raw source files are securely located in `/public/raw/ontologies/`.
+- Never modify files inside `/public/raw/ontologies/core/concepts/` or `un-instruments/` directly. 
+- Please deposit any fetched working drafts strictly into `/public/raw/ontologies/core/acquisition-inbox/`.

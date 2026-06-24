@@ -9,7 +9,7 @@ items into the real corpus (`un-instruments/`) himself.
 ---
 
 ## 1. Output — exactly where and how
-- Write to **`core-ontologies/acquisition-inbox/`** only. **Never** write to `un-instruments/`,
+- Write to **`public/raw/ontologies/core/acquisition-inbox/`** only. **Never** write to `un-instruments/`,
   any `*.n3`, `PLAN.md`, or any existing/curated file.
 - **One file per instrument:** `acquisition-inbox/<slug>.md`, where `<slug>` is the kebab-case of
   the official title (e.g. `convention-on-cluster-munitions-2008.md`).
