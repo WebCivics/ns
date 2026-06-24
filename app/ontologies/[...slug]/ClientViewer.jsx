@@ -5,9 +5,10 @@ import Link from 'next/link';
 import * as N3 from 'n3';
 import jsonld from 'jsonld';
 
-export default function ClientViewer({ slug, ontologyFile, initialContent, canonicalPath }) {
+export default function ClientViewer({ slug, ontologyFile, initialContent, canonicalPath, initialTripleCount = 0 }) {
   const [content, setContent] = useState(initialContent || '');
   const [quads, setQuads] = useState([]);
+  const [displayTripleCount, setDisplayTripleCount] = useState(initialTripleCount);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [format, setFormat] = useState('turtle');
@@ -51,6 +52,7 @@ export default function ClientViewer({ slug, ontologyFile, initialContent, canon
             }
           } else {
             setQuads(parsedQuads);
+            if (parsedQuads.length > 0) setDisplayTripleCount(parsedQuads.length);
             if (sourceUri) setDocumentSource(sourceUri);
             setLoading(false);
           }
@@ -124,7 +126,7 @@ export default function ClientViewer({ slug, ontologyFile, initialContent, canon
         <div style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
           <strong>Canonical URI:</strong> <code>{htmlUrl}</code><br />
           <strong>Promulgating Institution / Scope:</strong> <span style={{ textTransform: 'capitalize' }}>{slug.join(', ')}</span><br />
-          <strong>Triples Extracted:</strong> {quads.length}
+          <strong>Triples Extracted:</strong> {displayTripleCount}
         </div>
         
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

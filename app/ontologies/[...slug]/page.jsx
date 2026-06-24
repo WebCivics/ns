@@ -65,6 +65,11 @@ export default async function OntologyPage({ params }) {
     n3Content = fs.readFileSync(rawN3Path, 'utf-8');
   }
 
+  const categoryStr = slug.slice(0, -1).join('/');
+  const idStr = slug[slug.length - 1];
+  const manifestEntry = manifest[categoryStr]?.find(e => e.id === idStr);
+  const tripleCount = manifestEntry ? manifestEntry.tripleCount : 0;
+
   const datasetJsonLd = {
     '@context': `${BASE_URL}/context.jsonld`,
     '@id': paths.canonicalUrl,
@@ -101,6 +106,7 @@ export default async function OntologyPage({ params }) {
         ontologyFile={ontologyFile} 
         initialContent={n3Content} 
         canonicalPath={paths.dataPath}
+        initialTripleCount={tripleCount}
       />
     </>
   );
