@@ -8,10 +8,10 @@ import jsonld from 'jsonld';
 export default function ClientViewer({ slug, ontologyFile, initialContent }) {
   const [content, setContent] = useState(initialContent || '');
   const [quads, setQuads] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [format, setFormat] = useState('turtle');
-  const [convertedContent, setConvertedContent] = useState('');
+  const [convertedContent, setConvertedContent] = useState(initialContent || '');
   const [documentSource, setDocumentSource] = useState(null);
 
   const id = slug[slug.length - 1];
@@ -20,22 +20,26 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
   useEffect(() => {
     const parseOntology = async () => {
       try {
-        setLoading(true);
-        if (!initialContent) {
-          // Fallback if not provided statically (though it should be)
-          const res = await fetch(`/ontologies/${ontologyFile}`);
+        let currentContent = content;
+        if (!currentContent) {
+          setLoading(true);
+          // Fix path to fetch from raw/ontologies
+          const res = await fetch(`/raw/ontologies/${slug.join('/')}.n3`);
           if (!res.ok) throw new Error(`Failed to fetch ${ontologyFile}`);
-          const text = await res.text();
-          setContent(text);
+          currentContent = await res.text();
+          setContent(currentContent);
+          setConvertedContent(currentContent);
         }
 
-        const parser = new N3.Parser();
+        const parser = new N3.Parser({ format: 'N3' });
         const parsedQuads = [];
         let sourceUri = null;
 
-        parser.parse(content, (err, quad, prefixes) => {
+        parser.parse(currentContent, (err, quad, prefixes) => {
           if (err) {
-            console.error(err);
+            console.error('Client parse error:', err);
+            setError(err.message);
+            setLoading(false);
           } else if (quad) {
             parsedQuads.push(quad);
             if (quad.predicate.value === 'https://ns.webcivics.net/values/source' || 
@@ -44,7 +48,6 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
             }
           } else {
             setQuads(parsedQuads);
-            setConvertedContent(content);
             if (sourceUri) setDocumentSource(sourceUri);
             setLoading(false);
           }
@@ -54,10 +57,8 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
         setLoading(false);
       }
     };
-    if (content) {
-      parseOntology();
-    }
-  }, [content, ontologyFile, initialContent]);
+    parseOntology();
+  }, [content, ontologyFile, slug]);
 
   useEffect(() => {
     if (!quads.length) return;
