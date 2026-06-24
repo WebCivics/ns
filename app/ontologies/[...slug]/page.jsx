@@ -29,7 +29,14 @@ export default async function OntologyPage({ params }) {
     n3Content = fs.readFileSync(rawN3Path, 'utf-8');
     try {
       const parser = new N3.Parser({ format: 'N3' });
-      const quads = parser.parse(n3Content);
+      const allQuads = parser.parse(n3Content);
+      
+      // JSON-LD / N-Quads does not support N3 logic variables (?var) or formulas
+      const quads = allQuads.filter(q => 
+        q.subject.termType !== 'Variable' &&
+        q.predicate.termType !== 'Variable' &&
+        q.object.termType !== 'Variable'
+      );
       const writer = new N3.Writer({ format: 'N-Quads' });
       writer.addQuads(quads);
       const nquads = await new Promise((resolve, reject) => {
