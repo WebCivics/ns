@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "dev": "node scripts/generate-manifest.js && vite",
+    "build": "node scripts/generate-manifest.js && vite build && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
