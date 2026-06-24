@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import * as N3 from 'n3';
 import jsonld from 'jsonld';
 
-export default function ClientViewer({ slug, ontologyFile, initialContent }) {
+export default function ClientViewer({ slug, ontologyFile, initialContent, canonicalPath }) {
   const [content, setContent] = useState(initialContent || '');
   const [quads, setQuads] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -16,6 +16,9 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
 
   const id = slug[slug.length - 1];
   const categoryPath = slug.slice(0, -1).join(' / ');
+  const dataPath = canonicalPath || `/${slug.join('/')}`;
+  const htmlUrl = `https://ns.webcivics.net${dataPath}/`;
+  const rawBaseUrl = `https://ns.webcivics.net${dataPath}`;
 
   useEffect(() => {
     const parseOntology = async () => {
@@ -35,7 +38,7 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
         const parsedQuads = [];
         let sourceUri = null;
 
-        parser.parse(currentContent, (err, quad, prefixes) => {
+        parser.parse(currentContent, (err, quad) => {
           if (err) {
             console.error('Client parse error:', err);
             setError(err.message);
@@ -119,7 +122,7 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
           {id.replace(/-/g, ' ')}
         </h1>
         <div style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-          <strong>Canonical URI:</strong> <code>https://ns.webcivics.net/ontologies/{slug.join('/')}</code><br />
+          <strong>Canonical URI:</strong> <code>{htmlUrl}</code><br />
           <strong>Promulgating Institution / Scope:</strong> <span style={{ textTransform: 'capitalize' }}>{slug.join(', ')}</span><br />
           <strong>Triples Extracted:</strong> {quads.length}
         </div>
@@ -132,6 +135,15 @@ export default function ClientViewer({ slug, ontologyFile, initialContent }) {
           )}
           <a href={`https://github.com/webcivics/ns/commits/main/public/${ontologyFile}`} target="_blank" rel="noreferrer" className="btn">
             View Git Version History
+          </a>
+          <a href={`${rawBaseUrl}.n3`} className="btn">
+            N3
+          </a>
+          <a href={`${rawBaseUrl}.ttl`} className="btn">
+            Turtle
+          </a>
+          <a href={`${rawBaseUrl}.jsonld`} className="btn">
+            JSON-LD
           </a>
           <button onClick={handleDownload} className="btn btn-primary">
             Download Serialized Graph

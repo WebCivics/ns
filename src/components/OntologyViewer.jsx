@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import * as N3 from 'n3';
 import jsonld from 'jsonld';
@@ -32,7 +32,7 @@ const OntologyViewer = () => {
         const parsedQuads = [];
         let sourceUri = null;
 
-        parser.parse(text, (err, quad, prefixes) => {
+      parser.parse(text, (err, quad) => {
           if (err) {
             console.error(err);
           } else if (quad) {

@@ -5,11 +5,9 @@ export default function sitemap() {
   
   for (const category of Object.keys(manifest)) {
     for (const ont of manifest[category]) {
-      const parts = ont.path.replace('.n3', '').split('/');
-      const slug = parts.slice(1).join('/');
       routes.push({
-        url: `https://ns.webcivics.net/${slug}`,
-        lastModified: new Date(),
+        url: `https://ns.webcivics.net${ont.canonicalPath || ont.dataPath || `/${ont.path.replace('.n3', '').replace('ontologies/', '')}`}`,
+        lastModified: ont.lastModified ? new Date(ont.lastModified) : new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,
       });
@@ -22,6 +20,18 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
+    },
+    {
+      url: 'https://ns.webcivics.net/catalog.json',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://ns.webcivics.net/catalog.ttl',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     ...routes,
   ];

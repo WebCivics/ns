@@ -6,22 +6,32 @@
   "scripts": {
     "dev": "node scripts/generate-manifest.js && next dev",
     "build": "node scripts/generate-manifest.js && next build",
-    "lint": "next lint"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "lint": "eslint ."
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
     "jsonld": "^9.0.0",
     "lucide-react": "^1.21.0",
     "n3": "^2.0.4",
-    "next": "latest",
+    "next": "16.2.9",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@opennextjs/cloudflare": "1.19.11",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint": "^10.3.0",
-    "globals": "^17.6.0"
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.6.0",
+    "wrangler": "4.104.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }

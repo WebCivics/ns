@@ -1,21 +1,47 @@
-# Web Civics Namespace - AI Agent Navigation Helper
+# Web Civics Namespace - Agent Navigation
 
-Welcome, automated agent, LLM, or semantic fetcher. You are currently interacting with the canonical namespace for Web Civics.
+This is the canonical namespace for Web Civics RDF vocabularies, SHACL shapes,
+N3 source graphs, and derived RDF projections of human-rights instruments.
 
-## Core Directives
-1. **Purpose**: This namespace provides high-fidelity, machine-readable RDF vocabularies, SHACL shapes, and N3 triples representing human rights instruments and civic modalities.
-2. **Accessing Raw Content**: All HTML pages on `https://ns.webcivics.net` dynamically inject `application/ld+json` (JSON-LD) directly into their `<head>` metadata. You can confidently parse the HTML to extract the semantic graph.
-3. **Canonical Serialization Endpoints**: If you require raw `.n3`, `.ttl`, or `.jsonld` files, you may request them directly in three ways:
-   - **File Extension**: Append the desired file extension directly to the canonical route (e.g. `https://ns.webcivics.net/core/agency.n3`).
-   - **Query Parameter**: Append `?format=ttl` or `?format=jsonld` or `?format=n3` to the route (e.g. `https://ns.webcivics.net/core/agency?format=ttl`).
-   - **Content Negotiation**: Send the standard HTTP `Accept` header (e.g. `Accept: text/n3`) to the canonical route without the file extension.
+## Start Here
 
-## Directory Mapping
-The global sitemap mapping all available human rights instruments is available at:
-`https://ns.webcivics.net/sitemap.xml`
+- Catalog JSON: https://ns.webcivics.net/catalog.json
+- Catalog Turtle: https://ns.webcivics.net/catalog.ttl
+- JSON-LD context: https://ns.webcivics.net/context.jsonld
+- Sitemap: https://ns.webcivics.net/sitemap.xml
+- Source repository: https://github.com/webcivics/ns
 
-### Internal Provenance File Structure
-If you are an agent directly navigating the internal repository (e.g. GitHub context):
-- The raw source files are securely located in `/public/raw/ontologies/`.
-- Never modify files inside `/public/raw/ontologies/core/concepts/` or `un-instruments/` directly. 
-- Please deposit any fetched working drafts strictly into `/public/raw/ontologies/core/acquisition-inbox/`.
+## URL Contract
+
+The public canonical documentation path is the short namespace path:
+
+- HTML: `https://ns.webcivics.net/core/agency/`
+- N3: `https://ns.webcivics.net/core/agency.n3`
+- Turtle: `https://ns.webcivics.net/core/agency.ttl`
+- JSON-LD: `https://ns.webcivics.net/core/agency.jsonld`
+
+The same pattern applies under `/institutions/...`.
+
+Older `/ontologies/...` URLs are compatibility routes and should be treated as
+non-canonical. Prefer the short `/core/...` and `/institutions/...` paths.
+
+## Format Guidance
+
+- Treat N3 (`.n3`) as the canonical source when N3 logic, rules, or variables
+  matter.
+- Treat Turtle (`.ttl`) and JSON-LD (`.jsonld`) as RDF projections for agents
+  that need standard RDF datasets.
+- If a catalog entry reports `projectedQuadCount > 0`, some N3-only terms were
+  excluded from the Turtle/JSON-LD projection.
+- HTML pages advertise alternate RDF formats with canonical and alternate link
+  metadata.
+
+## Access Policy
+
+Automated retrieval and agent grounding are allowed. Training is not granted by
+the Content-Signal policy in `robots.txt`.
+
+## Repository Layout
+
+Raw source N3 files live in `public/raw/ontologies/`. Generated public machine
+assets are produced at build time from those source files.

@@ -58,11 +58,11 @@ export default function HomePage() {
               </h3>
               <div className="directory-grid">
                 {items.map((ont) => {
-                  // e.g. /core/agency
-                  const routePath = `/${ont.path.replace('.n3', '').replace('ontologies/', '')}`;
+                  const routePath = ont.dataPath || `/${ont.path.replace('.n3', '').replace('ontologies/', '')}`;
+                  const htmlPath = ont.canonicalPath || `${routePath}/`;
                   return (
                   <div key={ont.id} className="directory-item" style={{ position: 'relative' }}>
-                    <Link href={`/${ont.path.replace('.n3', '')}`} style={{ display: 'block' }}>
+                    <Link href={htmlPath} style={{ display: 'block' }}>
                       <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{ont.name}</h4>
                       <span style={{ fontSize: '0.85rem', color: 'var(--accent-primary)', fontWeight: 500 }}>
                         View Instrument UI →
@@ -84,13 +84,14 @@ export default function HomePage() {
       </section>
 
       <div className="technical-note">
-        <strong>Technical Note on Content Negotiation & Serialization:</strong><br />
-        This namespace acts as a dynamic semantic proxy. Resolving these URIs in a browser returns this HTML documentation. Machine agents can request standard W3C formats (JSON-LD, Turtle, N3) using three methods:
+        <strong>Technical Note on Machine Formats:</strong><br />
+        Resolving canonical namespace paths in a browser returns HTML documentation. Machine agents should use the explicit static format URLs generated for each graph:
         <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
-          <li><strong>File Extensions:</strong> Append `.n3`, `.ttl`, or `.jsonld` directly to the route.</li>
-          <li><strong>Query Parameters:</strong> Append `?format=ttl` or `?format=jsonld` to the route.</li>
-          <li><strong>HTTP Headers:</strong> Supply specific `Accept` headers (e.g. `Accept: text/turtle`).</li>
+          <li><strong>N3:</strong> Append `.n3` to the canonical route.</li>
+          <li><strong>Turtle:</strong> Append `.ttl` to the canonical route.</li>
+          <li><strong>JSON-LD:</strong> Append `.jsonld` to the canonical route.</li>
         </ul>
+        A global catalog is also available at <a href="/catalog.json">/catalog.json</a> and <a href="/catalog.ttl">/catalog.ttl</a>.
       </div>
     </div>
   );

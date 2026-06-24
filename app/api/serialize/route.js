@@ -1,16 +1,38 @@
 import * as N3 from 'n3';
 import jsonld from 'jsonld';
 
+const RDF_TERM_TYPES = new Set(['NamedNode', 'BlankNode', 'Literal', 'DefaultGraph']);
+
+const responseHeaders = contentType => ({
+  'Content-Type': contentType,
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, OPTIONS',
+  'Cache-Control': 'public, max-age=3600',
+});
+
+const isRdfQuad = quad => [quad.subject, quad.predicate, quad.object, quad.graph]
+  .every(term => RDF_TERM_TYPES.has(term.termType));
+
+export function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: responseHeaders('text/plain; charset=utf-8'),
+  });
+}
+
 export async function GET(request) {
   const { searchParams, origin } = new URL(request.url);
-  const ontologyPath = searchParams.get('path');
+  const ontologyPath = searchParams.get('path')?.replace(/^\/+|\/+$/g, '');
   const format = searchParams.get('format') || 'n3';
 
   if (!ontologyPath) {
     return new Response('Missing path parameter', { status: 400 });
   }
 
-  // Fetch the raw .n3 file from the static assets
+  if (ontologyPath.includes('..') || ontologyPath.includes('\\')) {
+    return new Response('Invalid path parameter', { status: 400 });
+  }
+
   const rawUrl = new URL(`/raw/ontologies/${ontologyPath}.n3`, origin);
   const response = await fetch(rawUrl);
 
@@ -23,49 +45,34 @@ export async function GET(request) {
   try {
     if (format === 'n3') {
       return new Response(n3Content, {
-        headers: { 'Content-Type': 'text/n3; charset=utf-8' },
+        headers: responseHeaders('text/n3; charset=utf-8'),
       });
     }
 
     const parser = new N3.Parser({ format: 'N3' });
     const allQuads = parser.parse(n3Content);
+    const rdfQuads = allQuads.filter(isRdfQuad);
+    const write = writerFormat => new Promise((resolve, reject) => {
+      const writer = new N3.Writer({ format: writerFormat });
+      writer.addQuads(rdfQuads);
+      writer.end((error, result) => {
+        if (error) reject(error);
+        else resolve(result);
+      });
+    });
 
     if (format === 'ttl') {
-      const writer = new N3.Writer({ format: 'Turtle' });
-      writer.addQuads(allQuads);
-      const turtle = await new Promise((resolve, reject) => {
-        writer.end((error, result) => {
-          if (error) reject(error);
-          else resolve(result);
-        });
-      });
-
+      const turtle = await write('Turtle');
       return new Response(turtle, {
-        headers: { 'Content-Type': 'text/turtle; charset=utf-8' },
+        headers: responseHeaders('text/turtle; charset=utf-8'),
       });
     }
 
     if (format === 'jsonld') {
-      // JSON-LD does not support N3 logic variables (?var) or formulas
-      const quads = allQuads.filter(
-        (q) =>
-          q.subject.termType !== 'Variable' &&
-          q.predicate.termType !== 'Variable' &&
-          q.object.termType !== 'Variable'
-      );
-
-      const writer = new N3.Writer({ format: 'N-Quads' });
-      writer.addQuads(quads);
-      const nquads = await new Promise((resolve, reject) => {
-        writer.end((error, result) => {
-          if (error) reject(error);
-          else resolve(result);
-        });
-      });
-
+      const nquads = await write('N-Quads');
       const doc = await jsonld.fromRDF(nquads, { format: 'application/n-quads' });
       return new Response(JSON.stringify(doc, null, 2), {
-        headers: { 'Content-Type': 'application/ld+json; charset=utf-8' },
+        headers: responseHeaders('application/ld+json; charset=utf-8'),
       });
     }
 

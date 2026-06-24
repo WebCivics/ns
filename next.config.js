@@ -1,59 +1,25 @@
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: true, // Useful for backwards compatibility with existing links
+  distDir: process.env.NEXT_DIST_DIR || '.next',
+  poweredByHeader: false,
+  trailingSlash: true,
+
+  async redirects() {
+    return [
+      {
+        source: '/ontologies/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+    ];
+  },
   
   async rewrites() {
     return [
-      // Explicit File Extension Serialization Rewrites
-      {
-        source: '/:path(.*)\\.n3',
-        destination: '/raw/ontologies/:path.n3',
-      },
-      {
-        source: '/:path(.*)\\.ttl',
-        destination: '/api/serialize?path=:path&format=ttl',
-      },
-      {
-        source: '/:path(.*)\\.jsonld',
-        destination: '/api/serialize?path=:path&format=jsonld',
-      },
-      // Query Parameter Format Interception
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'query',
-            key: 'format',
-            value: '(?i)(ttl|jsonld)',
-          },
-        ],
-        destination: '/api/serialize?path=:path*&format=:format',
-      },
-      // Content Negotiation: Turtle
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'accept',
-            value: '(?i).*text/turtle.*',
-          },
-        ],
-        destination: '/api/serialize?path=:path*&format=ttl',
-      },
-      // Content Negotiation: JSON-LD
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'accept',
-            value: '(?i).*application/ld\\+json.*',
-          },
-        ],
-        destination: '/api/serialize?path=:path*&format=jsonld',
-      },
-      // UI / HTML Fallback Rewrites
+      // HTML documentation lives under /ontologies internally; public links use
+      // the shorter canonical namespace paths.
       {
         source: '/core/:path*',
         destination: '/ontologies/core/:path*',
@@ -61,42 +27,6 @@ const nextConfig = {
       {
         source: '/institutions/:path*',
         destination: '/ontologies/institutions/:path*',
-      },
-      // 1. N3 Serialization
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'accept',
-            value: '(?=.*text/n3).*',
-          },
-        ],
-        destination: '/raw/ontologies/:path*.n3',
-      },
-      // 2. Turtle Serialization
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'accept',
-            value: '(?=.*text/turtle).*',
-          },
-        ],
-        destination: '/raw/ontologies/:path*.ttl',
-      },
-      // 3. JSON-LD Serialization
-      {
-        source: '/ontologies/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'accept',
-            value: '(?=.*application/ld\\+json).*',
-          },
-        ],
-        destination: '/raw/ontologies/:path*.jsonld',
       }
     ];
   },
@@ -104,7 +34,24 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/ontologies/:path*',
+        source: '/core/:path*',
+        headers: [
+          {
+            key: 'Vary',
+            value: 'Accept',
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, OPTIONS',
+          }
+        ],
+      },
+      {
+        source: '/institutions/:path*',
         headers: [
           {
             key: 'Vary',
@@ -125,3 +72,7 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+if (process.env.NODE_ENV === 'development') {
+  initOpenNextCloudflareForDev();
+}

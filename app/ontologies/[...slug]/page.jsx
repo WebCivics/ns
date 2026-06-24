@@ -2,8 +2,24 @@ import fs from 'fs';
 import path from 'path';
 import manifest from '../../../src/ontologies.json';
 import ClientViewer from './ClientViewer';
-import * as N3 from 'n3';
-import jsonld from 'jsonld';
+
+const BASE_URL = 'https://ns.webcivics.net';
+
+const titleize = value => value
+  .replace(/[-_]/g, ' ')
+  .replace(/\b\w/g, c => c.toUpperCase());
+
+const getPaths = slug => {
+  const dataPath = `/${slug.join('/')}`;
+  const canonicalPath = `${dataPath}/`;
+  return {
+    dataPath,
+    canonicalUrl: `${BASE_URL}${canonicalPath}`,
+    n3Url: `${BASE_URL}${dataPath}.n3`,
+    ttlUrl: `${BASE_URL}${dataPath}.ttl`,
+    jsonldUrl: `${BASE_URL}${dataPath}.jsonld`,
+  };
+};
 
 export async function generateStaticParams() {
   const paths = [];
@@ -17,53 +33,74 @@ export async function generateStaticParams() {
   return paths;
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const id = slug[slug.length - 1];
+  const paths = getPaths(slug);
+  const title = `${titleize(id)} | ns.webcivics.net`;
+
+  return {
+    title,
+    description: `Machine-readable Web Civics ontology document for ${titleize(id)}.`,
+    alternates: {
+      canonical: paths.canonicalUrl,
+      types: {
+        'text/n3': paths.n3Url,
+        'text/turtle': paths.ttlUrl,
+        'application/ld+json': paths.jsonldUrl,
+      },
+    },
+  };
+}
+
 export default async function OntologyPage({ params }) {
   const { slug } = await params;
   const ontologyFile = `ontologies/${slug.join('/')}.n3`;
   const rawN3Path = path.join(process.cwd(), 'public', 'raw', ontologyFile);
+  const paths = getPaths(slug);
   
   let n3Content = '';
-  let jsonLdString = null;
   
   if (fs.existsSync(rawN3Path)) {
     n3Content = fs.readFileSync(rawN3Path, 'utf-8');
-    try {
-      const parser = new N3.Parser({ format: 'N3' });
-      const allQuads = parser.parse(n3Content);
-      
-      // JSON-LD / N-Quads does not support N3 logic variables (?var) or formulas
-      const quads = allQuads.filter(q => 
-        q.subject.termType !== 'Variable' &&
-        q.predicate.termType !== 'Variable' &&
-        q.object.termType !== 'Variable'
-      );
-      const writer = new N3.Writer({ format: 'N-Quads' });
-      writer.addQuads(quads);
-      const nquads = await new Promise((resolve, reject) => {
-        writer.end((error, result) => {
-          if (error) reject(error);
-          else resolve(result);
-        });
-      });
-      const doc = await jsonld.fromRDF(nquads, { format: 'application/n-quads' });
-      jsonLdString = JSON.stringify(doc);
-    } catch (e) {
-      console.error("Failed to parse JSON-LD for build time insertion", e);
-    }
   }
+
+  const datasetJsonLd = {
+    '@context': `${BASE_URL}/context.jsonld`,
+    '@id': paths.canonicalUrl,
+    '@type': 'dcat:Dataset',
+    title: titleize(slug[slug.length - 1]),
+    'dcat:landingPage': paths.canonicalUrl,
+    'dcat:distribution': [
+      {
+        '@type': 'dcat:Distribution',
+        'dcterms:format': 'text/n3',
+        'dcat:downloadURL': paths.n3Url,
+      },
+      {
+        '@type': 'dcat:Distribution',
+        'dcterms:format': 'text/turtle',
+        'dcat:downloadURL': paths.ttlUrl,
+      },
+      {
+        '@type': 'dcat:Distribution',
+        'dcterms:format': 'application/ld+json',
+        'dcat:downloadURL': paths.jsonldUrl,
+      },
+    ],
+  };
 
   return (
     <>
-      {jsonLdString && (
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: jsonLdString }} 
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetJsonLd) }}
+      />
       <ClientViewer 
         slug={slug} 
         ontologyFile={ontologyFile} 
         initialContent={n3Content} 
+        canonicalPath={paths.dataPath}
       />
     </>
   );
