@@ -6,16 +6,52 @@ const nextConfig = {
     return [
       // Explicit File Extension Serialization Rewrites
       {
-        source: '/:path(.+\\.n3)',
-        destination: '/raw/ontologies/:path',
+        source: '/:path(.*)\\.n3',
+        destination: '/raw/ontologies/:path.n3',
       },
       {
-        source: '/:path(.+\\.ttl)',
-        destination: '/raw/ontologies/:path',
+        source: '/:path(.*)\\.ttl',
+        destination: '/api/serialize?path=:path&format=ttl',
       },
       {
-        source: '/:path(.+\\.jsonld)',
-        destination: '/raw/ontologies/:path',
+        source: '/:path(.*)\\.jsonld',
+        destination: '/api/serialize?path=:path&format=jsonld',
+      },
+      // Query Parameter Format Interception
+      {
+        source: '/ontologies/:path*',
+        has: [
+          {
+            type: 'query',
+            key: 'format',
+            value: '(?i)(ttl|jsonld)',
+          },
+        ],
+        destination: '/api/serialize?path=:path*&format=:format',
+      },
+      // Content Negotiation: Turtle
+      {
+        source: '/ontologies/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'accept',
+            value: '(?i).*text/turtle.*',
+          },
+        ],
+        destination: '/api/serialize?path=:path*&format=ttl',
+      },
+      // Content Negotiation: JSON-LD
+      {
+        source: '/ontologies/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'accept',
+            value: '(?i).*application/ld\\+json.*',
+          },
+        ],
+        destination: '/api/serialize?path=:path*&format=jsonld',
       },
       // UI / HTML Fallback Rewrites
       {
