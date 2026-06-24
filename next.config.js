@@ -2,6 +2,7 @@ import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   distDir: process.env.NEXT_DIST_DIR || '.next',
   poweredByHeader: false,
   trailingSlash: true,
