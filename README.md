@@ -40,3 +40,9 @@ When resolving URIs, this server uses content negotiation to return either human
 `ns.webcivics.net` is an evolving, open-source effort heavily aligned with W3C community standards, including paradigms emerging from the Human-Centric AI Community Group and the broader Web Science community.
 
 *(Contribution guidelines and repository links to be added.)*
+
+## Agent usage
+
+See [`public/agent-legislation-guide.md`](public/agent-legislation-guide.md) for online RDF
+retrieval, local legislation-package validation, native QualiaDB queries, provenance checks,
+and the recommended safeguards for agent-assisted legal research.
