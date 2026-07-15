@@ -1,14 +1,15 @@
 export const metadata = {
   title: 'Legal information and terms | ns.webcivics.net',
-  description: 'Scope, source, limitations, attribution, and terms for experimental Australian legislation renderings.',
+  description: 'Scope, source, limitations, attribution, and terms for experimental legislation renderings.',
 };
 
 const registerUrl = 'https://www.legislation.gov.au/';
+const eurLexUrl = 'https://eur-lex.europa.eu/';
 
 export default function LegalInformationPage() {
   return (
     <article className="container legal-information-page">
-      <p className="eyebrow">Australian legislation collection</p>
+      <p className="eyebrow">Legislation collection</p>
       <h1>Legal information, scope and terms of use</h1>
       <p className="status-line"><strong>Technical alpha / proof of concept</strong> · Updated 15 July 2026</p>
 
@@ -20,13 +21,14 @@ export default function LegalInformationPage() {
           qualified legal professional. Do not rely on them to make legal, compliance, financial, or
           other consequential decisions.
         </p>
-        <a className="btn btn-primary" href={registerUrl}>Check the Federal Register of Legislation</a>
+        <a className="btn btn-primary" href={registerUrl}>Australian Federal Register</a>{' '}
+        <a className="btn btn-secondary" href={eurLexUrl}>EUR-Lex</a>
       </div>
 
       <section>
         <h2>1. What this collection is</h2>
         <p>
-          The collection is a technical demonstration that parses Australian Government legislation
+          The collection is a technical demonstration that parses legislation from official sources
           into human-readable HTML and semantic formats. It adds machine-proposed concepts,
           relationships, and logic classifications to support discovery and research. It is in active
           development and may change without notice.
@@ -39,7 +41,8 @@ export default function LegalInformationPage() {
           Nothing on this site is legal advice, a legal opinion, a compliance determination, or a
           substitute for advice from a qualified professional. Use of the site does not create a
           solicitor-client or other professional relationship. The site is not affiliated with or
-          endorsed by the Australian Government or the Office of Parliamentary Counsel.
+          endorsed by the Australian Government, the Office of Parliamentary Counsel, the European Union,
+          or the Publications Office of the European Union.
         </p>
       </section>
 
@@ -55,6 +58,10 @@ export default function LegalInformationPage() {
           Each legislation page links to the corresponding Register ID when one is available. Always use
           that record to check the law's status, the applicable point-in-time version, commencement,
           amendments, endnotes, rectifications, and any supporting or incorporated material.
+        </p>
+        <p>
+          For European Union material, follow the page's ELI link to EUR-Lex and the Official Journal record.
+          Only EU documents published in the Official Journal of the European Union are authentic.
         </p>
       </section>
 
@@ -87,7 +94,7 @@ export default function LegalInformationPage() {
         <h2>6. Appropriate use</h2>
         <p>You may use the collection to explore legal information and prepare questions. You remain responsible for:</p>
         <ul>
-          <li>checking the relevant official Register record and authorised text;</li>
+          <li>checking the relevant official Register, ELI, EUR-Lex or Official Journal record;</li>
           <li>considering whether other legislation, case law, delegated legislation, or facts affect the issue;</li>
           <li>obtaining qualified advice before acting or deciding not to act; and</li>
           <li>not presenting machine-proposed annotations as official or professionally reviewed conclusions.</li>
@@ -108,6 +115,13 @@ export default function LegalInformationPage() {
           Rights in source legislation remain governed by the official source. The separate technical-work
           licence below does not claim, replace, narrow, or expand those rights. Material identified as
           third-party content may require additional permission.
+        </p>
+        <p>
+          European Union pages are based on legal documents published through{' '}
+          <a href={eurLexUrl}>EUR-Lex</a>. EUR-Lex permits reuse of legal documents for commercial or
+          non-commercial purposes unless otherwise specified. Its{' '}
+          <a href="https://eur-lex.europa.eu/content/legal-notice/legal-notice.html">legal notice</a>,
+          acknowledgement requirements, document-specific conditions, exceptions, and third-party rights apply.
         </p>
       </section>
 

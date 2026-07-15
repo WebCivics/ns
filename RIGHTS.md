@@ -13,9 +13,16 @@ requirements, identified exceptions, third-party material, and terms of use:
 
 - https://www.legislation.gov.au/terms-of-use
 
+European Union legislation obtained from EUR-Lex likewise retains its official
+source terms. EUR-Lex permits reuse of legal documents for commercial or
+non-commercial purposes unless otherwise specified, subject to acknowledgement,
+identified exceptions, and third-party rights:
+
+- https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+
 The technical-work licence below does not replace, narrow, or expand those
-source rights. Each generated legislation page links to its official Register
-record.
+source rights. Each generated legislation page links to its official Register,
+ELI, or EUR-Lex record.
 
 ## 2. Technical work
 
@@ -53,4 +60,4 @@ model training. Machine-readable details are published at `/ai-use-policy.json`.
 
 Generated semantic structures and classifications are experimental technical
 outputs. They are not official or authorised versions of law, legal advice, or
-Australian Government endorsements.
+endorsements by an official source.
