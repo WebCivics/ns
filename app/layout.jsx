@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
           </main>
           <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid var(--border-light)', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <p>ns.webcivics.net — The Web Civics Ontology Namespace</p>
+            <p>Technical work © 2026 <a href="https://www.linkedin.com/in/ubiquitous/">Timothy Charles Holborn</a> · <a href="/legal-information#technical-work">Rights and licences</a></p>
           </footer>
         </div>
       </body>
