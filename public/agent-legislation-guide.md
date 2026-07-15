@@ -28,6 +28,7 @@ An agent should begin with these endpoints:
 - Corpus catalog: <https://ns.webcivics.net/catalog.json>
 - Rights and AI-use policy: <https://ns.webcivics.net/ai-use-policy.json>
 - Human-readable legal information: <https://ns.webcivics.net/legal-information/>
+- Australian corpus manifest: <https://ns.webcivics.net/au-legislation-corpus.json>
 
 ### GDPR example
 
