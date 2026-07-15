@@ -9,6 +9,12 @@ const titleize = value => value
   .replace(/[-_]/g, ' ')
   .replace(/\b\w/g, c => c.toUpperCase());
 
+const findManifestEntry = slug => {
+  const category = slug.slice(0, -1).join('/');
+  const id = slug[slug.length - 1];
+  return manifest[category]?.find(entry => entry.id === id);
+};
+
 const getPaths = slug => {
   const dataPath = `/${slug.join('/')}`;
   const canonicalPath = `${dataPath}/`;
@@ -37,11 +43,13 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const id = slug[slug.length - 1];
   const paths = getPaths(slug);
-  const title = `${titleize(id)} | ns.webcivics.net`;
+  const entry = findManifestEntry(slug);
+  const instrumentTitle = entry?.name || titleize(id);
+  const title = `${instrumentTitle} | ns.webcivics.net`;
 
   return {
     title,
-    description: `Machine-readable Web Civics ontology document for ${titleize(id)}.`,
+    description: `Machine-readable Web Civics ontology document for ${instrumentTitle}.`,
     alternates: {
       canonical: paths.canonicalUrl,
       types: {
@@ -65,16 +73,16 @@ export default async function OntologyPage({ params }) {
     n3Content = fs.readFileSync(rawN3Path, 'utf-8');
   }
 
-  const categoryStr = slug.slice(0, -1).join('/');
-  const idStr = slug[slug.length - 1];
-  const manifestEntry = manifest[categoryStr]?.find(e => e.id === idStr);
+  const manifestEntry = findManifestEntry(slug);
   const tripleCount = manifestEntry ? manifestEntry.tripleCount : 0;
 
   const datasetJsonLd = {
     '@context': `${BASE_URL}/context.jsonld`,
     '@id': paths.canonicalUrl,
     '@type': 'dcat:Dataset',
-    title: titleize(slug[slug.length - 1]),
+    title: manifestEntry?.name || titleize(slug[slug.length - 1]),
+    ...(manifestEntry?.registerId && { identifier: manifestEntry.registerId }),
+    ...(manifestEntry?.versionDate && { date: manifestEntry.versionDate }),
     'dcat:landingPage': paths.canonicalUrl,
     'dcat:distribution': [
       {
@@ -107,6 +115,12 @@ export default async function OntologyPage({ params }) {
         initialContent={n3Content} 
         canonicalPath={paths.dataPath}
         initialTripleCount={tripleCount}
+        documentMetadata={manifestEntry ? {
+          title: manifestEntry.name,
+          registerId: manifestEntry.registerId,
+          versionDate: manifestEntry.versionDate,
+          versionDateLabel: manifestEntry.versionDateLabel,
+        } : null}
       />
     </>
   );

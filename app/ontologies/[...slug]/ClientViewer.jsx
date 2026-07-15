@@ -5,7 +5,14 @@ import Link from 'next/link';
 import * as N3 from 'n3';
 import jsonld from 'jsonld';
 
-export default function ClientViewer({ slug, ontologyFile, initialContent, canonicalPath, initialTripleCount = 0 }) {
+export default function ClientViewer({
+  slug,
+  ontologyFile,
+  initialContent,
+  canonicalPath,
+  initialTripleCount = 0,
+  documentMetadata = null,
+}) {
   const [content, setContent] = useState(initialContent || '');
   const [quads, setQuads] = useState([]);
   const [displayTripleCount, setDisplayTripleCount] = useState(initialTripleCount);
@@ -120,10 +127,14 @@ export default function ClientViewer({ slug, ontologyFile, initialContent, canon
       </div>
 
       <header style={{ marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '2.5rem', textTransform: 'capitalize', marginBottom: '0.5rem' }}>
-          {id.replace(/-/g, ' ')}
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>
+          {documentMetadata?.title || id.replace(/-/g, ' ')}
         </h1>
         <div style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+          <strong>Register ID:</strong> <code>{documentMetadata?.registerId || id}</code><br />
+          {documentMetadata?.versionDate && (
+            <><strong>{documentMetadata.versionDateLabel || 'Version date'}:</strong> {documentMetadata.versionDate}<br /></>
+          )}
           <strong>Canonical URI:</strong> <code>{htmlUrl}</code><br />
           <strong>Promulgating Institution / Scope:</strong> <span style={{ textTransform: 'capitalize' }}>{slug.join(', ')}</span><br />
           <strong>Triples Extracted:</strong> {displayTripleCount}

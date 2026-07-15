@@ -44,6 +44,21 @@ class PublicationTests(unittest.TestCase):
             augmented,
         )
 
+    def test_title_override_changes_only_root_document_title(self):
+        source = (
+            '<https://example.test/instrument> a cof:Document ;\n'
+            '    dc:title "made under an Act"@en ;\n'
+            '    cml:curationStatus cml:Proposed .\n\n'
+            '<https://example.test/concept> dc:title "Provision title"@en .\n'
+        )
+        updated = publisher.apply_title_override(
+            source,
+            "https://example.test/instrument",
+            "Correct Instrument Title 2020",
+        )
+        self.assertIn('dc:title "Correct Instrument Title 2020"@en', updated)
+        self.assertIn('dc:title "Provision title"@en', updated)
+
 
 if __name__ == "__main__":
     unittest.main()

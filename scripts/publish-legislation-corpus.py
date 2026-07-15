@@ -39,8 +39,21 @@ def augment_graph(text: str, base_iri: str, dataset_id: str, official_url: str) 
     return text.replace(marker, additions, 1)
 
 
+def apply_title_override(text: str, base_iri: str, title: str) -> str:
+    """Replace only the title in the root cof:Document description."""
+    document_start = text.index(f"<{base_iri}> a cof:Document ;")
+    document_end = text.index("cml:curationStatus", document_start)
+    document = text[document_start:document_end]
+    title_pattern = re.compile(r'(\n\s+dc:title\s+)"(?:[^"\\]|\\.)*"(@[a-z-]+)?(\s*;)')
+    if len(title_pattern.findall(document)) != 1:
+        raise ValueError(f"expected exactly one document title for {base_iri}")
+    replacement = rf'\g<1>{json.dumps(title, ensure_ascii=False)}\g<2>\g<3>'
+    updated = title_pattern.sub(replacement, document, count=1)
+    return text[:document_start] + updated + text[document_end:]
+
+
 def publish(source_root: Path, destination_root: Path, manifest_path: Path,
-            expected_count: int) -> None:
+            expected_count: int, overrides: dict | None = None) -> None:
     source_root = source_root.resolve()
     destination_root = destination_root.resolve()
     manifest_path = manifest_path.resolve()
@@ -74,9 +87,14 @@ def publish(source_root: Path, destination_root: Path, manifest_path: Path,
         dataset_id = instrument_dir.name
         register_id, official_url = official_register_url(dataset_id)
         graph_text = source_graphs[0].read_text(encoding="utf-8")
+        override = (overrides or {}).get(dataset_id, {})
         graph_text = augment_graph(
             graph_text, metadata["baseIri"], dataset_id, official_url
         )
+        if override.get("title"):
+            graph_text = apply_title_override(
+                graph_text, metadata["baseIri"], override["title"]
+            )
         graph_bytes = graph_text.encode("utf-8")
         output = destination_root / f"{dataset_id}.n3"
         output.write_bytes(graph_bytes)
@@ -85,7 +103,7 @@ def publish(source_root: Path, destination_root: Path, manifest_path: Path,
         records.append({
             "id": dataset_id,
             "registerId": register_id,
-            "title": metadata["title"],
+            "title": override.get("title", metadata["title"]),
             "canonicalUrl": (
                 f"https://ns.webcivics.net/institutions/au-fed-legislation/{dataset_id}/"
             ),
@@ -109,6 +127,9 @@ def publish(source_root: Path, destination_root: Path, manifest_path: Path,
             "n3Sha256": sha256(graph_bytes),
             "n3Bytes": len(graph_bytes),
         })
+        for field in ("versionType", "versionDate", "registeredDate", "compilationNumber"):
+            if override.get(field):
+                records[-1][field] = override[field]
 
     for stale in destination_root.glob("*.n3"):
         if stale not in expected_outputs:
@@ -151,8 +172,19 @@ def main() -> None:
         "--manifest", type=Path, default=Path("public/au-legislation-corpus.json")
     )
     parser.add_argument("--expected-count", type=int, default=222)
+    parser.add_argument(
+        "--overrides", type=Path,
+        default=Path("public/au-legislation-metadata-overrides.json"),
+    )
     args = parser.parse_args()
-    publish(args.source_root, args.destination_root, args.manifest, args.expected_count)
+    overrides = (
+        json.loads(args.overrides.read_text(encoding="utf-8"))
+        if args.overrides.is_file() else {}
+    )
+    publish(
+        args.source_root, args.destination_root, args.manifest,
+        args.expected_count, overrides,
+    )
 
 
 if __name__ == "__main__":

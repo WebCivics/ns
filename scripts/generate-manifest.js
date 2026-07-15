@@ -13,6 +13,11 @@ const CATALOG_TTL_FILE = path.resolve(PUBLIC_ROOT, 'catalog.ttl');
 const CONTEXT_FILE = path.resolve(PUBLIC_ROOT, 'context.jsonld');
 
 const RDF_TERM_TYPES = new Set(['NamedNode', 'BlankNode', 'Literal', 'DefaultGraph']);
+const RDF_TYPE = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
+const COF_DOCUMENT = 'https://ns.webcivics.net/cof/Document';
+const DC_TITLE = 'http://purl.org/dc/terms/title';
+const DC_IDENTIFIER = 'http://purl.org/dc/terms/identifier';
+const DC_DATE = 'http://purl.org/dc/terms/date';
 
 const WEB_CIVICS_CONTEXT = {
   '@version': 1.1,
@@ -103,6 +108,24 @@ const parseAndProjectRdf = content => {
   };
 };
 
+const extractDocumentMetadata = quads => {
+  const document = quads.find(quad =>
+    quad.predicate.value === RDF_TYPE && quad.object.value === COF_DOCUMENT)?.subject.value;
+  if (!document) return null;
+
+  const values = predicate => quads
+    .filter(quad => quad.subject.value === document && quad.predicate.value === predicate)
+    .map(quad => quad.object.value);
+  const dates = values(DC_DATE);
+  const versionDate = dates.find(value => /\D/.test(value) && /\d{4}/.test(value));
+
+  return {
+    title: values(DC_TITLE)[0] || null,
+    identifier: values(DC_IDENTIFIER)[0] || null,
+    versionDate: versionDate || dates[0] || null,
+  };
+};
+
 const writeMachineFormats = async (entry, n3Content) => {
   const outputBase = path.resolve(PUBLIC_ROOT, entry.dataPath.slice(1));
   ensureDir(`${outputBase}.n3`);
@@ -160,6 +183,17 @@ for (const file of allFiles) {
     lastModified: stats.mtime.toISOString(),
   };
 
+  const { quads } = parseAndProjectRdf(n3Content);
+  const documentMetadata = extractDocumentMetadata(quads);
+  if (documentMetadata?.title) entry.name = documentMetadata.title;
+  if (documentMetadata?.identifier) entry.registerId = documentMetadata.identifier;
+  if (documentMetadata?.versionDate) {
+    entry.versionDate = documentMetadata.versionDate;
+    entry.versionDateLabel = documentMetadata.identifier?.[5] === 'C'
+      ? 'Compilation date'
+      : 'Document date';
+  }
+
   const counts = await writeMachineFormats(entry, n3Content);
   Object.assign(entry, counts);
 
@@ -185,6 +219,9 @@ const catalog = {
   datasets: catalogEntries.map(entry => ({
     id: entry.id,
     title: entry.name,
+    registerId: entry.registerId,
+    versionDate: entry.versionDate,
+    versionDateLabel: entry.versionDateLabel,
     category: entry.category,
     canonicalUrl: `${BASE_URL}${entry.canonicalPath}`,
     htmlUrl: `${BASE_URL}${entry.canonicalPath}`,
