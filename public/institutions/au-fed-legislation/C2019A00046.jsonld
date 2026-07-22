@@ -1,0 +1,3258 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "The Act is titled.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "211ced44a6bb3a39986919bcd640bdc79e7a7cfacf2370703546352c337d7748",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-1-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-1-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.9",
+      "skos:note": "Establishment of the Australian Business Securitisation Fund",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(1) Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5bc18916e9c739ab1a0d41f2b176767bd0a491e942304b2fc84d596ea167c7bd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-10-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-10"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.9",
+      "skos:note": "Establishment of the Australian Business Securitisation Fund",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(2) Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b97da8b9600afb1b17d8f7f0d2d51c8e1aa884c317887abece41f0a022e1d0f3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-10-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-10"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-10-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2"
+        }
+      ],
+      "cml:integrityHash": "11391a788c4de6fb54741a7688d45bcfc13b696362d179c8b212030d21b210a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "Establishment of the Australian Business Securitisation Fund Special Account",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(1) Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b57f4f2edf016d7ccf03d490476121cb9a2aa24a9bfdb94ec074260154a7de2b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-11-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-11"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The account exists from the time of its establishment.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for the account's existence",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The account is established by this section."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A duty is imposed on the establishment of the Australian Business Securitisation Fund Special Account.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty to establish the account",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "This section establishes the Australian Business Securitisation Fund Special Account."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "Debit amounts against an appropriation for a covered purpose and credit to the special account.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(2) Establishment of the Australian Business Securitisation Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "07b5239c4e245fa8ae406d12e9e6a20d1dfe51436f6a25c8c628669030c50fe9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-11-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-11"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Duty to debit and credit",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "imposes"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-11-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "The Minister may invest amounts standing to the credit of the Account in any authorised debt security.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(1) Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "114de13852dfbef899e8d04ef7e015d08a8994001a6c4f2403832cf4ad2c97a3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to invest",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "Investments under subsection (1) are taken to be investments of the Fund.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(2) Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1b7ef4c4460eaa811b0cd3c0133bc48da0e987787053b4fbe89db179db1d8c22",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(2) Investments under subsection (1) are taken to be investments of the Fund.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implies an obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "takes",
+      "cml:premiseText": "(1) Investments of the Fund."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "Authorise re-investment of Fund proceeds upon maturity",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(3) Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e872f71e8a531e7404b04eec23231705d57ff126e4d8c377ccd7992cd2595080",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to authorise re-investment",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "An authorised debt security must comply with specific requirements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(4) Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b63638257d8aff28897318e803ad0587691f44de64ffaa92f8f97d001df336cc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must comply with requirements.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-4"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.10",
+      "skos:note": "Investment of the Fund is exempt from Section 58 of the Public Governance, Performance and Accountability Act 2013.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(5) Investments of the Fund"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fd56020b04a3c0c1c202a63dbc2a12aaa31dfec4c333a31c2ec530a0c3852aef",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-12-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Fund is exempt from Section 58.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Investment exemption",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exemption",
+      "cml:premiseText": "Section 58 does not apply to the Fund."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-12-ss-5"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.11",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Investment Mandate"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.11",
+      "skos:note": "The Minister may give directions about the exercise of their powers under section 12.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(1) Investment Mandate"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "31511e2a4787b524785833199566b9e98f1a95b08760795c1447ce7482912485",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-13-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister may give directions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.11",
+      "skos:note": "The Minister must comply with the Investment Mandate.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(2) Investment Mandate"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b9daf0ba55658f4786735b03dedbdee198870a81d52fea63b3804711dc010b43",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-13-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses a duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.11",
+      "skos:note": "Investment Mandate directions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(3) Investment Mandate"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d7d80c638210ba770dc5a2458a30606c2862fbbc13ae6e05f982e4081f305ad",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-13-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes specific matters",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(f) any other matters that the Minister thinks appropriate."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.11",
+      "skos:note": "The Minister must not give a direction under subsection (1) that has the purpose or is likely to have the effect of directly or indirectly requiring the Minister to make or not to make a particular investment.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(4) Investment Mandate"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4338afdd67dd699bfb015c9bd51c601a39970b9f3fd31f5fb743da017c45fc16",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-13-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(a) that has the purpose, or is likely to have the effect, of directly or indirectly requiring the Minister to make, or not to make, a particular investment;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of giving a direction with a specific purpose.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must Not",
+      "cml:premiseText": "(4) The Minister must not give a direction under subsection (1):"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(b) that is inconsistent with this Act (including the objects of this Act).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of giving a direction inconsistent with the Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must Not",
+      "cml:premiseText": "(4) The Minister must not give a direction under subsection (1):"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-13-ss-4"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1",
+      "@type": "cml:Concept",
+      "dc:description": "$250 million, $500 million, income derived from an investment of the Fund, a return of capital, or any other financial distribution relating to an investment of the Fund, and the proceeds of the realisation of an investment of the Fund",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Credit amounts to be credited to the Account",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(1) Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "84ffdb92edd6d299f339105f85cd9a9073c7936a59a26fbf1a6d7384fbd9e05d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must be credited to the Account",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Minister may determine credits to Account",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(2) Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5b550fc998d12a89186ae9d13f4d5325b36245a0bb74fc2e10eb817459f0f9e5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted by Minister",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Determination must be made on or after the specified time.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(3) Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a20c4375c04ec4db475d9ee1fe16277fb1e03c0286da50ae253a57bccd8ebe5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Express determination for a specified budget year",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(4) Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "696dd8a070ea551866ea5211f50ef74a7001cd726084e945426e46931f007a54",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must express determination",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST Express",
+      "cml:premiseText": "(4) The determination must be expressed to be for a specified budget year."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-4"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Minister must obtain agreement of Finance Minister before making a determination.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(5) Credits to the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "65807a5853320aede5d6de5f9eaef485f630689f10d400f71cd6d7bee48b5542",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-14-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Finance Minister agrees",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to obtain agreement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Minister must make a determination"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-14-ss-5"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.12",
+      "skos:note": "Paying costs and expenses of the Commonwealth exclusively in connection with the Fund.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Purposes of the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-15-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-15-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "104236f554c4683531c49281f1ddb0827e368e389bf3aa9706d5a5e1f6f1f0fd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Paying costs and expenses of the Commonwealth exclusively in connection with the Fund.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-15-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-15"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Reducing the balance of the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-2"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.13",
+      "skos:note": "Minister may direct debiting of a specified amount from the Account on a specified day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(1) Reducing the balance of the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "53c779d9947c85b671069ba79f53064166e710c77224d364145d1b2ad18ebc19",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-16-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister may direct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.13",
+      "skos:note": "A direction under subsection (1) is not a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(2) Reducing the balance of the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c1400f95831894e2f55ad7aab5325b7242efadabd9a363282032157d94d388ce",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-16-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.13",
+      "skos:note": "The Minister must provide a copy of the direction to the Finance Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(3) Reducing the balance of the Account"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ddf4de4da7ae13c32a2bb789a672f000fbd92e5af02b069c11c736d6e42b2781",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-16-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister must provide a copy of the direction.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-16-ss-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "Contains miscellaneous provisions, including general rule-making power.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Simplified outline of this Part"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "25f4c136f1fc32d5fc389dd988908cce93b8d8e7f8b138d834b9ab9d1969b83e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-17"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "The Minister may exercise a power or perform a function only under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Constitutional limits"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-18-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-18-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "34c7c116991672836a4cc231b00eaa6ff1c0f41cb6b499d7b4bb3ccdb86e680e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses permission or obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-18-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-18"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "The Minister may delegate powers or functions to an eligible delegate.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(1) Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24989ddfeeec34a2fc7aaa79810d8b4dcbc1583288b174ff361894abc2ab394e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted by the Minister.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "Definition of an eligible delegate",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(2) Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "efb70a4872ba10d71d8ced16cd86616e6b674449e4e78a019de68691965a184f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "during SES employment or Executive Level 2 position",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) An eligible delegate is an official of the Department of the Treasury..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "Minister must consider qualifications before delegating power or function.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(3) Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-2",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-3",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-alleninterval-4",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-ltl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3e9891ddbd3b6dc940a38d9da8544a7fe3ef490177c04a13405b0c98251be666",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Delegation of power or function is within a specific time frame.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "BETWEEN",
+      "cml:premiseText": "(3) Before delegating a power or function under subsection (1), the Minister must have regard to:"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister must consider qualifications before delegating power or function.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(3) Before delegating a power or function under subsection (1), the Minister must have regard to:"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister must consider qualifications before delegating power or function.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(a) if the power or function is to be delegated to a person holding, occupying, or performing the duties of, a specified office or position—whether the office or position is sufficiently senior for the person to exercise the power or perform the function or duty;"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister must consider qualifications before delegating power or function.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(b) otherwise—whether the person has appropriate qualifications or expertise to exercise the power or perform the function."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-logic-ltl-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Delegation of power or function is within a specific time frame.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "BETWEEN",
+      "cml:premiseText": "(3) Before delegating a power or function under subsection (1), the Minister must have regard to:"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "Comply with written directions of the Minister when exercising delegated powers or performing functions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(4) Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-deontic-2",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-alleninterval-3",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-argumentation-4",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-diffusion-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c97a6cc778a496be61dff35766e33677005f1ee92d0c914339f82b91819e2ab1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "must comply with any written directions of the Minister.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Compliance with Minister's directions overlaps with delegated powers or functions.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(4) A person exercising powers or performing functions under a delegation..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-argumentation-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "must comply with any written directions of the Minister.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Minister's direction implies compliance as a necessary condition.",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "(4) A person exercising powers or performing functions under a delegation..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "must comply with any written directions of the Minister.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory compliance with Minister's directions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must",
+      "cml:premiseText": "(4) A person exercising powers or performing functions under a delegation..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "must comply with any written directions of the Minister.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister's direction is an obligation on delegated agents.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(4) A person exercising powers or performing functions under a delegation..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-logic-diffusion-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "must comply with any written directions of the Minister.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Compliance with Minister's directions propagates to delegated agents.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Propagation",
+      "cml:premiseText": "(4) A person exercising powers or performing functions under a delegation..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-4"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.14",
+      "skos:note": "Must not be inconsistent with the Act or a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(5) Delegations by the Minister"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "844a7105ac7bf43a578ba3bf6ffaf23cff8f5f5c604c3150f22d62b77a423b7a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-19-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Inconsistent with the Act or a legislative instrument",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must not be inconsistent",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Necessity",
+      "cml:premiseText": "Direction under subsection (4)"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-19-ss-5"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-20",
+      "@type": "cml:Concept",
+      "dc:description": "Report on operation of Act",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.15",
+      "skos:note": "Annual report must include operation of Act during period.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Annual report"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-20-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-20-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e5cf1e28cea379f4905637116e726696cb37d5940cc44ecbc69040e2b9445882",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-20-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide report",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-20-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-20"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Review of operation of this Act"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.15",
+      "skos:note": "Review of operation of this Act to be undertaken at specified intervals.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(1) Review of operation of this Act"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a1e2dc8eb07aabeb2b4dd0e4049e4d3272a6c2385c497544d55a1635e5486076",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-21-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-21"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to review operation of Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(1) The Minister must cause a review..."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.15",
+      "skos:note": "Review must include effectiveness of Act in meeting objectives.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(2) Review of operation of this Act"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2700bb70e947c18e831caf67d9aa0d34a51f0755f565961d746c4476e9d8c19a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-21-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-21"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to review effectiveness",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-21-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Rules"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.16",
+      "skos:note": "The Minister may make rules by legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22(1) Rules"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "516553f9c5262aced8a2f8b878bd0d5a6252e6ce663a71bfcb0b5777cd4cdb63",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-22-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-22"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses permission or obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.16",
+      "skos:note": "Rules cannot create an offence or civil penalty, provide powers of arrest or detention, entry, search or seizure, impose a tax, set an amount to be appropriated from the Consolidated Revenue Fund, or directly amend the text of this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22(2) Rules"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-2",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-3",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-4",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-5",
+        "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "494896e314f1e16637efe9d2bafc106f93deab77725109fd5b30f32f945326d2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-22-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-22"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An offence or civil penalty cannot be created by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on creating an offence or civil penalty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not create an offence or civil penalty"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Arrest or detention cannot be provided by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on providing powers of arrest or detention",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not provide powers of arrest or detention"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Entry, search or seizure cannot be provided by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on providing powers of entry, search or seizure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not provide powers of entry, search or seizure"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A tax cannot be imposed by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on imposing a tax",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not impose a tax"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An amount to be appropriated from the Consolidated Revenue Fund cannot be set by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on setting an amount to be appropriated from the Consolidated Revenue Fund",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not set an amount to be appropriated from the Consolidated Revenue Fund"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-logic-deontic-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The text of this Act cannot be directly amended by the rules",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on directly amending the text of this Act",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Rules may not directly amend the text of this Act"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-22-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "Increase availability and reduce cost of credit for small and medium enterprises.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Objects of this Act"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ab929674d015067a79bce0437aafe106d81320f09c6a162d78bc44411163ed7d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-3"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "The Minister must make investment decisions for the Fund in accordance with directions given by the Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Simplified outline of this Act"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-4-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1e9671e87f25893b759ffae6ecd30be9e2a288d30f988d956ec7e1296b9489ff",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister must make investment decisions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-4"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.7",
+      "skos:note": "Definitions for the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Definitions"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24490d1b9d14f00671ba5bccc769fd7d53226c93253fefa11151a870573ddba6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-5"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 April 2019"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Crown to be bound"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1"
+        },
+        {
+          "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.8",
+      "skos:note": "The Crown is bound by this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(1) Crown to be bound"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cf1a049471d9b96f6bb9334bbff5953d57ffc47500996432ff3bca2286a074ac",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-6-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-6-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Crown has an obligation to comply.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(1) This Act binds the Crown in each of its capacities."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-1"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.8",
+      "skos:note": "The Crown is not liable to be prosecuted for an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(2) Crown to be bound"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-deontic-2",
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-linearlogic-3",
+        "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-alleninterval-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7d6225d5534623ff376bc52f3ec6ec7750f4fe5c29b319ba2be570f029524818",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-6-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-6-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Crown is not liable to be prosecuted for an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal scope of prohibition",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "This Act does not make the Crown liable to be prosecuted for an offence."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Crown is not liable to be prosecuted for an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not",
+      "cml:premiseText": "The Act does not make the Crown liable to be prosecuted for an offence."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Crown is not liable to be prosecuted for an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not",
+      "cml:premiseText": "This Act does not make the Crown liable to be prosecuted for an offence."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-logic-linearlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Crown is not liable to be prosecuted for an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Negative obligation",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "¬",
+      "cml:premiseText": "This Act does not make the Crown liable to be prosecuted for an offence."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-6-2-ss-2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-6"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.8",
+      "skos:note": "The Act extends to every external Territory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Extension to external Territories"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-7-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "67472e2293bda79b217253ba1d52eb7c699bd961318a2af2e8142d911b825256",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Holds true",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "holds"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-7"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.8",
+      "skos:note": "Act extends to acts, omissions, matters and things outside Australia.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Extra-territorial application"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": "concept:australian-business-securitisation-fund-act-2019-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c215d5147ba4d9ac485ac701ae70e885003522a61625b1be4a583aba093cb5a5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-8"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-business-securitisation-fund-act-2019.pdf, p.9",
+      "skos:note": "The Minister must determine certain amounts for the Fund.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Simplified outline of this Part"
+      },
+      "wasDerivedFrom": "australian-business-securitisation-fund-act-2019.pdf",
+      "asserts": [
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-norm",
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-1",
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-2",
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-3",
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-4",
+        "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a1af5a6042f1fdd1fec87219ab82d9f8ecdd35ba021080e6e46b32b5f7e6f416",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-business-securitisation-fund-act-2019#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister MUST determine certain amounts for the Fund.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The Minister may also, with the agreement of the Finance Minister, determine that additional amounts be credited to the Fund."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister MUST determine that the balance of the Account be reduced.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Amounts may be debited from the Account for the purposes of the Account, which include paying the costs of making investments."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister MUST determine that additional amounts be credited to the Fund.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "A total of $2 billion must be credited to the Account, with an initial amount of $250 million credited on 1 July 2019 and additional amounts credited on each 1 July for the following 4 years."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister MUST determine that the investments of the Fund meet certain requirements.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The investments of the Fund must be debt securities that meet certain requirements and the investments must be made in accordance with any directions given by the Minister."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister MUST determine that additional amounts be credited to the Fund.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The Minister may also, with the agreement of the Finance Minister, determine that additional amounts be credited to the Fund."
+    },
+    {
+      "@id": "concept:australian-business-securitisation-fund-act-2019-sec-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-business-securitisation-fund-act-2019-sec-9"
+    },
+    {
+      "@id": "doc:au/c2019a00046",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to establish the Australian Business Securitisation Fund, and for related purposes",
+      "dc:identifier": [
+        "C2019A00046",
+        "No. 46 of 2019"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Business Securitisation Fund Act 2019"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2019A00046/latest/downloads",
+        "australian-business-securitisation-fund-act-2019.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

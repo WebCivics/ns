@@ -1,0 +1,1796 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.7",
+      "skos:note": "Omit all words after 'last-mentioned document' and substitute with exemptions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 25(1)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d99c6f0fd7d46ee8c7be0c11ee407eec041c92abf1eb9e8bddc325a61479e6e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting words after 'last-mentioned document'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit 'or 34', substitute ', 34 or 45A'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Subsection 58E(2)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "883a71fca3df43f8d533dc63a5148d02b585b52a00004d2d9244f176829b0a62",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-10-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit “or 34”, substitute ‘, 34 or 45A’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 64(2) (note)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "883a71fca3df43f8d533dc63a5148d02b585b52a00004d2d9244f176829b0a62",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Amendments of the Freedom of Information Act 1982 apply to requests received after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Application of amendments"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-alleninterval-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-ltl-2",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-deontic-3",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "899e8f599546e2a3532be58267748d7ee5f2f65652ff9d789d04327dbc909982",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines temporal interval for application",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(a) commencing on the day after the Bill was introduced into the House of Representatives; and (b) ending immediately before the commencement of this item."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty to make decision on request",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obliges",
+      "cml:premiseText": "if the agency or Minister to whom the request was made has not made a decision on the request, or has not been taken to have made a decision on the request, before the commencement of this item."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty to make decision on request",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obliges",
+      "cml:premiseText": "before the commencement of this item."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-ltl-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines temporal interval for application",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "(a) commencing on the day after the Bill was introduced into the House of Representatives; and (b) ending immediately before the commencement of this item."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.11",
+      "skos:note": "Omit all words after 'last-mentioned document' and substitute with exemptions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Subsection 34(1)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "80fc54049829bcd8f98863ae80c7172bac93ceb7a34e8d3f7430dafeeff3e349",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Omit words after 'last-mentioned document'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 25(2)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3"
+        }
+      ],
+      "cml:integrityHash": "fc61fc4a50e655d12b70c909f99174b3a8932dca19bfcf9d8128e3cad72db45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.7",
+      "skos:note": "Agency or Minister may not confirm or deny existence of a document.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(2) Subsection 25(2)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-deontic-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-epistemic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24ddd7dfcf0074b54bf7da4b7b8c0c1168531de8456d8d1b437bfccc21cb3382",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Agency or Minister may not confirm or deny existence of a document.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Agency or Minister may not confirm or deny existence of a document.",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "Deny"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.7",
+      "skos:note": "Refusing access to document if it existed",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(3) Subsection 25(2)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4d49b583c808acf68e818933b23989c7137395f98a609bca7a2b3bafad5926cb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-2-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Access refused",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Refuse access to document",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "refuse",
+      "cml:premiseText": "Document would be exempt"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After section 45"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Exempt documents may be accessed to the extent specified.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Freedom of Information Amendment (Parliamentary Budget Office) Act 2012       No."
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "13bce4d7f00535fcf7e6ee3477340ffcf407b1680a191e7c4e5f926e2037b46a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.9",
+      "skos:note": "Omit certain documents from Cabinet records",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 55T(1) (note)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f76564cc051da32ce97ecf143536951602dd0db7e177a432d1f87b38ba3152fb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting specific documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to access exempt documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7"
+        },
+        {
+          "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8"
+        }
+      ],
+      "cml:integrityHash": "3eeec05e3dd48aadf8f659c8b76b660eccb3fb8ec9615e6dcfba39d8a58858a8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "A document is exempt if it originated from the Parliamentary Budget Officer or was prepared in response to a confidential request.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(1) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-2",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3b1f765d9ac4f941d37be1870625a8f46b55d66ecbfbfe35da90f6ac84bd25c9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The document is exempt.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exemption is a property of documents.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The document is exempt.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "A document must be exempt if it meets the conditions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The document is provided.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "A document must be provided if it meets the conditions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Documents containing extracts from exempt documents are also exempt.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(2) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-deontic-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-alleninterval-2",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-ltl-3",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-diffusion-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cd176589949adcd68551e38cc080a420009e882b94104f51215a706fff19f23c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Document is exempt until it contains a non-exempt section",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval of exemption",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "contains",
+      "cml:premiseText": "Exemption starts at the beginning of the document and ends when it contains a non-exempt section"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Document is exempt",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exempt documents are documents containing extracts from exempt documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "implies",
+      "cml:premiseText": "Document is exempt if it contains an extract from an exempt document"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Documents containing extracts from exempt documents are also exempt",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Spread of exemption",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "diffuses",
+      "cml:premiseText": "Exemption spreads to documents containing extracts from the original document"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Document is exempt until it contains a non-exempt section",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal interval of exemption",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "Exemption starts at the beginning of the document and ends when it contains a non-exempt section"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Disclosure of confidential request information is restricted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(3) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "70294cdf949154e2c5538b7886f69eaac1c679216b6e947e84f2b2193d4d7c93",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosure of request information is restricted.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Restricts disclosure of confidential information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Restrict",
+      "cml:premiseText": "Confidential request made to Parliamentary Budget Officer."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "A document is not exempt solely because it is attached to another exempt document.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(4) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "75660bcb65db14ba42ac0348c7a58a354542c84687abfdbf9d4080eb831f6e97",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Document is not exempt",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negation of exemption",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not",
+      "cml:premiseText": "Document is exempt"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Information made publicly available by the Parliamentary Budget Officer is not exempt matter.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(5) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f8e58d0647e51f556b86eea2c46424b8e8a920bbbaa7e2052e4264e368b205ed",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to disclose information made publicly available by the Parliamentary Budget Officer.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Information made publicly available by Senator or MP is not exempt.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(6) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-deontic-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8d6bb01eb8d74a3f10b0495b51933b6ebd721caade3a53d1a71fe297ab786605",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemption condition met.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Public availability overlaps with exemption conditions.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Information has been made publicly available by Senator or MP."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Not exempt matter.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If information is publicly available, it's not exempt.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "Information made publicly available by Senator or MP."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Disclosure of factual information is not exempt if it reveals a confidential request.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(7) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b5169ebf819308d622425d8d8c6a4e443051b0f4542bdd46bbb3a1872dca06a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosure of factual information is not exempt if it reveals a confidential request.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to disclose factual information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "Information in a document is not exempt matter."
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.8",
+      "skos:note": "Definition of confidential request",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45A(8) Parliamentary Budget Office documents"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-deontic-1",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f1769b04ffb35362ed01edf55fd929bfd47120450de448efe526cb94e3f4af61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-45a-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a key term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Applies to explicit class hierarchies",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "class hierarchy"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Repeal heading and substitute with new text.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 55U (heading)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "585a8d85920b241bfe8a5f68f00b98160cee17d0e38408eead193b18e825cea7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Production of national security documents by Cabinet or Parliamentary Budget Office.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "55U Information gathering powers—production of national"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4170c1520d9aee0ff5dc67438d613e14ea14981bfc5cde4130b9c05e3945e012",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-55u",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide national security documents.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Freedom of Information Amendment (Parliamentary Budget Office) Act 2012 No.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Freedom of Information Amendment (Parliamentary Budget Office) Act 2012       No."
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "84bda7c4b01456161d9995327b856f6801f2ebf11811fec472ec8ff08172b2c7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit certain documents from Cabinet and Parliamentary Budget Office",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 55U(1)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e4ffc8dc7065927a68627e8110dc426f479b194658a015765bf76cc0185d62e9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit 'or 34', substitute ', 34 or 45A'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 55U(3)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "883a71fca3df43f8d533dc63a5148d02b585b52a00004d2d9244f176829b0a62",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit 'or 34', substitute ', 34 or 45A'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Subsection 58B(1)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "883a71fca3df43f8d533dc63a5148d02b585b52a00004d2d9244f176829b0a62",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.10",
+      "skos:note": "Omit 'or 34', substitute ', 34 or 45A'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Subsection 58E(1)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "883a71fca3df43f8d533dc63a5148d02b585b52a00004d2d9244f176829b0a62",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.5",
+      "skos:note": "Cites this Act as the Freedom of Information Amendment (Parliamentary Budget Office) Act 2012.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8c260fbcc485bc5da04966a3c49112ae7831e262d9f4b728a34abaa74a46437b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-1"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.6",
+      "skos:note": "Freedom of Information Amendment (Parliamentary Budget Office) Act 2012 No.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Freedom of Information Amendment (Parliamentary Budget Office) Act 2012       No."
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "84bda7c4b01456161d9995327b856f6801f2ebf11811fec472ec8ff08172b2c7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.6",
+      "skos:note": "Commences on the day this Act receives Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": [
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2-norm",
+        "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a34a4d3c733d2db36afd6b862ff0955e373a42becc8ab09809ee944ff0fc158",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commences on the day this Act receives Royal Assent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Defines commencement date"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf",
+      "asserts": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4f90dbd023a535a434110a4b10553066b8968b7803eb188aa142fc5d8cd17ca0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:freedom-of-information-amendment-parliamentary-budget-office-act-2012#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-3"
+    },
+    {
+      "@id": "doc:au/c2012a00177",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Freedom of Information Act 1982, and for related purposes",
+      "dc:identifier": [
+        "C2012A00177",
+        "No. 177 of 2012"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Freedom of Information Amendment (Parliamentary Budget Office) Act 2012"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2012A00177/latest/downloads",
+        "freedom-of-information-amendment-parliamentary-budget-office-act-2012.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,1648 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment (Motor Vehicle Service and Repair Information Sharing Scheme) Act 2021
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2021a00054-sch-1-sec-57aa-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57aa;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Promote competition between Australian repairers of passenger and light goods motor vehicles.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ab-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ab;
+  logic: Deontic;
+  operator: MUST-OFFER;
+  summary: Must offer scheme information at a price not exceeding fair market value.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: scheme rules prescribe definitions and categories for vehicles;
+  @action: vehicle is a scheme vehicle if it meets these criteria;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Temporal interval;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: vehicles manufactured on or after January 1, 2002, are considered scheme vehicles;
+  @action: vehicle is a scheme vehicle if it was manufactured on or after this date;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: vehicles manufactured on or after a later date prescribed by the scheme rules are considered scheme vehicles;
+  @action: vehicle is a scheme vehicle if it was manufactured on or after this date;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of scheme vehicle;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: scheme vehicle is defined as a light goods vehicle, passenger vehicle, or another kind of vehicle prescribed by the scheme rules;
+  @action: vehicle is a scheme vehicle if it meets these criteria;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: Deontic;
+  operator: =;
+  summary: Scope of scheme vehicle definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: scheme rules prescribe definitions and categories for vehicles;
+  @action: vehicle is a scheme vehicle if it meets the criteria prescribed by the scheme rules;
+}
+
+c2021a00054-sch-1-sec-57ba-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ba;
+  logic: Deontic;
+  operator: =;
+  summary: Scheme vehicle definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: scheme vehicle is defined as a specific type of vehicle that meets certain criteria;
+  @action: vehicle is a scheme vehicle if it meets these criteria;
+}
+
+c2021a00054-sch-1-sec-57bb-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bb;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of Australian repairer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57bb-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bb;
+  logic: Deontic;
+  operator: must;
+  summary: Licence requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: In some State and Territory jurisdictions, a person may need to hold a licence or particular qualifications to lawfully carry on such a business.;
+}
+
+c2021a00054-sch-1-sec-57bb-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bb;
+  logic: Deontic;
+  operator: must;
+  summary: Business location requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: in Australia;
+}
+
+c2021a00054-sch-1-sec-57bc-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bc;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the timing of RTO provision.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: providing a course (an RTO course) in Australia;
+  @action: RTO provides training during the provision of a course in Australia;
+}
+
+c2021a00054-sch-1-sec-57bc-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bc;
+  logic: Deontic;
+  operator: must;
+  summary: Imposes a duty on RTOs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: providing, nor seeks to provide, a course (an RTO course) in Australia;
+  @action: RTO must provide a course in Australia;
+}
+
+c2021a00054-sch-1-sec-57bc-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bc;
+  logic: Deontic;
+  operator: must;
+  summary: Imposes a duty on RTOs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: providing training in diagnosing faults with, servicing, repairing, modifying or dismantling scheme vehicles.;
+  @action: RTO must provide training in diagnosing faults with, servicing, repairing, modifying or dismantling scheme vehicles;
+}
+
+c2021a00054-sch-1-sec-57bc-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bc;
+  logic: Deontic;
+  operator: must;
+  summary: Imposes a duty on RTOs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: providing a course (an RTO course) in Australia;
+  @action: RTO must provide a course in Australia;
+}
+
+c2021a00054-sch-1-sec-57bd-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bd-ss-3;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Defines an automated driving system;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57be-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57be;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Data provider is a scheme information supplier;
+  @action: Data provider is an Australian repairer or RTO;
+}
+
+c2021a00054-sch-1-sec-57be-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57be;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Australian repairer or RTO is a person carrying on a business;
+  @action: Person carrying on a business is a data provider;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: Defines terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-2-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires specific systems to be installed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Safety information, for a scheme vehicle...;
+  @action: The vehicle must provide the required safety information;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-2-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines the scope of safety information during vehicle operation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Safety information, for a scheme vehicle...;
+  @action: The safety information is relevant during vehicle operation;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-2-logic-22 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-2;
+  logic: LTL;
+  operator: everywhere;
+  summary: Applies to all vehicles subject to the scheme;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Safety information, for a scheme vehicle...;
+  @action: The safety information applies everywhere in the vehicle;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-2-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-2;
+  logic: Diffusion;
+  operator: throughout;
+  summary: Defines the scope of safety information throughout the vehicle;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Safety information, for a scheme vehicle...;
+  @action: The safety information is relevant throughout the vehicle;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-2-logic-24 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-2;
+  logic: CogAI;
+  operator: for;
+  summary: Defines the scope of safety information for specific systems;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Safety information, for a scheme vehicle...;
+  @action: The safety information is relevant for the hydrogen system, high voltage system, hybrid system, and electric propulsion system;
+}
+
+c2021a00054-sch-1-sec-57bf-ss-3-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bf-ss-3;
+  logic: Deontic;
+  operator: prescribes;
+  summary: Imposes an obligation on the state to provide security information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57bg-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57bg;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide scheme information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to supply scheme information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide scheme information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-3-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must supply scheme information for a nominated period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide scheme offer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-5-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide scheme information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), this subsection covers...;
+}
+
+c2021a00054-sch-1-sec-57ca-ss-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ca-ss-5;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Classify scheme vehicles by make, model and year;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (i) of that particular make, model and year;;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-1-logic-33 {
+  activation: 0.9000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Request for supply of scheme information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Australian repairer has a need to access the scheme information;
+  @action: Data provider must supply scheme information;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-1-logic-34 {
+  activation: 0.7000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Request for supply of scheme information occurs within a specific time frame;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Australian repairer or scheme RTO requests the data provider to supply the scheme information in writing, and pays or offers to pay the scheme price;
+  @action: The request for supply of scheme information occurs during a specific time frame;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-1-logic-35 {
+  activation: 0.6000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Request for supply of scheme information implies that data provider must supply scheme information;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If the Australian repairer or scheme RTO requests the data provider to supply the scheme information, then the data provider must supply the scheme information;
+  @action: The request for supply of scheme information implies that the data provider must supply the scheme information;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-1-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-1;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Request for supply of scheme information spreads to other parties;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: If the Australian repairer or scheme RTO requests the data provider to supply the scheme information, then other parties may also request the data provider to supply the scheme information;
+  @action: The request for supply of scheme information spreads to other parties;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-1-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-1;
+  logic: CogAI;
+  operator: Inference;
+  summary: Request for supply of scheme information can be inferred from other information;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: If the Australian repairer or scheme RTO requests the data provider to supply the scheme information, then it can be inferred that the request is related to a specific make, model and year of scheme vehicle;
+  @action: The request for supply of scheme information can be inferred from other information;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must supply scheme information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide scheme information on request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-3-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines the period covered by this subsection;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) starts when (at the payment or offer time) the Australian repairer or scheme RTO pays, or offers to pay, the scheme price, or another agreed price, for the scheme information;;
+  @action: (b) in the circumstances described in column 1 of an item of the following table, ends at the time described in column 2 of that item.;
+}
+
+c2021a00054-sch-1-sec-57cb-ss-3-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cb-ss-3;
+  logic: LTL;
+  operator: during;
+  summary: Defines the period covered by this subsection;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) starts when (at the payment or offer time) the Australian repairer or scheme RTO pays, or offers to pay, the scheme price, or another agreed price, for the scheme information;;
+  @action: (b) in the circumstances described in column 1 of an item of the following table, ends at the time described in column 2 of that item.;
+}
+
+c2021a00054-sch-1-sec-57cc-ss-2-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cc-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of terms and conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Contract contains prohibited term or condition;
+  @action: Cannot enter into contract with such term or condition;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-1-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to respect third party's copyright.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (3) applies if...;
+  @action: ...the supply constitutes or results in an infringement of the copyright of the third party claimant;;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Infringement occurs during supply of scheme information.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (3) applies if...;
+  @action: ...the supply constitutes or results in an infringement of the copyright of the third party claimant;;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: Infringement occurs during supply of scheme information.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (3) applies if...;
+  @action: ...the supply constitutes or results in an infringement of the copyright of the third party claimant;;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-2;
+  logic: Diffusion;
+  operator: through;
+  summary: Infringement occurs through supply of scheme information.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (3) applies if...;
+  @action: ...the supply constitutes or results in an infringement of the copyright of the third party claimant;;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-2;
+  logic: CogAI;
+  operator: through;
+  summary: Infringement occurs through supply of scheme information.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (3) applies if...;
+  @action: ...the supply constitutes or results in an infringement of the copyright of the third party claimant;;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-3-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-3;
+  logic: Deontic;
+  operator: OBLIGES;
+  summary: Imposes obligation on data provider;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: data provider must pay compensation;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-4-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57cd-ss-5-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57cd-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide compensation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Data provider required to supply scheme information;
+  @action: Pay compensation to third party claimant;
+}
+
+c2021a00054-sch-1-sec-57da-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57da;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide separate safety and security information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: reasonable grounds based on information provided by the Australian repairer or scheme RTO;
+  @action: supply safety and security information for a scheme vehicle;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: DescriptionLogic;
+  operator: HasCondition;
+  summary: Conditions for supplying safety and security information;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: there are reasonable grounds, based on information provided by the Australian repairer or scheme RTO;
+  @action: supplying safety and security information for a scheme vehicle;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: Declaration requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the Australian repairer or scheme RTO has provided the required declaration, or declarations, covered by subsection (3) in relation to that vehicle;
+  @action: declare the required information;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: LinearLogic;
+  operator: And;
+  summary: Combination of conditions for supplying safety and security information;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: there are reasonable grounds, based on information provided by the Australian repairer or scheme RTO;
+  @action: supplying safety and security information for a scheme vehicle;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: DescriptionLogic;
+  operator: HasCondition;
+  summary: Declaration requirement;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: the Australian repairer or scheme RTO has provided the required declaration, or declarations, covered by subsection (3) in relation to that vehicle;
+  @action: declare the required information;
+}
+
+c2021a00054-sch-1-sec-57db-ss-1-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-1;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Penalty for non-compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the data provider must not supply scheme information under this Part that is, or includes, safety and security information for a scheme vehicle of a particular make, model and year;
+  @action: supplying safety and security information for a scheme vehicle;
+}
+
+c2021a00054-sch-1-sec-57db-ss-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The individual is a fit and proper person to access the safety and security information.;
+  @action: The individual must access the safety and security information.;
+}
+
+c2021a00054-sch-1-sec-57db-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-2;
+  logic: AllenInterval;
+  operator: During;
+  summary: Access must occur during business hours.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The individual accesses the safety and security information during their business hours.;
+  @action: The access occurs during business hours.;
+}
+
+c2021a00054-sch-1-sec-57db-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to confirm authorization and vehicle ID;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57db-ss-4-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-4;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Individual meets prescribed safety and security criteria.;
+  @action: Individual is a fit and proper person to access information.;
+}
+
+c2021a00054-sch-1-sec-57db-ss-6-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide personal information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57db-ss-7-logic-64 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57db-ss-7;
+  logic: Deontic;
+  operator: prescribe;
+  summary: Imposes a duty on the scheme rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dc-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dc-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dc-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dc-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dc-ss-3-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dc-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Section administration is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dd-ss-1-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dd-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must store sensitive information in Australia.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dd-ss-2-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dd-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits storing sensitive information outside Australia.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57dd-ss-3-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dd-ss-3;
+  logic: Deontic;
+  operator: not do;
+  summary: Prohibition of accessing sensitive information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A person must not...;
+  @action: ...enable the sensitive information to be accessed outside Australia.;
+}
+
+c2021a00054-sch-1-sec-57dd-ss-3-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dd-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between action and restriction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A person must not...;
+  @action: ...do anything that might reasonably enable the sensitive information to be accessed outside Australia.;
+}
+
+c2021a00054-sch-1-sec-57dd-ss-3-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57dd-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication between action and consequence;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) A person must not...;
+  @action: ...enable the sensitive information to be accessed outside Australia.;
+}
+
+c2021a00054-sch-1-sec-57de-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57de-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide records of access;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57de-ss-2-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57de-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide record of security information supply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57de-ss-2-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57de-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: During the 5-year period after supply;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The data provider must keep a record...;
+}
+
+c2021a00054-sch-1-sec-57eb-logic-76 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eb;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-1-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If the initiating party wishes to initiate action...;
+  @action: the initiating party must give written notice...;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-2-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must try to resolve the dispute.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-3-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide mediation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If the parties cannot agree how to resolve the dispute within 2 business days...;
+  @action: Either party may refer the matter to a mediator for mediation under this Division.;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-3-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Dispute must be referred to mediator after 2 business days;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If the parties cannot agree how to resolve the dispute within 2 business days...;
+  @action: Either party may refer the matter to a mediator for mediation under this Division.;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-3-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-3;
+  logic: LTL;
+  operator: >=;
+  summary: Dispute must be referred to mediator after 2 business days;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) If the parties cannot agree how to resolve the dispute within 2 business days...;
+  @action: Either party may refer the matter to a mediator for mediation under this Division.;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-4-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to request mediator nomination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-5-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Party must nominate a mediator.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Request for mediation made under subsection (4);
+  @action: Mediator nominated within 2 business days;
+}
+
+c2021a00054-sch-1-sec-57ed-ss-5-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ed-ss-5;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Timeframe for nominating a mediator;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Within 2 business days after request;
+  @action: Mediator nominated within specified timeframe;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-1-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: May decide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-3-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to conduct mediation in Australia.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Unless the mediation is conducted using the technology referred to in subsection (4),;
+  @action: the mediation must be conducted in Australia.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-3-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Mediation must occur after specified technology is used.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Unless the mediation is conducted using the technology referred to in subsection (4),;
+  @action: the mediation must be conducted in Australia.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-3;
+  logic: LTL;
+  operator: <=;
+  summary: Mediation may occur before specified technology is used.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Unless the mediation is conducted using the technology referred to in subsection (4),;
+  @action: the mediation must be conducted in Australia.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-3;
+  logic: Diffusion;
+  operator: AND;
+  summary: Mediation process is related to legal proceedings and technology use.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Unless the mediation is conducted using the technology referred to in subsection (4),;
+  @action: the mediation must be conducted in Australia.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-3-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-3;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Mediation process is a type of artificial intelligence application.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Unless the mediation is conducted using the technology referred to in subsection (4),;
+  @action: the mediation must be conducted in Australia.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-4-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Mediation may be conducted using technology allowing remote participation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-4-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the time period when mediation can be conducted remotely.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-5-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must attend mediation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-6-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must attend mediation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the party is represented at the mediation by a person who has the authority to enter into an agreement...;
+  @action: The party must attend mediation.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-6-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must participate in mediation using technology;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the party, or the party’s authorised representative mentioned in paragraph (a), participates in the mediation...;
+  @action: The party must participate in mediation using technology.;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-7-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must try to resolve the dispute.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ef-ss-8-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ef-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to advise;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eg-ss-1-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eg-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to resolve dispute within 30 days.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eg-ss-2-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eg-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Mediator's obligation to terminate mediation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eg-ss-3-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eg-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to terminate mediation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eg-ss-4-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eg-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to issue a certificate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eg-ss-5-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eg-ss-5;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide a copy of the certificate.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eh-ss-1-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eh-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to pay mediation costs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eh-ss-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eh-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must pay own costs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57eh-ss-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57eh-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: States are obligated to pay mediation costs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57fb-ss-1-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57fb-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: The scheme adviser has certain functions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57fb-ss-1-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57fb-ss-1;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: The scheme adviser's functions are defined in the Act.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57fb-ss-2-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57fb-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose contract terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Contract terms are notified to the scheme adviser;
+  @action: Information is not confidential;
+}
+
+c2021a00054-sch-1-sec-57fb-ss-3-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57fb-ss-3;
+  logic: Deontic;
+  operator: has;
+  summary: Possession of power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57fb-ss-4-logic-111 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57fb-ss-4;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Section 34C exemption;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 34C of the Acts Interpretation Act 1901;
+  @action: Report is exempt from Section 34C;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Division applies to alleged contraventions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Division 2A of Part IVB;
+  @action: in relation to an alleged contravention of a civil penalty provision;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-1-logic-113 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-1;
+  logic: AllenInterval;
+  operator: applies;
+  summary: Division applies over time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Division 2A of Part IVB;
+  @action: in relation to an alleged contravention of a civil penalty provision over time;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-1-logic-114 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-1;
+  logic: LTL;
+  operator: applies;
+  summary: Division applies in sequence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Division 2A of Part IVB;
+  @action: in relation to an alleged contravention of a civil penalty provision in sequence;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-1-logic-115 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Division applies to specific provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Division 2A of Part IVB;
+  @action: in relation to an alleged contravention of a civil penalty provision mentioned in an item in the table;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-1-logic-116 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Division applies to specific provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) in the same way in which it applies in relation to an alleged contravention of a civil penalty provision of an industry code (within the meaning of that Part);
+  @action: in relation to an alleged contravention of a civil penalty provision of an industry code;
+}
+
+c2021a00054-sch-1-sec-57gb-ss-2-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gb-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Forbids specified contraventions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) For the purposes of the application...;
+  @action: ...the penalty to be specified in an infringement notice...;
+}
+
+c2021a00054-sch-1-sec-57gc-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gc;
+  logic: Deontic;
+  operator: can;
+  summary: States and Territories can operate concurrently.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57gd-ss-2-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gd-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Just terms requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The provision has no effect to the extent (if any) to which its operation would result in the acquisition of property...;
+  @action: ...from a person otherwise than on just terms.;
+}
+
+c2021a00054-sch-1-sec-57gd-ss-2-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gd-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap with Constitution paragraph;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The provision has no effect to the extent (if any) to which its operation would result in the acquisition of property...;
+  @action: ...from a person otherwise than on just terms.;
+}
+
+c2021a00054-sch-1-sec-57gd-ss-2-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gd-ss-2;
+  logic: LTL;
+  operator: Contains;
+  summary: Temporal containment with Constitution paragraph;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The provision has no effect to the extent (if any) to which its operation would result in the acquisition of property...;
+  @action: ...from a person otherwise than on just terms.;
+}
+
+c2021a00054-sch-1-sec-57gd-ss-2-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gd-ss-2;
+  logic: Diffusion;
+  operator: Implication;
+  summary: Just terms implication;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The provision has no effect to the extent (if any) to which its operation would result in the acquisition of property...;
+  @action: ...from a person otherwise than on just terms.;
+}
+
+c2021a00054-sch-1-sec-57gd-ss-2-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57gd-ss-2;
+  logic: CogAI;
+  operator: Classification;
+  summary: Just terms classification;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The provision has no effect to the extent (if any) to which its operation would result in the acquisition of property...;
+  @action: ...from a person otherwise than on just terms.;
+}
+
+c2021a00054-sch-1-sec-57ge-ss-1-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ge-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to make rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-57ge-ss-2-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57ge-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) To avoid doubt, the rules may not do the following:;
+}
+
+c2021a00054-sch-1-sec-3-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Insertion requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The text requires insertion before 'This Act';
+  @action: There is an obligation to insert '(1)';
+}
+
+c2021a00054-sch-1-sec-9-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Omit 'or IVBA', substitute ', IVBA or IVE';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-9-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: AllenInterval;
+  operator: >;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-10-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval;
+  @action: Undertaking;
+}
+
+c2021a00054-sch-1-sec-11-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires specification of penalty units;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-12-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires specification of penalty units;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-16-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-20-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting ‘or IVBA’ and substituting ‘, IVBA or IVE’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-22-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2021a00054-sch-1-sec-26-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits the use of 'and';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Omit ‘and’, substitute ‘or’.;
+}
+
+c2021a00054-sch-1-sec-27-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: Deontic;
+  operator: add;
+  summary: Addition of scheme information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

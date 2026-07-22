@@ -1,0 +1,755 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Add “and”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of paragraph 12(1)(a)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1-norm",
+        "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4622e58c3fbc5e2f10d79b45ea8739c9239597058887a7f6cecd6807054cd167",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Add ‘and’.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding to a list",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add",
+      "cml:premiseText": "The list must be updated."
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Subsection 21(7)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-10-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Cessation of staff-elected Director and deputy upon commencement of Schedule item 2 or 5.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Cessation of staff-elected Director and deputy"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11-norm",
+        "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "233dae0b862d787c76d014c78b19ca079747a1c1eda6b8467b110b84d87d1d28",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to cease upon commencement of Schedule item 2 or 5.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Paragraph 12(1)(b)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Omit “or staff-elected Director”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 12(4)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a62bcb21709e0b542cb8e554f571941c3ab27a35cc8eb7aa1ee47a3c30a2c275",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 12(4A)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Sections 13A and 13B"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "aa54a5a37531ad05c3903c3077d6bfe3d75b8e3bd99ef607a42b3070b4990cc0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 17(1A)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Add “or”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 At the end of subparagraph 18(2)(a)(ii)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "029b70654b086ae0db532f39eaa0072036bb63c2e04f8f7405073b83325b8c9a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Paragraph 18(2)(aa)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Subsection 18(3)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.5",
+      "skos:note": "Cites this Act as the Australian Broadcasting Corporation Amendment Act 2006.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4caea02daac0c9a8bef8974015fe867fbe30e10ebddbad45cccca0e603586c00",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Table of sections and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d23f7ffd714b61f871d6fecd00be20170f6c9ff45b2b3a5a748dbbe338eee61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 June 2006"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-3"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-1"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Note on table expansion",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 June 2006"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24879bb065506bafb856ee8d938440ab7ea9b8e5e0a18b7a3627f12c9ecbf7e7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-15-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-15"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c980fffb09f2a407258b1754f7e3ca3d52b17b4f4317a73c7d44036a362a46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Defines the effective date of Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "211c3938f5e4282ab861031d982477187f2b0f47d8afe9459822e71dab6082e5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-broadcasting-corporation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Amendments to Acts specified in a Schedule",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "australian-broadcasting-corporation-amendment-act-2006.pdf",
+      "asserts": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "608ff0d9999c7428d7699666117ef2a05836db52e5f5dc72a5d7ce8dfd65f70d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-broadcasting-corporation-amendment-act-2006#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-broadcasting-corporation-amendment-act-2006-sec-3"
+    },
+    {
+      "@id": "doc:au/c2006a00049",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Broadcasting Corporation Act 1983, and for related purposes",
+      "dc:identifier": [
+        "C2006A00049",
+        "No. 49 of 2006"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Broadcasting Corporation Amendment Act 2006"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2006A00049/latest/downloads",
+        "australian-broadcasting-corporation-amendment-act-2006.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

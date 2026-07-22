@@ -1,0 +1,345 @@
+# CogAI proposed logic-routing chunks — Royal Commissions Amendment (Protection of Information) Act 2021
+# Machine-derived; every chunk remains cml:Proposed.
+
+royal-commissions-amendment-protection-of-information-act-2021-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Royal Commissions Amendment (Protection of Information) Act 2021.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: add;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The list must be updated.;
+  @action: Add ‘or’.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Replacement;
+  summary: Replace obligation words;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘shall’ (wherever occurring);
+  @action: Substitute ‘must’;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to give direction under subsection (3);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5a;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits admissible evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to protect information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies to information if:;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Information is protected during its treatment as confidential;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (d) the information was treated as confidential by the Commission at all times after being given to the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-1;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on disclosure of protected information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the information contains any of the following:;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-1;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission to treat information as confidential;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the information directly or indirectly identifies the natural person who gave the information, or on whose behalf the information was given;;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on natural persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Section 6OE applies:;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Applies to the time of information disclosure;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Section 6OE applies: (a) in all cases—in relation to the natural person who gave the information to the Commission, as if the information were a statement or disclosure made by that person at a private session for the Commission;;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-2;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Applies to the natural persons involved;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Section 6OE applies: (a) in all cases—in relation to the natural person who gave the information to the Commission, as if the information were a statement or disclosure made by that person at a private session for the Commission;;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on natural persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Section 6OE applies: (b) if the information was given to the Commission on behalf of another natural person—in relation to the other natural person as if the information were a statement or disclosure made on behalf of that other person at a private session for the Commission;;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-3a;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies in relation to information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3A) Section 6OJ;
+  @action: as if it were information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-16 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-4;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to the information as if it were a record.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: Section 6OM applies in relation to the information.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-17 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-4;
+  logic: AllenInterval;
+  operator: applies;
+  summary: Temporal interval applies.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-4;
+  logic: LTL;
+  operator: applies;
+  summary: Temporal interval applies.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-19 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-4;
+  logic: Diffusion;
+  operator: applies;
+  summary: Information diffusion applies.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6op-ss-4;
+  logic: CogAI;
+  operator: applies;
+  summary: Artificial intelligence applies.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: obliges;
+  summary: Directs a Royal Commission to follow certain rules.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A Royal Commission is established.;
+  @action: The Royal Commission must follow the rules.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applies to a direction given by a Royal Commission on or after the commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A direction is given by a Royal Commission on or after the commencement.;
+  @action: The direction must be followed by the Royal Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applies to information obtained, evidence taken and documents and things received by a Royal Commission before, on or after the commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information is obtained, evidence taken and documents and things received by a Royal Commission before, on or after the commencement.;
+  @action: The information must be followed by the Royal Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applies to a statement or disclosure made, or a document or other thing produced on or after the commencement of this item at, or for the purposes of, a private session.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A statement is made or a document is produced on or after the commencement.;
+  @action: The statement must be followed by the Royal Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applies to information given before, on or after the commencement of this item at, or for the purposes of, a private session that is established before that commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information is given before, on or after the commencement.;
+  @action: The information must be followed by the Royal Commission.;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: add;
+  summary: Adding information is an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Amendment applies to certain requests under the Freedom of Information Act 1982 after a specific report is submitted.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}

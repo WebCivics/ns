@@ -1,0 +1,798 @@
+{
+  "version": 6,
+  "sourceSha256": "2afcf2155fda7316328afe136d136eae62e9afe7087c0b6b6126857f822b34db",
+  "model": "llama3.2:3b-instruct-q4_K_M",
+  "segmentConfig": {
+    "maxSegmentChars": 8000,
+    "overlapChars": 500,
+    "maxItems": 1
+  },
+  "completed": {
+    "4c8e9999fcc3fa251083faf4": {
+      "keys": [
+        "sec-1"
+      ],
+      "characters": 127,
+      "results": {
+        "sec-1": {
+          "deonticType": "Undertaking",
+          "summary": "Citation of the Act",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "76f0654536714c45519a341c": {
+      "keys": [
+        "sec-2"
+      ],
+      "characters": 308,
+      "results": {
+        "sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Commencement rules",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "69e394434aa23226543b9975": {
+      "keys": [
+        "sec-1-2"
+      ],
+      "characters": 104,
+      "results": {
+        "sec-1-2": {
+          "deonticType": "Undertaking",
+          "summary": "The day this Act receives the Royal Assent.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "f44a0da0c3c9a6230b8a7687": {
+      "keys": [
+        "sec-12"
+      ],
+      "characters": 0,
+      "results": {
+        "sec-12": {
+          "deonticType": "Undertaking",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "16f636576a4c77369c48459a": {
+      "keys": [
+        "sec-2-2"
+      ],
+      "characters": 228,
+      "results": {
+        "sec-2-2": {
+          "deonticType": "Undertaking",
+          "summary": "Conditional commencement of provisions",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "AllenInterval",
+              "operator": "during",
+              "summary": "Temporal interval relation",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "54a2ab0c43fd63902c28a4af": {
+      "keys": [
+        "sec-1-3"
+      ],
+      "characters": 359,
+      "results": {
+        "sec-1-3": {
+          "deonticType": "Undertaking",
+          "summary": "Note on table limitations and amendments",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "881ecc1dcd54b52bcf45a38f": {
+      "keys": [
+        "sec-3"
+      ],
+      "characters": 278,
+      "results": {
+        "sec-3": {
+          "deonticType": "Undertaking",
+          "summary": "Schedules for amendment or repeal of Acts",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "4758e459eae44425d3e5ac06": {
+      "keys": [
+        "sch-1-sec-1"
+      ],
+      "characters": 102,
+      "results": {
+        "sch-1-sec-1": {
+          "deonticType": "Obligation",
+          "summary": "Substitute phrase in defence service requirement",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Substitution",
+              "summary": "Replace text with alternative",
+              "premise": "Text to be modified",
+              "conclusion": "Modified text",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "4406f87dd87e5213f82448e2": {
+      "keys": [
+        "sch-1-sec-2"
+      ],
+      "characters": 31,
+      "results": {
+        "sch-1-sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Repeal section and substitute with new content.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "40f12d6bf82c5040dbc2c0e9": {
+      "keys": [
+        "sch-1-sec-23-ss-1"
+      ],
+      "characters": 220,
+      "results": {
+        "sch-1-sec-23-ss-1": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Person must have completed relevant defence service to satisfy the defence service requirement.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "has",
+              "summary": "Has the defence service requirement?",
+              "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+              "conclusion": "Yes",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": ">=",
+              "summary": "The completion of relevant defence service is a temporal interval that must be greater than or equal to the current time.",
+              "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+              "conclusion": "Yes",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "<=",
+              "summary": "The completion of relevant defence service is a temporal interval that must be less than or equal to the current time plus some fixed interval.",
+              "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+              "conclusion": "Yes",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Diffusion",
+              "operator": "iff",
+              "summary": "The completion of relevant defence service is equivalent to the satisfaction of the defence service requirement.",
+              "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+              "conclusion": "Yes",
+              "confidence": 1.0
+            },
+            {
+              "logic": "CogAI",
+              "operator": "has",
+              "summary": "The state of mind required to satisfy the defence service requirement is a cognitive state.",
+              "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+              "conclusion": "Yes",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "b77930f55cb3cead18c14559": {
+      "keys": [
+        "sch-1-sec-23-ss-2"
+      ],
+      "characters": 535,
+      "results": {
+        "sch-1-sec-23-ss-2": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Relative satisfies defence service requirement for visa purposes.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Satisfies",
+              "summary": "Relative must satisfy the defence service requirement.",
+              "premise": "(2) If...",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 0.5
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "During",
+              "summary": "Relative completed relevant defence service during the same period as the defence person.",
+              "premise": "(b) the defence person has completed relevant defence service;",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 0.5
+            },
+            {
+              "logic": "LTL",
+              "operator": "Until",
+              "summary": "Relative's visa is valid until the defence person's visa expires.",
+              "premise": "(d) the relative holds a visa of that kind because the relative is a member of the family unit of the defence person;",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Deontic",
+              "operator": "MustProvide",
+              "summary": "Relative must provide proof of completion of relevant defence service.",
+              "premise": "(2) If...",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Argumentation",
+              "operator": "Implication",
+              "summary": "Relative's visa is granted if they satisfy the defence service requirement.",
+              "premise": "(2) If...",
+              "conclusion": "the relative holds a visa of that kind because the relative is a member of the family unit of the defence person.",
+              "confidence": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "9a4474363fd8b09ed1ec1188": {
+      "keys": [
+        "sch-1-sec-23-ss-3"
+      ],
+      "characters": 692,
+      "results": {
+        "sch-1-sec-23-ss-3": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Relative satisfies defence service requirement if certain conditions met.",
+          "conditions": [
+            "the relative held a visa of that kind because the relative was a member of the family unit of the defence person"
+          ],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "if-then",
+              "summary": "Relative satisfies obligation if conditions met.",
+              "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": ">=",
+              "summary": "Relative's visa status starts before defence person's death.",
+              "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+              "conclusion": "the relative's visa status started before the defence person's death.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "<=",
+              "summary": "Relative's visa status ends after defence person's death.",
+              "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+              "conclusion": "the relative's visa status ended after the defence person's death.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "if-then",
+              "summary": "Relative satisfies obligation if certain conditions met.",
+              "premise": "the relative was a member of the family unit of the defence person when the defence person was granted the visa",
+              "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "=",
+              "summary": "Relative's visa status equals their family unit membership.",
+              "premise": "the relative was a member of the family unit of the defence person when the defence person was granted the visa",
+              "conclusion": "the relative is a member of the family unit of the defence person.",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "bc867f29b29405c555a043f0": {
+      "keys": [
+        "sch-1-sec-23-ss-4"
+      ],
+      "characters": 1414,
+      "results": {
+        "sch-1-sec-23-ss-4": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "has",
+              "summary": "The person has completed relevant defence service.",
+              "premise": "(4) In this section:",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "DescriptionLogic",
+              "operator": "is defined as",
+              "summary": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+              "premise": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous);",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "has",
+              "summary": "The person is entitled to be paid for duty.",
+              "premise": "(b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "has",
+              "summary": "The person is medically unfit for service.",
+              "premise": "(c) the person: (i) was discharged from service undertaken in one of the Permanent Forces or the Reserves as medically unfit for that service; and (ii) became so unfit because of service undertaken in any of the Permanent Forces or the Reserves.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LinearLogic",
+              "operator": "and",
+              "summary": "The person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+              "premise": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous); or (b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "DescriptionLogic",
+              "operator": "is defined as",
+              "summary": "A person undertakes service in the Permanent Forces or the Reserves only if they are appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.",
+              "premise": "service: a person undertakes service in the Permanent Forces or the Reserves only if the person is appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "7487bd8c61bdbd76f357ab2f": {
+      "keys": [
+        "sch-1-sec-3"
+      ],
+      "characters": 427,
+      "results": {
+        "sch-1-sec-3": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Amendments apply in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "obligation",
+              "summary": "Obligation to apply amendments in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "classifications": {
+    "sec-2-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Conditional commencement of provisions",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "AllenInterval",
+          "operator": "during",
+          "summary": "Temporal interval relation",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-23-ss-1": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Person must have completed relevant defence service to satisfy the defence service requirement.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "has",
+          "summary": "Has the defence service requirement?",
+          "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+          "conclusion": "Yes",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": ">=",
+          "summary": "The completion of relevant defence service is a temporal interval that must be greater than or equal to the current time.",
+          "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+          "conclusion": "Yes",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "<=",
+          "summary": "The completion of relevant defence service is a temporal interval that must be less than or equal to the current time plus some fixed interval.",
+          "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+          "conclusion": "Yes",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Diffusion",
+          "operator": "iff",
+          "summary": "The completion of relevant defence service is equivalent to the satisfaction of the defence service requirement.",
+          "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+          "conclusion": "Yes",
+          "confidence": 1.0
+        },
+        {
+          "logic": "CogAI",
+          "operator": "has",
+          "summary": "The state of mind required to satisfy the defence service requirement is a cognitive state.",
+          "premise": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.",
+          "conclusion": "Yes",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal section and substitute with new content.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Substitute phrase in defence service requirement",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Substitution",
+          "summary": "Replace text with alternative",
+          "premise": "Text to be modified",
+          "conclusion": "Modified text",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-1": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Citation of the Act",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-1-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Note on table limitations and amendments",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-1-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "The day this Act receives the Royal Assent.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-3": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Amendments apply in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "obligation",
+          "summary": "Obligation to apply amendments in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Commencement rules",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Schedules for amendment or repeal of Acts",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-23-ss-3": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Relative satisfies defence service requirement if certain conditions met.",
+      "conditions": [
+        "the relative held a visa of that kind because the relative was a member of the family unit of the defence person"
+      ],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "if-then",
+          "summary": "Relative satisfies obligation if conditions met.",
+          "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": ">=",
+          "summary": "Relative's visa status starts before defence person's death.",
+          "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+          "conclusion": "the relative's visa status started before the defence person's death.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "<=",
+          "summary": "Relative's visa status ends after defence person's death.",
+          "premise": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person",
+          "conclusion": "the relative's visa status ended after the defence person's death.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "if-then",
+          "summary": "Relative satisfies obligation if certain conditions met.",
+          "premise": "the relative was a member of the family unit of the defence person when the defence person was granted the visa",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "=",
+          "summary": "Relative's visa status equals their family unit membership.",
+          "premise": "the relative was a member of the family unit of the defence person when the defence person was granted the visa",
+          "conclusion": "the relative is a member of the family unit of the defence person.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-23-ss-2": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Relative satisfies defence service requirement for visa purposes.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Satisfies",
+          "summary": "Relative must satisfy the defence service requirement.",
+          "premise": "(2) If...",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 0.5
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "During",
+          "summary": "Relative completed relevant defence service during the same period as the defence person.",
+          "premise": "(b) the defence person has completed relevant defence service;",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 0.5
+        },
+        {
+          "logic": "LTL",
+          "operator": "Until",
+          "summary": "Relative's visa is valid until the defence person's visa expires.",
+          "premise": "(d) the relative holds a visa of that kind because the relative is a member of the family unit of the defence person;",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Deontic",
+          "operator": "MustProvide",
+          "summary": "Relative must provide proof of completion of relevant defence service.",
+          "premise": "(2) If...",
+          "conclusion": "the relative satisfies the defence service requirement for the purposes of section 21.",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Argumentation",
+          "operator": "Implication",
+          "summary": "Relative's visa is granted if they satisfy the defence service requirement.",
+          "premise": "(2) If...",
+          "conclusion": "the relative holds a visa of that kind because the relative is a member of the family unit of the defence person.",
+          "confidence": 0.5
+        }
+      ]
+    },
+    "sch-1-sec-23-ss-4": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "has",
+          "summary": "The person has completed relevant defence service.",
+          "premise": "(4) In this section:",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "DescriptionLogic",
+          "operator": "is defined as",
+          "summary": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+          "premise": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous);",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "has",
+          "summary": "The person is entitled to be paid for duty.",
+          "premise": "(b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "has",
+          "summary": "The person is medically unfit for service.",
+          "premise": "(c) the person: (i) was discharged from service undertaken in one of the Permanent Forces or the Reserves as medically unfit for that service; and (ii) became so unfit because of service undertaken in any of the Permanent Forces or the Reserves.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LinearLogic",
+          "operator": "and",
+          "summary": "The person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+          "premise": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous); or (b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "DescriptionLogic",
+          "operator": "is defined as",
+          "summary": "A person undertakes service in the Permanent Forces or the Reserves only if they are appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.",
+          "premise": "service: a person undertakes service in the Permanent Forces or the Reserves only if the person is appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-12": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    }
+  }
+}

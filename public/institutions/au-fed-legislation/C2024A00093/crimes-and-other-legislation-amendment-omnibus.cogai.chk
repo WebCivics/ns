@@ -1,0 +1,3670 @@
+# CogAI proposed logic-routing chunks — Crimes and Other Legislation Amendment (Omnibus No. 1) Act 2024
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-and-other-legislation-amendment-omnibus-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Crimes and Other Legislation Amendment (Omnibus No. 1) Act 2024.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sec-5-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act begins on the specified date.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: after;
+  summary: Temporal relation after warrant expires;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: warrant expires;
+  @action: power to seize digital asset;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: authorises;
+  summary: Imposes obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: hasObligation;
+  summary: Seizure obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3fa-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3fa;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to seize digital assets.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The executing officer or a constable assisting reasonably suspects...;
+  @action: Authorises the seizing of a digital asset.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3fa-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3fa;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Seizing of digital assets within the scope of the warrant.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The executing officer or a constable assisting reasonably suspects...;
+  @action: The seizing of the digital asset is within the scope of the warrant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3fa-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3fa;
+  logic: LTL;
+  operator: Recurring;
+  summary: Recurring trace of seizing digital assets under certain conditions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The executing officer or a constable assisting reasonably suspects...;
+  @action: The seizing of the digital asset is part of a recurring trace.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3fa-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3fa;
+  logic: CogAI;
+  operator: Recognise;
+  summary: Recognition of digital assets as evidential material.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The executing officer or a constable assisting reasonably suspects...;
+  @action: The digital asset is recognised as evidential material.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3fa-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3fa;
+  logic: SHACL;
+  operator: Validate;
+  summary: Validation of digital assets against the Proceeds of Crime Act 2002.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The executing officer or a constable assisting reasonably suspects...;
+  @action: The digital asset is validated against the Proceeds of Crime Act 2002.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-8-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting certain words;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-12-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: Permit;
+  summary: Insertion of digital asset seizure clause;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-12-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Requires relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-13-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Permit;
+  summary: Inserts 'or a thing that suggests the existence of a digital asset' after 'is a thing that may be seized under the warrant';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-22-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-23-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-25-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: Deontic;
+  operator: is;
+  summary: Existence assertion;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-27-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: Deontic;
+  operator: authorises;
+  summary: Imposes obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-1-logic-19 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to seize digital assets under certain conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Executing officer or person assisting has reasonable suspicion of the existence of a digital asset;
+  @action: Seizing digital asset is obligatory;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-1-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-1;
+  logic: Epistemic;
+  operator: Belief;
+  summary: Belief in the existence of a digital asset requires reasonable suspicion;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: Executing officer or person assisting has reasonable suspicion of the existence of a digital asset;
+  @action: Digital asset exists if there is reasonable suspicion;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-1-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Seizing digital assets under recurring conditions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Executing officer or person assisting reasonably suspects the digital asset to be tainted property, evidential material, or related to an indictable offence;
+  @action: Seizing digital asset is part of a recurring pattern;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-1-logic-22 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-1;
+  logic: Argumentation;
+  operator: Inference;
+  summary: Inferencing the existence of a digital asset from reasonable suspicion;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Executing officer or person assisting has reasonable suspicion of the existence of a digital asset;
+  @action: Digital asset exists if there is reasonable suspicion;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-1-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between seizing digital assets and preventing concealment, loss or destruction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Executing officer or person assisting reasonably suspects that seizing the digital asset is necessary to prevent its concealment, loss or destruction;
+  @action: Seizing digital asset prevents concealment, loss or destruction within a temporal interval;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-228a-ss-2-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Authorisation to use specific items.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-31-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: Deontic;
+  operator: Addition;
+  summary: Adding a new provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-32-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-36-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: INSERTION;
+  summary: Insertion of a phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-37-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-39-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-41-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Deontic;
+  operator: implies;
+  summary: Digital asset existence implies seizure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-42-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Defines carrier and communication in transit.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-42-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for digital assets;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: digital asset means: (a) a digital representation of value or rights (including rights to property), the ownership of which is evidenced cryptographically and that is held and transferred electronically by: (i) a type of distributed ledger technology; or (ii) another distributed cryptographically verifiable data structure;;
+  @action: digital asset;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-42-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for telecommunications facilities;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: telecommunications facility means a facility within the meaning of the Telecommunications Act 1997.;
+  @action: telecommunications facility;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-46-ss-4a-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-4a;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces existing subparagraphs with new ones.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4A) The Crimes Act 1914 has effect as if...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-1-sec-46-ss-4a-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-4a;
+  logic: AllenInterval;
+  operator: Temporal Substitution;
+  summary: Applies substitution to subparagraphs with respect to temporal intervals.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4A) The Crimes Act 1914 has effect as if...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-5-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: modify;
+  summary: Modify the definition of an account;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires digital currency exchange accounts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: MUST Express;
+  summary: Must express balance as specified amount;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: Permits;
+  summary: Grants permission for digital currency exchange.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-2-sec-15-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace value with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-3-sec-3-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-1-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Communications Access Coordinator and Communications Security Coordinator Schedule 4;
+  @action: Communications Security Coordinator means...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Specify persons or bodies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-3-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Specify APS employees;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-3-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-3;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Classify functions or powers;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-4-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-4;
+  logic: Deontic;
+  operator: MUST_SPECIFY;
+  summary: Must specify functions or powers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-4-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-4;
+  logic: DescriptionLogic;
+  operator: SPECIFY;
+  summary: Specify functions or powers;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: Deontic;
+  operator: Restrict;
+  summary: Restricts performance of functions or exercise of powers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...may only perform the functions or exercise the powers specified in that instrument.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Specifies a class of persons or bodies.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...specified in an instrument made under subsection (2).;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Restricts temporal scope.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: LTL;
+  operator: TemporalRestriction;
+  summary: Restricts temporal scope.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: Diffusion;
+  operator: TemporalRestriction;
+  summary: Restricts temporal scope.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-7a-ss-5-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7a-ss-5;
+  logic: CogAI;
+  operator: TemporalRestriction;
+  summary: Restricts temporal scope.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-5-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to substitute Communications Access Coordinator;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-6-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-6;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-8-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-8;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Prohibition of further consultation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-9-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-11-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substituting a new title;
+  @action: Omitting the old title;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-12-logic-62 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits revocation by 'it';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘it has revoked’;
+  @action: Substitute ‘a Communications Access Coordinator has revoked’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-12-logic-63 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: AllenInterval;
+  operator: Temporal Replacement;
+  summary: Replaces 'revoked' with 'has revoked';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit ‘it has revoked’;
+  @action: Substitute ‘a Communications Access Coordinator has revoked’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-12-logic-64 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implicates substitution of 'Communications Access Coordinator' for 'it';
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Omit ‘it has revoked’;
+  @action: Substitute ‘a Communications Access Coordinator has revoked’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-12-logic-65 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Diffuses substitution to related provisions;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit ‘it has revoked’;
+  @action: Substitute ‘a Communications Access Coordinator has revoked’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-15-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-15;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty on the legislative body to omit and substitute.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-16-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-17-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-17;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated terminology.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'The Communications Access Co-ordinator';
+  @action: Substitute with 'A Communications Security Coordinator';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-18-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-18;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-19-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-19;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-21-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-21;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a term with another;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-22-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-22;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace phrase with equivalent obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Obligation requires substitution;
+  @action: New obligation applies;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-24-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-24;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-25-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-25;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the Co-ordinator';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-26-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-26;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-27-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-29-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-29;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of using outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-30-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-30;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-31-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-31;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-32-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-34-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-34;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-35-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text with a required alternative.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-40-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-40;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-42-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-42;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-43-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-43;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-45-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-45;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-49-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-49;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-50-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-50;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-52-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-52;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘The Communications Access Co-ordinator’;
+  @action: substitute ‘A Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-53-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-53;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty to omit the specified term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-56-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-56;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2;
+  logic: Deontic;
+  operator: Specify;
+  summary: Permission to specify persons or bodies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2a-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must specify;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2a-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2a;
+  logic: DescriptionLogic;
+  operator: SPECIFY;
+  summary: Specify APS employees;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2b-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2b;
+  logic: Deontic;
+  operator: MUST_SPECIFY;
+  summary: Must specify functions or powers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2b-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2b;
+  logic: DescriptionLogic;
+  operator: SPECIFY;
+  summary: Specify functions or powers;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: Deontic;
+  operator: Restrict;
+  summary: Restricts performance of functions or exercise of powers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...may only perform the functions or exercise the powers specified in that instrument.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Specifies a class of persons or bodies.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...specified in an instrument.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Restricts temporal scope to that specified in the instrument.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: LTL;
+  operator: TemporalRestriction;
+  summary: Restricts temporal scope to that specified in the instrument.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: Diffusion;
+  operator: TemporalRestriction;
+  summary: Restricts temporal scope to that specified in the instrument.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...in relation to that person or body, or class of persons or bodies.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-62-ss-2c-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-62-ss-2c;
+  logic: Argumentation;
+  operator: RestrictivePremise;
+  summary: Restricts performance of functions or exercise of powers based on an instrument.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2C) A person or body, or a class of persons or bodies...;
+  @action: ...may only perform the functions or exercise the powers specified in that instrument.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-63-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-63;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-65-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-65;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-68-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-68;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-69-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-69;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-70-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-70;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition of specific text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-72-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-72;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Replace outdated language with new phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-73-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-73;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated terminology.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-73-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-73;
+  logic: AllenInterval;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-73-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-73;
+  logic: LTL;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-73-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-73;
+  logic: Diffusion;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-73-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-73;
+  logic: CogAI;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-75-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit specific phrase from text.;
+  @action: Cannot omit specified phrase.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-76-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-76;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-77-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-84-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-84;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the Co-ordinator';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-85-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-85;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-86-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-86;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated terminology.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-86-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-86;
+  logic: AllenInterval;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-86-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-86;
+  logic: LTL;
+  operator: Temporal replacement;
+  summary: Replaces outdated term with new one at specific point in time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-86-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-86;
+  logic: Diffusion;
+  operator: Spread of information;
+  summary: Replaces outdated term with new one through dissemination.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-86-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-86;
+  logic: CogAI;
+  operator: Artificial intelligence application;
+  summary: Replaces outdated term with new one through AI-powered tool.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-87-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-87;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace entity with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-88-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-88;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to substitute "Coordinator" for "Co-ordinator";
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-89-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-89;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-90-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-90;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-91-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-91;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Use of outdated term is prohibited;
+  @action: Omit specified text;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-95-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-95;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-104-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-104;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Omit the Co-ordinator;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-105-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-105;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Insert 'another Communications Access Coordinator' after 'other than';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-107-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-107;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of an outdated term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'the Communications Access Co-ordinator';
+  @action: Substitute with 'a Communications Access Coordinator';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-108-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-108;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-109-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-109;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-110-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-110;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-111-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-111;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-112-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-112;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of outdated title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘the Communications Access Co-ordinator’;
+  @action: Substitute ‘a Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-113-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-113;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-114-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-114;
+  logic: Deontic;
+  operator: SUBST;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘The Communications Access Co-ordinator’;
+  @action: Substitute ‘A Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-115-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-115;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace entity with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-117-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-117;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-118-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-118;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on LegalPerson to substitute 'a Communications Access Coordinator' for 'giving';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-119-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-119;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-122-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-122;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the Co-ordinator';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-123-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-123;
+  logic: Deontic;
+  operator: SUBST;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘The Communications Access Co-ordinator’;
+  @action: Substitute ‘A Communications Access Coordinator’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-125-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-125;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-128-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-128;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-129-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-129;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-130-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-130;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the Coordinator from omitting the new obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The original obligation is omitted.;
+  @action: A new obligation must be substituted.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-130-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-130;
+  logic: AllenInterval;
+  operator: Within;
+  summary: The substitution must occur within a specific time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The plan being received triggers the substitution.;
+  @action: A Communications Access Coordinator must substitute the new obligation within 60 days of receiving the plan.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-130-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-130;
+  logic: Argumentation;
+  operator: Implication;
+  summary: The omission of the old obligation implies the substitution of the new one.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Omitting the old obligation triggers the substitution.;
+  @action: A Communications Access Coordinator must substitute the new obligation within 60 days.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-130-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-130;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: The substitution of the new obligation propagates to all relevant parties.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The plan being received triggers the substitution.;
+  @action: A Communications Access Coordinator must substitute the new obligation within 60 days.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-130-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-130;
+  logic: CogAI;
+  operator: Inference;
+  summary: The substitution of the new obligation is inferred from the omission of the old one.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Omitting the old obligation triggers the substitution.;
+  @action: A Communications Access Coordinator must substitute the new obligation within 60 days.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-132-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-132;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace entity with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-133-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-133;
+  logic: Deontic;
+  operator: omission;
+  summary: Omission of 'the Co-ordinator';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-134-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-134;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-135-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-135;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a term with another term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-137-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-137;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-139-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-139;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-140-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-140;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the Co-ordinator';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-143-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-143;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-144-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-144;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-145-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-145;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-146-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-146;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-147-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-147;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-149-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-149;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace entity with equivalent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-150-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-150;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition on using outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-151-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-151;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-152-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-152;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-156-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-156;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to make the substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-158-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-158;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-159-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-159;
+  logic: Deontic;
+  operator: SUBST;
+  summary: Title substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-162-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-162;
+  logic: Deontic;
+  operator: apply;
+  summary: Obligation to apply amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-163-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-163;
+  logic: AllenInterval;
+  operator: before;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-166-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-166;
+  logic: Deontic;
+  operator: takes;
+  summary: Provisions take effect on commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-168-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-168;
+  logic: Deontic;
+  operator: Continuation;
+  summary: Continues existing power or duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-170-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-170;
+  logic: Deontic;
+  operator: RelatesTo;
+  summary: Relates to the exercise of power or function by a Communications Access Coordinator.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-170-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-170;
+  logic: AllenInterval;
+  operator: During;
+  summary: Applicable during the exercise of power or performance of a function or duty by a Communications Access Coordinator.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-172-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-172;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-173-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-173;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-4-sec-174-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-174;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal continuity;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: Commencement of Schedule;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-1-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits use of 'Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'Crime Commission';
+  @action: Substitute 'Crime Commission (NSW)';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-2-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: Deontic;
+  operator: omission;
+  summary: Omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text to be omitted;
+  @action: Resulting text;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-3-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Omit 'IBAC' and substitute with 'IBAC (Vic.)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-4-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime and Corruption Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-5-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-5;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Prohibition of subparagraph (f)(i);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-6-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-6;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition of using an outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-8-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-8;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition of using outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-9-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Corruption and Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-10-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-11-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-11;
+  logic: Deontic;
+  operator: Omit;
+  summary: Omission of a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'Independent Commission Against Corruption';
+  @action: Replace with 'Independent Commission Against Corruption (NSW)';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-12-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'IBAC';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-13-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-13;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Prohibition of the original paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-14-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of existing titles.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-15-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Corruption and Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-17-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-17;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a definition with a new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-18-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-18;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definitions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-21-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-21;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-21-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-21;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Definition substitution.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-24-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-24;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term with an obligation to be followed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The term Crime Commission (NSW) is defined.;
+  @action: It must be followed.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-24-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-24;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Applies to explicit class/type/subclass hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The definition applies only to the Crime Commission (NSW) term.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-30-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-30;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes a prohibition on the Crime and Corruption Commission (Qld);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-32-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-32;
+  logic: Deontic;
+  operator: Add;
+  summary: Adding a term to a definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-36-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-36;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class/type/subclass hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: IBAC (Vic.) means the Independent Broad-based Anti-corruption Commission established by the IBAC Act (Vic.).;
+  @action: IBAC (Vic.) officer means a person who is an IBAC Officer (within the meaning of the IBAC Act (Vic.)).;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-36-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-36;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Definition of IBAC (Vic.) and IBAC officer;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-38-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-38;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Independent Commission Against Corruption Act (NSW);
+  @action: Independent Commission Against Corruption (NSW);
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-39-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-39;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal existing definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-39-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-39;
+  logic: DescriptionLogic;
+  operator: Substitution;
+  summary: Replace with new definition.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-43-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-43;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines terms for the purpose of clarity and precision;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-43-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-43;
+  logic: Deontic;
+  operator: definition;
+  summary: Establishes a clear understanding of key concepts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-44-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-44;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-44-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-44;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-45-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-45;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'member of the staff of the Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-45-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-45;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for the term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-46-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-46;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with specific scope;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-46-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-46;
+  logic: DescriptionLogic;
+  operator: subclass;
+  summary: Classifies the definition as part of a subclass hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-47-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-47;
+  logic: DescriptionLogic;
+  operator: hasClass;
+  summary: Defines a class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Staff member is covered by an arrangement;
+  @action: Member of staff of Inspector;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-47-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-47;
+  logic: DescriptionLogic;
+  operator: hasPart;
+  summary: Describes the relationship between arrangements and staff members;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Arrangement covers a person;
+  @action: Person is covered by an arrangement;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-48-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-48;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-48-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-48;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Definition substitution;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-49-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-49;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with an obligation to use it correctly;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-49-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-49;
+  logic: DescriptionLogic;
+  operator: subclass;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-50-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-50;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'Crime Commission';
+  @action: Substitute with 'Crime Commission (NSW)';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-51-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-51;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace existing text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-52-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-52;
+  logic: Deontic;
+  operator: omission;
+  summary: Omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-54-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-54;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-55-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-55;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of specific officials;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-57-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-57;
+  logic: Deontic;
+  operator: Replace;
+  summary: Replace officer definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-58-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-58;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-59-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-59;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with an obligation to use it correctly;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-59-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-59;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to the definition of officer within the Corruption, Crime and Misconduct Act (WA);
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-60-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-60;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-61-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-61;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-61-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-61;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-62-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-62;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-62-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-62;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Replace definition with new one.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-65-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-65;
+  logic: Deontic;
+  operator: MUST;
+  summary: Inspector must perform audit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (NSW) is responsible for auditing operations.;
+  @action: The Inspector must audit the operations of the Independent Commission Against Corruption (NSW).;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-65-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-65;
+  logic: Deontic;
+  operator: MUST;
+  summary: Inspector must deal with complaints and misconduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (NSW) is responsible for dealing with complaints and misconduct.;
+  @action: The Inspector must deal with complaints and misconduct on the part of the Independent Commission Against Corruption (NSW) or an officer thereof.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-65-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-65;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Inspector must audit operations within a certain timeframe;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Inspector must audit the operations of the Independent Commission Against Corruption (NSW) for the purpose of monitoring compliance with the law.;
+  @action: The Inspector must audit the operations of the Independent Commission Against Corruption (NSW) at least once per year.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-65-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-65;
+  logic: LTL;
+  operator: >=;
+  summary: Inspector must deal with complaints and misconduct within a certain timeframe;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Inspector must deal with complaints and misconduct on the part of the Independent Commission Against Corruption (NSW) or an officer thereof.;
+  @action: The Inspector must deal with complaints and misconduct within 30 days of receiving a complaint.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-65-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-65;
+  logic: Deontic;
+  operator: MUST;
+  summary: Inspector must assess effectiveness and appropriateness of procedures;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Inspector must assess the effectiveness and appropriateness of the procedures of the Independent Commission Against Corruption (NSW).;
+  @action: The Inspector must assess the effectiveness and appropriateness of the policies and procedures of the Law Enforcement Conduct Commission (NSW).;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-68-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-68;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on using outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-70-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-70;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Monitoring compliance with IBAC Act and other laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-70-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-70;
+  logic: LinearLogic;
+  operator: NAND;
+  summary: Monitoring interaction between IBAC (Vic.) and other integrity bodies to ensure compliance with relevant laws;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-71-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-71;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Corruption and Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition of permitted purpose;
+  @action: Omit 'Corruption and Crime Commission';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-75-logic-246 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-75;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Auditing operations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-76-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-76;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Annual review obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-78-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-78;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-79-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-79;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on using outdated institution name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-80-logic-250 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-80;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commission Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-82-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-82;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-83-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-83;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term with another;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-84-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-84;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'IBAC';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition of prescribed investigation;
+  @action: Omit 'IBAC';
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-86-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-86;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime and Corruption Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-89-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-89;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified law enforcement conduct commission act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-91-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-91;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace outdated law enforcement commission act reference with new one.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-93-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-93;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-94-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-94;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits a specific action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-94-logic-259 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-94;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Replaces an existing definition with a new one.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-96-logic-260 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-96;
+  logic: Deontic;
+  operator: is-a;
+  summary: Defines a specific type of investigation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (SA) is conducting an investigation;
+  @action: The investigation is of this type;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-96-logic-261 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-96;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Defines a subclass of investigations;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Investigation is a type of inquiry;
+  @action: This investigation is a subtype of inquiry;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-98-logic-262 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-98;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commission Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘Independent Commission Against Corruption’;
+  @action: substitute ‘Independent Commission Against Corruption (NSW)’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-98-logic-263 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-98;
+  logic: Deontic;
+  operator: Omit;
+  summary: Removes 'Independent Commission Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘Independent Commission Against Corruption’;
+  @action: substitute ‘Independent Commission Against Corruption (NSW)’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-98-logic-264 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-98;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces 'Independent Commission Against Corruption' with 'Independent Commission Against Corruption (NSW)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (of the definition of relevant offence);
+  @action: substitute ‘Independent Commission Against Corruption (NSW)’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-100-logic-265 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-100;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Crime and Corruption Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-103-logic-266 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-103;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the Inspector;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-106-logic-267 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-106;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Omit specified text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-109-logic-268 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-109;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the Law Enforcement Conduct Commission Act 2016 (NSW);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-110-logic-269 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-110;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-116-logic-270 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-116;
+  logic: Deontic;
+  operator: omission;
+  summary: Omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-121-logic-271 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-121;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide a proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-124-logic-272 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-124;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-127-logic-273 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-127;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-128-logic-274 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-128;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding a new entity to a list is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-135-logic-275 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-135;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The text adds 'or the Inspector of the Independent Commission Against Corruption (SA)' before a reference.;
+  @action: A new element is added to the list.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-135-logic-276 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-135;
+  logic: AllenInterval;
+  operator: addition;
+  summary: Adding to an interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The text adds 'or the Inspector of the Independent Commission Against Corruption (SA)' before a reference in an interval.;
+  @action: A new element is added to the interval.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-135-logic-277 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-135;
+  logic: LTL;
+  operator: addition;
+  summary: Adding to a trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The text adds 'or the Inspector of the Independent Commission Against Corruption (SA)' before a reference in a trace.;
+  @action: A new element is added to the trace.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-135-logic-278 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-135;
+  logic: Diffusion;
+  operator: addition;
+  summary: Adding to a diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The text adds 'or the Inspector of the Independent Commission Against Corruption (SA)' before a reference in a diffusion.;
+  @action: A new element is added to the diffusion.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-135-logic-279 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-135;
+  logic: CogAI;
+  operator: addition;
+  summary: Adding to a knowledge graph;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The text adds 'or the Inspector of the Independent Commission Against Corruption (SA)' before a reference in a knowledge graph.;
+  @action: A new element is added to the knowledge graph.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-137-logic-280 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-137;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-138-logic-281 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-138;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'IBAC';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-139-logic-282 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-139;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-142-logic-283 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-142;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits replacing 'Independent Commission Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-143-logic-284 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-143;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits information sharing between integrity agencies and oversight bodies.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-144-logic-285 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-144;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'IBAC';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-145-logic-286 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-145;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the information from being referred to in a certain context.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-151-logic-287 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-151;
+  logic: Deontic;
+  operator: shall;
+  summary: Mandatory obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-152-logic-288 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-152;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the information from being referred to in paragraph (h) of the definition of permitted purpose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-154-logic-289 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-154;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-162-logic-290 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-162;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-167-logic-291 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-167;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-168-logic-292 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-168;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'IBAC';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-169-logic-293 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-169;
+  logic: Deontic;
+  operator: Omit;
+  summary: Remove the specified text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-172-logic-294 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-172;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a new provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-173-logic-295 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-173;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-177-logic-296 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-177;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-179-logic-297 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-179;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-181-logic-298 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-181;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-182-logic-299 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-182;
+  logic: Deontic;
+  operator: hasPurpose;
+  summary: Inspector has purpose to audit and deal with misconduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (NSW) has a duty to monitor compliance with the law of New South Wales;
+  @action: Inspector of the Law Enforcement Conduct Commission (NSW) has a duty to monitor compliance with the law of New South Wales;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-182-logic-300 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-182;
+  logic: AllenInterval;
+  operator: during;
+  summary: Inspector audits operations during monitoring compliance;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Monitoring compliance with the law of New South Wales is an activity that can be done by the Inspector of the Independent Commission Against Corruption (NSW);
+  @action: Auditing operations is an activity that occurs during monitoring compliance;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-182-logic-301 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-182;
+  logic: LTL;
+  operator: everywhere;
+  summary: Inspector audits and deals with misconduct everywhere;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (NSW) has a duty to monitor compliance with the law of New South Wales;
+  @action: Inspector of the Law Enforcement Conduct Commission (NSW) has a duty to monitor compliance with the law of New South Wales;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-182-logic-302 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-182;
+  logic: Deontic;
+  operator: hasPurpose;
+  summary: Inspector has purpose to assess effectiveness and appropriateness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Inspector of the Independent Commission Against Corruption (NSW) has a duty to monitor compliance with the law of New South Wales;
+  @action: Inspector of the Law Enforcement Conduct Commission (NSW) has a duty to assess effectiveness and appropriateness;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-185-logic-303 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-185;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit 'IBAC' (first occurring)',;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-187-logic-304 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-187;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal certain provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-188-logic-305 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-188;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of using outdated name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-189-logic-306 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-189;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-192-logic-307 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-192;
+  logic: Deontic;
+  operator: hasPurpose;
+  summary: Eligible purpose of the Parliamentary Inspector of the Corruption and Crime Commission (WA);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must have one or more eligible purposes.;
+  @action: The Parliamentary Inspector of the Corruption and Crime Commission (WA) has one or more eligible purposes.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-192-logic-308 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-192;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which the Parliamentary Inspector of the Corruption and Crime Commission (WA) must perform its functions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must perform its functions within a certain temporal interval.;
+  @action: The Parliamentary Inspector of the Corruption and Crime Commission (WA) performs its functions during the specified temporal interval.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-192-logic-309 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-192;
+  logic: Argumentation;
+  operator: mustAssess;
+  summary: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must assess the effectiveness and appropriateness of its procedures.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The Parliamentary Inspector of the Corruption and Crime Commission (WA) has a responsibility to assess its own procedures.;
+  @action: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must assess the effectiveness and appropriateness of its procedures.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-192-logic-310 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-192;
+  logic: Diffusion;
+  operator: mustShare;
+  summary: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must share information with other agencies and authorities.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Parliamentary Inspector of the Corruption and Crime Commission (WA) has a responsibility to share information with other agencies and authorities.;
+  @action: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must share information with other agencies and authorities.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-192-logic-311 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-192;
+  logic: CogAI;
+  operator: mustReport;
+  summary: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must report to Parliament and other authorities.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Parliamentary Inspector of the Corruption and Crime Commission (WA) has a responsibility to report to Parliament and other authorities.;
+  @action: The Parliamentary Inspector of the Corruption and Crime Commission (WA) must report to Parliament and other authorities.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-193-logic-312 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-193;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to conduct reviews;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-194-logic-313 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-194;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: commencement of this Schedule;
+  @action: on or after;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-195-logic-314 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-195;
+  logic: Deontic;
+  operator: holds;
+  summary: State holds an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-5-sec-196-logic-315 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-196;
+  logic: Deontic;
+  operator: obliges;
+  summary: Obliges current and former Commonwealth officers to protect information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Protected information used, recorded, disclosed or admitted in evidence under clause 157 of Schedule 1 to the Telecommunications (Interception and Access) Act 1979.;
+  @action: Unauthorised disclosure of information by current and former Commonwealth officers is prohibited.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-sch-7-sec-2-logic-316 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Definition applies to conduct and legal proceedings.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+}

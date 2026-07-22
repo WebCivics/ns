@@ -1,0 +1,369 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsections 8(2) and (3)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-2"
+        },
+        {
+          "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3"
+        },
+        {
+          "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4"
+        }
+      ],
+      "cml:integrityHash": "45006b563b2fa2182b7ea81cca2aac16faa404d7946d1c0f51f91fbff6cf069d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-2",
+      "@type": "cml:Concept",
+      "dc:description": "number of members",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.7",
+      "skos:note": "Assembly size determination",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(2) Subsections 8(2) and (3)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ffdefffebd0440383097c80567d2d3a97c6d6b45148fcd6755baeff52ef8615d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sch-1-sec-1-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.7",
+      "skos:note": "Enactment requires majority vote for Assembly member count changes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(3) Subsections 8(2) and (3)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3-norm",
+        "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f8c991063f3c85ace8ee07bde66ef630f9a4653b352762dffc5bd571f1f9930b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sch-1-sec-1-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Enactment passes without change",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Majority vote required",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "Two-thirds majority needed"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-3"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.7",
+      "skos:note": "Subsection (3) has effect despite anything else in this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(4) Subsections 8(2) and (3)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4-norm",
+        "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1a12ad68953dbdd541f0caf8e9c344957b9bbb55cf36bfc4e9c8d2f3e189c83a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sch-1-sec-1-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Subsection (3) has effect despite anything else in this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sch-1-sec-1-ss-4"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "394db9aa20768a0d3d2f45cdaa231e328bc6500bcebd2b746f93b888875d667f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.6",
+      "skos:note": "Commences on the day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a8e441496011cc44b1b9c5564185dd7c728b1f01d03664e9d6ca04afeca2b38",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-self-government-amendment-act-2013.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-self-government-amendment-act-2013.pdf",
+      "asserts": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fe7328c614c09e6c7efc0e6f7df54605717031b7a872ff0a5629f973e451fea8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-self-government-amendment-act-2013#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-self-government-amendment-act-2013-sec-3"
+    },
+    {
+      "@id": "doc:au/c2013a00028",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Capital Territory (Self-Government) Act 1988, and for related purposes",
+      "dc:identifier": [
+        "C2013A00028",
+        "No. 28 of 2013"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Capital Territory (Self-Government) Amendment Act 2013"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2013A00028/latest/downloads",
+        "australian-capital-territory-self-government-amendment-act-2013.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

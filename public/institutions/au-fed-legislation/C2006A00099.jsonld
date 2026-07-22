@@ -1,0 +1,1069 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Insert section",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After section 135AB"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "135AC Authorisation of collection of particular health information"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1"
+        },
+        {
+          "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-1-sec-135ac",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Authorisation of collection of particular health information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "135AC(1) Authorisation of collection of particular health information"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-deontic-1",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-alleninterval-2",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-ltl-3",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-diffusion-4",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d74c0a94077d2a122c78a23862dd2e0071df8d14bc0260c2b6ae4fd0ee61ca7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-1-sec-135ac-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "and (b) the disclosure is authorised by or under a health law;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes the temporal relationship between the disclosure and authorisation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Between",
+      "cml:premiseText": "(1) If particular health information is disclosed to an organisation;"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Describes how the permission is processed or applied",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "By",
+      "cml:premiseText": "(1) If particular health information is disclosed to an organisation;"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorises the collection of health information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permits",
+      "cml:premiseText": "(1) If particular health information is disclosed to an organisation;"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "and (b) the disclosure is authorised by or under a health law;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Describes how the permission is transmitted or conveyed",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Through",
+      "cml:premiseText": "(1) If particular health information is disclosed to an organisation;"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Describes the temporal scope of the permission",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "(1) If particular health information is disclosed to an organisation;"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Authorisation of collection of particular health information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "135AC(2) Authorisation of collection of particular health information"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-deontic-1",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-descriptionlogic-2",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-descriptionlogic-3",
+        "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7ae450d0b4f237eaf5795bce99439df04dbf3f0b19d2ec0a51d223022aefb5a8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-1-sec-135ac-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Privacy Act 1988",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of organisation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "organisation has the same meaning as in the Privacy Act 1988."
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "an Act administered by the Minister; / the Medicare Australia Act 1973.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of health law",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(2) In this section: health law means any of the following:"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "an Act administered by the Minister; / the Medicare Australia Act 1973.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Definition of health law",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is defined by",
+      "cml:premiseText": "(2) In this section: health law means any of the following:"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Privacy Act 1988",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Definition of organisation",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is defined by",
+      "cml:premiseText": "organisation has the same meaning as in the Privacy Act 1988."
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.7",
+      "skos:note": "Omit “by”, substitute “or authorised by or under”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subparagraph 10.2(b)(i) of Schedule 3"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6761d0209ecb226f11dde89916cde0cf4527441c628fb1858a4025370410333",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Defines genetic relative",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 6(1)"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ab7199a7efb02ce54ebc5718d2772fcab9aa0d64a78c53e219159a72570b2a5f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a subclass of genetic relative",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Identifies a class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "hasClass",
+      "cml:premiseText": "genetic relative of an individual is another individual who is related to the first individual by blood"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Add genetic information about an individual or a genetic relative of the individual.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 6(1) (at the end of the definition of health"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "66ef848dd51d7679677ee8f6a39b2fe8292738eb7b05535c5678b92257414dc5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Add to the definition of health information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Add genetic information about an individual that is not otherwise health information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 6(1) (at the end of the definition of sensitive"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c85ba863fdb7bb09ecfdf1674ef83bf772bbb19d77ede4fa1529cf77596ae197",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Add genetic information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Insert clause after section 95A",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After section 95A"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.9",
+      "skos:note": "Organisation must reasonably believe use or disclosure is necessary to prevent serious threat to life, health or safety of genetic relative.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After paragraph 2.1(e) of Schedule 3"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-deontic-1",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-alleninterval-2",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-ltl-3",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9f1f2dfc8484fde6ddd66a63b07a2d37b9dab7160b76fc2eb3245e0fe44d6474",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Use or disclosure must occur during provision of health service",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "the organisation has obtained the genetic information in the course of providing a health service to the individual"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the use or disclosure is necessary to prevent serious threat to life, health or safety of genetic relative",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Organisation has a duty to reasonably believe use or disclosure is necessary",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "the organisation has obtained the genetic information in the course of providing a health service to the individual"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Recipient of genetic information must be a genetic relative",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "the recipient of the genetic information is a genetic relative of the individual"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Use or disclosure must cease when threat has passed",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "the organisation reasonably believes that the use or disclosure is necessary to prevent serious threat to life, health or safety of genetic relative"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-5"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "95AA Guidelines for National Privacy Principles about genetic"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1"
+        },
+        {
+          "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2"
+        },
+        {
+          "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3"
+        }
+      ],
+      "cml:integrityHash": "094eb9cf0ac16e0b2f3a2ee28b9483827159ee873494ea8c8814a69a13d5bbb6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-95aa",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Commissioner approves guidelines for use and disclosure of genetic information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "95AA(1) Guidelines for National Privacy Principles about genetic"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dea01286ba198f4d74b2cc16220ed3583278a645d3a10cffddb930b6f37e34a7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-95aa-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Allows Commissioner to approve guidelines",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Commissioner may approve guidelines for use and disclosure of genetic information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "95AA(2) Guidelines for National Privacy Principles about genetic"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "825e5eb0f7959fd72ccc4df3d536c18bd5b09b5342a492ac170232f89fb6ec7d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-95aa-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to approve guidelines",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.8",
+      "skos:note": "Application for review of a decision to refuse approval of guidelines.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "95AA(3) Guidelines for National Privacy Principles about genetic"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": [
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3-norm",
+        "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "77b329210cbaa57ebc2cbd3d183036b3b0a0e79f970ba2d9a83d61e324a1ffce",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sch-2-sec-95aa-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to apply for review",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "df42b91d7cab91df690813fc2dbae8d8eba02ab2f275754d7edd113d67c14422",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sec-1"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Commences on the day of Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4eed6c7b27751913ba3ce32609cdff12c4ce5ac3cad11b9b35f84b1af99fbc6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sec-2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "privacy-legislation-amendment-act-2006.pdf, p.6",
+      "skos:note": "Amendments to Acts specified in Schedules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "privacy-legislation-amendment-act-2006.pdf",
+      "asserts": "concept:privacy-legislation-amendment-act-2006-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f0f4b811c260fc6e9421145df08e2d9a1b92734ad4bed78c6865363e2a9d05f6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:privacy-legislation-amendment-act-2006#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:privacy-legislation-amendment-act-2006-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:privacy-legislation-amendment-act-2006-sec-3"
+    },
+    {
+      "@id": "doc:au/c2006a00099",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the law relating to privacy protection of certain health and other information, and for related purposes",
+      "dc:identifier": [
+        "C2006A00099",
+        "No. 99 of 2006"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Privacy Legislation Amendment Act 2006"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2006A00099/latest/downloads",
+        "privacy-legislation-amendment-act-2006.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

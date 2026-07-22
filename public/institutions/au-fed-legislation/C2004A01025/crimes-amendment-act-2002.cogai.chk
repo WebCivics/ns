@@ -1,0 +1,26 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment Act 2002
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-act-2002-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines temporal intervals for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement dates are specified in column 2 of the table;
+  @action: Temporal intervals define commencement details;
+}
+
+crimes-amendment-act-2002-sch-1-sec-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,1256 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.7",
+      "skos:note": "Prohibit taking an active part in hostilities or being a member of an organized armed group.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Paragraphs 268.70(1)(b) and (c) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7017acc2ba98bbda9d40a54a24153804daab151bec570faa862ee102e15538e6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.10",
+      "skos:note": "Defendant bears evidential burden in relation to the matter in subsection (2A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 After subsection 268.71(2) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d4c194540f3326f98caf3b2c2932d3a6bbf3ac62cefdc1c0bdb5afe583a12097",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defendant bears evidential burden",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Subsection (2A)"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.10",
+      "skos:note": "Exemption from liability for incidental death or injury to civilians during military operations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 After subsection 268.72(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-1",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-alleninterval-2",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-ltl-3",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-4",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3c30b665835f7b0c356ad081dd5454119ca228334f52ff4011759bc97bc5afe2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is a temporal overlap between the attack and civilian casualties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between attack and civilian casualties",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "The perpetrator did not expect that the attack would result in the incidental death of, or injury to, civilians."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is an obligation to ensure that attacks do not result in excessive civilian casualties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Legal obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "The perpetrator did not expect that the attack would result in the incidental death of, or injury to, civilians."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "It is permitted for the perpetrator to launch an attack without expecting excessive civilian casualties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permitted action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission",
+      "cml:premiseText": "The perpetrator did not expect that the attack would result in the incidental death of, or injury to, civilians."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is a legal obligation for the perpetrator to ensure that attacks do not result in excessive civilian casualties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Legal obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "The perpetrator did not expect that the attack would result in the incidental death of, or injury to, civilians."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is a recurring pattern of military operations that do not result in excessive civilian casualties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recurring pattern of military operations",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurrent",
+      "cml:premiseText": "The perpetrator did not expect that the attack would result in the incidental death of, or injury to, civilians."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.11",
+      "skos:note": "Omit “military” from war crimes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Paragraph 268.65(1)(a) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ee24511cdc95600a51129691dfdf738ade26c9db3f79836ba0e7c631fb40dbf2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting “military” from war crimes",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.12",
+      "skos:note": "Amendments apply to conduct engaged in on or after commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Application of amendments made by Part 1"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-13-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "774b0b59c564a70c30e949e26af2b09701d9342346f0a65552ba3fa54d5f955d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-13-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.12",
+      "skos:note": "Amendments apply to conduct before, on or after commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Application of amendments made by Parts 2 and 3"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "37382c5fc8d0f2f2334ad35d99e0cd3860dcd52576d44c5e4dfdb4fe1043a320",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to comply with amendments",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.7",
+      "skos:note": "Exclusion of hors de combat members from an organised armed group",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of section 268.70 of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00b3d17e938e8e91cf2bbeb71a5badefffdcd1d118ca81df763492ec157f4378",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion of hors de combat members",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "excludes"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.8",
+      "skos:note": "Definition of civilian excludes members of an organised armed group.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "268 Section 268"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a3c0d201f2f89ff1d5f80c4c2156f9af26527eea901e79e3eb9997c5ddbd67c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-268",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Not a civilian",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion from civilian status",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "excludes",
+      "cml:premiseText": "Member of an organised armed group"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-268"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.7",
+      "skos:note": "Prohibit taking an active part in hostilities or being a member of an organised armed group.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Paragraphs 268.71(1)(d) and (e) and (2)(d) and (e) of the"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a3ddb7662ed12a29e02e2a34d9f92e3c1703410f44862146f1e19e10a0c43d58",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.7",
+      "skos:note": "Excludes members of an organised armed group who are hors de combat from the definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of section 268.71 of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c21018872eb35dda19db4ae37e454f9d1f792a03fb5ba2ca9ae939fc2035fb05",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Excludes members of an organised armed group who are hors de combat from the definition.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclude"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.8",
+      "skos:note": "Repeal paragraphs and substitute conditions for active participation in hostilities or membership in an armed group.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Paragraphs 268.72(1)(b) and (c) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7017acc2ba98bbda9d40a54a24153804daab151bec570faa862ee102e15538e6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits taking an active part in hostilities or membership in an armed group.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.8",
+      "skos:note": "Exclusion of hors de combat members from the definition of an organised armed group.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 At the end of section 268.72 of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-deontic-1",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-alleninterval-2",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-ltl-3",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-diffusion-4",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00b3d17e938e8e91cf2bbeb71a5badefffdcd1d118ca81df763492ec157f4378",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is a temporal overlap between the two expressions.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between 'members of an organised armed group' and 'members of an organised armed group who are hors de combat'",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "overlaps",
+      "cml:premiseText": "The two expressions overlap in time."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exclusion clause is recognized by artificial intelligence systems.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognition of the exclusion clause by artificial intelligence systems",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "recognizes",
+      "cml:premiseText": "Artificial intelligence systems recognize the exclusion clause as a valid concept."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The expression members of an organised armed group does not include members of an organised armed group who are hors de combat.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion clause",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "excludes",
+      "cml:premiseText": "Members of an organised armed group who are hors de combat are excluded from the definition."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exclusion clause is diffused to all related concepts.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of the exclusion clause to related concepts",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "diffuses",
+      "cml:premiseText": "The exclusion clause applies to all related concepts, including members of an organised armed group who are hors de combat."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The two expressions are universally quantified.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Universal quantification over 'members of an organised armed group' and 'members of an organised armed group who are hors de combat'",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "holdsForAll",
+      "cml:premiseText": "For all members of an organised armed group, they are not members of an organised armed group who are hors de combat."
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.8",
+      "skos:note": "Addition to Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 At the end of Subdivision K of Division 268 of Chapter 8 of"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a40df38db4fd578bf003b6da09e26cdfb84454287e4b8b03af2f6762034e6643",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.9",
+      "skos:note": "Defendant bears evidential burden in relation to the matter in subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 After subsection 268.70(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "91b9ea633fa49388ec176746fa43873978e8a5d84fa11f51bcbf4d3fc4f092b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State bears no obligation",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defendant bears evidential burden",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Subsection (1A)"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.9",
+      "skos:note": "Defendant bears evidential burden in relation to the matter in subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 After subsection 268.71(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5e8bc80233282d73b3c6ebfb79246fe73e28d871c4a78ca9ad13fcd1651f495f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defendant bears evidential burden",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.5",
+      "skos:note": "Short title of the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": [
+        "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-norm",
+        "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e59cc33db3d23acec05cf537421a2aef80329daf481b567d237271566a05e68d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Criminal Code Amendment (War Crimes) Act 2016.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies a legal entity.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sec-1"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.5",
+      "skos:note": "Commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b0759bf70611458213ab395f5e8a277a431eb03adcd24cfa559eced1e97145c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sec-2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.6",
+      "skos:note": "Schedules have effect according to their terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "08f6c66daac63c3a7586c13ccc3b210be93f6c835eb551e74b40e73f0e2ab483",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sec-3"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "criminal-code-amendment-war-crimes-act-2016.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 December"
+      },
+      "wasDerivedFrom": "criminal-code-amendment-war-crimes-act-2016.pdf",
+      "asserts": "concept:criminal-code-amendment-war-crimes-act-2016-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:criminal-code-amendment-war-crimes-act-2016#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:criminal-code-amendment-war-crimes-act-2016-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:criminal-code-amendment-war-crimes-act-2016-sec-8"
+    },
+    {
+      "@id": "doc:au/c2016a00097",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Criminal Code Act 1995, and for related purposes",
+      "dc:identifier": [
+        "C2016A00097",
+        "No. 97 of 2016"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Criminal Code Amendment (War Crimes) Act 2016"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2016A00097/latest/downloads",
+        "criminal-code-amendment-war-crimes-act-2016.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+# CogAI proposed logic-routing chunks — Australian Capital Territory Evidence (Temporary Provisions) Act 1971
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-30-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-30;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies the text as a descriptive clause;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The text describes the compilation and amendment history of the law;
+  @action: The text is a descriptive clause;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the temporal relationship between two dates;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-3-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-ss-1;
+  logic: Deontic;
+  operator: Continuation;
+  summary: Continues despite disallowance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Legislative provision;
+  @action: Continues in force.;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-3-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Continuation;
+  summary: Continues despite disallowance at a specific point in time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Legislative provision;
+  @action: Continues in force.;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-3-ss-3-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-3-ss-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines a temporal interval for the application of the Interpretation Ordinance 1967;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The Interpretation Ordinance 1967 of the Australian Capital Territory, as amended and in force from time to time, applies...;
+  @action: ...from time to time;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-3-ss-3-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-3-ss-3;
+  logic: LTL;
+  operator: Applicable;
+  summary: Defines a temporal interval for the application of the Interpretation Ordinance 1967;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The Interpretation Ordinance 1967 of the Australian Capital Territory, as amended and in force from time to time, applies...;
+  @action: ...from time to time;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-3-ss-3-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-3-ss-3;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the Interpretation Ordinance 1967 as a duty to apply its provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The Interpretation Ordinance 1967 of the Australian Capital Territory, as amended and in force from time to time, applies...;
+  @action: ...shall be deemed to have always applied;
+}
+
+australian-capital-territory-evidence-temporary-provisions-act-1971-sec-2-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Repeals s 3;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

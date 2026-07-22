@@ -1,0 +1,412 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Legislation Amendment Act 2011
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-legislation-amendment-act-2011-sec-2-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-179;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal relations are required for conditional commencement;
+  @action: This provision requires a temporal relation between acquisitions and commencement;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition on unconscionable conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Trade or commerce;
+  @action: Unconscionable conduct is prohibited;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal scope of prohibition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Trade or commerce;
+  @action: The prohibition applies during trade or commerce;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-2;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permission to engage in conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-3;
+  logic: Deontic;
+  operator: MustNotConsider;
+  summary: Court must not consider unforeseeable circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-3;
+  logic: Epistemic;
+  operator: ReasonablyForeseeable;
+  summary: Court may consider circumstances reasonably foreseeable at the time of contravention.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: This section imposes an obligation on the Parliament.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cb-ss-5;
+  logic: Deontic;
+  operator: =;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Term used in section;
+  @action: Listed public company;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-1;
+  logic: Deontic;
+  operator: may have regard to;
+  summary: Court may consider various factors when determining whether a person has contravened section 12CB.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Without limiting the matters to which the court may have regard for the purpose of determining...;
+  @action: ...the court may have regard to: (a) the relative strengths of the bargaining positions of the supplier and the service recipient; and;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-1;
+  logic: AllenInterval;
+  operator: has a temporal relation;
+  summary: The text mentions specific time-related factors, such as the amount for which the service recipient could have acquired identical or equivalent financial services.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (e) the amount for which, and the circumstances under which, the service recipient could have acquired identical or ComLaw Authoritative Act C2011A00184 Unconscionable conduct Schedule 2 equivalent financial services from a person other than the;
+  @action: ...the extent to which the supplier’s conduct towards the service recipient was consistent with the supplier’s conduct in similar transactions between the supplier and other like service recipients;;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-1;
+  logic: LTL;
+  operator: has an ordered trace;
+  summary: The text mentions specific factors that must be considered in a particular order, such as the relative strengths of the bargaining positions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) the relative strengths of the bargaining positions of the supplier and the service recipient; and;
+  @action: ...the extent to which the supplier unreasonably failed to disclose to the service recipient: (i) any intended conduct of the supplier that might affect the interests of the service recipient;;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-1;
+  logic: Deontic;
+  operator: has a duty;
+  summary: The text imposes obligations on the supplier, such as disclosing information and acting in good faith.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) if there is a contract between the supplier and the service recipient for the supply of the financial services: (i) the extent to which the supplier was willing to negotiate the terms and conditions of the contract with the service recipient;;
+  @action: ...the conduct of the supplier and the service recipient in complying with the terms and conditions of the contract;;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-2;
+  logic: Deontic;
+  operator: may have regard to;
+  summary: Court's obligation to consider various factors when determining whether a person has contravened section 12CB.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The court may have regard to...;
+  @action: ...when determining whether a person has contravened section 12CB.;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-2;
+  logic: AllenInterval;
+  operator: within a temporal interval;
+  summary: Court's consideration of various factors is within a specific time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Without limiting...;
+  @action: ...within a specific time frame.;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-2;
+  logic: LTL;
+  operator: recurring trace;
+  summary: Court's consideration of various factors is part of a recurring pattern.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The court may have regard to...;
+  @action: ...part of a recurring pattern.;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12cc-ss-2;
+  logic: Deontic;
+  operator: may not require disclosure;
+  summary: Court's obligation to disclose information is not absolute.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the acquirer unreasonably failed to...;
+  @action: ...not absolute.;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits unconscionable conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits unconscionable conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Trade or commerce;
+  @action: No unconscionable conduct;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This section does not apply to conduct that is engaged in only because the person engaging in the conduct:;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-2;
+  logic: LinearLogic;
+  operator: implies;
+  summary: Implies exempt condition;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) This section does not apply to conduct that is engaged in only because the person engaging in the conduct:;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-3;
+  logic: Deontic;
+  operator: MustNotConsider;
+  summary: Court must not consider unforeseeable circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-3;
+  logic: Epistemic;
+  operator: ReasonablyForeseeable;
+  summary: Court may consider circumstances reasonably foreseeable at the time of contravention.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Court must consider contract terms and manner of performance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-ss-1;
+  logic: Deontic;
+  operator: mayHaveRegardTo;
+  summary: Court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-ss-1;
+  logic: AllenInterval;
+  operator: withinTemporalInterval;
+  summary: The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-ss-1;
+  logic: LTL;
+  operator: hasRecurringTrace;
+  summary: The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-ss-1;
+  logic: CogAI;
+  operator: hasKnowledgeGraph;
+  summary: The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-ss-1;
+  logic: SHACL;
+  operator: hasSchema;
+  summary: The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes prohibition on omission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting ‘or a’, substituting ‘, or of a’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

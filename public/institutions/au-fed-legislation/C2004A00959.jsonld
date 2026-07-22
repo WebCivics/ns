@@ -1,0 +1,259 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf, p.7",
+      "skos:note": "Binds the Crown in right of the States",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After subsection 6(1)"
+      },
+      "wasDerivedFrom": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf",
+      "asserts": [
+        "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1-norm",
+        "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "80ed6099b113e56e137a95e62707d16c4af94da3d75a7b76ec9c5919840628c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-and-equal-opportunity-commission-amendment-act-2002#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the Crown in right of the States",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "binds"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf",
+      "asserts": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d882b814838d908f0d90e851b544d12ef3e9de887dfe2aead13242921c578c7d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-and-equal-opportunity-commission-amendment-act-2002#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-1"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf, p.5",
+      "skos:note": "Commencement date of the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf",
+      "asserts": [
+        "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2-norm",
+        "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a20c2ff88313db16b47fc8530aaf24d2e65536f45e09f651f31642437003489c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-and-equal-opportunity-commission-amendment-act-2002#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Indicates the temporal relationship between two intervals.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-2"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf, p.6",
+      "skos:note": "Amendments to Acts specified in a Schedule",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf",
+      "asserts": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "608ff0d9999c7428d7699666117ef2a05836db52e5f5dc72a5d7ce8dfd65f70d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-and-equal-opportunity-commission-amendment-act-2002#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-and-equal-opportunity-commission-amendment-act-2002-sec-3"
+    },
+    {
+      "@id": "doc:au/c2004a00959",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Human Rights and Equal Opportunity Commission Act 1986, and for related purposes",
+      "dc:identifier": [
+        "C2004A00959",
+        "No. 22 of 2002"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Human Rights and Equal Opportunity Commission Amendment Act 2002"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2004A00959/latest/downloads",
+        "human-rights-and-equal-opportunity-commission-amendment-act-2002.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

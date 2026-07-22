@@ -1,0 +1,782 @@
+# CogAI proposed logic-routing chunks — Royal Commissions Amendment (Private Sessions) Act 2019
+# Machine-derived; every chunk remains cml:Proposed.
+
+royal-commissions-amendment-private-sessions-act-2019-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Staff member is a person who performs functions or duties relating to the Commission;
+  @action: Staff member is a class in the Commission's hierarchy;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A staff member may be employed by a person who performs functions or duties for the Commission;
+  @action: The employment of a staff member is included in the temporal interval of the person's engagement;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A staff member may be engaged by, or on behalf of, the Commonwealth as a contractor;
+  @action: The engagement of a staff member is included in the set of persons who are contractors for the Commission;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person may be appointed or otherwise engaged by, or on behalf of, the Commonwealth to assist the Commission as counsel;
+  @action: The appointment of a person is included in the set of persons who are appointed to assist the Commission;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A legal practitioner may be appointed by the Attorney-General to assist the Commission;
+  @action: The appointment of a legal practitioner is included in the set of persons who are appointed to assist the Commission;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person may be employed by a person to whom paragraph (b) or this paragraph applies;
+  @action: The employment of a person is included in the set of persons who are engaged by, or on behalf of, the Commonwealth as contractors for the Commission;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: applies;
+  summary: The text states the conditions under which this Part applies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted by the Chair of the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chair of the Commission;
+  @action: Authorised Member;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to hold private sessions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits private sessions with more than one or two members.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A private session held under subsection (1) may be held only by one or 2 members.;
+  @action: Conduct of a private session;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: LinearLogic;
+  operator: Prohibit;
+  summary: Prohibits private sessions with more than one or two members.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) A private session held under subsection (1) may be held only by one or 2 members.;
+  @action: Conduct of a private session;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-3-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Private sessions can only be held during the same time as other sessions with one or two members.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A private session held under subsection (1) may be held only by one or 2 members.;
+  @action: Conduct of a private session;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-3-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: LTL;
+  operator: Until;
+  summary: Private sessions can only be held until other sessions with one or two members are completed.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A private session held under subsection (1) may be held only by one or 2 members.;
+  @action: Conduct of a private session;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-3-logic-16 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Private sessions can only be held in the same location as other sessions with one or two members.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A private session held under subsection (1) may be held only by one or 2 members.;
+  @action: Conduct of a private session;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-4;
+  logic: Deontic;
+  operator: can;
+  summary: Permission to determine matters;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commission members are allowed to determine matters during private sessions.;
+  @action: Commission members can determine matters during private sessions.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-4;
+  logic: Deontic;
+  operator: must;
+  summary: Duty to determine matters;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commission members are required to determine matters during private sessions.;
+  @action: Commission members must determine matters during private sessions.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-5-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must hold private session;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) If a private session is held...;
+  @action: ...the sole Commissioner holding the private session may...;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-5-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-5;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Private sessions are part of Royal Commissions with specific start and end times;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) If a private session is held for a Royal Commission under subsection (2),...;
+  @action: ...the sole Commissioner holding the private session may...;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-5-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-5;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Private sessions are part of Royal Commissions with specific start and end times;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) If a private session is held for a Royal Commission under subsection (2),...;
+  @action: ...the sole Commissioner holding the private session may...;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-5-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-5;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Private sessions are part of Royal Commissions with specific start and end times;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) If a private session is held for a Royal Commission under subsection (2),...;
+  @action: ...the sole Commissioner holding the private session may...;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6ob-ss-5-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-5;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Private sessions are part of Royal Commissions with specific start and end times;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) If a private session is held for a Royal Commission under subsection (2),...;
+  @action: ...the sole Commissioner holding the private session may...;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-3;
+  logic: Deontic;
+  operator: apply;
+  summary: Provisions apply to documents and other things.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Sections 6F (power of Commission in relation to documents and other things), 6P (Commission may communicate information) and 9 (custody and use of records of Royal Commission) apply as if...;
+  @action: ...were produced before, delivered or given to, or otherwise obtained or received by, the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-3-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-3;
+  logic: AllenInterval;
+  operator: within;
+  summary: Provisions apply to documents and other things within a certain time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Sections 6F (power of Commission in relation to documents and other things), 6P (Commission may communicate information) and 9 (custody and use of records of Royal Commission) apply as if...;
+  @action: ...were produced before, delivered or given to, or otherwise obtained or received by, the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-3-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-3;
+  logic: LTL;
+  operator: within;
+  summary: Provisions apply to documents and other things within a certain time frame.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Sections 6F (power of Commission in relation to documents and other things), 6P (Commission may communicate information) and 9 (custody and use of records of Royal Commission) apply as if...;
+  @action: ...were produced before, delivered or given to, or otherwise obtained or received by, the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-3;
+  logic: Diffusion;
+  operator: within;
+  summary: Provisions apply to documents and other things within a certain time frame.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Sections 6F (power of Commission in relation to documents and other things), 6P (Commission may communicate information) and 9 (custody and use of records of Royal Commission) apply as if...;
+  @action: ...were produced before, delivered or given to, or otherwise obtained or received by, the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-3-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-3;
+  logic: CogAI;
+  operator: within;
+  summary: Provisions apply to documents and other things within a certain time frame.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Sections 6F (power of Commission in relation to documents and other things), 6P (Commission may communicate information) and 9 (custody and use of records of Royal Commission) apply as if...;
+  @action: ...were produced before, delivered or given to, or otherwise obtained or received by, the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-4-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-4;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to treat records produced during a private session as if they were produced by the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: Records produced during a private session must be treated as if they were produced by the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between records produced during a private session and those produced by the Commission.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: Records produced during a private session occur during the production of records by the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-4;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relationship between records produced during a private session and those produced by the Commission.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: Records produced during a private session occur until the production of records by the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-4-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-4;
+  logic: Diffusion;
+  operator: diffuse;
+  summary: Spread of obligations from the Commission to its staff and members.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: The obligation to treat records produced during a private session as if they were produced by the Commission diffuses to the Commission's staff and members.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-16-ss-4-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-4;
+  logic: CogAI;
+  operator: classify;
+  summary: Classification of records produced during a private session as records produced by the Commission.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: Records produced during a private session are classified as records produced by the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6oe-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oe;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits statements and documents from being admissible in evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-23-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to disclose statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-29-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: Obligation;
+  summary: New obligation to identify information source.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-31-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-33-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemption from prosecution for making a record of information not covered by paragraph (a).;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-33-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: AllenInterval;
+  operator: during;
+  summary: The record is made during a private session or before disclosure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person who gave the information at the private session, or to the member, or member of the staff, of the Royal Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-33-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: Diffusion;
+  operator: through;
+  summary: The record is made through a member or staff of the Royal Commission.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The person who gave the information at the private session, or to the member, or member of the staff, of the Royal Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-33-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: CogAI;
+  operator: by;
+  summary: The record is made by the person giving the information.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The person who gave the information at the private session, or to the member, or member of the staff, of the Royal Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-33-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: SHACL;
+  operator: asserts;
+  summary: The record is made in accordance with the Royal Commission's procedures.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The person who gave the information at the private session, or to the member, or member of the staff, of the Royal Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-36-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting information at a private session.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-37-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to identify person who gave information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-38-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of certain words;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-39-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information given by a natural person to a member of the Royal Commission for private session purposes.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-1-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to protect information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commission indicated that the information, if given, would be treated as confidential.;
+  @action: A duty to protect the information;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-1-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-1;
+  logic: AllenInterval;
+  operator: within;
+  summary: Temporal interval for confidentiality treatment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (d) the Commission indicated that the information, if given, would be treated as confidential;;
+  @action: The information is confidential within a certain time frame.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-1-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-1;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffusion of confidentiality treatment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (e) the information was treated as confidential by the Commission;;
+  @action: The confidentiality treatment is diffused to all relevant parties.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-1;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Recognition of confidentiality classification;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (c) the information identifies the natural person who gave the information, or on whose behalf the information was given;;
+  @action: The system recognizes the confidentiality classification based on this condition.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-1;
+  logic: SHACL;
+  operator: validates;
+  summary: Validation of confidentiality treatment;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (a) the information was given by, or on behalf of, a natural person to the Child Sexual Abuse Royal Commission other than for the purposes of a private session;;
+  @action: The system validates the confidentiality treatment based on this condition.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-2-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies in relation to the information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-3-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-3;
+  logic: Deontic;
+  operator: apply;
+  summary: Apply sections as if;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Sections 6OH, 6OK and 6OL apply;
+  @action: as if the information were given by a natural person at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-3-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-3;
+  logic: AllenInterval;
+  operator: relation;
+  summary: Relation between temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Sections 6OH, 6OK and 6OL apply in relation to the information;
+  @action: as if it were information given by the natural person at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-3-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-3;
+  logic: LTL;
+  operator: relation;
+  summary: Relation between temporal intervals;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Sections 6OH, 6OK and 6OL apply in relation to the information;
+  @action: as if it were information given by the natural person at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-3-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-3;
+  logic: Diffusion;
+  operator: relation;
+  summary: Relation between temporal intervals;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Sections 6OH, 6OK and 6OL apply in relation to the information;
+  @action: as if it were information given by the natural person at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-3-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-3;
+  logic: CogAI;
+  operator: relation;
+  summary: Relation between temporal intervals;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Sections 6OH, 6OK and 6OL apply in relation to the information;
+  @action: as if it were information given by the natural person at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-6on-ss-4-logic-58 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6on-ss-4;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies in relation to information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Section 6OM;
+  @action: as if it were a record that contains information obtained at a private session for the Commission.;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-1-sec-42-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines the commencement and applicability periods for the amendments.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-2-sec-1-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the repeal of a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-2-sec-2-logic-61 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: same meaning as;
+  summary: Same meaning as in Part 4 of the Royal Commissions Act 1902;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Expression used in subsection (2E);
+  @action: Part 4 of the Royal Commissions Act 1902;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-2-sec-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Amendments apply to certain requests and applications made under the Freedom of Information Act 1982 after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-private-sessions-act-2019-sch-2-sec-3-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: AllenInterval;
+  operator: >;
+  summary: Conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}

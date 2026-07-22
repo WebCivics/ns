@@ -1,0 +1,1136 @@
+# CogAI proposed logic-routing chunks — Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act begins on the day after it receives Royal Assent.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sec-1-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Occurs during a specific time period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: The Act receives Royal Assent on the day after this section begins.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-6-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: mayOnly;
+  summary: The Information Commissioner may only delegate certain functions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-7-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal paragraph 29(2)(a);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-12-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of '(1)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text modification;
+  @action: Obligation to insert '(1)';
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-1a-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-1a;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A) Subsection (1);
+  @action: civil penalty provision;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits exceeding $2,500,000 penalty for contravention of subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The amount of the penalty...;
+  @action: ...is an amount not more than $2,500,000.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Defines temporal scope of maximum penalty for contravention of subsection (1);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The amount...;
+  @action: ...is an amount not more than $2,500,000.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-2-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: LTL;
+  operator: TemporalOverlap;
+  summary: Defines temporal scope of maximum penalty for contravention of subsection (1);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The amount...;
+  @action: ...is an amount not more than $2,500,000.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-2-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: Diffusion;
+  operator: TemporalOverlap;
+  summary: Defines temporal scope of maximum penalty for contravention of subsection (1);
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The amount...;
+  @action: ...is an amount not more than $2,500,000.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-2-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: CogAI;
+  operator: TemporalOverlap;
+  summary: Defines temporal scope of maximum penalty for contravention of subsection (1);
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The amount...;
+  @action: ...is an amount not more than $2,500,000.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-4;
+  logic: Deontic;
+  operator: Implies;
+  summary: Subsection (3) implies despite paragraph 82(5)(a);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3);
+  @action: (4);
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-5-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-5;
+  logic: AllenInterval;
+  operator: <=;
+  summary: Temporal interval for calculation period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of paragraph (3)(c), the adjusted turnover...;
+  @action: The calculation is for a period during which the body corporate, and any related body corporate, have made or are likely to make supplies...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-5-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-5;
+  logic: LTL;
+  operator: <=;
+  summary: Recurring trace of supply values;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of paragraph (3)(c), the adjusted turnover...;
+  @action: The sum is of values of all supplies that the body corporate, and any related body corporate, have made or are likely to make during the period...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-5-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-5;
+  logic: Deontic;
+  operator: =;
+  summary: Classifies adjusted turnover calculation as an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of paragraph (3)(c), the adjusted turnover...;
+  @action: The sum is a calculated value for the purpose of determining the adjusted turnover of a body corporate during a period.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-5-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-5;
+  logic: Deontic;
+  operator: =;
+  summary: Classifies supplies not made by or to related bodies corporate as excluded;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of paragraph (3)(c), the adjusted turnover...;
+  @action: The sum excludes supplies that are input taxed; or not for consideration; or not made in connection with an enterprise...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-14-ss-6-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-6;
+  logic: Deontic;
+  operator: =;
+  summary: Same meaning as in A New Tax System (Goods and Services Tax) Act 1999.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-15-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to substitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-1-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Commissioner may obtain information and documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply with the requirement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-3;
+  logic: Deontic;
+  operator: require;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-4-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-5-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-5;
+  logic: Deontic;
+  operator: may;
+  summary: Commissioner has permission to take possession of documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-6-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-6;
+  logic: Deontic;
+  operator: hasEffect;
+  summary: Has effect regardless of other Commonwealth law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26wu-ss-7-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wu-ss-7;
+  logic: Deontic;
+  operator: Permits;
+  summary: Allows exemption from liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to share information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to share information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-3-logic-29 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to share information with other authorities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commissioner may only share...;
+  @action: ...with a receiving body under this section if...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-3-logic-30 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval of the sharing of information.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The Commissioner may only share...;
+  @action: ...if: (a) the information or documents were acquired by...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-3-logic-31 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-3;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of sharing information with other authorities.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The Commissioner may only share...;
+  @action: ...if: (a) the information or documents were acquired by...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-3-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-3;
+  logic: Diffusion;
+  operator: Information Diffusion;
+  summary: Diffusion of information to other authorities.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) The Commissioner may only share...;
+  @action: ...if: (a) the information or documents were acquired by...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-3-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-3;
+  logic: CogAI;
+  operator: Knowledge Sharing;
+  summary: Sharing of knowledge with other authorities.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) The Commissioner may only share...;
+  @action: ...if: (a) the information or documents were acquired by...;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-4-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to share information with other authorities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If the Commissioner acquired the information or documents from an agency, the Commissioner may only share the information or documents with a receiving body under this section if the receiving body is an agency.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-4-logic-35 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for sharing of information.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If the Commissioner acquired the information or documents from an agency, the Commissioner may only share the information or documents with a receiving body under this section if the receiving body is an agency.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-4-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-4;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of sharing of information.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If the Commissioner acquired the information or documents from an agency, the Commissioner may only share the information or documents with a receiving body under this section if the receiving body is an agency.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-4-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-4;
+  logic: Diffusion;
+  operator: Information Diffusion;
+  summary: Diffusion of information to authorized agencies.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) If the Commissioner acquired the information or documents from an agency, the Commissioner may only share the information or documents with a receiving body under this section if the receiving body is an agency.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-4-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-4;
+  logic: CogAI;
+  operator: Knowledge Sharing;
+  summary: Sharing of knowledge between agencies.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If the Commissioner acquired the information or documents from an agency, the Commissioner may only share the information or documents with a receiving body under this section if the receiving body is an agency.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-5-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-5;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to use information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) If information is shared...;
+  @action: ...the receiving body may use the information only for the purposes...for which it was shared.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-5-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-5;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap of information sharing.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) If information is shared...;
+  @action: ...the receiving body may use the information only for the purposes...for which it was shared.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-5-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-5;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal until condition of information sharing.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) If information is shared...;
+  @action: ...the receiving body may use the information only for the purposes...for which it was shared.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-5-logic-42 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-5;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Information diffusion.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) If information is shared...;
+  @action: ...the receiving body may use the information only for the purposes...for which it was shared.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-5-logic-43 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-5;
+  logic: CogAI;
+  operator: Inference;
+  summary: Artificial intelligence inference.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) If information is shared...;
+  @action: ...the receiving body may use the information only for the purposes...for which it was shared.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33a-ss-6-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33a-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to share information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-1-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner may disclose;
+  @action: if in the public interest;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Commissioner has an obligation to consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner is required to disclose information if it is in the public interest.;
+  @action: Commissioner must have regard to the rights and interests of complainants or respondents.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Commissioner's decision-making process is bounded by temporal intervals.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commissioner's factors for disclosure are relevant within a specific time frame.;
+  @action: Commissioner must consider the factors within a reasonable timeframe.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-2;
+  logic: LTL;
+  operator: BUT;
+  summary: Commissioner's decision-making process is bounded by temporal intervals and other conditions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Commissioner's factors for disclosure are relevant within a specific time frame, but also subject to other conditions.;
+  @action: Commissioner must consider the factors within a reasonable timeframe, but also subject to other conditions.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-2;
+  logic: Diffusion;
+  operator: IS_A;
+  summary: Commissioner's decision-making process is part of a larger diffusion process.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Commissioner's factors for disclosure are part of a broader process.;
+  @action: Commissioner must consider the rights and interests of complainants or respondents within the context of this process.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-33b-ss-2-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33b-ss-2;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Commissioner's decision-making process is part of a larger cognitive AI process.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Commissioner's factors for disclosure are part of a broader cognitive AI process.;
+  @action: Commissioner must consider the rights and interests of complainants or respondents within the context of this process.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-21-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply with Part IIIC.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-3-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: Deontic;
+  operator: require;
+  summary: Obligation to provide information or produce document.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-4-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-4;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commissioner must not give a notice.;
+  @action: unless satisfied it is reasonable in the circumstances.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-4-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap with subsection (3);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) The Commissioner must not give a notice under subsection (3);
+  @action: unless the Commissioner is satisfied it is reasonable in the circumstances to do so;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-4-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-4;
+  logic: LTL;
+  operator: Repeats;
+  summary: Repeating obligation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) The Commissioner must not give a notice under subsection (3);
+  @action: unless satisfied it is reasonable in the circumstances to do so, having regard to the following:;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-4-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-4;
+  logic: Deontic;
+  operator: HasPart;
+  summary: Excerpt part of Schedule 1 Amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Schedule 1 Amendments;
+  @action: The Commissioner must not give a notice unless satisfied it is reasonable in the circumstances.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-5-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-5;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits compliance with notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Notice given by Commissioner.;
+  @action: Enforcement body not required to comply.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-5-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-5;
+  logic: Epistemic;
+  operator: Belief;
+  summary: Chief executive officer believes on reasonable grounds that compliance would be prejudicial.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: Notice given by Commissioner.;
+  @action: Enforcement body not required to comply.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-5-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-5;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of enforcement activities.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Notice given by Commissioner.;
+  @action: Enforcement body not required to comply.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-5-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-5;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permits enforcement body to decide whether to comply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chief executive officer believes on reasonable grounds that compliance would be prejudicial.;
+  @action: Enforcement body not required to comply.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-6-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-6;
+  logic: Deontic;
+  operator: applies;
+  summary: Section 70 applies to subsection (3) of section 33C.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-7-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-7;
+  logic: Deontic;
+  operator: Permission;
+  summary: Granting permission to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-7-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Exemption from obligation to provide information under other laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-22-ss-8-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to publish;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-23-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: add;
+  summary: Adds a note;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-24-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: Deontic;
+  operator: add;
+  summary: Adds a note;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-25-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: Deontic;
+  operator: add;
+  summary: Adds a note;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-26-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute 'In this Act' for 'In this section';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-27-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: Deontic;
+  operator: MUST;
+  summary: Mandatory eSafety Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-29-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a declaration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-30-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide statement and evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: DescriptionLogic;
+  operator: IDENTITY;
+  summary: Identify respondent and agency;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (i) the identity and contact details of the respondent or, if the respondent is the principal executive of an agency, the agency;;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: DescriptionLogic;
+  operator: DESCRIPTION;
+  summary: Describe conduct constituting interference with privacy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (ii) a description of the conduct engaged in by the respondent that constitutes the interference with the privacy of an individual;;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: DescriptionLogic;
+  operator: ACTION;
+  summary: Describe steps to be taken to prevent repetition or continuation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (iii) the steps (if any) undertaken, or to be undertaken, by the respondent to ensure the conduct is not repeated or continued;;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: DescriptionLogic;
+  operator: PUBLICATION;
+  summary: Publish statement in specified manner;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (c) if required by the declaration—publish, or otherwise communicate, the statement in the manner specified by the declaration;;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-1-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-1;
+  logic: DescriptionLogic;
+  operator: COMPLIANCE;
+  summary: Comply with declaration requirements;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (d) give the Commissioner, within 14 days after the end of the period specified in the declaration, evidence that the actions required by paragraphs (b) and (c) were taken in accordance with this section and the declaration.;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-52a-ss-2-logic-78 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-52a-ss-2;
+  logic: Deontic;
+  operator: mustBe;
+  summary: Matters must be reasonable and appropriate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-35-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35;
+  logic: Deontic;
+  operator: MUST;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-36-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: MUST;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-37-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: add;
+  summary: Adds a new obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-38-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits refusal to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State requires person to give information;
+  @action: Person contravenes subsection if refuses or fails to do so;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-38-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Refusal to provide information overlaps with the requirement to give information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Schedule 1 Amendments;
+  @action: Refusal to provide information is a contravention if it occurs during the time period when the person is required to give information;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-38-logic-84 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: LTL;
+  operator: Repeats;
+  summary: Refusal to provide information repeats the requirement to give information;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Schedule 1 Amendments;
+  @action: Refusal to provide information is a repeated contravention if it occurs during the time period when the person is required to give information;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-38-logic-85 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion of refusal to provide information diffuses the requirement to give information;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Schedule 1 Amendments;
+  @action: Refusal to provide information diffuses the requirement to give information if it occurs during the time period when the person is required to give information;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-38-logic-86 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: CogAI recognizes refusal to provide information as a contravention;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Schedule 1 Amendments;
+  @action: Refusal to provide information is recognized by CogAI as a contravention if it occurs during the time period when the person is required to give information;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-40-logic-87 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-40;
+  logic: Deontic;
+  operator: INSERTION;
+  summary: Insertion of clause (1AA);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (1) or (1AA);
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-41-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-41-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Epistemic;
+  operator: Burden of proof;
+  summary: Burden of proof on the person relying on this subsection;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-42-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-43-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-43;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits an action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-80ub-ss-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80ub-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies entities with a specific role.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: infringement officer;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-80ub-ss-3-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80ub-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Chief Executive;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner;
+  @action: relevant chief executive;
+}
+
+privacy-legislation-amendment-enforcement-and-other-measures-act-2022-sch-1-sec-80ub-ss-4-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80ub-ss-4;
+  logic: Deontic;
+  operator: applies;
+  summary: The provision applies to the specified Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

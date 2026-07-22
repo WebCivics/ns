@@ -1,0 +1,414 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment (Misuse of Market Power) Act 2017
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Competition and Consumer Amendment (Misuse of Market Power) Act 2017.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Must not engage in conduct.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A corporation that has a substantial degree of power in a market must not...;
+  @action: ...must not engage in conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Relates to temporal intervals of conduct.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A corporation that has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Relates to recurring traces of conduct.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A corporation that has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-1;
+  logic: Diffusion;
+  operator: Diffusion;
+  summary: Relates to diffusion of conduct.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A corporation that has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-1;
+  logic: CogAI;
+  operator: CogAI;
+  summary: Relates to cognitive AI applications.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A corporation that has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-3-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-3;
+  logic: Deontic;
+  operator: hasPower;
+  summary: The corporation has power in the market.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A corporation is taken for the purposes of this section to have a substantial degree of power in a market if:;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-3;
+  logic: AllenInterval;
+  operator: hasPowerInMarket;
+  summary: The power in the market is determined by the temporal intervals.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) that corporation and a body corporate that is, or that corporation and 2 or more bodies corporate each of which is, related to that corporation, together have a substantial degree of power in that market.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-3-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-3;
+  logic: LTL;
+  operator: hasPowerInMarketOverTime;
+  summary: The power in the market over time is determined by the temporal intervals.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) that corporation and a body corporate that is, or that corporation and 2 or more bodies corporate each of which is, related to that corporation, together have a substantial degree of power in that market.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-3;
+  logic: Diffusion;
+  operator: diffusesPower;
+  summary: The power diffuses from the corporation to its related bodies corporate.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) a body corporate that is related to that corporation has, or 2 or more bodies corporate each of which is related to that corporation together have, a substantial degree of power in that market;;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-3;
+  logic: CogAI;
+  operator: hasCogAI;
+  summary: The corporation has cognitive abilities.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A corporation is taken for the purposes of this section to have a substantial degree of power in a market if:;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-4-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-4;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Regard must be had to the extent to which conduct is constrained by competitors or suppliers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-4;
+  logic: AllenInterval;
+  operator: >;
+  summary: Temporal interval comparison;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-6-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Regard may be had;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-ss-7-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-ss-7;
+  logic: Deontic;
+  operator: multiple;
+  summary: Multiple corporations can have substantial power.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Must not engage in conduct.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person who has a substantial degree of power in a market must not...;
+  @action: ...must not engage in conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-1-logic-17 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for prohibition.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A person who has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-1-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-1;
+  logic: LTL;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for prohibition.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A person who has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-1-logic-19 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses prohibition to related markets.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A person who has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-1-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies conduct as prohibited using AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A person who has a substantial degree of power in a market must not...;
+  @action: ...conduct that has the purpose or effect of substantially lessening competition.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-3;
+  logic: Deontic;
+  operator: hasPower;
+  summary: The person has power in the market.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The first person is taken to have a substantial degree of power in a market if...;
+  @action: The person has power in the market.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-3;
+  logic: AllenInterval;
+  operator: hasPowerInMarket;
+  summary: The first person and bodies corporate have power in the market.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the first person and a body corporate that is...;
+  @action: The first person and bodies corporate have power in the market.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-3-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-3;
+  logic: Deontic;
+  operator: hasPowerInMarketTogether;
+  summary: Multiple bodies corporate together have power in the market.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: 2 or more bodies corporate each of which is related to the first person...;
+  @action: Multiple bodies corporate together have power in the market.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-3;
+  logic: Deontic;
+  operator: hasPowerInMarketIf;
+  summary: A substantial degree of power in the market if certain conditions are met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person is taken to have a substantial degree of power in a market if...;
+  @action: A substantial degree of power in the market if certain conditions are met.;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-4-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-4;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Regard must be had to the extent to which conduct is constrained by competitors or suppliers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-4-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-4;
+  logic: AllenInterval;
+  operator: >;
+  summary: Temporal interval comparison;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-5-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-5;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses a possibility or potential obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-6-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-6;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits misuse of market power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsections (4) and (5);
+  @action: No misuse;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-1-sec-46-2-ss-7-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2-ss-7;
+  logic: Deontic;
+  operator: multiple;
+  summary: Multiple persons can have substantial market power.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-2-sec-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified subsections.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-2-sec-3-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-2-sec-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified sections.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-2-sec-6-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals the specified paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-misuse-of-market-power-act-2017-sch-2-sec-7-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Repeal subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsections 151BC(4) and (5);
+  @action: Prohibition;
+}

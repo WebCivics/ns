@@ -1,0 +1,3430 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Repeal heading and substitute with new text.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 137H (heading)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "585a8d85920b241bfe8a5f68f00b98160cee17d0e38408eead193b18e825cea7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Findings and admissions of fact in proceedings to be evidence",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "137H Findings and admissions of fact in proceedings to be evidence"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-137h",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide findings and admissions of fact in proceedings",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-137h"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsections 137H(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1"
+        },
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2"
+        }
+      ],
+      "cml:integrityHash": "45006b563b2fa2182b7ea81cca2aac16faa404d7946d1c0f51f91fbff6cf069d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Prima facie evidence of a fact in proceedings under subsection (3) of this section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1) Subsections 137H(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "762f69c67f93e405f60b09c2d3da308c20ca83019fe2bfc64f8487afb28357bc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:description": "Document under the seal of the court or a filed document",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Provision for proving finding or admission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(2) Subsections 137H(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ea89367ebfd4ae0b7367311e751c3c6c5aa4b27605c868d0ba9ebcd5a636b370",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide a document",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST PROVIDE"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-2-ss-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Omit “a finding of a fact by a court that is made in”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 137H(3)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ab327184283fd590298911b44ce9646b9c950160eb21f185b2d5fd00f3835312",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.7",
+      "skos:note": "Applicable to findings of fact and admissions of fact made on or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Application"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-alleninterval-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-deontic-2",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-ltl-3",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-cogai-4",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-shacl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1d22e82380859336ae10b1a3d47f7b6fe5ded75d4b051d0db1f50504e6bfa31e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "made on or after the commencement of this Schedule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for the application of amendments.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The amendments made by this Schedule apply in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Analyzes the amendments for artificial intelligence applications.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The amendments made by this Schedule apply in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Classifies the amendments as a type of obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The amendments made by this Schedule apply in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "made on or after the commencement of this Schedule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines a temporal relationship for the application of amendments.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The amendments made by this Schedule apply in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-logic-shacl-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::shacl",
+      "cml:logicSummary": "Validates the amendments against schema definitions.",
+      "cml:modality": {
+        "@id": "cml:SHACL"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The amendments made by this Schedule apply in relation to findings of fact, and admissions of fact, made on or after the commencement of this Schedule."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.17",
+      "skos:note": "Omit specific words from a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 12DC(1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "38bcab8edf6fed660da8100a360a957fb71c9f9d34975234e62166d7515e93b0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-10-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.17",
+      "skos:note": "Subsection (1) applies regardless of when a representation is made about the financial product.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After subsection 12DC(1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "07ad68ee4653350181fbffbd2fb833ca2ff82753ffe157432cff4cafda4315bf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-10-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.17",
+      "skos:note": "Omit specific words from a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Paragraph 12DC(2A)(b)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "38bcab8edf6fed660da8100a360a957fb71c9f9d34975234e62166d7515e93b0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-10-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.17",
+      "skos:note": "Subsection (2A) applies regardless of physical force, harassment, or coercion.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After subsection 12DC(2A)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "94dca627f9c5a789e96d21352ebbe5cf5aded999a98978799f45f5071c27daaa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-10-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Subsection (2A) applies regardless of circumstances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "always"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Subsection (2A) is a subclass of subsections that apply regardless of circumstances.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subClassOf"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-10-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Repeal definition of unsolicited financial products",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 12BA(1) (definition of unsolicited financial"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a5355eea785627b68dc1aed061a789af7911b4f13c6804e1d87fd10588c64b2e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Defines financial product as a financial service.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After subsection 12BAB(1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6fd11621ae410a83295747beeb2ac899ab3e05680f73509a4239f45a11f60ffa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subparagraph 12BEA(1)(e)(iii)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d84ecb9e618d6d24a83e5dd310c02ef6fbf86b5acf34249a53ef8bce7a21bd53",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or unsolicited financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 12DM(1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "15a8f1c11471d33059c56a3c6e2707790cd630798532e9073e6d533dd167d2d3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or unsolicited financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Paragraph 12DM(1AA)(a)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "15a8f1c11471d33059c56a3c6e2707790cd630798532e9073e6d533dd167d2d3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-5"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit 'or unsolicited financial products'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Section 12DMA"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "15a8f1c11471d33059c56a3c6e2707790cd630798532e9073e6d533dd167d2d3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'or unsolicited financial products'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-6"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 12DMB(1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d84ecb9e618d6d24a83e5dd310c02ef6fbf86b5acf34249a53ef8bce7a21bd53",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-7"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Paragraph 12DMB(2)(a)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d84ecb9e618d6d24a83e5dd310c02ef6fbf86b5acf34249a53ef8bce7a21bd53",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-8"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.18",
+      "skos:note": "Omit “or financial products”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Subsection 12DMB(4)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "adebb605b4870f0d0c6958a5f8d55d411504f248fbd350c21fc46e3f7f9f012f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-11-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Omit “or financial products”.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Forbid"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-11-sec-9"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.19",
+      "skos:note": "Insert in appropriate position",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 In the appropriate position"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.20",
+      "skos:note": "Insert provision in Chapter 6 of Schedule 2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 In the appropriate position in Chapter 6 of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-296",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.20",
+      "skos:note": "Amendments apply after commencement day",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "296 Application—listed public companies"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-296-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bc4e0924e9e2c37ac7963b1ddfebb27b751c79dfe7d5993fee76f2529392febd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-296",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-296-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-296"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-297",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.20",
+      "skos:note": "Amendments apply in relation to acts or omissions on or after the commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "297 Application—unsolicited supplies"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-297-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "180bba25fa458ad4a16220963d846161449a99833178b07d509cad59aa92d865",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-297",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-297-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-297"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-298",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.20",
+      "skos:note": "Application of amendment to unsolicited consumer agreements",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "298 Application—unsolicited consumer agreements"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-298-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40d0d35716077c15820b7b546ece3e59ea836899671f1a4fc3a133be46029b81",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-298",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-298-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-298"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.20",
+      "skos:note": "Application provisions for Schedule 5 amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "299 Application—single price"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2cf3651688f3358c4a9cffbef92159869ff676c75daa1fbed550e1871f4cb843",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-299",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "amendments apply",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Schedule 5 amendments apply in relation to acts or omissions on or after the commencement day",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies to",
+      "cml:premiseText": "Schedule commences"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-299"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-300",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.21",
+      "skos:note": "Applicable commencement date for non-punitive orders",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "300 Application—non-punitive orders"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-300-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0b3cf675a75ef76f3ff76dd984a168046684e1988829ec3bbd57804afc25cd72",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-300",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-300-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-300"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.21",
+      "skos:note": "Amendments apply in relation to services supplied under a contract entered into on or after the commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "301 Application—guarantees relating to the supply of services"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1ea36dcdc847a9aaea4bd97ce9f610c70fd206d37dfda07815712149eac50ad",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-301",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Holds true",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "holds"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-301"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.19",
+      "skos:note": "Amendments apply in relation to acts or omissions on or after commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "315 Application—listed public companies"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "19fbad1c1aa1c63c3f3565fdafe2e237331fd07da19473a6fa8616582527e1e0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-315",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Application of amendments to acts or omissions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-315"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.19",
+      "skos:note": "Amendment applies in relation to contracts entered into on or after the commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "316 Application—power to obtain information, documents and"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f8762ba15bcd0f56760e7e8a36c578e215504a41a39747287bd66602382b51e5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-316",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation applies to contracts entered into on or after the commencement day.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-316"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-317",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.19",
+      "skos:note": "Amendments apply in relation to acts or omissions on or after commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "317 Application—consumer protection"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-317-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "399c729f5a00875e7def98586befd90a8a49a2fa7122a6a2fa9952e7e60cc02e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-317",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-317-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-317"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.19",
+      "skos:note": "Application provisions for Schedule 11 amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "318 Application—financial products"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5a8b682cedbdcbe674482b442adfab3b0f667f60c727a9412ab747fa0aed3f0a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-12-sec-318",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Schedule 11 amendments apply to acts or omissions on or after commencement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-12-sec-318"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Omit specific phrase from listed public companies.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Paragraphs 12CB(1)(a) and (b)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fa29fc611d7d88429e67a4affe55d263aa6d47f9ee3fe0ee27824fa22da63b1a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 12CB(5)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9b27436ace710cb0796a9ce09a9615321a786ba300adabb9e5e4efadcb0f8c56",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to repeal",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Omit “(other than a listed public company)”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subparagraphs 131(2)(a)(i) and (ii)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fa29fc611d7d88429e67a4affe55d263aa6d47f9ee3fe0ee27824fa22da63b1a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Repeal definition of listed public company",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 2(1) of Schedule 2 (definition of listed public"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c171120707ee9826ccdcbc4b8e13e46b9493e33be4d501c6370d42e7e1dd3164",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to repeal definition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Omit specified text.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Paragraphs 21(1)(a) and (b) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fa29fc611d7d88429e67a4affe55d263aa6d47f9ee3fe0ee27824fa22da63b1a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified text.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-5"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.8",
+      "skos:note": "Commencement of amendment",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Application"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "55b3f9c9b6f1a3c0e8220d17733a49455b3c40f79882e82c8697af9695dc731e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-2-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-2-sec-6"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.9",
+      "skos:note": "Repeal of definition, substitution with new definition",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 2(1) of Schedule 2 (definition of unsolicited"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1e32f086e037069bad9993961c94625f8e411f7fa006f1add22c1ab15a7b3f95",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of unsolicited services",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Definition substitution",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Substitute"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.9",
+      "skos:note": "Omit 'supplying'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Paragraph 40(3)(a) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0c6ded5a4bc26973a2ae23e65d9ce274babf35f49f6853f330ba75cca76d16ba",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.9",
+      "skos:note": "Prohibits supplying or purporting to supply without actually doing so.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 42 of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dda64efbc5837869254f99e2a647041f02d5cf77a0f1f4d90a9d5f2977bde588",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits an action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.9",
+      "skos:note": "Insert 'or purported supply' after 'supply'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Paragraph 42(b) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a6f79ae2f1575fdb1608ec67eb6fa51d8efcf5db5fb4222d389f9cb818d6f9fc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.9",
+      "skos:note": "Omit 'supplying'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Paragraph 162(3)(a) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c643414fee8f9b1eaec8eb7bf2d070a5bcd392d750df55934a8c1dab6cfd269a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-3-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-3-sec-5"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-4-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.10",
+      "skos:note": "Clarifies that a place mentioned in subsection (1)(b)(i) may be a public place without needing consumer consent or invitation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After subsection 69(1) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-4-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "665377c5bf8c52aa480a3b5c2933a2de591c76088400f6998609a5b9e17fde64",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-4-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-4-sec-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-4-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.11",
+      "skos:note": "Repeal of a charge payable to another person unless certain conditions are met.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Paragraph 48(7)(a) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4d91216c76d70ea263d281b01120655064450c54326162adc6291e61d99ac828",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-5-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of a charge payable to another person.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.11",
+      "skos:note": "Must include carbon offset charge in flight price if preselected",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 48(7) of Schedule 2 (example 1)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-alleninterval-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-deontic-2",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-argumentation-3",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-diffusion-4",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3f03725c43c26a00cedc7db793cce54bd645934b25cf9392704777a8ac6ccb36",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-5-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exception applies if the person deselects the charge within a certain time frame.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "If the person deselects the optional carbon offset charge later in the online booking process, the single price does not need to include the carbon offset charge after the charge is deselected."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The airline's obligation to include the carbon offset charge is waived if the person deselects it within a certain time frame.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Reasoning about obligation",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "If the person deselects the optional carbon offset charge later in the online booking process, the single price does not need to include the carbon offset charge after the charge is deselected."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The airline's AI system must include the carbon offset charge in the flight price if preselected.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Artificial intelligence application",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "The online booking system can be designed to automatically include the carbon offset charge if preselected."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The airline must include the carbon offset charge in the flight price if preselected.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Duty to include carbon offset charge",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "This is because the person has not, at or before the time of the representation, deselected the charge on the online booking site."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The airline must inform the person about the option to pay for a carbon offset charge.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Spread of information",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "This exception provides for the spread of information about the optional carbon offset charge."
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-5-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsections 133D(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1"
+        },
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2"
+        }
+      ],
+      "cml:integrityHash": "267a3f2599542aaa922c1a8d07afd19e1e43c493a4d6a65111a5156acb28d38c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.12",
+      "skos:note": "Disclosure notice may be given to a person if they can provide information about consumer goods.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(1) Subsections 133D(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-alleninterval-2",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c07c3a5c9f18854b99ccf10a87d3d432eaf87633a86d7a9a7a910dbbc5f64306",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-1-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between disclosure and supply",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(1) The Commonwealth Minister or an inspector may give a disclosure notice to a person (the notice recipient) if the person giving the notice has reason to believe:"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to disclose notice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Repeating disclosure for each supply",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "(1) The Commonwealth Minister or an inspector may give a disclosure notice to a person (the notice recipient) if the person giving the notice has reason to believe:"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.12",
+      "skos:note": "Disclosure notice may be given to a person if they are capable of giving information or producing documents in relation to the supply of product-related services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(2) Subsections 133D(1) and (2)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dd621a785e8539692187807d8ab627de3febf1f42079039d6cb7bd7a652aa2e0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-1-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to disclose information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-1-ss-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.13",
+      "skos:note": "Omit “supplier”, substitute “notice recipient”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 133D(3)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "313b9142f92b0089ff771d2d1c9b47516c6b61372c81ec006f6903ec84a4ac1c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.13",
+      "skos:note": "Omit “supplier”, substitute “notice recipient”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Paragraph 133D(3)(a)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "313b9142f92b0089ff771d2d1c9b47516c6b61372c81ec006f6903ec84a4ac1c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.13",
+      "skos:note": "Amendments apply in relation to disclosure notices given on or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Application"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bf24265abe1bd9ef70e15b99ef12cddf435a28855c78808cb2453febb007bdad",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-6-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-6-sec-4"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of section 13"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7"
+        },
+        {
+          "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8"
+        }
+      ],
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-7-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.14",
+      "skos:note": "ASIC may make investigations into contract terms for determining whether to apply to court under section 12GND.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(7) At the end of section 13"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fd59ab7be8f5ae51aed8b4e82117f6a2346e6586ab477d2465eb8bc30296d0ff",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-7-sec-1-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to investigate contract terms",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-7"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.14",
+      "skos:note": "Definitions from Division 2 of Part 2 apply to expressions in subsection (7)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(8) At the end of section 13"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c03f8a071359043514093a5149e87370a3df74dcf109ab0bcb2c1e252ab96dcd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-7-sec-1-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition application",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "apply",
+      "cml:premiseText": "Definitions from Division 2 of Part 2 apply to expressions in subsection (7)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-1-ss-8"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.14",
+      "skos:note": "Commission must investigate or inquire into consumer contracts for court application purposes.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of paragraph 155(2)(b)"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3d249b3205e9c2bdf36636e3ff876265a4927ce6312d8fcf22eda391fa286fc3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-7-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must investigate or inquire into consumer contracts.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.14",
+      "skos:note": "Amendment applies to contracts entered into on or after the commencement date.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Application"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "28fa466f34656f02a77b5e00103009fee9174afe3b10f078bc39f4b7124387be",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-7-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval: on or after the commencement date.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "on or after"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendment applies to contracts entered into on or after the commencement date.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-7-sec-3"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.15",
+      "skos:note": "Order requiring engagement of another person to perform a service for the benefit of the community.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After paragraph 246(2)(a) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ba18ccf5a75c4f2a45f19c2368887dce2a4666ecbb76ec8ebfed358ba9d40f34",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-8-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the state.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the engagement as a service for the benefit of the community.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "classifies"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.15",
+      "skos:note": "Exempts certain persons from enforcement of an order under subsection (2)(aa)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After subsection 246(2) of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-deontic-1",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-alleninterval-2",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-ltl-3",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-diffusion-4",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "405d8af926ef831e0d9b8aa32d1d36b0e37aa9689d22b10da5753c7dfcab9644",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-8-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Excludes temporal interval of enforcement of an order under subsection (2)(aa) for certain persons",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "An order under subsection (2)(aa) is not enforceable against a person mentioned in subsections (2)(aa)(i) and (ii)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Excludes temporal interval of enforcement of an order under subsection (2)(aa) for certain persons",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "An order under subsection (2)(aa) is not enforceable against a person mentioned in subsections (2)(aa)(i) and (ii)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits enforcement of an order against certain persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "An order under subsection (2)(aa) is not enforceable against a person mentioned in subsections (2)(aa)(i) and (ii)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Excludes temporal interval of enforcement of an order under subsection (2)(aa) for certain persons",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "An order under subsection (2)(aa) is not enforceable against a person mentioned in subsections (2)(aa)(i) and (ii)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Excludes temporal interval of enforcement of an order under subsection (2)(aa) for certain persons",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "An order under subsection (2)(aa) is not enforceable against a person mentioned in subsections (2)(aa)(i) and (ii)"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-8-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.16",
+      "skos:note": "Insertion of number in section heading",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 63 of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e2aa0a385a27edea5a6c3d815689d13f81673d5c7856158cb11431e13bc3bff6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-9-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.16",
+      "skos:note": "Avoids doubt about subsection (1)(a) not applying if consignee is not engaged in a business or occupation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of section 63 of Schedule 2"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0a2b15e140f105e3b05606bf419a54ded1b1f089daa08e0162cea7f5b427f3f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sch-9-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sch-9-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "031352f6d77b335db855607049a4f444497eabd056abf2d52d2aaee045035558",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": [
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2-norm",
+        "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Treasury Laws Amendment (Australian Consumer Law Review) Act 2018.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-1"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 October 2018"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-26-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-26-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-26"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf",
+      "asserts": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "19268285bba2aa8f630e42be43f4ded2415fc71e02b142a3f9f1284c8d1a35e9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:treasury-laws-amendment-australian-consumer-law-review-act-2018#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:treasury-laws-amendment-australian-consumer-law-review-act-2018-sec-3"
+    },
+    {
+      "@id": "doc:au/c2018a00132",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the law relating to consumer protections, and for related purposes",
+      "dc:identifier": [
+        "C2018A00132",
+        "No. 132 of 2018"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Treasury Laws Amendment (Australian Consumer Law Review) Act 2018"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2018A00132/latest/downloads",
+        "treasury-laws-amendment-australian-consumer-law-review-act-2018.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

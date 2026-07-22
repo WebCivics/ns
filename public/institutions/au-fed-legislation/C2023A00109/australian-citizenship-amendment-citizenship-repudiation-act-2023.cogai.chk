@@ -1,0 +1,359 @@
+# CogAI proposed logic-routing chunks — Australian Citizenship Amendment (Citizenship Repudiation) Act 2023
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with a specific meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits ceasing citizenship for repudiation of allegiance and public interest.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-1;
+  logic: Deontic;
+  operator: CEASES;
+  summary: Ceases to be an Australian citizen;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, if an order is made under subsection 36C(1);
+  @action: ceases to be an Australian citizen at the time the order is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Ceases to be an Australian citizen upon cessation of citizenship order;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, if an order is made under subsection 36C(1);
+  @action: ceases to be an Australian citizen at the time the order is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-1;
+  logic: LTL;
+  operator: <=;
+  summary: Ceases to be an Australian citizen upon cessation of citizenship order;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, if an order is made under subsection 36C(1);
+  @action: ceases to be an Australian citizen at the time the order is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-1;
+  logic: Deontic;
+  operator: OVERRIDDEN;
+  summary: Order overturned or quashed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, if an order is made under subsection 36C(1);
+  @action: order overturned or quashed.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-1;
+  logic: Deontic;
+  operator: QUASHED;
+  summary: Order overturned or quashed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, if an order is made under subsection 36C(1);
+  @action: order overturned or quashed.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-2;
+  logic: Deontic;
+  operator: Reversal;
+  summary: Overturns or quashes the order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If a decision of a court overturns or quashes the order...;
+  @action: ...the person’s citizenship is taken never to have ceased under subsection (1) of this section.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Inclusion;
+  summary: Defines the temporal scope of 'citizenship cessation';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If a decision of a court overturns or quashes the order...;
+  @action: ...the person’s citizenship is taken never to have ceased under subsection (1) of this section.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-2;
+  logic: LTL;
+  operator: Temporal Inclusion;
+  summary: Defines the temporal scope of 'citizenship cessation';
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) If a decision of a court overturns or quashes the order...;
+  @action: ...the person’s citizenship is taken never to have ceased under subsection (1) of this section.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-3;
+  logic: Deontic;
+  operator: Preservation;
+  summary: Preserves validity of actions taken in reliance on overturned order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The validity of anything done in reliance on the order made under subsection 36C(1) before the order was overturned or quashed is not affected.;
+  @action: The validity of actions taken in reliance on the overturned order is preserved.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-3;
+  logic: LinearLogic;
+  operator: Preservation;
+  summary: Preserves validity of actions taken in reliance on overturned order;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) The validity of anything done in reliance on the order made under subsection 36C(1) before the order was overturned or quashed is not affected.;
+  @action: The validity of actions taken in reliance on the overturned order is preserved.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to cease citizenship upon overturning or quashing order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: ...the person ceases to be an Australian citizen at the time the second decision is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-4;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Ceasing citizenship is after the appeal decision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: ...the person ceases to be an Australian citizen at the time the second decision is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-4;
+  logic: LTL;
+  operator: <=;
+  summary: Ceasing citizenship is before or equal to the appeal decision;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: ...the person ceases to be an Australian citizen at the time the second decision is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36b-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Ceasing citizenship implies State obligation upon overturning or quashing order;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: ...the person ceases to be an Australian citizen at the time the second decision is made.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits ceasing to be an Australian citizen if convicted of serious offence and sentenced to at least 3 years imprisonment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a person is convicted of one or more serious offences; (b) the court has decided to impose on the person, in respect of the conviction or convictions, a period of imprisonment that is at least 3 years or periods of imprisonment that total at least 3 years;;
+  @action: the court may, when imposing such a period or periods of imprisonment on the person in respect of the conviction or convictions, also order at that time as part of the sentence or sentences that the person ceases to be an Australian citizen.;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-2;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court must not make order;
+  @action: Person would lose citizenship;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Defines serious offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A serious offence is an offence against any of the following provisions:;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Defines prohibited acts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (f) a provision of Part 5.3 of the Criminal Code (terrorism), other than the following provisions:;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-3;
+  logic: AllenInterval;
+  operator: >;
+  summary: Specifies excluded terrorism provisions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) section 102.8;;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36c-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Defines prohibited acts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (g) a provision of Part 5.5 of the Criminal Code (foreign incursions and recruitment).;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to table a report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of determinations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Omit 'determinations';
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of specified words.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to review;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

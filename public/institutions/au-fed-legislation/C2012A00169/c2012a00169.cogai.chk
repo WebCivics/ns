@@ -1,0 +1,5143 @@
+# CogAI proposed logic-routing chunks — Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2012a00169-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: States the day of Royal Assent;
+  @action: Establishes a specific point in time;
+}
+
+c2012a00169-sec-3-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-3;
+  logic: Deontic;
+  operator: begins;
+  summary: Chapter commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sec-1-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement information includes date/details;
+  @action: Undertaking;
+}
+
+c2012a00169-sec-15-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act begins on the specified date.;
+}
+
+c2012a00169-sec-15-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15;
+  logic: AllenInterval;
+  operator: after;
+  summary: Temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: This event occurs after the specified date.;
+}
+
+c2012a00169-sec-4-4-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-4;
+  logic: Deontic;
+  operator: may;
+  summary: May make regulations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Entity must meet conditions to be registered.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Item 3 or 4 of the Schedule does not apply;
+  @action: Entity is registered as a charity.;
+}
+
+c2012a00169-sch-1-sec-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: DescriptionLogic;
+  operator: Type;
+  summary: Entity type is determined by item 3 or 4 of the Schedule.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Item 3 or 4 of the Schedule does not apply;
+  @action: Entity type is charity.;
+}
+
+c2012a00169-sch-1-sec-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: Between;
+  summary: Notice must be given within a certain time period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subitem (3) applies if entity notifies Commissioner that it was a charity.;
+  @action: Notice must be given before the end of the 12-month period.;
+}
+
+c2012a00169-sch-1-sec-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: LTL;
+  operator: Recurring;
+  summary: Entity must notify Commissioner within a certain time period.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subitem (3) applies if entity notifies Commissioner that it was a charity.;
+  @action: Entity must notify Commissioner regularly.;
+}
+
+c2012a00169-sch-1-sec-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Entity must provide notice in the approved form.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subitem (3) applies if entity notifies Commissioner that it was a charity.;
+  @action: Entity provides notice in the approved form.;
+}
+
+c2012a00169-sch-1-sec-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Entity must provide notice within a certain time period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subitem (3) applies if entity notifies Commissioner that it was a charity.;
+  @action: Entity provides notice before the end of the 12-month period.;
+}
+
+c2012a00169-sch-1-sec-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide registration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Entity is a charity;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act (charity);
+}
+
+c2012a00169-sch-1-sec-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Entity is an institution whose principal activity is to promote the prevention or control of diseases in human beings;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 5 of that table (institution whose principal activity is to promote the prevention or control of diseases in human beings);
+}
+
+c2012a00169-sch-1-sec-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Entity must be registered on commencement day;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The Commissioner is treated as having registered the entity on the commencement day under Division 30 of the ACNC Act...;
+}
+
+c2012a00169-sch-1-sec-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must be endorsed under certain Acts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This item applies to an entity that, on the day before the commencement day, is:...;
+}
+
+c2012a00169-sch-1-sec-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must be a deductible gift recipient;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) endorsed under Subdivision 30-BA of the Income Tax Assessment Act 1997 as a deductible gift recipient...;
+}
+
+c2012a00169-sch-1-sec-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: is;
+  summary: Entity must be registered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+}
+
+c2012a00169-sch-1-sec-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: DescriptionLogic;
+  operator: is subtype of;
+  summary: Entity is a public benevolent institution;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (2)(b);
+}
+
+c2012a00169-sch-1-sec-4a-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4a;
+  logic: Deontic;
+  operator: if;
+  summary: Conditional obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (entity operator) is endorsed under Subdivision 30-BA of the Income Tax Assessment Act 1997...;
+  @action: This Division applies if...;
+}
+
+c2012a00169-sch-1-sec-4a-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4a;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval comparison;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (day before commencement day);
+  @action: from the day before the commencement day;
+}
+
+c2012a00169-sch-1-sec-10-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval between revocation and effect;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (if any) the Commissioner of the ACNC revokes under the ACNC Act;
+  @action: From the time (if any);
+}
+
+c2012a00169-sch-1-sec-10-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval until effect is nullified;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2);
+  @action: the registration of an institution sub-entity:;
+}
+
+c2012a00169-sch-1-sec-4c-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4c;
+  logic: Deontic;
+  operator: =;
+  summary: Equality of entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ABN of operator) = (ABN of non-institution sub-entity);
+  @action: (ABN of non-institution sub-entity) is treated as being the ABN of the operator.;
+}
+
+c2012a00169-sch-1-sec-4c-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4c;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal equality;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (Start time of operator's ABN) = (Start time of non-institution sub-entity's ABN);
+  @action: (ABN of non-institution sub-entity) is treated as being the ABN of the operator.;
+}
+
+c2012a00169-sch-1-sec-4c-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4c;
+  logic: LTL;
+  operator: =;
+  summary: Temporal equality;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (Operator's ABN start time) = (Non-institution sub-entity's ABN start time);
+  @action: (ABN of non-institution sub-entity) is treated as being the ABN of the operator.;
+}
+
+c2012a00169-sch-1-sec-4c-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4c;
+  logic: Diffusion;
+  operator: =;
+  summary: Information diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (Operator's endorsement status) = (Non-institution sub-entity's endorsement status);
+  @action: (ABN of non-institution sub-entity) is treated as being the ABN of the operator.;
+}
+
+c2012a00169-sch-1-sec-4c-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4c;
+  logic: CogAI;
+  operator: =;
+  summary: Artificial intelligence application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (Operator's ABN) = (Non-institution sub-entity's ABN);
+  @action: (ABN of non-institution sub-entity) is treated as being the ABN of the operator.;
+}
+
+c2012a00169-sch-1-sec-4d-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4d;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Institution sub-entity is treated as if carrying on an enterprise in Australia.;
+  @action: Entity type determined by ACNC Act;
+}
+
+c2012a00169-sch-1-sec-4d-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4d;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval for registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Registration must occur within 12 months after commencement day;
+  @action: Registration period defined;
+}
+
+c2012a00169-sch-1-sec-12-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies entities into types;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The institution sub-entity is treated as being the subtype of entity mentioned in column...;
+  @action: ...for as long as each of the institutions included in the institution sub-entity is an institution whose principal activity is to promote the prevention or the control of diseases in human beings;;
+}
+
+c2012a00169-sch-1-sec-12-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies entities into types;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ...the subtype of entity mentioned in column 2 of item 6 of that table as long as each of the institutions included in the institution sub-entity is a public benevolent institution.;
+  @action: ...for as long as each of the institutions included in the institution sub-entity is an institution whose principal activity is to promote the prevention or the control of diseases in human beings;;
+}
+
+c2012a00169-sch-1-sec-12-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies entities into types;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The Commissioner of Taxation is treated as having endorsed the institution sub-entity mentioned in paragraph 4B(1)(c) under subsection 123C(1) of the Fringe Benefits Tax Assessment Act 1986 as a public benevolent institution;;
+  @action: ...for as long as each of the institutions included in the institution sub-entity is an institution whose principal activity is to promote the prevention or the control of diseases in human beings;;
+}
+
+c2012a00169-sch-1-sec-12-logic-35 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies entities into types;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The Commissioner of the ACNC is treated as having registered the institution sub-entity on the commencement day under Division 30 of the ACNC Act as:;
+  @action: ...the type of entity mentioned in column 1 of item 1 of that Act (charity); and...the subtype of entity mentioned in column 2 of item 6 of that table (public benevolent institution).;
+}
+
+c2012a00169-sch-1-sec-12-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies entities into types;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ...the subtype of entity mentioned in column 2 of item 6 of that table as long as each...;
+  @action: ...for as long as each of the institutions included in the institution sub-entity is an institution whose principal activity is to promote the prevention or the control of diseases in human beings;;
+}
+
+c2012a00169-sch-1-sec-4e-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4e;
+  logic: Deontic;
+  operator: May;
+  summary: Permits;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-5-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Entity has an obligation to notify Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-6-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-6-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Entity type classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the ACNC Act (charity);
+}
+
+c2012a00169-sch-1-sec-6-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Timeframe for notice provision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 12 months starting on commencement day;
+}
+
+c2012a00169-sch-1-sec-9-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: applies;
+  summary: Subdivision 60-C applies to financial years after 2013-14.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-16-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-10-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Commissioner has an obligation to treat the documents as information statements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commissioner is required to treat certain documents as information statements for a financial year.;
+  @action: The Commissioner MUST treat the documents as information statements.;
+}
+
+c2012a00169-sch-1-sec-10-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: AllenInterval;
+  operator: STARTS-DURING;
+  summary: The document starts during a financial year.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The document is given to the Commissioner in accordance with Subdivision 60-C (Annual financial reports) or 60-D.;
+  @action: The document STARTS-DURING a financial year.;
+}
+
+c2012a00169-sch-1-sec-10-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The registered entity must notify the Commissioner that the documents have been treated as information statements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commissioner has treated the documents as information statements for a financial year.;
+  @action: The registered entity MUST notify the Commissioner that the documents have been treated as information statements.;
+}
+
+c2012a00169-sch-1-sec-10-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Commissioner must treat the reports as annual financial reports for a registered entity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The report covers the financial operations of a registered entity for a financial year.;
+  @action: The Commissioner MUST treat the reports as annual financial reports for a registered entity.;
+}
+
+c2012a00169-sch-1-sec-18-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Entity must provide notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-12-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Section applies to financial years after 2012-13, with special treatment for 2012-13.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-12-2-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2;
+  logic: AllenInterval;
+  operator: between;
+  summary: References in section apply between commencement day and 30 June 2013;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a);
+  @action: (b);
+}
+
+c2012a00169-sch-1-sec-13-logic-51 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal overlap with ACNC Act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (2) and (3);
+}
+
+c2012a00169-sch-1-sec-14-2-logic-52 {
+  activation: 0.8000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Disclosure of protected information by taxation officers is permitted for specific purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-1-sec-15-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies to grants received in specified financial years.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits activities of employer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-3-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Repeal the table.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-2-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-2;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-3-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-3;
+  logic: Deontic;
+  operator: *;
+  summary: Mandatory condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Society or association must be a registered charity.;
+  @action: Hospital carried on by society or association is not valid if it is not a registered charity.;
+}
+
+c2012a00169-sch-2-sec-1-3-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-3;
+  logic: AllenInterval;
+  operator: <;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Society or association must be registered before carrying on a hospital.;
+  @action: Hospital carried on by society or association can only commence after it is registered.;
+}
+
+c2012a00169-sch-2-sec-1-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-3;
+  logic: LTL;
+  operator: <;
+  summary: Recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Society or association must be registered before carrying on a hospital for an indefinite period.;
+  @action: Hospital carried on by society or association can only continue if it is registered.;
+}
+
+c2012a00169-sch-2-sec-1-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-3;
+  logic: Diffusion;
+  operator: =;
+  summary: Propagation of obligation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Registered charity requirement applies to all members of the society or association.;
+  @action: All members of the society or association must be registered charities.;
+}
+
+c2012a00169-sch-2-sec-1-5-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide public fund;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the public fund must have been established before;
+  @action: Hospitals can be established.;
+}
+
+c2012a00169-sch-2-sec-1-5-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-5;
+  logic: AllenInterval;
+  operator: BEFORE;
+  summary: Temporal relationship between establishment of public fund and hospitals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the public fund must have been established before;
+  @action: Hospitals can be established.;
+}
+
+c2012a00169-sch-2-sec-1-5-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-5;
+  logic: Argumentation;
+  operator: IMPLICATION;
+  summary: Implication between establishment of public fund and hospitals;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) the public fund must have been established before;
+  @action: Hospitals can be established.;
+}
+
+c2012a00169-sch-2-sec-1-5-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-5;
+  logic: Diffusion;
+  operator: SPREAD;
+  summary: Spread of information about establishment of public fund and hospitals;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the public fund must have been established before;
+  @action: Hospitals can be established.;
+}
+
+c2012a00169-sch-2-sec-1-5-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-5;
+  logic: CogAI;
+  operator: RECOGNITION;
+  summary: Recognition of establishment of public fund and hospitals by AI system;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) the public fund must have been established before;
+  @action: Hospitals can be established.;
+}
+
+c2012a00169-sch-2-sec-23-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: Deontic;
+  operator: MUST;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: LTL;
+  operator: BETWEEN;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: Diffusion;
+  operator: BETWEEN;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: CogAI;
+  operator: BETWEEN;
+  summary: Public fund must be registered under Australian Charities and Not-for-profits Commission Act 2012 or not an ACNC type of entity.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-6-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-6;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-7-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-7;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-8-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-8;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of registered health promotion charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+c2012a00169-sch-2-sec-1-9-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-9;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-10-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Public fund must be registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-10-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-10;
+  logic: DescriptionLogic;
+  operator: IS A;
+  summary: The public fund is an ACNC type of entity.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The public fund must not be an *ACNC* type of entity.;
+}
+
+c2012a00169-sch-2-sec-5-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Repeal the table;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-2-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-2;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-3-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-3;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Establishment of public university is obligatory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-4-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-4;
+  logic: Deontic;
+  operator: mustBe;
+  summary: Mandatory institution type;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: An institution must be an Australian government agency or a registered charity.;
+}
+
+c2012a00169-sch-2-sec-2-5-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-5;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The institution must be a registered charity.;
+}
+
+c2012a00169-sch-2-sec-2-6-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Establishment of a residential educational institution by the Commonwealth is obligatory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-28-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28;
+  logic: Deontic;
+  operator: hasSpecialConditionsForGifts;
+  summary: Imposes special conditions on gifts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-7-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-7;
+  logic: Deontic;
+  operator: Affiliation;
+  summary: Must be affiliated;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-8-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-8;
+  logic: Deontic;
+  operator: must be;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The institution has been determined to be a technical and further education institution.;
+  @action: It must be an Australian government agency or a registered charity.;
+}
+
+c2012a00169-sch-2-sec-2-8-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The institution is under the Student Assistance Act 1973.;
+  @action: It was determined to be a technical and further education institution during that time.;
+}
+
+c2012a00169-sch-2-sec-2-8-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-8;
+  logic: LTL;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The institution is under the Student Assistance Act 1973.;
+  @action: It was determined to be a technical and further education institution during that time.;
+}
+
+c2012a00169-sch-2-sec-2-9-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-9;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-9-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-9;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Is an ACNC type of entity or not.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ACNC type of entity;
+  @action: not;
+}
+
+c2012a00169-sch-2-sec-2-10-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be registered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-10-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-10;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Type of entity;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ACNC type of entity;
+  @action: Not an ACNC type of entity;
+}
+
+c2012a00169-sch-2-sec-2-11-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-11;
+  logic: Deontic;
+  operator: MUST;
+  summary: Public fund must be registered.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-11-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-11;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Registration is a requirement.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-12-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-12;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be registered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-12-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-12;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Type of entity;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ACNC type of entity;
+  @action: Not an ACNC type of entity;
+}
+
+c2012a00169-sch-2-sec-2-13-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-13;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a mandatory obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-14-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-14;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be a registered charity or operated by a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-2-14-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-14;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Contains a temporal interval that must be met.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-7-logic-102 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: applies to;
+  summary: Subsection application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-3-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The approved research institute must be registered.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-3-2-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3-2;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: The approved research institute is an ACNC type of entity.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-9-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establish new provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: New provisions must be established;
+  @action: Provisions are established;
+}
+
+c2012a00169-sch-2-sec-4-2-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-2;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of a registered public benevolent institution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Registered public benevolent institution;
+}
+
+c2012a00169-sch-2-sec-4-3-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Establishment requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-23-2-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23-2;
+  logic: Deontic;
+  operator: mustBe;
+  summary: Mandatory condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Must be a registered charity or operated by a registered charity;
+}
+
+c2012a00169-sch-2-sec-4-4-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-4;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-4-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-4;
+  logic: DescriptionLogic;
+  operator: IS A;
+  summary: Public fund must be an *Australian government agency; or *registered charity;;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-5-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-5;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be a registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-30-2-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2;
+  logic: Deontic;
+  operator: hasPart;
+  summary: Classification of deductible gift recipients;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-6-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-6;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-7-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4-8-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-8;
+  logic: Deontic;
+  operator: >;
+  summary: Principal activity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Prevention or control of diseases;
+  @action: Not a principal activity;
+}
+
+c2012a00169-sch-2-sec-10-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits repeal of the table.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-5-2-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make a gift for purposes of defence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-36-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-36;
+  logic: Deontic;
+  operator: hasSpecialConditionsForGifts;
+  summary: Imposes special conditions on gifts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-5-3-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-3;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-5-4-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-11-logic-121 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Identifies the temporal interval for repeal.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The table is repealed at some point.;
+  @action: No specific time frame is given.;
+}
+
+c2012a00169-sch-2-sec-8-2-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-9-2-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be a registered charity or operated by a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-9-3-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Establishment of a public fund is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-2-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a public fund on the register.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-3-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12-3;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-4-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12-4;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-5-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12-5;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an Australian government agency or a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-12-6-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12-6;
+  logic: Deontic;
+  operator: mustBe;
+  summary: Mandatory institution type;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The institution must be an Australian government agency or a registered charity.;
+  @action: Obligation to meet the specified criteria;
+}
+
+c2012a00169-sch-2-sec-16-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal subsection;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-18-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Obligation to be a registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-19-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity classification;
+  @action: ACNC type of entity definition;
+}
+
+c2012a00169-sch-2-sec-44-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-44;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Type of entity mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-44-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-44;
+  logic: Deontic;
+  operator: is;
+  summary: Classification criterion;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-21-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines the term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-21-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21;
+  logic: DescriptionLogic;
+  operator: subtype of entity mentioned in column 2 of item 5 of the table;
+  summary: Describes the subtype;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-22-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 6 of the table;
+  @action: registered public benevolent institution;
+}
+
+c2012a00169-sch-2-sec-22-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity subtype;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: column 2 of item 6 of the table;
+  @action: subtype of entity mentioned in column 2 of item 6 of the table;
+}
+
+c2012a00169-sch-2-sec-23-3-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Defines the period for transitional provision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-25-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-25;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-26-2-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-27-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-28-2-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Replace item with 'charity, education or science';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-1-11-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-11;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: see sections 50-50 and 50-52;
+  @action: registered charity;
+}
+
+c2012a00169-sch-2-sec-32-2-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-32-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of an exempt entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-33-ss-1-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-33-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide income tax;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-33-ss-3-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-33-ss-3;
+  logic: Deontic;
+  operator: overrides;
+  summary: Overrides other sections of this subdivision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-35-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-36-2-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-36-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsection;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-38-2-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-38-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of charity activities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity must not carry on charity activities;
+  @action: without reasonable grounds.;
+}
+
+c2012a00169-sch-2-sec-39-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-39;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrases;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-40-2-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits disregarding certain amounts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-43-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-43;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+c2012a00169-sch-2-sec-44-2-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-44-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'public benevolent institution';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-46-2-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-46-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the repeal of a subparagraph.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-46-2-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-46-2;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitutes three alternative entities for the repealed subparagraph.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-47-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-47;
+  logic: Deontic;
+  operator: requirement;
+  summary: Mandatory addition of ‘and’;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-49-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-49;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the repeal of paragraphs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-52-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-52;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+c2012a00169-sch-2-sec-55-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-55;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+c2012a00169-sch-2-sec-57-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-57;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'public benevolent institution';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-61-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-61;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to substitute 'registered charity' for 'charitable institution';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-63-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-63;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: registered charity means an entity that is registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act.;
+}
+
+c2012a00169-sch-2-sec-64-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines the term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-64-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64;
+  logic: DescriptionLogic;
+  operator: subtype of entity mentioned in column 2 of item 5 of the table in subsection 25-5(5) of that Act;
+  summary: Describes the subtype;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-65-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-65;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered public benevolent institution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-65-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-65;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Registered charity and subtype of entity mentioned in ComLaw Authoritative Act C2012A00169;
+  @action: registered public benevolent institution;
+}
+
+c2012a00169-sch-2-sec-65-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-65;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Registered under the Australian Charities and Not-for-profits Commission Act 2012 as subtype of entity mentioned in ComLaw Authoritative Act C2012A00169;
+  @action: between 2012 and current year;
+}
+
+c2012a00169-sch-2-sec-66-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-66;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-66-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-66;
+  logic: DescriptionLogic;
+  operator: subtype of;
+  summary: Relates to subtype;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-67-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-67;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-68c-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-68c;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-70-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-70;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-75-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-75;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-78-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-78;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-80-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-80;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-82-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-82;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide an endorsed charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-83-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-83;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-85-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-85;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-56-2-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-56-2;
+  logic: Deontic;
+  operator: MUST BE;
+  summary: Must be an endorsed charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-90-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-90;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-92-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-92;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute an endorsed charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-93-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-93;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specific terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-94-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-94;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval required;
+  @action: Undertaking;
+}
+
+c2012a00169-sch-2-sec-95-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-95;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-96-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-96;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-98-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-98;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-99-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-99;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to substitute with an endorsed charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-105-logic-190 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-105;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'institution, fund';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'institution, fund';
+  @action: Substitute 'endorsed charity';
+}
+
+c2012a00169-sch-2-sec-106-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-106;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies repeal as a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Repeal is a duty;
+  @action: Obligation;
+}
+
+c2012a00169-sch-2-sec-107-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-107;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide an endorsed charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-109-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-109;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of certain terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-111-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-111;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a substitute charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-113-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-113;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-115-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-115;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Prohibition of incorrect terminology;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-116-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-116;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'institution, trustee';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Omit 'institution, trustee', substitute 'endorsed charity'.;
+}
+
+c2012a00169-sch-2-sec-116-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-116;
+  logic: AllenInterval;
+  operator: None;
+  summary: No temporal interval specified;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Omit 'institution, trustee', substitute 'endorsed charity'.;
+}
+
+c2012a00169-sch-2-sec-117-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-117;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval required;
+  @action: Undertaking;
+}
+
+c2012a00169-sch-2-sec-119-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-119;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Identify temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Text mentions a time frame;
+  @action: Temporal interval identified;
+}
+
+c2012a00169-sch-2-sec-121-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-121;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-122-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-122;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace existing text with new text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-60-2-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-60-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must apply for endorsement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the entity has applied for that endorsement in accordance with Division 426 in Schedule 1 to the Taxation Administration Act 1953.;
+}
+
+c2012a00169-sch-2-sec-124-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-124;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Entity must be endorsed as charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-126-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of ACNC-registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-126-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: ACNC-registered charity means an entity that is registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act.;
+}
+
+c2012a00169-sch-2-sec-126-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The Australian Charities and Not-for-profits Commission Act 2012;
+  @action: the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-2-sec-126-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-2-sec-126-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-2-sec-126-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-2-sec-126-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-126;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-2-sec-127-logic-212 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: ACNC-registered charity and registered entity under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: ACNC-registered religious institution;
+}
+
+c2012a00169-sch-2-sec-127-logic-213 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity subtype classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 3 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: ACNC-registered charity subtype;
+}
+
+c2012a00169-sch-2-sec-127-logic-214 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 3 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: registered entity subtype;
+}
+
+c2012a00169-sch-2-sec-127-logic-215 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 3 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: entity subtype;
+}
+
+c2012a00169-sch-2-sec-127-logic-216 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 3 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: entity subtype classification;
+}
+
+c2012a00169-sch-2-sec-127-logic-217 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subtype of entity mentioned in column 2 of item 3 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: classification;
+}
+
+c2012a00169-sch-2-sec-131-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-131;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Imposes duty to repeal paragraphs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-132-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-132;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit specified text;
+}
+
+c2012a00169-sch-2-sec-133-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-62-2-logic-221 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-62-2;
+  logic: Deontic;
+  operator: is;
+  summary: Charity status;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: GST Act subsection 176-1(1);
+  @action: Charity under GST Act;
+}
+
+c2012a00169-sch-2-sec-62-2-logic-222 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-62-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: GST Act subsection 176-1(1) and Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+  @action: Charity under GST Act or Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012 during same period;
+}
+
+c2012a00169-sch-2-sec-62-2-logic-223 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-62-2;
+  logic: LTL;
+  operator: during;
+  summary: Temporal relationship;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: GST Act subsection 176-1(1) and Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+  @action: Charity under GST Act or Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012 during same period;
+}
+
+c2012a00169-sch-2-sec-62-2-logic-224 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-62-2;
+  logic: CogAI;
+  operator: is;
+  summary: Knowledge representation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: GST Act subsection 176-1(1) and Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+  @action: Charity under GST Act or Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+}
+
+c2012a00169-sch-2-sec-62-2-logic-225 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-62-2;
+  logic: SHACL;
+  operator: instanceOf;
+  summary: Schema.org vocabulary;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: GST Act subsection 176-1(1) and Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+  @action: Charity under GST Act or Australian Charities and Not-for-profits Commission (Consequential and Transitional) Act 2012;
+}
+
+c2012a00169-sch-2-sec-136-ss-1-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-136-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Company has an obligation to meet the specified conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-136-ss-1-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-136-ss-1;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: The company's name is included in a class of entities that meet certain criteria.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-136-ss-2-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-136-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-64-2-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Company may omit word 'Limited' from name.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-64-2-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64-2;
+  logic: AllenInterval;
+  operator: >;
+  summary: Omitting word 'Limited' is allowed for companies not required to do so;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-138-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-138;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-138-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-138;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-138-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-138;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for entity registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 2012 as the type of entity mentioned in column 1 of item 1 of the table;
+  @action: Subsection 3(1);
+}
+
+c2012a00169-sch-2-sec-139-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-139;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal description;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-66-2-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-66-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to exempt goods donated or bequeathed.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-141-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-141;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of donating goods from outside Australia to Australian organisations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-142-ss-6-logic-237 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Approved provider has an obligation to notify change to approved personnel if not required by ACNC Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ACNC Act requires notification of change;
+  @action: No notification required;
+}
+
+c2012a00169-sch-2-sec-142-ss-6-logic-238 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-6;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Change to approved personnel occurs at the end of section 9-1;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 9-1 ends on a specific date;
+  @action: Notification timing is uncertain;
+}
+
+c2012a00169-sch-2-sec-142-ss-6-logic-239 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-6;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Approved provider must notify change to approved personnel regularly;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: No notification required for registered providers;
+  @action: Regular notification required for exempt providers;
+}
+
+c2012a00169-sch-2-sec-142-ss-7-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-7;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibition of failure to notify change in approved provider's key personnel;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Approved provider is required to notify the Commissioner of the change within the period required under that Act.;
+  @action: Failure to do so commits an offence;
+}
+
+c2012a00169-sch-2-sec-142-ss-7-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Change in approved provider's key personnel occurs before notification deadline;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: There is a change of any of the approved provider’s key personnel and the approved provider fails to notify the Commissioner within the period required under that Act.;
+  @action: The change must be notified to the Commissioner within the required period;
+}
+
+c2012a00169-sch-2-sec-142-ss-7-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Approved provider has an obligation to notify the Commissioner of the change within the required period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The approved provider is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: The approved provider must notify the Commissioner of the change within the required period;
+}
+
+c2012a00169-sch-2-sec-142-ss-7-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-7;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Failure to provide required information commits an offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The approved provider is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: The approved provider must notify the Commissioner of the change within the required period;
+}
+
+c2012a00169-sch-2-sec-142-ss-8-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142-ss-8;
+  logic: Deontic;
+  operator: is;
+  summary: Strict liability is a type of obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-143-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Registered charity means an entity that is registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act.;
+}
+
+c2012a00169-sch-2-sec-143-logic-246 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: The registration period for the entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is not specified.;
+}
+
+c2012a00169-sch-2-sec-143-logic-247 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: LTL;
+  operator: for all;
+  summary: Temporal interval for registration;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: For all entities that are registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act.;
+}
+
+c2012a00169-sch-2-sec-143-logic-248 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: Deontic;
+  operator: must be;
+  summary: Entity registration requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: It must be the case that the entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-2-sec-143-logic-249 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: Epistemic;
+  operator: must know;
+  summary: Entity registration knowledge requirement;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: It must be known that the entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: It must be known that the entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-2-sec-143-logic-250 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: Paraconsistent;
+  operator: must be;
+  summary: Entity registration consistency requirement;
+  executionSurface: modalities::paraconsistent;
+  curationStatus: Proposed;
+  @condition: The entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: It must be consistent that the entity type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-2-sec-146-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-146;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to carry goods or people for a registered charity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-147-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-147;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-147-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-147;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The term 'registered charity' is defined as an entity that meets certain criteria.;
+  @action: This Act defines a registered charity as an entity that is registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-2-sec-149-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity is registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Entity is a registered charity;
+}
+
+c2012a00169-sch-2-sec-149-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: Deontic;
+  operator: is;
+  summary: Type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity is registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act;
+  @action: Entity is a registered charity of this type;
+}
+
+c2012a00169-sch-2-sec-150-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-150;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term with another term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-70-2-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-70-2;
+  logic: Deontic;
+  operator: Right;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-70-2-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-70-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Type of entity mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-152-logic-259 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-152;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits repealing the paragraph without substitution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-154-logic-260 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-154;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified entities for re-transmission purposes;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-154-logic-261 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-154;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitutes specific entities for re-transmission purposes;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4b-logic-262 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4b;
+  logic: Deontic;
+  operator: mustMeet;
+  summary: Must meet requirements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-4b-logic-263 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4b;
+  logic: DescriptionLogic;
+  operator: isAnEligibleChildCareCentre;
+  summary: Is an eligible child care centre;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-72-2-logic-264 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-72-2;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Entity type classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The entity is an unincorporated body that is not an ACNC type of entity;
+  @action: Approved by the Minister for purposes of this item;
+}
+
+c2012a00169-sch-2-sec-72-2-logic-265 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-72-2;
+  logic: Deontic;
+  operator: must-be-approved-by;
+  summary: Minister's approval requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The unincorporated body is approved by the Minister for the purposes of this item;
+}
+
+c2012a00169-sch-2-sec-157-logic-266 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-157;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval applies to commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-159-logic-267 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-159;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal subparagraphs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-159-logic-268 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-159;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substituting entities with registered charities or not-for-profit entities;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-160-logic-269 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-160;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-160-logic-270 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-160;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-160-logic-271 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-160;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for entity registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 2012 as the type of entity mentioned in column 1 of item 1 of the table;
+  @action: Subsection 25-5(5);
+}
+
+c2012a00169-sch-2-sec-162-logic-272 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-162;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide covenants.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-74-2-logic-273 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-74-2;
+  logic: Deontic;
+  operator: has;
+  summary: Registered charity must meet legal requirements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) that legally enforceable requirement was or is made for...;
+  @action: ...in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-74-2-logic-274 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-74-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Requirement must be met during operation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (ii) that legally enforceable requirement was or is made for...;
+  @action: ...in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-74-2-logic-275 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-74-2;
+  logic: LTL;
+  operator: everywhere;
+  summary: Requirement must be met everywhere;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (ii) that legally enforceable requirement was or is made for...;
+  @action: ...in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-74-2-logic-276 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-74-2;
+  logic: Diffusion;
+  operator: must-be-enough-for;
+  summary: Requirement must be sufficient;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (ii) that legally enforceable requirement was or is made for...;
+  @action: ...in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-74-2-logic-277 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-74-2;
+  logic: CogAI;
+  operator: must-be-enough-for;
+  summary: Requirement must be sufficient;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (ii) that legally enforceable requirement was or is made for...;
+  @action: ...in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-163-logic-278 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-163;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits conduct engaged in by registered charities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-164-logic-279 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-164;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits repeal of specified entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-166-logic-280 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide covenants;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Registered charities must provide covenants for their purposes.;
+}
+
+c2012a00169-sch-2-sec-166-logic-281 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Covenants must be provided for purposes of the charity;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The covenant was or is required to be given for or in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-166-logic-282 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Providing covenants implies compliance with charity requirements;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The covenant was or is required to be given in pursuance of a legally enforceable requirement made by a registered charity.;
+}
+
+c2012a00169-sch-2-sec-166-logic-283 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: Diffusion;
+  operator: AND;
+  summary: Covenants must be provided for both purposes and objects of the charity;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Both subparagraphs apply: (i) the person who required or requires the covenant to be given was or is, at that time, a registered charity; (ii) the covenant was or is required to be given for or in accordance with the purposes or objects of that registered charity.;
+}
+
+c2012a00169-sch-2-sec-166-logic-284 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Covenants are a type of requirement made by charities;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The covenant was or is required to be given in pursuance of a legally enforceable requirement made by a registered charity.;
+}
+
+c2012a00169-sch-2-sec-167-logic-285 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-167;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits conduct engaged in by registered charities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-168-logic-286 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-168;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply to covenants given on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-169-logic-287 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-169;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-169-logic-288 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-169;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-169-logic-289 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-169;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for entity registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 2012 as the type of entity mentioned in column 1 of item 1 of the table;
+  @action: Subsection 10(1);
+}
+
+c2012a00169-sch-2-sec-170-logic-290 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-170;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the legislative body;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-171-logic-291 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-171;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Replace 'an organization';
+  @action: with 'a registered charity';
+}
+
+c2012a00169-sch-2-sec-172-logic-292 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-172;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-173-logic-293 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-173;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-173-logic-294 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-173;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for entity registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 2012 as the type of entity mentioned in column 1 of item 1 of the table;
+  @action: 2012-2023;
+}
+
+c2012a00169-sch-2-sec-173-logic-295 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-173;
+  logic: Deontic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Classification as registered charity;
+}
+
+c2012a00169-sch-2-sec-174-logic-296 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-174;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-175-logic-297 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-175;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the provision of charitable benefits to persons with disabilities or particular disabilities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-178-logic-298 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-178;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-178-logic-299 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-178;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitution with specific corporate bodies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-179-logic-300 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-179;
+  logic: Deontic;
+  operator: =;
+  summary: Entity must be registered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity is an entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Entity is a registered charity;
+}
+
+c2012a00169-sch-2-sec-179-logic-301 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-179;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Definition based on registration under the Australian Charities and Not-for-profits Commission Act 2012;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012 is registered as a charity;
+  @action: Entity is a registered charity;
+}
+
+c2012a00169-sch-2-sec-182-logic-302 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-182;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-183-logic-303 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-183;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Imposes duty to repeal heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-185-logic-304 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-185;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-186-logic-305 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-186;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition of term use;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-188-logic-306 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-188;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-188-logic-307 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-188;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Replaces specified terms with 'charity';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-189-logic-308 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-189;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of subparagraph (b)(vii);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-190-logic-309 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-190;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Omits a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substitution of terms;
+  @action: Religious organization is omitted;
+}
+
+c2012a00169-sch-2-sec-191-logic-310 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: Deontic;
+  operator: =;
+  summary: Entity registration requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity must be registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Entity is a registered charity if it meets this condition;
+}
+
+c2012a00169-sch-2-sec-191-logic-311 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity type classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The entity must be classified as the type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Act;
+  @action: Entity is a registered charity if it meets this classification;
+}
+
+c2012a00169-sch-2-sec-191-logic-312 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal interval requirement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The entity must be registered under the Australian Charities and Not-for-profits Commission Act 2012 at some point in time;
+  @action: Entity is a registered charity if it meets this temporal requirement;
+}
+
+c2012a00169-sch-2-sec-191-logic-313 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: LTL;
+  operator: =;
+  summary: Recurring trace requirement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The entity must be continuously registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Entity is a registered charity if it meets this recurring trace requirement;
+}
+
+c2012a00169-sch-2-sec-191-logic-314 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: CogAI;
+  operator: =;
+  summary: Artificial intelligence application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The entity must be classified as a registered charity using artificial intelligence algorithms;
+  @action: Entity is a registered charity if it meets this AI-based classification;
+}
+
+c2012a00169-sch-2-sec-191-logic-315 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: SHACL;
+  operator: =;
+  summary: Schema-based validation;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The entity must be validated against a schema that defines the characteristics of a registered charity;
+  @action: Entity is a registered charity if it meets this schema-based validation;
+}
+
+c2012a00169-sch-2-sec-192-logic-316 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-192;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of discriminatory provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Repeal the paragraph, substitute: (a) any provision of the governing rules (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012) of a registered charity...;
+  @action: No charitable benefits can be conferred on persons of a particular race, colour or national or ethnic origin.;
+}
+
+c2012a00169-sch-2-sec-192-logic-317 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-192;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Provisions within governing rules are affected.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Repeal the paragraph, substitute: (a) any provision of the governing rules (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012) of a registered charity...;
+  @action: Governing rules provisions within the scope of the repeal.;
+}
+
+c2012a00169-sch-2-sec-192-logic-318 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-192;
+  logic: LTL;
+  operator: Recurring;
+  summary: Repeal is recurring trace.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Repeal the paragraph, substitute: (a) any provision of the governing rules (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012) of a registered charity...;
+  @action: Repeal will be repeated.;
+}
+
+c2012a00169-sch-2-sec-192-logic-319 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-192;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Prohibition diffused to governing rules.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Repeal the paragraph, substitute: (a) any provision of the governing rules (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012) of a registered charity...;
+  @action: Governing rules provisions will be diffused.;
+}
+
+c2012a00169-sch-2-sec-192-logic-320 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-192;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Prohibition recognized by AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Repeal the paragraph, substitute: (a) any provision of the governing rules (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012) of a registered charity...;
+  @action: Prohibition recognized.;
+}
+
+c2012a00169-sch-2-sec-194-logic-321 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-194;
+  logic: Deontic;
+  operator: =;
+  summary: Entity registration requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity must be registered under the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Entity is a registered charity if it meets this condition;
+}
+
+c2012a00169-sch-2-sec-194-logic-322 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-194;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity type classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The entity must be classified as the type mentioned in column 1 of item 1 of the table in subsection 25-5(5) of the Act;
+  @action: Entity is a registered charity if it meets this classification;
+}
+
+c2012a00169-sch-2-sec-194-logic-323 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-194;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal interval requirement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: No temporal interval specified;
+  @action: No temporal interval requirement;
+}
+
+c2012a00169-sch-2-sec-195-logic-324 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-195;
+  logic: Deontic;
+  operator: add;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The list must be updated.;
+  @action: Add ‘or’.;
+}
+
+c2012a00169-sch-2-sec-196-logic-325 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-196;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits entities registered under the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-196-logic-326 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-196;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies entities based on registration status.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-197-logic-327 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-197;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to repeal paragraph and substitute with provision conferring charitable benefits.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-198-logic-328 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allow registered charities as a type of trust.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-200-logic-329 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-200;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-200-logic-330 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-200;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entity type mentioned in column 1 of item 1 of the table;
+  @action: Registered charity;
+}
+
+c2012a00169-sch-2-sec-200-logic-331 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-200;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval for entity registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 2012-01-01 to present;
+  @action: Present;
+}
+
+c2012a00169-sch-2-sec-201-logic-332 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-201;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of a registered public benevolent institution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-201-logic-333 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-201;
+  logic: DescriptionLogic;
+  operator: subclassOf;
+  summary: Subclass relationship with Australian Charities and Not-for-profits Commission Act 2012;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-203-logic-334 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-203-logic-335 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Describes entities that can provide paid employment for disabled persons.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-204-logic-336 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-204;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Imposes an obligation to repeal paragraphs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-204-logic-337 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-204;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Describes the replacement organisation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-205-logic-338 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-205;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to make the substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-207-logic-339 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-207;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specified entities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-207-logic-340 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-207;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitutes new entities for repealed subparagraphs.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-208-logic-341 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-208;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of registered charity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-208-logic-342 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-208;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity registration;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Column 1 of item 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+  @action: Registered charity means an entity that is registered under the Australian Charities and Not-for-profits Commission Act 2012 as the type of entity mentioned in column 1 of item 1 of the table in subsection 25-5(5) of that Act.;
+}
+
+c2012a00169-sch-2-sec-208-logic-343 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-208;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Australian Charities and Not-for-profits Commission Act 2012;
+  @action: The entity must be registered under the Australian Charities and Not-for-profits Commission Act 2012 within a certain temporal interval.;
+}
+
+c2012a00169-sch-2-sec-210-logic-344 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-210;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes prohibition on subparagraphs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-212-logic-345 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-212;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines the term 'registered charity';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-212-logic-346 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-212;
+  logic: DescriptionLogic;
+  operator: has type;
+  summary: Classifies the entity as a registered charity;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-213-logic-347 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-213;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal paragraphs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-213-logic-348 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-213;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substituting a new definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-214-logic-349 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-214;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits repeal and substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-214-logic-350 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-214;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitutes paragraph (g) with new text;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-2-sec-215-logic-351 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-215;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Mandatory treatment of registered charities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-1-logic-352 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: List of decisions under the Australian Charities and Not-for-profits Commission Act 2012;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-2-logic-353 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: You must be endorsed as a deductible gift recipient if you meet certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: you would be entitled to be endorsed under Subdivision 30-BA of the Income Tax Assessment Act 1997;
+  @action: you are described (but not by name) in item 1 or 2 of the table in section 30-15;
+}
+
+c2012a00169-sch-3-sec-2-logic-354 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: You meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: you meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-3-sec-2-logic-355 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: You would be entitled to be endorsed under Subdivision 30-BA of the Income Tax Assessment Act 1997 if you meet certain conditions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: you would be entitled to be endorsed under Subdivision 30-BA of the Income Tax Assessment Act 1997;
+}
+
+c2012a00169-sch-3-sec-2-logic-356 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: LTL;
+  operator: AND;
+  summary: You meet certain conditions if you are described (but not by name) in item 1 or 2 of the table in section 30-15.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: you are described (but not by name) in item 1 or 2 of the table in section 30-15;
+}
+
+c2012a00169-sch-3-sec-2-logic-357 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: CogAI;
+  operator: IS_A;
+  summary: You meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: you meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-3-sec-2-logic-358 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: SHACL;
+  operator: IS_A;
+  summary: You meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: you meet the description of a type of entity in column 1 of the table in subsection 25-5(5) of the Australian Charities and Not-for-profits Commission Act 2012;
+}
+
+c2012a00169-sch-3-sec-86-ss-1c-logic-359 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-86-ss-1c;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-2a-logic-360 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2a;
+  logic: Deontic;
+  operator: forbid;
+  summary: Forbids the payment of an administrative penalty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-361 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to appeal to a designated court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person may appeal to the designated court against an objection decision under that Act (the ACNC objection decision); and (b) the objection decision mentioned in subsection (1) (the taxation objection decision) and the ACNC objection decision are related, or it would be efficient for the designated court to consider the decisions together.;
+  @action: (2) Treat a reference in subsection (1) to appealing to the Federal Court as being a reference to appealing to a designated court (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012);
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-362 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of courts within the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: designated court means the Federal Court of Australia or a Supreme Court of a State or Territory that has jurisdiction in relation to matters arising under that Act.;
+  @action: the Federal Court of Australia or a Supreme Court of a State or Territory;
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-363 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: Deontic;
+  operator: Allow;
+  summary: Allowance of appeal to a designated court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person may appeal to the designated court against an objection decision under that Act (the ACNC objection decision); and (b) the objection decision mentioned in subsection (1) (the taxation objection decision) and the ACNC objection decision are related, or it would be efficient for the designated court to consider the decisions together.;
+  @action: (2) Treat a reference in subsection (1) to appealing to the Federal Court as being a reference to appealing to a designated court (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012);
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-364 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: DescriptionLogic;
+  operator: Identify;
+  summary: Identification of courts within the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: designated court means the Federal Court of Australia or a Supreme Court of a State or Territory that has jurisdiction in relation to matters arising under that Act.;
+  @action: the Federal Court of Australia or a Supreme Court of a State or Territory;
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-365 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: Deontic;
+  operator: Require;
+  summary: Requirement for appeal to be made to a designated court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person may appeal to the designated court against an objection decision under that Act (the ACNC objection decision); and (b) the objection decision mentioned in subsection (1) (the taxation objection decision) and the ACNC objection decision are related, or it would be efficient for the designated court to consider the decisions together.;
+  @action: (2) Treat a reference in subsection (1) to appealing to the Federal Court as being a reference to appealing to a designated court (within the meaning of the Australian Charities and Not-for-profits Commission Act 2012);
+}
+
+c2012a00169-sch-3-sec-4-ss-2-logic-366 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: DescriptionLogic;
+  operator: Specify;
+  summary: Specification of courts within the Australian Charities and Not-for-profits Commission Act 2012.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: designated court means the Federal Court of Australia or a Supreme Court of a State or Territory that has jurisdiction in relation to matters arising under that Act.;
+  @action: the Federal Court of Australia or a Supreme Court of a State or Territory;
+}
+
+c2012a00169-sch-3-sec-4-ss-3-logic-367 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide appeal together with appeal against ACNC objection decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-10-logic-368 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'the Court' and substituting 'the court';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-12-logic-369 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-12;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Replace 'Federal Court' with 'court';
+}
+
+c2012a00169-sch-3-sec-14-logic-370 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified text from a court name.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-14a-logic-371 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-14a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-15-logic-372 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15;
+  logic: Deontic;
+  operator: insertion;
+  summary: Inserts a new provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-16-logic-373 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of the old cell;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-17-ss-2a-logic-374 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must be registered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-17-ss-2b-logic-375 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2b;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits removal of statements from the Australian Business Register;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) The *Australian Business Registrar may remove the statements from the *Australian Business Register if the registration is revoked under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-3-sec-17-ss-2b-logic-376 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2b;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines a temporal interval for removal of statements from the Australian Business Register;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2B) The *Australian Business Registrar may remove the statements from the *Australian Business Register if the registration is revoked under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-3-sec-17-ss-2b-logic-377 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2b;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Defines a temporal trace for removal of statements from the Australian Business Register;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2B) The *Australian Business Registrar may remove the statements from the *Australian Business Register if the registration is revoked under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-3-sec-17-ss-2b-logic-378 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2b;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the Australian Business Registrar to remove statements from the Australian Business Register;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) The *Australian Business Registrar may remove the statements from the *Australian Business Register if the registration is revoked under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-3-sec-17-ss-2b-logic-379 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-ss-2b;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implies that removal of statements from the Australian Business Register is a consequence of revocation under the Australian Charities and Not-for-profits Commission Act 2012;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2B) The *Australian Business Registrar may remove the statements from the *Australian Business Register if the registration is revoked under the Australian Charities and Not-for-profits Commission Act 2012.;
+}
+
+c2012a00169-sch-3-sec-18-logic-380 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-18;
+  logic: Deontic;
+  operator: inserts;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-19-logic-381 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits using 'may';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘may’;
+  @action: Substitute ‘must’;
+}
+
+c2012a00169-sch-3-sec-20-logic-382 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-20;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111k-logic-383 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111k;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory registration requirement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111l-ss-1-logic-384 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111l-ss-1;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions apply to bodies corporate registered under the ACNC Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111l-ss-4-logic-385 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111l-ss-4;
+  logic: Deontic;
+  operator: does not apply;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111l-ss-5-logic-386 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111l-ss-5;
+  logic: Deontic;
+  operator: Permit;
+  summary: Regulations may be expressed to be subject to conditions, indefinite or limited to a specified period, and specify a provision even if mentioned in another section.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111m-logic-387 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111m;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires member approval;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a provision of this Act provides that one or more conditions must be satisfied for there to be member approval (however described) in relation to the body corporate;;
+}
+
+c2012a00169-sch-3-sec-111m-logic-388 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111m;
+  logic: AllenInterval;
+  operator: during;
+  summary: Member approval required during specified conditions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a provision of this Act provides that one or more conditions must be satisfied for there to be member approval (however described) in relation to the body corporate;;
+}
+
+c2012a00169-sch-3-sec-111m-logic-389 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111m;
+  logic: LTL;
+  operator: during;
+  summary: Member approval required during specified conditions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a provision of this Act provides that one or more conditions must be satisfied for there to be member approval (however described) in relation to the body corporate;;
+}
+
+c2012a00169-sch-3-sec-111m-logic-390 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111m;
+  logic: Diffusion;
+  operator: during;
+  summary: Member approval required during specified conditions;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a provision of this Act provides that one or more conditions must be satisfied for there to be member approval (however described) in relation to the body corporate;;
+}
+
+c2012a00169-sch-3-sec-111m-logic-391 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111m;
+  logic: CogAI;
+  operator: during;
+  summary: Member approval required during specified conditions;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a provision of this Act provides that one or more conditions must be satisfied for there to be member approval (however described) in relation to the body corporate;;
+}
+
+c2012a00169-sch-3-sec-94-ss-2-logic-392 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-94-ss-2;
+  logic: Deontic;
+  operator: allows;
+  summary: Permits sharing information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111n-ss-1-logic-393 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice to Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111n-ss-2-logic-394 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111n-ss-3-logic-395 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111n-ss-3-logic-396 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: During the period of the act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ACNC Act 2012;
+}
+
+c2012a00169-sch-3-sec-111n-ss-4-logic-397 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111n-ss-4-logic-398 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111n-ss-4;
+  logic: Deontic;
+  operator: OBLIGES;
+  summary: Duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-111q-ss-1-logic-399 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111q-ss-1;
+  logic: Deontic;
+  operator: Apply;
+  summary: Apply the obligation to the body corporate.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Paragraph 588E(4)(a) and subsection 588E(5);
+  @action: as if the references in those provisions to subsections 55-5(1) to (3) of the Australian Charities and Not-for-profits Commission Act 2012 were references to subsections 55-5(1) to (3);
+}
+
+c2012a00169-sch-3-sec-111q-ss-1-logic-400 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111q-ss-1;
+  logic: AllenInterval;
+  operator: Apply;
+  summary: Apply the Allen interval to the body corporate.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Paragraph 588E(4)(a) and subsection 588E(5);
+  @action: as if the references in those provisions to subsections 55-5(1) to (3) of the Australian Charities and Not-for-profits Commission Act 2012 were references to subsections 55-5(1) to (3);
+}
+
+c2012a00169-sch-3-sec-111q-ss-1-logic-401 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111q-ss-1;
+  logic: LTL;
+  operator: Apply;
+  summary: Apply the LTL logic to the body corporate.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Paragraph 588E(4)(a) and subsection 588E(5);
+  @action: as if the references in those provisions to subsections 55-5(1) to (3) of the Australian Charities and Not-for-profits Commission Act 2012 were references to subsections 55-5(1) to (3);
+}
+
+c2012a00169-sch-3-sec-111q-ss-1-logic-402 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111q-ss-1;
+  logic: Diffusion;
+  operator: Apply;
+  summary: Apply the diffusion logic to the body corporate.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Paragraph 588E(4)(a) and subsection 588E(5);
+  @action: as if the references in those provisions to subsections 55-5(1) to (3) of the Australian Charities and Not-for-profits Commission Act 2012 were references to subsections 55-5(1) to (3);
+}
+
+c2012a00169-sch-3-sec-111q-ss-1-logic-403 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-111q-ss-1;
+  logic: CogAI;
+  operator: Apply;
+  summary: Apply the CogAI logic to the body corporate.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Paragraph 588E(4)(a) and subsection 588E(5);
+  @action: as if the references in those provisions to subsections 55-5(1) to (3) of the Australian Charities and Not-for-profits Commission Act 2012 were references to subsections 55-5(1) to (3);
+}
+
+c2012a00169-sch-3-sec-25-logic-404 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-25;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Describes duties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Duties of directors;
+  @action: Description of duty;
+}
+
+c2012a00169-sch-3-sec-26-logic-405 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-26;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must consider;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-3-sec-29-logic-406 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-29;
+  logic: Deontic;
+  operator: applies;
+  summary: The provision applies to a financial year for a body corporate that starts on or after 1 July 2013;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: 111L(1) of the Corporations Act 2001;
+  @action: The following provisions apply;
+}
+
+c2012a00169-sch-3-sec-29-logic-407 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-29;
+  logic: AllenInterval;
+  operator: starts-on-or-after;
+  summary: The provision applies to a financial year that starts on or after 1 July 2013;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 1 July 2013;
+}
+
+c2012a00169-sch-3-sec-30-logic-408 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-30;
+  logic: LinearLogic;
+  operator: implies;
+  summary: Conditional exemption from reporting;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) Item 10 of the table in subsection (1) does not apply;
+  @action: in relation to a financial year if...;
+}
+
+c2012a00169-sch-3-sec-30-logic-409 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-30;
+  logic: Deontic;
+  operator: exempts;
+  summary: Exemption from reporting for borrowers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Item 10 of the table in subsection (1);
+}
+
+c2012a00169-sch-3-sec-30-logic-410 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-30;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between financial year and debt forgiveness;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the body corporate was a borrower in relation to debentures at the end of the year;
+}
+
+c2012a00169-sch-3-sec-30-logic-411 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-30;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spread of exemption from reporting;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Item 10 of the table in subsection (1);
+}
+
+c2012a00169-sch-3-sec-111p-ss-1-logic-412 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111p-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: The order applies to the requirement in section 250N.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 250PAA;
+  @action: Section 250N;
+}
+
+c2012a00169-sch-3-sec-111p-ss-1-logic-413 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111p-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: The order applies to the requirement in the governance standards for the holding of an annual general meeting.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 250PAA;
+  @action: Annual general meeting;
+}
+
+c2012a00169-sch-3-sec-111p-ss-1-logic-414 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111p-ss-1;
+  logic: AllenInterval;
+  operator: same way as;
+  summary: The order applies to a requirement in the governance standards for the holding of an annual general meeting in the same way as it applies to section 250N.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 250PAA;
+  @action: Annual general meeting;
+}
+
+c2012a00169-sch-4-sec-1-logic-415 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-3-logic-416 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the repeal of paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-5-logic-417 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-6-logic-418 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-6;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals the specified section;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-8-logic-419 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-8;
+  logic: Deontic;
+  operator: Modify;
+  summary: Change definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-10-logic-420 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-10;
+  logic: Deontic;
+  operator: =;
+  summary: Obligation to update;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Tax Laws Amendment (Special Conditions for Not-for-profit Concessions) Act 2012;
+  @action: Substitute 'company that is a not-for-profit entity';
+}
+
+c2012a00169-sch-4-sec-11-logic-421 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-11;
+  logic: Deontic;
+  operator: =;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Insert: not-for-profit entity has the same meaning as in the Income Tax Assessment Act 1997.;
+  @action: not-for-profit entity has the same meaning as in the Income Tax Assessment Act 1997.;
+}
+
+c2012a00169-sch-4-sec-12-logic-422 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-15-logic-423 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-15;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-20-logic-424 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-20;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal the item.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-22-logic-425 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-22;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific sections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-4-sec-23-logic-426 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-23;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-5-sec-1-logic-427 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute 'an Australian government agency' for 'a government entity';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2012a00169-sch-5-sec-2-logic-428 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'a *government entity';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substitute 'an *Australian government agency';
+}
+
+c2012a00169-sch-5-sec-2-logic-429 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: AllenInterval;
+  operator: Temporal Replacement;
+  summary: Replaces 'a *government entity' with 'an *Australian government agency';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Table item 12A.1.2, column;
+}
+
+c2012a00169-sch-5-sec-2-logic-430 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implicates the use of 'an *Australian government agency';
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Substitute 'an *Australian government agency';
+}
+
+c2012a00169-sch-5-sec-2-logic-431 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagates the prohibition to related terms;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit 'a *government entity', substitute 'an *Australian government agency';
+}
+
+c2012a00169-sch-5-sec-3-logic-432 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on using 'government entities';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'government entities';
+  @action: substitute 'Australian government agencies';
+}
+
+c2012a00169-sch-5-sec-4-logic-433 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: Deontic;
+  operator: =;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

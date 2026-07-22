@@ -1,0 +1,1143 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Add “or”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 35(1) (at the end of paragraph (a) of the"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "96c5ebd275e7af6c23c2a68eb803560d01719312b4087c4e5c756d5020bc6b10",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Exercise of a power under Part 5.2 (accreditation framework) of the Data Availability and Transparency Act 2022.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 35(1) (after paragraph (e) of the definition of"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "04fc01c95b96a3dff6eef58c01df437b6d287a4c5bbc75b707150b86256d5a55",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exercise of a power under Part 5.2 (accreditation framework) is an obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B Complaints relating to the data sharing scheme"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1"
+        },
+        {
+          "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2"
+        },
+        {
+          "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-36b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Share information and documents about a complaint with the NDC for the purposes of exercising powers or performing functions under the Data Availability and Transparency Act 2022.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(1) Complaints relating to the data sharing scheme"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "04e0acce4b29f5fd8859e20a1453821bb55591784550d40706f5b34fec5cbf5b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-36b-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to share information and documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-1"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "The Commissioner may only share information and documents acquired in the course of exercising powers or performing functions under this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(2) Complaints relating to the data sharing scheme"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-deontic-1",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-alleninterval-2",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-argumentation-3",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-diffusion-4",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "567b1da6a67ed45f7a1db83e831fbc934e18589c03dcc1139947bc2c3bc6a77e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-36b-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes the temporal relationship between the Commissioner's powers and the sharing of information and documents",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) The Commissioner may share only information and documents under subsection (1) that were acquired by the Commissioner in the course of exercising powers, or performing functions or duties, under this Act."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Expresses a requirement for the Commissioner to share information and documents within certain conditions",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "(2) The Commissioner may share only information and documents under subsection (1) that were acquired by the Commissioner in the course of exercising powers, or performing functions or duties, under this Act."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Expresses a requirement for the Commissioner to share information and documents within certain conditions",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "must",
+      "cml:premiseText": "(2) The Commissioner may share only information and documents under subsection (1) that were acquired by the Commissioner in the course of exercising powers, or performing functions or duties, under this Act."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses a permission-like obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Restricts the scope of information and documents that can be shared",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "only",
+      "cml:premiseText": "(2) The Commissioner may share only information and documents under subsection (1) that were acquired by the Commissioner in the course of exercising powers, or performing functions or duties, under this Act."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Commissioner may share information with NDC under this section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(3) Complaints relating to the data sharing scheme"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "baa166d462652ba49d2c94cb4a836997f63c5459b7900301d08de35cb4908f79",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-36b-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-36b-ss-3"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Agency exempt from operation of Act in relation to document containing scheme data.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 7(2E)"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "12beaa0fc9e36366f59e0165a78743019606c5e47f6597d9f38c72c6ad0c68a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Agency exempt from operation of Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exemption",
+      "cml:premiseText": "Data scheme entity within the meaning of Data Availability and Transparency Act 2022."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5a",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.7",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5A After section 36"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5a-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-5a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5a-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-5a"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.8",
+      "skos:note": "Permission to insert alternative complaint body",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 50(1) (after paragraph (a) of the definition of"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2f2d6b31087768d8cd71973a93b9cd1f382f8c90d674003f37fa8c1d09106c7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Specifies the National Data Commissioner as an alternative complaint body",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "permittedBy"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.8",
+      "skos:note": "Insertion of data into the National Data Commissioner under Part 5.3 of the Data Availability and Transparency Act 2022.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 After subparagraph 50(2)(a)(i)"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f8f2cefbc97d3fc37775cdd3be065f5b30d3f15d531de6eb5dd45903eeba1156",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.8",
+      "skos:note": "Insertion of data provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 After subparagraph 50(3)(a)(i)"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "da61324cef3af7bbcf7a9cb6f9fe61d4c6a8a8e2822b83f9f08ed062b6bef541",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.9",
+      "skos:note": "Entities must apply for accreditation within specified timeframes.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Applications for accreditation under the Data Availability"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "179aa9716c929d55226ba107acf1b0a153b44688e83c6379a74ade1762ac040a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide accreditation application",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.10",
+      "skos:note": "Defines terms used in the Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Definitions"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e9d8b33bd7ef2d3daeafce5e5da0cd96722ed5358e395e214d424408863e77da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "DAT Act and rules have the same meaning in this Schedule as they do in the DAT Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.10",
+      "skos:note": "Defines transitional entity and its accreditation under DAT Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Transitional provisions"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a851e68b39da773b36ed3cd35096b9e4c2fa06836a84c8e7596826a92c7af02d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.10",
+      "skos:note": "This Schedule is part of the data sharing scheme",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 This Schedule is part of the data sharing scheme"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d1f5ef90b4957ef03e8c26cadc99fe9a5a85798adf6153c723940fb82bf57708",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.11",
+      "skos:note": "Rules may be prescribed by the Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Rules"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-logic-deontic-1",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e48d63142b2e2a64f2d1a21b58986aa40791cc8e72f81bd448ada8c7e8300ba1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval of rule-making",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "by",
+      "cml:premiseText": "(1) The Minister may, by legislative instrument, make rules prescribing..."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prescription obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.5",
+      "skos:note": "Short title of the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3f03cdcf42acb66cbff8269becd294cd63cebd6358ef5ce26122862b2522944c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.6",
+      "skos:note": "Commences with Data Availability and Transparency Act 2022, but only if that Act commences.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": [
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-norm",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-1",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-2",
+        "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b70b665c3dbfa1828b37bdb333a8da8d044be5f84a2956aa9eb56082c6b1073d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This Act commences.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Conditional commencement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if",
+      "cml:premiseText": "Data Availability and Transparency Act 2022 commences."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Data Availability and Transparency Act 2022 commences.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on commencement without Data Availability and Transparency Act 2022",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if",
+      "cml:premiseText": "This Act does not commence if Data Availability and Transparency Act 2022 does not commence."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Data Availability and Transparency Act 2022 commences.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Conditional commencement with Data Availability and Transparency Act 2022",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if",
+      "cml:premiseText": "This Act commences at the same time as Data Availability and Transparency Act 2022."
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 April 2022"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-3"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-1"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "data-availability-and-transparency-consequential-amendments-act-2022.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "data-availability-and-transparency-consequential-amendments-act-2022.pdf",
+      "asserts": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bf08a4b65dd3de2490e55255fe11d3294d089c747511a9ce564c53342bcccae5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:data-availability-and-transparency-consequential-amendments-act-2022#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:data-availability-and-transparency-consequential-amendments-act-2022-sec-3"
+    },
+    {
+      "@id": "doc:au/c2022a00012",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to deal with consequential matters in connection with the Data Availability and Transparency Act 2022, and for related purposes",
+      "dc:identifier": [
+        "C2022A00012",
+        "No. 12 of 2022"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Data Availability and Transparency (Consequential Amendments) Act 2022"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2022A00012/latest/downloads",
+        "data-availability-and-transparency-consequential-amendments-act-2022.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

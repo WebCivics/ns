@@ -1,0 +1,369 @@
+# CogAI proposed logic-routing chunks — Crimes Act Amendment (Forensic Procedures) Act (No. 1) 2006
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: establishes;
+  summary: Establishs the DNA database system;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-7-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows presence of prison officers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-10-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to substitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-6-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires disclosure of information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-16-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines NCIDD;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: NCIDD means the database that is known as the National Criminal Investigation DNA Database and that is managed by the Commonwealth.;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-18-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies the term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: State/Territory DNA database system means a database (whether in computerised or other form and however described) held by, or on behalf of, a participating jurisdiction for the purposes of a corresponding law.;
+  @action: The term is defined as a database...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-18-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Defines the scope of the term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: for the purposes of a corresponding law.;
+  @action: The term applies to databases for law enforcement purposes.;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits integration of State/Territory DNA database system into Commonwealth DNA database system;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) No part of a State/Territory DNA database system, and no information obtained from a State/Territory DNA database system;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-3-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Prohibition;
+  summary: Prohibits integration at any time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) No part of a State/Territory DNA database system, and no information obtained from a State/Territory DNA database system;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: LTL;
+  operator: Temporal Prohibition;
+  summary: Prohibits integration at any time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) No part of a State/Territory DNA database system, and no information obtained from a State/Territory DNA database system;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Diffusion;
+  operator: Prohibition Diffusion;
+  summary: Diffuses prohibition to all related contexts;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) No part of a State/Territory DNA database system, and no information obtained from a State/Territory DNA database system;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: CogAI;
+  operator: Prohibition Cognition;
+  summary: Recognizes prohibition as a cognitive state;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) No part of a State/Territory DNA database system, and no information obtained from a State/Territory DNA database system;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits integration of Commonwealth DNA database into State/Territory DNA database system.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) No part of the Commonwealth DNA database system, and no information obtained from the Commonwealth DNA database system...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-4-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Prohibition;
+  summary: Prohibits integration at any time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) No part of the Commonwealth DNA database system, and no information obtained from the Commonwealth DNA database system...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-4-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: LTL;
+  operator: Temporal Prohibition;
+  summary: Prohibits integration at any time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) No part of the Commonwealth DNA database system, and no information obtained from the Commonwealth DNA database system...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-4-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: Diffusion;
+  operator: Prohibition Diffusion;
+  summary: Diffuses prohibition to all related contexts.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) No part of the Commonwealth DNA database system, and no information obtained from the Commonwealth DNA database system...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-20-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: CogAI;
+  operator: Prohibition Cognition;
+  summary: Recognizes prohibition as a cognitive state.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) No part of the Commonwealth DNA database system, and no information obtained from the Commonwealth DNA database system...;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-21-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation to substitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-26a-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26a;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-28-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-29-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-32-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to make the substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-34-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-37-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces 'DNA database system';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-42-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: Deontic;
+  operator: Permit;
+  summary: Grant permission to CrimTrac.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-45-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the Commonwealth to substitute DNA database system references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-45-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45;
+  logic: AllenInterval;
+  operator: Temporal Replacement;
+  summary: Replaces 'a DNA database system' with 'the Commonwealth DNA database system, NCIDD or a State/Territory DNA database system';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-45-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Substituting DNA database system references implies an obligation on the Commonwealth to do so;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-47-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-47;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting DNA database system provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-48-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-48;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the Commonwealth to substitute DNA database system references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-49-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-49;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'a DNA database system';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-act-amendment-forensic-procedures-act-sch-1-sec-51-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-51;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a DNA database system;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,810 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specified phrase from definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 16(1) (subparagraph (b)(i) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bd3ba62649b916d8da4e10ae555f9c11e57af9f90baabd2a1a17538246fc4f39",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of phrase.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.8",
+      "skos:note": "Must regard period of time spent on parole or licence before revocation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 After subsection 19AW(3)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "23c08d70ac17ebc8a096b0f345e5258da5b86a6552233f0ef4cecfca412a9892",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must regard period of time spent on parole or licence before revocation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.8",
+      "skos:note": "Application provisions for federal sentences served before commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Application provisions"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f45d5ce44537f6a775c3548b17f8f6b8006ea66d7e78778d4621479175901ee1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Repeal a section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 19AA"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specified text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Paragraph 19AB(3)(b)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7ec539f42b31d08dbb4b69f244b82223eadbb00591c00b989442ea727d81c75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specified text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Paragraph 19AC(4)(b)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7ec539f42b31d08dbb4b69f244b82223eadbb00591c00b989442ea727d81c75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit “remitted”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 19AF (heading)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0105576f6f7830c50a0fd023a2072057b24d807e87460eb26ae87ebfa9a29571",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specified text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 19AF(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7ec539f42b31d08dbb4b69f244b82223eadbb00591c00b989442ea727d81c75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specific phrase from text.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Paragraph 19AMA(3)(a)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b103aeb2cb7d880cb29deb4c7350a2aa6f64295c888bea4ba9dcd2c5ab513045",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Omit specified phrase.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Text omits ‘(after deducting any remission or reduction that is applicable)’."
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Omit specified text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Paragraph 19AR(4)(b)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7ec539f42b31d08dbb4b69f244b82223eadbb00591c00b989442ea727d81c75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.7",
+      "skos:note": "Modify subsection (3) to include subsection (3A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Paragraph 19AW(1)(f)"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ac5d70640a6747d70b73a486bbad7adc401badd579c16b0f1809c230aec93c79",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-9-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9ab5f736dd308e61945420e0f825093ee2fb90e90342f3c4eb3fff142153490f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": [
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2-norm",
+        "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "878bd293c05c34e1ec53ba556dd16e124fa592bcc5ba2d2768427ae2c6869280",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-remissions-of-sentences-act-2021.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 December"
+      },
+      "wasDerivedFrom": "crimes-amendment-remissions-of-sentences-act-2021.pdf",
+      "asserts": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-remissions-of-sentences-act-2021#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-remissions-of-sentences-act-2021-sec-9"
+    },
+    {
+      "@id": "doc:au/c2021a00129",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Crimes Act 1914, and for related purposes",
+      "dc:identifier": [
+        "C2021A00129",
+        "No. 129 of 2021"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Amendment (Remissions of Sentences) Act 2021"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2021A00129/latest/downloads",
+        "crimes-amendment-remissions-of-sentences-act-2021.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

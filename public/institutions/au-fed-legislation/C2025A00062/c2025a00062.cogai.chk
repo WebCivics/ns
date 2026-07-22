@@ -1,0 +1,711 @@
+# CogAI proposed logic-routing chunks — Australian Centre for Disease Control (Consequential Amendments and Transitional Provisions) Act 2025
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2025a00062-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the provision as a title or heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The text describes the provision as 'Short title';
+  @action: The provision is classified as a title or heading;
+}
+
+c2025a00062-sec-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: N3Logic;
+  operator: Applicable;
+  summary: Identifies the key as a unique identifier;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+  @condition: The key is assigned a unique number and letter combination;
+  @action: The key identifies a unique provision in the Act;
+}
+
+c2025a00062-sec-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: SHACL;
+  operator: Applicable;
+  summary: Validates the structure of the key;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The key follows a standard format with a specific number and letter combination;
+  @action: The key is valid according to SHACL standards;
+}
+
+c2025a00062-sec-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: CogAI;
+  operator: Applicable;
+  summary: Analyzes the key for cognitive biases;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The key does not contain any obvious cognitive biases or heuristics;
+  @action: The key is free from cognitive biases according to CogAI analysis;
+}
+
+c2025a00062-sec-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Identifies the key as a diffusion point in the Act;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The key is assigned to a specific section of the Act;
+  @action: The key identifies a diffusion point in the Act according to Diffusion analysis;
+}
+
+c2025a00062-sec-2-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The text mentions 'at the same time as';
+  @action: Undertaking;
+}
+
+c2025a00062-sch-1-sec-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: classifies;
+  summary: Classifies terms;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: substitution;
+  summary: Substitution of officials;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the Director-General from determining listed human diseases.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-8-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-544a-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-544a-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of delegation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) However, the Director of Human Biosecurity must not delegate...;
+  @action: ...the Director’s functions or powers under any of the following provisions:;
+}
+
+c2025a00062-sch-1-sec-544a-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-544a-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for delegation prohibition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) However, the Director of Human Biosecurity must not delegate...;
+  @action: ...the Director’s functions or powers under any of the following provisions:;
+}
+
+c2025a00062-sch-1-sec-544a-ss-5-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-544a-ss-5;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition of action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-544a-ss-6-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-544a-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-11-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-18-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-19-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a term with another;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-20-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-21-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits substitution of titles.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-22-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-24a-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant bears evidential burden.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 21 does not apply if...;
+  @action: ...the record, disclosure or use is authorised under the Australian Centre for Disease Control Act 2025.;
+}
+
+c2025a00062-sch-1-sec-24a-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant bears evidential burden in relation to protected information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...a defendant bears an evidential burden in relation to the matter in this section:;
+  @action: ...see subsection 13.3(3) of the Criminal Code.;
+}
+
+c2025a00062-sch-1-sec-24a-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24a;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Record, disclosure or use must occur after obtaining protected information.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ...and the person makes a record of, or discloses or otherwise uses...;
+  @action: ...the record, disclosure or use is authorised under the Australian Centre for Disease Control Act 2025.;
+}
+
+c2025a00062-sch-1-sec-24a-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24a;
+  logic: LTL;
+  operator: Temporal relation;
+  summary: Record, disclosure or use must occur after obtaining protected information.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: ...and the person makes a record of, or discloses or otherwise uses...;
+  @action: ...the record, disclosure or use is authorised under the Australian Centre for Disease Control Act 2025.;
+}
+
+c2025a00062-sch-1-sec-24-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting words after 'Part';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-26-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits substitution of 'Department's';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘Department’s’, substitute ‘Australian Centre for Disease Control’s’.;
+}
+
+c2025a00062-sch-1-sec-26-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval of substitution;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit ‘Department’s’, substitute ‘Australian Centre for Disease Control’s’.;
+}
+
+c2025a00062-sch-1-sec-29-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Specify SES employees and acting SES employees.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-1-sec-36-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Obligation to replace;
+}
+
+c2025a00062-sch-1-sec-39-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-1-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: DescriptionLogic;
+  operator: ClassHierarchy;
+  summary: Defines classes and relationships;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Transfer records and documents to Director-General of CDC after transition time.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-3-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: CONTINUES;
+  summary: Continues to apply to APS employees.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-5-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: May;
+  summary: The Health Minister may make rules.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-6-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the Commonwealth Chief Medical Officer.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-8-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: holds;
+  summary: Preservation obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (2);
+}
+
+c2025a00062-sch-2-sec-10-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Delegations under section 544A of the Biosecurity Act continue in force after transition time.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2025a00062-sch-2-sec-10-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval of continued delegation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Transition time has passed.;
+  @action: Delegation was in force during the transition period.;
+}
+
+c2025a00062-sch-2-sec-11-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: Continuation;
+  summary: Continues obligations from old NHS Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+}
+
+c2025a00062-sch-2-sec-11-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Applies to transitional rules for specified actions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2);
+}
+
+c2025a00062-sch-2-sec-12-logic-43 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: refersTo;
+  summary: Reference to the Health Secretary;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This item applies to an instrument if: (a) the instrument was made under the old NHS Act; and (b) the instrument was in force immediately before the transition time; and (c) the instrument contains a reference to the Health Secretary.;
+  @action: (2) The instrument has effect, at and after the transition time, as if a reference in the instrument to the Health Secretary were a reference to the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-12-logic-44 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Instrument definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (5) In this item: instrument includes: (a) a contract, deed, undertaking, arrangement or agreement; and (b) a notice, authority, order or instruction;;
+}
+
+c2025a00062-sch-2-sec-12-logic-45 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: AllenInterval;
+  operator: before;
+  summary: Transition time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The instrument has effect, at and after the transition time, as if a reference in the instrument to the Health Secretary were a reference to the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-12-logic-46 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: LTL;
+  operator: ordered;
+  summary: Conditional commencement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The transitional rules may provide that subitem (2) does not apply in relation to a specified instrument or a specified reference.;
+}
+
+c2025a00062-sch-2-sec-12-logic-47 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: doesNotPrevent;
+  summary: Amendment provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) This item does not prevent the instrument from being amended or repealed after the commencement of this item.;
+}
+
+c2025a00062-sch-2-sec-12-logic-48 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: includes;
+  summary: Instrument definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) In this item: instrument includes: (a) a contract, deed, undertaking, arrangement or agreement; and (b) a notice, authority, order or instruction;;
+}
+
+c2025a00062-sch-2-sec-14-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: hasEffectAsIf;
+  summary: Imposes obligation on the Director-General of the CDC.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The variation was made by the Commonwealth Chief Medical Officer.;
+  @action: The variation has effect as if it had been made by the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-14-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: AllenInterval;
+  operator: during;
+  summary: Specifies the temporal interval during which the variation has effect.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The transition time is specified in subsection 12(2) of the old NHS Act.;
+  @action: The variation has effect at and after the transition time.;
+}
+
+c2025a00062-sch-2-sec-14-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: LTL;
+  operator: during;
+  summary: Specifies the temporal interval during which the variation has effect.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The transition time is specified in subsection 12(2) of the old NHS Act.;
+  @action: The variation has effect at and after the transition time.;
+}
+
+c2025a00062-sch-2-sec-14-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Diffusion;
+  operator: hasEffectAsIf;
+  summary: Imposes obligation on the Director-General of the CDC to diffuse the variation.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The variation was made by the Commonwealth Chief Medical Officer.;
+  @action: The variation has effect as if it had been made by the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-14-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: CogAI;
+  operator: hasEffectAsIf;
+  summary: Imposes obligation on the Director-General of the CDC to process the variation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The variation was made under subsection 12(1) of the old NHS Act.;
+  @action: The variation has effect as if it had been made by the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-15-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Continuation;
+  summary: Continues effect from Commonwealth Chief to Director-General of CDC.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Things done by, or in relation to, the Commonwealth Chief.;
+  @action: Things have effect as if done by, or in relation to, the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-15-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps temporal intervals between things done by Commonwealth Chief and Director-General of CDC.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Things done before transition time.;
+  @action: Things have effect at and after transition time.;
+}
+
+c2025a00062-sch-2-sec-15-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: LTL;
+  operator: Recurrent;
+  summary: Recurring trace for things done by Commonwealth Chief.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Things done by, or in relation to, the Commonwealth Chief.;
+  @action: Things have effect as if done by, or in relation to, the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-15-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exempts things done by Commonwealth Chief from requirements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Things done before transition time.;
+  @action: Subitem (1) does not apply in relation to specified thing.;
+}
+
+c2025a00062-sch-2-sec-16-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies references to the Commonwealth Chief Medical Officer;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The instrument contains a reference to the Commonwealth Chief Medical Officer.;
+  @action: The instrument has effect, at and after the transition time, as if a reference in the instrument to the Commonwealth Chief Medical Officer were a reference to the Director-General of the CDC.;
+}
+
+c2025a00062-sch-2-sec-17-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: substitution;
+  summary: Substitution of Director-General for Commonwealth Chief Medical Officer and Health Secretary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

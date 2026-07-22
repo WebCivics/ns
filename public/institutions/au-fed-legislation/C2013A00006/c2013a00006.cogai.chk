@@ -1,0 +1,1972 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Slavery, Slavery-like Conditions and People Trafficking) Act 2013
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2013a00006-sch-1-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: substitution;
+  summary: Replaces 'by law' with a broader phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Original text;
+  @action: New text;
+}
+
+c2013a00006-sch-1-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-8-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the type of obligation or prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This provision classifies a legal effect;
+  @action: Obligation;
+}
+
+c2013a00006-sch-1-sec-270-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270;
+  logic: Deontic;
+  operator: includes;
+  summary: List of coercion types;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270;
+  logic: DescriptionLogic;
+  operator: subclassOf;
+  summary: Definitions for Division 270;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits threats to cause deportation or removal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats to cause deportation or removal are prohibited.;
+}
+
+c2013a00006-sch-1-sec-2013-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies threats as detrimental actions.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats are classified as detrimental actions.;
+}
+
+c2013a00006-sch-1-sec-2013-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for threats.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats are defined as temporal intervals.;
+}
+
+c2013a00006-sch-1-sec-2013-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines recurring trace for threats.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats are defined as recurring traces.;
+}
+
+c2013a00006-sch-1-sec-2013-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Defines diffusion for threats.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats are defined as diffused.;
+}
+
+c2013a00006-sch-1-sec-2013-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies threats as AI-related actions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) a threat to cause a person’s deportation or removal from Australia; or (c) a threat of any other detrimental action...;
+  @action: Threats are classified as AI-related actions.;
+}
+
+c2013a00006-sch-1-sec-9-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reducing a person to slavery;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-10-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits slave trading.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-11-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits commercial transactions involving slavery.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-11-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies as prohibition on commercial transactions involving slavery.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide labour or services under coercion, threat, or deception.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The victim is not considered free.;
+  @action: A reasonable person would not consider themselves free.;
+}
+
+c2013a00006-sch-1-sec-270-2-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal interval of coercion, threat, or deception overlaps with the temporal interval of providing labour or services.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The use of coercion, threat, or deception occurs during the provision of labour or services.;
+  @action: The temporal intervals overlap.;
+}
+
+c2013a00006-sch-1-sec-270-2-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-2;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Coercion, threat, or deception diffuses to other persons providing labour or services.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The victim is not considered free.;
+  @action: Other persons are also affected.;
+}
+
+c2013a00006-sch-1-sec-270-2-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-2;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: The system recognizes the obligation to provide labour or services under coercion, threat, or deception.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The victim provides labour or services.;
+  @action: The system acknowledges the obligation.;
+}
+
+c2013a00006-sch-1-sec-270-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-2;
+  logic: SHACL;
+  operator: Validates;
+  summary: The SHACL validation rule checks for the presence of coercion, threat, or deception in providing labour or services.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The victim provides labour or services.;
+  @action: The validation rule is satisfied.;
+}
+
+c2013a00006-sch-1-sec-6-2-ss-2-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: The obligation applies regardless of the victim or another person affected.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (2);
+}
+
+c2013a00006-sch-1-sec-6-2-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-3-ss-1-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-3-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: obligation;
+}
+
+c2013a00006-sch-1-sec-270-3-ss-2-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-3-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence if...;
+  @action: ...an aggravated offence (see section 270.8)—imprisonment for 20 years;;
+}
+
+c2013a00006-sch-1-sec-270-3-ss-2-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-3-ss-2;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Relates to temporal interval of imprisonment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Penalty: ...in any other case—imprisonment for 15 years.;
+  @action: ...20 years;;
+}
+
+c2013a00006-sch-1-sec-270-3-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-3-ss-2;
+  logic: CogAI;
+  operator: Entity recognition;
+  summary: Recognizes entity (State) as bearer of prohibition;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: borneBy: State;
+}
+
+c2013a00006-sch-1-sec-2013-2-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-2-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibition on prosecution for servitude offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-2-ss-4-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-2-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to afford procedural fairness.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-1-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced labour.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced labour;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) applies...;
+  @action: ...coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-2;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between coercion/threat/deception and forced labour;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) applies...;
+  @action: ...coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-2-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-2;
+  logic: LTL;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between coercion/threat/deception and forced labour;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) applies...;
+  @action: ...coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-2-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses information about forced labour;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) applies...;
+  @action: ...coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-2-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-2;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies as forced labour using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) applies...;
+  @action: ...coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-4-ss-3-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-4-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-1-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced labor;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence...;
+  @action: ...imprisonment for 9 years.;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-1-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval of imprisonment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Penalty: (a) in any other case—imprisonment for 9 years.;
+  @action: ...or 12 years.;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-1-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implies imprisonment if conduct causes forced labor;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence...;
+  @action: ...imprisonment for 9 years.;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-1-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses penalty to related offenses;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Penalty: (a) in the case of an aggravated offence (see section 270.8)— imprisonment for 12 years;;
+  @action: ...or imprisonment for 9 years.;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-1-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies conduct as a crime using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) the person engages in conduct...;
+  @action: ...penalty: ...imprisonment for 9 years.;
+}
+
+c2013a00006-sch-1-sec-270-5-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-5-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced labour;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-7-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-7;
+  logic: Deontic;
+  operator: =;
+  summary: Classifies the provision as a prohibition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-3-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits exploitation and confiscation of travel or identity documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) the extent to which the victim will be free to cease providing the labour or services;;
+  @action: No exploitation or confiscation allowed.;
+}
+
+c2013a00006-sch-1-sec-2013-3-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits provision of sexual services requiring unprotected sex.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (vi) if the engagement is to involve the provision of sexual services—that fact, or the nature of sexual services to be provided (for example, whether those services will require the victim to have unprotected sex).;
+  @action: No unprotected sex required.;
+}
+
+c2013a00006-sch-1-sec-2013-3-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-3;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implies imprisonment for specific terms based on offense severity.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (a) in the case of an aggravated offence (see section 270.8)—;
+  @action: Penalty depends on offense severity.;
+}
+
+c2013a00006-sch-1-sec-2013-3-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-3;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with other provisions regarding employment practices and penalties.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) in any other case—;
+  @action: Other cases have different penalties.;
+}
+
+c2013a00006-sch-1-sec-270-8-ss-1-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-8-ss-1;
+  logic: Deontic;
+  operator: isForcedMarriage;
+  summary: Definition of forced marriage;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Division, a marriage is a forced marriage...;
+}
+
+c2013a00006-sch-1-sec-270-8-ss-2-logic-48 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-8-ss-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies relationships as marriages;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (2) For the purposes of subsection (1), marriage includes...;
+  @action: ...the following:;
+}
+
+c2013a00006-sch-1-sec-270-8-ss-2-logic-49 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-8-ss-2;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Includes registered relationships under a law of a foreign country;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) a registered relationship within the meaning of section 2E of...;
+  @action: ...under a law of a foreign country;;
+}
+
+c2013a00006-sch-1-sec-270-8-ss-2-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-8-ss-2;
+  logic: LTL;
+  operator: includes;
+  summary: Includes relationships registered under a law of a foreign country;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) a marriage recognised under a law of a foreign country;;
+  @action: ...if the relationship is of the same, or a similar, type as any registered relationship within...;
+}
+
+c2013a00006-sch-1-sec-270-8-ss-2-logic-51 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-8-ss-2;
+  logic: Deontic;
+  operator: =;
+  summary: Defines void, invalid, or not recognised by law marriages;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (d) a marriage (including a relationship or marriage mentioned in paragraph (a), (b) or (c)) that is...;
+  @action: ...for any reason, including the following:;
+}
+
+c2013a00006-sch-1-sec-10-2-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits marriage to a person without full consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) a party to the marriage has not freely or fully consented...;
+  @action: ...a party to the marriage is married (within the meaning of this subsection)...;
+}
+
+c2013a00006-sch-1-sec-10-2-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits marriage to a person married to more than one person.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) a party to the marriage is married (within the meaning of this subsection) to more than one person.;
+  @action: ...a party to the marriage is married (within the meaning of this subsection)...;
+}
+
+c2013a00006-sch-1-sec-10-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits coercion, threat or deception in marriage.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies whether the coercion, threat or deception is used against the victim or another person.;
+  @action: ...the coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-10-2-logic-55 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with coercion, threat or deception in marriage.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies whether the coercion, threat or deception is used against the victim or another person.;
+  @action: ...the coercion, threat or deception is used against the victim or another person.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-1-logic-56 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced marriages;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...imprisonment for 4 years.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-1-logic-57 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between conduct and forced marriage;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...imprisonment for 4 years.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-1-logic-58 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Establishes implication between conduct and imprisonment;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) in the case of an aggravated offence (see section 270.8)—nimprisonment for 7 years; or...;
+  @action: ...imprisonment for 4 years.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-1-logic-59 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses information about forced marriage offences;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...as the victim of the marriage.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits forced marriages;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: Penalty: ...;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-2-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-2;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between marriage and forced marriage;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: ...and (c) the person is not a victim of the forced marriage.;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implies imprisonment for 7 years or 4 years based on severity;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: ...Penalty: ...;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-2-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-2;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads the definition of forced marriage to all parties involved;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the person is a party to a marriage...;
+  @action: ...and (b) the marriage is a forced marriage;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-2-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-2;
+  logic: CogAI;
+  operator: Analyze;
+  summary: Analyzes the legal text for relevant concepts and relationships;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: ...Penalty: ...;
+}
+
+c2013a00006-sch-1-sec-270-9-ss-3-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-9-ss-3;
+  logic: Deontic;
+  operator: strict liability;
+  summary: Strict liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-4-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant bears evidential burden.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2) does not apply if the person has a reasonable excuse.;
+  @action: The defendant must provide evidence of a reasonable excuse.;
+}
+
+c2013a00006-sch-1-sec-2013-4-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant bears evidential burden in relation to subsection (4).;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A defendant bears an evidential burden in relation to the matter in subsection (4).;
+  @action: The defendant must provide evidence of a reasonable excuse.;
+}
+
+c2013a00006-sch-1-sec-2013-4-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-4;
+  logic: Epistemic;
+  operator: Belief;
+  summary: Defendant believes they have a reasonable excuse.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: A defendant bears an evidential burden in relation to the matter in subsection (4).;
+  @action: The defendant must provide evidence of a reasonable excuse.;
+}
+
+c2013a00006-sch-1-sec-2013-4-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-4;
+  logic: LTL;
+  operator: Interval;
+  summary: Subsection (2) does not apply if the person has an interval of reasonable excuses.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subsection (2) does not apply if the person has a reasonable excuse.;
+  @action: The defendant must provide evidence of a reasonable excuse during this interval.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-1-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits slavery-like offences.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The victim is under 18.;
+  @action: The offence is aggravated.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-1-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Relates the offence to a temporal interval of danger or harm.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The offender engages in conduct that gives rise to a danger of death or serious harm.;
+  @action: The offence is aggravated.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implicates the aggravating factors in the definition of an aggravated offence.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If the victim is under 18, the offence is aggravated.;
+  @action: The offender subjects the victim to cruel treatment.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-1;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagates the definition of an aggravated offence through the various aggravating factors.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: If the offender is reckless as to the danger, the offence is aggravated.;
+  @action: The offender engages in conduct that gives rise to a danger of death or serious harm.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-1-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-1;
+  logic: CogAI;
+  operator: Classification;
+  summary: Classifies the offence as aggravated based on machine learning algorithms.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The victim is under 18 and subjected to cruel treatment.;
+  @action: The offence is aggravated.;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-2-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to allege;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Alleging the relevant aggravated offence;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-3-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: If A implies B, and not A, then not B.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A;
+  @action: not B;
+}
+
+c2013a00006-sch-1-sec-270-10-ss-4-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-10-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires procedural fairness.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-270-11-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-11;
+  logic: Deontic;
+  operator: applies;
+  summary: Jurisdiction applies to a slavery-like offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 15.2 (extended geographical jurisdiction—category B);
+}
+
+c2013a00006-sch-1-sec-12-2-ss-2-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires consideration of economic relationship, contract terms, and personal circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The following matters are covered by this subsection:;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-2-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-2;
+  logic: AllenInterval;
+  operator: requires relation;
+  summary: Requires a relation between identifiable temporal intervals.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The following matters are covered by this subsection:;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-2-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-2;
+  logic: LTL;
+  operator: applies to;
+  summary: Applies to ordered or recurring traces.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the personal circumstances of the alleged victim, including but not limited to:;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-2-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-2;
+  logic: CogAI;
+  operator: applies to;
+  summary: Applies to artificial agents.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: his or her ability to speak, write and understand English or another language;;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-2-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-2;
+  logic: SHACL;
+  operator: applies to;
+  summary: Applies to data schema.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: the extent of his or her social and physical dependence on the alleged offender.;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-3-logic-84 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-3;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from the general prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not prevent other evidence from being led;
+  @action: Other evidence is admissible;
+}
+
+c2013a00006-sch-1-sec-12-2-ss-3-logic-85 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-3;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval between subsection (1) and other evidence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not prevent the leading of other evidence in proceedings;
+  @action: Other evidence can be led at any time before or after subsection (1);
+}
+
+c2013a00006-sch-1-sec-12-2-ss-3-logic-86 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-3;
+  logic: LTL;
+  operator: between;
+  summary: Temporal interval between subsection (1) and other evidence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not limit the manner in which evidence may be given or its admissibility;
+  @action: Other evidence can be led at any time before or after subsection (1);
+}
+
+c2013a00006-sch-1-sec-12-2-ss-3-logic-87 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-3;
+  logic: Diffusion;
+  operator: through;
+  summary: Diffusion of information through other evidence;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not prevent the leading of other evidence in proceedings;
+  @action: Other evidence can diffuse information through subsection (1);
+}
+
+c2013a00006-sch-1-sec-12-2-ss-3-logic-88 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2-ss-3;
+  logic: CogAI;
+  operator: through;
+  summary: Artificial intelligence processing through other evidence;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not limit the manner in which evidence may be given or its admissibility;
+  @action: Other evidence can process information through subsection (1);
+}
+
+c2013a00006-sch-1-sec-270-13-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits defence of victim consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No defence in a proceeding for an offence against this Division that a person against whom the offence is alleged to have been committed consented to, or acquiesced in...;
+  @action: No defence of victim consent;
+}
+
+c2013a00006-sch-1-sec-270-13-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-13;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between consent and offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: alleged to have been committed at the same time as the consent or acquiescence;
+  @action: Consent and offence occur at the same time;
+}
+
+c2013a00006-sch-1-sec-270-13-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-13;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Establishes recurring trace of consent and offence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: consent or acquiescence is a recurring event;
+  @action: Consent and offence are recurring events;
+}
+
+c2013a00006-sch-1-sec-270-13-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-13;
+  logic: CogAI;
+  operator: Entity recognition;
+  summary: Recognizes entity of consent in the text;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: person against whom the offence is alleged to have been committed;
+  @action: Person is an entity of consent;
+}
+
+c2013a00006-sch-1-sec-270-13-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-270-13;
+  logic: SHACL;
+  operator: Schema validation;
+  summary: Validates schema of the text;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: text follows a specific structure;
+  @action: Text follows a specific structure;
+}
+
+c2013a00006-sch-1-sec-15-ss-2-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to exclude or limit concurrent operation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Without limiting subsection (1);
+  @action: No provision of this Division excludes or limits the concurrent operation of other laws.;
+}
+
+c2013a00006-sch-1-sec-15-ss-3-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15-ss-3;
+  logic: Deontic;
+  operator: applicable;
+  summary: Applicability of subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Other laws do not supersede this subsection;
+}
+
+c2013a00006-sch-1-sec-18-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-271-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes conditions of exploitation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-23-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-24-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-25-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Omit “or debt bondage”.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-27-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of ‘; and’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-29-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires procedural fairness for subsection (2) application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2);
+  @action: Procedural fairness is required;
+}
+
+c2013a00006-sch-1-sec-29-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval between finding guilt and application of subsection (2);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Finding guilt for the offence against section 271.2;
+  @action: Application of subsection (2) after finding guilt;
+}
+
+c2013a00006-sch-1-sec-29-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: LTL;
+  operator: ordered by;
+  summary: Ordered trace of procedural fairness and application of subsection (2);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Procedural fairness in relation to the finding of guilt for the offence against section 271.2;
+  @action: Application of subsection (2) ordered by procedural fairness;
+}
+
+c2013a00006-sch-1-sec-29-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: only if;
+  summary: Only applies if defendant has been afforded procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2);
+  @action: Procedural fairness is required only if defendant has been afforded it;
+}
+
+c2013a00006-sch-1-sec-29-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: for;
+  summary: For the application of subsection (2) to be valid, procedural fairness must be provided;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2);
+  @action: Procedural fairness is required for the application of subsection (2);
+}
+
+c2013a00006-sch-1-sec-30-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals subsection 271.4(3);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-31-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits coercion, threat or deception;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-32-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits debt bondage;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-16-2-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-16-2-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Epistemic;
+  operator: if-then;
+  summary: Guilty only if procedurally fair;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-36-logic-112 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces a placeholder with a specific term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘(1) A person’.;
+  @action: Substitute ‘A person’.;
+}
+
+c2013a00006-sch-1-sec-271-4-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of organ removal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Removal is contrary to the law of the State or Territory;
+  @action: Prohibited;
+}
+
+c2013a00006-sch-1-sec-271-5-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits organ trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender commits an offence of organ trafficking;
+  @action: Offence of organ trafficking is prohibited;
+}
+
+c2013a00006-sch-1-sec-2013-7-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits organ trafficking.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-271-6-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits organ trafficking against minors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Victim is under 18.;
+  @action: Aggravated offence of organ trafficking.;
+}
+
+c2013a00006-sch-1-sec-271-6-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits organ trafficking that subjects victims to cruel treatment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Cruel treatment of victims.;
+  @action: Aggravated offence of organ trafficking.;
+}
+
+c2013a00006-sch-1-sec-271-6-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-6;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implies aggravated offence if conduct gives rise to danger of death or harm.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Danger of death or harm.;
+  @action: Aggravated offence of organ trafficking.;
+}
+
+c2013a00006-sch-1-sec-271-6-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits organ trafficking that is reckless as to danger of death or harm.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reckless disregard for victim safety.;
+  @action: Aggravated offence of organ trafficking.;
+}
+
+c2013a00006-sch-1-sec-18-2-ss-2-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-2-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Court has discretion to permit alternative outcome.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-18-2-ss-3-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-2-ss-3;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 271.7B provides for offences of organ trafficking.;
+  @action: Subsection (2) only applies if...;
+}
+
+c2013a00006-sch-1-sec-18-2-ss-3-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-2-ss-3;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval between finding guilt and subsection application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 271.7B provides for offences of organ trafficking.;
+  @action: Subsection (2) only applies if...;
+}
+
+c2013a00006-sch-1-sec-18-2-ss-3-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-2-ss-3;
+  logic: LTL;
+  operator: between;
+  summary: Temporal interval between finding guilt and subsection application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 271.7B provides for offences of organ trafficking.;
+  @action: Subsection (2) only applies if...;
+}
+
+c2013a00006-sch-1-sec-271-7-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits domestic organ trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 271.7;
+  @action: Offence of domestic organ trafficking;
+}
+
+c2013a00006-sch-1-sec-271-8-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits domestic organ trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-8-ss-2-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-8-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Obligation to find guilty if not satisfied of aggravated offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-8-ss-3-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-8-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Afford procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 271.7D provides for offences of domestic organ trafficking.;
+  @action: Subsection (2) only applies if...;
+}
+
+c2013a00006-sch-1-sec-2013-8-ss-3-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-8-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No procedural fairness if no guilt finding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2) only applies if...;
+  @action: Subsection (2) does not apply;
+}
+
+c2013a00006-sch-1-sec-271-9-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-9;
+  logic: Deontic;
+  operator: is;
+  summary: Offence exists;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person (the offender) commits an offence of harbouring a victim;
+  @action: The offender commits an offence.;
+}
+
+c2013a00006-sch-1-sec-271-9-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-9;
+  logic: Deontic;
+  operator: is;
+  summary: Offence exists;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the harbouring, receipt or concealing of the victim:;
+  @action: The harbouring, receipt, or concealing of the victim is an offence.;
+}
+
+c2013a00006-sch-1-sec-271-9-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-9;
+  logic: Deontic;
+  operator: is;
+  summary: Offence exists;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ComLaw Authoritative Act C2013A00006);
+  @action: The provision is part of a law.;
+}
+
+c2013a00006-sch-1-sec-271-10-ss-1-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-10-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The state must prevent harbouring a victim under 18.;
+}
+
+c2013a00006-sch-1-sec-271-10-ss-2-logic-133 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-10-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: May find defendant not guilty but guilty of an offence against section 271.7F.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Trier of fact is not satisfied that the defendant is guilty of the aggravated offence.;
+  @action: But may find the defendant guilty of an offence against section 271.7F.;
+}
+
+c2013a00006-sch-1-sec-271-10-ss-3-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-10-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Afford procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-40-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-40;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Prohibition on penalty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-271-11-ss-1-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-11-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of aggravated debt bondage;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The offender commits an offence of aggravated debt bondage;
+  @action: It is prohibited.;
+}
+
+c2013a00006-sch-1-sec-271-11-ss-2-logic-137 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-11-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: If A then B;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A (defendant is guilty of an offence against section 271.8);
+  @action: B (but not the aggravated offence);
+}
+
+c2013a00006-sch-1-sec-271-11-ss-2-logic-138 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-11-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The trial for the aggravated offence overlaps with the trial for the lesser offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Trial for the aggravated offence;
+  @action: Trial for the lesser offence;
+}
+
+c2013a00006-sch-1-sec-271-11-ss-3-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-11-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Afford procedural fairness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-271-12-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking in persons or organs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-271-15-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-15;
+  logic: Deontic;
+  operator: has;
+  summary: State has obligation to provide relevant evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-10-ss-3-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-10-ss-3;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-1-sec-2013-10-ss-4-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2013-10-ss-4;
+  logic: Deontic;
+  operator: !;
+  summary: Prohibition negation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) prevent the leading of any other evidence in the relevant proceedings;;
+  @action: (b) limit the manner in which evidence may be given or the admissibility of evidence.;
+}
+
+c2013a00006-sch-1-sec-271-16-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits defence of victim consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No defence in a proceeding for an offence against this Division that a person against whom the offence is alleged to have been committed consented to, or acquiesced in...;
+  @action: No defence of victim consent;
+}
+
+c2013a00006-sch-1-sec-271-16-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-16;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between consent and offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: alleged to have been committed at the same time as the consent or acquiescence;
+  @action: Consent and offence occur at the same time;
+}
+
+c2013a00006-sch-1-sec-271-16-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-16;
+  logic: LTL;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between consent and offence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: alleged to have been committed after the consent or acquiescence;
+  @action: Consent precedes the offence;
+}
+
+c2013a00006-sch-1-sec-271-16-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-16;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads information about defence of victim consent;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: No defence in a proceeding for an offence against this Division that a person against whom the offence is alleged to have been committed consented to, or acquiesced in...;
+  @action: Defence of victim consent spreads;
+}
+
+c2013a00006-sch-1-sec-271-16-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-271-16;
+  logic: CogAI;
+  operator: Inference;
+  summary: Infers prohibition from Deontic logic;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Prohibit defence of victim consent;
+  @action: No defence of victim consent;
+}
+
+c2013a00006-sch-1-sec-49-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-49;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classify deontic type.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text indicates a change to the heading.;
+  @action: Repeal and substitute.;
+}
+
+c2013a00006-sch-1-sec-51-ss-2-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-51-ss-2;
+  logic: Deontic;
+  operator: limits;
+  summary: Limitation clause;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No explicit limitation;
+  @action: Obligation to limit;
+}
+
+c2013a00006-sch-1-sec-51-ss-3-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-51-ss-3;
+  logic: Deontic;
+  operator: applicable;
+  summary: Applicability of subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Other laws do not supersede this subsection;
+}
+
+c2013a00006-sch-1-sec-54-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-54;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a key term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-2-sec-2-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the phrase is an action;
+  @action: The phrase must be included;
+}
+
+c2013a00006-sch-2-sec-9-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines the term slavery;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: slavery;
+}
+
+c2013a00006-sch-2-sec-10-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Text substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-2-sec-14-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits exploitation, or;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition of serious offence;
+  @action: Omit 'exploitation, or';
+}
+
+c2013a00006-sch-2-sec-15-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2013a00006-sch-2-sec-28-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28;
+  logic: Deontic;
+  operator: forbid;
+  summary: Forbids debt bondage;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (vi) section 271.8 or 271.9 (debt bondage);
+}
+
+c2013a00006-sch-3-sec-1-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

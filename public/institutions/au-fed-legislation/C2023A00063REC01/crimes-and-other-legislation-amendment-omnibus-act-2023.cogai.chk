@@ -1,0 +1,1709 @@
+# CogAI proposed logic-routing chunks — Crimes and Other Legislation Amendment (Omnibus) Act 2023
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-5-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation to Royal Assent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-6-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-7-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines commencement period for Schedule 9;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The provisions of Schedule 9 do not commence within 6 months;
+  @action: They commence on the day after the end of that period;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-7-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies commencement provision for Schedule 9;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The provisions of Schedule 9 are subject to a commencement provision;
+  @action: The commencement provision is an undertaking by the State;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-7-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: Argumentation;
+  operator: Applicable;
+  summary: Analyzes the implications of the commencement provision for Schedule 9;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The commencement provision has implications for the application of Schedule 9;
+  @action: The provision is relevant to the interpretation of Schedule 9;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-7-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Describes the effect of the commencement provision on Schedule 9;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The commencement provision affects the application of Schedule 9;
+  @action: The provision diffuses its effects over time;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-7-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: CogAI;
+  operator: Applicable;
+  summary: Analyzes the cognitive implications of the commencement provision for Schedule 9;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The commencement provision has cognitive implications for the application of Schedule 9;
+  @action: The provision is relevant to the understanding of Schedule 9;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sec-8-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: day after this Act receives the Royal Assent.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to apply for enrolment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2a-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2a;
+  logic: Deontic;
+  operator: CONTINUE;
+  summary: Continuing obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2A) Subsection (1) does not apply if...;
+  @action: ...the person is already required under that subsection to apply for enrolment...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2a-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2a;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval of obligation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2A) Subsection (1) does not apply if...;
+  @action: ...the person is already required under that subsection to apply for enrolment...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2a-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2a;
+  logic: LTL;
+  operator: >=;
+  summary: Temporal interval of obligation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2A) Subsection (1) does not apply if...;
+  @action: ...the person is already required under that subsection to apply for enrolment...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2a-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2a;
+  logic: Diffusion;
+  operator: CONTAINMENT;
+  summary: Obligation containment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2A) Subsection (1) does not apply if...;
+  @action: ...the person is already required under that subsection to apply for enrolment...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2a-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2a;
+  logic: CogAI;
+  operator: CONTAINMENT;
+  summary: Obligation containment;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2A) Subsection (1) does not apply if...;
+  @action: ...the person is already required under that subsection to apply for enrolment...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2b-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2b;
+  logic: Deontic;
+  operator: continuesUntil;
+  summary: Obligation continuation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) If: a person is required under subsection (1) of this section to apply for enrolment by a particular time; and the person does not apply for enrolment by that time;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2b-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2b;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal overlap;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2B) If: a person is required under subsection (1) of this section to apply for enrolment by a particular time; and the person does not apply for enrolment by that time;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2b-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2b;
+  logic: LTL;
+  operator: occursFirst;
+  summary: Temporal occurrence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2B) If: a person is required under subsection (1) of this section to apply for enrolment by a particular time; and the person does not apply for enrolment by that time;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2b-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2b;
+  logic: Deontic;
+  operator: continuesUntil;
+  summary: Obligation continuation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) If: a person ceases to be a reporting entity; then the obligation to apply for enrolment continues until the person applies for enrolment;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2c-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2c;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of failure to apply for enrolment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2C) A person who contravenes subsection (1);
+  @action: is taken to commit a separate contravention of that subsection on each day...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2c-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2c;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlap between enrolment deadline and obligation period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) on or after the day on which the enrolment deadline occurs;;
+  @action: ...and (b) on or before the day on which the person’s obligation to apply for enrolment ends...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2c-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2c;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of failure to apply for enrolment.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2C) A person who contravenes subsection (1);
+  @action: ...on each day that occurs:...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2c-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2c;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of obligation to apply for enrolment.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2C) A person who contravenes subsection (1);
+  @action: ...on each day that occurs:...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2c-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2c;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of failure to apply for enrolment on obligation.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2C) A person who contravenes subsection (1);
+  @action: ...is taken to commit a separate contravention of that subsection on each day...;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-2-ss-2d-logic-24 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2d;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2D) To avoid doubt, a person does not contravene subsection (1);
+  @action: contravening subsection (1) more than once on any particular day;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-5-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-8-logic-26 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to arrange;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-1-sec-228a-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-228a;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to use computers for administrative action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-6-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between commencement and conduct;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement is before or after the conduct;
+  @action: Undertaking;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-7-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-8-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-8;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute Act name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-9-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-11-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-11;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace outdated reference with current one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-12-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-12;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to substitute the Heritage Act title.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-13-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute Act name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-15-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace outdated reference with current one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-3-sec-17-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17;
+  logic: Deontic;
+  operator: SUBSTITION;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-3-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-3;
+  logic: Deontic;
+  operator: hasMember;
+  summary: Membership obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a representative of the Commonwealth;;
+  @action: (b) a representative of each State, the Australian Capital Territory and the Northern Territory.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-3-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-3;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal overlap between representatives;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) a representative of the Commonwealth;;
+  @action: (b) a representative of each State, the Australian Capital Territory and the Northern Territory.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-3-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: Representative selection implies Advisory Council membership;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) a representative of the Commonwealth;;
+  @action: (b) a representative of each State, the Australian Capital Territory and the Northern Territory.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-3-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-3;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Representative selection diffuses to Advisory Council membership;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) a representative of the Commonwealth;;
+  @action: (b) a representative of each State, the Australian Capital Territory and the Northern Territory.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-3-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-3;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Artificial agent recognizes Advisory Council membership;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) a representative of the Commonwealth;;
+  @action: (b) a representative of each State, the Australian Capital Territory and the Northern Territory.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-4-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-4;
+  logic: Deontic;
+  operator: designates;
+  summary: Assigns a role to the Minister;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-5-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits legislative instrument designation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A designation made under paragraph (4)(a) is not a legislative instrument.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-7-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-7;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to resign;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-7-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-7;
+  logic: AllenInterval;
+  operator: during;
+  summary: Resignation timing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: (written notice given to the Minister);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-8-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-8;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission to resign;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-4-sec-1-ss-8-logic-47 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-ss-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Resignation timing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) A person appointed under subsection (6);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-5-sec-4-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide truthful testimony.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to notify prisoner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-3-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to vary terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-3-logic-51 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-3;
+  logic: DescriptionLogic;
+  operator: has variation suggested by;
+  summary: Attorney-General's suggestion for varying terms;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-4-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-4;
+  logic: Deontic;
+  operator: refuse;
+  summary: Attorney-General's refusal to consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) of this section;
+  @action: Sections 20 to 23 do not apply;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-4-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Conditional commencement based on Attorney-General's decision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (1) of this section;
+  @action: Sections 20 to 23 do not apply for the transfer on those particular terms;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-4-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-4;
+  logic: Deontic;
+  operator: refuse;
+  summary: Attorney-General's refusal to consent to varied terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) of this section;
+  @action: The Attorney-General has refused consent to the varied terms under subsection (1) of this section;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-19-ss-4-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-19-ss-4;
+  logic: Deontic;
+  operator: obligate;
+  summary: Obligation to provide consent or refuse consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 19(4);
+  @action: The Attorney-General must decide under subsection (1) whether to grant or refuse consent;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-3-ss-1-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-3-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-3-ss-1a-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-3-ss-1a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Ministers must advise and request information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-1-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Attorney-General's obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Refuse consent to transfer;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits transfer based on Attorney-General's decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Attorney-General decides to refuse consent.;
+  @action: Transfer is prohibited.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Refusal of consent overlaps with sections 26-32.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Attorney-General's decision is a temporal event.;
+  @action: Sections 26-32 are overlapped by Attorney-General's refusal.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-2-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-2;
+  logic: LTL;
+  operator: Until;
+  summary: Refusal of consent until sections 26-32 apply.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Attorney-General's decision is a temporal event.;
+  @action: Sections 26-32 will apply after Attorney-General's refusal.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-2;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Refusal of consent diffuses sections 26-32.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Attorney-General's decision is a temporal event.;
+  @action: Sections 26-32 are diffused by Attorney-General's refusal.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-24a-ss-2-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-24a-ss-2;
+  logic: CogAI;
+  operator: Infer;
+  summary: Refusal of consent infers sections 26-32 inapplicability.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Attorney-General decides to refuse consent.;
+  @action: Sections 26-32 are inapplicable.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-9-logic-64 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'in writing by the Attorney-General';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘in the notice’;
+  @action: Substitute ‘in writing by the Attorney-General’;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-33a-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-33a-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Attorney-General's obligation to refuse consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-6-sec-33a-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-33a-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits transfer without consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-8-sec-1-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-8-sec-2-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-8-sec-3-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-8-sec-4-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specific provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-1-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1;
+  logic: Deontic;
+  operator: TAKE;
+  summary: Taking an identity as provided under a program is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the person.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Specifies the time period during which the obligation applies.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) was not included in the past program immediately before the commencement of this Act.;
+  @action: but (b) was not included in the past program immediately before the commencement of this Act;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-1-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prevents the person from being included in the past program after the Act's commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) was not included in the past program immediately before the commencement of this Act.;
+  @action: but (b) was not included in the past program immediately before the commencement of this Act;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-1-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-1;
+  logic: Deontic;
+  operator: Permission;
+  summary: Allows the person to be included in the past program after the Act's commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) was not included in the past program immediately before the commencement of this Act.;
+  @action: but (b) was not included in the past program immediately before the commencement of this Act;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-2;
+  logic: Deontic;
+  operator: !;
+  summary: Definition of former participant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-29a-ss-3-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-29a-ss-3;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes past program participants from being excluded.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2)(a);
+  @action: (3);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-3a-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-3a;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Assistant Commissioner means an Assistant Commissioner of the Australian Federal Police.;
+  @action: Assistant Commissioner is defined;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-3a-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-3a;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-1-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-1;
+  logic: Deontic;
+  operator: Request;
+  summary: Participant requests suspension.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Obligation to suspend protection and assistance.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-1-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-1;
+  logic: Deontic;
+  operator: Permission;
+  summary: Commissioner has permission to suspend protection and assistance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-3-logic-82 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Participant has obligation to request suspension to cease.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-4-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Commissioner has a duty to notify.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-5-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-5;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition of providing protection or assistance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) Protection or assistance must not be provided under the NWPP to a participant while a suspension under this section is in effect for the participant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-5-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-5;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between suspension and provision of protection or assistance.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) Subject to subsection (6), protection or assistance must not be provided under the NWPP to a participant while a suspension under this section is in effect for the participant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-5-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-5;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal relationship between suspension and provision of protection or assistance.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) Subject to subsection (6), protection or assistance must not be provided under the NWPP to a participant while a suspension under this section is in effect for the participant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-5-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-5;
+  logic: Diffusion;
+  operator: Not Diffused;
+  summary: Absence of diffusion of protection or assistance during suspension.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) Subject to subsection (6), protection or assistance must not be provided under the NWPP to a participant while a suspension under this section is in effect for the participant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-5-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-5;
+  logic: CogAI;
+  operator: Not Provided;
+  summary: Absence of provision of protection or assistance during suspension.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) Subject to subsection (6), protection or assistance must not be provided under the NWPP to a participant while a suspension under this section is in effect for the participant.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-6-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-6;
+  logic: Deontic;
+  operator: can;
+  summary: Permission to provide protection or assistance despite a suspension.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-7-logic-90 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-7;
+  logic: Deontic;
+  operator: Implies;
+  summary: Suspension does not result in ceasing to be a participant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) To avoid doubt, a suspension under this section does not result in a person ceasing to be a participant while the suspension is in effect.;
+  @action: A person remains a participant during suspension;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-7-logic-91 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Suspension duration overlaps with participant duration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (7) To avoid doubt, a suspension under this section does not result in a person ceasing to be a participant while the suspension is in effect.;
+  @action: Suspension period intersects with participant period;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-7-logic-92 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-7;
+  logic: LTL;
+  operator: Until;
+  summary: Suspension ends before participant ends;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (7) To avoid doubt, a suspension under this section does not result in a person ceasing to be a participant while the suspension is in effect.;
+  @action: Suspension terminates before participant termination;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-7-logic-93 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-7;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Suspension information spreads to participants;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (7) To avoid doubt, a suspension under this section does not result in a person ceasing to be a participant while the suspension is in effect.;
+  @action: Suspension notification reaches all participants;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-7-logic-94 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-7;
+  logic: CogAI;
+  operator: Incorporates;
+  summary: Artificial intelligence assists in suspension management;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (7) To avoid doubt, a suspension under this section does not result in a person ceasing to be a participant while the suspension is in effect.;
+  @action: AI system incorporates suspension rules;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17a-ss-8-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17a-ss-8;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from suspension;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17b-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17b;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits protection and assistance by Commissioner under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Protection and assistance provided under the NWPP to a participant may be suspended...;
+  @action: ...the Commissioner’s ability to provide adequate protection and assistance under the NWPP;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17b-logic-97 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17b;
+  logic: AllenInterval;
+  operator: Temporal Limitation;
+  summary: Limits temporal scope of protection and assistance.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Protection and assistance provided under the NWPP to a participant may be suspended...;
+  @action: ...the Commissioner’s ability to provide adequate protection and assistance under the NWPP;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17b-logic-98 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17b;
+  logic: LTL;
+  operator: Temporal Restriction;
+  summary: Restricts temporal scope of suspension.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Protection and assistance provided under the NWPP to a participant may be suspended...;
+  @action: ...the Commissioner’s ability to provide adequate protection and assistance under the NWPP;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17b-logic-99 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17b;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads suspension of protection and assistance.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Protection and assistance provided under the NWPP to a participant may be suspended...;
+  @action: ...the Commissioner’s ability to provide adequate protection and assistance under the NWPP;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17b-logic-100 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-17b;
+  logic: CogAI;
+  operator: Inference;
+  summary: Infers suspension of protection and assistance.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Protection and assistance provided under the NWPP to a participant may be suspended...;
+  @action: ...the Commissioner’s ability to provide adequate protection and assistance under the NWPP;;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-2-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-2;
+  logic: Deontic;
+  operator: MAY;
+  summary: Right to review suspension decision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-2-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-2;
+  logic: Epistemic;
+  operator: CAN;
+  summary: Participant can apply for review within 7 days;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-2;
+  logic: LTL;
+  operator: WITHIN;
+  summary: Review must be applied within 7 days;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-2-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-2;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Suspension decision may be reviewed if participant applies in writing;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Review must occur within a specific time interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-17c-ss-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-17c-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Commissioner must review and inform participant.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-5-ss-4-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-5-ss-4;
+  logic: Deontic;
+  operator: only;
+  summary: Restrictive obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4);
+  @action: Commissioner's powers can only be delegated to an Assistant Commissioner.;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-5-ss-5-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-5-ss-5;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-6-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-6;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires an eligible national security clearance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-7-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-7;
+  logic: Deontic;
+  operator: =;
+  summary: Prescribed by regulations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Regulations for national security clearance;
+  @action: Eligible clearance;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-7-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Purpose of definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: This definition;
+  @action: For purposes of this definition;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-9-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific clearances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-9-sec-10-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-2-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-4-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits repeal of paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-5-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-5;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal paragraph (l);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term with a specific meaning.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: staff member;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: DescriptionLogic;
+  operator: has definition;
+  summary: Provides a definition for the term staff member.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: subsection 12(1) of the Independent Commission Against Corruption Act 2012 (SA);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: AllenInterval;
+  operator: is engaged under;
+  summary: Specifies the temporal relationship between staff member and engagement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: subsection 12(1) of the Independent Commission Against Corruption Act 2012 (SA);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: Argumentation;
+  operator: implies;
+  summary: Suggests a logical connection between staff member and engagement.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @action: staff member is engaged under subsection 12(1) of the Independent Commission Against Corruption Act 2012 (SA);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: Diffusion;
+  operator: is related to;
+  summary: Indicates a connection between staff member and engagement.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @action: subsection 12(1) of the Independent Commission Against Corruption Act 2012 (SA);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-7-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: CogAI;
+  operator: is defined by;
+  summary: Specifies how staff member is defined.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @action: subsection 12(1) of the Independent Commission Against Corruption Act 2012 (SA);
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-8-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-8;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Identify temporal intervals for role substitutions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsections (5) and (7) specify when roles change;
+  @action: These intervals apply to role changes;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-9-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-9;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires a certifying officer for the Independent Commission Against Corruption (SA);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-10-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-10;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-11-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commissioner Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-12-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-12;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines the term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-12-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-12;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Establishes a class hierarchy for the Independent Commission Against Corruption (SA);
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-16-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-16;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace existing definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-17-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-17;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to investigate corruption in public administration within the meaning of the Independent Commission Against Corruption Act (SA);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-18-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-18;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of the repealed paragraph.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-18-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-18;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Substitution with a new definition.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-19-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-19;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commissioner Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-20-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-20;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of using outdated term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Use of 'Independent Commissioner Against Corruption' is prohibited;
+  @action: Use 'Commissioner of the Independent Commission Against Corruption (SA)' instead;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-20-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-20;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Prohibition of using outdated term with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The term 'Independent Commissioner Against Corruption' must be replaced;
+  @action: Use 'Commissioner of the Independent Commission Against Corruption (SA)' instead;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-20-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-20;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of using outdated term in text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The term 'Independent Commissioner Against Corruption' is not allowed in the text;
+  @action: Use 'Commissioner of the Independent Commission Against Corruption (SA)' instead;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-21-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-21;
+  logic: Deontic;
+  operator: Omit;
+  summary: Remove the term 'Independent Commissioner Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-22-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-22;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commissioner Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-23-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Independent Commissioner Against Corruption';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-25-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-25;
+  logic: Deontic;
+  operator: substitute;
+  summary: Replace paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraph 39(2)(j);
+  @action: New paragraph with staff members;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-26-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-26;
+  logic: Deontic;
+  operator: =;
+  summary: Replaces text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-27-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-27;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-and-other-legislation-amendment-omnibus-act-2023-sch-10-sec-30-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-30;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

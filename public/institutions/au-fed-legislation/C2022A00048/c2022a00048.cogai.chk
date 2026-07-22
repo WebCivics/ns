@@ -1,0 +1,590 @@
+# CogAI proposed logic-routing chunks — Australian Human Rights Commission Legislation Amendment (Selection and Appointment) Act 2022
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2022a00048-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Australian Human Rights Commission Legislation Amendment (Selection and Appointment) Act 2022.;
+}
+
+c2022a00048-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-2-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications, knowledge or experience and a merit-based selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-2-ss-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply;
+}
+
+c2022a00048-sch-1-sec-2-ss-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines the temporal interval for reappointment eligibility;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the start of the period of reappointment;
+  @action: immediately before the start of the period of reappointment;
+}
+
+c2022a00048-sch-1-sec-2-ss-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Justifies the exception for previous Age Discrimination Commissioner;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply in relation to the reappointment of a person who, immediately before the start of the period of reappointment, holds office as the Age Discrimination Commissioner under a previous appointment;
+}
+
+c2022a00048-sch-1-sec-2-ss-3-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Applies to all persons eligible for reappointment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply in relation to the reappointment of a person who, immediately before the start of the period of reappointment, holds office as the Age Discrimination Commissioner under a previous appointment;
+}
+
+c2022a00048-sch-1-sec-2-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: CogAI;
+  operator: Inference;
+  summary: Analyzes the exception for previous Age Discrimination Commissioner;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply in relation to the reappointment of a person who, immediately before the start of the period of reappointment, holds office as the Age Discrimination Commissioner under a previous appointment;
+}
+
+c2022a00048-sch-1-sec-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of excessive appointment duration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Appointment period exceeds 7 years;
+  @action: No appointment is allowed;
+}
+
+c2022a00048-sch-1-sec-5-ss-1a-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A) A person must not be appointed...;
+}
+
+c2022a00048-sch-1-sec-5-ss-1a-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Merit-based selection process;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the selection of the person for the appointment is...;
+}
+
+c2022a00048-sch-1-sec-5-ss-1b-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits reappointment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1B) Paragraph (1A)(b);
+}
+
+c2022a00048-sch-1-sec-5-ss-1b-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines temporal interval for exemption;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1B) Paragraph (1A)(b);
+}
+
+c2022a00048-sch-1-sec-6-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications and a merit-based process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person has appropriate qualifications, knowledge or experience;;
+}
+
+c2022a00048-sch-1-sec-6-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be selected through a merit-based process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the selection of the person for the appointment is the result of a process that: (i) was merit-based; and (ii) included public advertising of the position.;
+}
+
+c2022a00048-sch-1-sec-6-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: The selection process must occur within a specific time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the selection of the person for the appointment is the result of a process that: (i) was merit-based; and (ii) included public advertising of the position.;
+}
+
+c2022a00048-sch-1-sec-6-ss-2-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: LTL;
+  operator: BETWEEN;
+  summary: The selection process must occur within a specific time frame.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the selection of the person for the appointment is the result of a process that: (i) was merit-based; and (ii) included public advertising of the position.;
+}
+
+c2022a00048-sch-1-sec-6-ss-2-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Minister must be satisfied with the qualifications and selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed under subsection (1) as the Human Rights Commissioner unless the Minister is satisfied that:;
+}
+
+c2022a00048-sch-1-sec-6-ss-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prevents reapplication of paragraph (2)(b);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b) does not apply;
+}
+
+c2022a00048-sch-1-sec-9-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of appointment for excessive period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed...;
+  @action: ...for a period if the sum... exceeds 7 years:;
+}
+
+c2022a00048-sch-1-sec-9-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9-ss-3;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A person must not be appointed...;
+  @action: ...the sum of the following exceeds 7 years:;
+}
+
+c2022a00048-sch-1-sec-10-ss-2-logic-22 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits appointment unless conditions are met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed...;
+  @action: ...unless the Minister is satisfied...;
+}
+
+c2022a00048-sch-1-sec-10-ss-2-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for appointment process.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed under subsection (1)...;
+  @action: ...unless the Minister is satisfied that...;
+}
+
+c2022a00048-sch-1-sec-10-ss-2-logic-24 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: Argumentation;
+  operator: Justification;
+  summary: Requires justification of experience and appointment process.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) the person has significant experience in community life of Aboriginal persons or Torres Strait Islanders;;
+  @action: ...and (b) the selection of the person for the appointment is the result of...;
+}
+
+c2022a00048-sch-1-sec-10-ss-2-logic-25 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses responsibility to Minister for satisfaction.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed under subsection (1)...;
+  @action: ...unless the Minister is satisfied that...;
+}
+
+c2022a00048-sch-1-sec-10-ss-2-logic-26 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes AI application in appointment process.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) A person must not be appointed under subsection (1)...;
+  @action: ...unless the Minister is satisfied that...;
+}
+
+c2022a00048-sch-1-sec-10-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Reappointment obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+}
+
+c2022a00048-sch-1-sec-12-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of excessive appointment term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No appointment exceeding 7 years is allowed.;
+}
+
+c2022a00048-sch-1-sec-12-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: AllenInterval;
+  operator: Exceeds;
+  summary: Temporal interval exceeding 7 years;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) that period;;
+}
+
+c2022a00048-sch-1-sec-13-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications, knowledge or experience and a merit-based selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-13-ss-3-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13-ss-3;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes reappointment from paragraph (2)(b);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2)(b) does not apply;
+  @action: does not apply;
+}
+
+c2022a00048-sch-1-sec-13-ss-3-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Reappointment period overlaps with previous appointment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: reappointment period starts after previous appointment;
+  @action: previous appointment and reappointment overlap;
+}
+
+c2022a00048-sch-1-sec-16-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-17-ss-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-17-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications, knowledge or experience and a merit-based selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-17-ss-3-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-17-ss-3;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes reappointment from paragraph (2)(b);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2)(b) does not apply;
+  @action: Paragraph (2)(b) does not apply to this reappointment;
+}
+
+c2022a00048-sch-1-sec-19-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of excessive appointment term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-20-ss-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications, knowledge or experience and a merit-based selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-20-ss-3-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply;
+}
+
+c2022a00048-sch-1-sec-20-ss-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between appointments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: holds office as the Race Discrimination Commissioner under a previous appointment;
+  @action: immediately before the start of the period of reappointment;
+}
+
+c2022a00048-sch-1-sec-20-ss-3-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Reappointment exception implies no duty to comply with paragraph (2)(b);
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b) does not apply;
+  @action: in relation to the reappointment of a person who...;
+}
+
+c2022a00048-sch-1-sec-20-ss-3-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Reappointment exception propagates through the definition of Race Discrimination Commissioner;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply in relation to the reappointment of a person who...;
+}
+
+c2022a00048-sch-1-sec-20-ss-3-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: CogAI;
+  operator: Inference;
+  summary: Reappointment exception inferred from the definition of Race Discrimination Commissioner;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Paragraph (2)(b);
+  @action: does not apply in relation to the reappointment of a person who...;
+}
+
+c2022a00048-sch-1-sec-22-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits appointment for more than 7 years.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No previous appointments exceeding 7 years.;
+  @action: Cannot be appointed for more than 7 years.;
+}
+
+c2022a00048-sch-1-sec-23-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have qualifications, knowledge or experience and a merit-based selection process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-23-ss-3-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2022a00048-sch-1-sec-25-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of excessive appointment term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No appointment exceeding 7 years is allowed.;
+}
+
+c2022a00048-sch-1-sec-25-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Temporal overlap between appointment term and previous appointments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) that period;;
+}
+
+c2022a00048-sch-1-sec-26-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to maintain appointment validity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,1456 @@
+# CogAI proposed logic-routing chunks — Freedom of Information (Removal of Conclusive Certificates and Other Measures) Act 2009
+# Machine-derived; every chunk remains cml:Proposed.
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sec-2-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on specified date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Agency must be followed by a comma and person or body.;
+  @action: The definition of exempt document is updated.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Permits;
+  summary: Minister permits exemption from operation of Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister is exempt from the operation of this Act;
+  @action: in relation to a document that has originated with, or has been received from, any of the following;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Exemption applies to documents originating from specified agencies;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A document that has originated with, or has been received from, any of the following is exempt from the operation of this Act;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: LTL;
+  operator: Recurring;
+  summary: Exemption applies to recurring documents from specified agencies;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: A document that has originated with, or has been received from, any of the following is exempt from the operation of this Act;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Exemption diffuses to documents originating from specified agencies;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: A document that has originated with, or has been received from, any of the following is exempt from the operation of this Act;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Exemption recognized by CogAI for documents originating from specified agencies;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: A document that has originated with, or has been received from, any of the following is exempt from the operation of this Act;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-53-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-53;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state to acknowledge the existence or non-existence of a document.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-15-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal must be constituted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-1;
+  logic: Deontic;
+  operator: Require;
+  summary: Tribunal requires production of exempt documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Tribunal must not disclose document contents.;
+  @action: Unauthorized persons are prohibited from accessing the document.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for authorized access;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Tribunal must return the document to a person within a certain time frame.;
+  @action: Authorized personnel have a temporal interval for accessing the document.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-3;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of authorized access on disclosure;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If a person is authorized to access the document, then they must not be disclosed.;
+  @action: Authorized access implies non-disclosure.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-3;
+  logic: Diffusion;
+  operator: Containment;
+  summary: Containment of unauthorized disclosure;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Tribunal must contain unauthorized disclosure by returning the document to a person who is authorized.;
+  @action: Unauthorized disclosure is contained by returning the document to an authorized person.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-58e-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-58e-ss-3;
+  logic: CogAI;
+  operator: Inference;
+  summary: Inference of authorized access from Tribunal decision;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Tribunal's decision implies that a person is authorized to access the document.;
+  @action: Authorized access is inferred from the Tribunal's decision.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-18-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: MUST;
+  summary: Agency or Minister must apply for Tribunal's permission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-2-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-2;
+  logic: Deontic;
+  operator: may;
+  summary: May be a duty to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Informing may prejudice the conduct of an investigation;
+  @action: It is not appropriate to inform;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-20-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-20;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-21-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Informing the person or legal representative would prejudice investigation or enforcement of law;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-21-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prejudice investigation or enforcement of law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Informing the person or legal representative would prejudice conduct of an investigation of a breach, or possible breach, of the law;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-21-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prejudice investigation or enforcement of law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Informing the person or legal representative would cause damage to security, defence or international relations of the Commonwealth;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-22-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-23-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of ‘; and’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-60a-ss-1-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-60a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be applied;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-60a-ss-2-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-60a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must appear personally and give evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-3-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to request Inspector-General's appearance and evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Tribunal must determine that an agency or Minister must grant access...;
+  @action: Tribunal MUST request Inspector-General's appearance and evidence;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-3-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to provide information on potential damage;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...the Tribunal must request the Inspector-General to appear personally...;
+  @action: Tribunal MUST provide information on potential damage;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-3-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to ensure confidentiality;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...the Tribunal must request the Inspector-General to appear personally...;
+  @action: Tribunal MUST ensure confidentiality;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to comply with requests;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-6-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-6;
+  logic: Deontic;
+  operator: allow;
+  summary: Allow possession and production of documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-6-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: Possession and production within a reasonable period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: after such period as is reasonably necessary for the purposes of giving evidence to the Tribunal;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-7-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-7;
+  logic: Deontic;
+  operator: Allow;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-8-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-8;
+  logic: Deontic;
+  operator: Implies;
+  summary: Tribunal is not bound by Inspector-General's opinion.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-9-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-9;
+  logic: Deontic;
+  operator: Must;
+  summary: The Tribunal has an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-10-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-10;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of obligation from legal professional privilege claim.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Claim of legal professional privilege;
+  @action: No obligation to disclose document under subsection (6).;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-10-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-10;
+  logic: Deontic;
+  operator: negation;
+  summary: Negation of obligation to disclose document under subsection (6).;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Obligation to produce document under subsection (6);
+  @action: No obligation to disclose document under subsection (6).;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-10-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-10;
+  logic: LinearLogic;
+  operator: exclusion;
+  summary: Exclusion of obligation from legal professional privilege claim.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Claim of legal professional privilege;
+  @action: No obligation to disclose document under subsection (6).;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-3-ss-10-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-3-ss-10;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of obligation from legal professional privilege claim.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Obligation to produce document under subsection (6);
+  @action: No obligation to disclose document under subsection (6).;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) In determining whether the Tribunal is satisfied that it is desirable to make an order or orders under subsection 35(2) of the Administrative Appeals Tribunal Act 1975, the Tribunal must:;
+  @action: The Tribunal must have regard to...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to avoid disclosure of exempt matter.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) have regard to: (i) the necessity of avoiding the disclosure to the applicant of exempt matter contained in a document to which the proceedings relate;;
+  @action: The Tribunal must consider the necessity of avoiding disclosure.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to avoid disclosure of information of a certain kind.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) have regard to: (ii) the necessity of avoiding the disclosure to the applicant of information of the kind referred to in subsection 25(1);;
+  @action: The Tribunal must consider the necessity of avoiding disclosure.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to give particular weight to certain submissions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) where the proceedings relate to a document that is claimed to be an exempt document under section 33—give particular weight to a submission made by an agency or a Minister that it is desirable to make the order or orders under subsection 35(2) of the Administrative Appeals Tribunal Act 1975;
+  @action: The Tribunal must give particular weight to certain submissions.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to avoid disclosure that could cause damage or divulge confidential information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) where the proceedings relate to a document that is claimed to be an exempt document under section 33—give particular weight to a submission made by an agency or a Minister that it is desirable to make the order or orders under subsection 35(2) of the Administrative Appeals Tribunal Act 1975;
+  @action: The Tribunal must avoid disclosure that could cause damage or divulge confidential information.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-2009-4-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2009-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal has a duty to make an order if certain conditions are met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) where the proceedings relate to a document that is claimed to be an exempt document under section 33—give particular weight to a submission made by an agency or a Minister that it is desirable to make the order or orders under subsection 35(2) of the Administrative Appeals Tribunal Act 1975;
+  @action: The Tribunal must make an order if certain conditions are met.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-28-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of exempt documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-29-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-67-ss-1-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-67-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to stay appeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-67-ss-4-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-67-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-67-ss-5-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-67-ss-5;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes effect on other orders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) Nothing in this section affects...;
+  @action: ...power of the Federal Court of Australia...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-34-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to apply amendments for access determination.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-1-sec-35-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-6-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide access to exempt records;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-7-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-7;
+  logic: Deontic;
+  operator: not;
+  summary: Exemption based on record type;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Record is in open access period;
+  @action: Not exempt unless sensitive information or security classification applies;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-7-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-7;
+  logic: AllenInterval;
+  operator: during;
+  summary: Exemption based on record type and access period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Record is in open access period;
+  @action: Not exempt unless sensitive information or security classification applies during this time;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-7-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-7;
+  logic: LTL;
+  operator: during;
+  summary: Exemption based on record type and access period;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Record is in open access period;
+  @action: Not exempt unless sensitive information or security classification applies during this time;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-7-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-7;
+  logic: Diffusion;
+  operator: during;
+  summary: Exemption based on record type and access period;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Record is in open access period;
+  @action: Not exempt unless sensitive information or security classification applies during this time;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-1-ss-7-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-7;
+  logic: CogAI;
+  operator: during;
+  summary: Exemption based on record type and access period;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Record is in open access period;
+  @action: Not exempt unless sensitive information or security classification applies during this time;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-4-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-5-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-6-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal must be constituted in accordance with subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-7-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-8-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50;
+  logic: Deontic;
+  operator: TAKE;
+  summary: Decision is taken to be given by the Director-General.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-1-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-2-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must request Inspector-General to appear and give evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before determining that the record is not an exempt record, the Tribunal must...;
+  @action: ...the Inspector-General of Intelligence and Security to appear personally and give evidence...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-2-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide evidence on potential damage or breach of confidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before determining that the record is not an exempt record, the Tribunal must request the Inspector-General of Intelligence and Security to appear personally and give evidence...;
+  @action: ...the damage that could reasonably be expected to be caused to the security, defence or international relations of the Commonwealth if the record were made available for public access;;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-2-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide evidence on potential breach of confidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before determining that the record is not an exempt record, the Tribunal must request the Inspector-General of Intelligence and Security to appear personally and give evidence...;
+  @action: ...whether making the record available for public access would constitute a breach of confidence by disclosing information or matter communicated in confidence by or on behalf of a foreign government, an authority of a foreign government or an international organisation to the Government of the Commonwealth, to an authority of the Commonwealth or to a person receiving the communication on behalf of the Commonwealth or of an authority of the Commonwealth.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-3-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to request personal appearance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Request for personal appearance is required;
+  @action: Inspector-General must appear personally;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-3-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-3;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Personal appearance request is contained within the record access request;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Record access request contains personal appearance request;
+  @action: Personal appearance request is contained within record access request;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-3-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-3;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Request for personal appearance implies that the part of record should not be made available for public access;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Request for personal appearance is made;
+  @action: Part of record should not be made available for public access;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-3-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-3;
+  logic: Diffusion;
+  operator: IS_A;
+  summary: Personal appearance request is a subset of diffusion events;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Record access request is a diffusion event;
+  @action: Personal appearance request is a diffusion event;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-4-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal must hear evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Tribunal is required to hear evidence;
+  @action: Evidence from Archives and Commonwealth institutions must be heard;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-4-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-4;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Evidence from Archives and Commonwealth institutions must be heard within Tribunal's hearing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Tribunal's hearing is a temporal interval;
+  @action: Archives and Commonwealth institutions' evidence must be heard within Tribunal's hearing interval;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-4-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-4;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Tribunal's hearing of Archives and Commonwealth institutions implies their relevance to the case;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Tribunal's hearing is relevant to the case;
+  @action: Archives and Commonwealth institutions' evidence is relevant to the case;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-4-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-4;
+  logic: Diffusion;
+  operator: IS_DIFFUSED_IN;
+  summary: Tribunal's obligation to hear Archives and Commonwealth institutions is diffused to its agents;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Tribunal has an obligation to hear evidence;
+  @action: Agents of Tribunal must also hear evidence from Archives and Commonwealth institutions;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-4-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-4;
+  logic: CogAI;
+  operator: IS_COGNITIVE_IN;
+  summary: Tribunal's hearing requirement for Archives and Commonwealth institutions is a cognitive task;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Tribunal has a cognitive task to perform;
+  @action: Archives and Commonwealth institutions' evidence must be processed cognitively by Tribunal;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-5-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-5;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-5-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-5;
+  logic: Epistemic;
+  operator: Believes;
+  summary: Inspector-General's belief in qualification;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-6-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-6;
+  logic: Deontic;
+  operator: Must;
+  summary: The Tribunal must allow the Inspector-General to take possession of records.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-7-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-7;
+  logic: Deontic;
+  operator: permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-8-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-8;
+  logic: Deontic;
+  operator: Implies;
+  summary: Inspector-General's opinion does not bind the Tribunal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) The Tribunal is not bound by any opinion of the Inspector-General expressed while giving evidence under this section.;
+  @action: The Tribunal is not bound by the Inspector-General's opinion.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-8-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-8;
+  logic: LinearLogic;
+  operator: Not;
+  summary: Tribunal's obligation to follow Inspector-General's opinion is negated.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (8) The Tribunal is not bound by any opinion of the Inspector-General expressed while giving evidence under this section.;
+  @action: The Tribunal is not obligated to follow the Inspector-General's opinion.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-8-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-8;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Inspector-General's opinion does not overlap with the Tribunal's obligation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) The Tribunal is not bound by any opinion of the Inspector-General expressed while giving evidence under this section.;
+  @action: The Inspector-General's opinion does not overlap with the Tribunal's obligation.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-8-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-8;
+  logic: Diffusion;
+  operator: DoesNotDiffuse;
+  summary: Inspector-General's opinion does not diffuse to the Tribunal.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) The Tribunal is not bound by any opinion of the Inspector-General expressed while giving evidence under this section.;
+  @action: The Inspector-General's opinion does not diffuse to the Tribunal.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-50a-ss-8-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50a-ss-8;
+  logic: CogAI;
+  operator: DoesNotApply;
+  summary: Inspector-General's opinion is not applicable to the Tribunal.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) The Tribunal is not bound by any opinion of the Inspector-General expressed while giving evidence under this section.;
+  @action: The Inspector-General's opinion is not applicable to the Tribunal.;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-9-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-9;
+  logic: Deontic;
+  operator: allow;
+  summary: Allowance of time for Inspector-General's consideration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the nature of the evidence that the Inspector-General has been requested to give; and (b) the time required by the Inspector-General to perform the Inspector-General’s other functions.;
+  @action: The Tribunal must allow the Inspector-General a period within which to consider...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-9-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-9;
+  logic: AllenInterval;
+  operator: within;
+  summary: Temporal relation between Tribunal's allowance and Inspector-General's consideration.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (9) The Tribunal must allow the Inspector-General a period within which to consider...;
+  @action: ...a reasonable time to consider the records mentioned in paragraphs (6)(a) to (d);
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-9-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-9;
+  logic: LTL;
+  operator: within;
+  summary: Temporal relation between Tribunal's allowance and Inspector-General's consideration.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (9) The Tribunal must allow the Inspector-General a period within which to consider...;
+  @action: ...a reasonable time to consider the records mentioned in paragraphs (6)(a) to (d);
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-9-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-9;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory allowance of time for Inspector-General's consideration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (9) The Tribunal must allow the Inspector-General a period within which to consider...;
+  @action: ...a reasonable time to consider the records mentioned in paragraphs (6)(a) to (d);
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-9-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-9;
+  logic: Deontic;
+  operator: allow;
+  summary: Allowance of time for Inspector-General's consideration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (9) The Tribunal must allow the Inspector-General a period within which to consider...;
+  @action: ...a reasonable time to consider the records mentioned in paragraphs (6)(a) to (d);
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-2009-2-ss-10-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-2-ss-10;
+  logic: Deontic;
+  operator: negation;
+  summary: Negates obligation to disclose document under subsection (6);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Claim of legal professional privilege;
+  @action: No obligation to disclose document under subsection (6);
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-11-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tribunal must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-12-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-13-ss-1-logic-97 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to produce record;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-13-ss-1a-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-1a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of access to exempt record;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-14-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits access to records.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-15-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-16-2-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal the section;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-55a-ss-2-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-55a-ss-2;
+  logic: Deontic;
+  operator: stay;
+  summary: Automatic stay of certain decisions on appeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-55a-ss-3-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-55a-ss-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking;
+  @action: Temporal interval required;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-18-2-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-20-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-20-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to apply amendments for access determination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-2-sec-22-2-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Exemption from application of amendment for records in open access period or with certificate issued under Archives Act 1983;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-1-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-21ab-ss-1-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21ab-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits access to a record in the Australian Archives.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-21ab-ss-3-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21ab-ss-3;
+  logic: Deontic;
+  operator: cannot;
+  summary: Cannot participate in proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A presidential member must not participate...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-4-logic-110 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Request to reconstitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-5-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Notify President;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-6-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-6;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to reconstitute the Division;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-8-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-8;
+  logic: Deontic;
+  operator: obligation;
+  summary: Division has an obligation to comply with directions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Division as reconstituted may give directions...;
+  @action: The Division as previously constituted must comply...;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-9-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-9;
+  logic: Deontic;
+  operator: MUST;
+  summary: Presidential member must preside.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-10-logic-115 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to rehear proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Member ceases to be available;
+  @action: Proceeding is to be reheard;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-3-sec-2009-ss-10-logic-116 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-ss-10;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between member's availability and proceeding;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Member ceased to be available before proceeding was completed;
+  @action: Proceeding overlaps with rehearing;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-4-sec-2-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition on disclosing information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 60A/50A;
+  @action: Disclosing information is prohibited;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-4-sec-2-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Prohibition applies during performance of functions or duties;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 60A/50A;
+  @action: Prohibition applies during performance of functions or duties;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-4-sec-3-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the removal of conclusive certificates;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-4-sec-8-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Cannot be required to produce documents or divulge information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-removal-of-conclusive-certificates-and-other-measures-act-2009-sch-4-sec-9-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-9;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes duty to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

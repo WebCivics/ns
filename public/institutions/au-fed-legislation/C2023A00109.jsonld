@@ -1,0 +1,1851 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.7",
+      "skos:note": "Definition of Foreign Affairs Minister",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 3"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b513d58e3107c825bc75fd5999fa0a5aba5702a79a173281bf6b52712dcb2875",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term with a specific meaning",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Applies to explicit class hierarchies",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "class hierarchy"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Add 'or the power under section 36D (about application for citizenship cessation order)' to Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 At the end of subsection 53(2)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4238831dde8d8f8cdfd60f10fe0930227b19101deb7108f10fcec5be68cc9ec8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "Omit 'determinations'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Section 4 (paragraph (aa) of the definition of"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1a31cd19f34df761071c9f889ac57cad759b6413fc6443a67a8b459022c9d837",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Omit 'determinations'",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of determinations",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "Omit specific words from a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Paragraph 6(1)(bb)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9a484ada606e263d923bfb960dd7616e00af0a9aaa0a4a50d7b493b8bca0e5fc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the omission of specified words.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "Repeal paragraph, substitute with new functions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Paragraph 6(1)(f)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-13-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "35d568e310b2e6f856a2bede541301c0057ff10075efe1496376a6fb47235249",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-13-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "The Independent National Security Legislation Monitor must review certain provisions of the Australian Citizenship Act 2007.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 After subsection 6(1E)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1dbaa2499a3265a061e4e74a0804eb0cb8fbd604bdb272815ea81d3dce8fb0df",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to review",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "Omit “or (1C)”, substitute “, (1C) or (1F)”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Subsection 29B(1)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1b2945a8e35ce48b0cff453261e9c63112a38f9dbe9a0c6d91420492ff745ee2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-15-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-15"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.14",
+      "skos:note": "Commences review after Committee resolution, into operation and implications of certain provisions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 After paragraph 29(1)(ca)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-16-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "965e3b695c6c41b76f4a8ec74aff3e2863686c46251c1250609f30ba16b577e9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-16-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-16"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.15",
+      "skos:note": "Amendments to Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 At the end of paragraph 45(5)(ia)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "068aa1a2529161ccadbdb0f33038aedda12fbd964984ec68b7006381b7b71f13",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-17"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.16",
+      "skos:note": "Conviction applies if it occurs after commencement and the person engaged in conduct on or after 12 December 2015.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Application provision"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f8897f9101fac7fcc8507b587f02e24e7b8fc1a45df68bc930b672833f73d293",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the state.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-18"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.7",
+      "skos:note": "Ceasing citizenship for repudiation of allegiance and public interest.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 32A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "557dc0343e3c35d5bc4d9d4109aa95203521354b51ef93765d4a37b762f439e8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits ceasing citizenship for repudiation of allegiance and public interest.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.7",
+      "skos:note": "Omit determinations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subdivision C of Division 3 of Part 2 (heading)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d8870bb9b921ff287223bd663e75cbc2ffc2f485fb2d42318627bcb7d4997e4c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B Cessation of citizenship if citizenship cessation order made by"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4"
+        }
+      ],
+      "cml:integrityHash": "271841c098d5905fb787437234078e1acddc049b8e570094d0e1632eeaff8965",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Ceases to be an Australian citizen upon order made under subsection 36C(1)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(1) Cessation of citizenship if citizenship cessation order made by"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-ltl-3",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-4",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9186c94727ee7dc90cbeb510571fa1edb7c66fec8e8e09348a2bc981beea58e1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36b-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "ceases to be an Australian citizen at the time the order is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Ceases to be an Australian citizen upon cessation of citizenship order",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "(1) Subject to this section, if an order is made under subsection 36C(1)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "ceases to be an Australian citizen at the time the order is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Ceases to be an Australian citizen",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "CEASES",
+      "cml:premiseText": "(1) Subject to this section, if an order is made under subsection 36C(1)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "order overturned or quashed.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Order overturned or quashed",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "OVERRIDDEN",
+      "cml:premiseText": "(1) Subject to this section, if an order is made under subsection 36C(1)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "order overturned or quashed.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Order overturned or quashed",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "QUASHED",
+      "cml:premiseText": "(1) Subject to this section, if an order is made under subsection 36C(1)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "ceases to be an Australian citizen at the time the order is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Ceases to be an Australian citizen upon cessation of citizenship order",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "<=",
+      "cml:premiseText": "(1) Subject to this section, if an order is made under subsection 36C(1)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "If a court decision overturns or quashes the order, citizenship is taken never to have ceased.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(2) Cessation of citizenship if citizenship cessation order made by"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "39b19c242d9e3119fc333ec90f2cff674b03af25f4ae1fbab006211bf3601b72",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36b-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person’s citizenship is taken never to have ceased under subsection (1) of this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines the temporal scope of 'citizenship cessation'",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Inclusion",
+      "cml:premiseText": "(2) If a decision of a court overturns or quashes the order..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person’s citizenship is taken never to have ceased under subsection (1) of this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Overturns or quashes the order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Reversal",
+      "cml:premiseText": "(2) If a decision of a court overturns or quashes the order..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person’s citizenship is taken never to have ceased under subsection (1) of this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines the temporal scope of 'citizenship cessation'",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Inclusion",
+      "cml:premiseText": "(2) If a decision of a court overturns or quashes the order..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Preserves validity of actions taken in reliance on overturned order",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(3) Cessation of citizenship if citizenship cessation order made by"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-linearlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "28144d17998785bc00d33b63c79b10c394d8f7de816db7e918a3af34d7bc2932",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36b-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The validity of actions taken in reliance on the overturned order is preserved.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Preserves validity of actions taken in reliance on overturned order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Preservation",
+      "cml:premiseText": "(3) The validity of anything done in reliance on the order made under subsection 36C(1) before the order was overturned or quashed is not affected."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The validity of actions taken in reliance on the overturned order is preserved.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Preserves validity of actions taken in reliance on overturned order",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "Preservation",
+      "cml:premiseText": "(3) The validity of anything done in reliance on the order made under subsection 36C(1) before the order was overturned or quashed is not affected."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Ceases to be an Australian citizen if decisions overturn or quash citizenship cessation order.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36B(4) Cessation of citizenship if citizenship cessation order made by"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-ltl-3",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-argumentation-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6d7c39473fd0472643435efba9daebc0d73399a30f0adf169607d458f67198d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36b-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person ceases to be an Australian citizen at the time the second decision is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Ceasing citizenship is after the appeal decision",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "(4) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-argumentation-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person ceases to be an Australian citizen at the time the second decision is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Ceasing citizenship implies State obligation upon overturning or quashing order",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "(4) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person ceases to be an Australian citizen at the time the second decision is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to cease citizenship upon overturning or quashing order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(4) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the person ceases to be an Australian citizen at the time the second decision is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Ceasing citizenship is before or equal to the appeal decision",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "<=",
+      "cml:premiseText": "(4) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36b-ss-4"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36C Citizenship cessation order if person is convicted of serious"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3"
+        }
+      ],
+      "cml:integrityHash": "dd04d87829718f9c48780788259f9efb877c778151671a62aee54d384826e663",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36c",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Ceases to be an Australian citizen if convicted of serious offence and sentenced to at least 3 years imprisonment.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36C(1) Citizenship cessation order if person is convicted of serious"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "da58d36cc3407bbf2110990074110ec72e663d0d70c77d257fb435024fdb6a98",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36c-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the court may, when imposing such a period or periods of imprisonment on the person in respect of the conviction or convictions, also order at that time as part of the sentence or sentences that the person ceases to be an Australian citizen.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits ceasing to be an Australian citizen if convicted of serious offence and sentenced to at least 3 years imprisonment.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(a) a person is convicted of one or more serious offences; (b) the court has decided to impose on the person, in respect of the conviction or convictions, a period of imprisonment that is at least 3 years or periods of imprisonment that total at least 3 years;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Court must not make order if person would lose citizenship",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36C(2) Citizenship cessation order if person is convicted of serious"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "eb8824282663c0ff822fa87e670e01fc08824f571715176470d9f242c0c5e6cf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36c-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Person would lose citizenship",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Cannot",
+      "cml:premiseText": "Court must not make order"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.8",
+      "skos:note": "Serious offence is defined as an offence against certain provisions of the Criminal Code.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36C(3) Citizenship cessation order if person is convicted of serious"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-1",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-2",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-alleninterval-3",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cbf527e995132abe102c790f5667e965db6f3db70478e74a966bcba3366af3bb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36c-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Specifies excluded terrorism provisions",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">",
+      "cml:premiseText": "(i) section 102.8;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines serious offence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "(3) A serious offence is an offence against any of the following provisions:"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines prohibited acts",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "(f) a provision of Part 5.3 of the Criminal Code (terrorism), other than the following provisions:"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines prohibited acts",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "(g) a provision of Part 5.5 of the Criminal Code (foreign incursions and recruitment)."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36c-ss-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36d",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.11",
+      "skos:note": "Application for citizenship cessation order",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36D Application by the Minister for a citizenship cessation order"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36d-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2277ae9c94d5c07951db240fdab03167e57ccd0756ce356a1f78d5e08cfdc46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-36d",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36d-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-36d"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.7",
+      "skos:note": "Repeal sections and substitute with Schedule 1 Amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Sections 36B to 36K"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "db74da063fcb627ae03eaa3bb90fac1df91475e4785398270604007c1135a10b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Repeal a note and substitute with a new definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 36L (note)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "53ec704f5e2674a63dfaa51f56acd27c8da5369f7a8e53b64cc412beb8b5dfe9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Omit 'determinations'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 48(5A)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d8870bb9b921ff287223bd663e75cbc2ffc2f485fb2d42318627bcb7d4997e4c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Must table a report in each House of the Parliament",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 51B(1)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f02bd0ad0709c9ef238a187a0cdffec750c6d1b7606bfeb3b72c81f9db9501bf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to table a report",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Repeal subsection and substitute with new definition of reporting period.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Subsection 51B(3)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "607cbc5b3c04c9d344cd24cb362da60d305f21657b23ff460b932c6b5da798f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.13",
+      "skos:note": "Repeal section 51C",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 51C"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c27b260253bb8c78e350ea17a9d78673e8c42ddfa6772d7b7480b462ff86b573",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2-norm",
+        "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b9525613b313456dc9bdbe707bef712426c4ea0bddc239c8052bd13d6939cf63",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 December"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf",
+      "asserts": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-citizenship-repudiation-act-2023#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-citizenship-repudiation-act-2023-sec-8"
+    },
+    {
+      "@id": "doc:au/c2023a00109",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Citizenship Act 2007, and for related purposes",
+      "dc:identifier": [
+        "C2023A00109",
+        "No. 109 of 2023"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Citizenship Amendment (Citizenship Repudiation) Act 2023"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2023A00109/latest/downloads",
+        "australian-citizenship-amendment-citizenship-repudiation-act-2023.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

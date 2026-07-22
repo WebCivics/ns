@@ -1,0 +1,1894 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Definition of bail authority",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 3(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-descriptionlogic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "905e6582691746e3a04103fb621a968b2a80a3e4427d2fbf51b7e072ca0bd94f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "to grant bail",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authority to grant bail",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "authorises",
+      "cml:premiseText": "court or person authorises"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is authorised to grant bail",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "bail authority is a court or person"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15AB Matters to be considered in certain bail applications"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1"
+        },
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2"
+        },
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3"
+        },
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-15ab",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Must consider potential impact on persons and witnesses in proceedings.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15AB(1) Matters to be considered in certain bail applications"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0dddfe575b331c86e60c445a650960e6dcc202c6821639b8cac73cf00c0a08e6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-15ab-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must consider",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Consider potential impact of granting bail on a person living in a remote community.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15AB(2) Matters to be considered in certain bail applications"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-alleninterval-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-ltl-3",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-diffusion-4",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7c2b8be49e90eee14309fffdbf540978d08651549c2505becd9b8b2cef136ba1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-15ab-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Remote communities are typically characterized by geographical isolation.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "IS-A",
+      "cml:premiseText": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Duty to consider impact of granting bail on a person living in a remote community.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "IS-A",
+      "cml:premiseText": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Remote communities are typically characterized by geographical isolation.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Defines criminal behaviour in certain bail applications.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15AB(3) Matters to be considered in certain bail applications"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b612f92dd78b69c3faa1818c6ef2e712dbad2a98c0fdddc165e6316b605ef978",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-15ab-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes conduct, omission, circumstance or result in criminal behaviour.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(a) any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question;"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes fault element relating to such a physical element.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(b) any fault element relating to such a physical element."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Exemptions from subsections (1) and (2)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15AB(4) Matters to be considered in certain bail applications"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "46cc7e6799f9e6b4a67f30bf4a876301c3d5d23d64e1355b4e9a5a9844fcb16f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-15ab-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Repeal definition of bail authority",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 15AA(5) (definition of bail authority)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b59404361671ad06ec8926108f9ea23ee505ede55250ca43258a4f35d6ac990f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.7",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After section 15AA"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.8",
+      "skos:note": "Omit “cultural background,”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Paragraph 16A(2)(m)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9a869b5ade34ec4827710e100bb274bf26a19d22bd3781c4ac800abacb4b497c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of 'cultural background,'.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 16A(2)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a"
+        },
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b"
+        }
+      ],
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.8",
+      "skos:note": "Court must not consider customary law or cultural practice as a reason for excusing, justifying, authorising, requiring or lessening the seriousness of criminal behaviour.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5(2A) After subsection 16A(2)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-alleninterval-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fb649dd849936e91637eb3d82982a5f123f94cfb99e1c2af55f441fe456cfd90",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5-ss-2a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...under subsection (1) or (2)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval between (2A) and the preceding subsections.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(2A) However, the court must not take into account..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...any form of customary law or cultural practice...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must not consider...",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(2A) However, the court must not take into account..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...as a reason for:  (a) excusing, justifying, authorising, requiring or lessening the seriousness of the criminal behaviour to which the offence relates;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recurring trace of court decisions on customary law or cultural practice.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring Trace",
+      "cml:premiseText": "(2A) However, the court must not take into account..."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.8",
+      "skos:note": "Defines criminal behaviour in subsection (2A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5(2B) After subsection 16A(2)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-deontic-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-descriptionlogic-3",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-alleninterval-4",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-ltl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bbddaef0f178acf4f5956eb44e9ed7eaa0f0ddc10769857403fb09d278c45c67",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5-ss-2b",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Includes temporal interval as part of physical element of the offence",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "includesTemporalInterval",
+      "cml:premiseText": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes conduct, omission, circumstance or result in physical element of the offence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(2B) In subsection (2A): criminal behaviour includes:"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes fault element relating to such a physical element",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(2B) In subsection (2A): criminal behaviour includes: any fault element relating to such a physical element."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Subclass of physical element of the offence in question",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subClassOf",
+      "cml:premiseText": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-ltl-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Includes temporal interval as part of physical element of the offence",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "includesTemporalInterval",
+      "cml:premiseText": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Omit 'cultural background',",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5A Subparagraph 19B(1)(b)(i)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5a-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9a869b5ade34ec4827710e100bb274bf26a19d22bd3781c4ac800abacb4b497c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5a-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5a"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5B After subsection 19B(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a"
+        },
+        {
+          "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1b"
+        }
+      ],
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Court cannot consider customary law or cultural practice as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5B(1A) After subsection 19B(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-deontic-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-alleninterval-3",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-ltl-4",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-diffusion-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3804ce5be96435983e1434bd800e1d1e724ffeb00487ff3363f7dce69e1620ef",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5b-ss-1a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Does not affect the seriousness of criminal behavior within this time period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Overlaps with time period of customary law or cultural practice.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlap",
+      "cml:premiseText": "Customary law or cultural practice"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Cannot be considered as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court cannot consider customary law or cultural practice.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Customary law or cultural practice"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Cannot be considered as a reason for aggravating the seriousness of criminal behavior.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court cannot consider customary law or cultural practice in relation to the offense.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Customary law or cultural practice"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-diffusion-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Does not affect the seriousness of criminal behavior within this time period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Overlaps with diffusion of customary law or cultural practice.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Overlap",
+      "cml:premiseText": "Customary law or cultural practice"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Does not affect the seriousness of criminal behavior within this time period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Overlaps with temporal interval of customary law or cultural practice.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Overlap",
+      "cml:premiseText": "Customary law or cultural practice"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Defines criminal behaviour in subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5B(1B) After subsection 19B(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1b-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fb682b0c79e99898d1fcd047622e00bc58eabc0abe8476151914e989092f0468",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5b-ss-1b",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1b-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1b"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Substitute health-related terms in a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5C Paragraph 23WI(3)(c)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ef7e3c3bbb9fc4391900f699c16a443d926839c92f14b1f0cb855296a168a464",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5c",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5d",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5D Paragraph 23WI(3)(d)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5d-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5d",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5d-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5d"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.9",
+      "skos:note": "Constable must consider religious beliefs of suspect in forensic procedure",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5E At the end of section 23WI"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "efc93def86403cff4888bc1c8287d0f98936125a6f4bb132c7232244d6267b1c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5e",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Forensic procedure and religious practice overlap",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Forensic procedure overlaps with religious practice",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Religious practices often involve forensic procedures"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Constable must consider religious beliefs",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory consideration of religious beliefs",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must",
+      "cml:premiseText": "Religious beliefs are relevant to forensic procedure"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5f",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Replace certain words with new ones.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5F Paragraph 23WO(3)(c)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5f-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ef7e3c3bbb9fc4391900f699c16a443d926839c92f14b1f0cb855296a168a464",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5f",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5f-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5f"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5G Paragraph 23WO(3)(d)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5g",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeals a paragraph",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Senior constable must consider suspect's religious beliefs when determining intrusiveness of forensic procedure.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5H At the end of section 23WO"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-alleninterval-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-ltl-3",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-diffusion-4",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2c7f7de9f73606e2080a7f861036e13c02b38a0e25738cdb568da0a81a9a71b1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5h",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Within",
+      "cml:premiseText": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The artificial intelligence system assists in considering suspect's religious beliefs.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Artificial intelligence system assists in considering suspect's religious beliefs.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "By",
+      "cml:premiseText": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The senior constable must also consider the suspect's religious beliefs.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Senior constable has a duty to consider suspect's religious beliefs.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must",
+      "cml:premiseText": "The senior constable must take into account the intrusiveness of the forensic procedure."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The consideration of suspect's religious beliefs spreads to other relevant parties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Consideration of suspect's religious beliefs spreads to other relevant parties.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Through",
+      "cml:premiseText": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Replace certain words with new ones.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5J Paragraph 23WT(3)(c)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ef7e3c3bbb9fc4391900f699c16a443d926839c92f14b1f0cb855296a168a464",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5j",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace certain words with new ones.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5k",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5K Paragraph 23WT(3)(d)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5k-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5k",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5k-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5k"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Magistrate must consider suspect's religious beliefs in forensic procedure",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5L At the end of section 23WT"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af9a22454cd578835ac6cb9f94690f2f517d242e2d7607e2e5a1ea2f5df85f23",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-5l",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Obligation to consider religious beliefs",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Magistrate has a duty to consider suspect's religious beliefs",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Paragraph (3)(f)"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.10",
+      "skos:note": "Amendments apply to offences committed before or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Application of amendments"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": [
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-norm",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-deontic-1",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-alleninterval-2",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-ltl-3",
+        "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "94cb2825c145b98c53811ddd057c761081316ab14373f0739cdf6679a1ec91aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Amendments apply to offences committed before or after commencement.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendments apply to offences committed before or after commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendments do not apply to offences committed before commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(2) The amendments made by items 4 to 5L of this Schedule do not apply in relation to offences committed before the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Amendments apply to offences committed before or after commencement.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement."
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "38c5c0b7da996b68ca6c25e86c35cc156c0dd2ce542deca1c04fe5f66c990e24",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.6",
+      "skos:note": "Commences on day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b0a0b388907c1b03ff0e7a16ea0a97c5a34ef635ca3310545087917db2cda1c6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-bail-and-sentencing-act-2006.pdf, p.6",
+      "skos:note": "Amendments to Acts specified in a Schedule",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "crimes-amendment-bail-and-sentencing-act-2006.pdf",
+      "asserts": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "608ff0d9999c7428d7699666117ef2a05836db52e5f5dc72a5d7ce8dfd65f70d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-bail-and-sentencing-act-2006#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-bail-and-sentencing-act-2006-sec-3"
+    },
+    {
+      "@id": "doc:au/c2006a00171",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Crimes Act 1914, and for related purposes",
+      "dc:identifier": [
+        "C2006A00171",
+        "No. 171 of 2006"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Amendment (Bail and Sentencing) Act 2006"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2006A00171/latest/downloads",
+        "crimes-amendment-bail-and-sentencing-act-2006.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

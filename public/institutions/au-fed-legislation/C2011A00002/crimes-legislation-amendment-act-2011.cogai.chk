@@ -1,0 +1,931 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment Act 2011
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-act-2011-sec-3-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act begins on the specified date.;
+}
+
+crimes-legislation-amendment-act-2011-sec-4-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: begins;
+  summary: Indicates commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act begins on the day it receives Royal Assent.;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with legal force.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-47a-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-47a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: CEO prohibits termination for serious misconduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: CEO has power to terminate employment;
+  @action: Termination is prohibited for serious misconduct;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-47a-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-47a;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Termination overlaps with staff member's employment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: CEO terminates staff member's employment;
+  @action: Termination overlaps with staff member's employment;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Section imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-4-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding a clause to an existing provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-5-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: hasObligation;
+  summary: Staff members of the Australian Crime Commission Act 2002 are subject to investigations and reports;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-6-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-1-sec-8-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-31-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to notify Minister annually.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) each arrangement that the CEO has made with an examiner under subsection (3) during the previous 6 months; and (b) the nature of the ACC operation/investigation to which the arrangement relates.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-31-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Temporal interval for 'previous 6 months'.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) each arrangement that the CEO has made with an examiner under subsection (3) during the previous 6 months; and (b) the nature of the ACC operation/investigation to which the arrangement relates.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-31-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: LTL;
+  operator: RECURSIVE;
+  summary: Recurring trace for 'annual notification'.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) each arrangement that the CEO has made with an examiner under subsection (3) during the previous 6 months; and (b) the nature of the ACC operation/investigation to which the arrangement relates.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-31-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: Diffusion;
+  operator: SPREADS;
+  summary: Diffusion logic for 'annual notification'.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) each arrangement that the CEO has made with an examiner under subsection (3) during the previous 6 months; and (b) the nature of the ACC operation/investigation to which the arrangement relates.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-31-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: CogAI;
+  operator: RECOGNIZES;
+  summary: CogAI logic for 'annual notification'.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) each arrangement that the CEO has made with an examiner under subsection (3) during the previous 6 months; and (b) the nature of the ACC operation/investigation to which the arrangement relates.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-5-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-6-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to apply amendment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-7-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: has;
+  summary: Eligibility condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Examiner is eligible for reappointment;
+  @action: State must provide note on eligibility;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-8-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to appoint examiner on a full-time or part-time basis.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-11-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission to grant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-2;
+  logic: Deontic;
+  operator: Must Not;
+  summary: Prohibition of action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A part-time examiner must not engage in any paid employment...;
+  @action: No paid employment that conflicts with duties.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-2-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between duties and employment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A part-time examiner must not engage in any paid employment...;
+  @action: Duties and employment overlap.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-2-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of duty on employment;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) A part-time examiner must not engage in any paid employment...;
+  @action: Employment implies breach of duty.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-2-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-2;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagated prohibition of action;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) A part-time examiner must not engage in any paid employment...;
+  @action: Prohibition is propagated to all related actions.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-2;
+  logic: CogAI;
+  operator: Classification;
+  summary: Artificial intelligence classification of duty and employment;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) A part-time examiner must not engage in any paid employment...;
+  @action: Duty and employment are classified as conflicting.;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-13-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13-ss-3;
+  logic: Deontic;
+  operator: require;
+  summary: The CEO requires the part-time examiner to provide details.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-17-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicting employment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-2-sec-18-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-1-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: Omit;
+  summary: Remove the phrase 'or constable assisting';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection 3K(1);
+  @action: New text: of a warrant in relation to premises, or constable assisting,;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'the premises';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting 'the premises' is prohibited.;
+  @action: Substitute with warrant or thing found during search.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-4-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide consent in writing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-5-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: Replace;
+  summary: Replace 'the occupier' with 'the person referred to in paragraph (2)(b) or (c)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-7-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-8-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-8;
+  logic: Deontic;
+  operator: replacement;
+  summary: Replacement of a term with an alternative;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-9-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-10-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the phrase is not allowed;
+  @action: The phrase must be included;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-11-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-12-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-12;
+  logic: Deontic;
+  operator: Modify;
+  summary: Change definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Original text;
+  @action: New text;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-13-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits movement under subsection 3K(2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-14-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-16-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-16;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to amend the Crimes Act 1914;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-18-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State must substitute phrase;
+  @action: State shall substitute phrase;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-19-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Regard must be had to...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-21-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits removal of phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘removed under that section from warrant premises’;
+  @action: Substitute ‘moved under that section’;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-22-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Regard must be had to...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-23-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-23;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-24-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of a key term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Criminal Code defines...;
+  @action: ...as the same meaning as in subsection 100.1(1);
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-25-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-25;
+  logic: Deontic;
+  operator: substitution;
+  summary: Definition substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-29-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-29;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal heading.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-30-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-30;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-31-ss-3-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-31-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to return document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-31-ss-4-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-31-ss-4;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: The Commissioner has an obligation that is exempted under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-31-ss-4-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-31-ss-4;
+  logic: AllenInterval;
+  operator: OVERLAPS;
+  summary: The Commissioner does not have to take steps if the application for an order has not been determined.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-33-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-33;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-38-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval required;
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-1-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-2-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for retention of seized items;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The magistrate may order that a thing seized under Division 3 or 3A be retained for the period specified in the order if the magistrate is satisfied that the thing is being used, or is required to be used, for a purpose mentioned in section 3ZQU or for other judicial or administrative review proceedings.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-2;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Temporal trace of seized items;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The magistrate may order that a thing seized under Division 3 or 3A be retained for the period specified in the order if the magistrate is satisfied that the thing is being used, or is required to be used, for a purpose mentioned in section 3ZQU or for other judicial or administrative review proceedings.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-2-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-2;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spread of retained items;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The magistrate may order that a thing seized under Division 3 or 3A be retained for the period specified in the order if the magistrate is satisfied that the thing is being used, or is required to be used, for a purpose mentioned in section 3ZQU or for other judicial or administrative review proceedings.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-2;
+  logic: Argumentation;
+  operator: Justification;
+  summary: Justification for retention of seized items;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) The magistrate may order that a thing seized under Division 3 or 3A be retained for the period specified in the order if the magistrate is satisfied that the thing is being used, or is required to be used, for a purpose mentioned in section 3ZQU or for other judicial or administrative review proceedings.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-3-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Magistrate may make orders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-4-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits retention of thing or document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The orders are as follows:;
+  @action: the thing or document is forfeited to the Commonwealth;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-4-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-4;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with time periods of retention and forfeiture;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) an order that the thing or document is forfeited to the Commonwealth;;
+  @action: the thing or document overlaps with a time period of forfeiture;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-4-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-4;
+  logic: LTL;
+  operator: Recurring;
+  summary: Recurring trace of thing or document's status as forfeited;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) an order that the thing or document is forfeited to the Commonwealth;;
+  @action: the thing or document has a recurring trace of being forfeited;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-4-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-4;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads information about thing or document's status as forfeited;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (b) an order that the thing or document is forfeited to the Commonwealth;;
+  @action: the information spreads about the thing or document being forfeited;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-39-ss-4-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39-ss-4;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes thing or document as forfeited by AI system;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) an order that the thing or document is forfeited to the Commonwealth;;
+  @action: the AI system recognizes the thing or document as forfeited;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-40-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-40;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the amendment to apply to specified things and documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-42-logic-70 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-42;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner may delegate powers;
+  @action: Powers delegated;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-43-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-43;
+  logic: Deontic;
+  operator: AND;
+  summary: Combination of conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Both conditions must be met.;
+  @action: Obligation applies.;
+}
+
+crimes-legislation-amendment-act-2011-sch-3-sec-44-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-44;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Applicable obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-35a-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35a-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted by the Commissioner.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-35a-ss-2-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35a-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to make payments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-35a-ss-3-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35a-ss-3;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to make payments under this section;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-35a-ss-4-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35a-ss-4;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition on making authorisation under this section if it would exceed $100,000.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-35a-ss-5-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35a-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Payment recovery upon breach of conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Conditions may be attached to payments under this section.;
+  @action: If a condition is breached, the payment may be recovered by the Commonwealth as a debt in a court of competent jurisdiction.;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-7-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-7;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to make special payments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-2011-sch-4-sec-12-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

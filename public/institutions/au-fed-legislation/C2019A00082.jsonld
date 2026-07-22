@@ -1,0 +1,1252 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:note": "Omit provision of leadership in relation to behaviour supports.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 8"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "08a9b70d135eda3dc4bf8b8736546441d00ef08eb10de5b72d9d23ba6132af2c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits provision of leadership in relation to behaviour supports.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10B Definition of NDIS worker screening law"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-1"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-10b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:note": "The Minister may determine a law of a State or Territory for the purposes of NDIS worker screening law definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10B(1) Definition of NDIS worker screening law"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "21bfb1e36aece1c38f69931838734c4d98be05930476fa8eb2977d4f808107a7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-10b-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-1"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:note": "Minister must be satisfied that a State or Territory law establishes a scheme for worker screening.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10B(2) Definition of NDIS worker screening law"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7ada38a5883d1524cd481eff0b8a09f19c04bf9e686c4e4e1554e52c94b040b8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-10b-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State or Territory law establishes a scheme for worker screening",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to satisfy condition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Minister must be satisfied"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "The Commissioner must establish and maintain the NDIS worker screening database.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181X Simplified outline of this Chapter"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "53acc7999d3ee4b5b154394b94d75cb0a7f4a4f74e751355130748dcb6316060",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181x",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establish and maintain the database",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST ESTABLISH AND MAINTAIN"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-1"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-2"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-6"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8"
+        },
+        {
+          "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-9"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Establishment of NDIS worker screening database",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(1) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bf6bf7ea6a9f45a55e4b3b21836b0eb6a717eb524eba7bd69c7aeb381cfd548b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-1"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "The NDIS worker screening database must be kept in electronic form.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(2) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3755342a9920b5e0b4d21d7d11d45b6642bcf2bb86578eb811c584e73a7b5c8e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Maintain an up-to-date record of persons who have been found not to pose a risk to people with disability.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(3) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a54668940a40c0d8e4928b1d675ff2d3ee603f8b15d331d34a356741c0a44bb1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must maintain an up-to-date record.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Information in the NDIS worker screening database must not be limited by paragraphs (3)(a) to (c).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(4) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-deontic-1",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-alleninterval-2",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-ltl-3",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-diffusion-4",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a884dcd3f18befcaed38b86dd2ff6b04ecbfb5fd914609d59cba8121858e1991",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(4)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The database's information overlaps with the information subject to paragraphs (3)(a) to (c).",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(3)(a) to (c)"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(4)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The database's information incorporates the information subject to paragraphs (3)(a) to (c).",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Incorporates",
+      "cml:premiseText": "(3)(a) to (c)"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(4)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on limiting information in the database.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MustNot",
+      "cml:premiseText": "(3)(a) to (c)"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(4)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The database's information diffuses into the information subject to paragraphs (3)(a) to (c).",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "(3)(a) to (c)"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(4)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The database's information is until the information subject to paragraphs (3)(a) to (c).",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "(3)(a) to (c)"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "NDIS worker screening database must include specific information about applicants and decisions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(5) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5a75984c1eef8fea2bf952d49d3261da16ef2f04a72409c58038049d141f7859",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide specified information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Personal information may be included in the database",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(6) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "81b64f271981c726b2f4b461751d53a704dd397b67f043a2fad618c76046f967",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-6-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-6"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Personal information may be included in the NDIS worker screening database.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(7) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9d8b93887a86abce7a58554b73f5f85c6337f2bb97cf7c4e0aa896b84909b163",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Includes personal information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "The Minister may determine a purpose for the purposes of paragraph (3)(d) and/or determine information for the purposes of paragraph (5)(j).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(8) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dd88871e6382ad8228195ff540a47d4c58c367c4f7d212bd1f5f46c0842395a2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to determine a purpose or information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-9",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "The NDIS worker screening database is not a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "181Y(9) NDIS worker screening database"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0b73f1c35f6b167edf4b8a0c100fdd0a8041b0a99a8579be6c3db833f569986e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-181y-ss-9",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-9"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:note": "Requires disclosure of information in the NDIS worker screening database.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 9"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-deontic-1",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2e4e588950d77ce2f9633af54742d932937147de906c0977de5a7ceec8075e06",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Defines subclass NDIS worker screening law",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subClassOf"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.7",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After section 10A"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.8",
+      "skos:note": "Insert Chapter 6B—NDIS worker screening database",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After Chapter 6A"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8244d701066829e8c009fce3edd9d203669676fd9864196a1f53296e05638c0c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.11",
+      "skos:note": "Delegation of power to Commissioner",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 201A(1)"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "368190b0c361224e2f6751a814b70d22a66ddf74c86e22b5bf086d6fff345413",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a4822391537c2dd240aabca59ac27d4b8a98119e46dc1132bee565be8434ccec",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": [
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2-norm",
+        "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 October 2019"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf",
+      "asserts": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8811e1a8553337dcc8ec24f2b14389609e48d49ebcc69ec4666345963c0d5838",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-2"
+    },
+    {
+      "@id": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-3"
+    },
+    {
+      "@id": "doc:au/c2019a00082",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the National Disability Insurance Scheme Act 2013, and for related purposes",
+      "dc:identifier": [
+        "C2019A00082",
+        "No. 82 of 2019"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "National Disability Insurance Scheme Amendment (Worker Screening Database) Act 2019"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2019A00082/latest/downloads",
+        "national-disability-insurance-scheme-amendment-worker-screening-database-act-2019.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

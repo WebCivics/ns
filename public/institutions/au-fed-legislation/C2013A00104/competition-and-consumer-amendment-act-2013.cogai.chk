@@ -1,0 +1,80 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment Act 2013
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: hasClass;
+  summary: Exemptions based on class of representations;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The representation is in a class prescribed by the regulations;
+  @action: No need to comply with conditions;
+}
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for exemptions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not apply if the representation is in a class prescribed by the regulations;
+  @action: Exemptions are conditional on compliance with regulations;
+}
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: allows;
+  summary: Regulations prescribe exemptions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The regulations prescribe a class of representations for which subsection (1) does not apply;
+  @action: Exemptions are prescribed by the regulations;
+}
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: LTL;
+  operator: during;
+  summary: Temporal interval for exemptions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subsection (1) does not apply if the representation is in a class prescribed by the regulations;
+  @action: Exemptions are conditional on compliance with regulations;
+}
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Compliance with regulations is necessary for exemptions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The conditions prescribed by the regulations in relation to representations in that class have been complied with;
+  @action: Exemptions are conditional on compliance with regulations;
+}
+
+competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: allows;
+  summary: No need to comply with conditions if exemptions apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: If the representation is in a class prescribed for paragraph (a) of this subsection and subsection (1) is complied with in relation to the representation, there is no need to also comply with any conditions prescribed for paragraph (b) of this subsection;
+  @action: Exemptions override condition requirements;
+}

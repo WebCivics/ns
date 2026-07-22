@@ -1,0 +1,2706 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Psychoactive Substances and Other Measures) Act 2015
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sec-2-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sec-4-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sec-4-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional provision commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-ss-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines key terms with obligations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-ss-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-ss-1;
+  logic: DescriptionLogic;
+  operator: classifies;
+  summary: Classifies substances into psychoactive and non-psychoactive categories.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits importing psychoactive substances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if:...;
+  @action: ...Penalty: Imprisonment for 5 years, or 300 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-1-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Requires a recurring trace of importing psychoactive substances.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if:...;
+  @action: ...Penalty: Imprisonment for 5 years, or 300 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-1-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Requires a temporal interval between importing psychoactive substances.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if:...;
+  @action: ...Penalty: Imprisonment for 5 years, or 300 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-1-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses the prohibition of importing psychoactive substances.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if:...;
+  @action: ...Penalty: Imprisonment for 5 years, or 300 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-1-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies importing psychoactive substances as a prohibited action.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if:...;
+  @action: ...Penalty: Imprisonment for 5 years, or 300 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-2;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from regulation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substances exempt under section 18A of the Therapeutic Goods Act;
+  @action: Not subject to this section;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-2;
+  logic: DescriptionLogic;
+  operator: subclass;
+  summary: Classification of substances;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Food, tobacco products, therapeutic goods, and agricultural/chemical products;
+  @action: Substances within these categories are exempt;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-2-ss-4-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-2-ss-4;
+  logic: Deontic;
+  operator: Necessity;
+  summary: No need to prove reckless intent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1);
+  @action: it is not necessary to prove that the defendant was reckless as to...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits the importation of a substance with an express or implied representation that it is a serious drug alternative.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: Penalty: Imprisonment for 2 years, or 120 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Defines the class of substances that are serious drug alternatives.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: The class of substances that are serious drug alternatives includes those that are represented to be such.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines the temporal interval during which the importation is prohibited.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: The prohibition on importing a substance with an express or implied representation that it is a serious drug alternative applies during the period when the substance is presented as such.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: Defines the temporal interval until which the importation is prohibited.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: The prohibition on importing a substance with an express or implied representation that it is a serious drug alternative applies until the period when the substance is no longer presented as such.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Defines how the prohibition spreads to related substances.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: The prohibition on importing a substance with an express or implied representation that it is a serious drug alternative diffuses to related substances.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-1;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Defines how the prohibition is recognized by AI systems.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if: (a) the person imports a substance; and (b) at the time of the importation, the presentation of the substance includes an express or implied representation that the substance is a serious drug alternative.;
+  @action: AI systems recognize the prohibition on importing a substance with an express or implied representation that it is a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-2;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes as part of the definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-2;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Defines a subclass of 'serious drug'.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from the prohibition on importing psychoactive substances;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act provides exemptions for certain substances and mixtures of substances;
+  @action: These exemptions apply to the specified substances and mixtures;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: DescriptionLogic;
+  operator: subclassOf;
+  summary: Substances exempt under section 18A of the Therapeutic Goods Act 1989;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The substance is an exempt good within the meaning of that Act;
+  @action: This exemption applies to substances exempt under section 18A of the Therapeutic Goods Act 1989;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Importation with written consent of the Australian Pesticides and Veterinary Medicines Authority;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The substance is an active constituent within the meaning of that Code;
+  @action: This exemption applies to substances imported into Australia with the written consent of the Australian Pesticides and Veterinary Medicines Authority;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Importation with written consent of the Australian Pesticides and Veterinary Medicines Authority;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The substance is a registered chemical product within the meaning of that Code;
+  @action: This exemption applies to substances imported into Australia with the written consent of the Australian Pesticides and Veterinary Medicines Authority until the substance is no longer a registered chemical product;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: Deontic;
+  operator: permission;
+  summary: Importation with written consent of the Australian Pesticides and Veterinary Medicines Authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The substance is an exempt active constituent within the meaning of that Code;
+  @action: This permission applies to substances imported into Australia with the written consent of the Australian Pesticides and Veterinary Medicines Authority;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-3;
+  logic: DescriptionLogic;
+  operator: subclassOf;
+  summary: Substances exempt under subsection 69B(2) of the Agricultural and Veterinary Chemicals (Administration) Act 1992;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The substance is an exempt chemical product within the meaning of that Code;
+  @action: This exemption applies to substances exempt under subsection 69B(2) of the Agricultural and Veterinary Chemicals (Administration) Act 1992;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-4-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to prove representation of substance being a serious drug alternative.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1), it is not necessary to prove that...;
+  @action: ...the representation of the substance to be a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-4-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The representation of substance being a serious drug alternative overlaps with the definition of a serious drug.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1), it is not necessary to prove that...;
+  @action: ...the representation of the substance to be a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-4;
+  logic: LTL;
+  operator: Repeats;
+  summary: The representation of substance being a serious drug alternative repeats in the definition of a serious drug.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1), it is not necessary to prove that...;
+  @action: ...the representation of the substance to be a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: The definition of a serious drug diffuses into the representation of substance being a serious drug alternative.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1), it is not necessary to prove that...;
+  @action: ...the representation of the substance to be a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-320-3-ss-4-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-320-3-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: The CogAI recognizes the representation of substance being a serious drug alternative as part of the definition of a serious drug.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) In a prosecution for an offence under subsection (1), it is not necessary to prove that...;
+  @action: ...the representation of the substance to be a serious drug alternative.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the importation of psychoactive substances;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Part 9.2 of the Criminal Code;
+  @action: Insert: prohibited psychoactive substance means...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Defines a class of substances based on their meaning in Part 9.2 of the Criminal Code;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Part 9.2 of the Criminal Code;
+  @action: prohibited psychoactive substance means...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines a temporal interval for the importation of substances;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection 320.2(2) of the Criminal Code;
+  @action: has been imported into Australia.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines a recurring trace for the importation of substances;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subsection 320.3(3) of the Criminal Code;
+  @action: that has been imported into Australia.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the presentation of substances as serious drug alternatives;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Part 9.2 of the Criminal Code;
+  @action: prohibited serious drug alternative means...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Defines a class of substances based on their meaning in Part 9.2 of the Criminal Code;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Part 9.2 of the Criminal Code;
+  @action: prohibited serious drug alternative means...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of certain goods;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-5-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes prohibition on the application of section 5 to goods suspected of being prohibited psychoactive substances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 5 does not apply to goods seized on suspicion of being a prohibited psychoactive substance.;
+  @action: The application of section 5 is prohibited in relation to such goods.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-5-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines the temporal interval during which section 5 does not apply to goods seized on suspicion of being a prohibited psychoactive substance.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 5 does not apply to goods seized on suspicion of being a prohibited psychoactive substance after a certain point in time.;
+  @action: The application of section 5 is restricted to goods seized before a certain point in time.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-5-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Establishes a recurring trace of goods suspected of being prohibited psychoactive substances.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Goods suspected of being prohibited psychoactive substances are subject to repeated examination and monitoring.;
+  @action: The application of section 5 is subject to repeated examination and monitoring.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-5-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads the prohibition on the application of section 5 to goods suspected of being prohibited psychoactive substances.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The prohibition on the application of section 5 is applied to all goods seized on suspicion of being a prohibited psychoactive substance.;
+  @action: The application of section 5 is spread to all goods seized on suspicion of being a prohibited psychoactive substance.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-5-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Represents the knowledge that section 5 does not apply to goods seized on suspicion of being a prohibited psychoactive substance.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The knowledge is represented that section 5 does not apply to goods seized on suspicion of being a prohibited psychoactive substance.;
+  @action: The application of section 5 is represented as exempt in relation to such goods.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-6-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits the application of section 205E to goods seized on suspicion.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-1-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must return goods;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Goods seized under certain conditions.;
+  @action: Goods must be returned within 30 days.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to return goods;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Timeframe for return of goods;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The authorised person who seized the goods must, subject to any law of the Commonwealth, a State or a Territory permitting their retention...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Claimant's actions affect CEO's obligation;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (i) to recover the goods; or (ii) for a declaration that the goods are not forfeited.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-2-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-2;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Claimant's actions affect CEO's obligation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (i) to recover the goods; or (ii) for a declaration that the goods are not forfeited.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-2-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-2;
+  logic: CogAI;
+  operator: Inference;
+  summary: CEO's decision affects claimant's rights;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (i) to recover the goods; or (ii) for a declaration that the goods are not forfeited.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-4-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Goods are condemned as forfeited to the Crown.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-5-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-5;
+  logic: Deontic;
+  operator: ends-at;
+  summary: Ends at the end of the appeal period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), if the proceedings go to judgment, they end...;
+  @action: (a) or (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-5-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-5;
+  logic: LinearLogic;
+  operator: or;
+  summary: Either appeal lapse or determination.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), if the proceedings go to judgment, they end...;
+  @action: (a) or (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-5-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: During the appeal period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), if the proceedings go to judgment, they end...;
+  @action: (a) or (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-5-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-5;
+  logic: LTL;
+  operator: during;
+  summary: During the appeal period.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), if the proceedings go to judgment, they end...;
+  @action: (a) or (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-5-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-5;
+  logic: Diffusion;
+  operator: during;
+  summary: During the appeal period.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) For the purposes of subsection (4), if the proceedings go to judgment, they end...;
+  @action: (a) or (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-6-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-6;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory return of goods;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 205EA(6);
+  @action: Goods must be returned to the person reasonably believed to be their owner in a condition as near as practicable to when they were seized.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ea-ss-6-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ea-ss-6;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Temporal interval for goods return;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 205EA(6);
+  @action: The goods must be returned within a reasonable time frame after they were seized;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205eb-ss-1-logic-60 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-205eb-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Expresses a permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205eb-ss-2-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205eb-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-1-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Obligation to institute proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-2-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Commonwealth bears the onus of proving that goods were imported.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-3-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to pay person if goods are disposed of or destroyed before proceedings end and would have been returned.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If:...;
+  @action: the court must order the Commonwealth to pay the person an amount equal to the market value of the goods at the time they were disposed of or destroyed.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-3-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-3;
+  logic: AllenInterval;
+  operator: before;
+  summary: Goods were disposed of or destroyed before proceedings end and would have been returned.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If:...;
+  @action: the court decides that, apart from the disposal or destruction, it would have ordered that the goods be returned to a person.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-3-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-3;
+  logic: LTL;
+  operator: ordered;
+  summary: Proceedings are ordered before goods are disposed of or destroyed.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) If:...;
+  @action: the court decides that, apart from the disposal or destruction, it would have ordered that the goods be returned to a person.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-3-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-3;
+  logic: Diffusion;
+  operator: if-then;
+  summary: If goods are disposed of or destroyed before proceedings end and would have been returned, then Commonwealth must pay person.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) If:...;
+  @action: the court must order the Commonwealth to pay the person an amount equal to the market value of the goods at the time they were disposed of or destroyed.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-205ec-ss-3-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-205ec-ss-3;
+  logic: CogAI;
+  operator: classify;
+  summary: Classifies goods as subject to return if disposed of or destroyed before proceedings end and would have been returned.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) If:...;
+  @action: the court decides that, apart from the disposal or destruction, it would have ordered that the goods be returned to a person.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-8-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text to be inserted;
+  @action: Obligation to insert 'or recovery';
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-9-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes a prohibition on dealing with goods in a certain manner.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The CEO or Regional Director may cause the goods to be dealt with in such manner as he or she considers appropriate.;
+  @action: Goods must not be dealt with in any other manner.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-9-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Deals with the temporal interval of when the CEO or Regional Director may cause goods to be dealt with.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The CEO or Regional Director concerned may cause the goods to be dealt with in such manner as he or she considers appropriate (including the destruction of the goods).;
+  @action: The action must occur within a certain temporal interval.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-9-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads the prohibition to all relevant parties.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The CEO or Regional Director may cause the goods to be dealt with in such manner as he or she considers appropriate.;
+  @action: The prohibition must spread to all relevant parties.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-9-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Argumentation;
+  operator: Imply;
+  summary: Implies a certain course of action for the CEO or Regional Director.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The CEO or Regional Director concerned may cause the goods to be dealt with in such manner as he or she considers appropriate (including the destruction of the goods).;
+  @action: A certain course of action must be implied.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-9-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes the need for a certain course of action by the CEO or Regional Director.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The CEO or Regional Director concerned may cause the goods to be dealt with in such manner as he or she considers appropriate (including the destruction of the goods).;
+  @action: A recognition must occur.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-10-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: Modify;
+  summary: Change text in subsection 206(3);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-11-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting “or (2)”, requiring substitution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-1-sec-13-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-3-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-5-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of 'or part';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-360-2-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-360-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Imposes prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-7-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-8-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term with a specific meaning.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-8-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: DescriptionLogic;
+  operator: has type;
+  summary: Classifies the excerpt as a descriptive clause.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-360-3-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-360-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-10-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-11-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-13-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with a clear obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-13-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Includes specific examples of firearm parts.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-16-ss-2-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No law can exclude or limit the concurrent operation of this Division.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This Division is not intended to exclude or limit the concurrent operation of a law of a State or Territory.;
+  @action: No law of a State or Territory can exclude or limit the concurrent operation of this Division.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-16-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16-ss-3;
+  logic: Deontic;
+  operator: applicable;
+  summary: Applicability of subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (2) applies even if the law of the State or Territory does...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-16-ss-4-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16-ss-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits punishment for same conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A person punished...;
+  @action: ...cannot be punished...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-17-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Application of amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Definition of export and import;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: export a thing, means export the thing from Australia.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Definitions for firearm and firearm part;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: firearm has the same meaning as in the Customs (Prohibited Imports) Regulations 1956.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Definition of traffic in a thing that is a firearm or a firearm part;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) transfer the thing; or (b) offer the thing for sale; or (c) invite the making of offers to buy the thing;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Definition of preparing a thing for transfer includes packaging and separating into discrete units;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: For the purposes of paragraph (d), preparing a thing for transfer includes packaging the thing or separating the thing into discrete units.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Definition of intention to transfer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: with the intention of transferring any of it or believing that another person intends to transfer any of it;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Definition of traffic in a thing that is a firearm or a firearm part includes guarding and concealing the thing;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (f) guard or conceal the thing with the intention of transferring any of it or the intention of assisting another person to transfer any of it;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-1-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits importing prohibited firearms or parts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...importing the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-1-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-1;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implicates that importing prohibited firearms or parts is an offence.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...importing the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-2-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking firearms or firearm parts into the country;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-3-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits importing prohibited firearm or part with trafficking intention.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...trafficking in the firearm or part;...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-3-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for importing prohibited firearm or part with trafficking intention.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...trafficking in the firearm or part;...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-3-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-3;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines recurring trace for importing prohibited firearm or part with trafficking intention.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...trafficking in the firearm or part;...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-3-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-3;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Represents knowledge about importing prohibited firearm or part with trafficking intention.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...trafficking in the firearm or part;...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-3;
+  logic: SHACL;
+  operator: Validation;
+  summary: Validates importing prohibited firearm or part with trafficking intention.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...trafficking in the firearm or part;...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-4-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-2-ss-5-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-2-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-1-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits exporting firearms or parts out of Australia.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...exporting the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-1-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-1;
+  logic: AllenInterval;
+  operator: During;
+  summary: Prohibition applies during export of firearms or parts out of Australia.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...exporting the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-1-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: Prohibition applies until export of firearms or parts out of Australia is permitted.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...exporting the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-1;
+  logic: Diffusion;
+  operator: Through;
+  summary: Prohibition is enforced through export regulations.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...exporting the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-1-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-1;
+  logic: CogAI;
+  operator: Detect;
+  summary: Prohibition is detected through export records.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...exporting the firearm or part was prohibited under the Customs Act 1901 absolutely.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-2-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking firearms or firearm parts out of country;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-3-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits exporting prohibited firearm or part without meeting requirements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...exporting the firearm or part, or entering the firearm or part for export, was prohibited under the Customs Act 1901 unless certain requirements were met;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-3-logic-116 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval of exporting prohibited firearm or part without meeting requirements.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...exporting the firearm or part, or entering the firearm or part for export, was prohibited under the Customs Act 1901 unless certain requirements were met;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-3-logic-117 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-3;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines recurring trace of exporting prohibited firearm or part without meeting requirements.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...exporting the firearm or part, or entering the firearm or part for export, was prohibited under the Customs Act 1901 unless certain requirements were met;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-3-logic-118 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-3;
+  logic: CogAI;
+  operator: Entity Recognition;
+  summary: Recognizes entity of exporting prohibited firearm or part without meeting requirements.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...exporting the firearm or part, or entering the firearm or part for export, was prohibited under the Customs Act 1901 unless certain requirements were met;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-3-logic-119 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-3;
+  logic: SHACL;
+  operator: Schema Validation;
+  summary: Validates schema of exporting prohibited firearm or part without meeting requirements.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence if...;
+  @action: ...exporting the firearm or part, or entering the firearm or part for export, was prohibited under the Customs Act 1901 unless certain requirements were met;;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-4-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking firearms or firearm parts out of Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A person commits an offence...;
+  @action: Penalty: Imprisonment for 10 years or a fine of 2,500 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-4-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-4;
+  logic: AllenInterval;
+  operator: During;
+  summary: The action occurs during the export of firearms or firearm parts from Australia;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) A person commits an offence...;
+  @action: Penalty: Imprisonment for 10 years or a fine of 2,500 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-4-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-4;
+  logic: LTL;
+  operator: Recurring;
+  summary: The action is recurring and must be prevented;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) A person commits an offence...;
+  @action: Penalty: Imprisonment for 10 years or a fine of 2,500 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-4-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-4;
+  logic: Diffusion;
+  operator: Prevent;
+  summary: The action must be prevented from spreading;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) A person commits an offence...;
+  @action: Penalty: Imprisonment for 10 years or a fine of 2,500 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-4-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-4;
+  logic: CogAI;
+  operator: Analyze;
+  summary: The action must be analyzed to determine its implications;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) A person commits an offence...;
+  @action: Penalty: Imprisonment for 10 years or a fine of 2,500 penalty units, or both.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-5-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-3-ss-6-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-3-ss-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits trafficking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-4-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defence—reasonable belief that conduct is justified or excused;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-4-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-4;
+  logic: Epistemic;
+  operator: Belief;
+  summary: Mistaken but reasonable belief;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: A person was under a mistaken but reasonable belief;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-4-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-4;
+  logic: LTL;
+  operator: Interval;
+  summary: Temporal interval of defence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The conduct would not have constituted the offence if justified or excused;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-361-5-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-361-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prevents punishment for similar conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Particular conduct;
+  @action: No punishment;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-2-sec-23-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows punishment exemption.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-1-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'non-Tribunal offence';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: DescriptionLogic;
+  operator: classifies;
+  summary: Classifies non-Tribunal offences as a subclass of offences;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-2-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: DescriptionLogic;
+  operator: defines;
+  summary: Defines a concept in the context of imprisonment;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-4b-ss-1-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4b-ss-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusion in a set;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (x ∈ A);
+  @action: (x ∈ B);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-4b-ss-1-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4b-ss-1;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Subclass relationship;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (A ⊆ B);
+  @action: (C ⊆ D);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-4b-ss-2-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4b-ss-2;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies deprivation of liberty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) involves a potential deprivation of liberty;
+  @action: (2) The suspended part of a sentence of imprisonment is so much of the period of the sentence of imprisonment as...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-4b-ss-2-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4b-ss-2;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Includes periods of release on parole;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) is not a period of release on parole;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-5-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-6-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-7-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-8-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits a specific action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-10-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-10;
+  logic: Deontic;
+  operator: obligation;
+  summary: State obligation to provide recommended terms or conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-11-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits a specific action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-12-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-12;
+  logic: Deontic;
+  operator: Permit;
+  summary: Grant permission for procedures;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State to detain transferred prisoners;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A prisoner who is transferred to Australia under this Act while serving a sentence of imprisonment...;
+  @action: ...may be detained in a prison or hospital or other place in a State or Territory.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Describes the temporal relationship between imprisonment and detention;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (other than the suspended part of the sentence) that is:;
+  @action: ...while serving a sentence of imprisonment...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3;
+  logic: LTL;
+  operator: Until;
+  summary: Describes the temporal relationship between imprisonment and detention;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (other than the suspended part of the sentence) that is:;
+  @action: ...while serving a sentence of imprisonment...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3;
+  logic: Diffusion;
+  operator: Implication;
+  summary: Describes the relationship between transfer and detention;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) imposed by a transfer country; and (b) enforced under this Act;;
+  @action: ...may be detained in a prison or hospital or other place in a State or Territory.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3;
+  logic: CogAI;
+  operator: Inference;
+  summary: Describes the reasoning behind detention obligations;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A prisoner who is transferred to Australia under this Act while serving a sentence of imprisonment...;
+  @action: ...may be detained in a prison or hospital or other place in a State or Territory.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3a-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3a;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to supervise prisoner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3A) A prisoner...;
+  @action: may be supervised...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3a-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3a;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval: transfer to Australia -> supervision in a State or Territory;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3A) A prisoner...;
+  @action: may be supervised in a State or Territory;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-13-ss-3a-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13-ss-3a;
+  logic: Argumentation;
+  operator: implication;
+  summary: Implication of transfer to Australia on supervision;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3A) A prisoner...;
+  @action: may be supervised in a State or Territory;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-14-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-14;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-15-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15;
+  logic: AllenInterval;
+  operator: within;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The definition of child includes the meaning from the Family Law Act 1975;
+  @action: This definition creates a temporal interval relation between the two acts;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-15-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibits ambiguous definitions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The definition of child is clear and specific;
+  @action: This definition prevents ambiguity in the application of this Act;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-16-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the principal place of residence of a close family member from being in the transfer country;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-17-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the principal place of residence of a close family member from being in that State or Territory;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-19-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The prisoner's representative may consent to the transfer.;
+  @action: Permission granted for transfer under certain conditions.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-19-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for consent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The prisoner is not an adult; or The prisoner is incapable of consenting to the transfer.;
+  @action: Consent required for transfer under certain conditions.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-19-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of consent on transfer;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The prisoner's representative may consent to the transfer under this Act if...;
+  @action: Transfer permitted under certain conditions.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-19-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of information about eligible individuals;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) The prisoner is not an adult; or (b) The prisoner is incapable of consenting to the transfer.;
+  @action: The prisoner's close family member, or legal representative, may consent to the transfer under this Act if...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-19-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-19;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognition of eligible individuals for transfer;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) The prisoner is not an adult; or (b) The prisoner is incapable of consenting to the transfer.;
+  @action: The prisoner's close family member, or legal representative, may consent to the transfer under this Act if...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-21-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: joint prisoner means...;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-21-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-10a-ss-1-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-10a-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Attorney-General need not take steps.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-24-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘request for transfer’;
+  @action: substitute ‘application’;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-26-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-26;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-31-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-31;
+  logic: Deontic;
+  operator: permittedBy;
+  summary: Permitted by Attorney-General;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Attorney-General approves form;
+  @action: form = approvedForm;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-32-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-32;
+  logic: Deontic;
+  operator: Excusal;
+  summary: Excusal of duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No action required if certain requirements are not met or it's less than 12 months since an earlier application.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-17-2-ss-1-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-17-2-ss-1;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide copies of applications to State and Territory Ministers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-18-2-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-18-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must ask...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-34-ss-3-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-34-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-34-ss-4-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-34-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-34-ss-5-logic-176 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-34-ss-5;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted by Attorney-General.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-35-logic-177 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-35;
+  logic: Deontic;
+  operator: requirement;
+  summary: Insertion requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State;
+  @action: Obligation to insert '(1)' before 'The';
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-37-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-37;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute 'a transfer country' for 'that country';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-37-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-37;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: International transfer of prisoners;
+  @action: Schedule 3;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-38-logic-180 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take steps;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Attorney-General must decide the request.;
+  @action: The Attorney-General need not take steps if certain requirements are not met or it is less than 12 months since an earlier request was not proceeded with.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-38-logic-181 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permission to decide the request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Attorney-General may decide the request if certain requirements are met or it is more than 12 months since an earlier request was not proceeded with.;
+  @action: The Attorney-General need not take steps if certain requirements are not met or it is less than 12 months since an earlier request was not proceeded with.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-38-logic-182 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between the Attorney-General's decision and the request deadline;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The request may be made by the transfer country, the prisoner or the prisoner’s representative.;
+  @action: The Attorney-General need not take steps if it is less than 12 months since an earlier request was not proceeded with.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-38-logic-183 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal until condition for the Attorney-General's decision-making process;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The request may be made by the transfer country, the prisoner or the prisoner’s representative.;
+  @action: The Attorney-General need not take steps if it is less than 12 months since an earlier request was not proceeded with.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-38-logic-184 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to decide the request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Attorney-General must decide the request if certain requirements are met or it is more than 12 months since an earlier request was not proceeded with.;
+  @action: The Attorney-General need not take steps if certain requirements are not met or it is less than 12 months since an earlier request was not proceeded with.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-28-2-ss-1-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-28-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must take action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-28-2-ss-1-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-28-2-ss-1;
+  logic: Epistemic;
+  operator: ASKS;
+  summary: The transfer country is asked for its consent.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-28-2-ss-1-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-28-2-ss-1;
+  logic: LTL;
+  operator: CONTINGENT;
+  summary: Transfer is contingent on the transfer country's consent.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-28-2-ss-2-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-28-2-ss-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires consent in writing from State and Territory Ministers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-52-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-52;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-41-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-41;
+  logic: Deontic;
+  operator: holds;
+  summary: Holding duties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APS employee position;
+  @action: Obligation to perform duties;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-3-sec-42-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-42;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies to an offence against section 270.3.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 15.4 (extended geographical jurisdiction—category D);
+  @action: Section 270.3;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-1-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits proceedings outside Australia without consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-2-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide consent before proceeding.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: No further step can be taken until consent is given.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-3-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to discharge accused within a reasonable time.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not prevent the discharge of the accused if proceedings are not continued within a reasonable time.;
+  @action: The accused must be discharged if proceedings are not continued within a reasonable time.;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-3-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Proceedings must be continued within a reasonable time interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not prevent the discharge of the accused if proceedings are not continued within a reasonable time.;
+  @action: The proceedings must be continued within a reasonable time interval;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-3-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-3;
+  logic: LTL;
+  operator: Until;
+  summary: Proceedings must continue until a certain point in time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not prevent the discharge of the accused if proceedings are not continued within a reasonable time.;
+  @action: The proceedings must continue until a certain point in time;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-3-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Discharge of accused diffuses to all relevant parties;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not prevent the discharge of the accused if proceedings are not continued within a reasonable time.;
+  @action: The discharge of the accused diffuses to all relevant parties;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-270-2-ss-3-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-270-2-ss-3;
+  logic: CogAI;
+  operator: Inference;
+  summary: Discharge of accused inferred from lack of continuation of proceedings;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not prevent the discharge of the accused if proceedings are not continued within a reasonable time.;
+  @action: The discharge of the accused is inferred from the lack of continuation of proceedings;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-4-sec-2-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-5-sec-1-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-5-sec-2-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: Deontic;
+  operator: validates;
+  summary: Validates the thing done;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2);
+  @action: (1);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-5-sec-2-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: DescriptionLogic;
+  operator: applies to;
+  summary: Applies to Commonwealth places;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (b);
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-5-sec-3-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to pay compensation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1b-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1b;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace with a new entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1c-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1c;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires disclosure of certain information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Investigating official's duties;
+  @action: Disclosure of certain information;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Subclass of entrusted investigating official's duties;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Performance of an entrusted investigating official's duties;
+  @action: Disclosure for the purposes of, or in connection with, the performance of an entrusted investigating official's duties;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Overlaps with other disclosures;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Disclosure for the purposes of, or in connection with, the performance of an entrusted investigating official's duties;
+  @action: Disclosure of a kind mentioned in subsection 355-50(2) in Schedule 1 to the Taxation Administration Act 1953;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: LTL;
+  operator: contains;
+  summary: Contains other disclosures;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Disclosure for the purposes of, or in connection with, the performance of an entrusted investigating official's duties;
+  @action: Disclosure of a kind mentioned in subsection 355-50(2) in Schedule 1 to the Taxation Administration Act 1953;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-211 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffuses information about other disclosures;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Disclosure for the purposes of, or in connection with, the performance of an entrusted investigating official's duties;
+  @action: Disclosure of a kind mentioned in subsection 355-50(2) in Schedule 1 to the Taxation Administration Act 1953;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-1d-logic-212 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-1d;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Recognizes the disclosure as part of an investigation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Disclosure for the purposes of, or in connection with, the performance of an entrusted investigating official's duties;
+  @action: Disclosure of a kind mentioned in subsection 355-50(2) in Schedule 1 to the Taxation Administration Act 1953;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-2-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-3-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-4-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-5-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-7-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-7;
+  logic: Deontic;
+  operator: INSERTION;
+  summary: Insertion of a specific phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-11-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of semicolon and substitution of period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-12-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-13-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting a statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-15-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'or 19(2) or (3)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-psychoactive-substances-and-other-measures-act-2015-sch-6-sec-16-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'or 18';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

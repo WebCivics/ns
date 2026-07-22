@@ -1,0 +1,1396 @@
+{
+  "version": 6,
+  "sourceSha256": "75e41a838664da81d8fda958b40fcf0c0c4daaac8587d1a9271733fe4adca93f",
+  "model": "llama3.2:3b-instruct-q4_K_M",
+  "segmentConfig": {
+    "maxSegmentChars": 8000,
+    "overlapChars": 500,
+    "maxItems": 1
+  },
+  "completed": {
+    "781422db4804c2452dc3ca27": {
+      "keys": [
+        "sec-1"
+      ],
+      "characters": 77,
+      "results": {
+        "sec-1": {
+          "deonticType": "Undertaking",
+          "summary": "Citation of the Act",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "ab11162ab2f6b918967a5c15": {
+      "keys": [
+        "sec-2"
+      ],
+      "characters": 65,
+      "results": {
+        "sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Commences on day after receiving Royal Assent.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "211e25a00fe50565450a8d72": {
+      "keys": [
+        "sec-3"
+      ],
+      "characters": 241,
+      "results": {
+        "sec-3": {
+          "deonticType": "Undertaking",
+          "summary": "Amendments to Acts specified in a Schedule",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "881de2f5a23be8c389c60f86": {
+      "keys": [
+        "sch-1-sec-1"
+      ],
+      "characters": 128,
+      "results": {
+        "sch-1-sec-1": {
+          "deonticType": "Obligation",
+          "summary": "Definition of bail authority",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "DescriptionLogic",
+              "operator": "=",
+              "summary": "Class hierarchy",
+              "premise": "bail authority is a court or person",
+              "conclusion": "is authorised to grant bail",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "authorises",
+              "summary": "Authority to grant bail",
+              "premise": "court or person authorises",
+              "conclusion": "to grant bail",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "1932d600ad6658e17a12cc81": {
+      "keys": [
+        "sch-1-sec-2"
+      ],
+      "characters": 22,
+      "results": {
+        "sch-1-sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Repeal definition of bail authority",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "49b702701d844449e10f9e4c": {
+      "keys": [
+        "sch-1-sec-3"
+      ],
+      "characters": 7,
+      "results": {
+        "sch-1-sec-3": {
+          "deonticType": "Undertaking",
+          "summary": "Insert clause",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "11b39ffb5dc1ff9d75695afb": {
+      "keys": [
+        "sch-1-sec-15ab-ss-1"
+      ],
+      "characters": 1002,
+      "results": {
+        "sch-1-sec-15ab-ss-1": {
+          "deonticType": "Obligation",
+          "summary": "Must consider potential impact on persons and witnesses in proceedings.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Must consider",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "86581be5939e8b562c1d543c": {
+      "keys": [
+        "sch-1-sec-15ab-ss-2"
+      ],
+      "characters": 252,
+      "results": {
+        "sch-1-sec-15ab-ss-2": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Consider potential impact of granting bail on a person living in a remote community.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Duty to consider impact of granting bail on a person living in a remote community.",
+              "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": ">=",
+              "summary": "Remote communities are typically characterized by geographical isolation.",
+              "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+              "conclusion": "",
+              "confidence": 0.5
+            },
+            {
+              "logic": "LTL",
+              "operator": ">=",
+              "summary": "Remote communities are typically characterized by geographical isolation.",
+              "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+              "conclusion": "",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Diffusion",
+              "operator": "IS-A",
+              "summary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+              "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+              "conclusion": "",
+              "confidence": 0.5
+            },
+            {
+              "logic": "CogAI",
+              "operator": "IS-A",
+              "summary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+              "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+              "conclusion": "",
+              "confidence": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "73eb420b4bbec672585047a9": {
+      "keys": [
+        "sch-1-sec-15ab-ss-3"
+      ],
+      "characters": 249,
+      "results": {
+        "sch-1-sec-15ab-ss-3": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Defines criminal behaviour in certain bail applications.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "includes",
+              "summary": "Includes conduct, omission, circumstance or result in criminal behaviour.",
+              "premise": "(a) any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question;",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "includes",
+              "summary": "Includes fault element relating to such a physical element.",
+              "premise": "(b) any fault element relating to such a physical element.",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "d3fe2da7bbcd465ee9e61f92": {
+      "keys": [
+        "sch-1-sec-15ab-ss-4"
+      ],
+      "characters": 485,
+      "results": {
+        "sch-1-sec-15ab-ss-4": {
+          "deonticType": "Obligation",
+          "summary": "Exemptions from subsections (1) and (2)",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "b8ecc1110a87a2b5c2898aab": {
+      "keys": [
+        "sch-1-sec-4"
+      ],
+      "characters": 28,
+      "results": {
+        "sch-1-sec-4": {
+          "deonticType": "Prohibition",
+          "summary": "Omit 'cultural background',",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Prohibit",
+              "summary": "Prohibits omission of cultural background",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "f8b0b521dc06be03dd896454": {
+      "keys": [
+        "sch-1-sec-5-ss-2a"
+      ],
+      "characters": 369,
+      "results": {
+        "sch-1-sec-5-ss-2a": {
+          "deonticType": "Prohibition",
+          "borneBy": "State",
+          "summary": "Court must not consider customary law or cultural practice as a reason for excusing, justifying, authorising, requiring or lessening the seriousness of criminal behaviour.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Prohibit",
+              "summary": "Court must not consider...",
+              "premise": "(2A) However, the court must not take into account...",
+              "conclusion": "...any form of customary law or cultural practice...",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "Temporal Interval",
+              "summary": "Temporal interval between (2A) and the preceding subsections.",
+              "premise": "(2A) However, the court must not take into account...",
+              "conclusion": "...under subsection (1)\nor (2)",
+              "confidence": 0.5
+            },
+            {
+              "logic": "LTL",
+              "operator": "Recurring Trace",
+              "summary": "Recurring trace of court decisions on customary law or cultural practice.",
+              "premise": "(2A) However, the court must not take into account...",
+              "conclusion": "...as a reason for:\n\n(a) excusing, justifying, authorising, requiring or lessening the seriousness of the criminal behaviour to which the offence relates;",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Deontic",
+              "operator": "Prohibit",
+              "summary": "Court must not consider customary law or cultural practice as a reason for excusing, justifying, authorising, requiring or lessening the seriousness of criminal behaviour.",
+              "premise": "(2A) However, the court must not take into account...",
+              "conclusion": "...any form of customary law or cultural practice...",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "8345863c09cd2b11329dd095": {
+      "keys": [
+        "sch-1-sec-5-ss-2b"
+      ],
+      "characters": 273,
+      "results": {
+        "sch-1-sec-5-ss-2b": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Defines criminal behaviour in subsection (2A)",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "includes",
+              "summary": "Includes conduct, omission, circumstance or result in physical element of the offence",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes:",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "includes",
+              "summary": "Includes fault element relating to such a physical element",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes: any fault element relating to such a physical element.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "DescriptionLogic",
+              "operator": "subClassOf",
+              "summary": "Subclass of physical element of the offence in question",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "includesTemporalInterval",
+              "summary": "Includes temporal interval as part of physical element of the offence",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "includesTemporalInterval",
+              "summary": "Includes temporal interval as part of physical element of the offence",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "includes",
+              "summary": "Includes fault element relating to such a physical element",
+              "premise": "(2B) In subsection (2A): criminal behaviour includes: any fault element relating to such a physical element.",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "77db34648027e4f1875867ef": {
+      "keys": [
+        "sch-1-sec-5a"
+      ],
+      "characters": 28,
+      "results": {
+        "sch-1-sec-5a": {
+          "deonticType": "Prohibition",
+          "summary": "Omit 'cultural background',",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "1b54edada1fdfaa2869d044a": {
+      "keys": [
+        "sch-1-sec-5b-ss-1a"
+      ],
+      "characters": 362,
+      "results": {
+        "sch-1-sec-5b-ss-1a": {
+          "deonticType": "Prohibition",
+          "borneBy": "State",
+          "summary": "Court cannot consider customary law or cultural practice as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Prohibit",
+              "summary": "Court cannot consider customary law or cultural practice.",
+              "premise": "Customary law or cultural practice",
+              "conclusion": "Cannot be considered as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "Prohibit",
+              "summary": "Court cannot consider customary law or cultural practice in relation to the offense.",
+              "premise": "Customary law or cultural practice",
+              "conclusion": "Cannot be considered as a reason for aggravating the seriousness of criminal behavior.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "Overlap",
+              "summary": "Overlaps with time period of customary law or cultural practice.",
+              "premise": "Customary law or cultural practice",
+              "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "Overlap",
+              "summary": "Overlaps with temporal interval of customary law or cultural practice.",
+              "premise": "Customary law or cultural practice",
+              "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Diffusion",
+              "operator": "Overlap",
+              "summary": "Overlaps with diffusion of customary law or cultural practice.",
+              "premise": "Customary law or cultural practice",
+              "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "9ab798e7c5110e1807f3184c": {
+      "keys": [
+        "sch-1-sec-5b-ss-1b"
+      ],
+      "characters": 249,
+      "results": {
+        "sch-1-sec-5b-ss-1b": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Defines criminal behaviour in subsection (1A)",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "e1609df9d02cd4507831b17d": {
+      "keys": [
+        "sch-1-sec-5c"
+      ],
+      "characters": 155,
+      "results": {
+        "sch-1-sec-5c": {
+          "deonticType": "Obligation",
+          "summary": "Substitute health-related terms in a provision.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Obligation",
+              "summary": "Imposes an obligation.",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "26b27f149a0ad55ed9012cd6": {
+      "keys": [
+        "sch-1-sec-5d"
+      ],
+      "characters": 21,
+      "results": {
+        "sch-1-sec-5d": {
+          "deonticType": "Undertaking",
+          "summary": "Repeal a paragraph",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "478083c8a3161e891cba48e0": {
+      "keys": [
+        "sch-1-sec-5e"
+      ],
+      "characters": 298,
+      "results": {
+        "sch-1-sec-5e": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Constable must consider religious beliefs of suspect in forensic procedure",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Must",
+              "summary": "Mandatory consideration of religious beliefs",
+              "premise": "Religious beliefs are relevant to forensic procedure",
+              "conclusion": "Constable must consider religious beliefs",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "Overlaps",
+              "summary": "Forensic procedure overlaps with religious practice",
+              "premise": "Religious practices often involve forensic procedures",
+              "conclusion": "Forensic procedure and religious practice overlap",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "24122f859c726ad0ea5b3c78": {
+      "keys": [
+        "sch-1-sec-5f"
+      ],
+      "characters": 155,
+      "results": {
+        "sch-1-sec-5f": {
+          "deonticType": "Obligation",
+          "summary": "Replace certain words with new ones.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "4c09e1436e3d043f7cb96649": {
+      "keys": [
+        "sch-1-sec-5g"
+      ],
+      "characters": 21,
+      "results": {
+        "sch-1-sec-5g": {
+          "deonticType": "Undertaking",
+          "summary": "Repeal a paragraph",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Repeal",
+              "summary": "Repeals a paragraph",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "df5f5078c1a6e3de14ccb5b8": {
+      "keys": [
+        "sch-1-sec-5h"
+      ],
+      "characters": 287,
+      "results": {
+        "sch-1-sec-5h": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Senior constable must consider suspect's religious beliefs when determining intrusiveness of forensic procedure.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Must",
+              "summary": "Senior constable has a duty to consider suspect's religious beliefs.",
+              "premise": "The senior constable must take into account the intrusiveness of the forensic procedure.",
+              "conclusion": "The senior constable must also consider the suspect's religious beliefs.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "Within",
+              "summary": "Consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+              "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+              "conclusion": "The consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "Until",
+              "summary": "Consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+              "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+              "conclusion": "The consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Diffusion",
+              "operator": "Through",
+              "summary": "Consideration of suspect's religious beliefs spreads to other relevant parties.",
+              "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+              "conclusion": "The consideration of suspect's religious beliefs spreads to other relevant parties.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "CogAI",
+              "operator": "By",
+              "summary": "Artificial intelligence system assists in considering suspect's religious beliefs.",
+              "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+              "conclusion": "The artificial intelligence system assists in considering suspect's religious beliefs.",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "c593323432871db8e18e94f9": {
+      "keys": [
+        "sch-1-sec-5j"
+      ],
+      "characters": 155,
+      "results": {
+        "sch-1-sec-5j": {
+          "deonticType": "Obligation",
+          "summary": "Replace certain words with new ones.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Obligate",
+              "summary": "Replace certain words with new ones.",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "619bb7aecb97d1d314b9c37d": {
+      "keys": [
+        "sch-1-sec-5k"
+      ],
+      "characters": 21,
+      "results": {
+        "sch-1-sec-5k": {
+          "deonticType": "Undertaking",
+          "summary": "Repeal a paragraph",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "37f97f6c8a26345f489a92af": {
+      "keys": [
+        "sch-1-sec-5l"
+      ],
+      "characters": 275,
+      "results": {
+        "sch-1-sec-5l": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Magistrate must consider suspect's religious beliefs in forensic procedure",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Magistrate has a duty to consider suspect's religious beliefs",
+              "premise": "Paragraph (3)(f)",
+              "conclusion": "Obligation to consider religious beliefs",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "f01283baf8779118445b0da1": {
+      "keys": [
+        "sch-1-sec-6"
+      ],
+      "characters": 499,
+      "results": {
+        "sch-1-sec-6": {
+          "deonticType": "Obligation",
+          "borneBy": "State",
+          "summary": "Amendments apply to offences committed before or after commencement.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "Applicability",
+              "summary": "Amendments apply to offences committed before or after commencement.",
+              "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "Temporal Interval",
+              "summary": "Amendments apply to offences committed before or after commencement.",
+              "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "Temporal Interval",
+              "summary": "Amendments apply to offences committed before or after commencement.",
+              "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+              "conclusion": "",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Deontic",
+              "operator": "Applicability",
+              "summary": "Amendments do not apply to offences committed before commencement.",
+              "premise": "(2) The amendments made by items 4 to 5L of this Schedule do not apply in relation to offences committed before the commencement of this Act.",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "classifications": {
+    "sch-1-sec-15ab-ss-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Must consider potential impact on persons and witnesses in proceedings.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Must consider",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal definition of bail authority",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5b-ss-1a": {
+      "deonticType": "Prohibition",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Court cannot consider customary law or cultural practice as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Prohibit",
+          "summary": "Court cannot consider customary law or cultural practice.",
+          "premise": "Customary law or cultural practice",
+          "conclusion": "Cannot be considered as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "Prohibit",
+          "summary": "Court cannot consider customary law or cultural practice in relation to the offense.",
+          "premise": "Customary law or cultural practice",
+          "conclusion": "Cannot be considered as a reason for aggravating the seriousness of criminal behavior.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "Overlap",
+          "summary": "Overlaps with time period of customary law or cultural practice.",
+          "premise": "Customary law or cultural practice",
+          "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "Overlap",
+          "summary": "Overlaps with temporal interval of customary law or cultural practice.",
+          "premise": "Customary law or cultural practice",
+          "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Diffusion",
+          "operator": "Overlap",
+          "summary": "Overlaps with diffusion of customary law or cultural practice.",
+          "premise": "Customary law or cultural practice",
+          "conclusion": "Does not affect the seriousness of criminal behavior within this time period.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Amendments to Acts specified in a Schedule",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5f": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Replace certain words with new ones.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5d": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal a paragraph",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5l": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Magistrate must consider suspect's religious beliefs in forensic procedure",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Magistrate has a duty to consider suspect's religious beliefs",
+          "premise": "Paragraph (3)(f)",
+          "conclusion": "Obligation to consider religious beliefs",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5e": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Constable must consider religious beliefs of suspect in forensic procedure",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Must",
+          "summary": "Mandatory consideration of religious beliefs",
+          "premise": "Religious beliefs are relevant to forensic procedure",
+          "conclusion": "Constable must consider religious beliefs",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "Overlaps",
+          "summary": "Forensic procedure overlaps with religious practice",
+          "premise": "Religious practices often involve forensic procedures",
+          "conclusion": "Forensic procedure and religious practice overlap",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Insert clause",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5g": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal a paragraph",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Repeal",
+          "summary": "Repeals a paragraph",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5k": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal a paragraph",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-15ab-ss-3": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Defines criminal behaviour in certain bail applications.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "includes",
+          "summary": "Includes conduct, omission, circumstance or result in criminal behaviour.",
+          "premise": "(a) any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question;",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "includes",
+          "summary": "Includes fault element relating to such a physical element.",
+          "premise": "(b) any fault element relating to such a physical element.",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5a": {
+      "deonticType": "Prohibition",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Omit 'cultural background',",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-1": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Citation of the Act",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5-ss-2b": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Defines criminal behaviour in subsection (2A)",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "includes",
+          "summary": "Includes conduct, omission, circumstance or result in physical element of the offence",
+          "premise": "(2B) In subsection (2A): criminal behaviour includes:",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "includes",
+          "summary": "Includes fault element relating to such a physical element",
+          "premise": "(2B) In subsection (2A): criminal behaviour includes: any fault element relating to such a physical element.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "DescriptionLogic",
+          "operator": "subClassOf",
+          "summary": "Subclass of physical element of the offence in question",
+          "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "includesTemporalInterval",
+          "summary": "Includes temporal interval as part of physical element of the offence",
+          "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "includesTemporalInterval",
+          "summary": "Includes temporal interval as part of physical element of the offence",
+          "premise": "(2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-15ab-ss-2": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Consider potential impact of granting bail on a person living in a remote community.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Duty to consider impact of granting bail on a person living in a remote community.",
+          "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": ">=",
+          "summary": "Remote communities are typically characterized by geographical isolation.",
+          "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+          "conclusion": "",
+          "confidence": 0.5
+        },
+        {
+          "logic": "LTL",
+          "operator": ">=",
+          "summary": "Remote communities are typically characterized by geographical isolation.",
+          "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+          "conclusion": "",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Diffusion",
+          "operator": "IS-A",
+          "summary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+          "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+          "conclusion": "",
+          "confidence": 0.5
+        },
+        {
+          "logic": "CogAI",
+          "operator": "IS-A",
+          "summary": "Potential impact of granting bail on a person living in a remote community can be considered.",
+          "premise": "(2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...",
+          "conclusion": "",
+          "confidence": 0.5
+        }
+      ]
+    },
+    "sch-1-sec-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Definition of bail authority",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "DescriptionLogic",
+          "operator": "=",
+          "summary": "Class hierarchy",
+          "premise": "bail authority is a court or person",
+          "conclusion": "is authorised to grant bail",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "authorises",
+          "summary": "Authority to grant bail",
+          "premise": "court or person authorises",
+          "conclusion": "to grant bail",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5b-ss-1b": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Defines criminal behaviour in subsection (1A)",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Commences on day after receiving Royal Assent.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-4": {
+      "deonticType": "Prohibition",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Omit 'cultural background',",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Prohibit",
+          "summary": "Prohibits omission of cultural background",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5j": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Replace certain words with new ones.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Obligate",
+          "summary": "Replace certain words with new ones.",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-15ab-ss-4": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Exemptions from subsections (1) and (2)",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-5h": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Senior constable must consider suspect's religious beliefs when determining intrusiveness of forensic procedure.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Must",
+          "summary": "Senior constable has a duty to consider suspect's religious beliefs.",
+          "premise": "The senior constable must take into account the intrusiveness of the forensic procedure.",
+          "conclusion": "The senior constable must also consider the suspect's religious beliefs.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "Within",
+          "summary": "Consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+          "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+          "conclusion": "The consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "Until",
+          "summary": "Consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+          "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+          "conclusion": "The consideration of suspect's religious beliefs continues until the forensic procedure is completed.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Diffusion",
+          "operator": "Through",
+          "summary": "Consideration of suspect's religious beliefs spreads to other relevant parties.",
+          "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+          "conclusion": "The consideration of suspect's religious beliefs spreads to other relevant parties.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "CogAI",
+          "operator": "By",
+          "summary": "Artificial intelligence system assists in considering suspect's religious beliefs.",
+          "premise": "The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.",
+          "conclusion": "The artificial intelligence system assists in considering suspect's religious beliefs.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5c": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Substitute health-related terms in a provision.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Obligation",
+          "summary": "Imposes an obligation.",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-6": {
+      "deonticType": "Obligation",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Amendments apply to offences committed before or after commencement.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Applicability",
+          "summary": "Amendments apply to offences committed before or after commencement.",
+          "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "Temporal Interval",
+          "summary": "Amendments apply to offences committed before or after commencement.",
+          "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "Temporal Interval",
+          "summary": "Amendments apply to offences committed before or after commencement.",
+          "premise": "(1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.",
+          "conclusion": "",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Deontic",
+          "operator": "Applicability",
+          "summary": "Amendments do not apply to offences committed before commencement.",
+          "premise": "(2) The amendments made by items 4 to 5L of this Schedule do not apply in relation to offences committed before the commencement of this Act.",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-5-ss-2a": {
+      "deonticType": "Prohibition",
+      "borneBy": "State",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Court must not consider customary law or cultural practice as a reason for excusing, justifying, authorising, requiring or lessening the seriousness of criminal behaviour.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "Prohibit",
+          "summary": "Court must not consider...",
+          "premise": "(2A) However, the court must not take into account...",
+          "conclusion": "...any form of customary law or cultural practice...",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "Temporal Interval",
+          "summary": "Temporal interval between (2A) and the preceding subsections.",
+          "premise": "(2A) However, the court must not take into account...",
+          "conclusion": "...under subsection (1)\nor (2)",
+          "confidence": 0.5
+        },
+        {
+          "logic": "LTL",
+          "operator": "Recurring Trace",
+          "summary": "Recurring trace of court decisions on customary law or cultural practice.",
+          "premise": "(2A) However, the court must not take into account...",
+          "conclusion": "...as a reason for:\n\n(a) excusing, justifying, authorising, requiring or lessening the seriousness of the criminal behaviour to which the offence relates;",
+          "confidence": 0.5
+        }
+      ]
+    }
+  }
+}

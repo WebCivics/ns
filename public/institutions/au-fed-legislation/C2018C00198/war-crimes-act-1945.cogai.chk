@@ -1,0 +1,1325 @@
+# CogAI proposed logic-routing chunks — War Crimes Act 1945
+# Machine-derived; every chunk remains cml:Proposed.
+
+war-crimes-act-1945-sec-3a-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a;
+  logic: Deontic;
+  operator: applies;
+  summary: Chapter 2 of the Criminal Code applies to all offences against this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-4-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: except;
+  summary: Exclusion clause;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Provisions of this Part have effect for the purposes of this Act.;
+  @action: except where otherwise stated.;
+}
+
+war-crimes-act-1945-sec-5-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definitions for act, occupation, person, and proceeding.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-5-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: occupation means...;
+  @action: ...an occupation of territory...;
+}
+
+war-crimes-act-1945-sec-5-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: person means a natural person...;
+  @action: ...a person means a natural person...;
+}
+
+war-crimes-act-1945-sec-6-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: The act is a serious crime.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) An act is a serious crime if...;
+}
+
+war-crimes-act-1945-sec-6-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: AllenInterval;
+  operator: directly or indirectly;
+  summary: Being, by act or omission, in any way, directly or indirectly, knowingly concerned in, or party to, the commission of.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (iii) being, by act or omission, in any way, directly or indirectly...;
+}
+
+war-crimes-act-1945-sec-6-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: An offence referred to in any of paragraphs (a) to (j), inclusive.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) an offence whose elements are substantially the same as...;
+}
+
+war-crimes-act-1945-sec-6-ss-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: Deontic;
+  operator: consider;
+  summary: Consider the defence under law in force.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Law in force at a particular time.;
+  @action: An act is an offence if it does not have this defence.;
+}
+
+war-crimes-act-1945-sec-6-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: AllenInterval;
+  operator: at;
+  summary: Consider the defence under law in force at a particular time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Law in force at a particular time.;
+  @action: An act is an offence if it does not have this defence.;
+}
+
+war-crimes-act-1945-sec-6-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: LTL;
+  operator: when;
+  summary: Consider the defence under law in force when determining if an act is an offence.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Law in force at a particular time.;
+  @action: An act is an offence if it does not have this defence.;
+}
+
+war-crimes-act-1945-sec-6-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: Diffusion;
+  operator: when;
+  summary: Consider the defence under law in force when determining if an act is an offence.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Law in force at a particular time.;
+  @action: An act is an offence if it does not have this defence.;
+}
+
+war-crimes-act-1945-sec-6-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: CogAI;
+  operator: when;
+  summary: Consider the defence under law in force when determining if an act is an offence.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Law in force at a particular time.;
+  @action: An act is an offence if it does not have this defence.;
+}
+
+war-crimes-act-1945-sec-6-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of serious crime;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) An act is a serious crime if...;
+  @action: if it was done at a particular time outside Australia; and the law in force at that time in some part of Australia was such that the act would, had it been done at that time in that part, be a serious crime by virtue of subsection (1).;
+}
+
+war-crimes-act-1945-sec-6-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between acts and laws;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) An act is a serious crime if...;
+  @action: if it was done at a particular time outside Australia; and the law in force at that time in some part of Australia was such that the act would, had it been done at that time in that part, be a serious crime by virtue of subsection (1).;
+}
+
+war-crimes-act-1945-sec-6-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relation between laws and acts;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) An act is a serious crime if...;
+  @action: if it was done at a particular time outside Australia; and the law in force at that time in some part of Australia was such that the act would, had it been done at that time in that part, be a serious crime by virtue of subsection (1).;
+}
+
+war-crimes-act-1945-sec-6-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-3;
+  logic: Diffusion;
+  operator: if-then;
+  summary: Conditional relation between acts and laws;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) An act is a serious crime if...;
+  @action: if it was done at a particular time outside Australia; and the law in force at that time in some part of Australia was such that the act would, had it been done at that time in that part, be a serious crime by virtue of subsection (1).;
+}
+
+war-crimes-act-1945-sec-6-ss-3-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-6-ss-3;
+  logic: CogAI;
+  operator: is-a;
+  summary: Artificial agent classification;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) An act is a serious crime if...;
+  @action: if it was done at a particular time outside Australia; and the law in force at that time in some part of Australia was such that the act would, had it been done at that time in that part, be a serious crime by virtue of subsection (1).;
+}
+
+war-crimes-act-1945-sec-6-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits deportation or internment in certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp...;
+  @action: is a serious crime.;
+}
+
+war-crimes-act-1945-sec-6-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Indicates overlap between deportation/internment and certain conditions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp...;
+  @action: is a serious crime.;
+}
+
+war-crimes-act-1945-sec-6-ss-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-4;
+  logic: LTL;
+  operator: Repeats;
+  summary: Indicates repetition of deportation/internment in certain conditions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp...;
+  @action: is a serious crime.;
+}
+
+war-crimes-act-1945-sec-6-ss-4-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-4;
+  logic: Diffusion;
+  operator: Spreads;
+  summary: Indicates spread of deportation/internment to certain conditions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp...;
+  @action: is a serious crime.;
+}
+
+war-crimes-act-1945-sec-6-ss-4-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Indicates recognition of deportation/internment as serious crimes.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp...;
+  @action: is a serious crime.;
+}
+
+war-crimes-act-1945-sec-6-ss-5-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-5;
+  logic: Deontic;
+  operator: forbid;
+  summary: States that deportation or internment is forbidden.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) Each of the following is a serious crime:;
+  @action: None;
+}
+
+war-crimes-act-1945-sec-6-ss-5-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-5;
+  logic: LinearLogic;
+  operator: ¬;
+  summary: Negates the possibility of deportation or internment.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (5) Each of the following is a serious crime:;
+  @action: None;
+}
+
+war-crimes-act-1945-sec-6-ss-5-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-5;
+  logic: AllenInterval;
+  operator: ⊆;
+  summary: Specifies the temporal interval during which deportation or internment is prohibited.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) Each of the following is a serious crime:;
+  @action: None;
+}
+
+war-crimes-act-1945-sec-6-ss-6-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-6;
+  logic: Deontic;
+  operator: Ignore;
+  summary: Ignoring past legal requirements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) For the purposes of subsections (3), (4) and (5);
+  @action: the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.;
+}
+
+war-crimes-act-1945-sec-6-ss-6-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-6;
+  logic: AllenInterval;
+  operator: None;
+  summary: No temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) For the purposes of subsections (3), (4) and (5);
+}
+
+war-crimes-act-1945-sec-8-ss-1-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-8-ss-3-logic-30 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: If A is a serious crime, then it may be a war crime.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise.;
+  @action: (3) A serious crime is a war crime if it meets the conditions in subsections 7(1) and (3).;
+}
+
+war-crimes-act-1945-sec-8-ss-3-logic-31 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The excerpt specifies temporal overlap between serious crimes and war crimes.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise.;
+  @action: Serious crimes and war crimes overlap in time if the serious crime meets the conditions in subsections 7(1) and (3).;
+}
+
+war-crimes-act-1945-sec-8-ss-3-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: LTL;
+  operator: Repeats;
+  summary: The excerpt specifies repeated occurrence of serious crimes as war crimes.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise.;
+  @action: Serious crimes repeat as war crimes if they meet the conditions in subsections 7(1) and (3).;
+}
+
+war-crimes-act-1945-sec-8-ss-3-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: Diffusion;
+  operator: Spreads;
+  summary: The excerpt specifies diffusion of serious crimes to war crimes.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise.;
+  @action: Serious crimes diffuse to war crimes if they meet the conditions in subsections 7(1) and (3).;
+}
+
+war-crimes-act-1945-sec-8-ss-3-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: The excerpt recognizes serious crimes as potentially war crimes.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise.;
+  @action: The excerpt recognizes that serious crimes can be war crimes under certain conditions.;
+}
+
+war-crimes-act-1945-sec-8-ss-4-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits combining serious crimes to constitute a war crime;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise.;
+}
+
+war-crimes-act-1945-sec-8-ss-4-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines the temporal interval for serious crimes that can be combined to constitute a war crime;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise.;
+}
+
+war-crimes-act-1945-sec-8-ss-4-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-4;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Defines the temporal trace for serious crimes that can be combined to constitute a war crime;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise.;
+}
+
+war-crimes-act-1945-sec-8-ss-4-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-4;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses the prohibition on combining serious crimes to constitute a war crime;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise.;
+}
+
+war-crimes-act-1945-sec-8-ss-4-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-4;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies the serious crimes that can be combined to constitute a war crime using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise.;
+}
+
+war-crimes-act-1945-sec-9-ss-1-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Guilty of an indictable offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person who...;
+}
+
+war-crimes-act-1945-sec-9-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-2;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts sections of Criminal Code from applying to offences against this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-9-ss-3-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-10-ss-1-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits wilful killing of a person;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-10-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits punishment exceeding 25 years;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The punishment for any other offence against this Act is imprisonment for not more than 25 years.;
+  @action: The punishment for any other offence against this Act shall not exceed 25 years.;
+}
+
+war-crimes-act-1945-sec-11-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits prosecution of non-citizens or residents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: A person shall not be charged with an offence against this Act unless...;
+}
+
+war-crimes-act-1945-sec-12-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12;
+  logic: Deontic;
+  operator: only;
+  summary: Restricts prosecution to specified entities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-13-ss-1-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Section 68 of the Judiciary Act 1903;
+  @action: Section 68 applies in relation to an offence against this Act;
+}
+
+war-crimes-act-1945-sec-13-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: Deontic;
+  operator: hasEffect;
+  summary: Has effect;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-13-ss-3-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to follow jurisdiction rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Where:;
+}
+
+war-crimes-act-1945-sec-14-ss-1-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability of the section to a proceeding in a State or internal Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory.;
+  @action: The section applies if the proceeding is held in a State or internal Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-1-logic-51 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Containment;
+  summary: Temporal relationship between the section and the proceeding.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory.;
+  @action: The section applies during the proceeding.;
+}
+
+war-crimes-act-1945-sec-14-ss-1-logic-52 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: LTL;
+  operator: Temporal Containment;
+  summary: Temporal relationship between the section and the proceeding.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory.;
+  @action: The section applies during the proceeding.;
+}
+
+war-crimes-act-1945-sec-14-ss-1-logic-53 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability of the section to a proceeding in a State or internal Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory.;
+  @action: The section applies if the proceeding is held in a State or internal Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-2-logic-54 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The defendant may apply...;
+}
+
+war-crimes-act-1945-sec-14-ss-3-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) An application may only be made:;
+}
+
+war-crimes-act-1945-sec-14-ss-3-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-3;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Temporal overlap between application and charging;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) as soon as reasonably practicable after the defendant is charged with the offence;;
+}
+
+war-crimes-act-1945-sec-14-ss-4-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits proceedings in the defendant's State or Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If an application is made...;
+  @action: ...order that all proceedings for the offence be held in that other State or Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-4-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines a temporal interval for the commencement of proceedings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If an application is made...;
+  @action: ...order that all proceedings for the offence be held in that other State or Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-4-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Establishes a temporal trace for the commencement of proceedings.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If an application is made...;
+  @action: ...order that all proceedings for the offence be held in that other State or Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-4-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses the venue of proceedings to another State or Territory.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) If an application is made...;
+  @action: ...order that all proceedings for the offence be held in that other State or Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-4-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: CogAI;
+  operator: Reasoning;
+  summary: Applies reasoning to determine the venue of proceedings.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If an application is made...;
+  @action: ...order that all proceedings for the offence be held in that other State or Territory.;
+}
+
+war-crimes-act-1945-sec-14-ss-5-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-5;
+  logic: Deontic;
+  operator: Allowance;
+  summary: Allows appeal or review.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-14-ss-6-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-6;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Constitutes a single Territory for the purposes of this section.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-15-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a proceeding for an offence against this Act is being held in a State or internal Territory; and (b) the magistrate or judge orders under section 14 that all proceedings for the offence be held in another State or internal Territory.;
+}
+
+war-crimes-act-1945-sec-16-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-17-ss-1-logic-66 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Deontic;
+  operator: hasEffect;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect for the purposes of a proceeding for an offence against this Act.;
+  @action: This section has effect for the purposes of a proceeding for an offence against this Act.;
+}
+
+war-crimes-act-1945-sec-17-ss-1-logic-67 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect for the purposes of a proceeding for an offence against this Act.;
+  @action: This section is during the 'Defence based on laws, customs and usages of war' class.;
+}
+
+war-crimes-act-1945-sec-17-ss-1-logic-68 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Argumentation;
+  operator: implies;
+  summary: Inference to obligation;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect for the purposes of a proceeding for an offence against this Act.;
+  @action: This section implies an obligation to follow the defence based on laws, customs and usages of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-1-logic-69 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spreads obligation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect for the purposes of a proceeding for an offence against this Act.;
+  @action: This section diffuses the obligation to follow the defence based on laws, customs and usages of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-1-logic-70 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: CogAI;
+  operator: appliesTo;
+  summary: Applies to AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect for the purposes of a proceeding for an offence against this Act.;
+  @action: This section applies to artificial agents.;
+}
+
+war-crimes-act-1945-sec-17-ss-2-logic-71 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-2;
+  logic: Deontic;
+  operator: Permitted;
+  summary: Permitted by laws, customs and usages of war;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) was permitted by the laws, customs and usages of war;
+}
+
+war-crimes-act-1945-sec-17-ss-2-logic-72 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-2;
+  logic: Deontic;
+  operator: Not a crime against humanity;
+  summary: Not under international law a crime against humanity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) was not under international law a crime against humanity;
+}
+
+war-crimes-act-1945-sec-17-ss-3-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: Deontic;
+  operator: PermittedBy;
+  summary: Justification by laws, customs and usages of war is permitted.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-3-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: AllenInterval;
+  operator: During;
+  summary: Justification must occur during the conduct of war.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-3-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: LTL;
+  operator: During;
+  summary: Justification must occur during the conduct of war.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-3-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: Diffusion;
+  operator: JustifiedBy;
+  summary: Exigencies and necessities of the conduct of war justify the act.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-3-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: CogAI;
+  operator: DefinedBy;
+  summary: Definition of 'exigencies' in this context.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war.;
+}
+
+war-crimes-act-1945-sec-17-ss-4-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-4;
+  logic: Deontic;
+  operator: Must;
+  summary: Defendant must provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Evidence of defence facts;
+}
+
+war-crimes-act-1945-sec-17-ss-4-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-4;
+  logic: Epistemic;
+  operator: Requires;
+  summary: Requires evidence of defence facts;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @action: No reliance on defence;
+}
+
+war-crimes-act-1945-sec-17-ss-5-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Prosecution bears obligation to establish facts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-17-ss-5-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-5;
+  logic: Epistemic;
+  operator: Doubt;
+  summary: Establishment of facts requires proof beyond reasonable doubt.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-18-ss-1-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to follow alternative verdicts for certain offences;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section has effect where...;
+  @action: ...the accused is guilty of an alternative offence against this Act;;
+}
+
+war-crimes-act-1945-sec-18-ss-1-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes a temporal relation between the time of the act and the time of the law in force;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) on the accused’s trial for the offence charged, the jury:...;
+  @action: ...an offence of another kind, being an offence referred to in a paragraph of subsection 6(1);;
+}
+
+war-crimes-act-1945-sec-18-ss-1-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Establishes a recurring trace between the time of the act and the time of the law in force;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) on the accused’s trial for the offence charged, the jury:...;
+  @action: ...an offence of another kind, being an offence referred to in a paragraph of subsection 6(1);;
+}
+
+war-crimes-act-1945-sec-18-ss-2-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Jury may find accused not guilty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-18-ss-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Accused must be found guilty of alternative offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-19-ss-1-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to provide assistance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Attorney-General is required to assist.;
+  @action: A person who has been charged may apply for assistance.;
+}
+
+war-crimes-act-1945-sec-19-ss-1-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-1;
+  logic: Argumentation;
+  operator: claim;
+  summary: Claims that the Attorney-General has a duty to assist.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The provision states that the Attorney-General must provide assistance.;
+  @action: A person who has been charged may apply for assistance.;
+}
+
+war-crimes-act-1945-sec-19-ss-1-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-1;
+  logic: AllenInterval;
+  operator: between;
+  summary: Establishes a temporal relationship between the charge and the application.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The provision states that the application must be made before or after the charge.;
+  @action: A person who has been charged may apply for assistance at any time.;
+}
+
+war-crimes-act-1945-sec-19-ss-1-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-1;
+  logic: Diffusion;
+  operator: diffuse;
+  summary: Diffuses the obligation to assist throughout the relevant population.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The provision applies to all persons who have been charged.;
+  @action: All persons who have been charged may apply for assistance.;
+}
+
+war-crimes-act-1945-sec-19-ss-1-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-1;
+  logic: CogAI;
+  operator: inference;
+  summary: Inferentially establishes the obligation to assist.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The provision states that the Attorney-General must provide assistance.;
+  @action: A person who has been charged may apply for assistance.;
+}
+
+war-crimes-act-1945-sec-19-ss-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted by Attorney-General.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-19-ss-3-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-3;
+  logic: Deontic;
+  operator: may be subject to;
+  summary: Permission with conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Authorisation under subsection (2);
+  @action: Conditions as determined by the Attorney-General;
+}
+
+war-crimes-act-1945-sec-19-ss-4-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Attorney-General has a duty to consider hardship.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Attorney-General is required to make decisions.;
+  @action: Hardship must be considered in refusal decision.;
+}
+
+war-crimes-act-1945-sec-19-ss-4-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-4;
+  logic: LinearLogic;
+  operator: →;
+  summary: Refusal without considering hardship leads to a contradiction.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Attorney-General has a duty to consider hardship.;
+  @action: Hardship must be considered in refusal decision.;
+}
+
+war-crimes-act-1945-sec-19-ss-4-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-4;
+  logic: AllenInterval;
+  operator: ⊆;
+  summary: Refusal without considering hardship is within the interval of 'hardship consideration'.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Attorney-General has a duty to consider hardship.;
+  @action: Hardship must be considered in refusal decision.;
+}
+
+war-crimes-act-1945-sec-19-ss-4-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-4;
+  logic: Diffusion;
+  operator: ⊆;
+  summary: Refusal without considering hardship is within the diffusion of 'hardship consideration'.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Attorney-General has a duty to consider hardship.;
+  @action: Hardship must be considered in refusal decision.;
+}
+
+war-crimes-act-1945-sec-19-ss-4-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-4;
+  logic: CogAI;
+  operator: ⊆;
+  summary: Refusal without considering hardship is within the cognitive AI framework of 'hardship consideration'.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Attorney-General has a duty to consider hardship.;
+  @action: Hardship must be considered in refusal decision.;
+}
+
+war-crimes-act-1945-sec-19-ss-5-logic-99 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-19-ss-5;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Decision to refuse application;
+  @action: Request for consent;
+}
+
+war-crimes-act-1945-sec-19-ss-6-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must perform the action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Attorney-General shall cause a copy of the notice to be laid before each House of the Parliament.;
+}
+
+war-crimes-act-1945-sec-19-ss-6-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-ss-6;
+  logic: AllenInterval;
+  operator: WITHIN;
+  summary: The action must occur within a specified time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @action: Within 15 sitting days of that House after the Attorney-General receives the consent.;
+}
+
+war-crimes-act-1945-sec-21-ss-1-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to prepare a report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-21-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Reporting requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-21-ss-3-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must report to each House of Parliament.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-21-ss-3-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-3;
+  logic: DescriptionLogic;
+  operator: SUBCLASS_OF;
+  summary: Reporting is a subclass of obligations.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+war-crimes-act-1945-sec-6-2-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking;
+  @action: Undertaking;
+}
+
+war-crimes-act-1945-sec-22-3-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

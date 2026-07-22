@@ -1,0 +1,2341 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.7",
+      "skos:note": "Substitute specific subsection references in a parole order definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 16(1) (definition of parole order)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a87f07acf06c8ddbceb1f7c76c90ac464afaa6f9fed7f675d3845da4c93ea198",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replaces specific references with new ones.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "substitution"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.8",
+      "skos:note": "Amendments apply to non-parole periods fixed before, on or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Application provision"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d019cae541656d383afe897097cb0021eef7c8815601f161f008535607337d6b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-10-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.7",
+      "skos:note": "Attorney-General must make parole order after non-parole period ends.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After subsection 19AL(1)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1e9dfdb3d176119a4f12647b0afc074514a215d14bd442a71f839ad24f6045f3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Attorney-General must make parole order after non-parole period ends.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide parole order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Attorney-General does not make parole order before end of non-parole period"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.7",
+      "skos:note": "Omit specific phrases from subsection (2A), (6), or (7)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 19AL(2)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e016f2f592c95779c81785aadfab5c50ed5885199adc89fbe4d675ad63d69cdb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting specific phrases",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.7",
+      "skos:note": "The Attorney-General must reconsider and make a parole order for a person if not done within 12 months.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After subsection 19AL(2)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7a8444fb9f3dfbb18340612a847ad777e7009abb9f798606c5e2effcbfac6645",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Attorney-General must reconsider and make a parole order for the person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to reconsider and make a parole order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The Attorney-General does not reconsider the making of a parole order within 12 months."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Attorney-General must reconsider and refuse to make a parole order for the person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to reconsider and refuse to make a parole order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The Attorney-General does not reconsider the making of a parole order within 12 months."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.7",
+      "skos:note": "Omit “and (6)”, substitute “to (7)”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Subsection 19AL(4)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ec58b8b98a04cbaeaa5af09e5e18a4d6167f12a45d60826e0c4e44c62f9d194c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the omission of “and (6)”, requiring its substitution with “to (7)”.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.8",
+      "skos:note": "Modify subsection (1) and paragraph (2)(b)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 19AL(5)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f9eea6f7f901a756bdccc99c2e790781a39fcc85ee277e08ab972fc8c382ffe1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.8",
+      "skos:note": "The Attorney-General must make a parole order for a person within a certain period.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 After subsection 19AL(6) (before the note)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ef4dd8f732ed66c7305a2fca4735b2d219d2f250a67f0813fa99445f1a93a5a6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to make a parole order",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.8",
+      "skos:note": "Substitute '(7)' for '(6)' in subsection 19AL(6)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Subsection 19AL(6) (note)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e237297a49f17a6eb5c60a0ec30269a7e9d1b2d3b736b7375399a7c4a2305083",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.8",
+      "skos:note": "Substitute specific subsections with new ones.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Paragraph 23WA(8)(c)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a87f07acf06c8ddbceb1f7c76c90ac464afaa6f9fed7f675d3845da4c93ea198",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-9-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.9",
+      "skos:note": "Definition of border controlled drug",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 300.2 of the Criminal Code (definition of border"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "08d9a2a68e07d7eaa237d61439e187b669a28c710d6e5a049fd9b035c9038542",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:note": "Regulations may limit border controlled plant's scope to specific offences or elements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 At the end of section 301.5 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a65b7e352f184bee7e1f9692de74b3b29716a6a46a5634cc4008d70295e5644e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Regulations may limit the scope of a border controlled plant.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-10"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:note": "Omit specific phrase from Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 301.6(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "705fcf389af0b3953d24c29120d21ce2776b3cfe485498228bf263720bdc0e40",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-11"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 After subsection 301.6(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a"
+        },
+        {
+          "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1b"
+        }
+      ],
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:note": "Regulations may define border controlled precursor for specific offences or elements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(1A) After subsection 301.6(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dedf0ed1fff436c7bcde18a86cb23565f528fa6fa98fa3906e134251fa5c53b8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-12-ss-1a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Regulations may define border controlled precursor for specific offences or elements.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1a"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:note": "Listed border controlled precursor is taken to be a border controlled precursor only in relation to particular offences against this Part, or particular elements of those offences.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(1B) After subsection 301.6(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1b-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "613e06012f37df9e208c6871f17a82645a12e744e0dc4c5e616e9403974f5e5b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-12-ss-1b",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1b-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-12-ss-1b"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.12",
+      "skos:note": "Omit specific phrase from Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Subsection 301.9(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "705fcf389af0b3953d24c29120d21ce2776b3cfe485498228bf263720bdc0e40",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-13"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.12",
+      "skos:note": "Note substance classification for drug analogues",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 At the end of subsection 301.9(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-14-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5cd6ccd42f5c8500dc808582b4af99115c2ed675d85f1d72b4e1f587305e7a70",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-14-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-14"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.12",
+      "skos:note": "Substitute section number in Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Sections 301.10 and 301.11 of the Criminal Code (note)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "643be6d613ff2b7cd0c5b89680ef0ae811632f96681656e058115da2a477a84f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-15-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-15"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.12",
+      "skos:note": "Conditions on making a determination",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 After subsection 301.13(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-16-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "231b1e16d41c77a96d3dba42533edc4f0868076d996abff9a91d01eb24d188f6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-16-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-16"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.12",
+      "skos:note": "Customs Act 1901: Conditions on making a determination",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 After subsection 301.14(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56acd7b7c1e7cac8de81b4e8eeea6fdc48b0a484694250c915286df6a1a9d21c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-17"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.13",
+      "skos:note": "Repeal subsection, substitute with new provision for border controlled substances and plants.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Subsection 51A(1)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-alleninterval-2",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-argumentation-3",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-diffusion-4",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5ab9556b82a950e35527642363b1b30138ef4f52caa1ae6ae54ef69d68bcbde9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New provision takes effect after repeal.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes the temporal relationship between repeal and substitution.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Repeal must occur before new provision can take effect."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitution fills this gap.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Justifies the necessity of substitution in place of repeal.",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "Repeal would lead to a gap in regulation."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New provision enhances regulation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Analyzes the implications of the new provision on regulation.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Inference",
+      "cml:premiseText": "Substitution leads to a more comprehensive regulatory framework."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New provision supersedes old one.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the repeal of subsection without substitution.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "Subsection must be repealed before new provision can take effect."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New provision supersedes old one in all cases.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Describes how the new provision spreads to other areas of regulation.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Propagation",
+      "cml:premiseText": "New provision applies to all border controlled substances and plants."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-18"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.13",
+      "skos:note": "Repeal subsection, substitute with new provision applying to border controlled drugs and plants.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Subsection 112A(1)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-alleninterval-2",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "81c1ab87154aff606bc88b53f519a1b414e2f3438444062d5432be9ab0bc0bc5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Applies to particular offences against the Part or particular elements of those offences.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Subsection (2) applies if a substance or plant is a border controlled drug or a border controlled plant because of a determination made under section 301.13 of the Criminal Code."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the application of subsection (2) to border controlled drugs and plants.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the State to apply the new provision.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-19"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.9",
+      "skos:note": "Definition of border controlled plant",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 300.2 of the Criminal Code (definition of border"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dbbb92a657d8124697fff98e7e3af9bf504a0c2b4fd203e085d9672511349290",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "border controlled plant",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "="
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 300.2",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "="
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.14",
+      "skos:note": "Repeal subsection, substitute with new provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Subsection 112A(3)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "646843ed6d9e675b43add4b1be3a9b66a30e95bf7fdf2311808bc5d6aa6b3336",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-20-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-20"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.14",
+      "skos:note": "Omit 'section 301.4', substitute 'Part 9.1'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Subsection 3(1) (paragraph (a) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-21-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fa80209e66e1d11c729ce57a259bd636a345d4ca9a569a8e171cee40ec4aeec7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-21-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-21"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.14",
+      "skos:note": "Omit 'section 301.5', substitute 'Part 9.1'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Subsection 3(1) (paragraph (b) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "282fe9029b9dff3b563b1364e890877781c0d05a9c3c461443a4b0a7193f532f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-22-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-22"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.14",
+      "skos:note": "Application provision for amendments of the Customs Act 1901 made by this Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Application provision"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-23-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1c1a705a0feb84267e9c78fa0e49fdea63315c97d1eb6bff7362632be9ad137e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-23-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-23"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.9",
+      "skos:note": "Definition of border controlled precursor",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 300.2 of the Criminal Code (definition of border"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e5130b3f0fa3d71eab06d27e12656a1534d9fcce509a0aee5f0eff65ef923c83",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "Substitute definition of listed",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 300.2 of the Criminal Code (paragraph (c) of the"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "32328e29fc2bbe2b31c108ed5e4f23e33f57155fcdb721725e2b826844b722c9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace definition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "substitution"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "Replace definition of listed with new definition.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 300.2 of the Criminal Code (paragraph (d) of the"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b71e145e531f53805a7e6b6409c8d8cdb8c6ef8e3451c2cc17fe4fe329fa4043",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-5"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "Substitute text in Section 301.4 of the Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Section 301.4 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5a80871d414ee744e125101884221e90796b7ad66bc309ff65710b339e9d6bd1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the legislative body to make the substitution",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-6"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "Omit section 301.8(2) and substitute with 301.13(2)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Section 301.4 of the Criminal Code (paragraph (b) of note 1)"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b59491810d9e7aa7a47710a9eb75531e60821a1fb7e7929dcc2a99f4d18c3e0a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-7"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 At the end of section 301.4 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2"
+        },
+        {
+          "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3"
+        }
+      ],
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "Regulations may limit border controlled drug to specific offences or elements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(2) At the end of section 301.4 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7820a757ab0e26073c3f0bc649c78551ba49e212d316346c0dd26b2afbed953e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-8-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Regulations may limit border controlled drug to specific offences or elements.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.10",
+      "skos:note": "A drug analogue is treated as a border controlled drug for specific offences or elements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(3) At the end of section 301.4 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8047c5c80665457a667954af4384817b42d550d1bc9f125f4a25ce626e344c48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-8-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Specific offences or elements",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "To avoid doubt"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "A drug analogue is treated as a border controlled drug for specific offences or elements.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-8-ss-3"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.11",
+      "skos:note": "Substitute text in Section 301.5 of the Criminal Code",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 301.5 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5a80871d414ee744e125101884221e90796b7ad66bc309ff65710b339e9d6bd1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-2-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-2-sec-9"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.15",
+      "skos:note": "Validations relating to the Australian Crime Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Validations relating to the Australian Crime Commission"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-1",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-descriptionlogic-2",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-alleninterval-3",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-ltl-4",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-5",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3728f87d683ef8966206c10cdb3f452f7f23d6cbe33bbd14fba485af4101bbd2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The thing done is valid and effective within the specified time period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Within a specific time period",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "within",
+      "cml:premiseText": "The authorization or determination was given on or after 4 September 2013 and before 10 December 2022."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The thing done is as valid and effective, and is taken for all purposes always to have been as valid and effective.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Validations for authorizations and determinations",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "validates",
+      "cml:premiseText": "The Board of the Australian Crime Commission gave an authorization or made a determination."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Commonwealth is liable to pay a reasonable amount of compensation to the person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Validations for acquisitions of property",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "validates",
+      "cml:premiseText": "If the operation of this item would result in an acquisition of property from a person otherwise than on just terms."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-deontic-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The thing done is as valid and effective, and is taken for all purposes always to have been as valid and effective.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Validations for legal proceedings",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "validates",
+      "cml:premiseText": "Legal proceedings include any proceedings before a court or tribunal, and include proceedings that are pending or concluded."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The thing done is valid and effective for all purposes if it relates to federally relevant criminal activity within the meaning of the ACC Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Applies to federally relevant criminal activity within the meaning of the ACC Act",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "appliesTo",
+      "cml:premiseText": "The thing done relates to federally relevant criminal activity within the meaning of the ACC Act as in force at the time when the authorization was given or the determination was made."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The thing done is always valid and effective.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Always applies",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "always",
+      "cml:premiseText": "The thing done is as valid and effective, and is taken for all purposes always to have been as valid and effective."
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "269aa326e7cd1a1ee5f7387767089406593a65b91765bfef451f22afff9c553d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": [
+        "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2-norm",
+        "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Crimes and Other Legislation Amendment (Omnibus No. 2) Act 2023.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sec-1"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sec-2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.6",
+      "skos:note": "Note on table limitations and amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 November"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sec-28-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-28-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sec-28"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-and-other-legislation-amendment-omnibus.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "crimes-and-other-legislation-amendment-omnibus.pdf",
+      "asserts": "concept:crimes-and-other-legislation-amendment-omnibus-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "877f8b81eca158a64c14bbf2cd14e5790083f7b45ce30a55b2c61a29bbd8c023",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-and-other-legislation-amendment-omnibus#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-and-other-legislation-amendment-omnibus-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-and-other-legislation-amendment-omnibus-sec-3"
+    },
+    {
+      "@id": "doc:au/c2023a00098",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend legislation relating to the criminal law and law enforcement, and for related purposes",
+      "dc:identifier": [
+        "C2023A00098",
+        "No. 98 of 2023"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes and Other Legislation Amendment (Omnibus No. 2) Act 2023"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2023A00098/latest/downloads",
+        "crimes-and-other-legislation-amendment-omnibus.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,2820 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australia-act-1986-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:note": "No Act of Parliament extends to Australia",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Termination of power of Parliament of United Kingdom to"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-1-norm",
+        "concept:australia-act-1986-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9f614c59d7abc448dcd6b58af3b6eb5b0be3ad5141b0aef917bffa2d7ea8a574",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits extension of UK law to Australia",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.8",
+      "skos:note": "No responsibility for government of any State after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Termination of responsibility of United Kingdom Government in"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-10-norm",
+        "concept:australia-act-1986-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "938a0823bf961e1a24a401adb8878cb23556d2cca38c500e1309dc6daa2a213f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits responsibility",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-10-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-10"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Termination of appeals to Her Majesty in Council"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-11-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-11-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-11-ss-3"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-11-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.9",
+      "skos:note": "No appeal to Her Majesty in Council lies or shall be brought.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(1) Termination of appeals to Her Majesty in Council"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-11-ss-1-norm",
+        "concept:australia-act-1986-sec-11-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d568b4c03bfcf52e7ef61c1c82f0e42b71f30a979722db10ce0cbe60031d6b63",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-11-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-11"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits appeals to Her Majesty in Council.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-11-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.9",
+      "skos:note": "Repeal of certain provisions related to appeals to Her Majesty in Council",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(2) Termination of appeals to Her Majesty in Council"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-11-ss-2-norm",
+        "concept:australia-act-1986-sec-11-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b59ddae2a82a4510015982252811d325e63a2671266439a53568b8c35a894f73",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-11-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-11"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of certain provisions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-11-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.9",
+      "skos:note": "List of enactments referred to in subsection (2) (a) above",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(3) Termination of appeals to Her Majesty in Council"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-11-ss-3-norm",
+        "concept:australia-act-1986-sec-11-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8937f73f4b49a237542f76cebb4e76ed77a970276414e56f19dfc3f56abe9115",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-11-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-11"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "List of enactments",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "inclusion"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-11-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.9",
+      "skos:note": "Appeals to Her Majesty in Council are not affected by the section's provisions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11(4) Termination of appeals to Her Majesty in Council"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-11-ss-4-norm",
+        "concept:australia-act-1986-sec-11-ss-4-logic-deontic-1",
+        "concept:australia-act-1986-sec-11-ss-4-logic-alleninterval-2",
+        "concept:australia-act-1986-sec-11-ss-4-logic-ltl-3",
+        "concept:australia-act-1986-sec-11-ss-4-logic-deontic-4",
+        "concept:australia-act-1986-sec-11-ss-4-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3e29055bd5d1b4807fab7a73db5613aba6edf77a20c852faca2dcf5d0c854877",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-11-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-11"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Leave granted by Australian court allows for post-commencement appeals",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Appeals can be instituted after commencement",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(i) pursuant to leave granted by an Australian court..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "appeals instituted before commencement are unaffected",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to maintain appeals",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Nothing in the foregoing provisions of this section..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Certain appeals are prohibited by the section",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Appeals that could not have been instituted or continued are prohibited",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "but this subsection shall not be construed as permitting or enabling..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State has an obligation to maintain appeals",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "State obligation to maintain appeals",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Nothing in the foregoing provisions of this section:"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Special leave granted allows for post-commencement appeals",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Appeals can be instituted or continued after commencement",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurrent",
+      "cml:premiseText": "(ii) pursuant to special leave granted by Her Majesty in Council..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-11-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-11-ss-4"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:note": "Repeal of certain sections of the Statute of Westminster",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Amendment of Statute of Westminster"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-12-norm",
+        "concept:australia-act-1986-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "39679dc8055450abf9814b39e908fac6c419bdbe0a068560659c757b8bc3f09f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits repeal of certain sections",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-12"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Amendment of Constitution Act of Queensland"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-13-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-13-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-13-ss-3"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-13-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:note": "References the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(1) Amendment of Constitution Act of Queensland"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-13-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d2044c5bf4ef22b2511388920625dcbce2a5131060e8dfccee57e4e3469dc31",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-13-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-13"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-13-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:note": "Amend Section 11A of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(2) Amendment of Constitution Act of Queensland"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-13-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8879cafa49e6af5c0769784d1e2d1ca4192c6d38aaeaa75a942ce076d421334c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-13-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-13"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-13-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:note": "Amend Section 11B of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(3) Amendment of Constitution Act of Queensland"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-13-ss-3-norm",
+        "concept:australia-act-1986-sec-13-ss-3-logic-deontic-1",
+        "concept:australia-act-1986-sec-13-ss-3-logic-descriptionlogic-2",
+        "concept:australia-act-1986-sec-13-ss-3-logic-deontic-3",
+        "concept:australia-act-1986-sec-13-ss-3-logic-deontic-4",
+        "concept:australia-act-1986-sec-13-ss-3-logic-deontic-5",
+        "concept:australia-act-1986-sec-13-ss-3-logic-alleninterval-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e9b3d9cc966a00efcb1229153f0d1ce325243ec9c73c12e9dcf567f12f74ffec",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-13-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-13"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-alleninterval-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...by omitting subsection (1);",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal relation between the amendment and the previous section",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal relation",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...substituting ‘Definition of Royal Sign Manual’;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the Sovereign to conform to instructions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...omitting from subsection (2): (i) ‘(2)’; (ii) ‘this section and in’; and (iii) ‘and the expression ‘Signet’ means the seal commonly used for the sign manual of the Sovereign or the seal with which documents are sealed by the Secretary of State in the United Kingdom on behalf of the Sovereign’.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the Sovereign to omit certain words from subsection (2)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...omitting subsection (1);",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the Sovereign to omit certain words from subsection (1)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...by omitting ‘Governor to conform to instructions’ and substituting ‘Definition of Royal Sign Manual’;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the Sovereign to omit certain words from the amendment",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...and ‘the expression ‘Signet’ means the seal commonly used for the sign manual of the Sovereign or the seal with which documents are sealed by the Secretary of State in the United Kingdom on behalf of the Sovereign’.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the Sovereign's seal as 'Signet'",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Classify",
+      "cml:premiseText": "(3) Section 11B of the Principal Act is amended..."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-13-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.10",
+      "skos:note": "Prescribes a duty for performing an action.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(4) Amendment of Constitution Act of Queensland"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-13-ss-4-norm",
+        "concept:australia-act-1986-sec-13-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b66dad793f5908728d8ba7cd2a27f2a2fba0d41d53c3cf4eae1e9c2a70ea753e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-13-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-13"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prescribes a duty.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-13-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-13-ss-4"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.11",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Amendment of Constitution Act of Western Australia"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-14-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-14-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-14-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.11",
+      "skos:note": "References the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(1) Amendment of Constitution Act of Western Australia"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-14-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "01c7a6f1ec32f53a93dd450d780cdce18f2d3de42f304cc70b7314e8f07657ba",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-14-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-14"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-14-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.11",
+      "skos:note": "Amend Section 50 of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(2) Amendment of Constitution Act of Western Australia"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-14-ss-2-norm",
+        "concept:australia-act-1986-sec-14-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b139304da41d681ff88f450d217ccba868d5a7bd9cdb96f368e4525dd1eef88",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-14-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-14"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty on amendment",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-14-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.11",
+      "skos:note": "Amendment of Section 51 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(3) Amendment of Constitution Act of Western Australia"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-14-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2aa90b7e4ca01786d6fd117f86c103fba7ff3ed37e7f1538b1eb49705dc9e313",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-14-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-14"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-14-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-14-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Method of repeal or amendment of this Act or Statute of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-15-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-15-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-15-ss-3"
+        }
+      ],
+      "cml:integrityHash": "ceebf730dd6047b874726336ca8c9021d7ff8506a3585bc1e522023e272aafa0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "Request for repeal or amendment by Parliaments of all States",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15(1) Method of repeal or amendment of this Act or Statute of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-15-ss-1-norm",
+        "concept:australia-act-1986-sec-15-ss-1-logic-deontic-1",
+        "concept:australia-act-1986-sec-15-ss-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8d4e7a33e1530f27f77a5aefec34711c095a3e4bea7d4074bd7ca516a546ffcd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-15-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-15"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Parliaments of all States must concur",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to repeal or amend",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Repeal or amendment requested by Parliaments of all States"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Repeal or amendment permitted with concurrence",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission for repeal or amendment",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission",
+      "cml:premiseText": "Parliaments of all States requested repeal or amendment"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-15-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "An Act of Parliament is deemed to repeal or amend an Act or Statute if it is repugnant.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15(2) Method of repeal or amendment of this Act or Statute of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-15-ss-2-norm",
+        "concept:australia-act-1986-sec-15-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "99bb557a184cfb8c0707db80b391bc6a976c6d42b47ae6e73128d2f3377a17c6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-15-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-15"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Act is deemed to repeal or amend",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implication of repugnancy",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "DEEMED",
+      "cml:premiseText": "Repugnancy exists"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-15-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "No limitation on Parliament's powers by alteration to the Constitution.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15(3) Method of repeal or amendment of this Act or Statute of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-15-ss-3-norm",
+        "concept:australia-act-1986-sec-15-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9675eb94510b110feb19875cceaf2a1ebe128b1425ab355d680ff01d1d510e26",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-15-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-15"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "No obligation or prohibition.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "None"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-15-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-15-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Interpretation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-16-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-16-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-16-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "Definitions for appeal, Australian court, decision, Governor, State, and Commonwealth of Australia Constitution Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(1) Interpretation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-16-ss-1-norm",
+        "concept:australia-act-1986-sec-16-ss-1-logic-deontic-1",
+        "concept:australia-act-1986-sec-16-ss-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "156f49296d3719e16f34088f3add8471fccec3b26ff4733ac606df2a63b7183d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-16-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-16"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines key terms.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "define"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies definitions as part of a hierarchy.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "classify"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-16-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "Includes the Constitution Act 1889 of Western Australia in relation to that State.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(2) Interpretation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-16-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "46715f1e4f6b6da67e87f6f5559b9ec95c064e834cb1ba5c59e7b7c6483e1176",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-16-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-16"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-16-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.12",
+      "skos:note": "Reference to State legislature includes references to the Parliament of a State.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16(3) Interpretation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-16-ss-3-norm",
+        "concept:australia-act-1986-sec-16-ss-3-logic-deontic-1",
+        "concept:australia-act-1986-sec-16-ss-3-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "780852df5a948e5bbf942c4f80f9aa18883ac87c4cf1f66137c4590ca88ae82e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-16-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-16"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Inclusion relation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-3-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Subclass relation",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subClassOf"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-16-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-16-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.13",
+      "skos:note": "Citation and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Short title and commencement"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-17-norm",
+        "concept:australia-act-1986-sec-17-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1f0aa9913dcafda6b8357bec7c38eb0738793eee062c98a2ae1cd56780379cdb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-17-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes citation and commencement rules",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-17"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Legislative powers of Parliaments of States"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-2-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-2-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:note": "Legislative powers of Parliaments of States include power to make laws for the peace, order and good government of that State with extra-territorial operation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1) Legislative powers of Parliaments of States"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": "concept:australia-act-1986-sec-2-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8bec4ff8adb562c8a767439f11d9401f822b46adfb7777b1008e606b1d4b3db3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-2-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:note": "States have legislative powers that the UK had before the Act's commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(2) Legislative powers of Parliaments of States"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-2-ss-2-norm",
+        "concept:australia-act-1986-sec-2-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b681269a9732480cbc6ff63a25aa55e633d2cbc85884b84f199ae0f8dad1e45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State's powers",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "States have powers that the UK had.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "UK's legislative powers"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-2-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-2-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Termination of restrictions on legislative powers of Parliaments of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-3-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-3-ss-2"
+        }
+      ],
+      "cml:integrityHash": "2f6e9daec8e9b3b37211f8752e25195c2bef8f51c9ae23d1b826ee1006214a23",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:note": "The Colonial Laws Validity Act 1865 does not apply to laws made after the commencement of this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3(1) Termination of restrictions on legislative powers of Parliaments of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-3-ss-1-norm",
+        "concept:australia-act-1986-sec-3-ss-1-logic-deontic-1",
+        "concept:australia-act-1986-sec-3-ss-1-logic-alleninterval-2",
+        "concept:australia-act-1986-sec-3-ss-1-logic-ltl-3",
+        "concept:australia-act-1986-sec-3-ss-1-logic-diffusion-4",
+        "concept:australia-act-1986-sec-3-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "285a4cab1a83090f7d2f989aebeda35b169cd5500f523f8e6d8b705a6d7e7a3f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-3-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The provision is tied to a specific point in time.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The provision relates to the time of commencement.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "relates to a temporal interval of commencement",
+      "cml:premiseText": "The Act commences after the previous law."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The provision is part of a larger analysis.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The provision relates to the analysis of information.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "applies to the processing of knowledge about the Colonial Laws Validity Act 1865",
+      "cml:premiseText": "The Act requires specific laws."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "No duty to comply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "No obligation to comply with the Colonial Laws Validity Act 1865.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "does not impose",
+      "cml:premiseText": "The Act does not apply."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The provision is not widely understood.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The provision relates to the dissemination of information.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "applies to the diffusion of knowledge about the Colonial Laws Validity Act 1865",
+      "cml:premiseText": "The Act is not widely known."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The provision is part of a larger sequence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The provision applies to a sequence of laws.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "applies to an ordered trace of laws made after the commencement of this Act",
+      "cml:premiseText": "The Act does not apply to all laws."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-3-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.6",
+      "skos:note": "No law made after commencement by the Parliament of a State shall be void or inoperative on grounds that it is repugnant to English law or UK provisions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3(2) Termination of restrictions on legislative powers of Parliaments of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-3-ss-2-norm",
+        "concept:australia-act-1986-sec-3-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3ce65cf444ed637e64ae33ac3edd57e31fb79a7e9e792b337b6fe662f27f1b4a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-3-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "No law voided on grounds of repugnancy",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "State obligation to respect its own laws",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "State has legislative powers"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-3-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-3-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Repeal of sections from Merchant Shipping Act 1894",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Powers of State Parliaments in relation to merchant shipping"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-4-norm",
+        "concept:australia-act-1986-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ac6e89fa733fde92bcaa7147e3322910a5440e6b83a53e786bf502dc559b3a7e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of sections from Merchant Shipping Act 1894",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-4"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Repeal, amend or be repugnant to Commonwealth Constitution Act and Statute of Westminster 1931",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Commonwealth Constitution, Constitution Act and Statute of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-5-norm",
+        "concept:australia-act-1986-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a662d49e259f7f978a5e353de88076e3ea3240bb8a6df098bed4ecc2dd667657",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits force or effect of State Parliament Act on Commonwealth Constitution and Statute of Westminster",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-5"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Law made after commencement must be in specific form to be effective",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Manner and form of making certain State laws"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-6-norm",
+        "concept:australia-act-1986-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d464a4db9347c7185947b7375c57772ff7d4696563355b36a76d66e419bc476f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits law made after commencement unless in specific form",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-6"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-7-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-7-ss-2"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-7-ss-3"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-7-ss-4"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-7-ss-5"
+        }
+      ],
+      "cml:integrityHash": "2f6e9daec8e9b3b37211f8752e25195c2bef8f51c9ae23d1b826ee1006214a23",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Her Majesty's representative in each State shall be the Governor.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7(1) Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-7-ss-1-norm",
+        "concept:australia-act-1986-sec-7-ss-1-logic-deontic-1",
+        "concept:australia-act-1986-sec-7-ss-1-logic-deontic-2",
+        "concept:australia-act-1986-sec-7-ss-1-logic-deontic-3",
+        "concept:australia-act-1986-sec-7-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d4dba58d653396cdb4df492b0c0a90f00fc6d8958f84b8fb4ed5955f3c40c110",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-7"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Governor is Her Majesty's representative.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Governor is Her Majesty's representative",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "Her Majesty's representative in each State shall be the Governor."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Governor must be Her Majesty's representative.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Governor must be Her Majesty's representative",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must-be",
+      "cml:premiseText": "Her Majesty’s representative in each State shall be the Governor."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Governor is a position of authority.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Governor is a position of authority",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "Her Majesty’s representative in each State shall be the Governor."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Governor must have authority.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Governor must have authority",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must-be",
+      "cml:premiseText": "Her Majesty’s representative in each State shall be the Governor."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-7-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Governors have exclusive powers and functions over their respective States.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7(2) Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-7-ss-2-norm",
+        "concept:australia-act-1986-sec-7-ss-2-logic-deontic-1",
+        "concept:australia-act-1986-sec-7-ss-2-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3addfd5b4fb5d37ef4d805c89eb3bb63223948617b527b26a5e512abc5661aee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-7"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Power is exercised during the Governor's term.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval during which power is exercised",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Power is exercised by Governor during their term."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Governors have exclusive powers and functions.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusive power",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exclusive",
+      "cml:premiseText": "Her Majesty's powers are restricted to Governors."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-7-ss-2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "The power to appoint and terminate the appointment of a Governor is exempt from subsection (2)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7(3) Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-7-ss-3-norm",
+        "concept:australia-act-1986-sec-7-ss-3-logic-deontic-1",
+        "concept:australia-act-1986-sec-7-ss-3-logic-linearlogic-2",
+        "concept:australia-act-1986-sec-7-ss-3-logic-alleninterval-3",
+        "concept:australia-act-1986-sec-7-ss-3-logic-cogai-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cf7f61d83e27aa6b1ff0b6d2de8fd5caa82c5a57d7f4ce517c99d9a5ebe4c0ec",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-7"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The power to appoint and terminate overlaps with the Governor's appointment",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The power to appoint and terminate overlaps with the Governor's appointment",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "The Governor's appointment is a temporal interval"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemption applies",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The exemption can be inferred from the text",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Inference",
+      "cml:premiseText": "The text states that subsection (2) does not apply"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemption applies",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The power to appoint and terminate is exempt from subsection (2)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exemption",
+      "cml:premiseText": "Subsection (2) above does not apply"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemption excludes subsection (2)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "The exemption excludes subsection (2) from applying to the power to appoint and terminate",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "Exclusion",
+      "cml:premiseText": "Subsection (2) does not apply"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-7-ss-3"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "Her Majesty can exercise powers and functions in respect of the State while present.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7(4) Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-7-ss-4-norm",
+        "concept:australia-act-1986-sec-7-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bfcb3046a17029033be8157b210932f1dbea5f287a3ee66cfb36294ed0e18ebf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-7"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Ability to perform an action",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "can"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-7-ss-4"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.7",
+      "skos:note": "The Premier must tender advice to Her Majesty on exercise of powers and functions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7(5) Powers and functions of Her Majesty and Governors in respect of"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-7-ss-5-norm",
+        "concept:australia-act-1986-sec-7-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "25790958adea571ce41d4693b86e26ce0aea3936212c138534a2ee09c3052ada",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-7-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-7"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Her Majesty",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide advice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Premier of the State"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-7-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-7-ss-5"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.8",
+      "skos:note": "No disallowance or suspension of operation after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 State laws not subject to disallowance or suspension of operation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-8-norm",
+        "concept:australia-act-1986-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42921b1bcdbffc77ff6ad617897eaa2b958f8f2c47d86af43057c6e0f84ce169",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation implies prohibition.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-8"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 State laws not subject to withholding of assent or reservation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australia-act-1986-sec-9-ss-1"
+        },
+        {
+          "@id": "concept:australia-act-1986-sec-9-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.8",
+      "skos:note": "No law can require the Governor to withhold assent from a State bill.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(1) State laws not subject to withholding of assent or reservation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-9-ss-1-norm",
+        "concept:australia-act-1986-sec-9-ss-1-logic-deontic-1",
+        "concept:australia-act-1986-sec-9-ss-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6c05d0d6689ef40c55fbc83b628f0fc94c80fff177cbee5cc90244bcb34420ff",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-9-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-9"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "No law can prohibit the Governor's assent.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Governor must provide assent for State bills.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-9-ss-1"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australia-act-1986.pdf, p.8",
+      "skos:note": "No law or instrument can require reservation of a Bill for an Act of a State.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(2) State laws not subject to withholding of assent or reservation"
+      },
+      "wasDerivedFrom": "australia-act-1986.pdf",
+      "asserts": [
+        "concept:australia-act-1986-sec-9-ss-2-norm",
+        "concept:australia-act-1986-sec-9-ss-2-logic-deontic-1",
+        "concept:australia-act-1986-sec-9-ss-2-logic-alleninterval-2",
+        "concept:australia-act-1986-sec-9-ss-2-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bd5b8ec21261bd16b094bb5695ae4c35f4f0e01f12d44b854eca539c1b82da70",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australia-act-1986#sec-9-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australia-act-1986-sec-9"
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "States that no law or instrument can be in force if it requires reservation of a Bill for an Act of a State at the same time.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(2) No law or instrument shall be of any force or effect in so far as it purports to require the reservation of any Bill for an Act of a State for the signification of Her Majesty's pleasure thereon."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits requiring reservation of a Bill for an Act of a State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(2) No law or instrument shall be of any force or effect in so far as it purports to require the reservation of any Bill for an Act of a State for the signification of Her Majesty's pleasure thereon."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "States that no law or instrument can be in force if it requires reservation of a Bill for an Act of a State at any time.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "(2) No law or instrument shall be of any force or effect in so far as it purports to require the reservation of any Bill for an Act of a State for the signification of Her Majesty's pleasure thereon."
+    },
+    {
+      "@id": "concept:australia-act-1986-sec-9-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australia-act-1986-sec-9-ss-2"
+    },
+    {
+      "@id": "doc:au/c2004a03181",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:identifier": [
+        "C2004A03181",
+        "No. 142 of 1985"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australia Act 1986"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2004A03181/latest/downloads",
+        "australia-act-1986.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

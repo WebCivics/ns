@@ -1,0 +1,304 @@
+# CogAI proposed logic-routing chunks — Australian Citizenship Amendment (Defence Families) Act 2012
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-citizenship-amendment-defence-families-act-2012-sec-2-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text with alternative;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text to be modified;
+  @action: Modified text;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: Has the defence service requirement?;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.;
+  @action: Yes;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: The completion of relevant defence service is a temporal interval that must be greater than or equal to the current time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.;
+  @action: Yes;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-1;
+  logic: LTL;
+  operator: <=;
+  summary: The completion of relevant defence service is a temporal interval that must be less than or equal to the current time plus some fixed interval.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.;
+  @action: Yes;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-1;
+  logic: Diffusion;
+  operator: iff;
+  summary: The completion of relevant defence service is equivalent to the satisfaction of the defence service requirement.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.;
+  @action: Yes;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-1;
+  logic: CogAI;
+  operator: has;
+  summary: The state of mind required to satisfy the defence service requirement is a cognitive state.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service.;
+  @action: Yes;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: Deontic;
+  operator: Satisfies;
+  summary: Relative must satisfy the defence service requirement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: AllenInterval;
+  operator: During;
+  summary: Relative completed relevant defence service during the same period as the defence person.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the defence person has completed relevant defence service;;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: LTL;
+  operator: Until;
+  summary: Relative's visa is valid until the defence person's visa expires.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (d) the relative holds a visa of that kind because the relative is a member of the family unit of the defence person;;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: Deontic;
+  operator: MustProvide;
+  summary: Relative must provide proof of completion of relevant defence service.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Relative's visa is granted if they satisfy the defence service requirement.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+  @action: the relative holds a visa of that kind because the relative is a member of the family unit of the defence person.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: Deontic;
+  operator: if-then;
+  summary: Relative satisfies obligation if conditions met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the relative held a visa of that kind because the relative was a member of the family unit of the defence person;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Relative's visa status starts before defence person's death.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the relative held a visa of that kind because the relative was a member of the family unit of the defence person;
+  @action: the relative's visa status started before the defence person's death.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: LTL;
+  operator: <=;
+  summary: Relative's visa status ends after defence person's death.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the relative held a visa of that kind because the relative was a member of the family unit of the defence person;
+  @action: the relative's visa status ended after the defence person's death.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: Deontic;
+  operator: if-then;
+  summary: Relative satisfies obligation if certain conditions met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the relative was a member of the family unit of the defence person when the defence person was granted the visa;
+  @action: the relative satisfies the defence service requirement for the purposes of section 21.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Relative's visa status equals their family unit membership.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the relative was a member of the family unit of the defence person when the defence person was granted the visa;
+  @action: the relative is a member of the family unit of the defence person.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: Deontic;
+  operator: has;
+  summary: The person has completed relevant defence service.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) In this section:;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: DescriptionLogic;
+  operator: is defined as;
+  summary: A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous);;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: Deontic;
+  operator: has;
+  summary: The person is entitled to be paid for duty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: Deontic;
+  operator: has;
+  summary: The person is medically unfit for service.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the person: (i) was discharged from service undertaken in one of the Permanent Forces or the Reserves as medically unfit for that service; and (ii) became so unfit because of service undertaken in any of the Permanent Forces or the Reserves.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: LinearLogic;
+  operator: and;
+  summary: The person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous); or (b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23-ss-4;
+  logic: DescriptionLogic;
+  operator: is defined as;
+  summary: A person undertakes service in the Permanent Forces or the Reserves only if they are appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: service: a person undertakes service in the Permanent Forces or the Reserves only if the person is appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.;
+}
+
+australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to apply amendments in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

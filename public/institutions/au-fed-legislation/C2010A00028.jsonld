@@ -1,0 +1,754 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Substitute clause in section 85ZR",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 85ZS"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "71b11c37a042f4ea3eb4bbad72252e6e731c5adc2f7536d51d51d6646ea64dbc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Clarifies generality of section 85ZR",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of section 85ZS"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": [
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2-norm",
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cdcc6a9de35c102612daaba9b628d8c72749473f46f5aa977243d04fad6c16de",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 85ZR's scope is clarified",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Clarifies the scope of section 85ZR",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "clarification",
+      "cml:premiseText": "Section 85ZS adds to section 85ZR"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Omit ‘Despite’, substitute ‘Subject to Division 6, but despite’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsections 85ZT(1) and (2)"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9fd1771c68d97151f231ff0352474fea355bc93e3be4e1b92a72f34c4cd44516",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Substitute words in section 85ZU.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 85ZU"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9fd1771c68d97151f231ff0352474fea355bc93e3be4e1b92a72f34c4cd44516",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Inserts “2 or” after “Division”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Paragraph 85ZZ(1)(b)"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "860d5fab73e12f2ced1476473eec687c5cfc30a70794ba1c9bff8769c60a5799",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1"
+        },
+        {
+          "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-2"
+        },
+        {
+          "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-3"
+        },
+        {
+          "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4"
+        },
+        {
+          "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5"
+        }
+      ],
+      "cml:integrityHash": "956abab483a520c24b6e20283837f5fcaaa5227e2849bce1dac2832e36d99c72",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "The Minister must conduct reviews of the operation of this Subdivision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(1) Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": [
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1-norm",
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1fcbb648d2fd36f6f89d93ab5e53bc83d991651f600a45fe8931efc04df6ff4c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to conduct reviews",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "First review must start by June 30, 2011 and be completed within 3 months.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(2) Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "192d5e94d44f0039570c6ae041cb4861f426bf0ff9c749f45e05d71cc952fc46",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Conditional commencement of the 2nd review",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(3) Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "74de4861acd6b838894b4a3abaf1e4401d7863320f2fc3427c8250371ab00e69",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "The Minister must prepare a written report about each review.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(4) Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": [
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4-norm",
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5fd1989a1ba64ec494a5d8071bae6b9ede7166e2785f0b949df39dda69363b55",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to prepare a written report",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5",
+      "@type": "cml:Concept",
+      "dc:description": "true",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.7",
+      "skos:note": "Minister must provide report to each House of Parliament within 15 sitting days.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(5) Before section 85ZZH"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": [
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5-norm",
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5844bceb31d8a449c422cc2a0c28fe4f44eaaf5cb199198e2abbd6a1c6c0633d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-6-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses a duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-6-ss-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.10",
+      "skos:note": "Repeal paragraphs",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Paragraphs 85ZZH(e) and (f)"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0ee9a43f292aef11a836b9692ac6abbfb5aecdfeed11787da0f75a9b8dc40bc8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.10",
+      "skos:note": "Insertion of subdivision C—Other matters",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 After section 85ZZJ"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5a049c4b8d98a83250e057e6f229fa103ebdfec7d987bc0c3e5097f075ae6379",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.5",
+      "skos:note": "Cites this Act as the Crimes Amendment (Working With Children—Criminal History) Act 2010.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": [
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1-norm",
+        "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "02d0be0f1bd9af3c7497bad6c562c9fcaa62dfb4f0ab6ca905d74b57f2de2de8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes the citation of this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.6",
+      "skos:note": "Commences on the day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a8e441496011cc44b1b9c5564185dd7c728b1f01d03664e9d6ca04afeca2b38",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "crimes-amendment-working-with-children-criminal-history-act-2010.pdf",
+      "asserts": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4283cbcc78489f2614c0b3b1e00e7d18491abc29480cd60c06c1c438ab83c997",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-working-with-children-criminal-history-act-2010#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-working-with-children-criminal-history-act-2010-sec-3"
+    },
+    {
+      "@id": "doc:au/c2010a00028",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Crimes Act 1914, and for related purposes",
+      "dc:identifier": [
+        "C2010A00028",
+        "No. 28 of 2010"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Amendment (Working With Children—Criminal History) Act 2010"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2010A00028/latest/downloads",
+        "crimes-amendment-working-with-children-criminal-history-act-2010.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Telecommunications Interception and Other Measures) Act 2005
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sec-3-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines the commencement period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sec-4-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between commencement and provision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sec-5-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sec-6-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-3;
+  logic: Deontic;
+  operator: not;
+  summary: Negative assertion of commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sec-8-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-1-sec-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of law enforcement officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2a-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2a;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: emergency service facility is a subclass of premises;
+  @action: emergency service facility is a class;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2a-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2a;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: emergency service facility is declared by the Minister during a specific time period;
+  @action: emergency service facility has a temporal relation to the declaration;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2b-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2b;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to declare premises;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2c-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2c;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2C) A declaration by the Minister under subsection (2B);
+  @action: is not a legislative instrument for the purposes of the Legislative Instruments Act 2003.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2c-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2c;
+  logic: Deontic;
+  operator: negative obligation;
+  summary: Minister's declaration is not an obligation to comply with the Legislative Instruments Act 2003;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2C) A declaration by the Minister under subsection (2B);
+  @action: is not a legislative instrument for the purposes of the Legislative Instruments Act 2003.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2c-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2c;
+  logic: LinearLogic;
+  operator: not;
+  summary: Minister's declaration is not an obligation to comply with the Legislative Instruments Act 2003;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2C) A declaration by the Minister under subsection (2B);
+  @action: is not a legislative instrument for the purposes of the Legislative Instruments Act 2003.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2d-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2d;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must specify;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2D) If the Minister makes a declaration under subsection (2B);
+  @action: (a) the name of the force or service operating the premises to which the declaration relates; (b) the geographical region in which those premises are located.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2d-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2d;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation between declaration and specification;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2D) If the Minister makes a declaration under subsection (2B);
+  @action: (a) the name of the force or service operating the premises to which the declaration relates; (b) the geographical region in which those premises are located.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2d-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2d;
+  logic: LTL;
+  operator: Applicable;
+  summary: Temporal relation between declaration and specification;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2D) If the Minister makes a declaration under subsection (2B);
+  @action: (a) the name of the force or service operating the premises to which the declaration relates; (b) the geographical region in which those premises are located.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2d-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2d;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Minister's obligation to specify;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2D) If the Minister makes a declaration under subsection (2B);
+  @action: (a) the name of the force or service operating the premises to which the declaration relates; (b) the geographical region in which those premises are located.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-1-ss-2d-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-ss-2d;
+  logic: Argumentation;
+  operator: Applicable;
+  summary: Minister's argument for specification;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2D) If the Minister makes a declaration under subsection (2B);
+  @action: (a) the name of the force or service operating the premises to which the declaration relates; (b) the geographical region in which those premises are located.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-6-ss-2e-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-2e;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits revocation of declaration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 42 of the Legislative Instruments Act 2003;
+  @action: Declaration revoked upon disallowance;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-6-ss-2e-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-2e;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with disallowance event;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Disallowance by Parliament;
+  @action: Revocation occurs at disallowance time;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-6-ss-2f-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-2f;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts listening or recording from interception;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Lawful engagement;
+  @action: No interception;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-6-ss-2g-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-2g;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits listening or recording communications at emergency service facilities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Signs must be visible at each entrance.;
+  @action: Subsection (2F) does not apply.;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: declare;
+  summary: Declare emergency service facilities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-2-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: DescriptionLogic;
+  operator: hasType;
+  summary: Number and type of facilities;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: facilities;
+  @action: number and type;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-5-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the reference;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-8-2-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits receiving or assisting a person guilty of an offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-9-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified paragraph.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to include certain information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-2-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires reporting on telecommunications services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) how many of those warrants involved the interception of a single telecommunications service;;
+  @action: the total number of telecommunication services intercepted under those warrants;;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-2-logic-29 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires reporting on telecommunications services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) how many of those warrants involved the interception of between 2 and 5 telecommunications services;;
+  @action: the total number of telecommunication services intercepted under those warrants;;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-2-logic-30 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires reporting on telecommunications services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (iii) how many of those warrants involved the interception of between 6 and 10 telecommunications services;;
+  @action: the total number of telecommunication services intercepted under those warrants;;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-2-logic-31 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires reporting on telecommunications services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (iv) how many of those warrants involved the interception of more than 10 telecommunications services;;
+  @action: the total number of telecommunication services intercepted under those warrants;;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-10-2-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires reporting on telecommunications services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ec) in relation to all named person warrants issued during that year on application made by each agency or authority, the total number of telecommunication services intercepted under those warrants;;
+  @action: the total number of telecommunication services intercepted under those warrants;;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-13-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to add ‘and’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-14-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide statistics;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-15-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusion relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-telecommunications-interception-and-other-measures-act-2005-sch-2-sec-15-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Subclass relation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}

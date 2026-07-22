@@ -1,0 +1,1007 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment Act (No. 2) 1991
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-act-sec-2-ss-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific day;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, this Act commences on the day on which it receives the Royal Assent.;
+  @action: The Act begins on the specified day;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Defines a temporal overlap between sections;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, this Act commences on the day on which it receives the Royal Assent.;
+  @action: Section 2 overlaps with the Act's commencement;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: LTL;
+  operator: holds;
+  summary: Defines a temporal relationship between sections;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, this Act commences on the day on which it receives the Royal Assent.;
+  @action: Section 2 holds with the Act's commencement;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires a specific condition for commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this section, this Act commences on the day on which it receives the Royal Assent.;
+  @action: The Act requires the Royal Assent for commencement;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-4-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of Part 8 commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If the commencement of Part 8 is not fixed...;
+  @action: ...the Part is repealed on the first day after the end of that period.;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-4-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-4;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Commencement must be within 6 months;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If the commencement of Part 8 is not fixed...;
+  @action: ...the Part is repealed on the first day after the end of that period.;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-4-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-4;
+  logic: LTL;
+  operator: Until;
+  summary: Part 8 commences within 6 months or is repealed;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If the commencement of Part 8 is not fixed...;
+  @action: ...the Part is repealed on the first day after the end of that period.;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-4;
+  logic: Diffusion;
+  operator: If-Then;
+  summary: Commencement not fixed within 6 months implies repeal;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) If the commencement of Part 8 is not fixed...;
+  @action: ...the Part is repealed on the first day after the end of that period.;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-4-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-4;
+  logic: CogAI;
+  operator: Rule;
+  summary: Repeal rule for unfixed commencement;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If the commencement of Part 8 is not fixed...;
+  @action: ...the Part is repealed on the first day after the end of that period.;
+}
+
+crimes-legislation-amendment-act-sec-2-ss-5-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines Principal Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Australian Federal Police functions do not include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, unless authorized.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-4-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: Permission;
+  summary: Australian Federal Police functions include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-4-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The functions of the Australian Federal Police include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-4-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: LTL;
+  operator: Repeats;
+  summary: The functions of the Australian Federal Police include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Dialectical;
+  operator: Negation;
+  summary: The functions of the Australian Federal Police do not include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, unless authorized.;
+  executionSurface: modalities::dialectical;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-5-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: implies;
+  summary: Commissioner's determination is binding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-6-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to existing obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-8-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Deontic;
+  operator: may;
+  summary: The court may extend a restraining order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-8-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: The extension is made during the period mentioned in subsection 49E (2).;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: End of the period mentioned in subsection 49E (2);
+}
+
+crimes-legislation-amendment-act-sec-8-logic-22 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Argumentation;
+  operator: must;
+  summary: The DPP must give written notice to the owner and any other person with an interest.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Subsection (1);
+}
+
+crimes-legislation-amendment-act-sec-8-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Diffusion;
+  operator: to;
+  summary: Notice is given to the owner and anyone else with a reason to believe they have an interest.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Section (3);
+}
+
+crimes-legislation-amendment-act-sec-9-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-10-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to order examination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-10-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make an ancillary ordenriay;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-11-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Classifies Principal Act as a specific type;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Principal Act is defined;
+  @action: Principal Act is a specific type;
+}
+
+crimes-legislation-amendment-act-sec-12-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Cash dealer must not disclose suspicion information;
+}
+
+crimes-legislation-amendment-act-sec-13-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-14-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14;
+  logic: Deontic;
+  operator: Must;
+  summary: State must retain records.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-15-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15;
+  logic: Deontic;
+  operator: hasRight;
+  summary: The Attorney-General has the right to access CTR information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-18-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State obligation to issue guidelines.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-19-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Director must prepare and submit an annual report.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-21-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21;
+  logic: Deontic;
+  operator: obligation;
+  summary: Court has obligation to order person to comply with conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-21-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Conditions are part of a class hierarchy related to serious narcotics offences.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-23-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines Principal Act;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-24-ss-1-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-24-ss-1;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding a condition to Section 18;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 18 of the Principal Act is amended;
+  @action: and to the evidence given in any such proceedings;
+}
+
+crimes-legislation-amendment-act-sec-24-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section mentions commencement and subsections;
+  @action: Temporal relation required for classification;
+}
+
+crimes-legislation-amendment-act-sec-25-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval relation;
+  @action: Relation required;
+}
+
+crimes-legislation-amendment-act-sec-26-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-26;
+  logic: Deontic;
+  operator: May;
+  summary: The court may extend the period of effect of a restraining order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-28-ss-1-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-28-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-28-ss-2-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-28-ss-2;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Section applicability condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Restraining orders made before or after section commencement.;
+  @action: Obligation applies.;
+}
+
+crimes-legislation-amendment-act-sec-29-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits making restraining orders against property;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-29-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies the Principal Act as a Customs Act;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-30-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-30;
+  logic: Deontic;
+  operator: May;
+  summary: Court may make further orders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-31-ss-1-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to amend section 243F;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-31-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Identifies temporal relation to commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement is specified;
+  @action: Temporal relation identified;
+}
+
+crimes-legislation-amendment-act-sec-33-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-34-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-34;
+  logic: Deontic;
+  operator: may;
+  summary: Attorney-General may direct Director of Cash Transaction Reports Agency.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-35-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-35;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Principal Act is defined as the National Crime Authority Act 1984.;
+}
+
+crimes-legislation-amendment-act-sec-36-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-36;
+  logic: Deontic;
+  operator: amends;
+  summary: Modifies existing definitions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 4 of the Principal Act is amended;
+  @action: New definitions for State, Territory, etc.;
+}
+
+crimes-legislation-amendment-act-sec-36-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-36;
+  logic: DescriptionLogic;
+  operator: defines;
+  summary: Establishes new class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Inserts new subsection (3) into the definition of "Territory";
+  @action: New subclass for Australian Capital Territory and Northern Territory;
+}
+
+crimes-legislation-amendment-act-sec-36-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-36;
+  logic: AllenInterval;
+  operator: between;
+  summary: Establishes temporal relationship between amendments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Amends Section 4 of the Principal Act;
+  @action: Temporal interval between amendment and commencement;
+}
+
+crimes-legislation-amendment-act-sec-37-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-37;
+  logic: Deontic;
+  operator: Responsibility;
+  summary: The Minister has a responsibility to manage police affairs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-38-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-38;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits issuing passports to certain persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-38-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-38;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies individuals as eligible or ineligible for passport issuance;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-39-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-39;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-41-ss-1-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-41-ss-1;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to existing obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-1-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-1-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-1;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Defines a class of trustee roles.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits forfeiture of restrained property;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section.;
+  @action: Forfeiture of all restrained property if person convicted of serious offence;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines temporal scope of amendments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section.;
+  @action: The amendments apply after the commencement of this section;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-3-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-3;
+  logic: LTL;
+  operator: Repeats;
+  summary: Defines repetition of application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section.;
+  @action: The amendments apply to each subsequent application;
+}
+
+crimes-legislation-amendment-act-sec-42-ss-3-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-42-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on authorities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section.;
+  @action: Authorities must consider amendments when processing applications;
+}
+
+crimes-legislation-amendment-act-sec-43-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-43-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-44-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-44;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-46-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-46;
+  logic: Deontic;
+  operator: May;
+  summary: The court may extend the period of operation of a restraining order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-46-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-46;
+  logic: DescriptionLogic;
+  operator: Applicable to;
+  summary: The extension applies in the same way as it applies to the making of a restraining order.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Section 44 (other than subsection 44 (4));
+}
+
+crimes-legislation-amendment-act-sec-46-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-46;
+  logic: AllenInterval;
+  operator: Within;
+  summary: The extension is within the same period as the original restraining order.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (2);
+}
+
+crimes-legislation-amendment-act-sec-47-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-47;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-1-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraph (1) (da) directs to give a statement;
+  @action: The owner or defendant must provide a statement on oath;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-1-logic-72 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-48-ss-1;
+  logic: DescriptionLogic;
+  operator: SUBCLASS OF;
+  summary: Subclass of property-related statements;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Paragraph (1) (da) directs to give a statement about the property;
+  @action: The statement is about the property;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-1-logic-73 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-48-ss-1;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Statement must be given within a specified period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Paragraph (1) (da) directs to give a statement within a period;
+  @action: The statement must be given before the restraining order expires;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-1-logic-74 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-48-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide particulars of property dealings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraph (1) (da) directs to give a statement about the property;
+  @action: The owner or defendant must provide particulars of their property dealings;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-2-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-2;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability of amendments to restraining orders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) applies to subsection (2);
+  @action: Amendments apply to restraining orders made before or after section commencement.;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Overlap;
+  summary: Overlap between amendments and restraining order commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Restraining order ceases to be in force when subsection (2) commences;
+  @action: Amendments apply to restraining orders made before or after section commencement.;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of amendments on restraining order applicability;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Subsection (2) implies that subsection (1) applies to restraining orders;
+  @action: Amendments apply to restraining orders made before or after section commencement.;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-2-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-2;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagation of amendments to restraining orders;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subsection (2) propagates the applicability of subsection (1);
+  @action: Amendments apply to restraining orders made before or after section commencement.;
+}
+
+crimes-legislation-amendment-act-sec-48-ss-2-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-48-ss-2;
+  logic: CogAI;
+  operator: Inference;
+  summary: Inference of amendments on restraining order applicability;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subsection (2) infers that subsection (1) applies to restraining orders;
+  @action: Amendments apply to restraining orders made before or after section commencement.;
+}
+
+crimes-legislation-amendment-act-sec-49-ss-1-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-49-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-49-ss-2-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-49-ss-2;
+  logic: Deontic;
+  operator: binds;
+  summary: Binds the amendments to restraining orders made before or after section commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-50-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-50;
+  logic: Deontic;
+  operator: Grant;
+  summary: Establishes jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-51-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-51;
+  logic: Deontic;
+  operator: MUST;
+  summary: Court must consider relevant circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-51-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-51;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State to amend Section 98 of the Principal Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-act-sec-51-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-51;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies the amendment as a deontic obligation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,224 @@
+{
+  "version": 6,
+  "sourceSha256": "dc93a2e5fb522992c9e60b44ce0d044b60d08be3591f1b76fc8fa92b6370b4b0",
+  "model": "llama3.2:3b-instruct-q4_K_M",
+  "segmentConfig": {
+    "maxSegmentChars": 8000,
+    "overlapChars": 500,
+    "maxItems": 1
+  },
+  "completed": {
+    "d78fed8f4688c2109236dde2": {
+      "keys": [
+        "sec-1"
+      ],
+      "characters": 110,
+      "results": {
+        "sec-1": {
+          "deonticType": "Undertaking",
+          "summary": "Cites this Act as the Competition and Consumer Amendment Act 2013.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "17398084833c5f6c29173b81": {
+      "keys": [
+        "sec-2"
+      ],
+      "characters": 71,
+      "results": {
+        "sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Commences on the day after receiving Royal Assent.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "466364faa0fab61b78fb3757": {
+      "keys": [
+        "sec-3"
+      ],
+      "characters": 278,
+      "results": {
+        "sec-3": {
+          "deonticType": "Undertaking",
+          "summary": "Schedules for amendment or repeal of Acts",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "6387ab008324bfab0e3b3b82": {
+      "keys": [
+        "sch-1-sec-1"
+      ],
+      "characters": 685,
+      "results": {
+        "sch-1-sec-1": {
+          "deonticType": "Permission",
+          "summary": "Exemptions from subsection (1) based on regulations",
+          "conditions": [
+            "compliance with regulations"
+          ],
+          "crossReferences": [],
+          "confidence": 0.5,
+          "logicApplications": [
+            {
+              "logic": "DescriptionLogic",
+              "operator": "hasClass",
+              "summary": "Exemptions based on class of representations",
+              "premise": "The representation is in a class prescribed by the regulations",
+              "conclusion": "No need to comply with conditions",
+              "confidence": 0.5
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "during",
+              "summary": "Temporal interval for exemptions",
+              "premise": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations",
+              "conclusion": "Exemptions are conditional on compliance with regulations",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Deontic",
+              "operator": "allows",
+              "summary": "Regulations prescribe exemptions",
+              "premise": "The regulations prescribe a class of representations for which subsection (1) does not apply",
+              "conclusion": "Exemptions are prescribed by the regulations",
+              "confidence": 0.5
+            },
+            {
+              "logic": "LTL",
+              "operator": "during",
+              "summary": "Temporal interval for exemptions",
+              "premise": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations",
+              "conclusion": "Exemptions are conditional on compliance with regulations",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Deontic",
+              "operator": "requires",
+              "summary": "Compliance with regulations is necessary for exemptions",
+              "premise": "The conditions prescribed by the regulations in relation to representations in that class have been complied with",
+              "conclusion": "Exemptions are conditional on compliance with regulations",
+              "confidence": 0.5
+            },
+            {
+              "logic": "Deontic",
+              "operator": "allows",
+              "summary": "No need to comply with conditions if exemptions apply",
+              "premise": "If the representation is in a class prescribed for paragraph (a) of this subsection and subsection (1) is complied with in relation to the representation, there is no need to also comply with any conditions prescribed for paragraph (b) of this subsection",
+              "conclusion": "Exemptions override condition requirements",
+              "confidence": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "classifications": {
+    "sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Commences on the day after receiving Royal Assent.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Schedules for amendment or repeal of Acts",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-1": {
+      "deonticType": "Permission",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Exemptions from subsection (1) based on regulations",
+      "conditions": [
+        "compliance with regulations"
+      ],
+      "crossReferences": [],
+      "confidence": 0.5,
+      "logicApplications": [
+        {
+          "logic": "DescriptionLogic",
+          "operator": "hasClass",
+          "summary": "Exemptions based on class of representations",
+          "premise": "The representation is in a class prescribed by the regulations",
+          "conclusion": "No need to comply with conditions",
+          "confidence": 0.5
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "during",
+          "summary": "Temporal interval for exemptions",
+          "premise": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations",
+          "conclusion": "Exemptions are conditional on compliance with regulations",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Deontic",
+          "operator": "allows",
+          "summary": "Regulations prescribe exemptions",
+          "premise": "The regulations prescribe a class of representations for which subsection (1) does not apply",
+          "conclusion": "Exemptions are prescribed by the regulations",
+          "confidence": 0.5
+        },
+        {
+          "logic": "LTL",
+          "operator": "during",
+          "summary": "Temporal interval for exemptions",
+          "premise": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations",
+          "conclusion": "Exemptions are conditional on compliance with regulations",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Deontic",
+          "operator": "requires",
+          "summary": "Compliance with regulations is necessary for exemptions",
+          "premise": "The conditions prescribed by the regulations in relation to representations in that class have been complied with",
+          "conclusion": "Exemptions are conditional on compliance with regulations",
+          "confidence": 0.5
+        },
+        {
+          "logic": "Deontic",
+          "operator": "allows",
+          "summary": "No need to comply with conditions if exemptions apply",
+          "premise": "If the representation is in a class prescribed for paragraph (a) of this subsection and subsection (1) is complied with in relation to the representation, there is no need to also comply with any conditions prescribed for paragraph (b) of this subsection",
+          "conclusion": "Exemptions override condition requirements",
+          "confidence": 0.5
+        }
+      ]
+    },
+    "sec-1": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Cites this Act as the Competition and Consumer Amendment Act 2013.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": []
+    }
+  }
+}

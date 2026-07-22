@@ -1,0 +1,363 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-act-2013.pdf, p.7",
+      "skos:note": "Exemptions from subsection (1) based on regulations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After subsection 48(4) of Schedule 2"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-norm",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-descriptionlogic-1",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-alleninterval-2",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-3",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-ltl-4",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-5",
+        "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "792dbb3df6fbb2e4d24219097bee277722ce16ebcde7565fd31f9c935105d4b1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-act-2013#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemptions are conditional on compliance with regulations",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval for exemptions",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemptions are prescribed by the regulations",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Regulations prescribe exemptions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "allows",
+      "cml:premiseText": "The regulations prescribe a class of representations for which subsection (1) does not apply"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemptions are conditional on compliance with regulations",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Compliance with regulations is necessary for exemptions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires",
+      "cml:premiseText": "The conditions prescribed by the regulations in relation to representations in that class have been complied with"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-deontic-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemptions override condition requirements",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "No need to comply with conditions if exemptions apply",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "allows",
+      "cml:premiseText": "If the representation is in a class prescribed for paragraph (a) of this subsection and subsection (1) is complied with in relation to the representation, there is no need to also comply with any conditions prescribed for paragraph (b) of this subsection"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "No need to comply with conditions",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Exemptions based on class of representations",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "hasClass",
+      "cml:premiseText": "The representation is in a class prescribed by the regulations"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Exemptions are conditional on compliance with regulations",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal interval for exemptions",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Subsection (1) does not apply if the representation is in a class prescribed by the regulations"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-act-2013.pdf, p.5",
+      "skos:note": "Cites this Act as the Competition and Consumer Amendment Act 2013.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-act-2013.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-act-2013-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3fec9187cf910073086aff5f0c9c37e70fff2b5cda870b1b26492868dfc62555",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-act-2013#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-act-2013-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-act-2013.pdf, p.6",
+      "skos:note": "Commences on the day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-act-2013-sec-2-norm",
+        "concept:competition-and-consumer-amendment-act-2013-sec-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a8e441496011cc44b1b9c5564185dd7c728b1f01d03664e9d6ca04afeca2b38",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-act-2013#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commences on the day after receiving Royal Assent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Defines commencement"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-act-2013-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-act-2013.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-act-2013.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-act-2013-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4e105b31e17ff49acc7c388badb2289cabc62ff405379139fc045040166313af",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-act-2013#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-act-2013-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-act-2013-sec-3"
+    },
+    {
+      "@id": "doc:au/c2013a00104",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Competition and Consumer Act 2010, and for related purposes",
+      "dc:identifier": [
+        "C2013A00104",
+        "No. 104 of 2013"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Competition and Consumer Amendment Act 2013"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2013A00104/latest/downloads",
+        "competition-and-consumer-amendment-act-2013.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

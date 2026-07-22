@@ -1,0 +1,179 @@
+# CogAI proposed logic-routing chunks — National Disability Insurance Scheme Amendment (Worker Screening Database) Act 2019
+# Machine-derived; every chunk remains cml:Proposed.
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits provision of leadership in relation to behaviour supports.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Defines subclass NDIS worker screening law;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-10b-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to satisfy condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister must be satisfied;
+  @action: State or Territory law establishes a scheme for worker screening;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181x-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181x;
+  logic: Deontic;
+  operator: MUST ESTABLISH AND MAINTAIN;
+  summary: Establish and maintain the database;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-3-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must maintain an up-to-date record.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-4;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Prohibition on limiting information in the database.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3)(a) to (c);
+  @action: (4);
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The database's information overlaps with the information subject to paragraphs (3)(a) to (c).;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3)(a) to (c);
+  @action: (4);
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-4;
+  logic: LTL;
+  operator: Until;
+  summary: The database's information is until the information subject to paragraphs (3)(a) to (c).;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3)(a) to (c);
+  @action: (4);
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: The database's information diffuses into the information subject to paragraphs (3)(a) to (c).;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3)(a) to (c);
+  @action: (4);
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-4-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-4;
+  logic: CogAI;
+  operator: Incorporates;
+  summary: The database's information incorporates the information subject to paragraphs (3)(a) to (c).;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3)(a) to (c);
+  @action: (4);
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-5-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide specified information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-7-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-7;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes personal information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-disability-insurance-scheme-amendment-worker-screening-database-act-2019-sch-1-sec-181y-ss-8-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-181y-ss-8;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to determine a purpose or information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

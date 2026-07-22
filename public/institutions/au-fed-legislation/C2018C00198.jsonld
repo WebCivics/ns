@@ -1,0 +1,4981 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:war-crimes-act-1945-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c8dc70f7fb898d8b333d1e1fc2e74a7bd3e188377d5957ffeb22c416f7d4b092",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Punishment"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-10-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-10-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:note": "Imprisonment for life or lesser term for wilful killing of a person",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(1) Punishment"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-10-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-10-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0c496167e9addec532b59ba8a733f1d9f3e2758beb52683bb8a399fdffb48d50",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-10-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-10"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits wilful killing of a person",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-10-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:note": "Prohibition on punishment exceeding 25 years for other offences against the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(2) Punishment"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-10-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-10-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "462629925bba16bae854206312020ff903324f3c412694b6eea29ac788669a8c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-10-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-10"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The punishment for any other offence against this Act shall not exceed 25 years.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits punishment exceeding 25 years",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid",
+      "cml:premiseText": "(2) The punishment for any other offence against this Act is imprisonment for not more than 25 years."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-10-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-10-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:note": "Only Australian citizens or residents can be prosecuted under this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Only Australian citizens or residents to be prosecuted"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-11-norm",
+        "concept:war-crimes-act-1945-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bd7b31bfddd2de05d2591f0ea9a32310bfc3c8a314c784886b1a63c50637b391",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Oct"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-11-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-11-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-11-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "War Crimes Amendment Act 1988",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Oct 1945 (s 2)"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-11-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a5ec3e7846e62ffe43aa0f06fd35438254093e813cc9bb1e07c4c1fa930ec568",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-11-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-11-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person shall not be charged with an offence against this Act unless...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits prosecution of non-citizens or residents.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-11"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:note": "Only prosecution in name of Attorney-General or Director of Public Prosecutions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Who may prosecute"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-12-norm",
+        "concept:war-crimes-act-1945-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "198bb9cd9d45466e83e66fd278e868a975640537437632d03ba59e1ce332a853",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Restricts prosecution to specified entities.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "only"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-12-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-12"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Jurisdiction of courts and choice of law"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-13-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-13-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-13-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:note": "Jurisdiction of courts and choice of law obligation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(1) Jurisdiction of courts and choice of law"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-13-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-13-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "955b17a83b39abbd44f0e0c69082dfb84140b92e6942d332b113a845be78d422",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-13-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-13"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 68 applies in relation to an offence against this Act",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation applies",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(1) Section 68 of the Judiciary Act 1903"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-13-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:note": "Jurisdiction of courts and choice of law",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(2) Jurisdiction of courts and choice of law"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-13-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-13-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2eab5fdffdc840e34bc1bca42a8204667675e6886b9facbef2bde52f2e6a8ad2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-13-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-13"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Has effect",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasEffect"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-13-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.13",
+      "skos:note": "Jurisdiction of courts and choice of law obligation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(3) Jurisdiction of courts and choice of law"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-13-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-13-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b0f87877b72a95e90d38fe39a87164a5ee166e62d300c863347a11092514b76e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-13-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-13"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to follow jurisdiction rules",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "(3) Where:"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-13-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-13-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-3"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-4"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-5"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-14-ss-6"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(1) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-1-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-14-ss-1-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-14-ss-1-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-14-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a12da73da77788f67dbb7e3602431bbde298c9028038bf90c2626900981bf9b9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The section applies during the proceeding.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relationship between the section and the proceeding.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Containment",
+      "cml:premiseText": "(1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The section applies if the proceeding is held in a State or internal Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applicability of the section to a proceeding in a State or internal Territory.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The section applies if the proceeding is held in a State or internal Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applicability of the section to a proceeding in a State or internal Territory.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The section applies during the proceeding.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal relationship between the section and the proceeding.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Containment",
+      "cml:premiseText": "(1) This section applies where a proceeding for an offence against this Act is being held in a State or internal Territory."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Defendant may apply for change of venue.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(2) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "23860bdeb563f5f132da102765714b5e95f0cf90fb152db4db34fb14ff0f0e96",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Granting permission",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "(2) The defendant may apply..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Application can be made at a later time if allowed by the magistrate or judge.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(3) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-3-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-14-ss-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "14b46ea78a85f5f86aa05b6da4bcbd91030db3b81f1334d919d6372f12b9d6a5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between application and charging",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlap",
+      "cml:premiseText": "(a) as soon as reasonably practicable after the defendant is charged with the offence;"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "(3) An application may only be made:"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-3-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Proceedings for the offence must be held in another State or Territory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(4) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-4-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-4-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-14-ss-4-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-14-ss-4-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-14-ss-4-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-14-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b4451c4d6b2df0bc5cd679773f235368ea37363be035e9f0f68d049f7fdc5d34",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...order that all proceedings for the offence be held in that other State or Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for the commencement of proceedings.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(4) If an application is made..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...order that all proceedings for the offence be held in that other State or Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Applies reasoning to determine the venue of proceedings.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Reasoning",
+      "cml:premiseText": "(4) If an application is made..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...order that all proceedings for the offence be held in that other State or Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits proceedings in the defendant's State or Territory.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(4) If an application is made..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...order that all proceedings for the offence be held in that other State or Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses the venue of proceedings to another State or Territory.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuse",
+      "cml:premiseText": "(4) If an application is made..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...order that all proceedings for the offence be held in that other State or Territory.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Establishes a temporal trace for the commencement of proceedings.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Trace",
+      "cml:premiseText": "(4) If an application is made..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Appeal or review of orders and decisions is allowed.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(5) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-5-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0f145f39552f27e824d1271f20568db7c672b0255d560f957c6f63c1baeb3a67",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Allows appeal or review.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Allowance"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-5"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Constitutes a single Territory for the purposes of this section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(6) Objection to venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-14-ss-6-norm",
+        "concept:war-crimes-act-1945-sec-14-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "220443a10ccee161ec3cafbcfbce48fd2fe91a472453bb087f5acc90a526d2a4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-14-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-14"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Constitutes a single Territory for the purposes of this section.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-14-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-14-ss-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.15",
+      "skos:note": "Prohibition on holding proceedings in a different State or internal Territory",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Effect of order for change of venue"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-15-norm",
+        "concept:war-crimes-act-1945-sec-15-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "27f72dcc0d2da9d89492ef19744d4ad84e35d7108f811e344532f7110c81cdb0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(a) a proceeding for an offence against this Act is being held in a State or internal Territory; and (b) the magistrate or judge orders under section 14 that all proceedings for the offence be held in another State or internal Territory."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-15-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-15"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "No defence of superior orders",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 No defence of superior orders"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-16-norm",
+        "concept:war-crimes-act-1945-sec-16-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "18fb310c95287dc1f6da78e75858ad6e14a8bd4b8285c0862b3a7d19f7939ce3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-16-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-16-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-16"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-17-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-17-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-17-ss-3"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-17-ss-4"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-17-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "This section has effect for the purposes of a proceeding for an offence against this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17(1) Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-17-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-17-ss-1-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-17-ss-1-logic-linearlogic-2",
+        "concept:war-crimes-act-1945-sec-17-ss-1-logic-argumentation-3",
+        "concept:war-crimes-act-1945-sec-17-ss-1-logic-alleninterval-4",
+        "concept:war-crimes-act-1945-sec-17-ss-1-logic-diffusion-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6f61d8c37c6129e09eaa7ee5d7071526e5aa67555f579287426f94f5e12c289c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-17"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section has effect during the proceedings for an offence against this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Implies temporal relationship",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(1) This section has effect for the purposes of a proceeding for an offence against this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section has effect for the purposes of a proceeding for an offence against this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Implies argumentative relationship",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "hasEffect",
+      "cml:premiseText": "(1) This section has effect for the purposes of a proceeding for an offence against this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section has effect for the purposes of a proceeding for an offence against this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implies obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasEffect",
+      "cml:premiseText": "(1) This section has effect for the purposes of a proceeding for an offence against this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-logic-diffusion-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section has effect for the purposes of a proceeding for an offence against this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Implies diffusion relationship",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "hasEffect",
+      "cml:premiseText": "(1) This section has effect for the purposes of a proceeding for an offence against this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section has effect for the purposes of a proceeding for an offence against this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Implies causal relationship",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "hasEffect",
+      "cml:premiseText": "(1) This section has effect for the purposes of a proceeding for an offence against this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-17-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "Defence based on laws, customs and usages of war",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17(2) Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-17-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-17-ss-2-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-17-ss-2-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4348bbd47ff7a1547a316e213563e5e058f69d5b37c62cc1c67abfa01320f14f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-17"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permitted by laws, customs and usages of war",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permitted",
+      "cml:premiseText": "(a) was permitted by the laws, customs and usages of war"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Not under international law a crime against humanity",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Not a crime against humanity",
+      "cml:premiseText": "(b) was not under international law a crime against humanity"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-2-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-17-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "Justification by laws, customs and usages of war",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17(3) Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-17-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-17-ss-3-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-17-ss-3-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-17-ss-3-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-17-ss-3-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-17-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00651879de255edfbd42d228ed987964851f668242bd91ae2d6e9874fae013c6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-17"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relationship between justification and act",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Temporal relationship between justification and act",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Justification by laws, customs and usages of war",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "justifiedBy",
+      "cml:premiseText": "(3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Temporal relationship between justification and act",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal relationship between justification and act",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) To avoid doubt, the doing of the act by the defendant was permitted by the laws, customs and usages of war if it was reasonably justified by the exigencies and necessities of the conduct of war."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-17-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-4",
+      "@type": "cml:Concept",
+      "dc:description": "Evidence of defence facts",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "Defendant must provide evidence of defence facts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17(4) Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-17-ss-4-norm",
+        "concept:war-crimes-act-1945-sec-17-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a2c434a27cf2cfe17a40ac6081faf7068f602ee9e10744dce22ef1d2b9bd00f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-17"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Evidence of defence facts",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defendant must provide evidence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-17-ss-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.16",
+      "skos:note": "Prosecution bears onus of establishing facts beyond reasonable doubt.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17(5) Defence based on laws, customs and usages of war"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-17-ss-5-norm",
+        "concept:war-crimes-act-1945-sec-17-ss-5-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-17-ss-5-logic-epistemic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b6e4b03407ee555eb5ee1a2beb1c6e9d90c6bb25369647859c09f7da2fde809d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-17-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-17"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Prosecution bears onus.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishing obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-5-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Reasonable doubt",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "Doubt"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-17-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-17-ss-5"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.17",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Alternative verdicts"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-18-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-18-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.17",
+      "skos:note": "Alternative verdicts for certain offences",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18(1) Alternative verdicts"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-18-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-18-ss-1-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-18-ss-1-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-18-ss-1-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "087dc1fd692af4b92367d96c48c53fe13416b4bdab815f3eccf5be3638d5540a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-18-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-18"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...an offence of another kind, being an offence referred to in a paragraph of subsection 6(1);",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Establishes a temporal relation between the time of the act and the time of the law in force",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal relation",
+      "cml:premiseText": "(b) on the accused’s trial for the offence charged, the jury:..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the accused is guilty of an alternative offence against this Act;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State to follow alternative verdicts for certain offences",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(1) This section has effect where..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...an offence of another kind, being an offence referred to in a paragraph of subsection 6(1);",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Establishes a recurring trace between the time of the act and the time of the law in force",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring trace",
+      "cml:premiseText": "(b) on the accused’s trial for the offence charged, the jury:..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-18-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.17",
+      "skos:note": "Jury may find accused not guilty of offence charged but guilty of alternative offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18(2) Alternative verdicts"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-18-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-18-ss-2-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-18-ss-2-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7773e30eed22ac04f76cb43a98b90331e4656791d145f26da81a293d834165f7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-18-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-18"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Jury may find accused not guilty.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Accused must be found guilty of alternative offence.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-18-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-18-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-3"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-4"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-5"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-19-ss-6"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "Conditional commencement of Crimes Legislation Amendment (International Crime Cooperation and Other Measures) Act 2018",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Feb"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-19-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a0ab9388a0ecfa3855f636a48297e38debd693558f8f6d32917c4aea83d0ef4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "A person who has been charged with an offence may apply for assistance.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(1) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-1-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-19-ss-1-logic-argumentation-2",
+        "concept:war-crimes-act-1945-sec-19-ss-1-logic-alleninterval-3",
+        "concept:war-crimes-act-1945-sec-19-ss-1-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-19-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dadef0af7ade8bf21c6de8548b1c1d66974800dbaa83c74f8f5e90cb10e8de3e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who has been charged may apply for assistance at any time.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Establishes a temporal relationship between the charge and the application.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "between",
+      "cml:premiseText": "The provision states that the application must be made before or after the charge."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-logic-argumentation-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who has been charged may apply for assistance.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Claims that the Attorney-General has a duty to assist.",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "claim",
+      "cml:premiseText": "The provision states that the Attorney-General must provide assistance."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who has been charged may apply for assistance.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Inferentially establishes the obligation to assist.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "inference",
+      "cml:premiseText": "The provision states that the Attorney-General must provide assistance."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who has been charged may apply for assistance.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide assistance.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "The Attorney-General is required to assist."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "All persons who have been charged may apply for assistance.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses the obligation to assist throughout the relevant population.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "diffuse",
+      "cml:premiseText": "The provision applies to all persons who have been charged."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: NaturalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:NaturalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "Attorney-General may authorise Commonwealth to provide legal or financial assistance in a proceeding.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(2) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9fc537b42571eb5981f0f9a90887a4ed3268c3142373afcc9e1ede66af7c5c03",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted by Attorney-General.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-2-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "Conditions for authorisation under subsection (2)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(3) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9b4fec23db7032608ae3dfc563c94169f6b9669b158f8a939b14ae0b5293b6a0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Conditions as determined by the Attorney-General",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission with conditions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may be subject to",
+      "cml:premiseText": "Authorisation under subsection (2)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-3-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "Attorney-General must consider hardship to applicant in refusal decision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(4) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-4-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-4-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-19-ss-4-logic-linearlogic-2",
+        "concept:war-crimes-act-1945-sec-19-ss-4-logic-alleninterval-3",
+        "concept:war-crimes-act-1945-sec-19-ss-4-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-19-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "aa1d8266171594c0f4102005f623a8988e96139adedaa1beec98d433b9427384",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hardship must be considered in refusal decision.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Refusal without considering hardship is within the interval of 'hardship consideration'.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "⊆",
+      "cml:premiseText": "Attorney-General has a duty to consider hardship."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hardship must be considered in refusal decision.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Refusal without considering hardship is within the cognitive AI framework of 'hardship consideration'.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "⊆",
+      "cml:premiseText": "Attorney-General has a duty to consider hardship."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hardship must be considered in refusal decision.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Attorney-General has a duty to consider hardship.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "The Attorney-General is required to make decisions."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hardship must be considered in refusal decision.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Refusal without considering hardship is within the diffusion of 'hardship consideration'.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "⊆",
+      "cml:premiseText": "Attorney-General has a duty to consider hardship."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hardship must be considered in refusal decision.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Refusal without considering hardship leads to a contradiction.",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "→",
+      "cml:premiseText": "Attorney-General has a duty to consider hardship."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "Request for consent on notice to Parliament",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(5) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-5-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8f60d419bf000bac18295b0ed1352d6cade198396fdce0624ecb3a9b35172d0b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Request for consent",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide consent",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "Decision to refuse application"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-5"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.18",
+      "skos:note": "The Attorney-General must lay a copy of the notice before each House of Parliament within 15 sitting days.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19(6) Legal assistance"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-19-ss-6-norm",
+        "concept:war-crimes-act-1945-sec-19-ss-6-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-19-ss-6-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b005a2741972a7f1a6cab591615ccfbf08084e2b5291615dff5401c1717bbc8e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-19-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-19"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-6-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Within 15 sitting days of that House after the Attorney-General receives the consent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The action must occur within a specified time frame.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "WITHIN"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Attorney-General shall cause a copy of the notice to be laid before each House of the Parliament.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Attorney-General must perform the action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-19-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-19-ss-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.5",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9464cde3f14ae94ab437b21f3af34087074754b843434bf439a776e6a676f61d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.19",
+      "skos:note": "Provisions enacted to avoid doubt",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Certain provisions enacted to avoid doubt"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "57d1ea38678b7520eac987f1333a6e3953e1f752f83bace059a1ee6ea12408a8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-20-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-20"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.19",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Reporting"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-21-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-21-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-21-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.19",
+      "skos:note": "The Attorney-General must prepare a report about the operation of this Act during the year after the end of the financial year.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(1) Reporting"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-21-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-21-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7bfb64d26f69f162b8b0e27b3dbb8243a859033a3c3168a908fe4f3bab9ca3c5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-21-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-21"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to prepare a report",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-21-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-2",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "war-crimes-act-1945.pdf, p.19",
+      "skos:note": "Reporting requirements for suspected offences against this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(2) Reporting"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-21-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-21-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00a499dc3231e0f33e673106419feed2c3dfbbf84b2facf99fb99cb04bd196d3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-21-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-21"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Reporting requirement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-21-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.19",
+      "skos:note": "The Attorney-General must report to each House of Parliament within 15 sitting days.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(3) Reporting"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-21-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-21-ss-3-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-21-ss-3-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b1ae6191cd4cdfdac103337d1a5f37835dcd12ca120b47a109bf48f87c4596d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-21-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-21"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Attorney-General must report to each House of Parliament.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-3-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Reporting is a subclass of obligations.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "SUBCLASS_OF"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-21-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-21-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Dec"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "Conditional commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Dec 1999 (s 2)"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-22-2-norm",
+        "concept:war-crimes-act-1945-sec-22-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3189a19c5150c855a3b08491039a74db77cd045f4a3f490b274a7281b729111f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-22-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Relation between temporal intervals required",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires relation between identifiable temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Temporal interval required for commencement"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-22-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "Preamble obligation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 May"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-22-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b7e4c95606c7a9668acb33756a9706fd4d43b5bae590b5349d487a1b73a259be",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-22-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-22-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-22-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-22"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.1",
+      "skos:note": "Includes amendments up to Act No. 34, 2018",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 May 2018"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-23-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0723b7702b2f9985b32c4e55f729796a9398b4bf3e718ea638069cea08f6fc01",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-23-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-23"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Jan 1989"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-25-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "War Crimes Amendment Act 1999",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Jan 1989 (s 2)"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-25-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fd7be0e70f7baf3a2a47373efc24a28e28244cb166165dbed7cc9252e83f3529",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-25-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-25-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-25-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-25-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-25"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.6",
+      "skos:note": "The Act extends to all external Territories.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Application"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-3-norm",
+        "concept:war-crimes-act-1945-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "70f3b74f80d471746df9b68418e77cd7cffe332e35484e9073bedcc3cf3c17ee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Extension of jurisdiction",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "extends",
+      "cml:premiseText": "The Act extends to all external Territories."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.1",
+      "skos:note": "Compilation information and notes on amendments.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 May 2018"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "26092f095616f8f9888aecee6d5fcd7c8d5bfb03115493b56173b91456a466d3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-30"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3a",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.6",
+      "skos:note": "Chapter 2 of the Criminal Code applies to all offences against this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3A Application of the Criminal Code"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-3a-norm",
+        "concept:war-crimes-act-1945-sec-3a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7d33c9b369c1227aed3802c4b3ed6e7a3bb8669ee81b3323b2f9d6ad44f3eafc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-3a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Chapter 2 of the Criminal Code applies to all offences against this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-3a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-3a"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.7",
+      "skos:note": "Provisions of this Part have effect for the purposes of this Act, except where otherwise stated.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Effect of this Part"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-4-norm",
+        "concept:war-crimes-act-1945-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bc6577f97028dea62683bb2e1f09c9aafa1287c4a4137b3e6a8ae44886f494f4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "except where otherwise stated.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion clause",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "except",
+      "cml:premiseText": "Provisions of this Part have effect for the purposes of this Act."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.7",
+      "skos:note": "Definitions for act, occupation, person, and proceeding.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Interpretation"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-5-norm",
+        "concept:war-crimes-act-1945-sec-5-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-5-logic-descriptionlogic-2",
+        "concept:war-crimes-act-1945-sec-5-logic-descriptionlogic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b896935894534b1dbdc17182662c193f66025df6e8c08f167a2282b6ed8a5f4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definitions for act, occupation, person, and proceeding.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-5-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...an occupation of territory...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "occupation means..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-5-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...a person means a natural person...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "person means a natural person..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-5"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-3"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-4"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-5"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-6-ss-6"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.23",
+      "skos:note": "Conditional commencement of Crimes Legislation Amendment (Serious and Organised Crime) Act 2010",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Apr 2001"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-2-norm",
+        "concept:war-crimes-act-1945-sec-6-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1838e0ac9fe409289abfe963c58348baf358ed7fc1fa64fcb1f08f26841a8ea7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Undertaking",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires a relation between identifiable temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Conditional commencement is Undertaking"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "An act is a serious crime if it was done in a part of Australia and was, under the law then in force in that part, an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(1) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-1-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-1-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-6-ss-1-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56de060acc44775646d80dd2d57f699ddd139f3adb8dedc4b4522bbe6119814c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Being, by act or omission, in any way, directly or indirectly, knowingly concerned in, or party to, the commission of.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "directly or indirectly",
+      "cml:premiseText": "(iii) being, by act or omission, in any way, directly or indirectly..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The act is a serious crime.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(1) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "An offence referred to in any of paragraphs (a) to (j), inclusive.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(i) an offence whose elements are substantially the same as..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "Consider defence under law in force at a particular time when determining if an act is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(2) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-2-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-6-ss-2-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-4",
+        "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "acb6c737aa329d41418393ee67d0d72306dc627e421c6f71011b23126511503e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...in a part of Australia, an offence of a particular kind...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Consider the time when the defence was applicable.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "at",
+      "cml:premiseText": "(2) In determining for the purposes of subsection (1)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "whether or not an act was, under the law in force at a particular time...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Consider the defence under law in force.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "consider",
+      "cml:premiseText": "(2) In determining for the purposes of subsection (1)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that could have been established in a proceeding...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Consider the defence under that law.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "regard",
+      "cml:premiseText": "(2) In determining for the purposes of subsection (1)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...whether or not an act was, under the law in force at a particular time...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Consider the defence under law in force.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "consider",
+      "cml:premiseText": "(2) In determining for the purposes of subsection (1)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...in a part of Australia, an offence of a particular kind...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Consider the time when the defence was applicable.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "when",
+      "cml:premiseText": "(2) In determining for the purposes of subsection (1)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "Serious crimes definition",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(3) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-3-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-3-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-6-ss-3-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-6-ss-3-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-6-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4636724a9bf094fb0c4c5dbb42d2a46526913fb54570a42afb388a1690ceaab",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...be a serious crime by virtue of subsection (1).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between law and act",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...be a serious crime by virtue of subsection (1).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Artificial intelligence application to serious crimes",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "is-a",
+      "cml:premiseText": "(3) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...be a serious crime by virtue of subsection (1).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of serious crime",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(3) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...be a serious crime by virtue of subsection (1).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Conditional relation between law and act",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "if",
+      "cml:premiseText": "(3) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...be a serious crime by virtue of subsection (1).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal relation between law and act",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "(3) An act is a serious crime if..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "Deportation or internment in certain conditions is a serious crime.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(4) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-4-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-4-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-4-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-6-ss-4-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-6-ss-4-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-6-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7325c8b9805e80c4ba2929c94422feba33997d8a78910cbcfaf61bb76eb66587",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a serious crime.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Indicates overlap between deportation/internment and certain conditions.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a serious crime.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Indicates recognition of deportation/internment as serious crimes.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "(4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a serious crime.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits deportation or internment in certain conditions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a serious crime.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Indicates spread of deportation/internment to certain conditions.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Spreads",
+      "cml:premiseText": "(4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is a serious crime.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Indicates repetition of deportation/internment in certain conditions.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "(4) The deportation of a person to, or the internment of a person in, a death camp, a slave labour camp, or a place where persons are subjected to treatment similar to that undergone in a death camp or slave labour camp..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "Deportation or internment of a person as mentioned in subsection (4) is prohibited.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(5) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-5-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-2",
+        "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-3",
+        "concept:war-crimes-act-1945-sec-6-ss-5-logic-alleninterval-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1610fca10a7dbae62e858ae4458fd060efc6d002d74d59dd37131475c4cd6f55",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Establishes temporal relations between actions.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal relation",
+      "cml:premiseText": "(5) Each of the following is a serious crime:"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits deportation or internment.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(5) Each of the following is a serious crime:"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits aiding, abetting, counselling or procuring deportation or internment.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(b) aiding, abetting, counselling or procuring the deportation or internment of a person as so mentioned;"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits being knowingly concerned in, or party to, deportation or internment.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(c) being, by act or omission, in any way, directly or indirectly, knowingly concerned in, or party to, the deportation or internment of a person as so mentioned."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-5-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-5"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.8",
+      "skos:note": "Disregard of legal requirements for acts done in the past",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(6) Serious crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-6-ss-6-norm",
+        "concept:war-crimes-act-1945-sec-6-ss-6-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-6-ss-6-logic-linearlogic-2",
+        "concept:war-crimes-act-1945-sec-6-ss-6-logic-alleninterval-3",
+        "concept:war-crimes-act-1945-sec-6-ss-6-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-6-ss-6-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a8ed0f2dafc015b0fbe05ca70c881b0a8c521aba2b7db9a8f8ec92b54d90411a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-6-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Ignoring past legal requirements",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Ignore",
+      "cml:premiseText": "(6) For the purposes of subsections (3), (4) and (5)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Ignoring past legal requirements",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Ignore",
+      "cml:premiseText": "(6) For the purposes of subsections (3), (4) and (5)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Ignoring past legal requirements",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Ignore",
+      "cml:premiseText": "(6) For the purposes of subsections (3), (4) and (5)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Ignoring past legal requirements",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Ignore",
+      "cml:premiseText": "(6) For the purposes of subsections (3), (4) and (5)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the fact that the doing of an act was required or permitted by the law in force when and where the act was done shall be disregarded.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Ignoring past legal requirements",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "Ignore",
+      "cml:premiseText": "(6) For the purposes of subsections (3), (4) and (5)"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-6-ss-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-6-ss-6"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.9",
+      "skos:note": "Serious crime is a war crime if committed under specified conditions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 War crimes"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b3e2745cd0c97c734ec8e12bb53f7f9ef00df542d66bd61bd17a873f8cb05c52",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-7"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Effect of sections 6 and 7"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-8-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-8-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-8-ss-3"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-8-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.10",
+      "skos:note": "Nothing in section 6 or 7 limits the generality of anything else in that section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(1) Effect of sections 6 and 7"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-8-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-8-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7ee491f0d16e7d633f488f62f0637b5c14906311d74beb0484fcc8c8741511b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-8-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-8"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-8-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.10",
+      "skos:note": "An act may be a serious crime by virtue of certain subsections.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(2) Effect of sections 6 and 7"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": "concept:war-crimes-act-1945-sec-8-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f5fa79b55e265c6bafc1f4bf72b4cd8da3d124c25171a1d1a520735eee7514d2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-8-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-8"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-8-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.10",
+      "skos:note": "A serious crime may be a war crime under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(3) Effect of sections 6 and 7"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-8-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-8-ss-3-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-8-ss-3-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-8-ss-3-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-8-ss-3-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-8-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "49c779d6f316524a9ec7e1f51a12ff51d660ba05a0c6239d5056c784de76744e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-8-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-8"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Serious crimes and war crimes overlap in time if the serious crime meets the conditions in subsections 7(1) and (3).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The excerpt specifies temporal overlap between serious crimes and war crimes.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The excerpt recognizes that serious crimes can be war crimes under certain conditions.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The excerpt recognizes serious crimes as potentially war crimes.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "(3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(3) A serious crime is a war crime if it meets the conditions in subsections 7(1) and (3).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If A is a serious crime, then it may be a war crime.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Serious crimes diffuse to war crimes if they meet the conditions in subsections 7(1) and (3).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The excerpt specifies diffusion of serious crimes to war crimes.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Spreads",
+      "cml:premiseText": "(3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Serious crimes repeat as war crimes if they meet the conditions in subsections 7(1) and (3).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The excerpt specifies repeated occurrence of serious crimes as war crimes.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "(3) A serious crime may be a war crime by virtue of either or both of subsections 7(1) and (3), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-8-ss-3"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.10",
+      "skos:note": "Prohibits combining serious crimes to constitute a war crime",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(4) Effect of sections 6 and 7"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-8-ss-4-norm",
+        "concept:war-crimes-act-1945-sec-8-ss-4-logic-deontic-1",
+        "concept:war-crimes-act-1945-sec-8-ss-4-logic-alleninterval-2",
+        "concept:war-crimes-act-1945-sec-8-ss-4-logic-ltl-3",
+        "concept:war-crimes-act-1945-sec-8-ss-4-logic-diffusion-4",
+        "concept:war-crimes-act-1945-sec-8-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ca7c7a8744ee12b1108ff1cb4e5c1757396e9ad73125cba50198e5147a219a0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-8-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-8"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines the temporal interval for serious crimes that can be combined to constitute a war crime",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Classifies the serious crimes that can be combined to constitute a war crime using AI",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Classify",
+      "cml:premiseText": "(4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits combining serious crimes to constitute a war crime",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses the prohibition on combining serious crimes to constitute a war crime",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuse",
+      "cml:premiseText": "(4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines the temporal trace for serious crimes that can be combined to constitute a war crime",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Trace",
+      "cml:premiseText": "(4) Two or more serious crimes may together constitute a war crime by virtue of subsection 7(4), but not otherwise."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-8-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-8-ss-4"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 War crime to be indictable offence"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:war-crimes-act-1945-sec-9-ss-1"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-9-ss-2"
+        },
+        {
+          "@id": "concept:war-crimes-act-1945-sec-9-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:note": "Guilty of an indictable offence for committing a war crime.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(1) War crime to be indictable offence"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-9-ss-1-norm",
+        "concept:war-crimes-act-1945-sec-9-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6792e1e47b22b1ee21d885d2328aa144c855316de22fb0cc81a03d963d5b025e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-9-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-9"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Guilty of an indictable offence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(1) A person who..."
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-9-ss-1"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:note": "Exempts sections of Criminal Code from applying to offences against this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(2) War crime to be indictable offence"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-9-ss-2-norm",
+        "concept:war-crimes-act-1945-sec-9-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c35bafa5d61a26fced06f6975fc69c4cecd7d2810d59d4b5f59610b70aa447d7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-9-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-9"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exempts sections of Criminal Code from applying to offences against this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exemption"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-9-ss-2"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "war-crimes-act-1945.pdf, p.12",
+      "skos:note": "Absolute liability for war crimes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(3) War crime to be indictable offence"
+      },
+      "wasDerivedFrom": "war-crimes-act-1945.pdf",
+      "asserts": [
+        "concept:war-crimes-act-1945-sec-9-ss-3-norm",
+        "concept:war-crimes-act-1945-sec-9-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9049bffc54335fc2c99222562a0f1c3bebc206a623a5b1f4576066b6e2874692",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:war-crimes-act-1945#sec-9-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:war-crimes-act-1945-sec-9"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty on the state",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:war-crimes-act-1945-sec-9-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:war-crimes-act-1945-sec-9-ss-3"
+    },
+    {
+      "@id": "doc:au/c2018c00198",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "date": "23 May 2018",
+      "dc:identifier": [
+        "C2018C00198",
+        "No. 48 of 1945"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "War Crimes Act 1945"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2018C00198",
+        "war-crimes-act-1945.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

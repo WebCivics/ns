@@ -1,0 +1,2960 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.8",
+      "skos:note": "Defines ACMA official",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 3"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b9c39776a340fce3eeed1d4d77f9b880af8c71735c8addc046a66e591180770e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "ACMA official is an associate member or a person whose services are made available to the ACMA under subsection 55(1)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is-a",
+      "cml:premiseText": "ACMA official is a member of the ACMA staff"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Communications Legislation Amendment (Information Sharing and Datacasting) Act"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.8",
+      "skos:note": "Definition of authorized disclosure information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 3"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7c0177402a1f8cf4bd9156c3b8329136d20b1665dd2574ae2b490b87532e60c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines the scope of authorized disclosure information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "defines"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Subclassifies information types under ACMA's functions and powers",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subclassOf"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Authorized APS employee may use Secretary's name",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2007 No. 178, 2007"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ca19a36b58df79e6487c76949803a7a2dba40f14bf4123eea9dd76408a83664c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-2007",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2007 No. 178, 2007"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-2007-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2007 No. 178, 2007"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-2007-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-2007"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Insert clause after Part 7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After Part 7"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.13",
+      "skos:note": "Part 7A applies to disclosure of information after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Application of Part 7A"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2ab6858af5dda9901eb7b8a640270f79b36ed8fe29fc21d620f615a82e03b7a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Part 7A applies to disclosure of information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.13",
+      "skos:note": "Schedule 7 to the Broadcasting Services Act 1992 must be inserted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 3 (after subparagraph (b)(ii) of the definition of"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "02c341c9513d5e727e19a89083335f6173b7c15cbe2076e110d647af6d827e90",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide Schedule 7 to the Broadcasting Services Act 1992.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59A Disclosure to Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Disclosure of authorized information to the Minister is permitted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59A(1) Disclosure to Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "84f99e36f2556c82002d713e119b583c5622e7c72ca7baf72197c8d555dc512b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59a-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister is permitted to receive the information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "Authorized disclosure information may be disclosed."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Disclosure of information to Ministers",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59A(2) Disclosure to Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3fde64b4ea2b4bd2110d42750adca0958416ff20dd2d78a3b91aba5fe1ed84c5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59a-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "(2) An ACMA official may disclose..."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Disclosure to Ministers is mandatory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59A(3) Disclosure to Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "740f18283d983b082a0d365df0febbed0f332219467375706ef817cdd78bfa66",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59a-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must disclose information to ministers.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(3) Subsection (2) does not limit subsection (1)."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59a-ss-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59B Disclosure to public servants for advising their Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Disclosure of authorized information to Secretary or APS employee",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59B(1) Disclosure to public servants for advising their Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6c58afc66a2343ac332dd11bec5cfeba9dd2eb609d7448e5c87f1ff350c1f713",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59b-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...authorized disclosure information to:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relationship between disclosure and advising",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(1) For the purpose of advising the Minister, an ACMA official may..."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...authorized disclosure information to:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorization for disclosure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "can",
+      "cml:premiseText": "(1) For the purpose of advising the Minister, an ACMA official may..."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.9",
+      "skos:note": "Disclosure of authorized information to advise a Minister",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59B(2) Disclosure to public servants for advising their Ministers"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c3f35423cd515509aa590ed164dbcc9ed4f4666d8f6632c567ae6827b449da19",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59b-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation on ACMA official to disclose information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasObligation"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59b-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59C Disclosure to Royal Commissions"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59c",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Disclosure of authorized information to Royal Commissions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59C(1) Disclosure to Royal Commissions"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "692911deff3d0da151e8d8544285c6da2624a9b510c7f2d693648deac07c66e3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59c-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Conditions for disclosure of authorized information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59C(2) Disclosure to Royal Commissions"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7c40e3b8626e2240c5effe3dc522a641b78716b7357afc1826332cd8b67793d0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59c-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes conditions on disclosure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "impose"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "No legislative instrument can impose conditions on disclosure to Royal Commissions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59C(3) Disclosure to Royal Commissions"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-alleninterval-2",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-ltl-3",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-diffusion-4",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1d0089e6cb212627c6a1b43fe0079afe7abc4f511c7a3d789fb59565d1a442b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59c-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes the temporal relationship between an event and a condition.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) An instrument made under subsection (2) that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Describes the relationship between an event and its consequences.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "asserts",
+      "cml:premiseText": "(3) An instrument made under subsection (2) that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(3) An instrument made under subsection (2) that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative assertion of a prohibition.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Describes the relationship between an event and its consequences.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "implies",
+      "cml:premiseText": "(3) An instrument made under subsection (2) that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Describes the temporal relationship between an event and a condition.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "(3) An instrument made under subsection (2) that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "An instrument made under subsection (2) must be a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59C(4) Disclosure to Royal Commissions"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-linearlogic-2",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-alleninterval-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56d10010f006f25e1213425f66f911ca96504cbad1ea49f54d771c4cf817a241",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59c-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "THE INTERVAL BETWEEN THE MAKING OF AN INSTRUMENT AND ITS BEING A LEGISLATIVE INSTRUMENT IS NOT SPECIFIED.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The interval between the making of an instrument and its being a legislative instrument is not specified.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "BETWEEN",
+      "cml:premiseText": "(4) Otherwise, an instrument made under subsection (2) is a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An instrument made under subsection (2) MUST be a legislative instrument.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to make an instrument a legislative instrument.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(4) Otherwise, an instrument made under subsection (2) is a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An instrument made under subsection (2) IS NOT A LEGISLATIVE INSTRUMENT IF IT IS NOT MADE UNDER SUBSECTION (2).",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "If an instrument is not made under subsection (2), then it is NOT a legislative instrument.",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "⇒",
+      "cml:premiseText": "(4) Otherwise, an instrument made under subsection (2) is a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59c-ss-4"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59D Disclosure to certain authorities"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59d",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Disclosure of information to certain authorities with Chair's satisfaction",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59D(1) Disclosure to certain authorities"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0f2abbd4d0e68705d63b4852b7b074f7826634485631f644c3d3fe014b0de5e3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59d-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosure allowed",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted by the Chair",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "Chair's satisfaction"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Imposing conditions on disclosure of authorized information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59D(2) Disclosure to certain authorities"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7c40e3b8626e2240c5effe3dc522a641b78716b7357afc1826332cd8b67793d0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59d-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to comply with conditions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "impose"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "Disclosure to certain authorities is required.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59D(3) Disclosure to certain authorities"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1d0089e6cb212627c6a1b43fe0079afe7abc4f511c7a3d789fb59565d1a442b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59d-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires disclosure.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:note": "An instrument made under subsection (2) must be disclosed to certain authorities.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59D(4) Disclosure to certain authorities"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56d10010f006f25e1213425f66f911ca96504cbad1ea49f54d771c4cf817a241",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59d-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An instrument made under subsection (2) must be disclosed to certain authorities.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must disclose",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(4) Otherwise, an instrument made under subsection (2) is a legislative instrument."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59d-ss-4"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.11",
+      "skos:note": "Disclosure with consent",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59E Disclosure with consent"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-alleninterval-2",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-ltl-3",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-diffusion-4",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b6d0699185b3e5172a6c56586b050e2d62f53073fb48df45744ad9f1554fc6c3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59e",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The temporal interval of the disclosure overlaps with the temporal interval of the consent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between consent and disclosure",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "The disclosure occurs after the person has given consent."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The ACMA official recognizes the disclosure as authorized based on the person's consent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognition of consent-based disclosures",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "The ACMA official recognizes the disclosure as authorized."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosure is permitted if the person consents.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to disclose information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "The person has consented to the disclosure."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The diffusion of consent information is spread to others who have not given consent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of consent information",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "The disclosure spreads to others if they have not given consent."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "There is a trace of repeated disclosures if the person repeatedly consents.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal tracing of disclosure events",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Traces",
+      "cml:premiseText": "The disclosure is repeated if the person consents."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59e"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59f",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "Disclosure of publicly available information is permitted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59F Disclosure of publicly available information"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59f-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "df459e5695f782abd113eab76a45aa68e02c6421f4818fc98fa5c35827f38bbf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59f",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59f-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59f"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59g",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "Disclosure of summaries and statistics",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59G Disclosure of summaries and statistics"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59g-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4a18fc2d134b3b8e0b7fef7682c575c525debf01c7d018f2ab793b29b9b53676",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59g",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59g-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59g"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59H Disclosure authorised by regulations"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59h",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "Disclosure of authorized information in specified circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59H(1) Disclosure authorised by regulations"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ea3d38b32f91c6d20a06457e30cd70d0868f6e68e70db9b1c09d61d90fd084e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59h-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to disclose information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "An instrument made under regulations must not impose conditions on disclosure.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59H(2) Disclosure authorised by regulations"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ca82a1c2e1d96c0001a8aa2834a506b3cf6f120fe9bcddf7005772b0f657e322",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59h-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that imposes conditions relating to one particular disclosure identified in the instrument is not a legislative instrument.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If an instrument imposes conditions, then it is not a legislative instrument.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(2) An instrument made under regulations..."
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "An instrument made under regulations is a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59H(3) Disclosure authorised by regulations"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "81896da7147e3575bda2d0201db64e548b1b1de0a61b3d1136890b3e54b2c850",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59h-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "An instrument made under regulations is a legislative instrument.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of a legislative instrument",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59h-ss-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "No limitation on disclosure by ACMA official",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59J This Part does not limit disclosure by ACMA official"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d0d9abf2c5910ff194131374b0ad798671d823d613fa2165f1a8dc81ee409b99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59j",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "ACMA official has an obligation to disclose information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59j"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:note": "Disclosure of information prohibited by Part 13 of the Telecommunications Act 1997",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59K Relationship with Part 13 of the Telecommunications Act 1997"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fa627d27703dfc6610b237e3c8e42d243ae0da1a48f2642b1f69167a1a305266",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59k",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosure of information",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Part 13 of the Telecommunications Act 1997"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59k"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59L Delegation of Chair’s powers under this Part"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1"
+        },
+        {
+          "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59l",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.13",
+      "skos:note": "Delegation of Chair's powers under this Part",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59L(1) Delegation of Chair’s powers under this Part"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c7fffde1c5fac1cbb88fdc2675c27c423fc0ae285e88cde23d8bea30721c20f7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59l-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Undertaking",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires relation between identifiable temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Delegation is effective immediately"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.13",
+      "skos:note": "Delegate must comply with Chair's directions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "59L(2) Delegation of Chair’s powers under this Part"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "71d195caf486a953a0409ca9a34bf101fada047bbde32121b3e4744850bc16f9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-59l-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must comply",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-59l-ss-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Communications Legislation Amendment (Information Sharing and Datacasting) Act"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:note": "Omit “or a datacasting transmitter licence”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Paragraph 111(1)(d)"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6c59af1d045233bdc8803bad7412820076002e09173eb23f75eef6c00304363d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:note": "Add “or 109A(1)(d)”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 At the end of paragraph 111(1)(d)"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1af94466c318dae66f36807806d925cda8843756f51ef326ad1bdfa26d17ae09",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding to a list",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "addition"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Communications Legislation Amendment (Information Sharing and Datacasting) Act"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:note": "Insertion of specific licence type",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Paragraph 6(a)"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-logic-deontic-1",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3822fad0a0e34b900c2a49190a6a0d9e0817d4506e8eada1c7f7119fed45ec4d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-8-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation during insertion",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of specific licence type",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Forbid"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.14",
+      "skos:note": "Amendment applies to financial years starting on 1 July 2007 and later.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Application of amendment"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "900ea1c5b101c729c39d6e5faaa648e88878ab7ca99f46478f890dff2a15f8ce",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d20efc16f35a18181a0fc8d4264c4540dafaa5b99e90bfe646353918075897d4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Table of sections and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d23f7ffd714b61f871d6fecd00be20170f6c9ff45b2b3a5a748dbbe338eee61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-1"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Communications Legislation Amendment (Information Sharing and Datacasting) Act"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c980fffb09f2a407258b1754f7e3ca3d52b17b4f4317a73c7d44036a362a46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-2-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Applicable to certain persons",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 January 2008"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": [
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20-norm",
+        "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d7cfe2f4ab6347c7a08cea5abebef23edce79a855f7cbb7ba843974e6ab7d93e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Indicates applicability",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(b)"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-20"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2007 No. 178, 2007"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-2007",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2007 No. 178, 2007"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-2007-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-2007"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 September"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-28-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-28-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-28"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 September"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 September"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a85a45923db3a387f12b1eccbede4142ab57ab3251da0bc78ba9f5402c90afb3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-29-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-29"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Amendments and repeals of Acts specified in a Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3109ea9728dd1f7ae51bff306f76dcf7eb2dcaa8a42c659a38906a8113a395dc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-3"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Communications Legislation Amendment (Information Sharing and Datacasting) Act"
+      },
+      "wasDerivedFrom": "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf",
+      "asserts": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:communications-legislation-amendment-information-sharing-and-datacasting-act-2007#sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-2"
+    },
+    {
+      "@id": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:communications-legislation-amendment-information-sharing-and-datacasting-act-2007-sec-4"
+    },
+    {
+      "@id": "doc:au/c2007a00178",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the law relating to communications, and for related purposes",
+      "dc:identifier": [
+        "C2007A00178",
+        "No. 178 of 2007"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Communications Legislation Amendment (Information Sharing and Datacasting) Act 2007"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2007A00178/latest/downloads",
+        "communications-legislation-amendment-information-sharing-and-datacasting-act-2007.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

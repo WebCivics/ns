@@ -1,0 +1,1140 @@
+# CogAI proposed logic-routing chunks — Privacy Amendment (Notifiable Data Breaches) Act 2017
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wa-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wa;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must give notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reasonable grounds to believe data breach has happened;
+  @action: Notification given;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wa-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wa;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must give notification if directed by Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner directs entity to do so;
+  @action: Notification given;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wc-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wc-ss-1;
+  logic: Deontic;
+  operator: requirement;
+  summary: Requirement to hold personal information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If...;
+  @action: the APP entity were required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wc-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wc-ss-1;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal relationship between disclosure and holding;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) an APP entity has disclosed personal information about one or more individuals to an overseas recipient;;
+  @action: and (c) the overseas recipient holds the personal information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wc-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wc-ss-1;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on disclosure of personal information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) Australian Privacy Principle 8.1 applied to the disclosure of the personal information;;
+  @action: and (c) the overseas recipient holds the personal information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wc-ss-1-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wc-ss-1;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition on act or practice that breaches Australian Privacy Principle 11.1;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (e) the APP entity were required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information.;
+  @action: and (d) the personal information were held by the APP entity;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wc-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wc-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply with subsection 21S(1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+  @action: the credit provider were required to comply with subsection 21S(1) in relation to the credit eligibility information.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wd-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wd;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Notification under My Health Records Act exempts from this Part;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26we-ss-1-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26we-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to comply with section 15 not to do an act that breaches Australian Privacy Principle 11.1.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+  @action: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26we-ss-1-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26we-ss-1;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval for when data breach occurs.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+  @action: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26we-ss-1-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26we-ss-1;
+  logic: LTL;
+  operator: Applicable;
+  summary: Recurring trace for when data breach occurs.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+  @action: (1) This section applies if: ... (i) an APP entity holds personal information relating to one or more individuals; and (ii) the APP entity is required under section 15 not to do an act, or engage in a practice, that breaches Australian Privacy Principle 11.1 in relation to the personal information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26we-ss-1-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26we-ss-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Obligation for APP entity to comply with section 15 not to do an act that breaches Australian Privacy Principle 11.1.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) both: (i) a credit reporting body holds credit reporting information relating to one or more individuals; and (ii) the credit reporting body is required to comply with section 20Q in relation to the credit reporting information;;
+  @action: (b) both: (i) a credit reporting body holds credit reporting information relating to one or more individuals; and (ii) the credit reporting body is required to comply with section 20Q in relation to the credit reporting information;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26we-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26we-ss-2;
+  logic: Deontic;
+  operator: >;
+  summary: Risk to individual;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to take remedial action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: action taken before access or disclosure results in serious harm;
+  @action: the action must be taken;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-2;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Action required before unauthorized access or disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition on eligible data breaches;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: the loss is not, and is taken never to have been: an eligible data breach...;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for action taken in response to loss of information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) the APP entity, credit reporting body, credit provider or file number recipient, as the case may be, does so:;
+  @action: ...before the access or disclosure results in serious harm to any of the individuals to whom the information relates;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-4;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for action taken in response to loss of information;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (d) as a result of the action, a reasonable person would conclude...;
+  @action: ...that the access or disclosure would not be likely to result in serious harm to any of those individuals;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take action in response to loss of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the APP entity, credit reporting body, credit provider or file number recipient, as the case may be, takes action...;
+  @action: ...the access or disclosure results in serious harm to any of the individuals to whom the information relates;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wf-ss-5-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wf-ss-5;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wg-logic-23 {
+  activation: 0.8000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wg;
+  logic: Deontic;
+  operator: should;
+  summary: Duty to protect information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information is protected by security measures;
+  @action: Likelihood of harm is low;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wg-logic-24 {
+  activation: 0.6000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wg;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Consider security measures effectiveness;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Likelihood that security measures can be overcome;
+  @action: Harm likelihood is high if measures fail;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide assessment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-1-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-1;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Assessment must occur between awareness and lack of belief in data breach;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the entity is not aware that there are reasonable grounds to believe that the relevant circumstances amount to an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-1;
+  logic: LTL;
+  operator: BETWEEN;
+  summary: Assessment must occur between awareness and lack of belief in data breach;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the entity is not aware that there are reasonable grounds to believe that the relevant circumstances amount to an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-1-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-1;
+  logic: Diffusion;
+  operator: BETWEEN;
+  summary: Assessment must occur between awareness and lack of belief in data breach;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (b) the entity is not aware that there are reasonable grounds to believe that the relevant circumstances amount to an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-1-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-1;
+  logic: CogAI;
+  operator: BETWEEN;
+  summary: Assessment must occur between awareness and lack of belief in data breach;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) the entity is not aware that there are reasonable grounds to believe that the relevant circumstances amount to an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wh-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wh-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must carry out assessment and take steps.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wj-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wj;
+  logic: Deontic;
+  operator: !;
+  summary: Exemption from notification obligations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-1-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must report data breach;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-1-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-1;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval for reporting data breach;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if an entity is aware that there are reasonable grounds to believe that there has been an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-1-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-1;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Reporting data breach implies awareness of data breach;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if an entity is aware that there are reasonable grounds to believe that there has been an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-1-logic-35 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-1;
+  logic: Diffusion;
+  operator: SPREADS;
+  summary: Awareness of data breach spreads to reporting requirement;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if an entity is aware that there are reasonable grounds to believe that there has been an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-1-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-1;
+  logic: CogAI;
+  operator: REQUIRES;
+  summary: Entity requires reporting data breach;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if an entity is aware that there are reasonable grounds to believe that there has been an eligible data breach of the entity.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must perform action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-3-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must provide statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wk-ss-4-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wk-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must report other affected entities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wl-ss-1-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wl-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must notify eligible data breach;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wl-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wl-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must notify eligible data breach;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wl-ss-3-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wl-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply with subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The entity must comply...;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wl-ss-4-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wl-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must notify eligible data breach.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wm-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wm;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-2;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exempted from subsection 26WK(2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Compliance with secrecy provision is inconsistent;
+  @action: Subsection 26WK(2) does not apply;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-3-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-3;
+  logic: Deontic;
+  operator: Permission;
+  summary: Granting permission to entities from section 26WL;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-5-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-5;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts specified provisions from secrecy requirements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-6-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-6;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exempted from secrecy provision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subparagraph 26WK(2)(a)(ii);
+  @action: Subsection 26WK(2) does not apply.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-6-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-6;
+  logic: AllenInterval;
+  operator: Temporal overlap;
+  summary: Entity exempted from secrecy provision if it overlaps with the exemption in time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subparagraph 26WK(2)(a)(ii);
+  @action: Subsection 26WK(2) does not apply.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-6-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-6;
+  logic: LTL;
+  operator: Temporal overlap;
+  summary: Entity exempted from secrecy provision if it overlaps with the exemption in time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subparagraph 26WK(2)(a)(ii);
+  @action: Subsection 26WK(2) does not apply.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-6-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-6;
+  logic: Diffusion;
+  operator: Information flow;
+  summary: Entity exempted from secrecy provision if the information flows through it.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subparagraph 26WK(2)(a)(ii);
+  @action: Subsection 26WK(2) does not apply.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-6-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-6;
+  logic: CogAI;
+  operator: Knowledge representation;
+  summary: Entity exempted from secrecy provision if it is represented in a knowledge base.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subparagraph 26WK(2)(a)(ii);
+  @action: Subsection 26WK(2) does not apply.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-7-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-7;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exemption from section 26WL.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 26WL does not apply to the entity in relation to the statement.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-7-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Exemption overlaps with secrecy provisions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 26WL does not apply to the entity in relation to the statement if compliance would be inconsistent with a prescribed secrecy provision.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-7-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-7;
+  logic: LTL;
+  operator: Until;
+  summary: Exemption applies until inconsistency resolved.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 26WL does not apply to the entity in relation to the statement if compliance would be inconsistent with a prescribed secrecy provision.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-7-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-7;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Exemption diffuses to related statements.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Section 26WL does not apply to the entity in relation to the statement if compliance would be inconsistent with a prescribed secrecy provision.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wp-ss-7-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wp-ss-7;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Exemption recognized by AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Section 26WL does not apply to the entity in relation to the statement if compliance would be inconsistent with a prescribed secrecy provision.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-1-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Commissioner may declare sections 26WK and 26WL do not apply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Commissioner's power to extend time for compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-3-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Commissioner must make a declaration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: It is reasonable in the circumstances.;
+  @action: DECLARE;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-3;
+  logic: Epistemic;
+  operator: IS REASONABLE;
+  summary: The Commissioner's decision is based on relevant advice and public interest.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: Relevant advice has been given.;
+  @action: DECLARE;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-3;
+  logic: LTL;
+  operator: REPEATS;
+  summary: The declaration must be repeated if the circumstances change.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Circumstances may change.;
+  @action: DECLARE;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-4-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-4;
+  logic: Deontic;
+  operator: may;
+  summary: Commissioner's obligation to consider advice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-5-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-5;
+  logic: Deontic;
+  operator: May;
+  summary: Commissioner may give notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-7-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Commissioner must give written notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-8-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-8;
+  logic: Deontic;
+  operator: takes effect;
+  summary: Commissioner's declaration takes effect if application nominates a period and Commissioner specifies different period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) If: an application for a paragraph (1)(d) declaration nominates a period to be specified in the declaration; and the Commissioner makes the declaration, but specifies a different period in the declaration;;
+  @action: the Commissioner is taken not to have refused the application.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-8-logic-67 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Commissioner's declaration takes effect during the nominated period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) If: an application for a paragraph (1)(d) declaration nominates a period to be specified in the declaration; and the Commissioner makes the declaration, but specifies a different period in the declaration;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-8-logic-68 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-8;
+  logic: LTL;
+  operator: during;
+  summary: Commissioner's declaration takes effect during the nominated period.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (8) If: an application for a paragraph (1)(d) declaration nominates a period to be specified in the declaration; and the Commissioner makes the declaration, but specifies a different period in the declaration;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-8-logic-69 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-8;
+  logic: Deontic;
+  operator: taken not to have refused;
+  summary: Commissioner is taken not to have refused the application if it nominates a period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) If: an application for a paragraph (1)(d) declaration nominates a period to be specified in the declaration; and the Commissioner makes the declaration, but specifies a different period in the declaration;;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-10-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-10;
+  logic: Deontic;
+  operator: !;
+  summary: Prohibition on concurrent applications;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wq-ss-11-logic-71 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wq-ss-11;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to extend period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-1;
+  logic: Deontic;
+  operator: MAY;
+  summary: Commissioner may direct entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-2-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must provide notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-3-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply with request.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-4-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must provide notification.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-5-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide specified information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-7-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-7;
+  logic: Deontic;
+  operator: MAY;
+  summary: May direct entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-8-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply with the obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-9-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-9;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wr-ss-10-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wr-ss-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity has a duty to comply with the direction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26ws-logic-81 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26ws;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exempt from direction under subsection 26WR(1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Entity is an enforcement body;
+  @action: Chief executive officer believes compliance would prejudice enforcement activities.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits the use or disclosure of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) is a provision of a law of the Commonwealth (other than this Act);
+  @action: (1) For the purposes of this section, secrecy provision means a provision that...;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Defines secrecy provision as a provision of another law;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) is a provision of a law of the Commonwealth (other than this Act);
+  @action: ...secrecy provision means a provision that...;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: Deontic;
+  operator: regulate;
+  summary: Regulates the use or disclosure of information from other laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) prohibits or regulates the use or disclosure of information;
+  @action: ...provides a provision that regulates the use or disclosure of information;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-85 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Applies to provisions regulating secrecy during this Act's effective period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this section, secrecy provision means a provision that...;
+  @action: ...provides a provision that regulates the use or disclosure of information during this Act's effective period;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-86 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: LTL;
+  operator: during;
+  summary: Applies to provisions regulating secrecy during this Act's effective period;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this section, secrecy provision means a provision that...;
+  @action: ...provides a provision that regulates the use or disclosure of information during this Act's effective period;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-1-logic-87 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits the use or disclosure of information from other laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) prohibits or regulates the use or disclosure of information;
+  @action: ...provides a provision that forbids the use or disclosure of information;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-2-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-2;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exempt from secrecy provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Compliance with other provisions would be inconsistent.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-3;
+  logic: Deontic;
+  operator: means;
+  summary: Indicates a relationship between two concepts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-3;
+  logic: DescriptionLogic;
+  operator: specified in the regulations;
+  summary: Describes the conditions under which a secrecy provision is prescribed.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-4-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-4;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts secrecy provisions from requiring or authorizing the use or disclosure of information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-26wt-ss-5-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26wt-ss-5;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Entity exempted from secrecy provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Compliance with other provisions would be inconsistent.;
+  @action: Does not apply to the entity in relation to the statement.;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-4-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits certain decisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-5-ss-2a-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2a;
+  logic: Deontic;
+  operator: may;
+  summary: May be made by entity that made the application or another affected entity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2A) An application under paragraph (1)(ba);
+}
+
+privacy-amendment-notifiable-data-breaches-act-2017-sch-1-sec-5-ss-2d-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2d;
+  logic: Deontic;
+  operator: same meaning as;
+  summary: Entity definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Part IIIC;
+  @action: entity;
+}

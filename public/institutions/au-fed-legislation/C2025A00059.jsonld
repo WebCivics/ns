@@ -1,0 +1,2759 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.7",
+      "skos:note": "Commission is a listed entity, Chairperson is accountable authority, and officials are defined.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After subsection 6A(1)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-logic-deontic-1",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "db47cb50c857644116e8e30909739c86f0e942087625e01b7c6d91ffff11d014",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Chairperson's term may be related to Commission's functions",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Chairperson is accountable authority"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Commission is a listed entity, Chairperson is accountable authority, and officials are defined.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Substitute 'an AER State/Territory energy law' for 'a State/Territory energy law'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Section 44AK"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replaces a term with another",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Repeal a note",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 44AM(1) (note)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "beaca372fa744058df068466567e10c5a4f70e890558c42ed00e5ec5b7573727",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Repeal a note",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Subsection 44AP(1) (note)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "beaca372fa744058df068466567e10c5a4f70e890558c42ed00e5ec5b7573727",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-12-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Repeal a note",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Subsection 44AY(3) (note)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-13-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "beaca372fa744058df068466567e10c5a4f70e890558c42ed00e5ec5b7573727",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-13-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Subdivision B of Division 4 of Part IIIAA"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1"
+        },
+        {
+          "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2"
+        },
+        {
+          "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3"
+        },
+        {
+          "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4"
+        }
+      ],
+      "cml:integrityHash": "d2d36060fb8c3b6e2dc4ec4bc58a7b69a04fff86729a3c658b2e16dd7aeeea60",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Staff of AER must be persons engaged under the Public Service Act 1999. The AER may engage persons to give advice and perform services. Services of officers and employees may be made available to the AER.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(1) Subdivision B of Division 4 of Part IIIAA"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-logic-deontic-1",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": [
+        "d60114ed07a8966349fe82a80bdb073ce923f613337e1e8de5d29eaa81b6b405",
+        "cfef6da1d80ee7ed723cef0b2d9d758353725945e3738b21d986259731a09677",
+        "fe504f2c053cd0233618b8eb222e251cb3fb2892d8797f32fc85d08769d62bc6"
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-14-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Staff must be persons engaged under the Public Service Act 1999.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to engage persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Government or authority makes officers or employees available to AER for services. Establishes a Statutory Agency with the AER Chair as its Head. Terms and conditions of engagement are determined by the AER.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(2) Subdivision B of Division 4 of Part IIIAA"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-1",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-2",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-3",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-alleninterval-4",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-5",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": [
+        "d316aab6117214cc27d9d7c15eec3b63f6a8999d1d41e19a7f3cc701f4023ffe",
+        "884b62be65f320b34ed3b07f19b7d6a263f195c84d5fd5b304785e54cba62dbb",
+        "cc6308b14f37d86d77020e1e2916c129637b52b1113ebab4e251b7c3812753d8"
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-14-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the AER Chair and the APS employees assisting the AER Chair constitute a Statutory Agency during the period specified in this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Establishes the duration of the Statutory Agency",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) For the purposes of the Public Service Act 1999:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission granted by government or authority.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permits",
+      "cml:premiseText": "(2) The AER may, on behalf of the Commonwealth..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the AER Chair and the APS employees assisting the AER Chair together constitute a Statutory Agency.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes a Statutory Agency",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "constitutes",
+      "cml:premiseText": "(2) For the purposes of the Public Service Act 1999:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the AER Chair is the Head of that Statutory Agency.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Designates the AER Chair as the Head of the Statutory Agency",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(2) For the purposes of the Public Service Act 1999:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the AER Chair and the APS employees assisting the AER Chair constitute a Statutory Agency.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes the Statutory Agency as a whole",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "constitutes",
+      "cml:premiseText": "(2) For the purposes of the Public Service Act 1999:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-logic-deontic-6",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Determines terms and conditions of engagement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "determines"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Commonwealth to reimburse a State or Territory for services of a person under an arrangement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(3) Subdivision B of Division 4 of Part IIIAA"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e9933d4f04c629b57d49d3c12addcf9387207d60c3d332cdbe7e45ca93382d64",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-14-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the Commonwealth to reimburse a State or Territory.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Subject to AER directions when performing services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14(4) Subdivision B of Division 4 of Part IIIAA"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "69e30f374994fde7188c9018fb382c027d269b99ef325607d5c19aafb03fe2fe",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-14-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person is subject to the directions of the AER.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to follow AER directions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(4) When performing services for the AER..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-14-ss-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.10",
+      "skos:note": "Omit 'a State/Territory energy law' and substitute 'an AER State/Territory energy law'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Paragraph 44AAEA(1)(c)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute with AER State/Territory energy law.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of using outdated State/Territory energy laws.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Omit 'a State/Territory energy law'"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-15"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.10",
+      "skos:note": "Substitute 'an AER State/Territory energy law' for 'a State/Territory energy law'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Section 44AAEC (heading)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "be22c5edd41b93eb8ff8ee0ef36489f47f73aeb04d143ffde43071f110ea73e9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to substitute",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-16"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Omit 'a State/Territory energy law' and substitute 'an AER State/Territory energy law'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Paragraph 44AAEC(1)(a)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-17-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-17"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Substitute 'an AER State/Territory energy law' for 'a State/Territory energy law'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Subsection 44AAEC(10)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replaces a term with another",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-18"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Substitute AER State/Territory energy law for State/Territory energy law.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Subsections 44AAEC(10) and (11)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e37a157c145b79d2d54ae8c89f84f668d9c328829047d13feac1beade041bfdf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-19"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.7",
+      "skos:note": "Repeal a section",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 8AB"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeals a section",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Omit specified phrase",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Subparagraph 44AAF(6)(a)(i)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "72918e4d1fb8bb74a96a5a1f4fbe3fa3608848e99ee1267850af57ff301c5a34",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Omit specified phrase",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of phrase",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Section 44AAC"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-20"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "List members of staff assisting AER",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 After subparagraph 44AAF(6)(a)(i)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c20231f65af8b3c5bbe93fd6960f5de7bc455870bf275038aa17b934ab7447e4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Listed members",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Membership obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "inclusion",
+      "cml:premiseText": "Staff assisting AER"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-21"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Renumber as subparagraph (v).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Subparagraph 44AAF(6)(a)(ii)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6437f3690ba98296f858388e0d411f7214989670aa2885c4d46195798c2c0c2b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-22-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-22"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23",
+      "@type": "cml:Concept",
+      "dc:description": "true",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.11",
+      "skos:note": "Provide evidence and documents upon request",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Paragraph 44AAFA(2)(c)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "124cafc4ef5bff9d5bfe2c854e2671afa47ed60e3451189ae87ef19d9b760df8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide evidence and documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST PROVIDE"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Substitute AER State/Territory energy law for State/Territory energy law.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 Section 44AAG"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-24-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "046663d49d597c9a461f8874d09342d5e6588e3aac5655fb7baa616554f2980d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-24-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-24"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Substitute energy law terminology",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Paragraph 44AAH(b)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-25-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-25"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Omit specific language from section 44AAC",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 Section 44AAH"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-26-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f51760538220346f847b0d7f4e3a2adb4ff3da95157636a0e70af8cc9cc6b66f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-26-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-26"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-27",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Substitute energy law terminology",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "27 Subsection 44AAI(1)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-27-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40bfc86b7ee7a380ba255b41491d5492afbcba111363351f1a844bafeb1c326b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-27",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-27-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-27"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Repeal Part IIIAB",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 Part IIIAB"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1d1a98c5aa6f54eb7eae21fcf731fb7c518efe22c87e2b2988bfb24e8fc42cc3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a",
+      "@type": "cml:Concept",
+      "dc:description": "true",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.7",
+      "skos:note": "Commission must provide resources to AER.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28A Function of Commission in relation to providing resources to"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6826fc4600cb6c0985f7b8be00dfda75c9b8f4fe670a2ba3fd32a0e264a48691",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-28a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide resources",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST PROVIDE"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-28a"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Omit specific phrase from notice.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 Paragraph 155(1)(c)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c89033fb2536ed822176b60c5283d1a3550338d7be4c6f4b38668c5d3c66b0e1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-29"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.7",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After section 28"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Inserts the Australian Energy Regulator",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 After paragraph 155AAA(12)(lb)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3e09452100434a57b2e4f38752412dc0fa8fafe7d459902d7c765121a861d56a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-30"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-31",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "Omit “the AER or”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 Paragraph 157A(1)(c)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-31-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "eee7a8e63227553e8d6ca3b15cb02e504aecd007d8027c9e4d6c46fee1caabe2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-31",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-31-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-31"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-32",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.12",
+      "skos:note": "List of individuals who are not allowed to be a member of the staff of the AER.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "32 After paragraph 157A(1)(c)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-32-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cd2df737e4d6535a2abe5e6c46e6263bdb17207375027922e41a20551349bcaa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-32",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-32-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-32"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-33",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.13",
+      "skos:note": "Substitute paragraph (1)(d) for paragraph (1)(c)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "33 Subsection 157A(2)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-33-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "276e4c22739452ce81176390373836e14ff64ea2f74e111b0ab094ebc1b6e0f6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-33",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-33-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-33"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.13",
+      "skos:note": "Omit specific phrase from provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "34 Paragraph 158B(1)(a)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0deda236da76358e0b401000ed41622be2a59b1bda010bd05fdc329a561f3e1d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-34",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-34"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.13",
+      "skos:note": "Omit specific phrase from text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "35 Paragraph 158B(1)(f)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8045cd1e9a3ff06ed10390baa23cd43be67313c4b86d0f22af29740b515c0532",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-35",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-35"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.13",
+      "skos:note": "Omit specific phrase from text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36 Subsection 158B(5)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "33ea320f3781dccc614251d110684bd9e1a77d11c086e050665ca338bfae873c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-36",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Omit specific phrase from text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Forbid"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-36"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.7",
+      "skos:note": "Defines AER State/Territory energy law",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 44AB"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4e9bac0c35d99f533f5d3c7133fe37ca15a7d6ce7191c01ba191e0b48ab56136",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "AER State/Territory energy law means...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Identifies specific laws",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "a uniform energy law that applies as a law of a State or Territory;"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.8",
+      "skos:note": "Defines AER officials and purposes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 44AE(1)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-alleninterval-1",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-deontic-2",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fc0522d2eb8b8ca65c05e608f0fb04295a68a76adf0609bad9992b86fe4e45b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "AER functions overlap with Division 3 functions",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines temporal relationship between AER functions and Division 3 functions",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "overlaps",
+      "cml:premiseText": "Purposes of the AER include the functions of the AER under Division 3 of this Part"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other persons are not officials of the AER",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits listing other entities as officials of the AER",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "prohibition",
+      "cml:premiseText": "The following persons are officials of the AER: ..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other entities may be listed as officials of the AER",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permits listing other entities as officials of the AER under certain conditions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "permission",
+      "cml:premiseText": "... (i) the AER members; ..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.8",
+      "skos:note": "Insert 'to be a non-corporate Commonwealth entity' before 'not to be'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Paragraph 44AE(3)(a)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ac6a9e866ee3d9a0022478afa4848495183e33c4764ec7b5938ae7df783baa9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of a phrase into a text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "insertion"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.8",
+      "skos:note": "Omit specified text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Paragraph 44AE(3)(b)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92cbe494052fceb80eba1a19be947880e799721986e15408ad22d188816a35fc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Omit specified text",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Forbid"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Omit 'a State/Territory energy law' and substitute 'an AER State/Territory energy law'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Sections 44AI to 44AJ"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "046663d49d597c9a461f8874d09342d5e6588e3aac5655fb7baa616554f2980d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.9",
+      "skos:note": "Omit 'a State/Territory energy law' and substitute 'an AER State/Territory energy law'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 44AK (heading)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ec952e3e741971e379d7d90ef5b905eaa51e70b0a2f75a3b2560edcf58b5a5ad",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.14",
+      "skos:note": "Definitions for Schedule 2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Definitions"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "47f808859adb750df5f43c745735fb11d8f4b9abfd9aec20edac015a9f7b7031",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.15",
+      "skos:note": "Delegation continues in force after commencement day.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Delegations"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48f185621db5204aa434188f5502ebf04b2c964302b0a24202018f0d67ec8575",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to continue delegation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "continues",
+      "cml:premiseText": "(2)"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.15",
+      "skos:note": "Transfer of documents to the AER is obligatory for documents in certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Transfer of documents to the AER"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8faa14f61f4e89483c2dcf3726ec4df3fccdbf2be8cc8e70fc15a88dbff74cfb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to transfer documents",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(1)"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.15",
+      "skos:note": "Regulations prescribing State/Territory energy laws",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Regulations prescribing State/Territory energy laws"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fda22ddc6944541d2db09333418d9f2e13627c89b1ddf8b54b7c5bc71324d1da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.16",
+      "skos:note": "Continues to cover and apply to APS employees",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Enterprise Agreement"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "785c024f560c392a28c80e669f21caad8da1e9d6baf3774802e98b82d2d36da2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Variation of employment terms not prevented",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "implies"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-5"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.17",
+      "skos:note": "References in Enterprise Agreement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 References in Enterprise Agreement"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "65310703d382d866fd30823cc81f4ad5c6e92ea7f91029d1182e41de4ca23c42",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-6-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-6"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.18",
+      "skos:note": "Rules may be made for carrying out or giving effect to the Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Transitional rules"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f12b2171d85e410c9e6c4ae7c365310084a03b981ba2794985ab4953acdefb2c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sch-2-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sch-2-sec-7"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-norm",
+        "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4c09708fd914b2767558d55c00afb2a9f8e8ef51536e00c245462719e5edb610",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:note": "Start of Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5e05583b97bd84b1a0fd360a869d3b2298759f1aaf44f790c941d8d023930085",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2026."
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:note": "Note on table limitations and amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2026"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "34aee70ec1fb94be8ea72b1c974e51cd0bb617fe1963f2beb4e7397f353ac238",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-1-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The text is a short title.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a legal document",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "06755e4620e61d3520093a58bfaa0b004425cf74a8f49ef66ed6869afb430e04",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf",
+      "asserts": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e0daedf34cbdaf3dad11ed46725f4789a55b7643f81e77ae559afd6345aa4a4d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025-sec-3"
+    },
+    {
+      "@id": "doc:au/c2025a00059",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to separate the Australian Energy Regulator from the Australian Competition and Consumer Commission, and for related purposes",
+      "dc:identifier": [
+        "C2025A00059",
+        "No. 59 of 2025"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Competition and Consumer Amendment (Australian Energy Regulator Separation) Act 2025"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2025A00059/latest/downloads",
+        "competition-and-consumer-amendment-australian-energy-regulator-separation-act-2025.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

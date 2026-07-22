@@ -1,0 +1,3093 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment (Forensic Procedures) Act 2001
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: may be cited;
+  summary: Citation provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-2-ss-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-ss-1;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts at a specified time.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Sections 1, 2 and 3, items 2 and 3 of Schedule 1, and Schedule 2 commence on the day on which this Act receives the Royal Assent.;
+  @action: The provision commences on that day.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-2-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Commences during a specific time period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Sections 1, 2 and 3, items 2 and 3 of Schedule 1, and Schedule 2 commence on the day on which this Act receives the Royal Assent.;
+  @action: The commencement occurs during that day.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-2-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-ss-1;
+  logic: LTL;
+  operator: during;
+  summary: Commences during a specific time period.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Sections 1, 2 and 3, items 2 and 3 of Schedule 1, and Schedule 2 commence on the day on which this Act receives the Royal Assent.;
+  @action: The commencement occurs during that day.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-2-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-ss-1;
+  logic: Diffusion;
+  operator: during;
+  summary: Commences during a specific time period.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Sections 1, 2 and 3, items 2 and 3 of Schedule 1, and Schedule 2 commence on the day on which this Act receives the Royal Assent.;
+  @action: The commencement occurs during that day.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-2-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-ss-1;
+  logic: CogAI;
+  operator: during;
+  summary: Commences during a specific time period.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Sections 1, 2 and 3, items 2 and 3 of Schedule 1, and Schedule 2 commence on the day on which this Act receives the Royal Assent.;
+  @action: The commencement occurs during that day.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-1-ss-5-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-5;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines terms with obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: confer;
+  summary: Confers power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Function or power is conferred on one or more of the following persons;
+  @action: Obligation to perform duty;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for search warrants and arrest warrants;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Authorized to issue search warrants, or warrants of arrest;
+  @action: Temporal interval for search warrants and arrest warrants;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval for functions and powers conferred on certain persons;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Function or power is neither judicial nor incidental to a judicial function or power;
+  @action: Temporal interval for functions and powers conferred on certain persons;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Diffusion;
+  operator: and;
+  summary: Combines rules for functions and powers conferred on certain persons with definitions of Magistrate and Justice of the Peace;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Rules for functions and powers conferred on one or more of the following persons: (a) a State or Territory judge; (b) a magistrate; (c) a Justice of the Peace or other person;
+  @action: Combines rules with definitions;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission or obligation to make arrangements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: not;
+  summary: Function or power is not as a court or member of a court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The function or power is conferred on the person only in a personal capacity and not, in the case of a State or Territory judge or magistrate, as a court or a member of a court.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: personal;
+  summary: Function or power is personal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The function or power is conferred on the person only in a personal capacity and not, in the case of a State or Territory judge or magistrate, as a court or a member of a court.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Function or power is during a personal capacity.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The function or power is conferred on the person only in a personal capacity and not, in the case of a State or Territory judge or magistrate, as a court or a member of a court.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: Function or power is during a personal capacity.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The function or power is conferred on the person only in a personal capacity and not, in the case of a State or Territory judge or magistrate, as a court or a member of a court.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-4;
+  logic: Deontic;
+  operator: has;
+  summary: Protection and immunity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A State or Territory judge or magistrate performing a conferred function, or exercising a conferred power...;
+  @action: has the same protection and immunity as if he or she were performing that function, or exercising that power, as, or as a member of, a court...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between functions and powers;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) A State or Territory judge or magistrate performing a conferred function, or exercising a conferred power...;
+  @action: has the same protection and immunity as if he or she were performing that function, or exercising that power, during that time;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-4;
+  logic: LTL;
+  operator: during;
+  summary: Temporal relation between functions and powers;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) A State or Territory judge or magistrate performing a conferred function, or exercising a conferred power...;
+  @action: has the same protection and immunity as if he or she were performing that function, or exercising that power, during that time;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-4;
+  logic: Deontic;
+  operator: must;
+  summary: Protection and immunity for judges and magistrates;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A State or Territory judge or magistrate performing a conferred function, or exercising a conferred power...;
+  @action: has the same protection and immunity as if he or she were performing that function, or exercising that power, must be granted;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-5-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-5;
+  logic: Deontic;
+  operator: has;
+  summary: Protection and immunity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person performing function or exercising power;
+  @action: Same protection and immunity as employment with a State or Territory court;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-6-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-6;
+  logic: Deontic;
+  operator: applicable;
+  summary: Section applies regardless of law's enactment time;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) This section applies...;
+  @action: ...A law of the Commonwealth relating to criminal matters;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: confer;
+  summary: Confers power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Function or power is conferred on one or more of the following persons;
+  @action: Obligation to perform duty;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for search warrants and arrest warrants;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Authorized to issue search warrants, or warrants of arrest;
+  @action: Temporal interval for search warrants and arrest warrants;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval for functions and powers conferred on certain persons;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Function or power is neither judicial nor incidental to a judicial function or power;
+  @action: Temporal interval for functions and powers conferred on certain persons;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Diffusion;
+  operator: and;
+  summary: Combines rules for functions and powers conferred on certain persons with definitions of Magistrate and Justice of the Peace;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Rules for functions and powers conferred on one or more of the following persons: (a) a State or Territory judge; (b) a magistrate; (c) a Justice of the Peace or other person;
+  @action: Combines rules with definitions;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-2-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission or obligation to make arrangements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-8-ss-3-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: applicableTo;
+  summary: Section applies to specified laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Function or power conferred by law;
+  @action: Law made before, on or after commencement;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-8-ss-4-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-4;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusion of references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-8-ss-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-4;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Reference to Commonwealth law is a subclass of reference to this Act;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Forensic procedures must be carried out.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: AFP function means...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for an existing one;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-10-2-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 10, subsection 2;
+  @action: During DNA database system definition;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-11-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of exercise of a function;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Exercise of a function includes perform a duty.;
+  @action: Exercise of a function includes performing a duty.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-11-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for functions;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-13-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: allows;
+  summary: Permission for forensic procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-15-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of a term into a definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-18-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to modify definitions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-19-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19;
+  logic: Deontic;
+  operator: insertion;
+  summary: Inserts a definition.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-19-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Defines a class hierarchy for 'judge'.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-12-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with a specific meaning.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-21-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with a specific meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24a-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24a;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines the term 'order';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'prescribed offence';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: DescriptionLogic;
+  operator: classifies;
+  summary: Classifies the term 'prescribed offence' as a legal concept;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-27-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with an obligation to use it correctly;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-27-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-28-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with a clear obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-28-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-14-2-logic-53 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: Deontic;
+  operator: implies;
+  summary: Offender's conviction offence is related to proposed forensic procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) any other indictable offence arising out of the same circumstances; or (iii) any other indictable offence in respect of which the evidence likely to be obtained as a result of a proposed forensic procedure carried out on the suspect is likely to have probative value;;
+  @action: Offender's conviction offence for which the offender was convicted and to which an application for an order authorising a forensic procedure relates.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-14-2-logic-54 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: LinearLogic;
+  operator: and;
+  summary: Offender's conviction offence is related to proposed forensic procedure and evidence likely to be obtained has probative value;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (ii) any other indictable offence arising out of the same circumstances; or (iii) any other indictable offence in respect of which the evidence likely to be obtained as a result of a proposed forensic procedure carried out on the suspect is likely to have probative value;;
+  @action: Offender's conviction offence for which the offender was convicted and to which an application for an order authorising a forensic procedure relates.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-14-2-logic-55 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Proposed forensic procedure is carried out during same circumstances as indictable offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (ii) any other indictable offence arising out of the same circumstances; or (iii) any other indictable offence in respect of which the evidence likely to be obtained as a result of a proposed forensic procedure carried out on the suspect is likely to have probative value;;
+  @action: Proposed forensic procedure is carried out during same circumstances as indictable offence;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-14-2-logic-56 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: LTL;
+  operator: during;
+  summary: Proposed forensic procedure is carried out during same circumstances as indictable offence and evidence likely to be obtained has probative value;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (ii) any other indictable offence arising out of the same circumstances; or (iii) any other indictable offence in respect of which the evidence likely to be obtained as a result of a proposed forensic procedure carried out on the suspect is likely to have probative value;;
+  @action: Proposed forensic procedure is carried out during same circumstances as indictable offence and evidence likely to be obtained has probative value;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-14-2-logic-57 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2;
+  logic: Diffusion;
+  operator: during;
+  summary: Proposed forensic procedure is carried out during same circumstances as indictable offence and evidence likely to be obtained has probative value;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (ii) any other indictable offence arising out of the same circumstances; or (iii) any other indictable offence in respect of which the evidence likely to be obtained as a result of a proposed forensic procedure carried out on the suspect is likely to have probative value;;
+  @action: Proposed forensic procedure is carried out during same circumstances as indictable offence and evidence likely to be obtained has probative value;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-30-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term with a specific meaning.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-30-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30;
+  logic: DescriptionLogic;
+  operator: has definition;
+  summary: Provides a formal definition for the term.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-31-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term with a clear obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-31-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term with a clear obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with legal obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-5-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-5;
+  logic: Deontic;
+  operator: Must;
+  summary: Obligation to destroy forensic material;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Forensic procedure used;
+  @action: Destroy means of identification;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-5-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-5;
+  logic: DescriptionLogic;
+  operator: Classifies;
+  summary: Classification of destruction as obligation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Definition of destruction;
+  @action: Obligation to destroy forensic material;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-6-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-6;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of transgender person;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-6-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-6;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Person;
+  @action: Transgender person;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-6-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-6;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Subclass relationship;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Transgender person;
+  @action: Recognised transgender person;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-7-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-7;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of gender identity for transgender persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-7-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Transgender person;
+  @action: Member of the opposite sex;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-ss-7-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-ss-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Transgender person;
+  @action: Member of the same sex;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-2-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Deontic;
+  operator: isUnderSentence;
+  summary: The person is under sentence in relation to a prescribed offence or serious offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) is serving a sentence in a prison (including a gaol, lock-up or other place of detention); or (b) is serving a sentence of a kind, or subject to an order of a kind, provided for in subsection 20AB(1) as a sentence or order that may be passed or made by a court, under that section, in respect of a person convicted of a federal offence;;
+  @action: The person is under sentence in relation to a prescribed offence or serious offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-2-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Deontic;
+  operator: isReleasedUnderParoleOrder;
+  summary: A person released under a parole order made under subsection 19AL(1) or (2) is also under sentence in relation to a prescribed offence or serious offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) is released under a parole order made under subsection 19AL(1) or (2);;
+  @action: The person is under sentence in relation to a prescribed offence or serious offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-2-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Deontic;
+  operator: isSubjectToConditionalRelease;
+  summary: A person convicted and conditionally released as provided for in subsection 20(1) is also under sentence in relation to a prescribed offence or serious offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (g) is convicted and conditionally released as provided for in subsection 20(1), either: (i) in the case of paragraph 20(1)(a)—without sentence being passed; or (ii) in the case of paragraph 20(1)(b)—after sentence has been passed.;
+  @action: The person is under sentence in relation to a prescribed offence or serious offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: AllenInterval;
+  operator: overlapsWithSentence;
+  summary: A person serving a sentence that overlaps with the sentence imposed for a federal offence is also under sentence in relation to a prescribed offence or serious offence.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (f) is subject to an order made under Division 9 of Part 1B;;
+  @action: The person is under sentence in relation to a prescribed offence or serious offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-16-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: LTL;
+  operator: isTracedBySentence;
+  summary: A person serving a sentence that is traced by the sentence imposed for a federal offence is also under sentence in relation to a prescribed offence or serious offence.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (f) is subject to an order made under Division 9 of Part 1B;;
+  @action: The person is under sentence in relation to a prescribed offence or serious offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36a-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36a;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-37-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Repeal and substitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Provision text;
+  @action: Action taken;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-41-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Deontic;
+  operator: shall;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-41a-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits taking of certain prints;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-45-ss-6-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45-ss-6;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Has right to address the magistrate and cross-examine witnesses.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) The suspect or his or her representative:;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-45-ss-6a-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45-ss-6a;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition of giving leave without substantial reasons.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23xl-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xl;
+  logic: Deontic;
+  operator: hasPermission;
+  summary: State has permission to take hair samples;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-50-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-50;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'yes (medical practitioner)';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-53-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-53;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permits self-sampling;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-54-logic-87 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-54;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person is asked to help carry out a forensic procedure.;
+  @action: Use reasonable force to enable the forensic procedure.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-54a-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-54a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits taking of certain prints;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-20-2-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Preventing the carrying out of forensic procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: A person is guilty of an offence if the person obstructs, hinders or resists a person carrying out a forensic procedure in accordance with this Part.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of carrying out forensic procedure on serious offender or prescribed offender.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classification of serious offenders and prescribed offenders.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must inform the offender;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide informed consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender consents after request and information provided.;
+  @action: Informed consent given.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Authorize;
+  summary: Requires authorisation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Offender must be allowed to communicate with legal practitioner.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable must allow the offender to communicate...;
+  @action: The constable must allow the offender to communicate with the legal practitioner in private.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must not;
+  summary: Constable may request offender to consent to forensic procedure unless reasonable grounds for evidence destruction exist.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWH states that a constable may request the offender to consent...;
+  @action: The constable must not request the offender to consent to the forensic procedure unless there are reasonable grounds for evidence destruction.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Epistemic;
+  operator: May suspect;
+  summary: Constable may suspect reasonable grounds for evidence destruction based on suspicion.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable suspects on reasonable grounds...;
+  @action: The constable may suspect that there are reasonable grounds for evidence destruction.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Constable must be satisfied on balance of probabilities before requesting consent.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 23XWI states that the constable must be satisfied on the balance of probabilities...;
+  @action: The constable must be satisfied on a recurring trace that the request for consent is justified.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Offender has right to communicate with legal practitioner in private.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable must allow the offender to communicate...;
+  @action: The offender has a right to communicate with the legal practitioner in private.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must not;
+  summary: Constable may request consent for forensic procedure unless justified.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWH states that a constable may request the offender to consent...;
+  @action: The constable must not request the offender to consent to the forensic procedure unless it is justified.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-3-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to carry out forensic procedures;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A forensic procedure may be carried out...;
+  @action: ...on a serious offender or prescribed offender who is a volunteer only if authorized by and in accordance with Division 6B.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-3-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for authorization;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A forensic procedure may be carried out on...;
+  @action: ...on a serious offender or prescribed offender who is a volunteer only if authorized by and in accordance with Division 6B.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-3;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Temporal trace for authorization;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A forensic procedure may be carried out on...;
+  @action: ...on a serious offender or prescribed offender who is a volunteer only if authorized by and in accordance with Division 6B.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-3-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-3;
+  logic: Diffusion;
+  operator: Informed Consent;
+  summary: Informed consent for forensic procedures;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: 23XWG Informed consent to forensic procedures;
+  @action: ...who is a volunteer only if authorized by and in accordance with Division 6B.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-3-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-3;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Knowledge representation for authorization;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A forensic procedure may be carried out on...;
+  @action: ...on a serious offender or prescribed offender who is a volunteer only if authorized by and in accordance with Division 6B.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of carrying out forensic procedure on serious offender or prescribed offender.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classification of serious offenders and prescribed offenders.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must inform the offender;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide informed consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender consents after request and information provided.;
+  @action: Informed consent given.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Authorize;
+  summary: Requires authorisation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Offender must be allowed to communicate with legal practitioner.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable must allow the offender to communicate...;
+  @action: The constable must allow the offender to communicate with the legal practitioner in private.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must not;
+  summary: Constable may request offender to consent to forensic procedure unless reasonable grounds for evidence destruction exist.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWH states that a constable may request the offender to consent...;
+  @action: The constable must not request the offender to consent to the forensic procedure unless there are reasonable grounds for evidence destruction.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Epistemic;
+  operator: May suspect;
+  summary: Constable may suspect reasonable grounds for evidence destruction based on suspicion.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable suspects on reasonable grounds...;
+  @action: The constable may suspect that there are reasonable grounds for evidence destruction.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Constable must be satisfied on balance of probabilities before requesting consent.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 23XWI states that the constable must be satisfied on the balance of probabilities...;
+  @action: The constable must be satisfied on a recurring trace that the request for consent is justified.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Offender has right to communicate with legal practitioner in private.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 22(2) states that the constable must allow the offender to communicate...;
+  @action: The offender has a right to communicate with the legal practitioner in private.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-2-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-2;
+  logic: Deontic;
+  operator: Must not;
+  summary: Constable may request consent for forensic procedure unless justified.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWH states that a constable may request the offender to consent...;
+  @action: The constable must not request the offender to consent to the forensic procedure unless it is justified.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of carrying out forensic procedure on serious offender or prescribed offender.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of prohibition of carrying out forensic procedure.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classification of serious offenders and prescribed offenders.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (serious offender or prescribed offender is a suspect or a volunteer);
+  @action: (person is not authorised to carry out forensic procedure under this Division);
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must inform the offender;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-22-2-ss-1-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide informed consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender consents after request and information provided.;
+  @action: Informed consent given.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-2-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Constable has taken into account the matters set out in section 23XWL.;
+  @action: Inform serious offender;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-2-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Constable must ensure a written record is made and a copy is available to the serious offender.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-3-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Constable has authority to order forensic procedure.;
+  @action: Inform serious offender of non-consensual forensic procedure.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Constable has taken into account the matters set out in section 23XWL.;
+  @action: Inform serious offender;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-2-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Constable must ensure a written record is made and a copy is available to the serious offender.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-24-2-ss-1-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Authorized applicant may apply for order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines Division 6 person;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: DescriptionLogic;
+  operator: has class;
+  summary: Classifies Division 6 person;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-1-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Judge or magistrate orders;
+  @action: Offender must permit procedure;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-1-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Authorized applicant may apply for order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines Division 6 person;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: DescriptionLogic;
+  operator: has class;
+  summary: Classifies Division 6 person;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-3-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Affidavit is required;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-3-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Judge/Magistrate orders;
+  @action: Offender must permit procedure;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Authorized applicant may apply for order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of refusing forensic procedure without reasonable excuse.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender bears evidential burden in relation to exception of reasonable excuse.;
+  @action: Refusal is an offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: Imprisonment;
+  summary: Imprisonment for 12 months for refusing forensic procedure without reasonable excuse.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender is guilty of an offence if refuses or fails to permit procedure.;
+  @action: Imprisonment for 12 months.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: Refusal implies guilt and imprisonment.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Offender's refusal implies guilt.;
+  @action: Imprisonment follows refusal.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between refusal and imprisonment.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Refusal precedes imprisonment.;
+  @action: 12 months imprisonment for refusal.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-5-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-5;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-6-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-6;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to order carrying out of forensic procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-7-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-7;
+  logic: Deontic;
+  operator: consider;
+  summary: Consider the seriousness of circumstances and potential assistance to law enforcement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) whether this Part would authorise the forensic procedure to be carried out in the absence of the order;;
+  @action: (b) the seriousness of the circumstances surrounding the commission of the offence by the offender;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-7-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-7;
+  logic: Deontic;
+  operator: justified;
+  summary: Determine if the carrying out of the forensic procedure is justified in all the circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (d) whether the carrying out of the forensic procedure is justified in all the circumstances.;
+  @action: null;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-7-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-7;
+  logic: AllenInterval;
+  operator: carry out;
+  summary: Check if the carrying out of the forensic procedure could assist law enforcement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) whether the carrying out of the forensic procedure could assist law enforcement, whether Federal or otherwise;;
+  @action: null;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-7-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-7;
+  logic: LTL;
+  operator: carry out;
+  summary: Check if the carrying out of the forensic procedure is part of a recurring trace.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) whether the carrying out of the forensic procedure could assist law enforcement, whether Federal or otherwise;;
+  @action: null;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-7-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-7;
+  logic: Deontic;
+  operator: authorise;
+  summary: Check if this Part would authorise the forensic procedure to be carried out in the absence of the order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) whether this Part would authorise the forensic procedure to be carried out in the absence of the order;;
+  @action: null;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-8-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of forensic analysis results.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-8-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-8;
+  logic: Epistemic;
+  operator: Confidentiality;
+  summary: Maintains confidentiality until appeal period expires or conviction is quashed.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-8-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-8;
+  logic: LTL;
+  operator: Until;
+  summary: Disclose results until later of appeal period or conviction being quashed.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-8-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-8;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Disclosure is implied to be conditional on appeal period expiration or conviction quashing.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-8-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-8;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Results disclosure overlaps with appeal period and conviction quashing.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-1-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Judge or magistrate orders;
+  @action: Offender must permit procedure;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-1-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Authorized applicant may apply for order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines Division 6 person;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-2-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-2;
+  logic: DescriptionLogic;
+  operator: has class;
+  summary: Classifies Division 6 person;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-3-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Affidavit is required;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-3-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Judge/Magistrate orders;
+  @action: Offender must permit procedure;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Authorized applicant may apply for order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of refusing forensic procedure without reasonable excuse.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender bears evidential burden in relation to exception of reasonable excuse.;
+  @action: Refusal is an offence.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: Deontic;
+  operator: Imprisonment;
+  summary: Imprisonment for 12 months for refusing forensic procedure without reasonable excuse.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offender is guilty of an offence if refuses or fails to permit procedure.;
+  @action: Imprisonment for 12 months.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: Refusal implies guilt and imprisonment.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Offender's refusal implies guilt.;
+  @action: Imprisonment follows refusal.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-26-2-ss-4-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2-ss-4;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between refusal and imprisonment.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Refusal precedes imprisonment.;
+  @action: 12 months imprisonment for refusal.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-30-2-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30-2;
+  logic: Deontic;
+  operator: >;
+  summary: Purpose restriction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Magistrate has an obligation to order retention of forensic material under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the seriousness of the circumstances surrounding the commission of the offence;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the best interests of the child or incapable person;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...whether the carrying out of the forensic procedure is justified in all the circumstances;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: LinearLogic;
+  operator: AND;
+  summary: Magistrate must consider multiple factors when determining whether to make an order.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the seriousness of the circumstances surrounding the commission of the offence; and ...whether the carrying out of the forensic procedure is justified in all the circumstances;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Magistrate has an obligation to order retention of forensic material under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the seriousness of the circumstances surrounding the commission of the offence;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the best interests of the child or incapable person;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...whether the carrying out of the forensic procedure is justified in all the circumstances;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-32-2-ss-2-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-2-ss-2;
+  logic: LinearLogic;
+  operator: AND;
+  summary: Magistrate must consider multiple factors when determining whether to make an order.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) In determining whether to make an order under this section, the magistrate is to take into account...;
+  @action: ...the seriousness of the circumstances surrounding the commission of the offence; and ...whether the carrying out of the forensic procedure is justified in all the circumstances;;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-2-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: Deontic;
+  operator: breach;
+  summary: Breach of obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) there has been a breach...;
+  @action: there has been a breach...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-2-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: During forensic procedure;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) any provision of this Part in relation to a forensic...;
+  @action: ...in relation to a forensic procedure carried out at any time before or after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-2-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: LTL;
+  operator: during;
+  summary: During forensic procedure;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (i) any provision of this Part in relation to a forensic...;
+  @action: ...in relation to a forensic procedure carried out at any time before or after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-2-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: Diffusion;
+  operator: during;
+  summary: During forensic procedure;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (i) any provision of this Part in relation to a forensic...;
+  @action: ...in relation to a forensic procedure carried out at any time before or after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-34-2-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: CogAI;
+  operator: during;
+  summary: During forensic procedure;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (i) any provision of this Part in relation to a forensic...;
+  @action: ...in relation to a forensic procedure carried out at any time before or after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-59-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-59;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits destruction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-4-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-4;
+  logic: Deontic;
+  operator: Must;
+  summary: Obligation to destroy forensic material;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If a warrant for the apprehension of the suspect is issued...;
+  @action: ...the forensic material must be destroyed as soon as practicable after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-4-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-4;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Temporal interval for destruction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If a warrant for the apprehension of the suspect is issued...;
+  @action: ...the forensic material must be destroyed as soon as practicable after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-4-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-4;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal interval for destruction;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If a warrant for the apprehension of the suspect is issued...;
+  @action: ...the forensic material must be destroyed as soon as practicable after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-4-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-4;
+  logic: Diffusion;
+  operator: Must;
+  summary: Diffusion of destruction obligation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) If a warrant for the apprehension of the suspect is issued...;
+  @action: ...the forensic material must be destroyed as soon as practicable after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-4-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-4;
+  logic: CogAI;
+  operator: Classifies;
+  summary: Artificial intelligence classification;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If a warrant for the apprehension of the suspect is issued...;
+  @action: ...the forensic material must be destroyed as soon as practicable after...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-5-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-5;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to extend retention period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A magistrate may...;
+  @action: ...the period for which forensic material may be retained under this section, if the magistrate is satisfied there are special reasons for doing so.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-5-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-5;
+  logic: AllenInterval;
+  operator: Extension;
+  summary: Temporal extension of retention period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) A magistrate may...;
+  @action: ...the period for which forensic material may be retained under this section, if the magistrate is satisfied there are special reasons for doing so.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-5-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-5;
+  logic: LTL;
+  operator: Extension;
+  summary: Temporal extension of retention period;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) A magistrate may...;
+  @action: ...the period for which forensic material may be retained under this section, if the magistrate is satisfied there are special reasons for doing so.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-5-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-5;
+  logic: Diffusion;
+  operator: Extension;
+  summary: Diffusion of retention period extension;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) A magistrate may...;
+  @action: ...the period for which forensic material may be retained under this section, if the magistrate is satisfied there are special reasons for doing so.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-5-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-5;
+  logic: CogAI;
+  operator: Extension;
+  summary: CogAI application of retention period extension;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) A magistrate may...;
+  @action: ...the period for which forensic material may be retained under this section, if the magistrate is satisfied there are special reasons for doing so.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-6-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate must notify person from whom forensic material was taken before extending period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) A magistrate to whom an application is made under subsection (5) is not to extend the period unless: (a) the person from whom the forensic material was taken has been notified by the applicant for the extension that the application has been made; and;
+  @action: the person or his or her legal representative or interview friend (if any) has been given the opportunity to speak to or make a submission to the magistrate concerning the extension.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-8-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Ensure notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) The magistrate is to ensure that the responsible person in relation to the DNA database system is notified of any extension given under this section.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-8-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-8;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval for notification;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) The magistrate is to ensure that the responsible person in relation to the DNA database system is notified of any extension given under this section.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-8-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-8;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Temporal interval for notification;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (8) The magistrate is to ensure that the responsible person in relation to the DNA database system is notified of any extension given under this section.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-8-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-8;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Notification diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) The magistrate is to ensure that the responsible person in relation to the DNA database system is notified of any extension given under this section.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-63-ss-8-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-63-ss-8;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Artificial intelligence involvement;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) The magistrate is to ensure that the responsible person in relation to the DNA database system is notified of any extension given under this section.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-2-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Ensure action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Commissioner must ensure...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-36-2-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to destroy forensic material;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Commissioner has an obligation...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-40-2-ss-1-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-40-2-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-1-2-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Crime scene must be present.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-5-2-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide information on serious offenders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-2-ss-2-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reckless matching of DNA profiles;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person is guilty of an offence if: (a) the person’s conduct causes the matching that is not permitted by this Part of a DNA profile on an index of the DNA database system with a DNA profile on the same or another index of the DNA database system; and (b) the person is reckless as to any such matching of profiles.;
+  @action: Penalty: Imprisonment for 2 years.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-2-ss-2-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reckless conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person is guilty of an offence if: (a) the person’s conduct causes the matching that is not permitted by this Part of a DNA profile on an index of the DNA database system with a DNA profile on the same or another index of the DNA database system; and;
+  @action: Penalty: Imprisonment for 2 years.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-2-ss-2-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reckless conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person is reckless as to any such matching of profiles.;
+  @action: Penalty: Imprisonment for 2 years.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-6-2-ss-3-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-3;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts conduct from offense for administering DNA database system;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-42-2-ss-1-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42-2-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits recording or retention of forensic material when required to be destroyed.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-42-2-ss-2-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42-2-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Ensure removal of identifying information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-42-2-ss-3-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42-2-ss-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to remove identifying information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-42-2-ss-4-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42-2-ss-4;
+  logic: Deontic;
+  operator: retain;
+  summary: Must retain DNA profiles for specified periods;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: DNA profile placed on database system;
+  @action: Identifying information must be retained;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-42-2-ss-4-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42-2-ss-4;
+  logic: DescriptionLogic;
+  operator: hasClass;
+  summary: DNA profile has a retention period;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: DNA profile is placed on database system;
+  @action: Retention period applies to DNA profiles;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-69-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-69;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must inform suspect or offender in a language they can understand;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-70-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-70;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-71-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-71;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-72-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-72;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-73-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-73;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-75-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Material must be provided within 7 days.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-76-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-76;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yn-ss-2-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yn-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits unauthorized access or use;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yo-ss-1-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yo-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person has access to any information stored on the DNA database system or to any other information revealed by a forensic procedure carried out on a suspect, offender or volunteer;;
+  @action: Penalty: Imprisonment for 2 years.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yo-ss-1-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yo-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reckless disclosure of information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the person is reckless as to any such disclosure;;
+  @action: Penalty: Imprisonment for 2 years.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yo-ss-1-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yo-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes a temporal relationship between events.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) the person is reckless as to any such disclosure;;
+  @action: Recklessness occurs at time of disclosure.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yo-ss-1-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yo-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses information through a network.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the person has access to any information stored on the DNA database system or to any other information revealed by a forensic procedure carried out on a suspect, offender or volunteer;;
+  @action: Information is diffused through the network.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yo-ss-2-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yo-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permits disclosure of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person may only disclose...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-46-2-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act requires disclosure of certain information.;
+  @action: A duty to disclose information exists.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-46-2-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-46-2;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permission to disclose information in certain circumstances;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure is permitted under certain conditions.;
+  @action: Permission to disclose information exists.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yp-ss-1-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yp-ss-1;
+  logic: Deontic;
+  operator: Authorization;
+  summary: Authorization for taking, retention and use of forensic material.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yp-ss-2-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yp-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows retention and use of forensic material.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yp-ss-3-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yp-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to retain and use forensic material.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yq-ss-2-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yq-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Staff member has the meaning it has in the Australian Federal Police Act 1979.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In subsection (1);
+  @action: staff member has the meaning it has in the Australian Federal Police Act 1979.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yq-ss-2-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yq-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Delegation occurs during the term of office of the Commissioner.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) In subsection (1);
+  @action: Delegation occurs during the term of office of the Commissioner.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yq-ss-2-logic-246 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yq-ss-2;
+  logic: Argumentation;
+  operator: may;
+  summary: Commissioner may delegate functions and powers to staff member.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) In subsection (1);
+  @action: Commissioner may delegate functions and powers to staff member.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-23yq-ss-2-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23yq-ss-2;
+  logic: Diffusion;
+  operator: through;
+  summary: Delegation occurs through the Commissioner.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) In subsection (1);
+  @action: Delegation occurs through the Commissioner.;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-80-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-50-2-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-50-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes a duty to destroy forensic material.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-84-logic-250 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-84;
+  logic: Deontic;
+  operator: Modify;
+  summary: Change text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-85-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-85;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting phrases from definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-1-sec-86-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-86;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to cause a further review.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-1-2-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-2;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: foreign restraining order means an order...;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-1-2-logic-254 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Applies to class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-forensic-procedures-act-2001-sch-2-sec-3-2-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Direct prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

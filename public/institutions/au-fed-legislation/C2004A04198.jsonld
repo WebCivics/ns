@@ -1,0 +1,4455 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Citation and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9842481e490a3429e831cdfa2adbffc4966e72d923a3e6d487a765fea6fb8047",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Section 10"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:note": "Order for examination on oath before court or Registrar",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(1) Section 10"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-10-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-10-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5583e663bd65c7426cbf25478352e1da55f87b44ba25eb7d37145c24e48d803e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-10-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-10"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State to order examination",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-10-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:note": "An ancillary ordenriay must be made under paragraph 49J (1) (c)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(2) Section 10"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-10-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-10-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fdb7ee6f290a9c59eea54ab32760f2e241a463684ab9c0c7749f03e0a8444d3c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-10-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-10"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to make an ancillary ordenriay",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-10-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-10-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Section 11"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-11-norm",
+        "concept:crimes-legislation-amendment-act-sec-11-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "17d22ee9655893f2063823137f586d6b7576adfa2f62666f2bee5e8a06d27410",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-11-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Principal Act is a specific type",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies Principal Act as a specific type",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "class hierarchy",
+      "cml:premiseText": "Principal Act is defined"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-11"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:note": "Cash dealer must not disclose suspicion information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Section 12"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-12-norm",
+        "concept:crimes-legislation-amendment-act-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "33c7c957b5a463b5dd8c31f18ffb1cfa2edb2de8eb5c9f41714a31ec03937586",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Cash dealer must not disclose suspicion information"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-12"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.7",
+      "skos:note": "Cash dealer must comply with notice for access to premises.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Section 13"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-13-norm",
+        "concept:crimes-legislation-amendment-act-sec-13-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2ddf31788f87640521683763161fd3c8d8a01cb721071a0dd67d57959e17995e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-13-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide compliance",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-13-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-13"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.7",
+      "skos:note": "State must retain records or copies of them.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Section 14"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-14-norm",
+        "concept:crimes-legislation-amendment-act-sec-14-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48d1ccafb11bb907c04def0305f22102a5bf59a914091a62e06e93b56aeec10b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-14-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "State must retain records.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-14-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-14"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.8",
+      "skos:note": "The Attorney-General is entitled to access to CTR information for the purpose of dealing with a request made by a foreign country.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Section 15"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-15-norm",
+        "concept:crimes-legislation-amendment-act-sec-15-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a2f6971439e57973e056a7ca284b91f64b0deab2e732a64b95a65f0fad95d8d1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Attorney-General has the right to access CTR information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasRight"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-15-norm",
+      "@type": "doc:Right",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "heldBy": "doc:NaturalPerson",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-15"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "Amendment of Section 28 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Section 16"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-16-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fdf95e1eb42f858793d824335ffea29d09cafafd8774d0166a23c05eb5dd7084",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-16-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-16"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "Amendment of Section 33 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Section 17"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e9766af546557b2079532d76916ac536845b03feb3961912741ce5a0244ddd29",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-17"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "State obligation to issue guidelines to cash dealers about their obligations under the Act and regulations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Section 18"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-18-norm",
+        "concept:crimes-legislation-amendment-act-sec-18-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "98dd2af285934710d68dd1ff9a3ce140280d60e3ba4eeeba3500b413f96a4829",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "State obligation to issue guidelines.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-18-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-18"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-19",
+      "@type": "cml:Concept",
+      "dc:description": "true",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "Annual report must be provided by Director after June 30th.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Section 19"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-19-norm",
+        "concept:crimes-legislation-amendment-act-sec-19-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "192e8a75a5f4c4cd6d2243d715195e5ed9c20c6299b4e0c4492ec2dd857c5d33",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-19-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide annual report",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-19-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-19"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-3"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1) Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-2-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-ltl-3",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3bd663e263bb010b8a46852614fb6b09bce56662ce67043574093a13cf632c51",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 2 overlaps with the Act's commencement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal overlap between sections",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "overlaps",
+      "cml:premiseText": "(1) Subject to this section, this Act commences on the day on which it receives the Royal Assent."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act begins on the specified day",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Starts on a specific day",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "begins",
+      "cml:premiseText": "(1) Subject to this section, this Act commences on the day on which it receives the Royal Assent."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act requires the Royal Assent for commencement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires a specific condition for commencement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires",
+      "cml:premiseText": "(1) Subject to this section, this Act commences on the day on which it receives the Royal Assent."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 2 holds with the Act's commencement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines a temporal relationship between sections",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "holds",
+      "cml:premiseText": "(1) Subject to this section, this Act commences on the day on which it receives the Royal Assent."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Conditional commencement of certain sections and parts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(2) Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-2-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e78f2f46f4c3db8508aa7237b01b3fcd819e4ed93c951fca25921d5629b7de01",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes temporal relationship",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Commencement of section 51 and Part 8 subject to proclamation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(3) Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-2-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bfa2606fb6f1744d703a7ef997d6b09fe58cdde0df3766804d9a0fba0238c0dd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Repeal of Part 8 if commencement not fixed within 6 months",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(4) Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-norm",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-ltl-3",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cf986b2b333698b73c674a5deecb090f9f310008213a3fdc339b2adb26857719",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Part is repealed on the first day after the end of that period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Commencement must be within 6 months",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Within",
+      "cml:premiseText": "(4) If the commencement of Part 8 is not fixed..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Part is repealed on the first day after the end of that period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Repeal rule for unfixed commencement",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Rule",
+      "cml:premiseText": "(4) If the commencement of Part 8 is not fixed..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Part is repealed on the first day after the end of that period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of Part 8 commencement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(4) If the commencement of Part 8 is not fixed..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Part is repealed on the first day after the end of that period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Commencement not fixed within 6 months implies repeal",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "If-Then",
+      "cml:premiseText": "(4) If the commencement of Part 8 is not fixed..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Part is repealed on the first day after the end of that period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Part 8 commences within 6 months or is repealed",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "(4) If the commencement of Part 8 is not fixed..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2-ss-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.3",
+      "skos:note": "Conditional commencement of section 51",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(5) Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-2-ss-5-norm",
+        "concept:crimes-legislation-amendment-act-sec-2-ss-5-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7ae6a9a98aabd21e41a9ce66d25368ca7fe1ce747a2fb0a3d162e3b821c801ea",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-2-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-5-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes temporal relationship",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-2-ss-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-2-ss-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Section 20"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7ebc1631b1b21a0b8633b4196f999b2ce2dc61dcad41f374d980f5e1c85de648",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-20-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-20"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.9",
+      "skos:note": "Court may order person to remain in Australia, refrain from applying for passport, or surrender passport.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Section 21"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-21-norm",
+        "concept:crimes-legislation-amendment-act-sec-21-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-21-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ecaaea2a3a6de8fd595a60cd4b13113de27492ccfae2966a4240a7435e2190b6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-21-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court has obligation to order person to comply with conditions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-21-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Section classifies serious narcotics offence as a specific type of crime.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "classifies"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-21-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-21"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "Amendment of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Section 22"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "36f4ae5af1e86e884ac79f31366abdb08df7faa9c3b005d9fbbe6faf9589f98d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-22-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-22"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Section 23"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-23-norm",
+        "concept:crimes-legislation-amendment-act-sec-23-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "895cf14e23845dcd8d4f7488ee936fa68c0b0075dd53cfb780508767d30a17fd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-23-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Defines Principal Act",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-23-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-23"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 Section 24"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "Amendment of Section 18 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24(1) Section 24"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-24-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-24-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a9b89a524a7be4bd4a8fe4066489c9cbb560a7018828c98d42bac11e32f375b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-24-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-24"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "and to the evidence given in any such proceedings",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding a condition to Section 18",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "addition",
+      "cml:premiseText": "Section 18 of the Principal Act is amended"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-24-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "Conditional commencement of amendment",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24(2) Section 24"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-24-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-24-ss-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0dd286daff03f8f64427c04c261ec0c74892ccac8c27c93e2af1ae58c3a57ee3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-24-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-24"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Temporal relation required for classification",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires relation between identifiable temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Section mentions commencement and subsections"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-24-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-24-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "Amendment of Section 28 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Section 25"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-25-norm",
+        "concept:crimes-legislation-amendment-act-sec-25-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c27b1c855141818204410544c64c06ff857505e092a5d666372ae4f9b84c723a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-25-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Relation required",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires relation between identifiable temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Temporal interval relation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-25-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-25"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.11",
+      "skos:note": "The court may extend the period of effect of a restraining order made in reliance on subsection 28 (2) upon application by the DPP.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 Section 26"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-26-norm",
+        "concept:crimes-legislation-amendment-act-sec-26-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7bf8026ac4bca93b0e53e6e20729ba0af57237c460f00235c94a18ddd04a4e66",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-26-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The court may extend...",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-26-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-26"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-27",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.12",
+      "skos:note": "Exemptions from amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "27 Section 27"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-27-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b0f6ab9e12978eab9ca3373c226a5242f2f7419024c72d5683e35dd9c44f8a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-27",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-27-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-27"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 Section 28"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.12",
+      "skos:note": "Order for examination on oath before court or Registrar.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28(1) Section 28"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-28-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-28-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "62254b1e0beec17898a1eceef9d1b24b4f176dc2a85d6aed0f532cf246d8d0c0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-28-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-28"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-28-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.12",
+      "skos:note": "Applicable to restraining orders made before or after section commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28(2) Section 28"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-28-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-28-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c38f4fabbebbb42692ab335978f14d94d79e5bb133071ed709b5f5f7297535cb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-28-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-28"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Obligation applies.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applicability condition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "Restraining orders made before or after section commencement."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-28-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-28-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.12",
+      "skos:note": "Restraining order against property",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 Section 29"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-29-norm",
+        "concept:crimes-legislation-amendment-act-sec-29-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-29-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "deb4ab53512488551531ffcdf1491a31ce2c4925b3d03b4f2f39093550a34bd6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-29-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits making restraining orders against property",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-29-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the Principal Act as a Customs Act",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Classify"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-29-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-29"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.4",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-3-norm",
+        "concept:crimes-legislation-amendment-act-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a23b5fe626267b8dbfb8af457821990d691deb8b6b19990e5be0527ed20cb10",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines Principal Act",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.13",
+      "skos:note": "Court may make further orders after inserting certain phrases in subsection (1) of Section 243E.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 Section 30"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-30-norm",
+        "concept:crimes-legislation-amendment-act-sec-30-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6f04764ea5e813e38c39911a85cc531c32bbfe80941693bc8a52c618479ead41",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-30-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court may make further orders",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-30-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-30"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 Section 31"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-31",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.13",
+      "skos:note": "Amendments to section 243F of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31(1) Section 31"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-31-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-31-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1f6f365331347f23fe5c1963af7feb5c5e15b0518b9be33ac6bc6f812d50c091",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-31-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State to amend section 243F",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.13",
+      "skos:note": "Amendments apply in relation to restraining orders made before or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31(2) Section 31"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-31-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-31-ss-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d27ea02925996a2709d45d6754b6d53b5ff187ae33f11bb8c7c776aaf682e88",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-31-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Temporal relation identified",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Identifies temporal relation to commencement",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Commencement is specified"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.13",
+      "skos:note": "Conditional commencement of amendment",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31(3) Section 31"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-31-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5311f8d1ed82381479dfc25ff89006dd6c2994d12168392257108d5f507bc651",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-31-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-31-ss-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-31-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-32",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.14",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "32 Section 32"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-32-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "551b9ad1b8e6bf4a9afe69a893c6f218084926d5601d4ee81601c7a95a39c6d8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-32",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-32-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-32"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-33",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.14",
+      "skos:note": "Amends Section 7 of the Principal Act to specify foreign countries for obtaining CTR information in international assistance in criminal matters.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "33 Section 33"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-33-norm",
+        "concept:crimes-legislation-amendment-act-sec-33-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d3d9654d51dee8fa59bedea7c6ba001b2a86cb81cda405ce29aada63a77381b9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-33",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-33-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-33-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-33"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-34",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.14",
+      "skos:note": "Attorney-General may direct Director of Cash Transaction Reports Agency to provide CTR information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "34 Section 34"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-34-norm",
+        "concept:crimes-legislation-amendment-act-sec-34-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "305192a6c2b28d577b31f93a2174273d285346650a6d6d34aff911b92321d4d6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-34",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-34-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Attorney-General may direct Director of Cash Transaction Reports Agency.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-34-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-34"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-35",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.15",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "35 Section 35"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-35-norm",
+        "concept:crimes-legislation-amendment-act-sec-35-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c90e29a1110a6237d151204a848eaeb1900d822269beba653d16162a2ba9fb5d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-35",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-35-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Principal Act is defined as the National Crime Authority Act 1984.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-35-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-35"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-36",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.15",
+      "skos:note": "Amends definitions of State, Territory, Parliament, Governor, Premier, and Minister of the Crown.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36 Section 36"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-36-norm",
+        "concept:crimes-legislation-amendment-act-sec-36-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-36-logic-descriptionlogic-2",
+        "concept:crimes-legislation-amendment-act-sec-36-logic-alleninterval-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9aa48b862048925d6b60633e08d58df08b8b238f5bf5e929fe3c5d36fbc9e9f2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-36",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-36-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Temporal interval between amendment and commencement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Establishes temporal relationship between amendments",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "between",
+      "cml:premiseText": "Amends Section 4 of the Principal Act"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-36-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New definitions for State, Territory, etc.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Modifies existing definitions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "amends",
+      "cml:premiseText": "Section 4 of the Principal Act is amended"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-36-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New subclass for Australian Capital Territory and Northern Territory",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Establishes new class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "defines",
+      "cml:premiseText": "Inserts new subsection (3) into the definition of \"Territory\""
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-36-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-36"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-37",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "The Minister of the Crown is responsible for police affairs in a State with no Police Force, and matters relating to the Police Force in other States.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "37 Section 37"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-37-norm",
+        "concept:crimes-legislation-amendment-act-sec-37-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b09733c15a47b98ae0462d3199dabb62ab98341a6fd7f31abf78acc350b2b0cc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-37",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-37-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister has a responsibility to manage police affairs.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Responsibility"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-37-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-37"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-38",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "Passports not to be issued to certain persons",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "38 Section 38"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-38-norm",
+        "concept:crimes-legislation-amendment-act-sec-38-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-38-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c870f3c99e48f0eb924588f065b88945f50e8b4065852a84e01cce2833373415",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-38",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-38-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits issuing passports to certain persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-38-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies individuals as eligible or ineligible for passport issuance",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Classify"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-38-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-38"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-39",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "Prohibition on leaving Australia or applying for an Australian passport without permission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "39 Section 39"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-39-norm",
+        "concept:crimes-legislation-amendment-act-sec-39-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2bc6ebadc17248e02c883a3a725a8a2b4bbe345af301984cd41723ade03d1ae0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-39",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-39-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-39-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-39"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.4",
+      "skos:note": "Australian Federal Police functions do not include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, unless authorized.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-4-norm",
+        "concept:crimes-legislation-amendment-act-sec-4-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-4-logic-deontic-2",
+        "concept:crimes-legislation-amendment-act-sec-4-logic-alleninterval-3",
+        "concept:crimes-legislation-amendment-act-sec-4-logic-ltl-4",
+        "concept:crimes-legislation-amendment-act-sec-4-logic-dialectical-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7d91d80678a8b064573e71ac4058b4f438d4d877ff212d57bf865be004a02107",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The functions of the Australian Federal Police include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Australian Federal Police functions do not include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, unless authorized.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Australian Federal Police functions include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-logic-dialectical-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dialectical",
+      "cml:logicSummary": "The functions of the Australian Federal Police do not include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, unless authorized.",
+      "cml:modality": {
+        "@id": "cml:Dialectical"
+      },
+      "cml:operator": "Negation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The functions of the Australian Federal Police include provision of services under arrangements entered into under subsection (2A) in relation to offences against a law of a State, if authorized.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-40",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "Definition of Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "40 Section 40"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-40-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "688b74e96122750bdd297cdf11b09063086d1e262d3d640f76cab2c0393fb064",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-40",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-40-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-40"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "41 Section 41"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-41",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "Addition of evidence in proceedings",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "41(1) Section 41"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-41-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-41-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "73e29b555053b3a145a3a4b8c442c1545b058a614b4fff92264a1a8c269bd21f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-41-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-41"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding to existing obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "addition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-41-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.16",
+      "skos:note": "Conditional commencement of amendment for confiscation orders",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "41(2) Section 41"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-41-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "941b53030dc0886f341cda2ca31717977c82ea34c8fd662c778e050822161e63",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-41-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-41"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-41-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-41-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "42 Section 42"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-42",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:note": "Amends Section 27 of the Principal Act regarding definitions and trustee roles.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "42(1) Section 42"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-42-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9e0fa09a183a8d16350444a8d6256285e7413fbb11920b9c1e197225c1205059",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-42-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Defines a class of trustee roles.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "ClassInclusion"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:note": "Conditional commencement of amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "42(2) Section 42"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-42-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4072a98cf6e3786d80e2ee99dcbfba269e78c834e571d1ae8cc1915eb5df5a5e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-42-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:note": "Forfeiture of all restrained property if person convicted of serious offence",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "42(3) Section 42"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-42-ss-3-norm",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-ltl-3",
+        "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d0e2c31136e0db2a1134bfeab6f07b1dd44b62decc9dbbec8e343a885e60cb5b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-42-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The amendments apply after the commencement of this section",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines temporal scope of amendments",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Forfeiture of all restrained property if person convicted of serious offence",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits forfeiture of restrained property",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Authorities must consider amendments when processing applications",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty on authorities",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The amendments apply to each subsequent application",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines repetition of application",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "(3) The amendments made by paragraphs (l)(b), (c) and (d) apply only in relation to an application made under section 14 of the Principal Act for a pecuniary penalty order, after the commencement of this section."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-42-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-42-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "43 Section 43"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-43",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:note": "Amend Section 30 of the Principal Act regarding conviction of serious offence",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "43(1) Section 43"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-43-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-43-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c576b8ea178e00d8ba3815128f4a0aaab73309400f16668348c2aae2820d1c77",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-43-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-43"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-43-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.17",
+      "skos:note": "Conditional commencement of amendment",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "43(2) Section 43"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-43-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fc2b299855f5b8a19c016c83d1cef100986d023f97a75358d7a0817e9497a9b7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-43-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-43"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-43-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-43-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-44",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.18",
+      "skos:note": "Amendment of Section 43 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "44 Section 44"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-44-norm",
+        "concept:crimes-legislation-amendment-act-sec-44-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cb790520d332268bc9e6441fb26486f091eb6f2f1d5cddd49732e5ad222b0295",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-44",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-44-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-44-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-44"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-45",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.18",
+      "skos:note": "Amendment of Section 45 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "45 Section 45"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-45-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "365726b8e76e1ff1eea7620647d0d42c29e31b194da743338a87b1674c2ff758",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-45",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-45-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-45"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-46",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.18",
+      "skos:note": "The court may extend the period of operation of a restraining order made in reliance on subsection 45 (2) upon application by the DPP.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "46 Section 46"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-46-norm",
+        "concept:crimes-legislation-amendment-act-sec-46-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-46-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8273f2cd6848011df024cda95fc8d81aa7310e8061a3b8ec770a6da9f82aad72",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-46",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-46-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The court may extend...",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-46-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Section 44 applies...",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Applicable to",
+      "cml:premiseText": "Section 44 (other than subsection 44 (4))"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-46-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-46"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-47",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.19",
+      "skos:note": "Exemptions from amendments for certain applications",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "47 Section 47"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-47-norm",
+        "concept:crimes-legislation-amendment-act-sec-47-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fe1d938f73afb822bac1c0de8f96d125213836d427f13f5aab4b0d3750525499",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-47",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-47-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the state",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-47-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-47"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.19",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "48 Section 48"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-48",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1",
+      "@type": "cml:Concept",
+      "dc:description": "true",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.19",
+      "skos:note": "Section 48 of the Principal Act is amended to require owners and defendants to provide statements on oath about their property.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "48(1) Section 48"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-48-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-descriptionlogic-2",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-alleninterval-3",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "65107c854af68af5f8dc9dff2b14305f410dab63f5989127c34b54ed25ce898b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-48-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-48"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The statement must be given before the restraining order expires",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Statement must be given within a specified period",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "BETWEEN",
+      "cml:premiseText": "Paragraph (1) (da) directs to give a statement within a period"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The owner or defendant must provide a statement on oath",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide a statement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Paragraph (1) (da) directs to give a statement"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The owner or defendant must provide particulars of their property dealings",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide particulars of property dealings",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Paragraph (1) (da) directs to give a statement about the property"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The statement is about the property",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Subclass of property-related statements",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "SUBCLASS OF",
+      "cml:premiseText": "Paragraph (1) (da) directs to give a statement about the property"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-48-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.19",
+      "skos:note": "Amendments apply to restraining orders made before or after section commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "48(2) Section 48"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-argumentation-3",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ad51392dd015ba3209b2ad1c66458c8f8bf3a28e179e13b0ada383c00a5856e3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-48-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-48"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Amendments apply to restraining orders made before or after section commencement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Overlap between amendments and restraining order commencement",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Overlap",
+      "cml:premiseText": "Restraining order ceases to be in force when subsection (2) commences"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Amendments apply to restraining orders made before or after section commencement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Implication of amendments on restraining order applicability",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "Subsection (2) implies that subsection (1) applies to restraining orders"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Amendments apply to restraining orders made before or after section commencement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Inference of amendments on restraining order applicability",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Inference",
+      "cml:premiseText": "Subsection (2) infers that subsection (1) applies to restraining orders"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Amendments apply to restraining orders made before or after section commencement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applicability of amendments to restraining orders",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "Subsection (1) applies to subsection (2)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Amendments apply to restraining orders made before or after section commencement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Propagation of amendments to restraining orders",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Propagation",
+      "cml:premiseText": "Subsection (2) propagates the applicability of subsection (1)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-48-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-48-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.20",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "49 Section 49"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-49",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.20",
+      "skos:note": "Amend Section 57 of the Principal Act regarding pecuniary penalty orders.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "49(1) Section 49"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-49-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-49-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d0b74f9f43bd04bdeea1c2428f9cdde696e50b28e33cd6debda602eca94bd1eb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-49-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-49"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the State.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-49-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.20",
+      "skos:note": "Amendments apply to restraining orders made before or after section commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "49(2) Section 49"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-49-ss-2-norm",
+        "concept:crimes-legislation-amendment-act-sec-49-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6da5db9fca17478e990bd5f12b71bda8271212e3ec63695d3a6a03b1e6c71f59",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-49-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-49"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Binds the amendments to restraining orders made before or after section commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "binds"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-49-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-49-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:note": "Commissioner may determine compensation for retired staff members.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 5"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-5-norm",
+        "concept:crimes-legislation-amendment-act-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b12c80a8ed6c7a48b6da5ed3caf88e4e2155f5ebfee3f0436703e7160b893f42",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Commissioner's obligation to determine compensation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "imposes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-50",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.21",
+      "skos:note": "Jurisdiction granted to State and Territory courts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "50 Section 50"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-50-norm",
+        "concept:crimes-legislation-amendment-act-sec-50-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1395b73ee4e81ea06e911e184120ee79ff4cdf81562f7c42d20dddabb25c1447",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-50",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-50-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes jurisdiction",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Grant"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-50-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-50"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-51",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.21",
+      "skos:note": "Court must consider relevant circumstances when imposing a further federal sentence. Amend Section 98 of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "51 Section 51"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-51-norm",
+        "concept:crimes-legislation-amendment-act-sec-51-logic-deontic-1",
+        "concept:crimes-legislation-amendment-act-sec-51-logic-deontic-2",
+        "concept:crimes-legislation-amendment-act-sec-51-logic-descriptionlogic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6805fdc4472bdad459ff98b77bac14b3d5c09975847758134a20710d076c6f6d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-51",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-51-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must consider relevant circumstances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-51-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the State to amend Section 98 of the Principal Act",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-51-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the amendment as a deontic obligation",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Classify"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-51-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-51"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Section 6"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:note": "Addition of evidence in proceedings",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(1) Section 6"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-6-ss-1-norm",
+        "concept:crimes-legislation-amendment-act-sec-6-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c020b597c5985b9b90cc33bea7701187b8aacd0d61c535c4093f8a38c00e0bd9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-6-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding to existing obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "addition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-6-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:note": "Conditional commencement of amendment",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(2) Section 6"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-6-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b554917664927aeb9888f1d82ba219182c2aac1e8fca895b8c6844a3446b46f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-6-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-act-sec-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-6-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-6-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:note": "Amendment of Section 49E of the Principal Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Section 7"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": "concept:crimes-legislation-amendment-act-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ffd16ddb516001422d27d32335f4fea5d92788caadb544c481528921c08b8b3d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-7"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.5",
+      "skos:note": "The DPP must give written notice of an application for the extension of a restraining order to the owner and any other person with an interest in the property.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Section 8"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-8-norm",
+        "concept:crimes-legislation-amendment-act-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f9010380db1395a31a3fe3bf97cf0310d1cbc0e26b8f6ab272f429a0f47b2672",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The DPP must give written notice.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-8"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-act.pdf, p.6",
+      "skos:note": "Exemptions from amendments for certain applications",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 9"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-act.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-act-sec-9-norm",
+        "concept:crimes-legislation-amendment-act-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cae56fdde37d1b663ee7ecb10c77727775b9aafe19809ceb71da4067bfdfc164",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-act#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the state",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-act-sec-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-act-sec-9"
+    },
+    {
+      "@id": "doc:au/c2004a04198",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend certain Acts in relation to criminal and law enforcement matters, and for related purposes",
+      "dc:identifier": [
+        "C2004A04198",
+        "No. 123 of 1991"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Legislation Amendment Act (No. 2) 1991"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2004A04198/latest/downloads",
+        "crimes-legislation-amendment-act.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

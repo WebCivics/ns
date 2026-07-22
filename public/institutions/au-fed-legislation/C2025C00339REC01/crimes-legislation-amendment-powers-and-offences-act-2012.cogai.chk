@@ -1,0 +1,5196 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Powers and Offences) Act 2012
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sec-5-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies the text as a compilation of laws.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sec-5-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines temporal intervals for compilation date and amendment history.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-2;
+  logic: Deontic;
+  operator: receives;
+  summary: Receives the Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act is enacted.;
+  @action: The day this Act receives the Royal Assent.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-2;
+  logic: AllenInterval;
+  operator: on;
+  summary: On the day this Act receives the Royal Assent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Act comes into effect on a specific date.;
+  @action: The day this Act receives the Royal Assent is the commencement date.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-2;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication of receiving the Royal Assent;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Receiving the Royal Assent implies that the Act is enacted.;
+  @action: The day this Act receives the Royal Assent is the commencement date.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-2;
+  logic: Diffusion;
+  operator: on;
+  summary: On the day this Act receives the Royal Assent;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Act spreads its effects on that day.;
+  @action: The day this Act receives the Royal Assent is the point of diffusion.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-2;
+  logic: CogAI;
+  operator: on;
+  summary: On the day this Act receives the Royal Assent;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The AI system processes the information on that day.;
+  @action: The day this Act receives the Royal Assent is the point of processing.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-25-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-25;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between commencement and Royal Assent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement on day after end of period;
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-6-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-6;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific day;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act begins on the specified day.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-6-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-6;
+  logic: AllenInterval;
+  operator: after;
+  summary: Describes the temporal relationship between two events;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: This event occurs after the specified day.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-7-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-7;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific day;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act begins on the specified day.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-7-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-7;
+  logic: AllenInterval;
+  operator: after;
+  summary: Temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: This interval comes after the specified day.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-9-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits commencement of provision(s) if condition is not met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 does not commence at or before the commencement of the provisions covered by table item 8.;
+  @action: The provision(s) do not commence at all.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-9-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Requires that item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 commences before or at the same time as the commencement of the provisions covered by table item 8.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 does not commence at or before the commencement of the provisions covered by table item 8.;
+  @action: The provision(s) do not commence at all.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-9-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: LTL;
+  operator: Overlaps;
+  summary: Requires that item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 commences before or at the same time as the commencement of the provisions covered by table item 8.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 does not commence at or before the commencement of the provisions covered by table item 8.;
+  @action: The provision(s) do not commence at all.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-9-logic-16 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: Diffusion;
+  operator: Overlaps;
+  summary: Requires that item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 commences before or at the same time as the commencement of the provisions covered by table item 8.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 does not commence at or before the commencement of the provisions covered by table item 8.;
+  @action: The provision(s) do not commence at all.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-9-logic-17 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-9-sec-9;
+  logic: CogAI;
+  operator: Overlaps;
+  summary: Requires that item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 commences before or at the same time as the commencement of the provisions covered by table item 8.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Item 2 of Schedule 1 to the Customs Amendment (Military End-Use) Act 2012 does not commence at or before the commencement of the provisions covered by table item 8.;
+  @action: The provision(s) do not commence at all.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-5-8-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-5-8;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-14-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-14;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-15-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-15;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific date;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The day after this Act receives the Royal Assent.;
+  @action: The Act commences on that day;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-16-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-16;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on the day the Act receives Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-3-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-3-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State to amend Acts in a Schedule;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-3-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: substitution;
+  summary: Replace section with new sections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-4-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of finger prick method;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-10-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23wn-logic-26 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23wn;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to order non-intimate forensic procedures;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Senior police officer has authority to order procedures;
+  @action: Ordering non-intimate forensic procedures is permitted;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23wn-logic-27 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23wn;
+  logic: AllenInterval;
+  operator: under certain circumstances;
+  summary: Temporal conditions for ordering procedures;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Ordering non-intimate forensic procedures is permitted under certain circumstances;
+  @action: Ordering non-intimate forensic procedures is permitted under certain circumstances;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23wn-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23wn;
+  logic: Argumentation;
+  operator: may order;
+  summary: Authority for ordering procedures;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Senior police officer may order non-intimate forensic procedures;
+  @action: Senior police officer has authority to order non-intimate forensic procedures;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23wn-logic-29 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23wn;
+  logic: Diffusion;
+  operator: non-intimate forensic procedures;
+  summary: Scope of ordering procedures;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Ordering non-intimate forensic procedures is permitted under certain circumstances;
+  @action: Non-intimate forensic procedures are within scope of ordering authority;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23wn-logic-30 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23wn;
+  logic: CogAI;
+  operator: non-intimate forensic procedures;
+  summary: Scope of ordering procedures;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Ordering non-intimate forensic procedures is permitted under certain circumstances;
+  @action: Non-intimate forensic procedures are within scope of ordering authority;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-21-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text to be inserted;
+  @action: Obligation to insert text;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-22-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of '(other than by a finger prick)' after 'blood';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-25-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows specified individuals to perform medical procedures;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-26-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specified words.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-1-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission to share sample material;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a sample is taken from a suspect under this Part; and (b) the suspect requests the investigating constable that the sample be shared;;
+  @action: There is sufficient material to be analysed both in the investigation of the offence and on behalf of the suspect.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-1-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-1;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Temporal overlap between request and analysis;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) there is sufficient material to be analysed both in the investigation of the offence and on behalf of the suspect.;
+  @action: The sample material overlaps with the analysis period.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-1-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal condition for sharing sample material;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) there is sufficient material to be analysed both in the investigation of the offence and on behalf of the suspect.;
+  @action: The analysis period has not ended yet.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-1-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-1;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreading of sample material request;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (b) the suspect requests the investigating constable that the sample be shared;;
+  @action: The request has been spread to the investigating constable.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-1-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-1;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognition of sample material as sufficient for sharing;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) a sample is taken from a suspect under this Part; and (b) the suspect requests the investigating constable that the sample be shared;;
+  @action: The sample material has been recognized as sufficient.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xu-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xu-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must nominate an accredited laboratory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-28-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-29-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform suspect;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Investigating constable has authority to direct attendee;
+  @action: Attendee must be informed of instructions;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-29-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: AllenInterval;
+  operator: THEN;
+  summary: Temporal relation between events;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Investigating constable informs suspect after analysis is being conducted;
+  @action: Event A (informing suspect) occurs after event B (analysis being conducted);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-29-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Diffusion;
+  operator: THEN;
+  summary: Spread of information;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Investigating constable informs suspect and attendee is directed to leave premises;
+  @action: Information about instructions spreads from investigating constable to attendee;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-29-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: CogAI;
+  operator: THEN;
+  summary: Artificial intelligence application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Investigating constable uses AI to analyze material and inform suspect;
+  @action: AI is applied in the investigation process;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-31-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-5-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) The analyst may give a direction...;
+  @action: The attendee must leave the premises.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-5-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-5;
+  logic: AllenInterval;
+  operator: TemporalSubintervalOf;
+  summary: Defines temporal subinterval of instruction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) The analyst may give a direction...;
+  @action: The instruction is a temporal subinterval of the analysis.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-5-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-5;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses prohibition to attendees;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) The analyst may give a direction...;
+  @action: This prohibition diffuses to all attendees.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-6-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply with direction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) If the analyst gives such a direction, the analyst must inform...;
+  @action: A failure to comply is an offence against subsection (7).;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-6-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-6;
+  logic: Deontic;
+  operator: MUST NOT;
+  summary: Must not fail to comply with direction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) If the analyst gives such a direction, the analyst must inform...;
+  @action: A failure to comply is an offence against subsection (7).;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-6-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-6;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Direction contains obligation to comply;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) If the analyst gives such a direction, the analyst must inform...;
+  @action: The direction contains an obligation to comply.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-6-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-6;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Failure to comply implies offence against subsection (7);
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (6) If the analyst gives such a direction, the analyst must inform...;
+  @action: If the analyst gives a direction, then a failure to comply is an offence against subsection (7).;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-6-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-6;
+  logic: Diffusion;
+  operator: SPREADS TO;
+  summary: Obligation spreads to failure to comply;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) If the analyst gives such a direction, the analyst must inform...;
+  @action: The obligation to comply spreads to the failure to comply.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-7-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-7;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to comply with direction.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-32-ss-8-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32-ss-8;
+  logic: Deontic;
+  operator: is;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: An offence against subsection (7) is an obligation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-23xw-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23xw;
+  logic: Deontic;
+  operator: >;
+  summary: Duty to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-34-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between Division and intimate forensic procedure;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal intervals mentioned in the provision;
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-35-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35;
+  logic: Deontic;
+  operator: addition;
+  summary: Adds specified actions to existing list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-36-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to the list of permitted actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWO permits additions.;
+  @action: The addition is obligatory.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-36-logic-62 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: AllenInterval;
+  operator: during;
+  summary: Action during subsection 23XWC(1).;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 23XWC(1) defines the time period.;
+  @action: The addition occurs during this time period.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-36-logic-63 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: LTL;
+  operator: until;
+  summary: Action until subsection 23XWO.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 23XWO defines the end condition.;
+  @action: The addition ends at this point.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-36-logic-64 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: CogAI;
+  operator: assertion;
+  summary: Asserting the addition.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The addition is a fact.;
+  @action: The addition is asserted.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-36-logic-65 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-36;
+  logic: SHACL;
+  operator: validity;
+  summary: Validating the addition.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The addition conforms to the schema.;
+  @action: The addition is valid.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-37-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-37;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-38-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-38;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-39-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits cruel, inhuman or degrading treatment of offenders.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-39-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Forensic procedures may overlap with other laws.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Sections 23XJ and 23XK apply to the carrying out of a forensic procedure under this Division.;
+  @action: None;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-39-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Forensic procedures may imply other laws.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Division 6 applies in relation to the carrying out under this Division of a forensic procedure on an offender.;
+  @action: None;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-39-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Forensic procedures diffuse to other laws.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Sections 23XJ and 23XK apply to the carrying out of a forensic procedure under this Division.;
+  @action: None;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-39-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-39;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Forensic procedures recognize other laws.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Division 6 applies in relation to the carrying out under this Division of a forensic procedure on an offender.;
+  @action: None;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-41-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Deontic;
+  operator: may;
+  summary: Obligation to order forensic procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWO;
+  @action: Judge or magistrate may order forensic procedure on offender;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-41-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: LinearLogic;
+  operator: or;
+  summary: Multiple conditions for ordering forensic procedure;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Sections 23XWO and 23WE;
+  @action: The offender is subject to one of the following circumstances: (a) not in custody and has not consented, or (b) in custody and has not consented, or (c) cannot consent under section 23WE.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-41-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: AllenInterval;
+  operator: under;
+  summary: Temporal relationship between sections;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Sections 23XWO and 23WE;
+  @action: Section 23XWO is under section 23WE;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-42-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-42;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-47-logic-77 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-47;
+  logic: LTL;
+  operator: Temporal relation;
+  summary: Describes when one event occurs after another;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: If a judge or magistrate orders the carrying out of a forensic procedure under this Division on an offender, the offender”,;
+  @action: the offender may be ordered to permit the carrying out of a forensic procedure at some point in time;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-47-logic-78 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-47;
+  logic: Diffusion;
+  operator: Temporal relation;
+  summary: Describes when one event occurs after another;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: If a judge or magistrate orders the carrying out of a forensic procedure under this Division on an offender, the offender”,;
+  @action: the offender may be ordered to permit the carrying out of a forensic procedure at some point in time;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-47-logic-79 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-47;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Describes when one statement implies another;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If a judge or magistrate orders the carrying out of a forensic procedure under this Division on an offender, the offender”,;
+  @action: the offender may be ordered to permit the carrying out of a forensic procedure if the judge or magistrate so orders;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-49-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-49;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires informed consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 23XWR;
+  @action: Obligation to inform;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-54-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-54;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of foreign law enforcement agency relation in Commonwealth DNA database system definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-55-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-55;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits committing an offence outside Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-59-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-59;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a new provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-60-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-60;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-61-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-61;
+  logic: Deontic;
+  operator: requires;
+  summary: Expresses a requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Material must be provided.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-3-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-3;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from subsection (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-3-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-3;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal overlap with subsection 23XE(5);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) copies of records required to be made available under subsection 23XE(5); and (b) material required to be provided under section 23XU; and (c) copies of results of analysis and other information required to be provided under section 23XW.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-3;
+  logic: LTL;
+  operator: and;
+  summary: Temporal overlap with subsection 23XE(5);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) copies of records required to be made available under subsection 23XE(5); and (b) material required to be provided under section 23XU; and (c) copies of results of analysis and other information required to be provided under section 23XW.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-3;
+  logic: Diffusion;
+  operator: and;
+  summary: Temporal overlap with subsection 23XE(5);
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) copies of records required to be made available under subsection 23XE(5); and (b) material required to be provided under section 23XU; and (c) copies of results of analysis and other information required to be provided under section 23XW.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-65-ss-3-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-65-ss-3;
+  logic: CogAI;
+  operator: and;
+  summary: Temporal overlap with subsection 23XE(5);
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) copies of records required to be made available under subsection 23XE(5); and (b) material required to be provided under section 23XU; and (c) copies of results of analysis and other information required to be provided under section 23XW.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-66-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-66;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a new provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-67-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-67;
+  logic: Deontic;
+  operator: MUST;
+  summary: Imposes a duty on the Commonwealth.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The analysis must be carried out in an accredited laboratory.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-72-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-72;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to carry out procedure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-74-logic-95 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-74;
+  logic: Deontic;
+  operator: Preservation;
+  summary: Preserves the validity of an order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The amendment made by item 16 does not affect the validity of an order that is in force under section 23WN of the Crimes Act 1914 immediately before the commencement of that item.;
+  @action: The order remains valid despite the amendment.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply in relation to carrying out of forensic procedures.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The amendments made by items 22 to 26, 34, 35, 39, 48, 49, 50, 67, 70 and 72 apply in relation to the carrying out of forensic procedures starting on or after the commencement of those items.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply in relation to samples taken under Part ID of the Crimes Act 1914 on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The amendments made by items 27 to 33 apply in relation to samples taken under Part ID of the Crimes Act 1914 on or after the commencement of those items.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply in relation to orders made on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The amendments made by items 21, 40, 41, 43 and 45 to 47 apply in relation to orders made on or after the commencement of those items.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply in relation to applications made under section 23XWO of the Crimes Act 1914 on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The amendments made by items 42 and 44 apply in relation to applications made under section 23XWO of the Crimes Act 1914 on or after the commencement of those items.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendment applies in relation to giving of informed consent on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) The amendment made by item 51 applies in relation to the giving of informed consent on or after the commencement of that item.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-75-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-75;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments do not affect continuity of Commonwealth DNA database system.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) The amendments made by items 53 to 55 do not affect the continuity of the Commonwealth DNA database system referred to in section 23YDAC of the Crimes Act 1914 or of the crime scene index referred to in that section.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-76-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-76;
+  logic: Deontic;
+  operator: MUST;
+  summary: Inform suspect;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-1-sec-77-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-77;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Informs suspect of matters mentioned in section 23WJ;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide reports and information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Chair of the Board must be inserted before CEO.;
+  @action: CEO must be inserted after The Chair of the Board.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-3-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal relationship between insertion and CEO;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The insertion of CEO occurs after The Chair of the Board.;
+  @action: CEO is inserted after The Chair of the Board.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-3-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Argumentation;
+  operator: JUSTIFICATION;
+  summary: Justification for insertion;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The insertion of CEO is justified by the need to include the CEO in the Board's structure.;
+  @action: CEO must be inserted after The Chair of the Board.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-3-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Diffusion;
+  operator: SPREADS;
+  summary: Spread of insertion obligation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The insertion of CEO spreads to other parts of the Board's structure.;
+  @action: CEO must be inserted after The Chair of the Board in all parts of the Board's structure.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-3-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: CogAI;
+  operator: RECOGNITION;
+  summary: Recognition of insertion obligation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The AI system recognizes the need to insert CEO after The Chair of the Board.;
+  @action: CEO must be inserted after The Chair of the Board.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-7-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: AllenInterval;
+  operator: after;
+  summary: Temporal relation after another interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-9-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: permissive;
+  summary: Permits insertion of CEO;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chair of the Board is specified;
+  @action: CEO can be added;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-12-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: AllenInterval;
+  operator: after;
+  summary: Temporal relation after;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the Chair of the Board;
+  @action: or the CEO;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-13-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: AllenInterval;
+  operator: relation;
+  summary: Temporal relation between 'The Chair of the Board' and 'CEO';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Chair of the Board (first occurring);
+  @action: or the CEO (as the case requires);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-13-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: permission;
+  summary: Granting permission to insert text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Chair of the Board (first occurring);
+  @action: or the CEO (as the case requires);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-15-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-16-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to apply amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-17-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines a term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: ACC information means information that is in the ACC’s possession.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-18-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: Deontic;
+  operator: Permit;
+  summary: List of permissible purposes;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-18-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: DescriptionLogic;
+  operator: hasClass;
+  summary: Explicit class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-18-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-21-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21;
+  logic: Deontic;
+  operator: may apply;
+  summary: Relevant direction under subsection 25A(9) may be applied to this subsection.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection 25A(9);
+  @action: This subsection is subject to any relevant direction given under subsection 25A(9).;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-22-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Relevant direction given under subsection 25A(9) is applicable.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-23-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: Deontic;
+  operator: SUBJCT;
+  summary: Direction applies to subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsections (1) and (1A);
+  @action: Subject to direction;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-24-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-24;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure to specified entities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-26-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Information duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-26-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: ACC information;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Schedule 2;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59aa-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59aa;
+  logic: Deontic;
+  operator: Permits;
+  summary: CEO permits disclosure of ACC information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: CEO considers it appropriate to disclose;
+  @action: Disclosure is permitted;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: Deontic;
+  operator: Permits;
+  summary: The CEO is permitted to disclose ACC information under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the CEO considers it appropriate to do so;
+  @action: disclosing the ACC information is permitted;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: DescriptionLogic;
+  operator: Classifies;
+  summary: The body corporate is classified as a permissible recipient of ACC information.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: the body has undertaken, in writing, not to use or further disclose the information except as referred to in subsection (3);
+  @action: the body corporate is a permissible recipient;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: AllenInterval;
+  operator: Within;
+  summary: The disclosure of ACC information must occur within a specified timeframe.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: disclosing the ACC information would not prejudice the safety of a person, or prejudice the fair trial of a person who has been charged with an offence;
+  @action: the disclosure must occur within a specified timeframe;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: LTL;
+  operator: Recurring;
+  summary: The CEO is required to disclose ACC information on a recurring basis.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the body has undertaken, in writing, not to use or further disclose the information except as referred to in subsection (3);
+  @action: the disclosure must occur on a recurring basis;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: Deontic;
+  operator: Requires;
+  summary: The body corporate requires certain conditions to be met before disclosing ACC information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the CEO considers that disclosing the information to the body is necessary for a permissible purpose;
+  @action: the body corporate requires certain conditions to be met;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-1-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-1;
+  logic: Deontic;
+  operator: Permits;
+  summary: The CEO is permitted to specify conditions under which ACC information can be disclosed.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the CEO has undertaken, in writing, not to use or further disclose the information except as referred to in subsection (3);
+  @action: the CEO permits certain disclosure conditions;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-2-logic-135 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose ACC information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The CEO may disclose ACC information to a body corporate under subsection (1) only if...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-2-logic-136 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for disclosure conditions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) preventing criminal offences or activities that might constitute criminal offences (including under a law of a foreign country);;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-2-logic-137 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-2;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for disclosure conditions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (ii) detecting criminal offences or activities that might constitute criminal offences (including under a law of a foreign country);;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-2-logic-138 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-2;
+  logic: Diffusion;
+  operator: Information Diffusion;
+  summary: Information diffusion for disclosure conditions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (iii) facilitating the collection of criminal information and intelligence in relation to criminal offences or activities that might constitute criminal offences (including under a law of a foreign country);;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ab-ss-2-logic-139 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ab-ss-2;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Knowledge representation for disclosure conditions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) in any case—the information is not confidential commercial information relating to another body or person.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ac-logic-140 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ac;
+  logic: Deontic;
+  operator: SUBJUNCTIVE MODO;
+  summary: Direction applies to confidentiality in relation to examinations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-59ad-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59ad;
+  logic: Deontic;
+  operator: Must;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-28-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-2-sec-29-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-29;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to apply amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-1-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines Commonwealth officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-1-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: DescriptionLogic;
+  operator: has meaning;
+  summary: Has meaning given by subsection 3(1) of the Crimes Act 1914;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-3-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-4-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-5-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-6-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Term defined;
+  @action: State or Territory law enforcement agency has the meaning given by subsection 3ZQU(7) of the Crimes Act 1914.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-6-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal relation defined;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 6 commences on a specified date;
+  @action: State or Territory law enforcement agency has the meaning given by subsection 3ZQU(7) of the Crimes Act 1914.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-6-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: LTL;
+  operator: =;
+  summary: Temporal relation defined;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 6 commences on a specified date;
+  @action: State or Territory law enforcement agency has the meaning given by subsection 3ZQU(7) of the Crimes Act 1914.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-6-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: Diffusion;
+  operator: =;
+  summary: Definition of term in context;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Term used in this section;
+  @action: State or Territory law enforcement agency has the meaning given by subsection 3ZQU(7) of the Crimes Act 1914.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-6-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: CogAI;
+  operator: =;
+  summary: Definition of term in context;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Term used in this section;
+  @action: State or Territory law enforcement agency has the meaning given by subsection 3ZQU(7) of the Crimes Act 1914.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-7-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines terrorism offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-8-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-8;
+  logic: Deontic;
+  operator: =;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: terrorist act has the same meaning as in subsection 100.1(1) of the Criminal Code.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-9-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-9;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-1-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by CEO;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: CEO has authority to make returnable item available;
+  @action: Returnable item may be used for specified purposes;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-1-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to return an item;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The CEO must take reasonable steps to return the item.;
+  @action: The person from whom the item was seized or produced is entitled to possess it.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to use returnable items;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if conditions are met;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item may be retained because of an order under subsection 24AC(2), or any other order under that subsection has been made in relation to the item, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if application is pending;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the CEO has applied for such an order and the application has not been determined, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if law or court order allows it;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item may otherwise be retained, destroyed or disposed of under a law, or an order of a court or tribunal, of the Commonwealth or of a State or a Territory, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if item is forfeited or disputed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item is forfeited or forfeitable to the Commonwealth or is the subject of a dispute as to ownership, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Grant permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to return document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-166 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal relationship between document return and ACC possession;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-4-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to use returnable items for State or Territory purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-5-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-5;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by CEO.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-6-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-6;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows use of returnable items for other purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Law authorizes use.;
+  @action: Use permitted.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-7-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-7;
+  logic: Deontic;
+  operator: requires;
+  summary: Expresses a requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-8-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-8;
+  logic: Deontic;
+  operator: Permit;
+  summary: CEO permits sharing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) The CEO may make a returnable item available to...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-9-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-9;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-1-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by CEO;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: CEO has authority to make returnable item available;
+  @action: Returnable item may be used for specified purposes;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-1-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to return an item;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The CEO must take reasonable steps to return the item.;
+  @action: The person from whom the item was seized or produced is entitled to possess it.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to use returnable items;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if conditions are met;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item may be retained because of an order under subsection 24AC(2), or any other order under that subsection has been made in relation to the item, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if application is pending;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the CEO has applied for such an order and the application has not been determined, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if law or court order allows it;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item may otherwise be retained, destroyed or disposed of under a law, or an order of a court or tribunal, of the Commonwealth or of a State or a Territory, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-2-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-2;
+  logic: Deontic;
+  operator: EXCEPT;
+  summary: No obligation if item is forfeited or disputed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the returnable item is forfeited or forfeitable to the Commonwealth or is the subject of a dispute as to ownership, then the CEO does not have to take those steps;
+  @action: the CEO does not have to take those steps;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Grant permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to return document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24aa-ss-3-logic-182 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-24aa-ss-3;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal relationship between document return and ACC possession;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-1-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: CEO's application;
+  @action: Order under subsection (2);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-3-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Issuing officer may permit a returnable item to be retained.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-6-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-6;
+  logic: Deontic;
+  operator: Permit;
+  summary: Issuing officer may permit a returnable item to be retained.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-6-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-8-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-8;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Issuing officer has the power to permit;
+  @action: Returnable item may be retained;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-8-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-8;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between issuing officer's function and court membership;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Issuing officer is a member of the court;
+  @action: Issuing officer has the same protection and immunity as a court member at the time of performing the function;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-8-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-8;
+  logic: Deontic;
+  operator: Immunization;
+  summary: Granting immunity to issuing officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Issuing officer is protected from liability;
+  @action: Issuing officer has the same protection and immunity as a court member;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-8-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-8;
+  logic: Deontic;
+  operator: Protection;
+  summary: Granting protection to issuing officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Issuing officer is protected from liability;
+  @action: Issuing officer has the same protection and immunity as a court member;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-24ac-ss-8-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-24ac-ss-8;
+  logic: Deontic;
+  operator: Authorization;
+  summary: Granting authority to issuing officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Issuing officer is authorized to perform function;
+  @action: Issuing officer has the same protection and immunity as a court member;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-3-sec-11-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-2-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Federal Court means the Federal Court of Australia.;
+  @action: The Federal Court is defined as...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-3-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-3;
+  logic: Deontic;
+  operator: defined;
+  summary: Defines key term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Contempt of ACLEI has the meaning given by section 96A.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-4-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-4;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace word with new word;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-21-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-21;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide new information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Law enforcement agency head has received new information;
+  @action: Must pass on new information to relevant authorities;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-6-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-6;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Repeal heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Heading to be repealed;
+  @action: Repeal applied;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-1-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-1;
+  logic: Deontic;
+  operator: require;
+  summary: Imposes a duty on the person to provide information or produce document or thing.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-2-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-2;
+  logic: Deontic;
+  operator: require;
+  summary: Imposes a duty on the Integrity Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The information must be provided in writing.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-3-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Imposes duty on State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-4-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide information or produce document within 14 days after notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-4-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-4;
+  logic: AllenInterval;
+  operator: >=;
+  summary: The period specified under paragraph (3)(c) must be greater than or equal to 14 days after the day the notice is served on the person;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-4-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-4;
+  logic: LTL;
+  operator: >=;
+  summary: The period specified under paragraph (3)(c) must be greater than or equal to 14 days after the day the notice is served on the person;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-4-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-4;
+  logic: Diffusion;
+  operator: mustBeGreaterThanOrEqualTo;
+  summary: The period specified under paragraph (3)(c) must be greater than or equal to 14 days after the day the notice is served on the person;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-4-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-4;
+  logic: CogAI;
+  operator: mustBeGreaterThanOrEqualTo;
+  summary: The period specified under paragraph (3)(c) must be greater than or equal to 14 days after the day the notice is served on the person;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-5-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to record information or produce document/thing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-75-ss-6-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-75-ss-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the agent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-76-ss-1-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-76-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to comply with notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 75 notice;
+  @action: Compliance within specified time period or extension.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-76-ss-3-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-76-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Allow further time;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-76-ss-4-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-76-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Integrity Commissioner has an obligation to acknowledge receipt.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-10-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-10;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State forbids disclosure;
+  @action: Disclosure is prohibited;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-10-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-10;
+  logic: AllenInterval;
+  operator: during;
+  summary: Prohibition during notices;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Notices are events;
+  @action: Disclosure is prohibited during notices;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-1-logic-213 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of notice information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies in respect of a notice served on a person under section 75.;
+  @action: (Notation prohibiting disclosure of information about notice);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-2-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Integrity Commissioner may include a notation...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-3-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits failure to disclose notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The Integrity Commissioner must include a notation in the notice...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-4-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The Integrity Commissioner may include a notation in the notice...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-5-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-5;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-6-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide written statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-7-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-7;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits disclosure of notice after investigation concludes and proceedings commence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) A notation included in the notice is cancelled by this subsection if: (a) the Integrity Commissioner concludes the investigation to which the notice relates; and (b) any criminal proceedings or civil penalty proceedings resulting from the investigation are commenced.;
+  @action: The disclosure of notice is prohibited.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-7-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-7;
+  logic: AllenInterval;
+  operator: during;
+  summary: Discloses temporal relationship between notation cancellation and investigation commencement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (7) A notation included in the notice is cancelled by this subsection if: (a) the Integrity Commissioner concludes the investigation to which the notice relates; and (b) any criminal proceedings or civil penalty proceedings resulting from the investigation are commenced.;
+  @action: The cancellation of a notation occurs during the commencement of an investigation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-7-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-7;
+  logic: LTL;
+  operator: until;
+  summary: Discloses temporal relationship between notation cancellation and investigation conclusion.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (7) A notation included in the notice is cancelled by this subsection if: (a) the Integrity Commissioner concludes the investigation to which the notice relates; and (b) any criminal proceedings or civil penalty proceedings resulting from the investigation are commenced.;
+  @action: The cancellation of a notation occurs until the conclusion of an investigation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-7-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-7;
+  logic: Diffusion;
+  operator: if;
+  summary: Discloses condition for notation cancellation.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (7) A notation included in the notice is cancelled by this subsection if: (a) the Integrity Commissioner concludes the investigation to which the notice relates; and (b) any criminal proceedings or civil penalty proceedings resulting from the investigation are commenced.;
+  @action: The cancellation of a notation occurs if an investigation is concluded and proceedings commence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-7-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-7;
+  logic: CogAI;
+  operator: then;
+  summary: Discloses consequence of notation cancellation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (7) A notation included in the notice is cancelled by this subsection if: (a) the Integrity Commissioner concludes the investigation to which the notice relates; and (b) any criminal proceedings or civil penalty proceedings resulting from the investigation are commenced.;
+  @action: The cancellation of a notation results in the commencement of proceedings.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-8-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-8-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-8;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between cancellation and notification;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) If a notation is cancelled by subsection (7), the Integrity Commissioner must advise the person who was served with the notated notice, in writing, of the cancellation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-8-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-8;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace between notification and cancellation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (8) If a notation is cancelled by subsection (7), the Integrity Commissioner must advise the person who was served with the notated notice, in writing, of the cancellation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-8-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-8;
+  logic: Diffusion;
+  operator: Information dissemination;
+  summary: Information dissemination between notification and cancellation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) If a notation is cancelled by subsection (7), the Integrity Commissioner must advise the person who was served with the notated notice, in writing, of the cancellation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-8-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-8;
+  logic: CogAI;
+  operator: Knowledge representation;
+  summary: Knowledge representation of notification and cancellation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) If a notation is cancelled by subsection (7), the Integrity Commissioner must advise the person who was served with the notated notice, in writing, of the cancellation.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77a-ss-9-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77a-ss-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a notation has been included in the notice...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-1-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits disclosure of certain information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-1-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-1;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Disclosing certain information is a subclass of the class of offences.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-2-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permits disclosure in specified situations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-3-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A person commits an offence...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-3-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-3;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of disclosure as prohibited;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) a disclosure is made to a person about...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-4-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) In proceedings for an offence against subsection (3), it is a defence...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-5-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A person commits an offence...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-5-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-5;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of disclosure as prohibited;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) a disclosure is made to a person about...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosing information that could reasonably be expected to infer the existence of something.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of disclosure as prohibited;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: A reference in this section to disclosing something's existence includes disclosing information from which a person could reasonably be expected to infer its existence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for prohibition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) A reference in this section to disclosing something's existence includes disclosing information from which a person could reasonably be expected to infer its existence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for prohibition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (6) A reference in this section to disclosing something's existence includes disclosing information from which a person could reasonably be expected to infer its existence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: Diffusion;
+  operator: Diffusion;
+  summary: Diffusion of prohibition;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) A reference in this section to disclosing something's existence includes disclosing information from which a person could reasonably be expected to infer its existence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-77b-ss-6-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-77b-ss-6;
+  logic: CogAI;
+  operator: CogAI;
+  summary: Cognitive AI application for prohibition;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (6) A reference in this section to disclosing something's existence includes disclosing information from which a person could reasonably be expected to infer its existence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-78-ss-1-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-78-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to comply with notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-78-ss-2-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-78-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant has an obligation to comply with the notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-13-logic-246 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-14-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Legal professional privilege obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Information or document given, produced, or referred to is not subject to legal professional privilege.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-14-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap: Legal professional privilege does not affect information or document given, produced, or referred to at all times;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Legal professional privilege does not affect information or document given, produced, or referred to at any time.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-14-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: Diffusion;
+  operator: DoesNotDiffuse;
+  summary: Non-diffusive: Legal professional privilege does not diffuse to other entities;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Legal professional privilege does not diffuse to other entities.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-14-logic-250 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: CogAI;
+  operator: DoesNotAffect;
+  summary: Cognitive AI: Legal professional privilege does not affect information or document given, produced, or referred to in cognitive AI systems;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Legal professional privilege does not affect information or document given, produced, or referred to in cognitive AI systems.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-14-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: SHACL;
+  operator: Validates;
+  summary: SHACL validation: Legal professional privilege obligation is validated by SHACL;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Legal professional privilege obligation is validated by SHACL.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-15-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-17-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-17;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits specific action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-19-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-19;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-21-2-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-21-2;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-22-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-22;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of ‘or’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-23-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-23;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-26-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-26;
+  logic: Deontic;
+  operator: Maintain;
+  summary: Legal professional privilege is maintained.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure does not affect legal professional privilege.;
+  @action: Claim of legal professional privilege remains unaffected.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-29-logic-259 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-29;
+  logic: Deontic;
+  operator: forbid;
+  summary: Forbids contempt of ACLEI;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96a-ss-1-logic-260 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96a-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of certain actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96a-ss-2-logic-261 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96a-ss-2;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Legal practitioner's privilege prevents answer disclosure.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subparagraph (1)(a)(iv);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96a-ss-3-logic-262 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96a-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Legal practitioner's obligation to produce document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Legal practitioner has a duty to produce document;
+  @action: Subparagraph (1)(a)(v) does not apply;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96a-ss-3-logic-263 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96a-ss-3;
+  logic: Deontic;
+  operator: Permission;
+  summary: Legal practitioner's permission to refuse production of document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Legal practitioner has a right to refuse production of document;
+  @action: Subparagraph (1)(a)(v) does not apply;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96a-ss-3-logic-264 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96a-ss-3;
+  logic: LTL;
+  operator: TemporalInterval;
+  summary: Document can be produced at a later time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Legal practitioner has a duty to produce document;
+  @action: Subparagraph (1)(a)(v) does not apply;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-1-logic-265 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits dealing with contempt in a hearing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If, in respect of a hearing...;
+  @action: ...the Integrity Commissioner may apply to either of the following courts...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-1-logic-266 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for contempt application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) If, in respect of a hearing...;
+  @action: ...the Integrity Commissioner may apply to either of the following courts...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-1-logic-267 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Establishes recurring trace for contempt application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) If, in respect of a hearing...;
+  @action: ...the Integrity Commissioner may apply to either of the following courts...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-1-logic-268 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses responsibility for contempt application;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) If, in respect of a hearing...;
+  @action: ...the Integrity Commissioner may apply to either of the following courts...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-1-logic-269 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-1;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes AI's role in contempt application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) If, in respect of a hearing...;
+  @action: ...the Integrity Commissioner may apply to either of the following courts...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-2-logic-270 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-3-logic-271 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-3;
+  logic: Deontic;
+  operator: requires;
+  summary: Application must be accompanied by a certificate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-4-logic-272 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-4;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide a copy of the certificate to the person before or at the same time as the application is made.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-5-logic-273 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Integrity Commissioner has an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-6-logic-274 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits dealing with person as if acts or omissions constituted contempt of court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) If, after considering the matters specified in the certificate; and hearing or receiving any evidence or statements by or in support of ACLEI; and hearing or receiving any evidence or statements by or in support of the person;;
+  @action: the court to which the application was made finds that the person was in contempt of ACLEI, the court may deal with the person as if the acts or omissions involved constituted a contempt of that court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-6-logic-275 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-6;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with temporal intervals related to contempt proceedings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) If, after considering the matters specified in the certificate; and hearing or receiving any evidence or statements by or in support of ACLEI; and hearing or receiving any evidence or statements by or in support of the person;;
+  @action: the court to which the application was made finds that the person was in contempt of ACLEI, the court may deal with the person as if the acts or omissions involved constituted a contempt of that court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-6-logic-276 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-6;
+  logic: LTL;
+  operator: Recurrent;
+  summary: Repeats in temporal intervals related to contempt proceedings.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (6) If, after considering the matters specified in the certificate; and hearing or receiving any evidence or statements by or in support of ACLEI; and hearing or receiving any evidence or statements by or in support of the person;;
+  @action: the court to which the application was made finds that the person was in contempt of ACLEI, the court may deal with the person as if the acts or omissions involved constituted a contempt of that court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-6-logic-277 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-6;
+  logic: Diffusion;
+  operator: Spread;
+  summary: Spreads to related entities in contempt proceedings.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) If, after considering the matters specified in the certificate; and hearing or receiving any evidence or statements by or in support of ACLEI; and hearing or receiving any evidence or statements by or in support of the person;;
+  @action: the court to which the application was made finds that the person was in contempt of ACLEI, the court may deal with the person as if the acts or omissions involved constituted a contempt of that court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-6-logic-278 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-6;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes entities involved in contempt proceedings.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (6) If, after considering the matters specified in the certificate; and hearing or receiving any evidence or statements by or in support of ACLEI; and hearing or receiving any evidence or statements by or in support of the person;;
+  @action: the court to which the application was made finds that the person was in contempt of ACLEI, the court may deal with the person as if the acts or omissions involved constituted a contempt of that court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96b-ss-7-logic-279 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96b-ss-7;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits dealing with contempt;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-1-logic-280 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to specified courts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-2-logic-281 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-2-logic-282 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for proceedings;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Proceedings in relation to the application are, subject to this Act, to be instituted, carried on, heard and determined in accordance with the laws (including any Rules of Court) that apply in relation to the punishment of a contempt of the court to which the application was made.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-2-logic-283 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-2;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Temporal trace for proceedings;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Proceedings in relation to the application are, subject to this Act, to be instituted, carried on, heard and determined in accordance with the laws (including any Rules of Court) that apply in relation to the punishment of a contempt of the court to which the application was made.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-2-logic-284 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of proceedings;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Proceedings in relation to the application are, subject to this Act, to be instituted, carried on, heard and determined in accordance with the laws (including any Rules of Court) that apply in relation to the punishment of a contempt of the court to which the application was made.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-2-logic-285 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-2;
+  logic: CogAI;
+  operator: Inference;
+  summary: Inference for proceedings;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Proceedings in relation to the application are, subject to this Act, to be instituted, carried on, heard and determined in accordance with the laws (including any Rules of Court) that apply in relation to the punishment of a contempt of the court to which the application was made.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96c-ss-3-logic-286 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96c-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Certificate is presented as evidence;
+  @action: Prima facie evidence;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-1-logic-287 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits detention without court hearing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If the Integrity Commissioner proposes to make an application under subsection 96B(1);
+  @action: the Integrity Commissioner may, during the hearing concerned, direct a constable or an authorised officer to detain the person for the purpose of bringing the person before the relevant court for the hearing of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-1-logic-288 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relationship between detention and court hearing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) If the Integrity Commissioner proposes to make an application under subsection 96B(1);
+  @action: the Integrity Commissioner may, during the hearing concerned, direct a constable or an authorised officer to detain the person for the purpose of bringing the person before the relevant court for the hearing of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-1-logic-289 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Establishes recurring trace between detention and court hearing;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) If the Integrity Commissioner proposes to make an application under subsection 96B(1);
+  @action: the Integrity Commissioner may, during the hearing concerned, direct a constable or an authorised officer to detain the person for the purpose of bringing the person before the relevant court for the hearing of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-1-logic-290 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses responsibility between Integrity Commissioner and law enforcement;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) If the Integrity Commissioner proposes to make an application under subsection 96B(1);
+  @action: the Integrity Commissioner may, during the hearing concerned, direct a constable or an authorised officer to detain the person for the purpose of bringing the person before the relevant court for the hearing of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-1-logic-291 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-1;
+  logic: Argumentation;
+  operator: Justification;
+  summary: Provides justification for detention as part of court process;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) If the Integrity Commissioner proposes to make an application under subsection 96B(1);
+  @action: the Integrity Commissioner may, during the hearing concerned, direct a constable or an authorised officer to detain the person for the purpose of bringing the person before the relevant court for the hearing of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-2-logic-292 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to bring person before court;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-3-logic-293 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Court must direct person to appear before court.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-4-logic-294 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-4;
+  logic: Deontic;
+  operator: impose;
+  summary: The court imposes conditions on the release.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The court may also impose any other condition...;
+  @action: The person must surrender their passport.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96d-ss-5-logic-295 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96d-ss-5;
+  logic: Deontic;
+  operator: may;
+  summary: Court may vary or revoke a condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-1-logic-296 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: May withdraw contempt application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-2-logic-297 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If the Integrity Commissioner does so; and (b) the person to whom the application relates is in detention under section 96D;;
+  @action: the person must be released from detention immediately.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-2-logic-298 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-2;
+  logic: AllenInterval;
+  operator: During;
+  summary: Temporal interval during which person must be released from detention;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If: (a) the Integrity Commissioner does so; and (b) the person to whom the application relates is in detention under section 96D;;
+  @action: the person must be released from detention immediately.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-2-logic-299 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-2;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal interval until which person must not be detained;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) If: (a) the Integrity Commissioner does so; and (b) the person to whom the application relates is in detention under section 96D;;
+  @action: the person must be released from detention immediately.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-2-logic-300 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-2;
+  logic: Diffusion;
+  operator: If-then;
+  summary: Conditional obligation based on Integrity Commissioner's action and person's detention status;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) If: (a) the Integrity Commissioner does so; and (b) the person to whom the application relates is in detention under section 96D;;
+  @action: the person must be released from detention immediately.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96e-ss-2-logic-301 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96e-ss-2;
+  logic: CogAI;
+  operator: Classifies;
+  summary: Classification of persons subject to contempt application withdrawal by Integrity Commissioner;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) If: (a) the Integrity Commissioner does so; and (b) the person to whom the application relates is in detention under section 96D;;
+  @action: the person must be released from detention immediately.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-1-logic-302 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No double jeopardy;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If an act or omission by a person is an offence against this Act and is also an offence against a law of a State, the person may be prosecuted and convicted under this Act or under that law of that State in respect of the act or omission...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-1-logic-303 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between offenses;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) If an act or omission by a person is an offence against this Act and is also an offence against a law of a State, the person may be prosecuted and convicted under this Act or under that law of that State in respect of the act or omission...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-1-logic-304 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-1;
+  logic: LTL;
+  operator: Repeats;
+  summary: Repeating offenses;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) If an act or omission by a person is an offence against this Act and is also an offence against a law of a State, the person may be prosecuted and convicted under this Act or under that law of that State in respect of the act or omission...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-1-logic-305 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: No double jeopardy obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If an act or omission by a person is an offence against this Act and is also an offence against a law of a State, the person may be prosecuted and convicted under this Act or under that law of that State in respect of the act or omission...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-1-logic-306 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of double jeopardy;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) If an act or omission by a person is an offence against this Act and is also an offence against a law of a State, the person may be prosecuted and convicted under this Act or under that law of that State in respect of the act or omission...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-2-logic-307 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: If dealt with by the court, then no prosecution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an application is made to the Federal Court or a Supreme Court under subsection 96B(1);
+  @action: the person is not liable to be prosecuted for an offence in respect of that act or omission;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-2-logic-308 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The provision overlaps with the application of subsection 96B(1).;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) an application is made to the Federal Court or a Supreme Court under subsection 96B(1);
+  @action: the person is dealt with by the court under that section in respect of the act or omission;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-2-logic-309 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-2;
+  logic: LTL;
+  operator: Repeats;
+  summary: The provision repeats the application of subsection 96B(1).;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the person is dealt with by the court under that section in respect of the act or omission;
+  @action: the person is not liable to be prosecuted for an offence in respect of that act or omission;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-96f-ss-2-logic-310 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-96f-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: If dealt with by the court, then no prosecution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person is dealt with by the court under that section in respect of the act or omission;
+  @action: the person is not liable to be prosecuted for an offence in respect of that act or omission;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-32-logic-311 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the person from leaving Australia to avoid giving evidence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person has been ordered to deliver their passport to the Integrity Commissioner.;
+  @action: The authorized officer may apply for a warrant to arrest the person.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-32-logic-312 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the person from attempting to evade service of summons.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person is to be served with a summons under section 83.;
+  @action: The authorized officer may apply for a warrant to arrest the person if they have not complied with the order or are likely to leave Australia to avoid giving evidence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-32-logic-313 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with the time period during which the person is likely to leave Australia to avoid giving evidence.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The authorized officer has reasonable grounds to believe that the person is likely to leave Australia for the purpose of avoiding giving evidence at a hearing before the Integrity Commissioner.;
+  @action: The authorized officer may apply for a warrant to arrest the person if they have not complied with the order or are likely to leave Australia to avoid giving evidence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-32-logic-314 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: LTL;
+  operator: Recurring;
+  summary: Recurring trace of the person's attempts to evade service of summons.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The authorized officer has reasonable grounds to believe that the person is likely to abscond or is otherwise attempting, or likely to attempt, to evade service of the summons.;
+  @action: The authorized officer may apply for a warrant to arrest the person if they have not complied with the order or are likely to leave Australia to avoid giving evidence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-32-logic-315 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the person from leaving Australia to avoid giving evidence at a hearing before the Integrity Commissioner.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The authorized officer has reasonable grounds to believe that the person is likely to leave Australia for the purpose of avoiding giving evidence at a hearing before the Integrity Commissioner.;
+  @action: The authorized officer may apply for a warrant to arrest the person if they have not complied with the order or are likely to leave Australia to avoid giving evidence.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-33-logic-316 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-33;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-34-logic-317 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-34;
+  logic: Deontic;
+  operator: Permits;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Authorized officer executing warrant need not be the authorized officer who applied for the warrant.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-35-logic-318 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to substitute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State must substitute;
+  @action: Substitution is obligatory;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-35-logic-319 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-35;
+  logic: AllenInterval;
+  operator: MEets;
+  summary: Establishes a temporal relationship between 'hearing' and 'held';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Heard happens after Held;
+  @action: Held meets Heared;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-37-logic-320 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-37;
+  logic: Deontic;
+  operator: MUST INSERT;
+  summary: Obligation to insert eligible seizable item;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: After subparagraph 110(4)(b)(iv);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-40-logic-321 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-40;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits searching a person without authorization.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-43-logic-322 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-43;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide information or produce a document or thing upon request.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-44-logic-323 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-44;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'request';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘request’;
+  @action: Substitute ‘notice’;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-45-logic-324 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-45;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace 'authorises' with 'authorise';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-48-logic-325 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-48;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-50-logic-326 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-50;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of using the term "Integrity Commissioner's";
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-54-logic-327 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-54;
+  logic: Deontic;
+  operator: relatesTo;
+  summary: Relates to amendments made by items 7-19 of this Schedule.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-55-logic-328 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-55;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-57-logic-329 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-57;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Section applies to warrants issued on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner Act 2006;
+  @action: Section 100 of the Law Enforcement Integrity Commissioner Act 2006;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-57-logic-330 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-57;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Section applies to warrants issued on or after commencement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commissioner Act 2006;
+  @action: Section 100 of the Law Enforcement Integrity Commissioner Act 2006;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-57-logic-331 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-57;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Section implies that warrants issued on or after commencement are subject to section 100.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Commissioner Act 2006;
+  @action: Section 100 of the Law Enforcement Integrity Commissioner Act 2006;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-57-logic-332 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-57;
+  logic: Diffusion;
+  operator: Temporal Interval;
+  summary: Section applies to warrants issued on or after commencement.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Commissioner Act 2006;
+  @action: Section 100 of the Law Enforcement Integrity Commissioner Act 2006;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-57-logic-333 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-57;
+  logic: CogAI;
+  operator: Applicability;
+  summary: Section applies to warrants issued on or after commencement.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Commissioner Act 2006;
+  @action: Section 100 of the Law Enforcement Integrity Commissioner Act 2006;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-4-sec-59-logic-334 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-59;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to warrants executed on or after the commencement of this Schedule.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-1-logic-335 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits the use of Benzylpiperazine (BZP);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-2-2-logic-336 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of ketamine.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-3-2-logic-337 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits methcathinone.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-4-logic-338 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits the production, possession, or use of 4-Methylmethcathinone;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-5-logic-339 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-5;
+  logic: Deontic;
+  operator: =;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Phenylpropanolamine is prohibited.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-6-logic-340 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of Benzylpiperazine (BZP);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-7-logic-341 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of ketamine.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-8-logic-342 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits methamphetamine.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-9-logic-343 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes prohibition on methcathinone;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-11-logic-344 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-11;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits the possession, sale, or importation of 4-MMC;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-12-logic-345 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes prohibition on Phenylpropanolamine;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-14-logic-346 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-14;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'special forfeited goods';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-14-logic-347 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-14;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for special forfeited goods;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-5-sec-15-logic-348 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-15;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibition of omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-2-logic-349 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make an order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Director (or the Commissioner for the Australian Federal Police) applies for a restraining order.;
+  @action: A court must make an order corresponding to the order mentioned in this subsection.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-2-logic-350 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Temporal interval between applying for a restraining order and making an order;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Director (or the Commissioner for the Australian Federal Police) applies for a restraining order.;
+  @action: A court must make an order corresponding to the order mentioned in this subsection within a certain time frame.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-2-logic-351 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: LTL;
+  operator: RECURSIVE;
+  summary: Recurring trace of making orders under section 28A of the Proceeds of Crime Act 2002;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Director (or the Commissioner for the Australian Federal Police) applies for a restraining order.;
+  @action: A court must make an order corresponding to the order mentioned in this subsection repeatedly.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-2-logic-352 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: Diffusion;
+  operator: SPREADS_TO;
+  summary: Diffusion of obligations from Director to court;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Director (or the Commissioner for the Australian Federal Police) applies for a restraining order.;
+  @action: The obligation to make an order corresponding to the order mentioned in this subsection spreads to the court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-2-logic-353 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-2;
+  logic: CogAI;
+  operator: RECOGNIZES;
+  summary: Recognition of Director's application by the court;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Director (or the Commissioner for the Australian Federal Police) applies for a restraining order.;
+  @action: The court recognizes the Director's application and makes an order corresponding to it.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-4-logic-354 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibit certain persons from performing functions under the Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraphs (a), (aa), (b) and (c) of the definition of authorised officer in section 338;
+  @action: Note 1: Paragraphs (a), (aa), (b) and (c) of the definition of authorised officer in section 338;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-4-logic-355 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes obligation on certain persons to comply with new definition of authorised officer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Note 1: Paragraphs (a), (aa), (b) and (c) of the definition of authorised officer in section 338;
+  @action: New definition of authorised officer in section 338;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-4-logic-356 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between repeal of note and substitution of new definition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Repeal the note, substitute: Note 1:;
+  @action: Substitution of new definition of authorised officer in section 338;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-4-logic-357 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: LTL;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between repeal of note and substitution of new definition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Repeal the note, substitute: Note 1:;
+  @action: Substitution of new definition of authorised officer in section 338;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-4-logic-358 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permits repeal of note and substitution of new definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Repeal the note, substitute:;
+  @action: Note 1: Paragraphs (a), (aa), (b) and (c) of the definition of authorised officer in section 338;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-1-logic-359 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits publication of evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-360 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits publication of evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-361 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies matters to be restricted from publication;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) if the application is made under section 15C (in person)—the matters referred to in that section that are contained in an affidavit made in support of the application;;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-362 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies matters to be restricted from publication;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (b) if the application is made under section 15D (by telephone or other electronic means)—the matters referred to in paragraph 15D(2)(a) that are contained, or that are to be contained, in an affidavit made in support of the application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-363 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: LinearLogic;
+  operator: Restrict;
+  summary: Restricts publication of evidence;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) If it appears to the magistrate to be necessary in order to prevent prejudice to the administration of justice,;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-364 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Restriction;
+  summary: Restricts publication within a specific time frame;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If it appears to the magistrate to be necessary in order to prevent prejudice to the administration of justice,;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-2-logic-365 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-2;
+  logic: Diffusion;
+  operator: Limit;
+  summary: Limits dissemination of information;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) If it appears to the magistrate to be necessary in order to prevent prejudice to the administration of justice,;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-3-logic-366 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits publication of evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-4-logic-367 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits publication of evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The power conferred by subsection (2) is in addition to, and is not taken to derogate from, any other power of the magistrate.;
+  @action: The power to publish evidence is prohibited.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-4-logic-368 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits publication of evidence—proceedings for;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The power conferred by subsection (2) is in addition to, and is not taken to derogate from, any other power of the magistrate.;
+  @action: The power to publish evidence is prohibited in proceedings.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-15fa-ss-4-logic-369 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-15fa-ss-4;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implies prohibition on publication of evidence—proceedings for;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (4) The power conferred by subsection (2) is in addition to, and is not taken to derogate from, any other power of the magistrate.;
+  @action: The power to publish evidence implies a prohibition in proceedings.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-1-logic-370 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court may prohibit publication of evidence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-2-logic-371 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court prohibits publication;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court may make an order;
+  @action: Publication is prohibited;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-3-logic-372 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court may prohibit publication of evidence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+  @action: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-3-logic-373 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-3;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Excerpt describes a temporal interval of 'any time' after application is made.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-3-logic-374 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-3;
+  logic: LTL;
+  operator: Recurrent;
+  summary: Excerpt describes a recurring trace of court orders.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-3-logic-375 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-3;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Excerpt describes a process of diffusion of information about court orders.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-3-logic-376 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-3;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Excerpt describes a process of recognizing court orders.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) The court may make an order under subsection (2) at any time after the application is made and before it is determined.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-28a-ss-4-logic-377 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-28a-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits publication of evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The power conferred by subsection (2) is in addition to, and is not taken to derogate from, any other power of the court.;
+  @action: (4) The power conferred by subsection (2) is not taken to derogate from any other power of the court.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-10-logic-378 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-10;
+  logic: Deontic;
+  operator: Permit;
+  summary: Grant permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-11-logic-379 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Application of amendments to restrain conduct.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Amendments apply in relation to applications made on or after commencement.;
+  @action: Duty to comply with amended provisions.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-11-logic-380 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-11;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between commencement and application.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Amendments apply in relation to applications made on or after the commencement of those items.;
+  @action: Commencement before or after application.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-11-logic-381 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-11;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace between applications and amendments.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Amendments apply in relation to applications made on or after commencement.;
+  @action: Application before or after amendment.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-6-sec-11-logic-382 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Application of amendments to freeze conduct.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The amendment of the Proceeds of Crime Act 2002 made by item 7 of this Schedule applies in relation to an application made on or after the commencement of that item.;
+  @action: Duty to comply with amended provisions.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-1-logic-383 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'licence period';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-1-logic-384 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-1;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for 'licence period';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-3-logic-385 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-3;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-4-logic-386 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-4;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Definition substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-5-logic-387 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-5;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term 'supervision period';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-5-logic-388 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-5;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for 'supervision period';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-1-logic-389 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Attorney-General must make a parole order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-2-logic-390 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Attorney-General must give notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: written notice with reasons for refusal;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-2-logic-391 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-2;
+  logic: DescriptionLogic;
+  operator: Class;
+  summary: Notice includes statement of reasons;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-3-logic-392 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Parole order must be in writing.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-4-logic-393 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows making of parole order despite requirement to refuse;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Despite subsection (1);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-4-logic-394 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Specifies temporal overlap between federal and State/ Territory sentences;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) for a federal sentence, or federal sentences, that include a life sentence—until the release of the person from prison for the State or Territory offence (but a decision may be made under that subsection at any time during the 3 month period before the person’s expected release);;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-4-logic-395 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows making of parole order despite requirement to refuse for life sentence cases;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) in any case—if the State or Territory sentence is a life sentence for which a non-parole period has not been fixed.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19al-ss-4-logic-396 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19al-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows decision-making under subsection (1) during specified time period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (but a decision may be made under that subsection at any time during the 3 month period before the person’s expected release);;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-397 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be released on parole;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-398 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: starts;
+  summary: Parole period starts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-399 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: ends;
+  summary: Parole period ends;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-400 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide certification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person certifies on the parole order (or a copy of the order) that he or she accepts the conditions to which the order is subject.;
+  @action: The person must certify acceptance of parole conditions.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-401 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide release on parole;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-402 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Release on parole occurs after imprisonment for a State or Territory offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-403 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: LinearLogic;
+  operator: =>;
+  summary: Release on parole implies compliance with parole order;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-3-logic-404 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-3;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-405 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be released on parole;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-406 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: starts;
+  summary: Parole period starts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-1-logic-407 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-1;
+  logic: Deontic;
+  operator: ends;
+  summary: Parole period ends;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3);
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-408 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide certification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person certifies on the parole order (or a copy of the order) that he or she accepts the conditions to which the order is subject.;
+  @action: The person must certify acceptance of parole conditions.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-409 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide release on parole;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-410 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Release on parole occurs after imprisonment for a State or Territory offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-2-logic-411 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-2;
+  logic: LinearLogic;
+  operator: =>;
+  summary: Release on parole implies compliance with parole order;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) However, if the person is imprisoned for a State or Territory offence...;
+  @action: ...the person must be released from prison on parole in accordance with the parole order...;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-19am-ss-3-logic-412 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-19am-ss-3;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-7-logic-413 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the phrase would be incorrect;
+  @action: The phrase must not be omitted;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-8-logic-414 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-8;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-9-logic-415 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-7-sec-9;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Specify conditions for released persons.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-10-logic-416 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-11-logic-417 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-12-logic-418 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-12;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies a provision as an Undertaking;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The text describes the application of amendments in relation to a licence.;
+  @action: The amendments apply in relation to a licence granted under section 19AP of the amended law at or after commencement.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-12-logic-419 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-12;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies a provision as an Undertaking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The text describes the application of amendments in relation to a licence.;
+  @action: The amendments apply in relation to a licence granted under section 19AP of the amended law at or after commencement.;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-12-logic-420 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-12;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Describes the temporal relationship between the commencement and the application of amendments.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The text states that the amendments apply in relation to a licence granted under section 19AP of the amended law at or after commencement.;
+  @action: The commencement is related to the application of amendments by an interval of [insert duration].;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-7-sec-12-logic-421 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-7-sec-12;
+  logic: LTL;
+  operator: Applicable;
+  summary: Describes the temporal relationship between the parole order and the release of a federal offender.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The text states that the Attorney-General will be required to reconsider making a parole order for the person within 12 months of the commencement.;
+  @action: The parole order is related to the release of a federal offender by an interval of [insert duration].;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-8-sec-3-logic-422 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified words.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-8-sec-4-logic-423 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposing obligation on state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-8-sec-6-logic-424 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to act on application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Application made to court under paragraph 15A(1AA)(a);
+  @action: Application withdrawn if not acted upon by court;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-8-sec-6-logic-425 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-6;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Definition of old law;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: old law means section 15A of the Crimes Act 1914 as in force immediately before the commencement of this item;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-8-sec-6-logic-426 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-8-sec-6;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between old and new laws;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement of this item;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-1-3-logic-427 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-1-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-2-3-logic-428 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-2-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to apply amendment to specified persons.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-2-3-logic-429 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-2-3;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Class inclusion: Amendment applies to persons appointed or re-appointed as Law Enforcement Integrity Commissioner.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-powers-and-offences-act-2012-sch-9-sec-25-2-logic-430 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-9-sec-25-2;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

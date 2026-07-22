@@ -1,0 +1,95 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment (Enforcement of Fines) Act 1998
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Governor-General has an obligation to arrange with states and territories.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on States and Territories to apply their laws to Commonwealth offences.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-2;
+  logic: Deontic;
+  operator: OBLIG;
+  summary: Notification obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability of amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Amendments apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act.;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: AllenInterval;
+  operator: TemporalRelation;
+  summary: Temporal applicability of amendments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act.;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: LTL;
+  operator: RecurringTrace;
+  summary: Temporal applicability of amendments;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act.;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Diffusion;
+  operator: InformationFlow;
+  summary: Amendments and their applicability;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act.;
+}
+
+crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: CogAI;
+  operator: KnowledgeRepresentation;
+  summary: Amendments and their applicability;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act.;
+}

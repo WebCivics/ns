@@ -1,0 +1,1289 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 16(9)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9"
+        },
+        {
+          "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10"
+        }
+      ],
+      "cml:integrityHash": "fc61fc4a50e655d12b70c909f99174b3a8932dca19bfcf9d8128e3cad72db45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:note": "Reference update rule for office names",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(10) Subsection 16(9)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1d031d27dd7d4b7fb6ee2b48269462d3a9fa4d6d2235cee850e468acab0d308d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-1-ss-10",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "update rule",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Conditional obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if-then",
+      "cml:premiseText": "(10)"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-10"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:note": "Cannot appoint a person holding office as a Commissioner under this section.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(9) Subsection 16(9)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6da29b9dba90c147130501d61877ac20bd8d86486da87b938620732e0e2ce10f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-1-ss-9",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commissioner under this section",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Cannot appoint",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Holding office"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-1-ss-9"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Omit specified phrase.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Schedule 4"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "79df797e8d391179233b4ea2f1fd4fcac2ddec644e81dca004c7f40945e73b40",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the Head of Administration and Associate Heads of Administration.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Omit specified phrases from Head of Administration and Associate Head of Administration.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Schedule 4"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b41603609efd1bcbb67cd0ae967df8acb3101d56f6aa213d94083c8ad25b713d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of specified phrases.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Omit 'or a member of the staff', substitute 'or a member of the public service'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Schedule 4"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-deontic-1",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-alleninterval-2",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-ltl-3",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-diffusion-4",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a89eae87b1981d49f9ee730a26fb8adf442f8deaa37806b70c2eb9429498c2f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘or a member of the public service’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Replaces 'staff' with 'public service' at some point in time",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal replacement",
+      "cml:premiseText": "Omit ‘or a member of the staff’"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘or a member of the public service’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Replaces 'staff' with 'public service' using AI reasoning",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Inference",
+      "cml:premiseText": "Omit ‘or a member of the staff’"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘or a member of the public service’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting 'or a member of the staff'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Omit ‘or a member of the staff’"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘or a member of the public service’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Replaces 'staff' with 'public service' in all contexts",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Spread",
+      "cml:premiseText": "Omit ‘or a member of the staff’"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘or a member of the public service’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Replaces 'staff' with 'public service' at some point in time",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal replacement",
+      "cml:premiseText": "Omit ‘or a member of the staff’"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 46(1)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1"
+        },
+        {
+          "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a"
+        }
+      ],
+      "cml:integrityHash": "fc61fc4a50e655d12b70c909f99174b3a8932dca19bfcf9d8128e3cad72db45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:note": "Vacation of office upon resignation or ceasing to be a member.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1) Subsection 46(1)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-1",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-2",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "17f0241d3e393ecb8d1d299f22132896c4bda1cb5d4c4ad9b6eab7cc841ffe23",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Vacation of office",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "vacates",
+      "cml:premiseText": "(1) A person holding office as Chief Minister vacates the office:"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to vacate upon resignation or ceasing to be a member.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must vacate",
+      "cml:premiseText": "(b) when the person ceases to be a member (not because of a general election);"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to vacate upon ceasing to be a member.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "must vacate",
+      "cml:premiseText": "(c) immediately before a Chief Minister is elected after:"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.7",
+      "skos:note": "A person holding office as a Minister must vacate the office under certain circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1A) Subsection 46(1)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c6d5731c3a62a007e8fa56d6a331acf2d81f7df45a6cb1335a94bd3120f3cf3b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-2-ss-1a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Vacates office",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must vacate office",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "Holding office as a Minister"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-2-ss-1a"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 48(1)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 48(4)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Repeal subsections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Subsections 67(2) to (5)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c393dd34c6ce20808c2417f065fa02c3088b2e6c1ccd2070a0160d9cdf9ce57",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Omit specified sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 67A(1)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ac7c6266941fe7b9de2031e107ea69379ec8005bb8fab43127fdda498ac66c99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified sections",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Repeal section 67E",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Section 67E"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Repeal section 68",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Section 68"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.8",
+      "skos:note": "Omit specific terms from definition of office",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Subsection 70(1) (definition of office)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc69b362d265027e4256964cce09f4540d899a470b69f2ac95a21d38afb9c3ef",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified terms",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.9",
+      "skos:note": "Insertion of clause after 'but' subject to subsection (6A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 43(6)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f942213a822a2c3da48c27c01925ed743aab9a3c2164be54b31f4872b30eec40",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of clause after 'but'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.9",
+      "skos:note": "Quorum requirements when full-time member is precluded from being present",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After subsection 43(6)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-deontic-1",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-alleninterval-2",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-ltl-3",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-diffusion-4",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "94de1d4e1a94c5af8beb7c399ac9e406f9ef8d2a61a3699967b833a024115187",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The quorum requirements apply during the period when section 42 is in force.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between subsections",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "overlaps",
+      "cml:premiseText": "Section 42 and section 43(6) have overlapping temporal intervals."
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The quorum requirements are recognized by AI systems.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognition of quorums by AI systems",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "recognizes",
+      "cml:premiseText": "AI systems may recognize the quorum requirements in this subsection."
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Any 3 members constitute a quorum if the full-time member is the Chairperson.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires a quorum",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires",
+      "cml:premiseText": "Chairperson and any other 2 members constitute a quorum."
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The quorum requirements diffuse to other sections.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of quorums to other sections",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "diffuses",
+      "cml:premiseText": "Quorums in other sections may be affected by this subsection."
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The quorum requirements apply until the end of section 42.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal relationship between subsections",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "Section 43(6) ends before section 42 begins."
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.5",
+      "skos:note": "Cites this Act as the Australian Capital Territory Legislation Amendment Act 2003.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2c6db79921eec7308bf6a11b3b5341b4c9cdce00d64704103fd2a4ae7fcedecb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Cites this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "citation"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.5",
+      "skos:note": "Commences on day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b0a0b388907c1b03ff0e7a16ea0a97c5a34ef635ca3310545087917db2cda1c6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-legislation-amendment-act-2003.pdf, p.6",
+      "skos:note": "Schedules governing amendments and repeals of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "australian-capital-territory-legislation-amendment-act-2003.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3-norm",
+        "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b88dcf8d3adaa8cd7eaa433c5b7ea4f7dc23003f11dca416c6911df485563345",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-legislation-amendment-act-2003#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval application",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable"
+    },
+    {
+      "@id": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-legislation-amendment-act-2003-sec-3"
+    },
+    {
+      "@id": "doc:au/c2004a01086",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend laws relating to the Australian Capital Territory, and for related purposes",
+      "dc:identifier": [
+        "C2004A01086",
+        "No. 1 of 2003"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Capital Territory Legislation Amendment Act 2003"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2004A01086/latest/downloads",
+        "australian-capital-territory-legislation-amendment-act-2003.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

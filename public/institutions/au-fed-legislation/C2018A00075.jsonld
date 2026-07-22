@@ -1,0 +1,3827 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.7",
+      "skos:note": "Defines international organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 4(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-descriptionlogic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-deontic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-alleninterval-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "304041cd5642d64181c25b242748f4db050ed50ce914a5f9f3c0997ada7a98f2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or under an international agreement.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "established by or under",
+      "cml:premiseText": "international agreement or international arrangement..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...a public international organisation within the meaning of section 70.1 of the Criminal Code;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of international organisation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is defined as",
+      "cml:premiseText": "Insert: international organisation includes..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...a body (including an international judicial body)...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "international organisation includes..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.7",
+      "skos:note": "Assist or cooperate with international organisations and non-governmental organisations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 After paragraph 8(1)(bg)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c7140ed5232a770e930eaac3df94f06911fb07f28620829dac5d9c7484ae045a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to assist or cooperate.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.8",
+      "skos:note": "Repeal definition of Aboriginal legal aid organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 23B(1) (definition of Aboriginal legal aid"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "df933c146d512e04cd6aa027ad1935da90c3ca93f554071604e1b7a1774bd36a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Replace name in relevant list with representative of Aboriginal legal assistance organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Subsection 23K(3) (paragraph (c) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d336b59309650fb9405d4240de135e466047436b06b6be285f649018364a82f2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes duty on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-10"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Repeal definition of Aboriginal legal aid organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 23WA(1) (definition of Aboriginal legal aid"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "df933c146d512e04cd6aa027ad1935da90c3ca93f554071604e1b7a1774bd36a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-11"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Obligations of investigating officials",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Subsection 23WA(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7cd5fd490af01901bff0956ec849c4954621dbef858e83da7e46d33750e4f268",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-12-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-12"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.10",
+      "skos:note": "Replace outdated term with modern equivalent",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Paragraph 23WB(2)(c)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c91731be64fbe7253797c1f7286950341076e59e97da287e9d3c6d19d2203387",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-13"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.10",
+      "skos:note": "Omit specific term from text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Paragraph 23WB(3)(c)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "109bede22634c71b8c0542d464cee3688255557ce1c8d4682202dd105bca62ee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-14"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.10",
+      "skos:note": "Notify Aboriginal legal assistance organisation representative of forensic procedure consent request.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Paragraphs 23WG(4)(a) and (b)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e323173e5cc632e091675fb0e7771892ee137a735b50a3af771bfc90d807d083",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the state.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-15"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.8",
+      "skos:note": "Defines Aboriginal legal assistance organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 23B(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e22fac456f0d12b703cb0c0d94eddd588260da1b28d2f12e3999a36adfacf73c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Aboriginal legal assistance organisation means an organisation that is funded by the Commonwealth, a State or a Territory to provide legal assistance to Aboriginal persons and Torres Strait Islanders.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term with a specific meaning",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is defined as"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.8",
+      "skos:note": "Insertion of phrase after 'must'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 23H(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "23c641d28c0c33d1d624fac20f37f81ab5c8872f91a9f136e8991b8c7ce749bb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of phrase",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "insert"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.8",
+      "skos:note": "Notify Aboriginal legal assistance organisation of arrest or protected suspect status.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Paragraphs 23H(1)(a) and (b)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8c6a3fd84cec41d1933ba224b91c30d1bceab9e60738614a20b15a5016de33a2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Notify Aboriginal legal assistance organisation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.8",
+      "skos:note": "Representatives of Aboriginal legal assistance organisations must not question people until notified.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 23H(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6bbf17a0106ba186601407b1fb58371299285fb2e6b6e78064bd7a9d830b8490",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Obligations of investigating officials Schedule 2",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Representatives of Aboriginal legal assistance organisations must not question people until notified.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MustNot",
+      "cml:premiseText": "Subsection (1)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Must choose representative of Aboriginal legal assistance organisation as interview friend.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 23H(2B)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "843ec34ad5cca4387b6877e7e1d005377b3ebbcca7323bbbe816b53a4088a302",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must choose representative of Aboriginal legal assistance organisation as interview friend.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Repeal paragraph, substitute representative of Aboriginal legal assistance organisation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 23H(9) (paragraph (c) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "06fee417d060e494bbff03101ec395de7fa2e93119ed3164ac5dd6f628f1de6c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeal paragraph",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-7"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Repeal paragraph.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Subsection 23H(9) (paragraph (d) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e89d2f6fd74d71d5db70de11a6cb2c7ea9945773a69c9a126de140f3338cadce",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-8"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.9",
+      "skos:note": "Repeal a section",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 23J"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-2-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeals a section",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-2-sec-9"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.11",
+      "skos:note": "Defines 'entrusted person'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 15GC"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-5",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e03ca3b12ad30c33a9e9ad374903b943f22e7bfea321fe0e5253769382fd2d15",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "participant in a controlled operation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "AFP appointee"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "member of the police force"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "staff member of the Immigration and Border Protection Department"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "Chief Executive Officer of the ACC"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-logic-descriptionlogic-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "entrusted person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "staff member of the Australian Commission for Law Enforcement Integrity"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1c"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e"
+        }
+      ],
+      "cml:integrityHash": "d5f5b2eb8324c336f27b138d438d593b17f5702cdeacdca11cb1c0ef728c1b59",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Disclosing controlled operation information is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-deontic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-alleninterval-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f1c2e6cb50cb90778e32a3ac981b509494869d15a6572beabf70234258d23425",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosing controlled operation information is an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between disclosure and offence.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal relation",
+      "cml:premiseText": "(d) the information relates to a controlled operation."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosing controlled operation information is an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosing controlled operation information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(a) the person is, or has been, an entrusted person;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Disclosing controlled operation information is an offence.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosing controlled operation information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(c) the person discloses the information;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Strict liability applies to paragraph (1)(a)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1A) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7e56f82944a0c5137c4bc498532b02fff19deeedcd810c0484b0c41afe5db975",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Strict liability obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(1A) Strict liability applies to paragraph (1)(a)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1a"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Disclosing controlled operation information is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1B) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-epistemic-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-ltl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e268d82785a9fa2cbc56561bb0c4722b5c14ea4ab92f24709cfc6fa564bd0fb8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1b",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person discloses the information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(a) the person is, or has been, an entrusted person; and (b) information came to the knowledge or into the possession of the person in the person’s capacity as an entrusted person;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person discloses the information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosure due to intent",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(e)(i) the person intends to endanger the health or safety of any person or prejudice the effective conduct of a controlled operation;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person discloses the information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of disclosure due to consequences",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(e)(ii) the disclosure will endanger the health or safety of any person or prejudice the effective conduct of a controlled operation;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-epistemic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person knows they are an entrusted person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Knowledge of being an entrusted person and possession of information",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "Knows",
+      "cml:premiseText": "(a) the person is, or has been, an entrusted person; and (b) information came to the knowledge or into the possession of the person in the person’s capacity as an entrusted person;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-logic-ltl-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person acts recklessly.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recklessness is a fault element for certain paragraphs",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring Trace",
+      "cml:premiseText": "Note: Recklessness is the fault element for paragraphs (1B)(b) and (d) and subparagraph (1B)(e)(ii)—see section 5.6 of the Criminal Code."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1b"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1c",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Prohibition on strict liability for paragraph (1B)(a)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1C) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1c-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0dd545b0d06c32764367823e4cfe4bae0f8dc65f46a0f0598e07a337e2de7d08",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1c",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1c-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1c"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Disclosing controlled operation information is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1D) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-ltl-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9df5e04f752459696e7a1e81173f1e307acb4eccf95db368fbb4e34af1201b75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1d",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the disclosure will endanger the health or safety of any person or prejudice the effective conduct of a controlled operation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Relates to temporal intervals of disclosure and control.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal relation",
+      "cml:premiseText": "(1D) A person commits an offence if..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the disclosure will endanger the health or safety of any person or prejudice the effective conduct of a controlled operation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Classifies information as controlled operation-related using AI.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Classify",
+      "cml:premiseText": "(1D) A person commits an offence if..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...disclosure will endanger the health or safety of any person or prejudice the effective conduct of a controlled operation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits disclosure of controlled operation information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(1D) A person commits an offence if..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the disclosure will endanger the health or safety of any person or prejudice the effective conduct of a controlled operation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses information about controlled operations.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuse",
+      "cml:premiseText": "(1D) A person commits an offence if..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...recklessness is the fault element...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Requires recklessness as fault element for certain conditions.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recklessness",
+      "cml:premiseText": "Note: Recklessness is the fault element for paragraphs (1D)(b) and (c)—see section 5.6 of the Criminal Code."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1d"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.12",
+      "skos:note": "Disclosing information about a controlled operation can be an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2(1E) Subsection 15HK(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "80906c8647639d9f82b3e84d16e8e7afb2b81969483636679e1e75c3335e1933",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-2-ss-1e",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Disclosing information about a controlled operation can be an offence.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-2-ss-1e"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.13",
+      "skos:note": "Substitute text in subsections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsections 15HK(2), (2A) and (3)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b861655b1a645a8e2020fb370fefe31cb72c8b518c757b9af2e77e5a131bd621",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.14",
+      "skos:note": "Disclosure of previously published information is permitted under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of section 15HK"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ad017e49a86305ccdea66350f838318eab924b8f6f8131720ed4e5b893b98367",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Disclosure is permitted under certain conditions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "permittedBy"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.14",
+      "skos:note": "Repeal a section",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 15HL"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "117cd0ba63b627b1acef051b4b46d722e7176c853d5d1f0183c435b0c3a53756",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.14",
+      "skos:note": "Omit “or 15HL”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsections 15HV(2), (3) and (4)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7cd1cd91ecff140140c5df56b8a6c57cf34b2c3666905c0c22bae282d930a51c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-3-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-3-sec-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.15",
+      "skos:note": "Omit '5 years', substitute '10 years'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsections 135.1(1), (3), (5) and (7) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "74b7520857b2617627a6799c0482a308c7fb3dab04d7e08f504048d00ea7517c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-4-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.15",
+      "skos:note": "Amendments apply in relation to conduct engaged in on or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Application of amendments"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "444a9377367406251fd5d18078a16b46b6a62a08f2522768b4eba73de2bc7a9b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-4-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-4-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.16",
+      "skos:note": "Omit “(1)”",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 20C(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "aef1a8b906ba73603829f7c4079cfa30270ba93fc4b144a3cfc7bcf20f7fad5c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-5-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.16",
+      "skos:note": "Repeal a subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 20C(2)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-5-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to repeal",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.16",
+      "skos:note": "Replace section number with new one",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Paragraph 23WA(8)(e)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8bc5c585159181d9b3a9ee7b72d833407cb2d66aa88cbe4a99ad675110eca960",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-5-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-5-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10"
+        }
+      ],
+      "cml:integrityHash": "fc61fc4a50e655d12b70c909f99174b3a8932dca19bfcf9d8128e3cad72db45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10",
+      "@type": "cml:Concept",
+      "dc:description": "Notice of application",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Notice must be given before application can be determined.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(10) Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b2ddcb69bbe8d86445d00b611328a0a196635fcc600f3883890b65fbcded40c8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1-ss-10",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Application must provide notice before determination.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-10"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Application for leave must be in writing.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(6) Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bd95aa0e62bcee6331bcfc82b687c0008ba82db78b61875b70bd175b1a18bb71",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide written application",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7",
+      "@type": "cml:Concept",
+      "dc:description": "True",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Must provide written notice to specified parties upon application for leave.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(7) Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-ltl-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "41b38f11419b30d3851f7ecf9ed13fe85c2ebe59d5441948e69957ffaf82143d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval for notice provision",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "CONTAINS",
+      "cml:premiseText": "(7) A person who makes an application for leave under this section must take reasonable steps to give written notice of the application to each of the following:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Notice provision as part of application process",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "CONTAINS",
+      "cml:premiseText": "(7) A person who makes an application for leave under this section must take reasonable steps to give written notice of the application to each of the following:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide notice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Notice provision as part of application process",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "CONTAINS",
+      "cml:premiseText": "(7) A person who makes an application for leave under this section must take reasonable steps to give written notice of the application to each of the following:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal interval for notice provision",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "CONTAINS",
+      "cml:premiseText": "(7) A person who makes an application for leave under this section must take reasonable steps to give written notice of the application to each of the following:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-7"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Notice must be given to a parent, guardian or legal representative of the party if the child is referred to in paragraph (7)(c) at the time of application. Consider submissions and other evidence as necessary for determining an application.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(8) Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": [
+        "d8fda8497fa622cc07097f1b894a81a423b9a29f4e9e9db48a60aa644bcfcf6d",
+        "e988b59abc58f9bd928c0e4cb51f0e126ad624ccb61b2b6aea98887c01dc939f"
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to provide notice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-8"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9",
+      "@type": "cml:Concept",
+      "dc:description": "Application copy",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Notice must be given before application hearing.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1(9) Subsection 15YR(6)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "90c91784f2ac141530167ff99db74939e85ccf5a44fb40b1d68d3e5403f0e53d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-1-ss-9",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must provide notice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-1-ss-9"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.17",
+      "skos:note": "Amendment applies on or after commencement of Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Application of amendment"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a2d207c62cc546d7e2e3effef30dd5b85e7905f29843ab42ff0e712975ec00ee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-6-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-6-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.18",
+      "skos:note": "Preventing, detecting, investigating or dealing with misconduct of a serious nature by certain individuals or entities.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 3(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-descriptionlogic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-alleninterval-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-ltl-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-diffusion-5",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-deontic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "847663a766dfa70050b4329833e1fd36be26ba58538ee8ed7c5a3c718ebfad37",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Dealing with misconduct may occur at any time before or after the misconduct occurs.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal intervals for dealing with misconduct",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "An integrity purpose relating to misconduct of a person covered by a subparagraph of paragraph (a) does not cease to exist merely because the person ceases to be covered by that subparagraph after the misconduct occurs."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Preventing, detecting, investigating or dealing with misconduct of a serious nature.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to prevent misconduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Commonwealth entity has the meaning given by section 10 of the Public Governance, Performance and Accountability Act 2013."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-deontic-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Preventing, detecting, investigating or dealing with misconduct of a serious nature is an obligation.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to prevent misconduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Commonwealth entity has the meaning given by section 10 of the Public Governance, Performance and Accountability Act 2013."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Target entity means: ... (a) a Privacy Act agency; or (b) a wholly-owned Commonwealth company.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Target entity is an APP entity as defined in section 6 of the Privacy Act 1988.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "ClassInclusion",
+      "cml:premiseText": "A target entity is an APP entity as defined in section 6 of the Privacy Act 1988, because it is either an agency or an organisation for the purposes of that Act (as a wholly-owned Commonwealth company is an organisation as defined in section 6C of that Act)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-diffusion-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Integrity purpose spreads across time and individuals.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Spread of integrity purpose",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Spreads",
+      "cml:premiseText": "An integrity purpose relating to misconduct of a person covered by a subparagraph of paragraph (a) does not cease to exist merely because the person ceases to be covered by that subparagraph after the misconduct occurs."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Dealing with misconduct may involve repeating actions such as taking legal proceedings.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Repeating actions for dealing with misconduct",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "Taking legal proceedings, disciplinary proceedings or other administrative action is an example of dealing with matters described in paragraphs (a), (b), (c) and (d)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.19",
+      "skos:note": "Repeal subsection",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 15YV(3)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0fd1f09e7c99cca6064b2c56bca50631dcd4dee12fdc0ab706ee11b5acef131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.19",
+      "skos:note": "Insert clause after Part VIIC",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After Part VIIC"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.22",
+      "skos:note": "Applicability of sections 86C, 86D, and 86E of the Crimes Act 1914",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Application"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2a20301cfffd3d4a936ced0e3b5aadae8c7b648479b1883dd917fa663a965e9a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applicability",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(1) Section 86C of the Crimes Act 1914 applies to the collection of sensitive information on and after the commencement of that section."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applicability",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(2) Section 86D of the Crimes Act 1914 applies to the use of personal information by a target entity on or after the commencement of that section, whether the entity collected the information before, on or after that commencement."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applicability",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(3) Section 86E of the Crimes Act 1914 applies to the disclosure of personal information on or after the commencement of that section, whether the person, body or authority making the disclosure collected the information before, on or after that commencement."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.19",
+      "skos:note": "Authorization for collection, use and disclosure of personal information for integrity purposes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86B Simplified outline of this Part"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "739c64bc7d3143f208b955757a1f4005f7eb70430e725ea2f0597a06ad000480",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorization exists",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86b"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86c",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:note": "Target entity may collect sensitive information for integrity purposes.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86C Target entity may collect sensitive information for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86c-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7e45b08db42055a0a8dcd11af54794f67f34d75510d055c1f77201ecaa360adb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86c",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86c-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86c"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86d",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:note": "Target entity may use personal information for integrity purpose relating to the entity.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86D Target entity may use personal information for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86d-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "511f9be102bb44b13498c9b2c9e496ba9eca9cabbd3228531a426899b40840f3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86d",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86d-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86d"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86E Disclosure of personal information to target entity for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3"
+        }
+      ],
+      "cml:integrityHash": "81b06df4303e6581efecfa2830bf76c30a9d32a3e4892eac2fe43b7487d3ae2f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86e",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:note": "Disclosure of personal information to target entity for integrity purposes is required if a law limits disclosure and exempts it from the limitation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86E(1) Disclosure of personal information to target entity for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-ltl-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "075f1ec0ea8fb1a0f64693a434c64c5bbca8b96d76117e171acf719f0fb0146e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86e-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "This section applies within the scope of a law that limits disclosure of some or all personal information by a person, body or authority (however described); and exempts from the limitation a disclosure authorised by a law of the Commonwealth.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "within",
+      "cml:premiseText": "(a) limits disclosure of some or all personal information by a person, body or authority (however described); and (b) exempts from the limitation a disclosure authorised by a law of the Commonwealth."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires disclosure of personal information to target entity for integrity purposes.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires",
+      "cml:premiseText": "(a) limits disclosure of some or all personal information by a person, body or authority (however described); and (b) exempts from the limitation a disclosure authorised by a law of the Commonwealth."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "A disclosure authorised by a law of the Commonwealth is exempted from the limitation imposed by a law that limits disclosure of some or all personal information by a person, body or authority (however described).",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "authorises",
+      "cml:premiseText": "(b) exempts from the limitation a disclosure authorised by a law of the Commonwealth."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "This section applies within the scope of a law that limits disclosure of some or all personal information by a person, body or authority (however described); and exempts from the limitation a disclosure authorised by a law of the Commonwealth.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "within",
+      "cml:premiseText": "(a) limits disclosure of some or all personal information by a person, body or authority (however described); and (b) exempts from the limitation a disclosure authorised by a law of the Commonwealth."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:note": "Disclosure of personal information to target entity for integrity purpose",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86E(2) Disclosure of personal information to target entity for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "643dbc33f525daec97a2d46da373e4dd864e4bd6c6e70a0c4f6f8d8108d6b4a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86e-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "personal information related to target entity's functions or activities",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to disclose personal information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may",
+      "cml:premiseText": "person, body or authority reasonably believes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.20",
+      "skos:note": "Disclosure of personal information to target entity for integrity requires authorization by accountable authority, principal executive, or director.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86E(3) Disclosure of personal information to target entity for integrity"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "52993a277f9b4806a131f6ba87d8c137f6cd49dc873412f00cfd35601777b13a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86e-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires authorization for disclosure of personal information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86e-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.21",
+      "skos:note": "No implied limitation on other laws regarding personal information collection, use or disclosure.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86F This Part does not limit other laws"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-deontic-1",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-ltl-3",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d076aa7516fce8ce15361cf427de1732bcf7190ca7ea0b76011bda1811a3bc18",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86f",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws may overlap with this Part.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Overlap between this Part and other laws.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "This Part does not limit other laws (whether written or unwritten)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "CogAI systems may be impacted by this Part.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Impact of this Part on cognitive AI systems.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Impacts",
+      "cml:premiseText": "This Part does not limit other laws (whether written or unwritten)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws may authorise collection, use or disclosure of personal information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implied limitation on other laws.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "This Part does not limit other laws."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Diffusion of information may be impacted by this Part.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Impact of this Part on diffusion of information.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Impacts",
+      "cml:premiseText": "This Part does not limit other laws (whether written or unwritten)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws may overlap with this Part.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Overlap between this Part and other laws.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "This Part does not limit other laws (whether written or unwritten)."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86f"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.21",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86G Guidelines on the operation of this Part"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86g",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.21",
+      "skos:note": "Publishing guidelines approved by the Information Commissioner.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86G(1) Guidelines on the operation of this Part"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "20476e82649a92071a574d2db03d201ecab638cf8054fb04693f1604e2e7c927",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86g-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Publishing guidelines is a requirement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.21",
+      "skos:note": "Guidelines under subsection (1) are not a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "86G(2) Guidelines on the operation of this Part"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ab969df024ab6272a944dec4ca2c59c086b17a8f2e2d79f1fcedafe31088541a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-7-sec-86g-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-7-sec-86g-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.23",
+      "skos:note": "Establishes a similar body to enforce law enforcement conduct in New South Wales.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 85ZL (after paragraph (bb) of the definition of law"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "621d5e46d4f8033ae3989da0affb02b4e7e9d57b04a60e38287bdc8ba4d0b2d9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sch-8-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishs a similar body to enforce law enforcement conduct.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "establishes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sch-8-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d89146e1b4ac320e5da253d9b0cc91629022571a27e221af0db90b442366f850",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2-norm",
+        "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Crimes Legislation Amendment (Powers, Offences and Other Measures) Act 2018.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 August 2018"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-25-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-25"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf",
+      "asserts": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1dc71eac328d175a612c1fc12c0d32900fc6776f4939d873e6e1e7af3da17372",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-powers-offences-and-other-measures-act-2018-sec-3"
+    },
+    {
+      "@id": "doc:au/c2018a00075",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend legislation relating to the criminal law and law enforcement, and for related purposes",
+      "dc:identifier": [
+        "C2018A00075",
+        "No. 75 of 2018"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Legislation Amendment (Powers, Offences and Other Measures) Act 2018"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2018A00075/latest/downloads",
+        "crimes-legislation-amendment-powers-offences-and-other-measures-act-2018.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

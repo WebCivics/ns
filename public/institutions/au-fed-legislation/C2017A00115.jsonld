@@ -1,0 +1,2356 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.8",
+      "skos:note": "Definition of Immigration and Border Protection information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 4(1)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9b316bc70876d4cd75b243605d4339957ad85dc2c08996e1f1b47ef982fdb2ae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Duty of confidence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classification of information",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Class"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.10",
+      "skos:note": "Repeal heading and substitute with new text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Subsection 44(1) (heading)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b6709c17f20673e4d9829de4f3f942960d6c9f7ac2d691aa719ab0baa1d6c644",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Repeal applied",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeal heading",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Heading to be repealed"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Omit specific phrase from text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 44(1)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7f1205691b6dcbb31f1764ccdb9df1790cded638eb013aa705b10213cdd3c7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Omit 'protected information, or a class of protected information'",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Text contains 'protected information, or a class of protected information'"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Replace 'protected information, or a class of protected information' with 'Immigration and Border Protection information'",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Replaces omitted phrase with new text",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Substitute",
+      "cml:premiseText": "Text contains 'Immigration and Border Protection information'"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Repeal heading and substitute with new text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Subsection 44(2) (heading)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9a4f960fac580ed1ba3d9ebbb648b9aa248dd571b01cfd4da70122e1d2723d88",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-12-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Replace protected information with Immigration and Border Protection information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Subsection 44(2)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-descriptionlogic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7f1205691b6dcbb31f1764ccdb9df1790cded638eb013aa705b10213cdd3c7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Omission of protected information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "omission"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Substitution of terms",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "substitute"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Omit 'protected information', substitute 'Immigration and Border Protection information'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Paragraphs 44(6)(a) and (b)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-14-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-14-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Repeal heading and substitute with new text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Subsection 45(1) (heading)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c493fb0834ed2a3ff0ee8502a898b5799049926f3626670a617c5dba8319c131",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-15-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-15"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Replace protected information with Immigration and Border Protection information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Subsection 45(1)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7f1205691b6dcbb31f1764ccdb9df1790cded638eb013aa705b10213cdd3c7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the state.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Replaces protected information with Immigration and Border Protection information.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.11",
+      "skos:note": "Repeal heading and substitute with Schedule 1 Amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Subsection 45(2) (heading)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "68f804f8150ea13c730206f2ce4b2a1900ed4492b81dcb09982dc2a688a7941d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-17"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Replace protected information with Immigration and Border Protection information.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Subsection 45(2)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f7f1205691b6dcbb31f1764ccdb9df1790cded638eb013aa705b10213cdd3c7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the state.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Replaces a term with another term.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Replace 'protected information' with 'Immigration and Border Protection information'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Subsection 45(5)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-19-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-19"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:note": "Repeal definition of protected information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 4(1) (definition of protected information)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b59404361671ad06ec8926108f9ea23ee505ede55250ca43258a4f35d6ac990f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Substitute term in law",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Sections 47, 48 and 49"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-20-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-20"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 After section 50"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-21-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-21-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-21"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Replace 'protected information' with 'Immigration and Border Protection information'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Paragraphs 51(a) and (b)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "925f82f168d0828eb0415a05dc945eff9478ab39027dc5c78a8b1f7bfd8fe52b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the state to replace 'protected information'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 After section 57"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-23-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-23-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.13",
+      "skos:note": "Immunity from penalty for certain acts or omissions before the Act receives Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 Application—Immigration and Border Protection"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-alleninterval-2",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-ltl-3",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-diffusion-4",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "169344813317edc7f98748b93d7b9c4b03e8b5259a451a75a28ae32e76bc3a89",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The provision applies to acts or omissions before the Act receives Royal Assent.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The provision recognizes certain acts or omissions as exempt from liability.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "(a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If an act or omission did not make the person liable to a penalty, then they are not liable.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The provision diffuses liability to certain acts or omissions.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "(a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The provision applies to acts or omissions with repetition.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats",
+      "cml:premiseText": "(a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.13",
+      "skos:note": "Interaction with Privacy Act for records and disclosures made on or after July 1, 2015, before the day this Act receives Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Savings—interaction with Privacy Act"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "93cb00959df81077908af2638ad1d77d1f7fbc11b9b794921898070056b58453",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-25-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-25"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.14",
+      "skos:note": "Repeal subitem and amend Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 Subitem 5(3) of Schedule 9"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-26-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "de1a80f251040c29da12b08da612b7217c90fa7f9969042906b45d19f5cae729",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-26-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-26"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-27",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.15",
+      "skos:note": "Substitute 'condition' in a specific provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "27 Paragraph 44(2)(c)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-27-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af44efdc101bb8a8b5fe9c0a6f900a1ae14a72deee7bb143d95d24ff88ad846d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-27",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-27-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-27"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.15",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 Paragraph 44(2)(d)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-28-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-28-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-28"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.15",
+      "skos:note": "Replace 'and law' with just 'law'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 Paragraph 45(2)(c)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-29-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ae51741938e5bb31c30d1373b48d9d5d7a2ad1e7aaab188a6066e0383e012b75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-29-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-29"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:note": "Repeal heading and substitute with new text",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 4(4) (heading)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "670f52bab8f9a6e6d8d11d8a7794339b7aa6465025f298690e873111169649dd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.15",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 Paragraph 45(2)(d)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-30"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-31",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.15",
+      "skos:note": "Inserts purposes for inter-country adoption, national security, and locating missing persons.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 After paragraph 46(n)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-31-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "16110b10df0c68070badfc4aa4f5632b26851dd1f88d887ebc3e26603c7ffc22",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-31",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-31-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-31"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.16",
+      "skos:note": "Replace 'protected information' with 'Immigration and Border Protection information'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "32 Subsection 31(1)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ed7924bbe438bc6d9c3daa37196c6980cbd0797908528dd5078979d05d3f09d4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-32",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace a term with another term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:note": "Omit 'protected information' and substitute with 'Immigration and Border Protection information'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 4(4)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 At the end of section 4"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5"
+        },
+        {
+          "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6"
+        }
+      ],
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:note": "Disclosing certain information would prejudice Australia's security, defence or international relations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5(5) At the end of section 4"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-alleninterval-2",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1b2513e5110cb2491377ec5da97891e5b726ddaec2fe42b1b3ae571d86ca9808",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-5-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.8000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Disclosing certain information would overlap with national security concerns.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(5) Without limiting the definition of Immigration and Border Protection information in subsection (1),"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits disclosure of certain information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(5) Without limiting the definition of Immigration and Border Protection information in subsection (1),"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.6000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Disclosing certain information would create a recurring national security concern.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring",
+      "cml:premiseText": "(5) Without limiting the definition of Immigration and Border Protection information in subsection (1),"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.9",
+      "skos:note": "Confidentiality of immigration information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5(6) At the end of section 4"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "570322b6b5338194ef1aa7628c3e3274444ad2d40246664e9d519a42415244f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-5-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Duty of confidence",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Statutory obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "Compulsion of law"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Certification required for proceedings related to classified information",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "50A Information must be certified as appropriately classified before"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d51c9a6d4f49a4d90848dc66da85b68cd53021a7bb5cf262d5b75bbcce0a9a8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-50a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to certify",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "57A Act not to apply so as to exceed Commonwealth power"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1"
+        },
+        {
+          "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-57a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Provision applies only to valid applications within Commonwealth power",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "57A(1) Act not to apply so as to exceed Commonwealth power"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-deontic-1",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dea2abefbac9361220989e9f0aeacabb6d775cbd3e83317602dd29fe842e0d45",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-57a-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Parliament's intention",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Invalid applications excluded",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission",
+      "cml:premiseText": "(b) also has at least one application (a valid application) in relation to..."
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.12",
+      "skos:note": "Section applies to provisions of this Act regardless of when enacted or made.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "57A(2) Act not to apply so as to exceed Commonwealth power"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "db0030f9f17e0eb271deb383826dac1aa68b2b1f184850fb306c9fd994a7edd2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-57a-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies to provisions of this Act regardless of when enacted or made.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "appliesTo"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.10",
+      "skos:note": "Omit 'protected information' and substitute with 'Immigration and Border Protection information'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Section 41"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.10",
+      "skos:note": "Omit 'protected information' and substitute with 'Immigration and Border Protection information'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Paragraph 42(1)(c)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.10",
+      "skos:note": "Recklessness is taken to be satisfied if the person is reckless as to whether or not the information has a security classification, originated with an intelligence agency, or was provided pursuant to a statutory obligation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 After subsection 42(1)"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "feb0c50d752a0b026d8cac70da5f5c3ed9e191574f0dac483336051a11211f50",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.10",
+      "skos:note": "Omit 'protected information' and substitute with 'Immigration and Border Protection information'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 43"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7b3703289d3fa1fb539fbe5ad7fff6dcca114e306b393b558843ac23532aa8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": [
+        "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-norm",
+        "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c1de3a3e3836ee55bfa745c542ae9feba4efaaf94bb7fce71bd3fd31020bdec5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Table of sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2015"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-3"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Australian Border Force Amendment (Protected Information) Act 2017.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-1"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Legislation in Schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1eea1196b2aaa58cfd903fa8e92b3df33d928cc1c6c53ac06038e1d751fc2f1a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-3"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 October 2017"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-30"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 October 2017"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-31",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Note on table limitations and amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 October 2017"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fe71c9739c9634fd0dcf0b8428f9189c777ff77fe2ab74db678644201bfba21d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-31-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-31"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-border-force-amendment-protected-information-act-2017.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "australian-border-force-amendment-protected-information-act-2017.pdf",
+      "asserts": "concept:australian-border-force-amendment-protected-information-act-2017-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "92438e1fd9d3fc0f5af6cc3c7603b7cbc1cc16184d7819712e8133e47626e940",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-border-force-amendment-protected-information-act-2017#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-border-force-amendment-protected-information-act-2017-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-border-force-amendment-protected-information-act-2017-sec-4"
+    },
+    {
+      "@id": "doc:au/c2017a00115",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Border Force Act 2015, and for related purposes",
+      "dc:identifier": [
+        "C2017A00115",
+        "No. 115 of 2017"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Border Force Amendment (Protected Information) Act 2017"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2017A00115/latest/downloads",
+        "australian-border-force-amendment-protected-information-act-2017.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

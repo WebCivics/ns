@@ -1,0 +1,1715 @@
+# CogAI proposed logic-routing chunks — An Act to amend various Acts relating to the enforcement of the criminal law and proceeds of crime, and for related
+# Machine-derived; every chunk remains cml:Proposed.
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1-2;
+  logic: Deontic;
+  operator: receives;
+  summary: Receives the Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act is enacted.;
+  @action: The day this Act receives the Royal Assent.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-2-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2-2;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on the day after Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-4-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines commencement period for provisions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Provisions do not commence within 6 months;
+  @action: Commence on the day after end of period;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-3-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-1-sec-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: inclusion;
+  summary: List of enforcement agencies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-1-sec-5-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of a secondee;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Customs;
+  @action: a person referred to in paragraph (2A)(c);
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-1-sec-6-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to transfer responsibility.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The transferor authority may transfer...;
+  @action: ...with the consent of the other proceeds of crime authority.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Transfer of responsibility overlaps with other proceedings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Either authority may start and conduct proceedings under this Act.;
+  @action: ...or to which responsibility is transferred under this section.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Transfer of responsibility implies consent from the other authority.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The proceeds of crime authority may transfer...;
+  @action: ...with the consent of the other proceeds of crime authority.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Transfer of responsibility diffuses to the transferee authority.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The responsible authority is referred to in this Act as...;
+  @action: ...the transferor authority may transfer responsibility for...;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-1-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-1;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Transfer of responsibility recognizes the role of the transferee authority.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The proceeds of crime authority is the Commissioner of the Australian Federal Police, or the DPP.;
+  @action: ...or to which responsibility is transferred under this section.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-2;
+  logic: Deontic;
+  operator: OBLIGATION;
+  summary: Transfer notice obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-3;
+  logic: Deontic;
+  operator: Sufficient;
+  summary: Notice of transfer is sufficient compliance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-4-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to give notice of transfer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The transferee authority for an application for a *restraining order or a *forfeiture order is not required to give any notice of the transfer (other than to the court before which proceedings on the application are being heard):;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-4-logic-16 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-4;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Transfer of responsibility for principal orders and;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) The transferee authority for an application for a *restraining order or a *forfeiture order is not required to give any notice of the transfer (other than to the court before which proceedings on the application are being heard):;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-4-logic-17 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-4;
+  logic: LTL;
+  operator: RecurringTrace;
+  summary: Transfer of responsibility for principal orders and;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) The transferee authority for an application for a *restraining order or a *forfeiture order is not required to give any notice of the transfer (other than to the court before which proceedings on the application are being heard):;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-4-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-4;
+  logic: Diffusion;
+  operator: InformationSpread;
+  summary: Transfer of responsibility for principal orders and;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) The transferee authority for an application for a *restraining order or a *forfeiture order is not required to give any notice of the transfer (other than to the court before which proceedings on the application are being heard):;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-315b-ss-4-logic-19 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-315b-ss-4;
+  logic: CogAI;
+  operator: KnowledgeGraph;
+  summary: Transfer of responsibility for principal orders and;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) The transferee authority for an application for a *restraining order or a *forfeiture order is not required to give any notice of the transfer (other than to the court before which proceedings on the application are being heard):;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-6-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Transferee authority has obligation to perform functions and powers of transferor authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-7-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-7;
+  logic: Deontic;
+  operator: exhaustion;
+  summary: Extinguishment of functions, powers and duties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-7-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-7;
+  logic: Deontic;
+  operator: binding;
+  summary: Transferor authority's actions bind transferee authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-8-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-8;
+  logic: Deontic;
+  operator: Continues;
+  summary: Obligation continues after transfer;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) However, the transferor authority...;
+  @action: ...while it was the responsible authority...;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-8-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-8;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Transferor authority's liability overlaps with new authority;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) However, the transferor authority continues...;
+  @action: ...on and after the day of effect of the transfer for any damages or costs...;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-8-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-8;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Transferor authority's liability implies responsibility;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (8) However, the transferor authority continues...;
+  @action: ...while it was the responsible authority in relation to the application or order and any related applications or proceedings.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-8-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-8;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Transferor authority's liability propagates to new authority;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) However, the transferor authority continues...;
+  @action: ...for any damages or costs that had been awarded against the authority, while it was the responsible authority...;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-8-ss-8-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-ss-8;
+  logic: CogAI;
+  operator: Classification;
+  summary: Transferor authority classified as liable entity using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) However, the transferor authority continues...;
+  @action: ...for any damages or costs that had been awarded against the authority, while it was the responsible authority...;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-4-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-2;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of principal order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-4-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for orders;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-5-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-4;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines a term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: proceeds of crime authority means ComLaw Authoritative Act C2012C00859;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-10-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: is;
+  summary: DPP has a duty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The DPP is responsible for the application or order.;
+  @action: The DPP must provide.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-6-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-5;
+  logic: Deontic;
+  operator: hasResponsibleAuthority;
+  summary: Defines responsible authority for proceeds of crime applications and orders.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-6-5-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-5;
+  logic: DescriptionLogic;
+  operator: isDefinedBy;
+  summary: Defines the definition of proceeds of crime authority.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-67-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-67;
+  logic: Deontic;
+  operator: has;
+  summary: Authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: the DPP and the AFP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-88-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-88;
+  logic: Deontic;
+  operator: obligation;
+  summary: Imposes a duty on the state to pay proceeds of crime;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-110-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-110;
+  logic: Deontic;
+  operator: has;
+  summary: Authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: the DPP and the AFP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-115-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-115;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-119-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-119;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prevents action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-18-2-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to record particulars;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-121-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-121;
+  logic: Deontic;
+  operator: SUBST;
+  summary: Substitute responsible authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-122-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-122;
+  logic: Deontic;
+  operator: SUBST;
+  summary: Substitute responsible authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-123-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-123;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Authority responsible for forfeiture order or application is also responsible for exclusion order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-124-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-124;
+  logic: Deontic;
+  operator: is;
+  summary: Authority responsibility;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Forfeiture order or application;
+  @action: Compensation order;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-125-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-125;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of *DPP, requiring substitution with a responsible authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-127-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-127;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific term.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-128-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-128;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of *DPP;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-130-logic-47 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-130;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the DPP applying for;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘the DPP applying for’;
+  @action: substitute ‘applications’;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-131-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-131;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of *DPP;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-132-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-132;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits *DPP;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: *DPP;
+  @action: *responsible authority for the *literary proceeds order or *restraining order referred to in that section;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-133-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: Deontic;
+  operator: hasCharge;
+  summary: Has a charge created under section 169.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Both a literary proceeds order and a restraining order have been made in relation to an indictable offence (or related offence).;
+  @action: A charge is created under section 169.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-133-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: AllenInterval;
+  operator: withinTemporalInterval;
+  summary: Both orders were made within the same temporal interval.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A literary proceeds order and a restraining order have been made in relation to an indictable offence (or related offence).;
+  @action: Both orders were made within the same temporal interval.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-133-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: Diffusion;
+  operator: diffusesCharge;
+  summary: The charge is diffused from the literary proceeds order and restraining order.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: A literary proceeds order and a restraining order have been made in relation to an indictable offence (or related offence).;
+  @action: The charge is diffused from the literary proceeds order and restraining order.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-133-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: CogAI;
+  operator: hasCharge;
+  summary: A charge has been created under section 169.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Both a literary proceeds order and a restraining order have been made in relation to an indictable offence (or related offence).;
+  @action: A charge is created under section 169.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-133-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-133;
+  logic: SHACL;
+  operator: hasCharge;
+  summary: The charge has been validated by SHACL.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: Both a literary proceeds order and a restraining order have been made in relation to an indictable offence (or related offence).;
+  @action: A charge is created under section 169.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-134-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-134;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits *DPP;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-137-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-137;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits substitution of *DPP with another term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-142-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term with a specific meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-142-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-142;
+  logic: DescriptionLogic;
+  operator: has definition;
+  summary: Provides a definition for the term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-143-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-143;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-145-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-145;
+  logic: Deontic;
+  operator: inserts;
+  summary: Inserts the Commissioner of Australian Federal Police as an authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-146-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-146;
+  logic: Deontic;
+  operator: MUST;
+  summary: Application for order under subsection (6A) must be made.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-147-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-147;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to apply for a forfeiture order or pecuniary penalty order;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-148-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-148;
+  logic: Deontic;
+  operator: MUST;
+  summary: Application for order under subsection (2A) must be made.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-149-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to apply for a forfeiture order or pecuniary penalty order.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-149-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: AllenInterval;
+  operator: In the case of pending proceedings in relation to a forfeiture order or a pecuniary penalty order under the Proceeds of;
+  summary: Application may be made by certain persons for a forfeiture order or pecuniary penalty order under the Proceeds of Crime Act 2002.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-149-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: LTL;
+  operator: The application may be made by:;
+  summary: Application may be made by certain persons for a forfeiture order or pecuniary penalty order under the Proceeds of Crime Act 2002.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-149-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: CogAI;
+  operator: The application may be made by:;
+  summary: Application may be made by certain persons for a forfeiture order or pecuniary penalty order under the Proceeds of Crime Act 2002.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-149-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-149;
+  logic: SHACL;
+  operator: The application may be made by:;
+  summary: Application may be made by certain persons for a forfeiture order or pecuniary penalty order under the Proceeds of Crime Act 2002.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-152-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-152;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establishes responsibility transfer between authorities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Responsibility can be transferred between these authorities;
+  @action: Authority transfer;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-156-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-156;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-157-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-157;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a key term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-157-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-157;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: freezing order is a subclass of order;
+  @action: order is a superclass of freezing order;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: freezing order is made under a State or Territory proceeds of crime law;
+  @action: State or Territory proceeds of crime law includes freezing order;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: freezing order means an order that is made under a State or Territory proceeds of crime law and that is of a kind declared by the regulations to be a freezing order for the purposes of this paragraph.;
+  @action: State or Territory proceeds of crime law is a freezing order if it is of a kind declared by the regulations;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: Argumentation;
+  operator: =;
+  summary: Implication;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If an order is made under a State or Territory proceeds of crime law and that is of a kind declared by the regulations to be a freezing order for the purposes of this paragraph, then it is a freezing order;
+  @action: State or Territory proceeds of crime law implies freezing order if it is of a kind declared by the regulations;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: LTL;
+  operator: =;
+  summary: Temporal relation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Freezing order under the Proceeds of Crime Act 2002 includes freezing order made under State or Territory proceeds of crime law;
+  @action: State or Territory proceeds of crime law is included in freezing order under the Proceeds of Crime Act 2002;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-158-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-158;
+  logic: Diffusion;
+  operator: =;
+  summary: Implication;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: If an order is made under a State or Territory proceeds of crime law and that is of a kind declared by the regulations to be a freezing order for the purposes of this paragraph, then it implies freezing order;
+  @action: State or Territory proceeds of crime law implies freezing order if it is of a kind declared by the regulations;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-159-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-159;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-160-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-160;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-161-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-161;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: restraining order is a subclass of order;
+  @action: order is a superclass of restraining order;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-161-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-161;
+  logic: Deontic;
+  operator: implies;
+  summary: Restricting to specific laws;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: a restraining order must be made under a State or Territory proceeds of crime law;
+  @action: the law restricts the scope of restraining orders;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-161-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-161;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation to other laws;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: a restraining order is made under a State or Territory proceeds of crime law that was enacted before this Act;
+  @action: the earlier law restricts the scope of restraining orders;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-161-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-161;
+  logic: LTL;
+  operator: <=;
+  summary: Temporal relation to other laws;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: a restraining order is made under a State or Territory proceeds of crime law that was enacted after this Act;
+  @action: the later law restricts the scope of restraining orders;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-161-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-161;
+  logic: Deontic;
+  operator: =;
+  summary: Restricting to specific types of orders;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: a restraining order is an order that is made under a State or Territory proceeds of crime law and that is of a kind declared by the regulations to be a restraining order for the purposes of this paragraph;
+  @action: the regulation restricts the scope of restraining orders;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-4c-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4c;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Defines meaning of proceeds of crime authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-2-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-2;
+  logic: DescriptionLogic;
+  operator: has definition;
+  summary: Defines terms;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: proceeds of crime authority;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term with specific entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Proceeds of crime authority is defined in this section;
+  @action: State or Territory proceeds of crime authorities are the entities defined;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: DescriptionLogic;
+  operator: is defined as;
+  summary: Defines a term with specific entities using a class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Proceeds of crime authority is defined in this section;
+  @action: State or Territory proceeds of crime authorities are the entities defined by the class hierarchy;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: AllenInterval;
+  operator: occurs before;
+  summary: Defines a temporal relationship between entities;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Commissioner and Director of Public Prosecutions are proceeds of crime authorities that occur before the commencement of this section;
+  @action: The Commissioner and Director of Public Prosecutions occurred before the commencement of this section;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: LTL;
+  operator: occurs before;
+  summary: Defines a temporal relationship between entities using linear logic;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Commissioner and Director of Public Prosecutions are proceeds of crime authorities that occur before the commencement of this section;
+  @action: The Commissioner and Director of Public Prosecutions occurred before the commencement of this section;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: Diffusion;
+  operator: is defined as;
+  summary: Defines a term with specific entities using diffusion logic;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Proceeds of crime authority is defined in this section;
+  @action: State or Territory proceeds of crime authorities are the entities defined;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-3-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-3;
+  logic: CogAI;
+  operator: is defined as;
+  summary: Defines a term with specific entities using cognitive artificial intelligence logic;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Proceeds of crime authority is defined in this section;
+  @action: State or Territory proceeds of crime authorities are the entities defined;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-4-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-4;
+  logic: DescriptionLogic;
+  operator: has definition;
+  summary: Defines the concept of proceeds of crime authority.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-26-2-ss-4-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26-2-ss-4;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Relates to a class of proceeds of crime order or forfeiture application.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-164-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-164;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-165-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-165;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Notification obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-166-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-166;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-173-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-173;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-175-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-175;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Notification obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-178-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-178;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-179-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-179;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-182-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-182;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the DPP';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-183-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-183;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the phrase is prohibited.;
+  @action: The phrase must be included.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-185-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-185;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Notification obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-187-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-187;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-189-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-189;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-191-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-191;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-193-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-193;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the phrase is prohibited.;
+  @action: The phrase must be included.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-198-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: Deontic;
+  operator: =;
+  summary: Same meaning as in the Proceeds of Crime Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: proceeds of crime authority has the same meaning as in the Proceeds of Crime Act;
+  @action: proceeds of crime authority is either the Commissioner of the Australian Federal Police or the DPP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-198-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal relation between definitions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the definition of proceeds of crime authority in section 338 of that Act;
+  @action: proceeds of crime authority is defined at the same time as the Commissioner of the Australian Federal Police or the DPP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-198-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: LTL;
+  operator: =;
+  summary: Temporal relation between definitions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the definition of proceeds of crime authority in section 338 of that Act;
+  @action: proceeds of crime authority is defined at the same time as the Commissioner of the Australian Federal Police or the DPP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-198-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: Diffusion;
+  operator: =;
+  summary: Definition propagation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: the definition of proceeds of crime authority in section 338 of that Act;
+  @action: proceeds of crime authority is defined by the Commissioner of the Australian Federal Police or the DPP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-198-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-198;
+  logic: CogAI;
+  operator: =;
+  summary: Definition inference;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: the definition of proceeds of crime authority in section 338 of that Act;
+  @action: proceeds of crime authority is defined by the Commissioner of the Australian Federal Police or the DPP;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-201-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-201;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-203-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'The DPP';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'The proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-203-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: AllenInterval;
+  operator: Temporal Replacement;
+  summary: Replaces 'The DPP' with 'The proceeds of crime authority' at the specified point in time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'The proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-203-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: LTL;
+  operator: Temporal Replacement;
+  summary: Replaces 'The DPP' with 'The proceeds of crime authority' at the specified point in time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'The proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-203-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: Diffusion;
+  operator: Temporal Replacement;
+  summary: Replaces 'The DPP' with 'The proceeds of crime authority' at the specified point in time;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'The proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-203-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-203;
+  logic: CogAI;
+  operator: Temporal Replacement;
+  summary: Replaces 'The DPP' with 'The proceeds of crime authority' at the specified point in time;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'The proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-206-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-206;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Omit specific reference in order to apply authority instead.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-210-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-210;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: proceeds of crime authority;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-212-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-212;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-213-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-213;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition on using outdated title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Director of Public Prosecutions;
+  @action: The proceeds of crime authority;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-213b-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-213b;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Director of Public Prosecutions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-214-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-214;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the Director of Public Prosecutions from being referred to;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-216-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-216;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'The Director of Public Prosecutions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-219-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-219;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: proceeds of crime authority has the same meaning as in the Proceeds of Crime Act.;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-223-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-223;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-227-logic-130 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-227;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'The DPP';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'The DPP';
+  @action: substitute 'That proceeds of crime authority';
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-231-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-231;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-234-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-234;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-237-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-237;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of a specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-240-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-240;
+  logic: Deontic;
+  operator: Omit;
+  summary: Prohibition of using outdated title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-241-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-241;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-244-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-244;
+  logic: Deontic;
+  operator: may;
+  summary: Obligation to act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-245-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-245;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-246-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-246;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Describes the temporal interval of application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to pecuniary penalty orders under that Act if the applications for the orders are made at or after the commencement of those items.;
+  @action: The amendments apply from the commencement date onwards;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-246-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-246;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the amendment as a rule;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to pecuniary penalty orders under that Act if the applications for the orders are made at or after the commencement of those items.;
+  @action: The amendments create a rule;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-246-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-246;
+  logic: LTL;
+  operator: Applicable;
+  summary: Describes the temporal interval of application as a trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to pecuniary penalty orders under that Act if the applications for the orders are made at or after the commencement of those items.;
+  @action: The amendments create a trace from the commencement date onwards;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-246-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-246;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the amendment as a prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to pecuniary penalty orders under that Act if the applications for the orders are made at or after the commencement of those items.;
+  @action: The amendments prohibit certain actions;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-246-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-246;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the amendment as a right;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to pecuniary penalty orders under that Act if the applications for the orders are made at or after the commencement of those items.;
+  @action: The amendments create a right;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-247-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-247;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces 'the property of a person' with 'property that constitutes part of a person's wealth';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+an-act-to-amend-various-acts-relating-to-the-enforcement-of-the-sch-2-sec-248-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-248;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Substitute 'total wealth' for 'total value of the person's wealth';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

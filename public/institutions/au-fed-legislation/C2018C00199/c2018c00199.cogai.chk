@@ -1,0 +1,2806 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Law Enforcement Integrity, Vulnerable Witness Protection and Other Measures) Act 2013
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2018c00199-sch-6-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-2;
+  logic: Deontic;
+  operator: receives;
+  summary: Receives the Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act is enacted.;
+  @action: The day this Act receives the Royal Assent.;
+}
+
+c2018c00199-sch-6-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-2;
+  logic: AllenInterval;
+  operator: on;
+  summary: On the day of receipt;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Royal Assent is given on a specific day.;
+  @action: The day this Act receives the Royal Assent is the specified day.;
+}
+
+c2018c00199-sch-6-sec-1-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-2;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication from receipt of Royal Assent;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The Act is enacted and receives the Royal Assent.;
+  @action: The day this Act receives the Royal Assent is the specified day.;
+}
+
+c2018c00199-sch-6-sec-1-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-2;
+  logic: Diffusion;
+  operator: through;
+  summary: Spread through the Act;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Royal Assent is given to the Act.;
+  @action: The day this Act receives the Royal Assent is spread throughout the Act.;
+}
+
+c2018c00199-sch-6-sec-1-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-2;
+  logic: CogAI;
+  operator: by;
+  summary: Defined by the State;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The State defines the day of receipt.;
+  @action: The day this Act receives the Royal Assent is defined by the State.;
+}
+
+c2018c00199-sch-6-sec-27-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-27;
+  logic: Deontic;
+  operator: applies;
+  summary: Deontic logic applies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (paragraph (b));
+}
+
+c2018c00199-sch-6-sec-3-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-3-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-1-sec-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: INSERT;
+  summary: Insertion of a new paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-1-sec-3-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: holds;
+  summary: Holds true for all related corrupt conduct.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Corrupt conduct within the meaning of the Law Enforcement Integrity Commissioner Act 2006.;
+  @action: The amendments apply to corruption issues.;
+}
+
+c2018c00199-sch-1-sec-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Overlaps with corrupt conduct before and after commencement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The amendments apply in relation to corruption issues, whether the related corrupt conduct was or may have been engaged in before the commencement or will or may be engaged in after that commencement.;
+  @action: The amendments overlap with corrupt conduct at different times.;
+}
+
+c2018c00199-sch-1-sec-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: LTL;
+  operator: holdsForAll;
+  summary: Holds for all related corrupt conduct.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Corrupt conduct within the meaning of the Law Enforcement Integrity Commissioner Act 2006.;
+  @action: The amendments hold for all related corrupt conduct.;
+}
+
+c2018c00199-sch-1-sec-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffuses to all related corrupt conduct.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Corrupt conduct within the meaning of the Law Enforcement Integrity Commissioner Act 2006.;
+  @action: The amendments diffuse to all related corrupt conduct.;
+}
+
+c2018c00199-sch-1-sec-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: CogAI;
+  operator: appliesTo;
+  summary: Applies to all related corrupt conduct.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Corrupt conduct within the meaning of the Law Enforcement Integrity Commissioner Act 2006.;
+  @action: The amendments apply to all related corrupt conduct.;
+}
+
+c2018c00199-sch-1-sec-4-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting 'if the evidence';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘if the evidence’;
+  @action: Substitute ‘if giving the evidence’;
+}
+
+c2018c00199-sch-1-sec-6-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of AUSTRAC information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-1-sec-7-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-1-sec-8-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Insert “or employees” after “members”.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-2-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to insert proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: applies;
+  summary: This subsection applies to proceedings for any of the following offences:;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-5-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘(Slavery and slavery-like conditions); or’;
+  @action: (slavery and slavery-like conditions);;
+}
+
+c2018c00199-sch-2-sec-5-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: AllenInterval;
+  operator: Temporal replacement;
+  summary: Replaces omitted phrase with new one at same point.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Omit ‘(Slavery and slavery-like conditions); or’;
+  @action: (slavery and slavery-like conditions);;
+}
+
+c2018c00199-sch-2-sec-5-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: LTL;
+  operator: Temporal replacement;
+  summary: Replaces omitted phrase with new one at same point.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Omit ‘(Slavery and slavery-like conditions); or’;
+  @action: (slavery and slavery-like conditions);;
+}
+
+c2018c00199-sch-2-sec-5-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Diffusion;
+  operator: Temporal replacement;
+  summary: Replaces omitted phrase with new one at same point.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Omit ‘(Slavery and slavery-like conditions); or’;
+  @action: (slavery and slavery-like conditions);;
+}
+
+c2018c00199-sch-2-sec-5-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: CogAI;
+  operator: Temporal replacement;
+  summary: Replaces omitted phrase with new one at same point.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Omit ‘(Slavery and slavery-like conditions); or’;
+  @action: (slavery and slavery-like conditions);;
+}
+
+c2018c00199-sch-2-sec-6-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-7-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of specific phrases.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omitting the specified phrases is prohibited.;
+  @action: The provision must not omit those phrases.;
+}
+
+c2018c00199-sch-2-sec-9-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-10-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-11-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Part contains special rules for adult complainants involved in proceedings to which this subsection applies.;
+  @action: Proceedings involving special witnesses are prohibited.;
+}
+
+c2018c00199-sch-2-sec-11-ss-3-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to support victims and witnesses;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-11-ss-4-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-4;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability of subsections to connected proceedings.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Each of subsections (1), (2) and (3) also applies...;
+  @action: ...also applies to any proceedings connected with a proceeding referred to in that subsection.;
+}
+
+c2018c00199-sch-2-sec-11-ss-4-logic-33 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Extension;
+  summary: Extension of temporal scope to connected proceedings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) Each of subsections (1), (2) and (3);
+  @action: ...also applies to any proceedings connected with a proceeding referred to in that subsection.;
+}
+
+c2018c00199-sch-2-sec-11-ss-4-logic-34 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-4;
+  logic: LTL;
+  operator: Temporal Extension;
+  summary: Extension of temporal scope to connected proceedings.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) Each of subsections (1), (2) and (3);
+  @action: ...also applies to any proceedings connected with a proceeding referred to in that subsection.;
+}
+
+c2018c00199-sch-2-sec-11-ss-4-logic-35 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-4;
+  logic: Diffusion;
+  operator: Temporal Extension;
+  summary: Extension of temporal scope to connected proceedings.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) Each of subsections (1), (2) and (3);
+  @action: ...also applies to any proceedings connected with a proceeding referred to in that subsection.;
+}
+
+c2018c00199-sch-2-sec-11-ss-4-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-4;
+  logic: CogAI;
+  operator: Temporal Extension;
+  summary: Extension of temporal scope to connected proceedings.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) Each of subsections (1), (2) and (3);
+  @action: ...also applies to any proceedings connected with a proceeding referred to in that subsection.;
+}
+
+c2018c00199-sch-2-sec-11-ss-5-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-5;
+  logic: Deontic;
+  operator: apply;
+  summary: Applying special witnesses is an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) Similarly, subsection 15YAB(1) (about special witnesses) also applies to any proceedings connected with a proceeding for a Commonwealth offence.;
+  @action: The state must apply special witnesses in Commonwealth offences;
+}
+
+c2018c00199-sch-2-sec-11-ss-5-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Special witnesses apply during Commonwealth offences;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) Similarly, subsection 15YAB(1) (about special witnesses) also applies to any proceedings connected with a proceeding for a Commonwealth offence.;
+  @action: The application of special witnesses occurs during the duration of Commonwealth offences;
+}
+
+c2018c00199-sch-2-sec-11-ss-5-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-5;
+  logic: LTL;
+  operator: during;
+  summary: Special witnesses apply during Commonwealth offences;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) Similarly, subsection 15YAB(1) (about special witnesses) also applies to any proceedings connected with a proceeding for a Commonwealth offence.;
+  @action: The application of special witnesses occurs during the duration of Commonwealth offences;
+}
+
+c2018c00199-sch-2-sec-11-ss-5-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-5;
+  logic: Diffusion;
+  operator: during;
+  summary: Special witnesses diffuse during Commonwealth offences;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) Similarly, subsection 15YAB(1) (about special witnesses) also applies to any proceedings connected with a proceeding for a Commonwealth offence.;
+  @action: The application of special witnesses diffuses during the duration of Commonwealth offences;
+}
+
+c2018c00199-sch-2-sec-11-ss-5-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-11-ss-5;
+  logic: CogAI;
+  operator: apply;
+  summary: Special witnesses are applied in Commonwealth offences;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) Similarly, subsection 15YAB(1) (about special witnesses) also applies to any proceedings connected with a proceeding for a Commonwealth offence.;
+  @action: The state must apply special witnesses in Commonwealth offences;
+}
+
+c2018c00199-sch-2-sec-12-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: adult means a person who is 18 or over.;
+}
+
+c2018c00199-sch-2-sec-13-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: Deontic;
+  operator: includes;
+  summary: Identifies the parties involved in a proceeding.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Defines a subclass of entities that are considered parties to a proceeding.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-17-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with a clear meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-17-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for an existing one;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Declaration of special witness is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: AllenInterval;
+  operator: because of;
+  summary: Declaration made due to specific factors.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ...due to (a) a disability; or...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: LTL;
+  operator: =;
+  summary: Recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Diffusion;
+  operator: =;
+  summary: Information flow;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Argumentation;
+  operator: =;
+  summary: Rational argument;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-2;
+  logic: Deontic;
+  operator: MAY;
+  summary: Declaration may be made on initiative or application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-2-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-2;
+  logic: Deontic;
+  operator: OptOut;
+  summary: Adult can opt out of being treated as vulnerable adult complainant.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Deontic;
+  operator: needNot;
+  summary: Obligation to involve complainant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state need not involve the complainant.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between involve and proceed;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state can proceed without involving the complainant during the proceeding.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relationship between involve and proceed;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state can proceed until involving the complainant is required.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spread of obligation to involve;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state's obligation to involve the complainant diffuses to other persons or entities.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: CogAI;
+  operator: cognizes;
+  summary: Artificial agent's understanding of obligation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The artificial agent cognizes that the state need not involve the complainant.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Declaration of special witness is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: AllenInterval;
+  operator: because of;
+  summary: Declaration made due to specific factors.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ...due to (a) a disability; or...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: LTL;
+  operator: =;
+  summary: Recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Diffusion;
+  operator: =;
+  summary: Information flow;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-1-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-1;
+  logic: Argumentation;
+  operator: =;
+  summary: Rational argument;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) A vulnerable adult complainant, in relation to a vulnerable adult proceeding, is an adult who is, or is alleged to be, a victim of an offence...;
+  @action: is an adult who is, or is alleged to be, a victim of an offence...;
+}
+
+c2018c00199-sch-2-sec-19-ss-2-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-2;
+  logic: Deontic;
+  operator: MAY;
+  summary: Declaration may be made on initiative or application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-2-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-2;
+  logic: Deontic;
+  operator: OptOut;
+  summary: Adult can opt out of being treated as vulnerable adult complainant.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Deontic;
+  operator: needNot;
+  summary: Obligation to involve complainant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state need not involve the complainant.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between involve and proceed;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state can proceed without involving the complainant during the proceeding.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relationship between involve and proceed;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state can proceed until involving the complainant is required.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spread of obligation to involve;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The state's obligation to involve the complainant diffuses to other persons or entities.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: CogAI;
+  operator: cognizes;
+  summary: Artificial agent's understanding of obligation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A vulnerable adult complainant need not be involved in the vulnerable adult proceeding.;
+  @action: The artificial agent cognizes that the state need not involve the complainant.;
+}
+
+c2018c00199-sch-2-sec-19-ss-3-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-19-ss-4-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Application may be made;
+  @action: Order may be made;
+}
+
+c2018c00199-sch-2-sec-21-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21;
+  logic: Deontic;
+  operator: Must;
+  summary: Court must disallow;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Question is inappropriate or aggressively worded;
+  @action: Disallow question;
+}
+
+c2018c00199-sch-2-sec-28-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specific phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substitution of phrase;
+  @action: Omitting phrase is prohibited;
+}
+
+c2018c00199-sch-2-sec-29-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-29;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to make complaint;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-30-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'child';
+  @action: Substitute 'vulnerable person';
+}
+
+c2018c00199-sch-2-sec-33-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-33;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting a child witness or complainant without counsel;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-34-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-34;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Defines applicable persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-35-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-37-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-37;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to substitute 'vulnerable person' for 'child';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-42-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-42;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Replace 'child' with 'vulnerable person';
+  @action: Obligation to replace;
+}
+
+c2018c00199-sch-2-sec-43-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-43;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace '15YM' with '15YO';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-46-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-46;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting evidence from a child witness in a proceeding.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-48-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-48;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'child's';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Substituting 'person's' is allowed.;
+  @action: Omitting 'child's' is prohibited.;
+}
+
+c2018c00199-sch-2-sec-49-logic-91 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-49;
+  logic: Deontic;
+  operator: implies;
+  summary: Indicates that this subsection imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-64-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-65-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-65;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'child';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'child', substitute 'person'.;
+}
+
+c2018c00199-sch-2-sec-66-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-66;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'child';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'child', substitute 'person'.;
+}
+
+c2018c00199-sch-2-sec-15yp-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15yp;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits excluding people from the courtroom;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-68-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-68;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to substitute 'vulnerable persons' for 'children's';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-71-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-71;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes a prohibition on classifying persons as unreliable witnesses.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-71-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-71;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Replaces the original paragraph with new text.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-72-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-72;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'child';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit 'child', substitute 'person'.;
+}
+
+c2018c00199-sch-2-sec-73-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-73;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applies to specific persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-76-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-76;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Applicability of the subsection;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This subsection applies to the following persons:;
+}
+
+c2018c00199-sch-2-sec-76-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-76;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal applicability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: This subsection applies to the following persons:;
+}
+
+c2018c00199-sch-2-sec-84-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-84;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals Subdivision D of Division 273 of the Criminal Code;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-279-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279;
+  logic: Deontic;
+  operator: applies;
+  summary: This Division applies to the specified proceedings.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-279-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Court permits witness to give evidence by video link.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-1-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to give evidence under direction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A witness can give evidence under a direction only...;
+  @action: ...if the conditions are met.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-1-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relationship between video facilities at Australian and overseas locations;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) enable appropriate persons at the Australian location to see and hear the witness give the evidence...;
+  @action: ...and (d) enable appropriate persons at the overseas location to see and hear appropriate persons at the Australian location.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-1-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-1;
+  logic: LTL;
+  operator: >=;
+  summary: Temporal relationship between video facilities at Australian and overseas locations;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) enable appropriate persons at the Australian location to see and hear the witness give the evidence...;
+  @action: ...and (d) enable appropriate persons at the overseas location to see and hear appropriate persons at the Australian location.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-1-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-1;
+  logic: Diffusion;
+  operator: AND;
+  summary: Combination of conditions for video facilities;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the courtroom or other place in Australia where the court is sitting...;
+  @action: ...and (b) the place where the evidence is given (the overseas location); and (c) enable appropriate persons at the Australian location to see and hear the witness give the evidence; and (d) enable appropriate persons at the overseas location to see and hear appropriate persons at the Australian location.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-1-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-1;
+  logic: CogAI;
+  operator: AND;
+  summary: Combination of conditions for video facilities;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) the courtroom or other place in Australia where the court is sitting...;
+  @action: ...and (b) the place where the evidence is given (the overseas location); and (c) enable appropriate persons at the Australian location to see and hear the witness give the evidence; and (d) enable appropriate persons at the overseas location to see and hear appropriate persons at the Australian location.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-2-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-2;
+  logic: Deontic;
+  operator: consider;
+  summary: Obligation to consider;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court must consider appropriate persons.;
+  @action: Appropriate persons are determined by court.;
+}
+
+c2018c00199-sch-2-sec-279-3-ss-2-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-3-ss-2;
+  logic: DescriptionLogic;
+  operator: is;
+  summary: Class hierarchy for appropriate persons;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Person is appropriate if court considers them so.;
+  @action: Court's consideration determines person's appropriateness.;
+}
+
+c2018c00199-sch-2-sec-279-4-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must give evidence at a specific location;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The court is sitting in Australia.;
+  @action: A person who gives evidence under a direction must give it at the courtroom or other place in Australia where the court is sitting.;
+}
+
+c2018c00199-sch-2-sec-279-4-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-4;
+  logic: AllenInterval;
+  operator: STARTS-Before;
+  summary: The section applies before the commencement of other laws;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: This section has effect for example for the purposes of laws relating to evidence, procedure, contempt of court and perjury.;
+  @action: The section starts before the commencement of other laws;
+}
+
+c2018c00199-sch-2-sec-279-4-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-4;
+  logic: LTL;
+  operator: STARTS-Before;
+  summary: The section applies before the commencement of other laws;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: This section has effect for example for the purposes of laws relating to evidence, procedure, contempt of court and perjury.;
+  @action: The section starts before the commencement of other laws;
+}
+
+c2018c00199-sch-2-sec-279-4-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-4;
+  logic: Diffusion;
+  operator: APPLIES-TO;
+  summary: The section applies to laws about witnesses;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: This section has effect for example for the purposes of laws relating to evidence, procedure, contempt of court and perjury.;
+  @action: The section applies to laws about witnesses;
+}
+
+c2018c00199-sch-2-sec-279-4-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-4;
+  logic: CogAI;
+  operator: APPLIES-TO;
+  summary: The section applies to laws about witnesses;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: This section has effect for example for the purposes of laws relating to evidence, procedure, contempt of court and perjury.;
+  @action: The section applies to laws about witnesses;
+}
+
+c2018c00199-sch-2-sec-279-5-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The state is obligated to administer an oath or affirmation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-279-5-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-5;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: The provision is part of Schedule 2.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-279-6-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-279-6;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-86-logic-121 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-86;
+  logic: Deontic;
+  operator: affectedBy;
+  summary: Definition of 'family';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection 16(1);
+  @action: Obligation to define 'family';
+}
+
+c2018c00199-sch-2-sec-86-logic-122 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-86;
+  logic: AllenInterval;
+  operator: relatedTo;
+  summary: Temporal relation between subsections;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection 16(1) and subsection 16A(4);
+  @action: Subsections 16(1) and 16A(4) are related by temporal interval;
+}
+
+c2018c00199-sch-2-sec-86-logic-123 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-86;
+  logic: Argumentation;
+  operator: implies;
+  summary: Definition of 'family' implies obligation to define;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Subsection 16(1);
+  @action: Definition of 'family' implies obligation to define;
+}
+
+c2018c00199-sch-2-sec-86-logic-124 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-86;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Obligation to define 'family' diffuses through subsections;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subsection 16(1);
+  @action: Definition of 'family' diffuses through subsections;
+}
+
+c2018c00199-sch-2-sec-86-logic-125 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-86;
+  logic: CogAI;
+  operator: influences;
+  summary: Definition of 'family' influenced by artificial intelligence;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subsection 16A(4);
+  @action: Definition of 'family' influenced by artificial intelligence;
+}
+
+c2018c00199-sch-2-sec-87-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-87;
+  logic: Deontic;
+  operator: includes;
+  summary: Defines harm;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-87-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-87;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Describes harm as a subclass of harm;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-88-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-88;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with a specific meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-89-ss-1-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-89-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The statement must be made;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-89-ss-2-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-89-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Exemption from obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-89-ss-4-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-89-ss-4;
+  logic: Deontic;
+  operator: canDelegate;
+  summary: Power delegation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-89-ss-4-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-89-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-90-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-90;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide a victim impact statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-1-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-3-logic-135 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: No implication is drawn from the absence of a statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) No implication is to be drawn...;
+  @action: No implication is drawn from...;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-4-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-4;
+  logic: Deontic;
+  operator: MAY;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-5-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prevents reading or considering the statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A victim impact statement is not to be read to the court, or otherwise taken into account,;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-5-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-5;
+  logic: LTL;
+  operator: Trace;
+  summary: Tracing exclusion of certain statements.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) A victim impact statement is not to be read to the court, or otherwise taken into account,;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-5-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-5;
+  logic: Deontic;
+  operator: Restrict;
+  summary: Restricts consideration of certain statements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A victim impact statement is not to be read to the court, or otherwise taken into account,;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-5-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-5;
+  logic: AllenInterval;
+  operator: Temporal Exclusion;
+  summary: Excluding certain statements due to temporal constraints.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) A victim impact statement is not to be read to the court, or otherwise taken into account,;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-5-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-5;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagating exclusion of certain statements.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) A victim impact statement is not to be read to the court, or otherwise taken into account,;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-6-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-6;
+  logic: Deontic;
+  operator: may_only;
+  summary: May only;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-7-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide a reading or cross-examination.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-2-sec-16ab-ss-7-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16ab-ss-7;
+  logic: DescriptionLogic;
+  operator: SUBCLASS OF;
+  summary: Parties to criminal proceedings must provide a reading or cross-examination under specific subsections.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-1-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace specific information with a broader term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-2-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits taking of X-ray of a part of a person's body;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-236a-logic-147 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-236a;
+  logic: Deontic;
+  operator: only;
+  summary: Restricts court action to specific circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-4-ss-1-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Court must apply this section.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-4-ss-2-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Court obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The court must take into account...;
+  @action: ...the person is sentenced for the offence.;
+}
+
+c2018c00199-sch-3-sec-4-ss-3-logic-150 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-4-ss-3;
+  logic: Deontic;
+  operator: Prevents;
+  summary: Prohibits application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 236B and this section;
+  @action: Section 16E of the Crimes Act 1914;
+}
+
+c2018c00199-sch-3-sec-236d-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236d;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Prosecution bears obligation to prove defendant's age.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-236d-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236d;
+  logic: Epistemic;
+  operator: Probability;
+  summary: Prosecution must provide evidence on balance of probabilities.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-236d-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236d;
+  logic: LTL;
+  operator: TemporalInterval;
+  summary: Defendant's age is a temporal interval to be proven by prosecution.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-236e-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236e;
+  logic: Deontic;
+  operator: issuance;
+  summary: Issuance of certificates;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A written certificate may be issued under this subsection;
+  @action: by the specified individuals;
+}
+
+c2018c00199-sch-3-sec-236f-ss-1-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236f-ss-1;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition on admitting certificate in evidence without prior notice and copy.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Certificate issued under subsection 236E(1);
+  @action: Must not be admitted in evidence unless...;
+}
+
+c2018c00199-sch-3-sec-236f-ss-1-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236f-ss-1;
+  logic: AllenInterval;
+  operator: At Least;
+  summary: Certificate must have been given at least 28 days before admission.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person charged with the offence; or a lawyer who has appeared for the person in those proceedings;;
+  @action: ...has, at least 28 days before the certificate is sought to be so admitted...;
+}
+
+c2018c00199-sch-3-sec-236f-ss-1-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236f-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: Certificate must be given to person or lawyer before admission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person charged with the offence; or a lawyer who has appeared for the person in those proceedings;;
+  @action: ...has, at least 28 days before the certificate is sought to be so admitted...;
+}
+
+c2018c00199-sch-3-sec-236f-ss-1-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236f-ss-1;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Certificate cannot be admitted in evidence without prior notice and copy.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person charged with the offence; or a lawyer who has appeared for the person in those proceedings;;
+  @action: ...unless...;
+}
+
+c2018c00199-sch-3-sec-236f-ss-2-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-236f-ss-2;
+  logic: Deontic;
+  operator: require;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-5-logic-160 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The amendment made by item 3 applies in relation to offences committed (or alleged to have been committed) at or after the commencement of this Part.;
+  @action: The amendment applies in relation to offences committed at or after the commencement of this Part.;
+}
+
+c2018c00199-sch-3-sec-5-logic-161 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the legal effect as Undertaking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The amendment made by item 3 applies in relation to offences committed (or alleged to have been committed) at or after the commencement of this Part.;
+  @action: The amendment applies in relation to offences committed at or after the commencement of this Part.;
+}
+
+c2018c00199-sch-3-sec-5-logic-162 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: LTL;
+  operator: Applicable;
+  summary: Requires an ordered or recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) The amendment made by item 3 applies in relation to offences committed (or alleged to have been committed) at or after the commencement of this Part.;
+  @action: The amendment applies in relation to offences committed at or after the commencement of this Part.;
+}
+
+c2018c00199-sch-3-sec-5-logic-163 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Section 236C (about time in immigration detention) of the Migration Act 1958 (as inserted by this Part) applies in relation to sentences imposed, or non-parole periods set, at or after the commencement of this Part.;
+  @action: The section applies in relation to sentences imposed at or after the commencement of this Part.;
+}
+
+c2018c00199-sch-3-sec-7-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-7;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Repeal certain paragraphs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-3-sec-9-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-9;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Definitions;
+  @action: Subsection 236E(6);
+}
+
+c2018c00199-sch-3-sec-10-logic-166 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-10;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-2-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2;
+  logic: Deontic;
+  operator: in;
+  summary: Membership in a set;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: designated agency;
+  @action: Clean Energy Regulator or another designated agency;
+}
+
+c2018c00199-sch-4-sec-3-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-3;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusion relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: designated agency;
+  @action: Integrity Commission of Tasmania;
+}
+
+c2018c00199-sch-4-sec-5-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits review of decisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-12-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-12;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: No temporal relation specified;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Division 4 of Part 6 (heading);
+  @action: Repeal the heading.;
+}
+
+c2018c00199-sch-4-sec-13-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-13;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace text with new text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-15-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-15;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-16-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-16;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals sections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-17-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-17;
+  logic: Deontic;
+  operator: MustNot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure made without conditions.;
+  @action: Prohibited disclosure.;
+}
+
+c2018c00199-sch-4-sec-18-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-18;
+  logic: Deontic;
+  operator: mustNot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-20-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-20;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on entrusted agency official;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Given written undertaking;
+  @action: Disclosure for purposes of official duties;
+}
+
+c2018c00199-sch-4-sec-21-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-21;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-22-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-22;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace existing provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-23-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits production under certain provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-24-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-24;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Defendant bears evidential burden;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-24-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-24;
+  logic: Epistemic;
+  operator: Evidential Burden;
+  summary: Defendant must provide evidence;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-30-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-30;
+  logic: Deontic;
+  operator: add;
+  summary: Adds to the list of permitted elements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The list of permitted elements is updated.;
+}
+
+c2018c00199-sch-4-sec-31-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-31;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233a-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233a;
+  logic: Deontic;
+  operator: may be reviewed;
+  summary: Review obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: AUSTRAC CEO decision;
+  @action: Administrative Appeals Tribunal review;
+}
+
+c2018c00199-sch-4-sec-233b-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233b;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of registration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233c-ss-1-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233c-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233d-ss-1-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the delegate to reconsider decisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233d-ss-1-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Specifies the temporal scope of the obligation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies to a reviewable decision if the decision is made by a delegate of the AUSTRAC CEO.;
+}
+
+c2018c00199-sch-4-sec-233d-ss-1-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: Indicates the temporal duration of the obligation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies to a reviewable decision if the decision is made by a delegate of the AUSTRAC CEO.;
+}
+
+c2018c00199-sch-4-sec-233d-ss-1-logic-190 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Spreads the obligation to other entities.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This section applies to a reviewable decision if the decision is made by a delegate of the AUSTRAC CEO.;
+}
+
+c2018c00199-sch-4-sec-233d-ss-1-logic-191 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-1;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Identifies the cognitive process involved in the obligation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies to a reviewable decision if the decision is made by a delegate of the AUSTRAC CEO.;
+}
+
+c2018c00199-sch-4-sec-233d-ss-2-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: A person affected by a reviewable decision who is dissatisfied with the decision may apply to the AUSTRAC CEO for the decision to be reconsidered.;
+}
+
+c2018c00199-sch-4-sec-233d-ss-3-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233d-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Application must be made within Schedule 4;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233e-ss-1-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233e-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The AUSTRAC CEO must reconsider a reviewable decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233e-ss-2-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233e-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Mandatory action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-233e-ss-3-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233e-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to reconsider reviewable decisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The AUSTRAC CEO’s reconsideration...;
+}
+
+c2018c00199-sch-4-sec-233e-ss-4-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233e-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide written notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: (4) The AUSTRAC CEO must...;
+}
+
+c2018c00199-sch-4-sec-233f-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233f;
+  logic: Deontic;
+  operator: has;
+  summary: Application is made;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: reviewable decision;
+}
+
+c2018c00199-sch-4-sec-233g-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-233g;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-33-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-33;
+  logic: Deontic;
+  operator: !;
+  summary: Repeals and amendments do not affect old law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-4-sec-34-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-34;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to replace outdated privacy principles.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-1-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition needs to be repealed;
+  @action: Definition of Former Yugoslavia Tribunal is repealed;
+}
+
+c2018c00199-sch-5-sec-1-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-1;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Definition substitution;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: New definition needs to be substituted;
+  @action: Former Yugoslavia Tribunal definition is substituted;
+}
+
+c2018c00199-sch-5-sec-2-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies the Mechanism;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: International Residual Mechanism for Criminal Tribunals;
+  @action: established by United Nations Security Council Resolution 1966 S/RES/1966 (2010);
+}
+
+c2018c00199-sch-5-sec-2-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Includes organs referred to in Article 4 of the Statute of the Tribunal;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Article 4 of the Statute of the Tribunal;
+  @action: organs referred to in Article 4 of the Statute of the Tribunal;
+}
+
+c2018c00199-sch-5-sec-3-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace existing definition with new one;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-3-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-3;
+  logic: DescriptionLogic;
+  operator: Definition Replacement;
+  summary: Update definition of Rwanda Tribunal;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-4-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines the term Statute of the Tribunal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-4-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-4;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a new definition for Statute of the Tribunal;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-5-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-5;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding entities to a set.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-6-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-6;
+  logic: Deontic;
+  operator: inclusion;
+  summary: List of offences;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-7-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-7;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition needs to be repealed;
+  @action: Definition of Former Yugoslavia Tribunal is repealed;
+}
+
+c2018c00199-sch-5-sec-7-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-7;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Definition substitution;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: New definition needed;
+  @action: Former Yugoslavia Tribunal definition is substituted;
+}
+
+c2018c00199-sch-5-sec-8-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-8;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies the Mechanism;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Mechanism established by United Nations Security Council Resolution 1966 S/RES/1966 (2010);
+  @action: International Residual Mechanism for Criminal Tribunals;
+}
+
+c2018c00199-sch-5-sec-9-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-9;
+  logic: Deontic;
+  operator: Substitute;
+  summary: Replace existing definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-9-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-9;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Define Rwanda Tribunal;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-31-2-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-31-2;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies the legal effect as a descriptive clause;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Undertaking;
+}
+
+c2018c00199-sch-5-sec-31-2-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-31-2;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the legal effect as an undertaking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Undertaking;
+}
+
+c2018c00199-sch-5-sec-10-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-10;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Statute of the Tribunal;
+}
+
+c2018c00199-sch-5-sec-10-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-10;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Substitutes a definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: Statute of the Tribunal;
+}
+
+c2018c00199-sch-5-sec-827-2-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-827-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation between documents;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal relation between documents;
+  @action: Temporal relation between documents;
+}
+
+c2018c00199-sch-5-sec-11-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-11;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding entities to a set.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-5-sec-15-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-5-sec-15;
+  logic: Deontic;
+  operator: apply;
+  summary: Application of amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-6-sec-1-3-ss-1c-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-3-ss-1c;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission to enter into arrangements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1C) The Minister and the following person...;
+  @action: ...may enter into arrangements...;
+}
+
+c2018c00199-sch-6-sec-1-3-ss-1c-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-1-3-ss-1c;
+  logic: AllenInterval;
+  operator: MEETS;
+  summary: Temporal relation between entry into arrangements and provision of services;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1C) The Minister and the following person...;
+  @action: ...for that Territory.;
+}
+
+c2018c00199-sch-6-sec-3-3-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-3-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'the Deputy Commissioner';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-6-sec-4-2-logic-227 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4-2;
+  logic: Deontic;
+  operator: delegation;
+  summary: Commissioner's delegation of powers, functions or duties to an AFP employee.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Commissioner has delegated one or more powers, functions or duties under subsection (3).;
+  @action: The Commissioner is taken to have delegated the powers, functions or duties mentioned in paragraph (a) to the AFP employee mentioned in paragraph (b).;
+}
+
+c2018c00199-sch-6-sec-4-2-logic-228 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4-2;
+  logic: AllenInterval;
+  operator: temporal overlap;
+  summary: Delegation of powers, functions or duties by Commissioner and AFP employee.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Commissioner has delegated one or more powers, functions or duties under subsection (3) and the AFP employee is acting in or performing the duties of the senior executive AFP employee.;
+  @action: The Commissioner is taken to have delegated the powers, functions or duties mentioned in paragraph (a) to the AFP employee mentioned in paragraph (b).;
+}
+
+c2018c00199-sch-6-sec-4-2-logic-229 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4-2;
+  logic: LTL;
+  operator: traceability;
+  summary: Delegation of powers, functions or duties by Commissioner and AFP employee.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Commissioner has delegated one or more powers, functions or duties under subsection (3) and the AFP employee is acting in or performing the duties of the senior executive AFP employee.;
+  @action: The Commissioner is taken to have delegated the powers, functions or duties mentioned in paragraph (a) to the AFP employee mentioned in paragraph (b).;
+}
+
+c2018c00199-sch-6-sec-4-2-logic-230 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-6-sec-4-2;
+  logic: Argumentation;
+  operator: implication;
+  summary: Delegation of powers, functions or duties by Commissioner and AFP employee.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The Commissioner has delegated one or more powers, functions or duties under subsection (3) and the AFP employee is acting in or performing the duties of the senior executive AFP employee.;
+  @action: Therefore, the Commissioner is taken to have delegated the powers, functions or duties mentioned in paragraph (a) to the AFP employee mentioned in paragraph (b).;
+}
+
+c2018c00199-sch-6-sec-5-2-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-5-2;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term with another.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-6-sec-7-2-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-7-2;
+  logic: Deontic;
+  operator: Permits;
+  summary: Grants permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2018c00199-sch-6-sec-23-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-6-sec-23;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for amendment history;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Compilation date and registered date are specified;
+  @action: Undertaking;
+}

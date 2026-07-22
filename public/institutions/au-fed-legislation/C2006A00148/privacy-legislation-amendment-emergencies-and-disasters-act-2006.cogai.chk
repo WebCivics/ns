@@ -1,0 +1,894 @@
+# CogAI proposed logic-routing chunks — Privacy Legislation Amendment (Emergencies and Disasters) Act 2006
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80g-ss-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80g-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: Definition of duty of confidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: duty of confidence means any duty or obligation arising under the common law or at equity;
+  @action: Australian citizen has a duty of confidence;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80g-ss-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80g-ss-1;
+  logic: DescriptionLogic;
+  operator: is defined as;
+  summary: Definition of 'emergency declaration';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: emergency declaration means a declaration under section 80J or 80K;
+  @action: Australian citizen has an emergency declaration if declared by the Minister for Home Affairs;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80g-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80g-ss-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Exclusion of legal professional privilege;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: but does not include legal professional privilege;
+  @action: duty of confidence does not include legal professional privilege;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80g-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80g-ss-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Interpretation of personal information definition includes deceased individuals.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-1;
+  logic: Deontic;
+  operator: RelatesTo;
+  summary: Directly relates to the Commonwealth's response to an emergency or disaster.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Part, a permitted purpose is a purpose that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-1;
+  logic: AllenInterval;
+  operator: During;
+  summary: Directly relates to the Commonwealth's response to an emergency or disaster.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Part, a permitted purpose is a purpose that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-1-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-1;
+  logic: LTL;
+  operator: During;
+  summary: Directly relates to the Commonwealth's response to an emergency or disaster.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Part, a permitted purpose is a purpose that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-1-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-1;
+  logic: Diffusion;
+  operator: RelatedTo;
+  summary: Directly relates to the Commonwealth's response to an emergency or disaster.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Part, a permitted purpose is a purpose that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-1-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-1;
+  logic: CogAI;
+  operator: RelatedTo;
+  summary: Directly relates to the Commonwealth's response to an emergency or disaster.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Part, a permitted purpose is a purpose that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80h-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80h-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Permitted purposes;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Without limiting subsection (1);
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80j-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80j;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory declaration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Prime Minister or the Minister may make a declaration under this section;
+  @action: if the Prime Minister or the Minister (as the case may be) is satisfied that...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80j-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80j;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship with affected citizens;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (d) the emergency or disaster has affected one or more Australian citizens or permanent residents (whether within Australia or overseas);
+  @action: ...and (d) the emergency or disaster has affected one or more Australian citizens or permanent residents...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80j-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80j;
+  logic: Deontic;
+  operator: must;
+  summary: Trigger for Part operation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A declaration under this section is merely a trigger for the operation of this Part;
+  @action: ...and is not directly related to any other legislative or non-legislative scheme about emergencies.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80j-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80j;
+  logic: Deontic;
+  operator: must;
+  summary: Satisfaction requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (as the case may be) is satisfied that:;
+  @action: ...and (c) the emergency or disaster is of national significance...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Declaration obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an emergency or disaster has occurred outside Australia;;
+  @action: The Prime Minister or the Minister may make a declaration under this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Declaration obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the emergency or disaster is of such a kind that it is appropriate in the circumstances for this Part to apply in relation to the emergency or disaster;;
+  @action: The Prime Minister or the Minister may make a declaration under this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-1-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Declaration obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the emergency or disaster has affected one or more Australian citizens or permanent residents (whether within Australia or overseas);;
+  @action: The Prime Minister or the Minister may make a declaration under this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-1-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-1;
+  logic: AllenInterval;
+  operator: Between;
+  summary: Declaration relates to events outside Australia;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) an emergency or disaster has occurred outside Australia;;
+  @action: The declaration applies to the emergency or disaster.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-1-logic-19 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Declaration implies conditions for application;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (b) the emergency or disaster is of such a kind that it is appropriate in the circumstances for this Part to apply in relation to the emergency or disaster;;
+  @action: The declaration applies if the condition is met.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must consult other minister;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must consult the Minister administering the Diplomatic Privileges and Immunities Act 1967 before the Minister makes a declaration under this section.;
+  @action: The Minister MUST consult the Minister administering the Diplomatic Privileges and Immunities Act 1967.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80k-ss-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80k-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Declaration is merely a trigger for the operation of this Part;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A declaration under this section is merely a trigger for the operation of this Part and is not directly related to any other legislative or non-legislative scheme about emergencies.;
+  @action: The Minister MUST declare that events outside Australia are occurring.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80l-ss-1-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80l-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to sign declaration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80l-ss-2-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80l-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must publish;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-1-logic-24 {
+  activation: 0.9000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Entity has permission to collect, use or disclose personal information under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the entity reasonably believes that the individual concerned may be involved in the emergency or disaster;
+  @action: The entity is permitted to collect, use or disclose personal information if the conditions are met.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-1-logic-25 {
+  activation: 0.7000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-1;
+  logic: AllenInterval;
+  operator: During;
+  summary: This provision applies during an emergency or disaster when certain conditions are met.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the entity reasonably believes that the individual concerned may be involved in the emergency or disaster;
+  @action: The provision applies during the emergency or disaster when the conditions are met.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-1-logic-26 {
+  activation: 0.6000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: This provision is applicable until the emergency or disaster ends.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the entity reasonably believes that the individual concerned may be involved in the emergency or disaster;
+  @action: The provision is applicable until the emergency or disaster ends when the conditions are met.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-1-logic-27 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-1;
+  logic: Diffusion;
+  operator: Through;
+  summary: This provision diffuses information about entities that may collect, use or disclose personal information under certain conditions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: the entity reasonably believes that the individual concerned may be involved in the emergency or disaster;
+  @action: The provision diffuses information through the entity that may collect, use or disclose personal information if the conditions are met.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-2-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-2;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemption from liability for secrecy provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (2);
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-3-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-3;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemption from liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (3);
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-4;
+  logic: Deontic;
+  operator: Permits;
+  summary: Entity permitted to collect, use and disclose personal information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) An entity that is an agency does not breach an Information Privacy Principle in respect of a collection, use or disclosure of personal information authorised by subsection (1).;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-4;
+  logic: AllenInterval;
+  operator: During;
+  summary: Entity permitted to collect, use and disclose personal information during authorized period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) An entity that is an agency does not breach an Information Privacy Principle in respect of a collection, use or disclosure of personal information authorised by subsection (1).;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-4-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-4;
+  logic: LTL;
+  operator: Until;
+  summary: Entity permitted to collect, use and disclose personal information until authorized period ends.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) An entity that is an agency does not breach an Information Privacy Principle in respect of a collection, use or disclosure of personal information authorised by subsection (1).;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-4-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-4;
+  logic: Diffusion;
+  operator: Through;
+  summary: Entity permitted to collect, use and disclose personal information through authorized channels.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) An entity that is an agency does not breach an Information Privacy Principle in respect of a collection, use or disclosure of personal information authorised by subsection (1).;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-4-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-4;
+  logic: CogAI;
+  operator: With;
+  summary: Entity permitted to collect, use and disclose personal information with AI assistance.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) An entity that is an agency does not breach an Information Privacy Principle in respect of a collection, use or disclosure of personal information authorised by subsection (1).;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-6-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-6;
+  logic: Deontic;
+  operator: Authorization;
+  summary: Agency authorization required for officer/employee actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Agency must authorize officer/employee actions.;
+  @action: Officer/employee authorized to collect, use and disclose personal information.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-7-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: designated secrecy provision means...;
+  @action: ...an organisation.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80p-ss-7-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80p-ss-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: entity includes the following:;
+  @action: ...a person;;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-1-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of disclosing personal information without responsibility.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) personal information that relates to an individual is disclosed to the first person because of the operation of this Part; and (b) the first person subsequently discloses the personal information;;
+  @action: The first person commits an offence if...;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-3;
+  logic: Deontic;
+  operator: authorises;
+  summary: Implies obligation to disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If a disclosure of personal information is covered by subsection (2), the disclosure is authorised by this section.;
+  @action: The disclosure is obligatory.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-3-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the temporal relationship between disclosure and authorisation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If a disclosure of personal information is covered by subsection (2), the disclosure is authorised by this section.;
+  @action: The disclosure occurs during the authorisation period.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-3-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-3;
+  logic: Diffusion;
+  operator: implies;
+  summary: Describes the relationship between disclosure and diffusion of information;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) If a disclosure of personal information is covered by subsection (2), the disclosure is authorised by this section.;
+  @action: The disclosure implies the diffusion of information.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-3-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-3;
+  logic: CogAI;
+  operator: authorises;
+  summary: Describes the relationship between disclosure and artificial intelligence;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) If a disclosure of personal information is covered by subsection (2), the disclosure is authorised by this section.;
+  @action: The disclosure is authorised by AI.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-3-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-3;
+  logic: SHACL;
+  operator: authorises;
+  summary: Describes the relationship between disclosure and schema;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (3) If a disclosure of personal information is covered by subsection (2), the disclosure is authorised by this section.;
+  @action: The disclosure is authorised according to the schema.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: Deontic;
+  operator: MUST INCLUDE;
+  summary: Court must include any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: DescriptionLogic;
+  operator: SUBCLASS OF;
+  summary: Includes any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of paragraph (2)(f),;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Court includes any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of paragraph (2)(f),;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Court includes any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of paragraph (2)(f),;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Court includes any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of paragraph (2)(f),;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80q-ss-4-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80q-ss-4;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Court includes any tribunal, authority or person having power to require production of documents or answering of questions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of paragraph (2)(f),;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prevents operation from being limited by secrecy provisions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The operation of this Part is not limited by a secrecy provision of any other law...;
+  @action: ...except to the extent that the secrecy provision expressly excludes the operation of this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-1;
+  logic: Deontic;
+  operator: Permission;
+  summary: Allows operation to be limited by secrecy provisions under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The operation of this Part is not limited by a secrecy provision of any other law...;
+  @action: ...except to the extent that the secrecy provision expressly excludes the operation of this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-1-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Describes the temporal relationship between the operation and secrecy provisions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The operation of this Part is not limited by a secrecy provision of any other law...;
+  @action: ...except to the extent that the secrecy provision expressly excludes the operation of this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-1-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-1;
+  logic: LTL;
+  operator: Recurrent;
+  summary: Describes the recurring nature of the operation's limitation by secrecy provisions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) The operation of this Part is not limited by a secrecy provision of any other law...;
+  @action: ...except to the extent that the secrecy provision expressly excludes the operation of this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-1-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the operation to be limited by secrecy provisions under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The operation of this Part is not limited by a secrecy provision of any other law...;
+  @action: ...except to the extent that the secrecy provision expressly excludes the operation of this section.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: No obligation to collect, use or disclose personal information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Nothing in this Part is to be taken to require an entity to collect, use or disclose personal information.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80r-ss-2-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80r-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: No obligation to collect, use or disclose personal information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: (2) Nothing in this Part is to be taken to require an entity to collect, use or disclose personal information.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-2;
+  logic: Deontic;
+  operator: has effect;
+  summary: The provision has the specified effect.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to ensure compliance with Part operation in relation to trade or commerce;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) This Part also has the effect...;
+  @action: ...in relation to trade or commerce:;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-3-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Specifies temporal intervals for Part operation in relation to trade or commerce;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) among the States;;
+  @action: ...in the course of, or in relation to, trade or commerce:;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-3-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-3;
+  logic: LTL;
+  operator: Repeats;
+  summary: Indicates repeated application of Part operation in relation to trade or commerce;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) within a Territory, between a State and a Territory or between 2 Territories.;
+  @action: ...in the course of, or in relation to, trade or commerce:;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Spreads Part operation in relation to trade or commerce across different regions and entities;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) This Part also has the effect...;
+  @action: ...in relation to trade or commerce:;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-3;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Identifies the State as a legal entity with obligations under Part operation in relation to trade or commerce;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) This Part also has the effect...;
+  @action: ...in relation to trade or commerce:;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-8-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80s-ss-10-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80s-ss-10;
+  logic: Deontic;
+  operator: obligation;
+  summary: Express obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to pay compensation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-1-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between operation and acquisition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) If the operation of this Part would result in an acquisition of property from a person otherwise than on just terms, the Commonwealth is liable to pay a reasonable amount of compensation to the person.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-1-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-1;
+  logic: LTL;
+  operator: Traces;
+  summary: Temporal trace between operation and acquisition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) If the operation of this Part would result in an acquisition of property from a person otherwise than on just terms, the Commonwealth is liable to pay a reasonable amount of compensation to the person.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-1-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion of liability to Commonwealth;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) If the operation of this Part would result in an acquisition of property from a person otherwise than on just terms, the Commonwealth is liable to pay a reasonable amount of compensation to the person.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-1-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of operation on Commonwealth's liability;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) If the operation of this Part would result in an acquisition of property from a person otherwise than on just terms, the Commonwealth is liable to pay a reasonable amount of compensation to the person.;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-2-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to provide compensation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-1-sec-80t-ss-3-logic-71 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-80t-ss-3;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines key terms for acquisition of property.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-emergencies-and-disasters-act-2006-sch-2-sec-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

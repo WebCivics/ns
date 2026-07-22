@@ -1,0 +1,325 @@
+# CogAI proposed logic-routing chunks — Australian Border Force Amendment (Protected Information) Act 2017
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-border-force-amendment-protected-information-act-2017-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Australian Border Force Amendment (Protected Information) Act 2017.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty of confidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: Class;
+  summary: Classification of information;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of certain information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) Without limiting the definition of Immigration and Border Protection information in subsection (1),;
+  @action: the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-5 {
+  activation: 0.8000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-5;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Disclosing certain information would overlap with national security concerns.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) Without limiting the definition of Immigration and Border Protection information in subsection (1),;
+  @action: the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-5-logic-6 {
+  activation: 0.6000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-5;
+  logic: LTL;
+  operator: Recurring;
+  summary: Disclosing certain information would create a recurring national security concern.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) Without limiting the definition of Immigration and Border Protection information in subsection (1),;
+  @action: the following kinds of information are taken to be information the disclosure of which would or could reasonably be expected to prejudice the security, defence or international relations of Australia:;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-5-ss-6-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6;
+  logic: Deontic;
+  operator: obligation;
+  summary: Statutory obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Compulsion of law;
+  @action: Duty of confidence;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-10-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Repeal heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Heading to be repealed;
+  @action: Repeal applied;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text contains 'protected information, or a class of protected information';
+  @action: Omit 'protected information, or a class of protected information';
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-11-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: DescriptionLogic;
+  operator: Substitute;
+  summary: Replaces omitted phrase with new text;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Text contains 'Immigration and Border Protection information';
+  @action: Replace 'protected information, or a class of protected information' with 'Immigration and Border Protection information';
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: DescriptionLogic;
+  operator: substitute;
+  summary: Substitution of terms;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-13-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: omission;
+  summary: Omission of protected information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-16-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: DescriptionLogic;
+  operator: Substitution;
+  summary: Replaces protected information with Immigration and Border Protection information.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-18-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: DescriptionLogic;
+  operator: Substitution;
+  summary: Replaces a term with another term.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-50a-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-50a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to certify;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-22-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to replace 'protected information';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57a-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Parliament's intention;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-1-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57a-ss-1;
+  logic: Deontic;
+  operator: Permission;
+  summary: Invalid applications excluded;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) also has at least one application (a valid application) in relation to...;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-57a-ss-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-57a-ss-2;
+  logic: Deontic;
+  operator: appliesTo;
+  summary: Section applies to provisions of this Act regardless of when enacted or made.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: Deontic;
+  operator: Implies;
+  summary: If an act or omission did not make the person liable to a penalty, then they are not liable.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;;
+  @action: then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The provision applies to acts or omissions before the Act receives Royal Assent.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;;
+  @action: then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: LTL;
+  operator: Repeats;
+  summary: The provision applies to acts or omissions with repetition.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;;
+  @action: then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: The provision diffuses liability to certain acts or omissions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;;
+  @action: then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-24-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: The provision recognizes certain acts or omissions as exempt from liability.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) before the day this Act receives the Royal Assent a person did an act, or omitted to do an act;;
+  @action: then, despite the amendments of that Act made by this Schedule, the person is not liable to a penalty for the act or omission.;
+}
+
+australian-border-force-amendment-protected-information-act-2017-sch-1-sec-32-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace a term with another term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

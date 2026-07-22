@@ -1,0 +1,270 @@
+# CogAI proposed logic-routing chunks — Australian Capital Territory (Electoral) Amendment Act 1991
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-capital-territory-electoral-amendment-act-1991-sec-5-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to amend the definition of 'political party';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-6-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide voting information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-7-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows exemptions from compulsory voting requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-11-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies part as a subclass of another part;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Part is defined as a subclass of another part;
+  @action: Part is classified correctly;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-12-ss-2-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Specify the temporal interval for the amendment.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Schedule 1 to the Principal Act is amended by omitting modifications of the 1918 Act in that Schedule, and substituting modifications, in accordance with Schedule 2 to this Act.;
+  @action: [Start: 1918-01-01, End: 2023-12-31];
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-12-ss-2-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: LTL;
+  operator: Applicable;
+  summary: Specify the trace for the amendment.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Schedule 1 to the Principal Act is amended by omitting modifications of the 1918 Act in that Schedule, and substituting modifications, in accordance with Schedule 2 to this Act.;
+  @action: [Trace: Amendment of Schedule 1];
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-12-ss-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classify the deontic type of the provision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Schedule 1 to the Principal Act is amended by omitting modifications of the 1918 Act in that Schedule, and substituting modifications, in accordance with Schedule 2 to this Act.;
+  @action: Obligation;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-12-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Specify the diffusion pattern for the amendment.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Schedule 1 to the Principal Act is amended by omitting modifications of the 1918 Act in that Schedule, and substituting modifications, in accordance with Schedule 2 to this Act.;
+  @action: [Diffusion: Amendment of Schedule 1];
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-12-ss-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: CogAI;
+  operator: Applicable;
+  summary: Specify the cognitive agent for the amendment.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Schedule 1 to the Principal Act is amended by omitting modifications of the 1918 Act in that Schedule, and substituting modifications, in accordance with Schedule 2 to this Act.;
+  @action: [Agent: Government];
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-14-ss-1-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines key terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-14-ss-1-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: DescriptionLogic;
+  operator: classifies;
+  summary: Classifies reviewable party and information period.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-14-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-14-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Party must provide list of members;
+  @action: Electoral Commission de-registers party;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-1-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: DescriptionLogic;
+  operator: hasPart;
+  summary: Identifies the Register of Political Parties;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Register of Political Parties means...;
+  @action: ...the Australian Capital Territory Register of Political Parties established under section 13 of the Territory Electoral Act;;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: DescriptionLogic;
+  operator: hasPart;
+  summary: Identifies the party to be de-registered;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (3) If a registered party becomes liable to de-registration...;
+  @action: ...the particulars on the Register of Political Parties that relate to that party to be cancelled;;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval for de-registration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If a registered party becomes liable to de-registration...;
+  @action: ...the Electoral Commission must: ... (d) publish a notice of the de-registration in the Gazette.;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: Deontic;
+  operator: must;
+  summary: Electoral Commission's obligation to de-register;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If a registered party becomes liable to de-registration...;
+  @action: ...the Electoral Commission must: ... (a) de-register the party;;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: Deontic;
+  operator: must;
+  summary: Electoral Commission's obligation to give notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If a registered party becomes liable to de-registration...;
+  @action: ...the Electoral Commission must: ... (b) give written notice of the de-registration to the person who was...;;
+}
+
+australian-capital-territory-electoral-amendment-act-1991-sec-15-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: Deontic;
+  operator: must;
+  summary: Electoral Commission's obligation to cancel particulars;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If a registered party becomes liable to de-registration...;
+  @action: ...the Electoral Commission must: ... (c) cause the particulars on the Register of Political Parties that relate to that party to be cancelled;;
+}

@@ -1,0 +1,575 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title [see Note 1]"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": [
+        "concept:human-rights-sexual-conduct-act-1994-sec-1-norm",
+        "concept:human-rights-sexual-conduct-act-1994-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ea0e43cc18cca920b30d79c2f83d89f1637e80caf3a639aeac78e2f31347bdbc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act may be cited as the Human Rights (Sexual Conduct)Act 1994.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Establishes citation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "citation"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-1"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Dec 1994"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": "concept:human-rights-sexual-conduct-act-1994-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-19-2",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.7",
+      "skos:note": "Dec 1994",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Dec 1994"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": "concept:human-rights-sexual-conduct-act-1994-sec-19-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f697041401b8434f351b6ad31798250e805ece88e721a5a0690df3cfff3516c9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-19-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-19-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-19-2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-19-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-19"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:note": "Commences on day of Royal Assent",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement [see Note 1]"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": [
+        "concept:human-rights-sexual-conduct-act-1994-sec-2-norm",
+        "concept:human-rights-sexual-conduct-act-1994-sec-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4eed6c7b27751913ba3ce32609cdff12c4ce5ac3cad11b9b35f84b1af99fbc6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commences on day of Royal Assent",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Defines commencement"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:note": "Act extends to external Territories",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Act extends to external Territories"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": [
+        "concept:human-rights-sexual-conduct-act-1994-sec-3-norm",
+        "concept:human-rights-sexual-conduct-act-1994-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "67472e2293bda79b217253ba1d52eb7c699bd961318a2af2e8142d911b825256",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Obligation to extend",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Extension of jurisdiction",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "extends",
+      "cml:premiseText": "Act applies to external Territories"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-3"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Arbitrary interferences with privacy"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1"
+        },
+        {
+          "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:note": "No arbitrary interference with privacy for consenting adults in private",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(1) Arbitrary interferences with privacy"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": [
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-norm",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-1",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-2",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-alleninterval-3",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-ltl-4",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4a3aa42a80a3a8932bea9ad5598b874dfa68b046e65cf2905346d6173fb891df",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-4-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-4"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is not to be subject, by or under any law of the Commonwealth, a State or a Territory, to any arbitrary interference with privacy within the meaning of Article 17 of the International Covenant on Civil and Political Rights.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Respects temporal overlap between Article 17 and Australian Human Rights Commission Act 1986",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(1) Sexual conduct involving only consenting adults acting in private"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is not to be subject, by or under any law of the Commonwealth, a State or a Territory, to any arbitrary interference with privacy",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits arbitrary interference with privacy",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(1) Sexual conduct involving only consenting adults acting in private"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is not to be subject, by or under any law of the Commonwealth, a State or a Territory, to any arbitrary interference with privacy",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes obligation on States and Territories to respect privacy",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(1) Sexual conduct involving only consenting adults acting in private"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is not to be subject, by or under any law of the Commonwealth, a State or a Territory, to any arbitrary interference with privacy within the meaning of Article 17 of the International Covenant on Civil and Political Rights.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Grants permission for States and Territories to regulate private conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission",
+      "cml:premiseText": "(1) Sexual conduct involving only consenting adults acting in private"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is not to be subject, by or under any law of the Commonwealth, a State or a Territory, to any arbitrary interference with privacy within the meaning of Article 17 of the International Covenant on Civil and Political Rights.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Respects temporal inclusion between Article 17 and Australian Human Rights Commission Act 1986",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Contains",
+      "cml:premiseText": "(1) Sexual conduct involving only consenting adults acting in private"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-1"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.5",
+      "skos:note": "Adult defined as person 18 years old or more",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(2) Arbitrary interferences with privacy"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": [
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2-norm",
+        "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fbb1a926532b0177c6b2c777f2ff3fd93ce4813751fb4852b85a5c6c1c94d021",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-4-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-4"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of adult",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasPart"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-4-ss-2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "human-rights-sexual-conduct-act-1994.pdf, p.7",
+      "skos:note": "Table of Amendments for Human Rights (Sexual Conduct) Act 1994",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 July 2009"
+      },
+      "wasDerivedFrom": "human-rights-sexual-conduct-act-1994.pdf",
+      "asserts": "concept:human-rights-sexual-conduct-act-1994-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "19c9bc6e59be28ecf0af379a1ed6fb8a64ede30450eb54c675d70868c23dc037",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:human-rights-sexual-conduct-act-1994#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:human-rights-sexual-conduct-act-1994-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:human-rights-sexual-conduct-act-1994-sec-8"
+    },
+    {
+      "@id": "doc:au/c2009c00395",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to implement Australia’s international obligations under Article 17 of the International Covenant on Civil and Political Rights 1 Short title [see Note 1] This Act may be cited as the Human Rights (Sexual Conduct) Act 1994.",
+      "dc:identifier": [
+        "C2009C00395",
+        "No. 179 of 1994"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Human Rights (Sexual Conduct) Act 1994"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2009C00395",
+        "human-rights-sexual-conduct-act-1994.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

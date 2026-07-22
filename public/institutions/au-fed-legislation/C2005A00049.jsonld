@@ -1,0 +1,725 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.7",
+      "skos:note": "Repeal the definition of ACA",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 3 (definition of ACA)"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b59404361671ad06ec8926108f9ea23ee505ede55250ca43258a4f35d6ac990f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.7",
+      "skos:note": "Definition of ACMA",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 3"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": [
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2-norm",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "539ef446984fb49e6700e7985ea445ff6c2658e7c2525dfd1e6badd09bd664f3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "ACMA means the Australian Communications and Media Authority.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "The Australian Communications and Media Authority is defined as..."
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.7",
+      "skos:note": "Omit 'by the ACA', substitute 'by the ACMA'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 7(1)"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a9af3ab1ed4d0553cdc76c5f9942aa24a1b9d32cc4931c9f2fd6a73619738621",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.7",
+      "skos:note": "The Minister may give ACMA directions in relation to its functions and powers.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 7(1) (note)"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": [
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4-norm",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c42b98ca1b14e8acf1b92386802b8aa4ef4a176fe3eaecad955168e449782849",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implies obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.8",
+      "skos:note": "Defines Imposition Act and transition time.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Definitions"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": [
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-norm",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-descriptionlogic-1",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e14bf21d3f7647934e778db8cdc74cab3856c3f08b26d5e486f88e03d7dca8f4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Imposition Act and transition time",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of terms",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "this Schedule"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "transition time",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "definedBy",
+      "cml:premiseText": "Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.8",
+      "skos:note": "Continued effect of amount determinations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Continued effect of amount determinations"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": [
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-norm",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-deontic-1",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-alleninterval-2",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-ltl-3",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-diffusion-4",
+        "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "13b9fd2bc256b068b569693d9a7d383c5a7c3701f3edd59fb1ef446f8e358971",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Determination has effect on and after transition time",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Effect continues during transition time",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Previous determination made by ACA under subsection 7(1) of Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Determination has effect on and after transition time in new context",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Applies the previous determination to new context using AI",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "Previous determination made by ACA under subsection 7(1) of Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Has effect on and after transition time as if it had been made by ACMA",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Continues the effect of a previous determination",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "continues",
+      "cml:premiseText": "Previous determination made by ACA under subsection 7(1) of Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Determination has effect on and after transition time in new context",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Effect propagates to new context",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "propagates",
+      "cml:premiseText": "Previous determination made by ACA under subsection 7(1) of Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Determination has effect on and after transition time",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Effect continues during transition time",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Previous determination made by ACA under subsection 7(1) of Imposition Act"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "178054353753f0f98bf31dd7a00b520320c5968ab4730782e30975306aa987f7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:note": "Table of sections and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d23f7ffd714b61f871d6fecd00be20170f6c9ff45b2b3a5a748dbbe338eee61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 April 2005"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-3"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-4",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2005"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "36dd6140be35b05e07c9440bc8dd1213036e37e42857ad84246a9c719178a40a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-1-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-4"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-1"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:note": "Commencement rules for each provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ecf4f9b7c747a645d7818be184c347cf74642e1e194824de81632dcfb376964",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:note": "Commences at the same time as section 6 of the Australian Communications and Media Authority Act 2005.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0b208bf34b5b4a1e842e48d38fa5242fcdb7437950d748f7ee80b6a35e68c1ea",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "datacasting-charge-imposition-amendment-act-2005.pdf, p.6",
+      "skos:note": "Amendments Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "datacasting-charge-imposition-amendment-act-2005.pdf",
+      "asserts": "concept:datacasting-charge-imposition-amendment-act-2005-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ee0e5ab8f8e8243a3377f22cfd34e160aaf5d77f8f6cfa9290549730ec2bcf2c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:datacasting-charge-imposition-amendment-act-2005#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:datacasting-charge-imposition-amendment-act-2005-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:datacasting-charge-imposition-amendment-act-2005-sec-3"
+    },
+    {
+      "@id": "doc:au/c2005a00049",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Datacasting Charge (Imposition) Act 1998, and for related purposes",
+      "dc:identifier": [
+        "C2005A00049",
+        "No. 49 of 2005"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Datacasting Charge (Imposition) Amendment Act 2005"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2005A00049/latest/downloads",
+        "datacasting-charge-imposition-amendment-act-2005.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,2516 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Omit 'a market', substitute 'any market'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsections 50(1) and (2)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "232d8b7a7be0eab3f19c530830c6f8f793477a404390c129601f52b781b18a13",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Amendments of section 50 apply to acquisitions after commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "179 Amendments of section 50"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8586b162cc70e464e4f378e14c5ffd4be1917b35f95283de1a15818435590a82",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-179",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This provision requires a temporal relation between acquisitions and commencement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Temporal relations are required for conditional commencement"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-179"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Omit “substantial”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 50(6) (definition of market)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3ccfa60214733f8f9482f6492e6f856f0294e0b5b34debe216dc4d4df681b3c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Add at the end of Part XIII",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 At the end of Part XIII"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Omit 'a market', substitute 'any market'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 50(1) of Schedule 1"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "232d8b7a7be0eab3f19c530830c6f8f793477a404390c129601f52b781b18a13",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.8",
+      "skos:note": "Omit “substantial”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Subsection 50(6) of Schedule 1 (definition of market)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "366d92223e1ecd9822516bd33d3b937090c0f36da803f33c6b6104b79c5c904a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "Repeal sections and substitute with new ones.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Sections 12CB and 12CC"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f9eee24fd03c57845c94de25dc1e0f57c3600606198c472c9bbdf04e1cac423d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "Prohibition on unconscionable conduct in connection with financial services",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB(1) Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fb0364f5a5b38bf4a58a08484b159657e5b5361da4c5ca75fe873f8862d53e31",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The prohibition applies during trade or commerce",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal scope of prohibition",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "Trade or commerce"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Unconscionable conduct is prohibited",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on unconscionable conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid",
+      "cml:premiseText": "Trade or commerce"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "Exemption from application of section for conduct related to legal proceedings or arbitration.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB(2) Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "29e3ad6230c8e44e149aa61ff12db8c071c67f160d3bf653bad023f6a033de91",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to engage in conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permission"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "Court must not consider unforeseeable circumstances when determining contravention.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB(3) Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-epistemic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "328bd36575e72e53604e4df3d22cf7506d516fc767e3411a245e768e3e44573a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must not consider unforeseeable circumstances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MustNotConsider",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Court may consider circumstances reasonably foreseeable at the time of contravention.",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "ReasonablyForeseeable",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "This section is not limited by the unwritten law of the States and Territories relating to unconscionable conduct.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB(4) Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bf720450b830a499fedcd6f403936b40cffcc3c2a72eaa694ca157fe9a15bb01",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "This section imposes an obligation on the Parliament.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.9",
+      "skos:note": "Definition of listed public company",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CB(5) Unconscionable conduct in connection with financial services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "46dc9d27cd1b3043f1f09e8f256dc8b70e25f5beb6d84e243a46e70ef429a8f1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cb-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Listed public company",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "Term used in section"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cb-ss-5"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CC Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-3"
+        }
+      ],
+      "cml:integrityHash": "758331a251996ca769f9cb4de3e9fe48b9c7ee24c2ab1a59f53ca80e32621b20",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cc",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.10",
+      "skos:note": "Court may have regard to various factors when determining whether a person has contravened section 12CB in connection with the supply or possible supply of financial services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CC(1) Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-alleninterval-2",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-ltl-3",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2039710020125bca4870961ab375110731341bc668059ca54ba5a95641c9dcf2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cc-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the extent to which the supplier’s conduct towards the service recipient was consistent with the supplier’s conduct in similar transactions between the supplier and other like service recipients;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The text mentions specific time-related factors, such as the amount for which the service recipient could have acquired identical or equivalent financial services.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "has a temporal relation",
+      "cml:premiseText": "(e) the amount for which, and the circumstances under which, the service recipient could have acquired identical or ComLaw Authoritative Act C2011A00184  Unconscionable conduct  Schedule 2  equivalent financial services from a person other than the"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the court may have regard to:  (a) the relative strengths of the bargaining positions of the supplier and the service recipient; and",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court may consider various factors when determining whether a person has contravened section 12CB.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may have regard to",
+      "cml:premiseText": "(1) Without limiting the matters to which the court may have regard for the purpose of determining..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the conduct of the supplier and the service recipient in complying with the terms and conditions of the contract;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The text imposes obligations on the supplier, such as disclosing information and acting in good faith.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has a duty",
+      "cml:premiseText": "(i) if there is a contract between the supplier and the service recipient for the supply of the financial services:  (i) the extent to which the supplier was willing to negotiate the terms and conditions of the contract with the service recipient;"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the extent to which the supplier unreasonably failed to disclose to the service recipient:  (i) any intended conduct of the supplier that might affect the interests of the service recipient;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The text mentions specific factors that must be considered in a particular order, such as the relative strengths of the bargaining positions.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "has an ordered trace",
+      "cml:premiseText": "(a) the relative strengths of the bargaining positions of the supplier and the service recipient; and"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.10",
+      "skos:note": "Court may have regard to various factors when determining whether a person has contravened section 12CB in connection with the acquisition or possible acquisition of financial services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CC(2) Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-alleninterval-2",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-ltl-3",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dd327956f4b3276fc4cf1dbef9403841132a822e8dc7dbb04103fc87dde5854b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cc-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...within a specific time frame.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Court's consideration of various factors is within a specific time frame.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "within a temporal interval",
+      "cml:premiseText": "(2) Without limiting..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...when determining whether a person has contravened section 12CB.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court's obligation to consider various factors when determining whether a person has contravened section 12CB.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may have regard to",
+      "cml:premiseText": "The court may have regard to..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...not absolute.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court's obligation to disclose information is not absolute.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may not require disclosure",
+      "cml:premiseText": "the acquirer unreasonably failed to..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...part of a recurring pattern.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Court's consideration of various factors is part of a recurring pattern.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "recurring trace",
+      "cml:premiseText": "The court may have regard to..."
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.10",
+      "skos:note": "Industry code definition",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12CC(3) Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d68d3c26d5d0e4f563948b94a264cc9c3c5d3f28869d903841e4b7390854c791",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-12cc-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-12cc-ss-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.13",
+      "skos:note": "Substitute section numbers",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Paragraph 131(2)(a)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a00a02a1ab281e4ba7f5ddfee1f2305f905000bac6d7900dec0cc5db4671b55",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Unconscionable conduct in connection with goods or services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.14",
+      "skos:note": "Prohibition on unconscionable conduct in trade or commerce",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(1) Unconscionable conduct in connection with goods or services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "44e1e27162ec65087568d9730a51cce0918aeb6374b6df87ceff53e526b22c13",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-21-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "No unconscionable conduct",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits unconscionable conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid",
+      "cml:premiseText": "Trade or commerce"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.14",
+      "skos:note": "Exempt from unconscionable conduct",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(2) Unconscionable conduct in connection with goods or services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-linearlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "29e3ad6230c8e44e149aa61ff12db8c071c67f160d3bf653bad023f6a033de91",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-21-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid",
+      "cml:premiseText": "(2) This section does not apply to conduct that is engaged in only because the person engaging in the conduct:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Implies exempt condition",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "implies",
+      "cml:premiseText": "(2) This section does not apply to conduct that is engaged in only because the person engaging in the conduct:"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.14",
+      "skos:note": "Court must not consider unforeseeable circumstances when determining contravention.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(3) Unconscionable conduct in connection with goods or services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-epistemic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "328bd36575e72e53604e4df3d22cf7506d516fc767e3411a245e768e3e44573a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-21-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must not consider unforeseeable circumstances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MustNotConsider",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Court may consider circumstances reasonably foreseeable at the time of contravention.",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "ReasonablyForeseeable",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.14",
+      "skos:note": "Court must consider contract terms and manner of performance when determining unconscionable conduct.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21(4) Unconscionable conduct in connection with goods or services"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6b25b2dbc88df070556eda032a2f8d2cd85a68437050ff650af6ae8b2943a4bc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-21-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must consider contract terms and manner of performance.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-21-ss-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1"
+        },
+        {
+          "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-2"
+        }
+      ],
+      "cml:integrityHash": "ebc9ea8ee014ed231f70dccb67199d97ab87593e8cb49122b4471354807853ab",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.15",
+      "skos:note": "Court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22(1) Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-deontic-1",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-alleninterval-2",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-ltl-3",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-cogai-4",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-shacl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "361f5b5cc6bc03c140556e4b67c8c0fd212ef8684f512abe02a03a4e933fd4aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-22-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "withinTemporalInterval"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "hasKnowledgeGraph"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "mayHaveRegardTo"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "hasRecurringTrace"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-logic-shacl-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::shacl",
+      "cml:logicSummary": "The court may have regard to various factors when determining whether a person has contravened section 21 in connection with the supply or possible supply of goods or services.",
+      "cml:modality": {
+        "@id": "cml:SHACL"
+      },
+      "cml:operator": "hasSchema"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.15",
+      "skos:note": "Court may have regard to certain matters when determining whether a person has contravened section 21 in connection with the acquisition or possible acquisition of goods or services.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22(2) Matters the court may have regard to for the purposes of"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1636a4de619c72093f4dd807946c684833befb177d7ae200dd079afd1a2ef5fe",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-22-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22-ss-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22a",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.18",
+      "skos:note": "Presumptions relating to whether representations are misleading",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22A Presumptions relating to whether representations are"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22a-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b96000a0e727e5d3c00fc08e6c40edd77b3d7fe8753dfd6b5cd560d9dea41baa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-22a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-22a"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.13",
+      "skos:note": "Omit “or 22”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 20(2) of Schedule 2"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af01e3b10ca84fdc1c3c395a65ce72bb7c7037b9917d3e853b22e93d6fcb0f42",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.13",
+      "skos:note": "Repeal sections and substitute with new provisions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Sections 21 and 22 of Schedule 2"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3ceb977c510635b41474e05d46cc2240e34d53997e605d92f325988a0a92645e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits unconscionable conduct",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Substitute certain section numbers in Schedule 5.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Item 36 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2a60fd7f688f911c9311f1c45398456a9b0127c6da68842ea1491442466a87af",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit “or of the Australian Consumer Law”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Item 50 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "11a9dc349d47b01c86c974b7d96d064f29b70fb5d5b68b247a512ec4bcd3e3d9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit “or Australian Consumer Law”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Item 54 of Schedule 5 (note)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "246bb1276d5ff7a75cd5f847aff0d4507139f5dc94370a938d749c329a3ff02e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit specified provision from law.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Item 65 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "15f2c4e348eb022acf85c3289e4f78680d1a89f76ec0d4428bb247568d0e7b34",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes prohibition on omission.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit specified phrase from Australian Consumer Law.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Item 71 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a5c1c388d1f10526d840121465aac218e070759251ee1208ec7514577bc33a75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omission of specified phrase.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-5"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit 'or 6(1)'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Item 74 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d1ac25c065945a4e887fe2a7e78ad6f94dcec27aa6b3e0499f6c3b02df0dba9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-6-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-6"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit specified provisions of the Australian Consumer Law.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Item 90 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c3e4ef062a6d4e49842e73752a8f51398729bfce30c205328d9c5f4d91462161",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting specified provisions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-7"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit 'Division 2', substitute 'or Division 2'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Item 90 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3e7e3dd21aebcfa040f2c93ce06b085c978ef8880c4a34fa93f87c83d630a26d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-8"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.19",
+      "skos:note": "Omit ‘or a’, substitute ‘, or of a’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Item 96 of Schedule 5"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4f3db5e8c5a684ce9b8200fb31f91d3fa83a60f24a36c1867dd594aba2ba0ee9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sch-3-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits omitting ‘or a’, substituting ‘, or of a’.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sch-3-sec-9"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "93721220dd1153fc7dc38e148e04abf265087b64ad11b897c4a0ca5b13400679",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Table of sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 January 2012"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Note on table limitations and amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 January 2011"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-1-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-1"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c980fffb09f2a407258b1754f7e3ca3d52b17b4f4317a73c7d44036a362a46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Schedule 1 commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6978f57928a4ded2fe5b989fa5fc1f94411861894809745aa60da25e7e3ec8f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Schedule 2 commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d964937f6aa0b10348d4de027c829456bbae4ab1f1954681f9186e51c1f71d75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Schedules apply to Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "eba1e169ac2eed3777d1281ec8399a0382ab141f29a8a8cb1202fd8fa45476bb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-3"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:note": "Conditional commencement of Schedule 5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": [
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4-norm",
+        "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1c28579c1886ee4e61ac55893b7fbff5065fadc58442047c3ca100d1c4344c90",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Describes temporal relationship",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-4"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 December"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "competition-and-consumer-legislation-amendment-act-2011.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 February 2012"
+      },
+      "wasDerivedFrom": "competition-and-consumer-legislation-amendment-act-2011.pdf",
+      "asserts": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:competition-and-consumer-legislation-amendment-act-2011#sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-2"
+    },
+    {
+      "@id": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:competition-and-consumer-legislation-amendment-act-2011-sec-6"
+    },
+    {
+      "@id": "doc:au/c2011a00184",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the law relating to competition and consumers, and for related purposes",
+      "dc:identifier": [
+        "C2011A00184",
+        "No. 184 of 2011"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Competition and Consumer Legislation Amendment Act 2011"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2011A00184/latest/downloads",
+        "competition-and-consumer-legislation-amendment-act-2011.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

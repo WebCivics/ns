@@ -1,0 +1,1556 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.7",
+      "skos:note": "Insertion of clause in accordance with subsection (3A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 6D(3)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ca9a97431174ff49f81f1c832a5f8dc8b7b338756463d774d8c961cd8b2a37d4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.11",
+      "skos:note": "Amendment applies to certain requests under the Freedom of Information Act 1982 after a specific report is submitted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Application provision"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-deontic-1",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8b51653f639172d86b9313a4b993fa9ed1d4a53ec80417c9f09a50541111a9ac",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">="
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendment applies to certain requests under the Freedom of Information Act 1982 after a specific report is submitted.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.7",
+      "skos:note": "Add “or”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of paragraph 6D(3)(a)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "029b70654b086ae0db532f39eaa0072036bb63c2e04f8f7405073b83325b8c9a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Add ‘or’.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding to a list",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add",
+      "cml:premiseText": "The list must be updated."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.7",
+      "skos:note": "Replace 'shall' with 'must'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 6D(3)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1253e28a89c1522f5865c9c0ef5c88603159f30699d9bec0db92ad665fca5d1f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘must’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace obligation words",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Replacement",
+      "cml:premiseText": "Omit ‘shall’ (wherever occurring)"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.7",
+      "skos:note": "Direction under subsection (3) may be given by certain individuals or groups.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After subsection 6D(3)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "491e69bf5a12fb17c1bc0ee4bbf7a424801a0bbfd381693a3f7bc042aad6b338",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Patent",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 April 2019 (and including any later variations of those Letters"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b56fbd4634d12ac010a247b6d6c751266b1ea8e09f97d0da3ccebbf69898f2b8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to give direction under subsection (3)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.7",
+      "skos:note": "Insert Schedule 1 Amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 6OA"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "baf40d1d40eb33ffc1125ddf38ca70e09afba5b1a9373212ee6a73c0a93f29dc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Prohibition on admissible evidence in civil or criminal proceedings",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5A After section 6OE(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "256fb3f370d24f3d63ff5c78e698ebb5019fa231298988bc2bf2a278deb829da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-5a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits admissible evidence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "forbid"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5a"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5b",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Modify subsection heading",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5B Subsection 6OE(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5b-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "64d550146339dca998ea3ff11c960b8855f0404938c1e00977210101f6d6ff4c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-5b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5b-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-5b"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 At the end of Division 3 of Part 4"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-5"
+        }
+      ],
+      "cml:integrityHash": "3d41e1a66a7daeb8da761812e830ca56fe19dd3ec7c8e2e6b0ca2abeef1a2010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Protection of certain information given to the Disability Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(1) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-1",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-3",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "108200534fd75f94c0d4db29061f21d2d3605bc328a6e35c7a74bcce2787417d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Information is protected during its treatment as confidential",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(d) the information was treated as confidential by the Commission at all times after being given to the Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to protect information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "(1) This section applies to information if:"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on disclosure of protected information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "prohibition",
+      "cml:premiseText": "(b) the information contains any of the following:"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to treat information as confidential",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "permission",
+      "cml:premiseText": "(c) the information directly or indirectly identifies the natural person who gave the information, or on whose behalf the information was given;"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Protection of certain information given to the Disability Royal",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(2) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-deontic-1",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-ltl-3",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e37cb0b82774c98c066d1b56b16667d67e869f5385e3b7804b9304b72fd93eb6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Applies to the time of information disclosure",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(2) Section 6OE applies:  (a) in all cases—in relation to the natural person who gave the information to the Commission, as if the information were a statement or disclosure made by that person at a private session for the Commission;"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on natural persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(2) Section 6OE applies:"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on natural persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(2) Section 6OE applies:  (b) if the information was given to the Commission on behalf of another natural person—in relation to the other natural person as if the information were a statement or disclosure made on behalf of that other person at a private session for the Commission;"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Applies to the natural persons involved",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurrently",
+      "cml:premiseText": "(2) Section 6OE applies:  (a) in all cases—in relation to the natural person who gave the information to the Commission, as if the information were a statement or disclosure made by that person at a private session for the Commission;"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: NaturalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:NaturalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Sections 6OH, 6OK and 6OL apply in relation to the information as if it were information given by the natural person at a private session for the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(3) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "86d18dc02da56aabb6331892731fd9146067a63126f7042779338db8f18728d8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Section 6OJ applies in relation to the information as if it were obtained at a private session for the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(3A) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5899fd61d62332725d7ac76ad8fba4eee18efff65273147887a12da1d849c920",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-3a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "as if it were information obtained at a private session for the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies in relation to information",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3A) Section 6OJ"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-3a"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(4) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-deontic-1",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-ltl-3",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-diffusion-4",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "813bfaaf9d5aa883bc72942f46f25233d54b20527616a3ba881192dd7ae1e4bd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval applies.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 6OM"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Artificial intelligence applies.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 6OM"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6OM applies in relation to the information.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies to the information as if it were a record.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 6OM"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Information diffusion applies.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 6OM"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6OM applies in relation to the information as if it were a record that contains information obtained at a private session for the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal interval applies.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 6OM"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-4"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.8",
+      "skos:note": "Reference to experiences of systemic violence, abuse, neglect or exploitation is a reference to experiences or awareness of a policy, procedure, practice, act or omission that contributed or may have contributed.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OP(5) Protection of certain information given to the Disability Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c9727312baf3cf9275ff2b2191692757f0aa556111c9a364db0e96ebe7e7e961",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-6op-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-6op-ss-5"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.9",
+      "skos:note": "Amendments to Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 After subsection 6P(2C)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "baf40d1d40eb33ffc1125ddf38ca70e09afba5b1a9373212ee6a73c0a93f29dc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.10",
+      "skos:note": "Amendments of section 6D apply in relation to a direction given by a Royal Commission on or after the commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Application provisions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-1",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-2",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-3",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-4",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7f5dca918b8ea0cee3c57a9f715c5f3dba861a012ed2c43fb51860bd6a18012c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Royal Commission must follow the rules.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Directs a Royal Commission to follow certain rules.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obliges",
+      "cml:premiseText": "A Royal Commission is established."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The direction must be followed by the Royal Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applies to a direction given by a Royal Commission on or after the commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "appliesTo",
+      "cml:premiseText": "A direction is given by a Royal Commission on or after the commencement."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The information must be followed by the Royal Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applies to information obtained, evidence taken and documents and things received by a Royal Commission before, on or after the commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "appliesTo",
+      "cml:premiseText": "Information is obtained, evidence taken and documents and things received by a Royal Commission before, on or after the commencement."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The statement must be followed by the Royal Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applies to a statement or disclosure made, or a document or other thing produced on or after the commencement of this item at, or for the purposes of, a private session.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "appliesTo",
+      "cml:premiseText": "A statement is made or a document is produced on or after the commencement."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The information must be followed by the Royal Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applies to information given before, on or after the commencement of this item at, or for the purposes of, a private session that is established before that commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "appliesTo",
+      "cml:premiseText": "Information is given before, on or after the commencement."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.11",
+      "skos:note": "Add information about Disability Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 At the end of paragraph 7(2E)(a)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ac7f87237c58beef523b932caaea16bdf3475f216ab4bb0c2b53a5fa4e42b0a3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding information is an obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2258010c86ae384fca6db3815edf240452b4e2b3c1d2f204f2a6e8b1438a2d07",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2-norm",
+        "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Royal Commissions Amendment (Protection of Information) Act 2021.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 September"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-11"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-protection-of-information-act-2021.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-protection-of-information-act-2021.pdf",
+      "asserts": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "aaf9ecef7fbba26aa5f7a685e7cc6aa245e54996022051c74aeec31e014b68cb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-protection-of-information-act-2021#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-protection-of-information-act-2021-sec-3"
+    },
+    {
+      "@id": "doc:au/c2021a00103",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Royal Commissions Act 1902, and for related purposes",
+      "dc:identifier": [
+        "C2021A00103",
+        "No. 103 of 2021"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Royal Commissions Amendment (Protection of Information) Act 2021"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2021A00103/latest/downloads",
+        "royal-commissions-amendment-protection-of-information-act-2021.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

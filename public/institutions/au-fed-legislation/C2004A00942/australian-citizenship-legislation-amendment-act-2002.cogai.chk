@@ -1,0 +1,638 @@
+# CogAI proposed logic-routing chunks — Australian Citizenship Legislation Amendment Act 2002
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-citizenship-legislation-amendment-act-2002-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A single day to be fixed by Proclamation;
+  @action: Undertaking;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sec-1-3-ss-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-3-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: is defined as;
+  summary: States the definition of Australian reserve force;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: DescriptionLogic;
+  operator: has class;
+  summary: Classifies Australian reserve force into a hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be of good character;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-4-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from certain provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Members of Australian reserve forces are exempt from certain provisions;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-4-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which exemptions apply;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Exemptions apply for periods of not less than 6 months;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9b-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9b;
+  logic: Deontic;
+  operator: Grant;
+  summary: Issuance of certificate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Application made by responsible parent;
+  @action: Certificate granted;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9d-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9d;
+  logic: AllenInterval;
+  operator: sameTemporalInterval;
+  summary: Same temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The same document contains both applications.;
+  @action: An application under subsection (9B) may be set out in the same document as an application under subsection (1).;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9d-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9d;
+  logic: LTL;
+  operator: sameTrace;
+  summary: Same trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The same document contains both applications.;
+  @action: An application under subsection (9B) may be set out in the same document as an application under subsection (1).;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9d-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9d;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to set out an application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: An application under subsection (9B) may be set out in the same document as an application under subsection (1).;
+  @action: There is a permission to set out an application under subsection (9B) in the same document as an application under subsection (1).;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9d-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9d;
+  logic: Epistemic;
+  operator: Knowledge;
+  summary: Knowledge of parent relationship;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: The applicant under subsection (1) is a responsible parent of the applicant under subsection (9B).;
+  @action: There is knowledge that the applicant under subsection (1) is a responsible parent of the applicant under subsection (9B).;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-6-ss-9e-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-ss-9e;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to amend;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-8-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘or (9)’;
+  @action: Substitute ‘, (9), (9B) or (9E’)';
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-9-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specific text.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-10-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “or”.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-10-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines the temporal scope of the obligation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-11-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Serious repeat offender duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-13-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: modification;
+  summary: Modify sentence structure for clarity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The list is not complete.;
+  @action: The list is now complete.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-17-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of serious repeat offender;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-17-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: AllenInterval;
+  operator: >;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: sentence of imprisonment for life;
+  @action: 12 months;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-18-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsections;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-19-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14c-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14c-ss-2;
+  logic: Deontic;
+  operator: Must Not;
+  summary: Minister must not defer conferral of Australian citizenship beyond 12 months.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must not defer the conferral of Australian citizenship on a person for a period that exceeds, or for periods that in total exceed, 12 months.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14c-ss-2-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14c-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Deferral period is a temporal interval not exceeding 12 months.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must not defer the conferral of Australian citizenship on a person for a period that exceeds, or for periods that in total exceed, 12 months.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14c-ss-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14c-ss-2;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Deferral period is a temporal trace not exceeding 12 months.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must not defer the conferral of Australian citizenship on a person for a period that exceeds, or for periods that in total exceed, 12 months.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14c-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14c-ss-2;
+  logic: Diffusion;
+  operator: Information Flow;
+  summary: Deferral information is diffused to the public.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must not defer the conferral of Australian citizenship on a person for a period that exceeds, or for periods that in total exceed, 12 months.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-14c-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14c-ss-2;
+  logic: Argumentation;
+  operator: Inference;
+  summary: Minister's decision is inferred to be reasonable.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) The Minister must not defer the conferral of Australian citizenship on a person for a period that exceeds, or for periods that in total exceed, 12 months.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-22-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-23-ss-6-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23-ss-6;
+  logic: Deontic;
+  operator: has;
+  summary: Citizenship obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Certificate granted under subsection 13(9B);
+  @action: Australian citizen on and after specified day;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-23-ss-7-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23-ss-7;
+  logic: Deontic;
+  operator: has;
+  summary: Citizenship is a property of an individual.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person to whom certificate has been granted.;
+  @action: Australian citizen.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-24-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-24;
+  logic: Deontic;
+  operator: imposes duty;
+  summary: Imposes a duty on the state to deprive citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-25-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-25;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-26-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires good character;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-23ab-ss-1-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23ab-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must register declaration and re-register person as Australian citizen.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister is required to register the declaration.;
+  @action: The person making the declaration again becomes an Australian citizen.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-23ab-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23ab-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: The statement must comply with the subsection.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-28-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-28;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must register declaration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person making declaration must register it;
+  @action: Person regains Australian citizenship;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-31-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister's satisfaction with a person's good character is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-32-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits decisions of the Minister under section 14B;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-33-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-33;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces text with a new expression;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-35-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits Minister's decisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister's decision to refuse registration or inclusion;
+  @action: Cannot register declaration or include child's name in declaration;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-35-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Overlaps with Minister's decision-making process;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Minister's decision to refuse registration or inclusion;
+  @action: Cannot register declaration or include child's name in declaration;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-35-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: LTL;
+  operator: Contains;
+  summary: Contains condition for Minister's decisions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Minister's decision to refuse registration or inclusion;
+  @action: Cannot register declaration or include child's name in declaration;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-35-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffuses Minister's decision-making process;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Minister's decision to refuse registration or inclusion;
+  @action: Cannot register declaration or include child's name in declaration;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-35-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-35;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Recognizes Minister's decision-making process as prohibitive;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Minister's decision to refuse registration or inclusion;
+  @action: Cannot register declaration or include child's name in declaration;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-36-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-36;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-39-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-39;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Application for inclusion of child's name in certificate of Australian citizenship is pending.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The application was made under subsection 13(10) of the Australian Citizenship Act 1948 before the commencement of this item.;
+  @action: The application is pending if not withdrawn before commencement.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-39-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-39;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Application for inclusion of child's name in certificate of Australian citizenship has effect as if pending application were an application under subsection 13(9B) of the Australian Citizenship Act 1948.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: If: (a) the certificate had not been granted before the commencement of this item, and (b) the applicant for the certificate is a responsible parent...;
+  @action: The pending application has effect as if it were an application under subsection 13(9B) of the Australian Citizenship Act 1948.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-39-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-39;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Application for inclusion of child's name in certificate of Australian citizenship is pending if not withdrawn before commencement.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The application was made under subsection 13(10) of the Australian Citizenship Act 1948 before the commencement of this item.;
+  @action: The application is pending if not withdrawn before commencement.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-39-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-39;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Granting certificate of Australian citizenship to child has effect as if applicant for certificate were responsible parent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: If: (a) the certificate had already been granted before the commencement of this item, and (b) the grantee of the certificate is a responsible parent...;
+  @action: The granting of the certificate has effect as if the applicant for the certificate were a responsible parent.;
+}
+
+australian-citizenship-legislation-amendment-act-2002-sch-2-sec-44-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-44;
+  logic: Deontic;
+  operator: holds;
+  summary: Regulations have effect as if they had been made for those purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

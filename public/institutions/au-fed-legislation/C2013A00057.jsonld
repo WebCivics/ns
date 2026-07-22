@@ -1,0 +1,2361 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.7",
+      "skos:note": "The Minister may, by writing, determine that certain paragraphs do not apply to an applicant.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 After subsection 22A(1)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-deontic-2",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-alleninterval-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bbe31114ee0cf2b0285404afd91611154a57ad1f5a74f4ab6ddf97c61ca766aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The applicant was a permanent resident throughout the period of 90 days immediately before the application.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "within"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister has the power to determine certain conditions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The applicant must meet certain conditions to qualify for an exemption.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.11",
+      "skos:note": "Decision must be made personally by the Minister if power was exercised under subsections 22A(1A) or 22B(1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 After subsection 24(2)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-deontic-2",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-alleninterval-3",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-ltl-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f730d401e9cdcefde516a42dfb263c5ad3e33835602f00dec0195bc4e181bc61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.14",
+      "skos:note": "Australian Citizenship Amendment (Special Residence Requirements) Act 2013 No.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Australian Citizenship Amendment (Special Residence Requirements) Act 2013       No."
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1672b67f0f4f13e89357d38efe0f2dbfdbe5fc8e4a340cafec13ba1dc0a4353",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-10-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Decision must be made personally by the Minister",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap between exercise of power and decision-making",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Exercise of power under subsections 22A(1A) or 22B(1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Decision must be made personally by the Minister",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Personal decision-making obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Exercise of power under subsections 22A(1A) or 22B(1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Decision must be made personally by the Minister",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister's personal involvement in decision-making",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Power under subsections 22A(1A) or 22B(1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Decision must be made personally by the Minister",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recurring decision-making obligation",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurrently",
+      "cml:premiseText": "Exercise of power under subsections 22A(1A) or 22B(1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.11",
+      "skos:note": "Insertion of section 34A after section 34",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 29(2) (note 2)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2e1fd6a6a202fb44014105f881bdbf58f548f0d4d23a467cabc289821b15461e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-11-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.11",
+      "skos:note": "Substitute '5 ways' for '4 ways'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Section 32A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b2ae129ee85336fa1c5f20c6b7a8b46687dc3341c0ecc442e0e48342fc0701",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty to substitute",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.11",
+      "skos:note": "Revoke Australian citizenship under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Section 32A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9594316faad11e9384d2186c4fbd4b78e2a2025ebb4d78a4dbe6a6ccf48a4c72",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Minister can revoke citizenship",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Citizenship revocation obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Revocation",
+      "cml:premiseText": "Section 34"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.12",
+      "skos:note": "Repeal heading and substitute with new text.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Section 34 (heading)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-14-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "585a8d85920b241bfe8a5f68f00b98160cee17d0e38408eead193b18e825cea7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-14-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.12",
+      "skos:note": "Insert clause after section 34",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 After section 34"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-15-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-15"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.13",
+      "skos:note": "Insertion of new section number",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Paragraph 36(1)(a)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-16-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2e1fd6a6a202fb44014105f881bdbf58f548f0d4d23a467cabc289821b15461e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-16-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-16"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.13",
+      "skos:note": "Insertion of 'or 34A' after '34'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Paragraph 38(1)(a)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4e75b3f2193e002e6456f057574ec63a5bf18e69e132e022457bc9261a943f3d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-17"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.13",
+      "skos:note": "Tribunal cannot exercise certain powers when reviewing decisions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 At the end of section 52"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6f0c15cb6fd58a09b81b6baab405d9ac77d3aee535bec3d07161cfc3001d2016",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of exercising certain powers",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-18"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.13",
+      "skos:note": "Application provision for amendments made by items 1 to 10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Application provision"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c9879f6f94518c65df5e5d207bbb311d62618ff71d62a6c8ede7fa8d104cbf00",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-19-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-19"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Insertion of clause after paragraph (1)(f)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 22A(4)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "71d63ae299b28db27495ea570d3e50de26767d889f731acf26ed2bd6b2cb957a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of clause",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "insert"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Insertion of clause after paragraph (1)(g)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 22A(5)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c57bc70771975f92a7843ea0e185b50b6cdc9a84584e1b37352226fcbf3ad1c2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Insertion of clause",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "insert"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.12",
+      "skos:note": "Revocation by Minister—offences or fraud",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "34 Revocation by Minister—offences or fraud"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-34",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34a",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.12",
+      "skos:note": "Minister may revoke Australian citizenship under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "34A Revocation by Minister—special residence requirements"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34a-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "41a48aba6341a90bf8ec56532833961b54c7fd487aee66d0bc9f4e3282d1a8dd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-34a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-34a"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Applicant satisfies special residence requirement if Minister exercises power under subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Australian Citizenship Amendment (Special Residence Requirements) Act 2013       No."
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4c4c34cdd7cf9456d98d693553a85a2dc2d51a0f53479b447aef83926f2a4521",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-7"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-11"
+        }
+      ],
+      "cml:integrityHash": "f2f99736d9155a1b90827ce08ec0e2c54ae9d335d0bc91677eaec224f02be8d6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Do not include the name of the applicant in a statement under subsection (9).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(10) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1c701c1042396312ec822b824e113d480f29758ec9f86d271557cf2cae2a6323",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-10",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits including the name of the applicant.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-10"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "A determination under subsection (1A) is not a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(11) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "be67d9c65050a2894e607ec58646094930a624641eda60c9e95d76eafd6f3864",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-11",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-11-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-11"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Power under subsection (1A) must be exercised personally by the Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(6) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b1baba7617b25777b39e7347ef17dfb242018d1cade5020e473d969db9db4867",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Minister must exercise the power personally.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Personal exercise of power is required.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(6) The power under subsection (1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-6"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "No duty to consider exercising power under subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(7) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48ecfa5498903ba2c1a8fc8f526590801088214cb73b39da88850d4d6fd71b1d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-7"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Approval of a form by the Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(8) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8659a00f0f8db7ea5f111711f3fb258c65e803bb4466e0027d288e613b20f0bd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to approve a form.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-8"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.8",
+      "skos:note": "Minister must provide statement to Parliament after applicant becomes Australian citizen.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4(9) At the end of section 22A"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "540b8f6091ace1f808a615a1926b2def12185d6d475567628fd47a72658f0d12",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-4-2-ss-9",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister has a duty to provide statement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-2-ss-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Applicant satisfies special residence requirement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If the Minister exercises the power, then the applicant satisfies the special residence requirement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "→",
+      "cml:premiseText": "Minister exercises power under subsection (1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.9",
+      "skos:note": "The Minister may determine that certain residence requirements do not apply to a person under specific circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 22B(1)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-2",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-3",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-4",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-alleninterval-5",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-ltl-6",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-ltl-7"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4ff4df35f6941f3fd9c9e7c1c55fc0ecbea6dd1cce25023b6cff61f811604ade",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-alleninterval-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the person must have been present in Australia for at least 180 days during the period of 2 years immediately before the day the person made the application",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The person must have been present in Australia for at least 180 days during the period of 2 years immediately before the day the person made the application",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "d, the person was present in Australia for a total of at least 180 days during the period of 2 years immediately before the day the person made the application;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The Minister may determine that certain residence requirements do not apply to a person under specific circumstances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the Minister may determine that certain residence requirements do not apply to a person under specific circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the person based on their residence requirements",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "paragraphs 21(2)(a), (b), (d), (e), (f), (g) and (h)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the Minister may determine that certain residence requirements do not apply to a person under specific circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the person based on their engagement in work of benefit to Australia",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "paragraphs 21(3)(a), (b), (d), (e) and (f)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-descriptionlogic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the Minister may determine that certain residence requirements do not apply to a person under specific circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Classifies the person based on their undertaking",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "paragraphs 21(4)(a), (b), (c), (e) and (f)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-ltl-6",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the person must be a permanent resident throughout the period of 90 days immediately before the day the person made the application",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The person must be a permanent resident throughout the period of 90 days immediately before the day the person made the application",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "e, the person was a permanent resident throughout the period of 90 days immediately before the day the person made the application;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-logic-ltl-7",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the person must not have been present in Australia as an unlawful non-citizen at any time during the period of 180 days immediately before the day the person made the application",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The person must not have been present in Australia as an unlawful non-citizen at any time during the period of 180 days immediately before the day the person made the application",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "f, the person was not present in Australia as an unlawful non-citizen at any time during the period of 180 days immediately before the day the person made the application;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "If Minister exercises power, person satisfies special residence requirement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Australian Citizenship Amendment (Special Residence Requirements) Act 2013       No."
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d9a45903d39794b6c691f683124d1820629fb0b9a9e645f840ffb6093339b327",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Repeal subsection 22B(2) and substitute with a new provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 22B(2)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "eba65ed3d0afef57fe7a30eb5660683276be41765f550e4a81c9a2b9c28a70a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits confinement in prison or psychiatric institution.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Person satisfies special residence requirement",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Implication",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "→",
+      "cml:premiseText": "Minister exercises power"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Insertion of clause after paragraph (1)(f)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 22B(4)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3d67309f863d906fb1af7b2909eba6734c68dce02f719ecbb8e0068e521b6375",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Insertion of clause after paragraph (1)(g)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Subsection 22B(5)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "699d3fa139e873804c4b7c50dd827046bc9a50910312f9202178e9e4b6a3aa3f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.12",
+      "skos:note": "Revocation of citizenship under certain circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Australian Citizenship Amendment (Special Residence Requirements) Act 2013       No."
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "36278666c0d1a1d1b3e7df5e0d6e6d140ee42ca3eeffb8788aa20f33d5d100f7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-8-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits revocation of citizenship.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-11"
+        }
+      ],
+      "cml:integrityHash": "f2f99736d9155a1b90827ce08ec0e2c54ae9d335d0bc91677eaec224f02be8d6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Omit name of person from statement under subsection (9)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(10) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "85ca6dd1b1df9a451801a77343da85ac29de50368f2db512e11acdb46ed39d23",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-10",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits including name of person in statement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-10"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-11",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "A determination under subsection (1A) is not a legislative instrument.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(11) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "be67d9c65050a2894e607ec58646094930a624641eda60c9e95d76eafd6f3864",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-11",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-11-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-11"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Power under subsection (1A) may only be exercised by the Minister personally.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(6) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b1baba7617b25777b39e7347ef17dfb242018d1cade5020e473d969db9db4867",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "be exercised by the Minister personally.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "May only",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may_only",
+      "cml:premiseText": "(6) The power under subsection (1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the Minister personally.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Is exercised by",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is_exercised_by",
+      "cml:premiseText": "(6) The power under subsection (1A)"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-6"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Duty to consider exercise of power under subsection (1A)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(7) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-ltl-3",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-diffusion-4",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "825085bae7180231a4892bb1a28dfd5a293c387b8148c35995a8fa79845fd7c6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or in any other circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines temporal interval for consideration of power exercise",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "(7) The Minister does not have a duty to consider whether to exercise the power under subsection (1A),..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or in any other circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Identifies artificial intelligence process involved in consideration of power exercise",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Artificial Intelligence Process",
+      "cml:premiseText": "(7) The Minister does not have a duty to consider whether to exercise the power under subsection (1A),..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or in any other circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister has a duty to consider exercise of power under subsection (1A)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "(7) The Minister does not have a duty to consider whether to exercise the power under subsection (1A),..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or in any other circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Describes diffusive process of consideration for power exercise",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffusive Process",
+      "cml:premiseText": "(7) The Minister does not have a duty to consider whether to exercise the power under subsection (1A),..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...or in any other circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Identifies recurring trace of consideration for power exercise",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring Trace",
+      "cml:premiseText": "(7) The Minister does not have a duty to consider whether to exercise the power under subsection (1A),..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-7"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Approval of a form by the Minister.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(8) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1e1fe250a7ecb26384f2f3e93c357e13ff4a40a9ff94fb1e0f87af4cab81d6b6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-8",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Granting permission",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-8"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.10",
+      "skos:note": "Minister must provide statement to Parliament after granting citizenship in certain circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(9) At the end of section 22B"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-logic-deontic-1",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "54b326315aa0e365d7fe9f37d1f44dd0ffc05c88e49528306f0799f72b0d40aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sch-1-sec-9-ss-9",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister has a duty to provide statement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Statement is about Minister's exercise of power.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "has-a"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sch-1-sec-9-ss-9"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c5063e4da5d4567da8f13c36944c6be33e39fb1d61d76b20ec458a761c9ad95c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.6",
+      "skos:note": "Australian Citizenship Amendment (Special Residence Requirements) Act 2013 No.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Australian Citizenship Amendment (Special Residence Requirements) Act 2013       No."
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0b92c74690c8ac3992919fd00d8c68cfebd731c3db2bab3252fb645bf82055fd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.6",
+      "skos:note": "Commences on day after receiving Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2-norm",
+        "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a8e441496011cc44b1b9c5564185dd7c728b1f01d03664e9d6ca04afeca2b38",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commences on day after receiving Royal Assent.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Defines commencement"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf",
+      "asserts": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ed09c23119681a98f3b00adc65c2207cd84ff3cfa714c8e9b8efa5235080db0d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-special-residence-requirements-act-2013#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-special-residence-requirements-act-2013-sec-3"
+    },
+    {
+      "@id": "doc:au/c2013a00057",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Citizenship Act 2007, and for related purposes",
+      "dc:identifier": [
+        "C2013A00057",
+        "No. 57 of 2013"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Citizenship Amendment (Special Residence Requirements) Act 2013"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2013A00057/latest/downloads",
+        "australian-citizenship-amendment-special-residence-requirements-act-2013.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+# CogAI proposed logic-routing chunks — Datacasting Charge (Imposition) Amendment Act 2005
+# Machine-derived; every chunk remains cml:Proposed.
+
+datacasting-charge-imposition-amendment-act-2005-sch-1-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Australian Communications and Media Authority is defined as...;
+  @action: ACMA means the Australian Communications and Media Authority.;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-1-sec-4-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: DescriptionLogic;
+  operator: definedBy;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Imposition Act;
+  @action: transition time;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Definition of terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: this Schedule;
+  @action: Imposition Act and transition time;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: continues;
+  summary: Continues the effect of a previous determination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Previous determination made by ACA under subsection 7(1) of Imposition Act;
+  @action: Has effect on and after transition time as if it had been made by ACMA;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Effect continues during transition time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Previous determination made by ACA under subsection 7(1) of Imposition Act;
+  @action: Determination has effect on and after transition time;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: LTL;
+  operator: during;
+  summary: Effect continues during transition time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Previous determination made by ACA under subsection 7(1) of Imposition Act;
+  @action: Determination has effect on and after transition time;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Diffusion;
+  operator: propagates;
+  summary: Effect propagates to new context;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Previous determination made by ACA under subsection 7(1) of Imposition Act;
+  @action: Determination has effect on and after transition time in new context;
+}
+
+datacasting-charge-imposition-amendment-act-2005-sch-2-sec-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: CogAI;
+  operator: applies;
+  summary: Applies the previous determination to new context using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Previous determination made by ACA under subsection 7(1) of Imposition Act;
+  @action: Determination has effect on and after transition time in new context;
+}

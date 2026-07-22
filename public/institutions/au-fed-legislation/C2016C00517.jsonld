@@ -1,0 +1,3149 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5fad07544fd058a674ca244427e5b50f78db4a2b019f487991efeee253ac324b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.1",
+      "skos:note": "Includes amendments up to Act No. 4, 2016",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 March 2016"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "792270b40e8531a995556b3c8f26f0787d6d467b9cd27dec53dafe4473e4c0e5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.9",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Prosecutions"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-2"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-10-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.9",
+      "skos:note": "Attorney-General's consent required for prosecution",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(1) Prosecutions"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f9b747f456f1c647da5760a1bab6a3ed006300e05841e11b5755932f041b7c66",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-10-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Requires Attorney-General's consent",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "requires"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.9",
+      "skos:note": "No further step in proceedings can be taken until consent is given.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(2) Prosecutions"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4d57e0d17ef1ded232c393bb86f6e03a827a2c589fd5afe76129fee1c04734a4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-10-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "No further step in proceedings can be taken until consent is given.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.9",
+      "skos:note": "Nothing in subsection (2) prevents the discharge of the accused if proceedings are not continued within a reasonable time.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10(3) Prosecutions"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-3-norm",
+        "concept:crimes-hostages-act-1989-sec-10-2-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8601771d46d4b0880f6b463677c29b84fd8808bbedf60be3ebef44b13805c25a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-10-2-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(3)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prevents discharge of the accused if proceedings are not continued within a reasonable time.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prevents",
+      "cml:premiseText": "(2)"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-2-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-10-2-ss-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-10-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-10"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.9",
+      "skos:note": "Presumption that act did not take place in another part of Australia",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Venue where offence committed on aircraft"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-11-norm",
+        "concept:crimes-hostages-act-1989-sec-11-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dd34e2511f0e989a1ef18618573298e43c17ce3c8e187ba6956eec6dbd5fe0b2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-11-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Amendments to Crimes (Hostages) Act 1989",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Feb"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-11-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "da0bba4b9ecf798097f00142b84b24aae92dc6494a3a51f87616d2e08616dd7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-11-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-11-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-11-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "!"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-11"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-2"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-4"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-5"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-6"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-12-ss-7"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Proceedings on indictment must be discontinued if offence committed in another part of Australia.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(1) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-2",
+        "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1eaf91600f94f69c4f1ec5516faad34ec39480441fc339b361d6d2029b879a6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the court shall forthwith order that the proceedings on the indictment be discontinued",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(a) the defendant objects to the trial..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "that the jury be discharged",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Discharge jury if offence committed in another part of Australia",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(b) the court is satisfied that..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "at a specified time, not later than 28 days after the day on which the order is made",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Order defendant to appear before another court of first-mentioned State or Territory",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "that the defendant appear before that court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Court may admit defendant to bail on recognizances it thinks fit.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(2) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a791c3d2a7c85e7e8f7b0ec82e78a82fe8d8f2fb31c384a2e00ed8c508288b0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court may admit defendant to bail.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-2-norm",
+      "@type": "doc:Permission",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Defendant's obligation to appear before court discharged if indictment not filed.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(3) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-2",
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-alleninterval-3",
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-ltl-4",
+        "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b267e36e48675062ec71a50ae07649bc4f68e686022a2460fdbd7aca796337d2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the Attorney-General or the Director of Public Prosecutions notifies that court that he or she does not intend to file an indictment against the defendant in a court of another part of Australia,",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Notification period during which the defendant's obligation to appear is discharged.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(3) If, before the time at which the defendant is to appear before a court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...he or she be released; or...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Release from custody or discharge of recognizances.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "release",
+      "cml:premiseText": "(3) If, before the time at which the defendant is to appear before a court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the defendant from the obligation to appear before that court at that time;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Discharge of obligation to appear.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "discharge",
+      "cml:premiseText": "(3) If, before the time at which the defendant is to appear before a court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...he or she be released;",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Release from custody.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "release",
+      "cml:premiseText": "(3) If, before the time at which the defendant is to appear before a court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-logic-ltl-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...the first-mentioned court shall, as soon as practicable after being so notified, make an order:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Notification period until which the defendant's obligation to appear is discharged.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "until",
+      "cml:premiseText": "(3) If, before the time at which the defendant is to appear before a court..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Court must not allow defendant to appear before court if indictment filed in another part of Australia.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(4) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-4-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a5fb43c18cc0195eb08fe7911665d69d4ee143046603c2bb44440531440ebaf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must not allow defendant to appear before court.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-4"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Defendant must be released if certain conditions are met.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(5) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-5-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b5201d090e77608eda9694b80c9df8a2f1a15edef7579c46dd7d5fd3ce8188b2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "B",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If A, then B.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "→",
+      "cml:premiseText": "A"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-5"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "No prejudice to other indictments or information against the defendant.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(6) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-6-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5e173ce6adb24d6c6ce68cb49934e621bdc6745a6518dbdcfdd44056a9eaa46e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "¬"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-6"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.10",
+      "skos:note": "Court jurisdiction may be exercised by a single judge or Magistrate.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12(7) Change of venue"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-12-ss-7-norm",
+        "concept:crimes-hostages-act-1989-sec-12-ss-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b44e3bcc4c80afa471af852c5a7b459a5de6a980fbee01874c0716a6a216e208",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-12-ss-7",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-12"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exercise of jurisdiction may be permitted.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-12-ss-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-12-ss-7"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Evidence of certain matters"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-13-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-13-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-1",
+      "@type": "cml:Concept",
+      "dc:description": "yes",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.12",
+      "skos:note": "Minister must provide written certificate stating Convention entered into force and remains in force.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(1) Evidence of certain matters"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-13-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-13-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "16d11c05bfae805411c542f78898a18662c1fba6a4977c2cc69869f62c6cf13b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-13-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-13"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Minister has an obligation to provide written certificate.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-13-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.12",
+      "skos:note": "Certificate admissible as prima facie evidence",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13(2) Evidence of certain matters"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-13-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-13-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b9ff3116e809497f204c6b310fa77f30dbffde3a510cc8ba291e2d514ac200ab",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-13-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-13"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Prima facie evidence of matters stated in the certificate",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Admission of certificate as evidence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "admission",
+      "cml:premiseText": "Certificate given under subsection (1)"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-13-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-13-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.12",
+      "skos:note": "Matter under this Act does not include treaty interpretation matters.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Section 38 of Judiciary Act"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-14-norm",
+        "concept:crimes-hostages-act-1989-sec-14-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8c74359a7a811484d9cf80698353130a1a285d748c3e140d32378903cd00e159",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-14-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclude treaty interpretation from matters under this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclusion"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-14-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-14"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.12",
+      "skos:note": "States shall report findings and intentions regarding jurisdiction. A person in custody is entitled to assistance under article 6 of the Convention. Any State Party may withdraw its reservation by notification to the Secretary-General of the United Nations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Assistance under article 6 of Convention"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-15-norm",
+        "concept:crimes-hostages-act-1989-sec-15-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-15-logic-deontic-2",
+        "concept:crimes-hostages-act-1989-sec-15-logic-deontic-3",
+        "concept:crimes-hostages-act-1989-sec-15-logic-descriptionlogic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5bc9ff136c21abd25e78a8cbe218cbea51004bbf58bff34b29d7e2586bda64f8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 May"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-15-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-15-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-2-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-15-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State shall report its findings to the States or organization referred to in paragraph 2 of this article and indicate whether it intends to exercise jurisdiction.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "States are obligated to report findings and intentions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "shall",
+      "cml:premiseText": "Article 6(2)"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Assistance is owed.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The person has a right to assistance.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "Article 6 of the Convention"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State may withdraw reservation",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "State Party can withdraw reservation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "can",
+      "cml:premiseText": "State has made a reservation"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-logic-descriptionlogic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Reservation is withdrawn",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Reservation is withdrawn when State notifies Secretary-General",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "State has notified Secretary-General"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-15-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-15"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 December 1979, a copy of the English text of which is set out in"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-18-ss-2"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-18-ss-3"
+        }
+      ],
+      "cml:integrityHash": "1e434313f7522c807fbcc820249051e1dbce948d49482e38738372625674f521",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.6",
+      "skos:note": "Same meaning as in Convention",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18(2) December 1979, a copy of the English text of which is set out in"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-18-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-18-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c09877cd4052297d8121db2b54648beb6e2e1f6ffd9b71da67128b8d0be069e5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-18-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-18"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "has, in this Act, the same meaning as it has in the Convention.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Same meaning",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "(2) Except so far as the contrary intention appears, an expression that is used both in this Act and in the Convention..."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-18-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.6",
+      "skos:note": "Exempts certain offences from Commonwealth law",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18(3) December 1979, a copy of the English text of which is set out in"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-18-ss-3-norm",
+        "concept:crimes-hostages-act-1989-sec-18-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "138130fa04bf2298d5ddf45d131b4328e623f67c3c11645f3dbda7414185fdf3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-18-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-18"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Not an offence against a law of the Commonwealth",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exempts certain offences",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exemption",
+      "cml:premiseText": "Section 6 of the Crimes Act 1914 and section 11.4 of the Criminal Code"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-18-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-18-ss-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Statute Law Revision Act 1996",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Dec"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "edc6f0323fe10323a64d9e9a450e6af12a12641e26f01799fa31aa007571e42b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-19-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Statute Law Revision Act 2012, sections 136 and 2012",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Apr 2011 (s 2(1)"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-19-2-norm",
+        "concept:crimes-hostages-act-1989-sec-19-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6c580791c19b7dc6ac7486013f32fc90a1c79fa4ef8020b215f0c2766c893442",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-19-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-19-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Purpose stated",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Describes the Act's purpose",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The Act revises and amends statutes"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-19-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-19-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-19-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-19"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.5",
+      "skos:note": "Commences on a day fixed by proclamation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1bc774c48dfd1587544dcf6ab305170def8924c02d11d7517edf9de81693b229",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "No S145",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 June 1990 (gaz 1990,"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24ff1f3cfe75209478ab442dd093f73fcc47880fd9eeda8488f4f7e7dcec9bd3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-20-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-20"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Conditional commencement of Crimes and Other Legislation Amendment Act 1994",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Dec"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-21-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2d99874a319b1b964cfd59493279c849f0328237bde65577f3520694ca37c3b0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-21-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-21"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Mar"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e7e5b8ec02f962223f5ceeca78cb1be7c5e2854b1b10109d8848220424df7d76",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-22-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Conditional commencement of Statute Law Revision Act (No. 1) 2016",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Sept"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-22-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4f41a5a4b830615a003fa9a1fd4eecad83ed8c151f1fe324e97477ff95f7480e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-22-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-22-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-22-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-22-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-22"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Conditional commencement of Statute Law Revision Act 2011",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 May 2001 (s 2(1)(a))"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-24-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "def050bc77905e304f932719d4d191d626c739560fa83534af13b640c1884f87",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-24-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-24"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.1",
+      "skos:note": "Compilation information and endnotes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 May 2016"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5d7ad924c245993b3b0ed8b6e5b8f935b11f597432dd068f2a913f117316459f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-25-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "Conditional commencement of the Law and Justice Legislation Amendment (Application of Criminal Code) Act 2001",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Oct"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-25-2-norm",
+        "concept:crimes-hostages-act-1989-sec-25-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5e9647502608eba39eec75f1186188db8c61f105d897cbfd470df4dbe27d5245",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-25-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-25-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commencement occurs on 20 June 1990",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines the temporal interval for commencement",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "The text specifies a specific date and time for commencement"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-25-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-25-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-25-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-25"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.5",
+      "skos:note": "Definition of Australian aircraft and coastal sea",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Interpretation"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-3-norm",
+        "concept:crimes-hostages-act-1989-sec-3-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-3-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b35a98b9d27a81c928f6c38bd5268251448ee61ee6236f84896fbff14a390bd4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of Australian aircraft and coastal sea",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-3-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(Australian coastal sea) = (the territorial sea of Australia) and (the sea on the landward side of the territorial sea of Australia)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy for Australian aircraft and coastal sea",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "(Australian aircraft) = (an aircraft registered under regulations made under the Civil Aviation Act 1988) or (an aircraft that is owned by, or is in the possession or control of, the Commonwealth or an authority of the Commonwealth) or (an aircraft of any part of the Defence Force)"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.6",
+      "skos:note": "Act extends to external Territories",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Act extends to external Territories"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-4-norm",
+        "concept:crimes-hostages-act-1989-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8867dad1ac1da3c992cc8b3a4864e6b27bcc16eb94a982c26391824169eb439c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "State has jurisdiction over external Territories",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Extension of jurisdiction",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "extends",
+      "cml:premiseText": "Act applies to external Territories"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-4"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.6",
+      "skos:note": "Extends to acts, matters and things outside Australia.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Application"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-5-norm",
+        "concept:crimes-hostages-act-1989-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ae46fed5bf29e638367b93bf5f4dcfeefc49f708d578dc91c4d2dbd9148de5b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Extends to acts, matters and things outside Australia.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "extends"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-5"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Effect of this Act on other laws"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-6-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.24",
+      "skos:note": "References s 4(1), (2) and Sch 15.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Apr 2001"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-6-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4e2a39ba34324f5ef480413b74a493b6f1b0f1ea619c07194b588882b282c6cb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-6-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-6-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.7",
+      "skos:note": "This Act does not exclude or limit the operation of other laws.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(1) Effect of this Act on other laws"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-6-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-2",
+        "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c0585f6ce914bed474700c231f8cb3482ad50b49ba2e5a44753c7d001410ebbc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-6-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-6"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws are not excluded by this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion of other laws",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "excludes",
+      "cml:premiseText": "This Act is not intended to exclude or limit the operation of any other law."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws are limited by this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Limitation of other laws",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "limits",
+      "cml:premiseText": "This Act is not intended to exclude or limit the operation of any other law."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Other laws are included in this Act.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Inclusion of other laws",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "This Act is not intended to exclude or limit the operation of any other law."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-6-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.7",
+      "skos:note": "Immunity from prosecution for convictions in foreign countries",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6(2) Effect of this Act on other laws"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-6-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-6-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e11fbe180500febb53f042f720a10b477a297a14be821b34ddf4fc93e107c815",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-6-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-6"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(Person is not liable to be convicted of an offence against this Act)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Immunity implies no liability",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(Person has been convicted in a country outside Australia of an offence against the law of that country) Implies (Person is not liable to be convicted of an offence against this Act)"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-6-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.7",
+      "skos:note": "Chapter 2 of the Criminal Code applies to all offences against this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6A Application of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-6a-norm",
+        "concept:crimes-hostages-act-1989-sec-6a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "edc8b35b7abb0a56cfa13d12c0812316bb30e33b6aab09cf4b79531db3fc7c96",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-6a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Chapter 2 of the Criminal Code applies to all offences against this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-6a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-6a"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.7",
+      "skos:note": "Seizing or detaining another person and threatening to kill, injure, or continue to detain them is hostage-taking.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Meaning of hostage-taking"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-7-norm",
+        "concept:crimes-hostages-act-1989-sec-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "abc3e908654e481d30aaca80a829cdb17cf82f9e75f5fe2dad6b3f113d234d20",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits taking a person hostage.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-7-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-7"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 When hostage-taking an offence"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "A person who commits an act of hostage-taking after the Convention enters into force for Australia commits an offence against this subsection.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(1) When hostage-taking an offence"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-8-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-alleninterval-2",
+        "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f0e5e703440de1fa7d5f4a8dcaafda366ddc2800a162cc59fea0945b41babe5c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-8-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-8"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who commits an act of hostage-taking after the Convention enters into force for Australia commits an offence against this subsection.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The act of hostage-taking must occur before the Convention enters into force for Australia",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "before",
+      "cml:premiseText": "(1) A person who, at any time after the Convention enters into force for Australia, commits an act of hostage-taking."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who commits an act of hostage-taking after the Convention enters into force for Australia commits an offence against this subsection.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to commit an act of hostage-taking",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "(1) A person who, at any time after the Convention enters into force for Australia, commits an act of hostage-taking."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A person who commits an act of hostage-taking after the Convention enters into force for Australia commits an offence against this subsection.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The act of hostage-taking must occur before the Convention enters into force for Australia",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "before",
+      "cml:premiseText": "(1) A person who, at any time after the Convention enters into force for Australia, commits an act of hostage-taking."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-8-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "Hostage-taking is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(2) When hostage-taking an offence"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-norm",
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-linearlogic-2",
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-alleninterval-3",
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-cogai-4",
+        "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-n3logic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d99d02085e18eea8ee6b3d748977287afe5fc602170139284abe5cb786ed8a88",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-8-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-8"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-alleninterval-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The temporal interval of hostage-taking overlaps with the temporal intervals of offences punishable by imprisonment for life or for any lesser term",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Hostage-taking overlaps with offences punishable by imprisonment for life or for any lesser term",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(2) The punishment for an offence against subsection (1) is imprisonment for life or for any lesser term."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hostage-taking is classified as an offence based on its punishment",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Classifies hostage-taking as an offence based on its punishment",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Classification",
+      "cml:premiseText": "(2) The punishment for an offence against subsection (1) is imprisonment for life or for any lesser term."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hostage-taking is prohibited",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits hostage-taking",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(2) The punishment for an offence against subsection (1) is imprisonment for life or for any lesser term."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-linearlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "If the punishment for an offence against subsection (1) includes imprisonment for life or for any lesser term, then hostage-taking is an offence",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "Implies that hostage-taking is an offence if it is punishable by imprisonment for life or for any lesser term",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "(2) The punishment for an offence against subsection (1) is imprisonment for life or for any lesser term."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-logic-n3logic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hostage-taking is a subclass of offences",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::n3_compiler",
+      "cml:logicSummary": "Represents hostage-taking as a subclass of offences",
+      "cml:modality": {
+        "@id": "cml:N3Logic"
+      },
+      "cml:operator": "RDF",
+      "cml:premiseText": "(2) The punishment for an offence against subsection (1) is imprisonment for life or for any lesser term."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-8-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "Subject to section 9, a person shall not be charged with an offence against this Act unless certain conditions are met.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(3) When hostage-taking an offence"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-norm",
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-2",
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-3",
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-alleninterval-4",
+        "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-ltl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40ab16c6fa38d990406a000ce05403eabf2fac2d2bec290ee10c6a8078bf5d7c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-8-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-8"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-alleninterval-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(ii) The person is present in Australia.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The conditions overlap with each other.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(i) The person is an Australian citizen."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(i) The person is an Australian citizen.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If the act was committed outside Australia, then the person must be an Australian citizen.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(ii) The person is not an Australian citizen."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(i) The person is present in Australia.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If the act was committed outside Australia, then the person must be present in Australia.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(ii) The person is not present in Australia."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(i) The act is committed to compel an institution.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If the act was committed outside Australia, then the act must be committed to compel a legislative, executive or judicial institution in Australia.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "(iii) The person is not committing the act to compel an institution."
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-logic-ltl-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The conditions repeat over time.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The conditions repeat over time.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Repeats"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-8-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-8-ss-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Person not to be charged in certain circumstances"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-9-ss-2"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-9-ss-3"
+        },
+        {
+          "@id": "concept:crimes-hostages-act-1989-sec-9-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "No charge for acts not covered by the Convention.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(1) Person not to be charged in certain circumstances"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-9-ss-1-norm",
+        "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-deontic-1",
+        "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-alleninterval-2",
+        "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-ltl-3",
+        "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-diffusion-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c325436c808f0815c65c23ec3e36632f43b24f0ab6c53e86835dce3e3c7ffc04",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-9-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-9"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Convention would not apply in relation to that act",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Excerpt defines a temporal interval where Convention does not apply.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "Article 12 of the Convention"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Charge is possible",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "If Convention applies, charge is possible.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "Convention applies"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Convention would not apply in relation to that act",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Excerpt defines a diffusion of Convention applicability.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "Article 12 of the Convention"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Convention would not apply in relation to that act",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Excerpt defines a temporal interval where Convention does not apply.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "Article 12 of the Convention"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-9-ss-1"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "No charge for certain circumstances",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(2) Person not to be charged in certain circumstances"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": "concept:crimes-hostages-act-1989-sec-9-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6aa11ba13b468ce978d8f1435a5edd66b4507913569d9100bf26a7d05c999a6e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-9-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-9"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-9-ss-2"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "Exemption from extradition for persons extradited to the State where the act was committed",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(3) Person not to be charged in certain circumstances"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-9-ss-3-norm",
+        "concept:crimes-hostages-act-1989-sec-9-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e3e977aed11c92c75d3b2f679eae8805e093bc3743cb1da1299e183b1a105234",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-9-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-9"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Not charged in certain circumstances",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exemption from extradition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation",
+      "cml:premiseText": "Person extradited to the State where the act was committed"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-9-ss-3"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-hostages-act-1989.pdf, p.8",
+      "skos:note": "Definition of State for certain circumstances",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9(4) Person not to be charged in certain circumstances"
+      },
+      "wasDerivedFrom": "crimes-hostages-act-1989.pdf",
+      "asserts": [
+        "concept:crimes-hostages-act-1989-sec-9-ss-4-norm",
+        "concept:crimes-hostages-act-1989-sec-9-ss-4-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8fa95cbc1bf73a3564801e76a07379113d35838baecffc8afbf4391df6dc2397",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-hostages-act-1989#sec-9-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-hostages-act-1989-sec-9"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-4-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Defines the scope of 'State'",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:crimes-hostages-act-1989-sec-9-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-hostages-act-1989-sec-9-ss-4"
+    },
+    {
+      "@id": "doc:au/c2016c00517",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "date": "10 March 2016",
+      "dc:description": "An Act to give effect to the International Convention Against the Taking of Hostages, and for related purposes",
+      "dc:identifier": [
+        "C2016C00517",
+        "No. 26 of 1989"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes (Hostages) Act 1989"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2016C00517",
+        "crimes-hostages-act-1989.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,3934 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.7",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Before section 1"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.9",
+      "skos:note": "Member of Commission cannot require person to produce document or thing at private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 After subsection 2(3A)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-10-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-10-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1df6afaa65d6b72627121329d78401223343924e3835077b59308ef3f16a089b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-10-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Person must not provide document or thing.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of requiring person to produce document or thing at private session.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "cannot",
+      "cml:premiseText": "Member of Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-10-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.9",
+      "skos:note": "Repeal subsection, substitute definition of authorised person",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subsection 2(4)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e7e5f8dc2cf124235287aa8b5af7742b271a06876f0096550778ab9b5aaf635a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State to define authorised persons",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Defines a class of persons authorised in writing",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "ClassInclusion"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-11-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-11"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.9",
+      "skos:note": "Amendments to Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 At the end of section 3 (after the note)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7456720126731dad1bf5d96afc71a996d9cc844ba4f8ad946f28442a876c19dc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-12-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-12"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Omit 'authorizing', substitute 'authorising'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Subsection 4(3)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-13-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6f34f12ca8b0409e619e819c215f127aed15d3fbb2e2d672fd373aad00d303a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-13-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-13"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Omit 'authorized', substitute 'authorised'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Paragraphs 4(4)(b) and (c)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-14-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b8f1f121e3816a8509d135e4117059ff7080691c84d6204bb8e78825f386f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-14-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-14"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Omit “authorize”, substitute “authorise”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Subsection 4(5)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43bdcb4a35a26c169bf1eab2244432080e3275a7c51b8dabcfadc6be87d9e4b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-15-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-15"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Exclude references to Commission members from relevant Commission references.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 After subsection 4(5)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-16-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-16-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d66820f523800640e680cdb9c6578a279b2718e7070315094a315b0cf4ffa0f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-16-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commission member references excluded",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion of Commission members",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclude",
+      "cml:premiseText": "Relevant Commission references"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-16-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-16"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Reference adjustment for Commission hearings",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 At the end of section 6AB (after the note)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d6318a325ccb1d30a8e5f28881802fe05e7e9c848a51dffee0909c9ed9f20ff",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-17-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-17"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Insertion of",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Subsection 6B(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-18-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "64b5ac523f8ff889b9461ff64d407feaf76803a23342308e6ea778ff4e26bd37",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-18-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-18"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Omit “authorize”, substitute “authorise”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Subsection 6B(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43bdcb4a35a26c169bf1eab2244432080e3275a7c51b8dabcfadc6be87d9e4b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-19-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-19"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.7",
+      "skos:note": "Exempts certain documents from the operation of this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1A After subsection 7(2D)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bd3a66251c2a5736feeb4cfad39a18ca27e9b306ff62802deb9ec2629438a25d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-1a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exempts certain documents from the operation of this Act.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exemption"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-1a"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.7",
+      "skos:note": "Omit “authorize”, substitute “authorise”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 1A"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43bdcb4a35a26c169bf1eab2244432080e3275a7c51b8dabcfadc6be87d9e4b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute ‘authorise’",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'authorize'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Omit ‘authorize’"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Add ‘, or the sole Commissioner’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 At the end of subsection 6B(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-20-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8fd1388170d2dcd1676567873c6eb9ec336994b546a9858f70f8b35eabb2e7a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-20-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-20"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.10",
+      "skos:note": "Exclude Commission members from authorized hearing references",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 At the end of section 6B"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-21-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-21-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc1522b6ab8a8a21a449437a2baf6b4a5be158ed602ce3df3ce714302aaa466b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-21-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclude Commission members",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclusion"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-21-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-21"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Omit “meeting”, substitute “hearing”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Section 6C"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-22-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-22-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f29c873531d6374c222dd9d5fbb05455708c6c8ca0eaae10f3623acd981bd4f6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-22-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Substitute 'hearing'",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'meeting'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-22-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-22"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Substitution of 'authorised' for 'authorized'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Subsection 6D(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-23-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b8f1f121e3816a8509d135e4117059ff7080691c84d6204bb8e78825f386f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-23-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Substitution of 'authorised' for 'authorized'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 Subsection 6F(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-24-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b8f1f121e3816a8509d135e4117059ff7080691c84d6204bb8e78825f386f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-24-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-24"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Specify written authorization for authorized persons",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Subsection 6F(3)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7e8b63fd308bf3a8215a3781f84b01e11266df57547b95ec7dd9b4685d03e0da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-25-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-25"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Replace 'authorized' with 'authorised'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 Section 6FA"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-26-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-26-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d79b8dea175d7be940ce6d980b89561e082c24b78ee97211adc7c2edc9b046f2",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-26-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace authorized with authorised",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Substitution"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-26-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-26"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-27",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Omit “authorize”, substitute “authorise”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "27 Subsection 6G(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-27-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43bdcb4a35a26c169bf1eab2244432080e3275a7c51b8dabcfadc6be87d9e4b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-27",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-27-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-27"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 Before section 6H"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-28-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-28-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-28"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.11",
+      "skos:note": "Amends reference to inquiry made by Commission for authorized member hearing",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 At the end of section 6H"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-29-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a158d8c93a4179cb7a95431de3ac9aab5eb3502d41d85e6dd9d02578532b3936",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-29-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-29"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.7",
+      "skos:note": "Omit 'authorizing', substitute 'authorising'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 1A"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6f34f12ca8b0409e619e819c215f127aed15d3fbb2e2d672fd373aad00d303a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:note": "Insert clause",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 After section 6O"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-30"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Substitution of 'authorised' for 'authorized'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31 Subsection 6P(2)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b8f1f121e3816a8509d135e4117059ff7080691c84d6204bb8e78825f386f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-31",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "A person may make a record of, use or disclose information for the purposes of performing their functions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "31A After subsection 6P(2B)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bf67eb9e3cdf70f814799a12501d51606e085f125d4758c099af3dd5db598b7a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-31a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses a permission or obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-31a"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-32",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Exclude references to Commission members' opinions during authorized hearings.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "32 At the end of section 6P"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-32-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-32-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "724a6c5fa6225ab84427be88c2b915e9cf7574439de8c22ffeda8e391479d750",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-32",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-32-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion of references",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exclude"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-32-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-32"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-33",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Substitute sections 6DD and 6OE for section 6DD.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "33 Subsection 9(12) (heading)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-33-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5b550f0c56b647468b7aa8afdef65f45a1ee6f368f5482bf674a909670a8ae01",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-33",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-33-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-33"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-34",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Substitute sections 6DD and 6OE (admissibility of statements etc. made by witness) for section 6DD.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "34 Subsection 9(12)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-34-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3544ae45defa8bf8a275e6e533c453b990dbc83d94fb4531da21d993acecdc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-34",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-34-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-34"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-35",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Repeal the heading.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "35 Before section 10 (heading relating to legal proceedings)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-35-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "93907a10ab7d0187d63a6e36d160d49002cecbedd7ffd3d307f85a713c2970b4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-35",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-35-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-35"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-36",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Substitution of words in a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "36 Paragraph 16(1)(a)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-36-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43bdcb4a35a26c169bf1eab2244432080e3275a7c51b8dabcfadc6be87d9e4b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-36",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-36-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-36"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-37",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.17",
+      "skos:note": "Amendments apply to Royal Commissions after Schedule commences",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "37 Application"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-37-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2f933c23818f6e729993b86dfedd38758dd1268e19cc3dc117504b2d7cb89580",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-37",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-37-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-37"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.7",
+      "skos:note": "Defines authorized member hearing",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 1B(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "71283b7f3f650e687b191418b7289927890a98a651d7785af374341722d601ea",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:note": "Definition of Commission and Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Subsection 1B(1) (definition of Commission and Royal"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "15476296f4ab1f6b1bcf513e04405a72b00448d0bdb06f21c745aff01ef01ab4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:note": "Reference to Royal Commission members is included in other Acts.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 At the end of section 1B"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d25c1cc0cbb20a9922ec928bcf73466d56f60bfdaa30ebe0c2489cc8189b24b4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Inclusion of reference to Royal Commission members.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "includes"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Reference to Royal Commission members is a subclass of references to Royal Commissions.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "subClassOf"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:note": "Definition of Child Sexual Abuse Royal Commission and private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OA Definitions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-descriptionlogic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "adc99b7f15b46f3aebd6a3388135d84172b1370c05c4706e9dde5122f98756ee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oa",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "is defined as...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "Child Sexual Abuse Royal Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "means a private session held under...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Private session definition",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "private session"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oa"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OB Power to hold private sessions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ob",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:note": "Members authorized by the Chair may hold private sessions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OB(1) Power to hold private sessions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "710913d6af22a40322777e52f40db321a2ea2d7100cd795813ddf192c223a434",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ob-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Members authorized by the Chair may hold private sessions.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to hold private sessions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:note": "A private session may be held only by one or two members referred to in subsection (1).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OB(2) Power to hold private sessions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "80525f134207c568858cca95d44c50e599cfd92172463f60ad977cd9337ed160",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ob-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Restriction on private sessions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "onlyIf"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.12",
+      "skos:note": "Any member of the Commission must hold private sessions subject to certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OB(3) Power to hold private sessions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a0e9b1aabe6f52a81e097f18062bdb80f82c0dd4936072b98d84ccfae148bb67",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ob-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to hold private sessions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Prevents a person from appearing at a private session and giving evidence to the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(1) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "996eb5a081766bfc0c39453cafaf92a8b10a3c5edc1981d183beba0c598fa055",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prevents a person from appearing at a private session and giving evidence to the Commission.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(1) A person who appears at a private session:"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prevents a person from appearing at a private session and giving evidence to the Commission.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(b) does not give evidence to the Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Private session is not a hearing of the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(2) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c23df9fabd4a8279b51d8feb0895041cf8f7954222a9420ff889efeb049ebed0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "A private session is not a hearing of the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative assertion",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Provisions apply as if information obtained at a private session were produced before the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(3) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e168a68f1179c7600eb43d5b5861847f5385460ed5403fd7bafe8031da74dbc3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the Royal Commission.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Section 9 applies to records of Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(4) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a051597902df11d5ec449d199c5b76e2ba0095146df9d67924694689e60af6e7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "also applies as if a record produced by one or 2 members of the Child Sexual Abuse Royal Commission at a private session were produced by the Commission.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applies section 9 to records",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(4) Section 9 (custody and use of records of Royal Commission)"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(5) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-argumentation-3",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-diffusion-4",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0ec0ddb13de9edbbab85b5bf03cf9c64de62174b8af9bbf7a15a423d6e03e6f3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between sections and private sessions",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Relation",
+      "cml:premiseText": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Implication of sections on private sessions",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognition of entities in sections",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Entity Recognition",
+      "cml:premiseText": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Application of sections to private sessions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Propagation of sections to related concepts",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Propagation",
+      "cml:premiseText": "Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.13",
+      "skos:note": "Section 6O applies in relation to a private session as if the member or members of the Child Sexual Abuse Royal Commission were the Commission.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OC(6) Status of private session"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ff283ee238bfe9862582017d0205737232eaafb34471852b12a0037ef81498df",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oc-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Section 6O applies",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies in relation to a private session",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(6) Section 6O (contempt of Royal Commission)"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OE Statements made and documents produced etc. at a private"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-2"
+        }
+      ],
+      "cml:integrityHash": "f3f718f377e11f1548308676e39eca3fc814e502da3a0b52a619a25355ae2bf0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oe",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:note": "Exclusion of private session statements and documents from evidence",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OE(1) Statements made and documents produced etc. at a private"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4094595d5c666bc554b13f8f05bf5ba702c17a4875b3fced7233fedb2c93670b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oe-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Excludes private session statements and documents from evidence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclude"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:note": "Exempts proceedings for an offence against the Act from subsection (1)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OE(2) Statements made and documents produced etc. at a private"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e56c408ed89c61ad23ade96a99f4c9188e2430d2aa4bf9353473e217164152f8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oe-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OF Protection of those who appear, or are authorised to be"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2"
+        }
+      ],
+      "cml:integrityHash": "2c1be1cffc28837e0d81b86608b7e67a89017abf93742eb073205217c658c120",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6of",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:note": "Protection of witnesses in private sessions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OF(1) Protection of those who appear, or are authorised to be"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-ltl-3",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-diffusion-4",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43e62a853efd668179e3122c70f627fe7f01309d97b9212378c929c812cd2a90",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6of-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval between appearance and liability",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "between",
+      "cml:premiseText": "(1) Any person who appears, or is authorised to be present, at a private session has the same protection and..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...as a witness in any case tried in the High Court.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Cognitive recognition of witnesses' protection",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "cognizes",
+      "cml:premiseText": "(1) Any person who appears, or is authorised to be present, at a private session has the same protection and..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...is to be subject to the same liabilities in any civil or criminal proceeding...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to protect witnesses",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation",
+      "cml:premiseText": "(1) Any person who appears, or is authorised to be present, at a private session has the same protection and..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of protection to authorized persons",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "diffuses",
+      "cml:premiseText": "(1) Any person who appears, or is authorised to be present, at a private session has the same protection and..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal interval between appearance and liability",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "between",
+      "cml:premiseText": "(1) Any person who appears, or is authorised to be present, at a private session has the same protection and..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.14",
+      "skos:note": "Protection of legal practitioners appearing on behalf of a person at a private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OF(2) Protection of those who appear, or are authorised to be"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4913cb508c51b3b168a0307a4ef31de95fc76737755179d80cf0975a483d0a3a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6of-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...has the same protection...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Possession of protection and immunity",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(2) A legal practitioner..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.15",
+      "skos:note": "Only authorised persons may be present during a private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OG Privacy of private sessions"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7a01d284ca9c1ac2b008ff8d4d71288da306867ac43f62ec248ba5a7c801263b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6og",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Only persons authorized by a member may be present.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorized presence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "onlyIf",
+      "cml:premiseText": "Private session must be held in private."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Authorized presence is required.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorized presence requirement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "mustBe",
+      "cml:premiseText": "Only persons who are authorized by a member may be present during the private session."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6og"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.15",
+      "skos:note": "Unauthorised use or disclosure of information is an offence.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OH Offence for unauthorised use or disclosure of information"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5b7e74559e156cec0ef74c87df9c8452ee57bd83cb8aa95ff4ed1adb957b08d1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oh",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oh"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Include private session information in reports if evidence or de-identified.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OJ Inclusion of information in reports and recommendations"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "46a0816e773db2ebd024a3b6391234492440f003090067785a87d204cb299ba0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6oj",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory inclusion of private session information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "include"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6oj"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Defendant bears evidential burden in relation to disclosure of information at a private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OK Defence for disclosure to person who provided the information"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-epistemic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4e5154c26a73c529acc9fa48eb2a31fde1b30ee521ac5cd187233a5b3d0ec89",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ok",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defendant bears evidential burden",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Defendant must provide evidence",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "evidential burden"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ok"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OL No other exceptions under other laws"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ol",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "No effect if record, use or disclosure would contravene this Division",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OL(1) No other exceptions under other laws"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "95e4517d4651e61782d056fccaa4a9706562495af3c11ff495caef0af9f54718",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ol-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(b) would not be permitted by a provision of this Division",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits record, use or disclosure",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(a) would contravene a provision of this Division"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Subsection (1) has effect regardless of when the provision is made.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OL(2) No other exceptions under other laws"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "526ea722f1767021f00ca67aded52c28aa58c536fcd8b7cb772dfc9876b573de",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6ol-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...regardless of when the provision is made.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The obligation applies regardless of timing.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Always",
+      "cml:premiseText": "(2) Subsection (1) has effect..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OM Relationship with the Archives Act 1983"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6om",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Records must be made accessible after a certain period.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OM(1) Relationship with the Archives Act 1983"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a149c889522d900b9144d0c720e5fa2712a925c14fabf28420f5da69a9547e99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6om-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory access requirement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must",
+      "cml:premiseText": "(1) For the purposes of the Archives Act 1983, a record..."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Clarifies application of subsection (1) to records created after the private session.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OM(2) Relationship with the Archives Act 1983"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2353eeb60a24a73fecd63331c638fe39902dae11148e6921c3622e2085eb2369",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6om-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "subsection (1) applies in relation to a record created after the private session",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Clarifies application of subsection (1)",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "subsection (1) applies in relation to a record created after the private session",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Clarifies application of subsection (1)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "subsection (1) applies in relation to a record created after the private session",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Clarifies application of subsection (1)",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.16",
+      "skos:note": "Exempts records from Archives Act 1983 subsections.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OM(3) Relationship with the Archives Act 1983"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-ltl-3",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-diffusion-4",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6bf77b73a3e87592234622bb8fb9c7f7a21057509a30654df8e739ef718a9141",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-6om-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal exclusion for records.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "TemporalExclusion",
+      "cml:premiseText": "(3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1)."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Temporal exclusion for records.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "TemporalExclusion",
+      "cml:premiseText": "(3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1)."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Records exempted from Archives Act 1983.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exemption",
+      "cml:premiseText": "(3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1)."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Temporal exclusion for records.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "TemporalExclusion",
+      "cml:premiseText": "(3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1)."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal exclusion for records.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "TemporalExclusion",
+      "cml:premiseText": "(3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1)."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:note": "Insert clause after section 1C",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 After section 1C"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 After subsection 2(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a"
+        },
+        {
+          "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b"
+        }
+      ],
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:note": "Commission members may hold hearings without the President or Chair.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(1A) After subsection 2(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-ltl-3",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-diffusion-4",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4469a876e0d5765a4a56387fbdd499c37f95571574a12023c67fe7c77bc19e3d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-8-ss-1a",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hearings overlap with Commission membership",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Hearing overlaps with Commission membership",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "CogAI recognises Commission member hearings",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "CogAI recognises Commission member hearings",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognises",
+      "cml:premiseText": "(a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commission members may hold hearings without the President or Chair.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Permission to hold hearings",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit",
+      "cml:premiseText": "(a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Hearings diffuse through Commission membership",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Hearing diffusion through Commission membership",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "(a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commission members hold hearings recurrently",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Commission members hold hearings recurrently",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurrently",
+      "cml:premiseText": "(a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.8",
+      "skos:note": "The President or Chair of the Commission presides at an authorised member hearing.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8(1B) After subsection 2(1)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-norm",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-deontic-1",
+        "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8f19a4d6ba122476a9b5587896dc80d8554bd603039fc626efef182e06bd9346",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-8-ss-1b",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Presiding duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "preside",
+      "cml:premiseText": "(1B) The following person presides at an authorised member hearing:"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Presiding duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "preside",
+      "cml:premiseText": "(a) the President or Chair of the Commission;"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.9",
+      "skos:note": "Omit “authorized”, substitute ‘authorised’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Paragraph 2(3)(b)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sch-1-sec-9-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f2b8f1f121e3816a8509d135e4117059ff7080691c84d6204bb8e78825f386f5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a012ba6eec9cc6e6fc8fa73784be6ee61932042dfa26c85c2a20ba54bf5d8883",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.6",
+      "skos:note": "Commences on the day this Act receives Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-act-2013-sec-2-norm",
+        "concept:royal-commissions-amendment-act-2013-sec-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a34a4d3c733d2db36afd6b862ff0955e373a42becc8ab09809ee944ff0fc158",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commences at a specific time",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal relation between intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Defines commencement date"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-act-2013.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-act-2013.pdf",
+      "asserts": "concept:royal-commissions-amendment-act-2013-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4c8232f5acfc880e6cb8b56f51b707b40928d1dbb4ca5505570593f344f59a6a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-act-2013#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-act-2013-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-act-2013-sec-3"
+    },
+    {
+      "@id": "doc:au/c2013a00024",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Royal Commissions Act 1902, and for related purposes",
+      "dc:identifier": [
+        "C2013A00024",
+        "No. 24 of 2013"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Royal Commissions Amendment Act 2013"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2013A00024/latest/downloads",
+        "royal-commissions-amendment-act-2013.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

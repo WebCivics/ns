@@ -1,0 +1,3451 @@
+# CogAI proposed logic-routing chunks — Disability Discrimination and Other Human Rights Legislation Amendment Act 2009
+# Machine-derived; every chunk remains cml:Proposed.
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-2;
+  logic: Deontic;
+  operator: receives;
+  summary: Receives the Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-2-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Date specified in the text;
+  @action: Undertaking;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-5-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-5-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines temporal interval for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: a single day to be fixed by Proclamation;
+  @action: commences on the first day after the end of that period;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-8-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-8-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-9-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-9;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Later of two dates specified in paragraph (a) and (b);
+  @action: Temporal interval relation required;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-11-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-11;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines a temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-1;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an act is done for 2 or more reasons; and (b) one of the reasons...;
+  @action: ...one of the reasons is: ...the age of a person; or ...a characteristic that appertains generally to persons of the age of a person; or ...a characteristic that is generally imputed to persons of the age of a person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval for reasons;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) the age of a person; or (ii) a characteristic that appertains generally to persons of the age of a person; or (iii) a characteristic that is generally imputed to persons of the age of a person.;
+  @action: ...the age of a person; or ...a characteristic that appertains generally to persons of the age of a person; or ...a characteristic that is generally imputed to persons of the age of a person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-1;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval for reasons;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (i) the age of a person; or (ii) a characteristic that appertains generally to persons of the age of a person; or (iii) a characteristic that is generally imputed to persons of the age of a person.;
+  @action: ...the age of a person; or ...a characteristic that appertains generally to persons of the age of a person; or ...a characteristic that is generally imputed to persons of the age of a person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-1;
+  logic: Diffusion;
+  operator: through;
+  summary: Reasons spread through population;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (i) the age of a person; or (ii) a characteristic that appertains generally to persons of the age of a person; or (iii) a characteristic that is generally imputed to persons of the age of a person.;
+  @action: ...the age of a person; or ...a characteristic that appertains generally to persons of the age of a person; or ...a characteristic that is generally imputed to persons of the age of a person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-1;
+  logic: CogAI;
+  operator: with;
+  summary: Reasons combined with AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (i) the age of a person; or (ii) a characteristic that appertains generally to persons of the age of a person; or (iii) a characteristic that is generally imputed to persons of the age of a person.;
+  @action: ...the age of a person; or ...a characteristic that appertains generally to persons of the age of a person; or ...a characteristic that is generally imputed to persons of the age of a person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-16-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of 'taken';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The act is taken.;
+  @action: It is done because of the age of the person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-1-sec-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-1-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: =;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: assistance animal has the meaning given by subsection 9(2);
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-4-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines the term "Disabilities Convention";
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-5-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of a term into a definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-6-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: addition;
+  summary: Adds to the definition of disability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-6-2-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-2;
+  logic: Deontic;
+  operator: includes;
+  summary: Behaviour is included in the definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Definition of disability includes behaviour;
+  @action: Behaviour is a disability;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-6-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-2;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Behaviour is a subclass of disability;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Definition of disability includes behaviour;
+  @action: Behaviour is a disability;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-11-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: extends;
+  summary: Extends concept of discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-13-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: Implies;
+  summary: If making the adjustment would impose an unjustifiable hardship, then it is not a reasonable adjustment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Making the adjustment would impose an unjustifiable hardship.;
+  @action: The adjustment is not reasonable.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-13-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Deontic;
+  operator: Not;
+  summary: A reasonable adjustment is one that does not impose an unjustifiable hardship.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The adjustment imposes an unjustifiable hardship.;
+  @action: The adjustment is not reasonable.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-13-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: An adjustment is reasonable if it overlaps with the conditions under which imposing an unjustifiable hardship would be unacceptable.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Imposing an unjustifiable hardship would be unacceptable during this time period.;
+  @action: The adjustment overlaps with the conditions under which imposing an unjustifiable hardship would be unacceptable.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-13-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: LTL;
+  operator: Eventually;
+  summary: An adjustment is reasonable if it will eventually not impose an unjustifiable hardship.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Imposing an unjustifiable hardship will eventually occur.;
+  @action: The adjustment will eventually not impose an unjustifiable hardship.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-13-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-13;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: An adjustment is reasonable if it diffuses the conditions under which imposing an unjustifiable hardship would be unacceptable.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Imposing an unjustifiable hardship will diffuse to this point.;
+  @action: The adjustment diffuses the conditions under which imposing an unjustifiable hardship would be unacceptable.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-14-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-16-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: Deontic;
+  operator: repeal;
+  summary: Repealing an existing provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Old definition is no longer applicable;
+  @action: New definition takes its place;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-5-2-ss-1-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-2-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits discrimination against persons with disabilities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-5-2-ss-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Discriminator has a duty to make reasonable adjustments.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-6-3-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits discrimination against a person on the ground of their disability.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-2-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Discriminator has a duty to make reasonable adjustments.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the discriminator requires, or proposes to require, the aggrieved person to comply with a requirement or condition;;
+  @action: The discriminator must make reasonable adjustments for the aggrieved person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Discriminator has a duty to not discriminate against the aggrieved person.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) because of the disability, the aggrieved person would comply, or would be able to comply, with the requirement or condition only if the discriminator made reasonable adjustments for the person;;
+  @action: The discriminator must not make unreasonable demands on the aggrieved person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-2-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Discriminator has a duty to comply with the requirement or condition if it does not disadvantage persons with the disability.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the failure to make reasonable adjustments has, or is likely to have, the effect of disadvantaging persons with the disability;;
+  @action: The discriminator must comply with the requirement or condition if it does not disadvantage persons with the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-2-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-2;
+  logic: AllenInterval;
+  operator: Between;
+  summary: Discriminator's failure to make reasonable adjustments occurs between the time they require or propose to require the aggrieved person to comply with a requirement or condition and the time the aggrieved person would be able to comply.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the discriminator requires, or proposes to require, the aggrieved person to comply with a requirement or condition;;
+  @action: Discriminator's failure to make reasonable adjustments occurs between the time they require or propose to require the aggrieved person to comply with a requirement or condition and the time the aggrieved person would be able to comply.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-3-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-3;
+  logic: Deontic;
+  operator: EXEMPT;
+  summary: Exempts from disability discrimination legislation under certain circumstances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) or (2) does not apply if the requirement or condition is reasonable, having regard to the circumstances of the case.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-3-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-3;
+  logic: AllenInterval;
+  operator: CONTINGENCY;
+  summary: Establishes a contingency for exemption under disability discrimination legislation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) or (2) does not apply if the requirement or condition is reasonable, having regard to the circumstances of the case.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-3;
+  logic: LTL;
+  operator: RECURSIVE;
+  summary: Establishes a recursive relationship for exemption under disability discrimination legislation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) or (2) does not apply if the requirement or condition is reasonable, having regard to the circumstances of the case.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-3-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-3;
+  logic: Diffusion;
+  operator: INFLUENCE;
+  summary: Influences exemption under disability discrimination legislation.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) or (2) does not apply if the requirement or condition is reasonable, having regard to the circumstances of the case.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-3-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-3;
+  logic: CogAI;
+  operator: RECOGNITION;
+  summary: Recognizes exemptions under disability discrimination legislation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) or (2) does not apply if the requirement or condition is reasonable, having regard to the circumstances of the case.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-4-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person who requires compliance must prove the condition is reasonable.;
+  @action: The burden of proof lies on the person requiring compliance.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-4-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Condition overlaps with reasonable requirements;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The requirement or condition must be reasonable having regard to the circumstances of the case.;
+  @action: The condition overlaps with the set of reasonable requirements.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-4-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-4;
+  logic: LTL;
+  operator: Recurrent;
+  summary: Condition is recurrent in relation to reasonable requirements;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The requirement or condition must be reasonable having regard to the circumstances of the case.;
+  @action: The condition is recurrent in relation to the set of reasonable requirements.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-4-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Condition diffuses into reasonable requirements;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The requirement or condition must be reasonable having regard to the circumstances of the case.;
+  @action: The condition diffuses into the set of reasonable requirements.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-2-ss-4-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-2-ss-4;
+  logic: CogAI;
+  operator: Inferential;
+  summary: Condition is inferentially related to reasonable requirements;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The requirement or condition must be reasonable having regard to the circumstances of the case.;
+  @action: The condition is inferentially related to the set of reasonable requirements.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-1-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits discrimination against employees with associates' disabilities.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate with a disability...;
+  @action: It is unlawful, under section 15, for an employer to discriminate against an employee on the ground of a disability of any of the employee’s associates.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between associate and person with disability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Person has an associate with a disability at some point in time;
+  @action: Modify references to associate as if it were the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-2;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional modification of references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: If person has an associate with a disability, then modify references to associate as if it were the disability.;
+  @action: Modify references to associate as if it were the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-2-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-2;
+  logic: Argumentation;
+  operator: implication;
+  summary: Implication of modification on references;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: If person has an associate with a disability, then modify references to associate as if it were the disability.;
+  @action: Modify references to associate as if it were the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-2-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-2;
+  logic: Diffusion;
+  operator: extension;
+  summary: Extension of modification to other contexts;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Modification applies in this context, so it should apply elsewhere.;
+  @action: Modify references to associate as if it were the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-7-2-ss-2-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7-2-ss-2;
+  logic: CogAI;
+  operator: inference;
+  summary: Inference of modification from context;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Context suggests modification, so infer it.;
+  @action: Modify references to associate as if it were the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-1-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-1;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Applicability to carers, assistants, assistance animals and disabilities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-2;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional effect on disability references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) For the purposes of subsection (1), but without limiting that subsection, this Act has effect in relation to a person with a disability who has a carer, assistant, assistance animal or disability aid as if:;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between disability and aid;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: this Act has effect in relation to a person with a disability who has a carer, assistant, assistance animal or disability aid as if:;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-2-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-2;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relationship between disability and aid;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: this Act has effect in relation to a person with a disability who has a carer, assistant, assistance animal or disability aid as if:;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-2;
+  logic: Deontic;
+  operator: =;
+  summary: Reference replacement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) For the purposes of subsection (1), but without limiting that subsection, this Act has effect in relation to a person with a disability who has a carer, assistant, assistance animal or disability aid as if:;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-8-3-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8-3-ss-3;
+  logic: Deontic;
+  operator: Exempts;
+  summary: Section exempted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-10-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Applicability condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate...;
+  @action: The Act applies to persons with an associate having a carer, assistant, etc.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-10-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: AllenInterval;
+  operator: applies;
+  summary: Temporal interval application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate...;
+  @action: The Act applies from the time of the associate's carer, assistant, etc.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-10-2-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: LTL;
+  operator: applies;
+  summary: Recurring trace application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate...;
+  @action: The Act applies repeatedly from the time of the associate's carer, assistant, etc.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-10-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: Diffusion;
+  operator: applies;
+  summary: Diffusion application;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate...;
+  @action: The Act diffuses to persons with an associate having a carer, assistant, etc.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-10-2-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10-2;
+  logic: CogAI;
+  operator: applies;
+  summary: CogAI application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: This Act applies in relation to a person who has an associate...;
+  @action: The Act is applicable using CogAI reasoning;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-1-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of carer or assistant;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Act, a carer or assistant...;
+  @action: a carer or assistant is one of the following...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between definitions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of this Act, a carer or assistant...;
+  @action: because of the disability;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-2;
+  logic: Deontic;
+  operator: has definition;
+  summary: Definition of key term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) For the purposes of this Act, an assistance animal is a dog or other...;
+  @action: assistance animal;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-2-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: For the purposes of this Act, an assistance animal is a dog or other...;
+  @action: temporal relation;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-3-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of disability aid;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) For the purposes of this Act, a disability aid...;
+  @action: a disability aid, in relation to a person with a disability, is equipment...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-3-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Definition of disability aid for a person with a disability.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) For the purposes of this Act, a disability aid...;
+  @action: provides assistance to alleviate the effect of the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-3-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: Definition of disability aid for a person with a disability.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) For the purposes of this Act, a disability aid...;
+  @action: is used by the person; and provides assistance to alleviate the effect of the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-3-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-3;
+  logic: Diffusion;
+  operator: implies;
+  summary: Definition of disability aid for a person with a disability.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) For the purposes of this Act, a disability aid...;
+  @action: alleviates the effect of the disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-3-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-3;
+  logic: CogAI;
+  operator: implies;
+  summary: Definition of disability aid for a person with a disability.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) For the purposes of this Act, a disability aid...;
+  @action: is equipment (including a palliative or therapeutic device) that:...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-9-2-ss-4-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9-2-ss-4;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a concept;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be accompanied;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person has a disability.;
+  @action: The carer or assistant must be present.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Future accompaniment possible;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person may be accompanied by the carer or assistant in the future.;
+  @action: Accompaniment by carer or assistant is possible in the future.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009;
+  logic: LTL;
+  operator: <=;
+  summary: Past accompaniment required;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The person was previously accompanied by the carer or assistant.;
+  @action: Accompaniment by carer or assistant is required in the past.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009;
+  logic: Deontic;
+  operator: MUST;
+  summary: Present accompaniment required;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person is presently accompanied by the carer or assistant.;
+  @action: Accompaniment by carer or assistant is required now.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009;
+  logic: Deontic;
+  operator: MUST;
+  summary: Imputed accompaniment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person is imputed to be accompanied by the carer or assistant.;
+  @action: Accompaniment by carer or assistant is required for the person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-20-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-20;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21;
+  logic: Deontic;
+  operator: DoesNotApply;
+  summary: Subsection (3) does not apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3A);
+  @action: (3);
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-23-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-24-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-24;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting the specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-26-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-26;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting certain language.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-27-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-32-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-32;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-33-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-33;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-40-ss-2-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Employer has a duty to comply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-40-ss-3-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of instructing or aiding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) does not affect the operation of section 122;
+  @action: Employment agency cannot instruct or aid employer to do an unlawful act.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-40-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of aiding or permitting;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not affect the operation of section 122;
+  @action: Employment agency cannot aid or permit employer to do an unlawful act.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-40-ss-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-ss-3;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: Implication of subsection (2) on section 122;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not affect the operation of section 122;
+  @action: Section 122 applies if employment agency causes, instructs, induces, aids or permits an employer to do an unlawful act.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-40-ss-3-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-40-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of causing or inducing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (2) does not affect the operation of section 122;
+  @action: Employment agency cannot cause or induce employer to do an unlawful act.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21a-ss-1-logic-92 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-21a-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permits discrimination under specific circumstances;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This Division does not render it unlawful...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21a-ss-2-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21a-ss-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Factors to consider when determining an individual's ability to carry out inherent work requirements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21a-ss-2-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21a-ss-2;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal overlap;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21a-ss-3-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21a-ss-3;
+  logic: Deontic;
+  operator: if;
+  summary: Conditional obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-3-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-3;
+  logic: Deontic;
+  operator: hasPartOf;
+  summary: Employment relationship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21b-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-21b;
+  logic: Deontic;
+  operator: Obligation;
+  summary: No discrimination is unlawful if it would impose an unjustifiable hardship on the discriminator.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21b-logic-98 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-21b;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: This Division does not render it unlawful for a person (the discriminator) to discriminate against another person...;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Division;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-21b-logic-99 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-21b;
+  logic: LTL;
+  operator: Repeats;
+  summary: This Division does not render it unlawful for a person (the discriminator) to discriminate against another person...;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Division;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-42-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-42;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-43-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-43;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disability discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-45-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-45;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-47-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-47;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-50-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-50;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-51-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-53-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-53;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting the specified phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits providing accommodation by a charitable body;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Charitable body provides accommodation;
+  @action: Cannot provide accommodation;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-4-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) the person discriminated against does not have that particular disability.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-58-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-58;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-59-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase or disability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-29a-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-29a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: No discrimination is unlawful if it would impose an unjustifiable hardship on the discriminator.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies...;
+  @action: ...discriminate against another person...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-1-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies in relation to a person...;
+  @action: ...in doing a particular act, to discriminate against another person...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-1-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-1;
+  logic: LTL;
+  operator: Temporal Trace;
+  summary: Defines temporal trace for application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies in relation to a person...;
+  @action: ...in doing a particular act, to discriminate against another person...;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-1-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-1;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses prohibition on discrimination;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This section applies in relation to a person...;
+  @action: ...discriminate against another person on the ground of a disability of the other person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-1-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-1;
+  logic: CogAI;
+  operator: Recognize;
+  summary: Recognizes prohibition on discrimination;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies in relation to a person...;
+  @action: ...discriminate against another person on the ground of a disability of the other person.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-30-2-ss-2-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-30-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of requesting or requiring information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Requesting or requiring information is not allowed.;
+  @action: It is unlawful to request or require information.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-31-2-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-31-2;
+  logic: Deontic;
+  operator: May;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-3-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider comments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister must take into consideration...;
+  @action: ...comments made by a Minister of a State or Territory;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-4-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Legislative instrument disallowance period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A legislative instrument made under this section does not take effect before the end of the period in which it could be disallowed in either House of the Parliament.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-4-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-4;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Temporal overlap;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) A legislative instrument made under this section does not take effect before the end of the period in which it could be disallowed in either House of the Parliament.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-4-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-4;
+  logic: LTL;
+  operator: TemporalInterval;
+  summary: Temporal interval;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) A legislative instrument made under this section does not take effect before the end of the period in which it could be disallowed in either House of the Parliament.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-4-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-4;
+  logic: Diffusion;
+  operator: TemporalDiscontinuity;
+  summary: Temporal discontinuity;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) A legislative instrument made under this section does not take effect before the end of the period in which it could be disallowed in either House of the Parliament.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-2009-5-ss-4-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2009-5-ss-4;
+  logic: CogAI;
+  operator: TemporalDiscontinuity;
+  summary: Temporal discontinuity;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) A legislative instrument made under this section does not take effect before the end of the period in which it could be disallowed in either House of the Parliament.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-64-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64;
+  logic: AllenInterval;
+  operator: before;
+  summary: Temporal relation application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: After “this Part”,;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-66-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-66;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces Division numbers with a new sequence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-70-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-70;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'and';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Omit ‘and’, substitute ‘or’.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-71-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-71;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Permission from discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-52-2-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-52-2;
+  logic: Deontic;
+  operator: does not affect;
+  summary: Does not impose a duty or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-1-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-1;
+  logic: Deontic;
+  operator: holds;
+  summary: The state holds an obligation to provide assistance animals.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-4-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of discrimination against persons with disabilities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the discriminator reasonably suspects that the assistance animal has an infectious disease; and (b) the discrimination is reasonably necessary to protect public health or the health of other animals.;
+  @action: Discrimination is prohibited if conditions are met;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-4-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for infectious disease suspicion;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the discriminator reasonably suspects that the assistance animal has an infectious disease;
+  @action: Discrimination is allowed if suspicion occurs within a certain time frame;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-4-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-4;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for public health protection;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the discrimination is reasonably necessary to protect public health or the health of other animals.;
+  @action: Discrimination is allowed if it protects public health or animal health repeatedly;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-4-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission for discrimination under certain conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) This Part does not render it unlawful...;
+  @action: Discrimination is permitted if conditions are met;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-4-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-4;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Obligation to protect public health and animal health;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the discrimination is reasonably necessary to protect public health or the health of other animals.;
+  @action: Discrimination is obligatory if it protects public health or animal health;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-54a-ss-5-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-54a-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-6-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-6;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits discrimination against a person with a disability under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The discriminator is not allowed to discriminate against the person with the disability.;
+  @action: The person with the disability can be discriminated against if certain conditions are met.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-6-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes a temporal relationship between events.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The discriminator requests or requires evidence from the person with the disability during certain conditions.;
+  @action: The request for evidence must occur during the specified conditions.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-6-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-6;
+  logic: LTL;
+  operator: until;
+  summary: Describes a temporal relationship between events.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The person with the disability neither produces evidence that the animal is an assistance animal nor produces evidence that the animal is trained to meet standards of hygiene and behaviour.;
+  @action: The request for evidence must occur until the specified conditions are met.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-6-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-6;
+  logic: CogAI;
+  operator: isTrainedTo;
+  summary: Describes a relationship between an agent and its training.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The person with the disability neither produces evidence that the animal is trained to meet standards of hygiene and behaviour.;
+  @action: The animal is not trained to meet standards of hygiene and behaviour.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-6-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-6;
+  logic: SHACL;
+  operator: hasValue;
+  summary: Describes a relationship between a value and a node.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The person with the disability neither produces evidence that the animal is an assistance animal nor produces evidence that the animal is trained to meet standards of hygiene and behaviour.;
+  @action: The animal does not have a value.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-7-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-7;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes liability for damage to property caused by an assistance animal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) This Part does not affect the liability of a person for damage to property caused by an assistance animal.;
+  @action: The liability of a person for damage to property caused by an assistance animal is unaffected by this Part.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-7-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Indicates that the provision overlaps with other provisions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (7) This Part does not affect the liability of a person for damage to property caused by an assistance animal.;
+  @action: The provision overlaps with other provisions.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-7-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-7;
+  logic: LTL;
+  operator: Repeats;
+  summary: Indicates that the provision repeats in other contexts.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (7) This Part does not affect the liability of a person for damage to property caused by an assistance animal.;
+  @action: The provision repeats in other contexts.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-7-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-7;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Indicates that the provision diffuses into other provisions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (7) This Part does not affect the liability of a person for damage to property caused by an assistance animal.;
+  @action: The provision diffuses into other provisions.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-22-2-ss-7-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-22-2-ss-7;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Indicates that the provision is recognized by AI systems.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (7) This Part does not affect the liability of a person for damage to property caused by an assistance animal.;
+  @action: The provision is recognized by AI systems.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-77-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-77;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of specific words.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-78-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-78;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of phrase.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-79-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-79;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces Division numbers with a range;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-59-2-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-59-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Part 2 prohibits discrimination;
+  @action: Action planner must not discriminate;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-81-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-81;
+  logic: Deontic;
+  operator: substitution;
+  summary: Substitute 'The action planner' for 'A service provider';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-82-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-82;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of 'of a service provider';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-84-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-84;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-63-2-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-63-2;
+  logic: Deontic;
+  operator: may;
+  summary: Obligation to amend;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-64-2-ss-1-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to give action plan;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-64-2-ss-2-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-64-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide copy if action planner gives it to Commission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-92-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-92;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The list must be updated.;
+  @action: Add ‘and’.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-95-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-95;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-98-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-98;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-99-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-99;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide amendments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-101-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-101;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Repeal paragraph, substitute with specific industrial instruments and court orders.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-2-sec-105-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-105;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces Division numbers with alternatives.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-3-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-4-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-5-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-6-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-10-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-12-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-12;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-13-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-13;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-14-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-14;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-16-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-16;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the Human Rights and Equal Opportunity Commission Act 1986.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-20-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-20;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-21-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-21;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-26-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-26;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-27-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-28-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-28;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-31-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-31;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit the Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-32-2-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-32-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-33-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-33;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-34-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-34;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-35-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-35;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-36-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-36;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to use the correct term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-38-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-38;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes duty on replacing heading and name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-39-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-39;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-41-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-41;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-42-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-42;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the Migration Act 1958 to replace 'Human Rights and Equal Opportunity Commission' with 'Australian Human Rights Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-43-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-43;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-47-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-47;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to replace the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-48-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-48;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a person performing functions of the Australian Human Rights Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-48-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-48;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Classifies the Australian Human Rights Commission as including a person performing its functions.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-50-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-50;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to make the change;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-51-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-51;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-2009-4-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to replace the Human Rights and Equal Opportunity Commission with the Australian Human Rights Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-53-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-53;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Replace a name;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Replace 'Human Rights and Equal Opportunity Commission' with 'Australian Human Rights Commission';
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-54-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-54;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-55-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-55;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to make the change;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-56-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-56;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to make the change;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-57-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-57;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-59-logic-200 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-59;
+  logic: Deontic;
+  operator: renames;
+  summary: Renaming of legislation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Human Rights and Equal Opportunity Act 1986 has been renamed.;
+  @action: The Australian Human Rights Commission Act 1986.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-59-logic-201 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-59;
+  logic: Deontic;
+  operator: renames;
+  summary: Renaming of legislation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Racial Discrimination Act 1975 has been renamed.;
+  @action: The Australian Human Rights Commission Act 1986.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-59-logic-202 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-59;
+  logic: Deontic;
+  operator: renames;
+  summary: Renaming of legislation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Disability Discrimination and Other Human Rights Legislation Amendment Act 2009 has been amended.;
+  @action: The Australian Human Rights Commission Act 1986.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-36-2-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-36-2;
+  logic: Deontic;
+  operator: is defined as;
+  summary: Defines Commission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Commission means the Australian Human Rights Commission.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-36-2-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-36-2;
+  logic: DescriptionLogic;
+  operator: has value;
+  summary: Describes Commission;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @action: Commission means the Australian Human Rights Commission.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-61-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-61;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-62-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-62;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-67-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-67;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of Australian Human Rights Commission Act 1986.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-68-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-68;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-70-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-70;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-71-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-71;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-72-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-72;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-73-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-73;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Human Rights and Equal Opportunity Commission Act 1986';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-76-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-76;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-77-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-77;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-80-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-80;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of an act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-82-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-82;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-84-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-84;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of the Australian Human Rights Commission Act 1986.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-85-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-85;
+  logic: Deontic;
+  operator: add;
+  summary: Adding to a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) and (iv);
+  @action: (ii) and (iv) or;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-85-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-85;
+  logic: AllenInterval;
+  operator: add;
+  summary: Temporal interval addition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (ii) and (iv);
+  @action: (ii) and (iv) or;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-86-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-86;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of Australian Human Rights Commission Act 1986.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-87-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-87;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty to omit the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-89-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-89;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of the Australian Human Rights Commission Act 1986.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-90-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-90;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-93-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-93;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to replace the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-111-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-111;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to substitute HREOC with Australian Human Rights Commission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-112-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-112;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to substitute the Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-113-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-113;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation to omit and substitute section heading;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-115-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-115;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the omission of a specific act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-116-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-116;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Imposes a duty to omit the Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-118-ss-1-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-118-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to act in good faith;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-121-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-121;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-123-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-123;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes an obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-125-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-125;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-127-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-127;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text omits specified phrase;
+  @action: Omitting specified phrase is prohibited;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-129-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-129;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide satisfaction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commission is satisfied that complaint has been settled or resolved.;
+  @action: Obligation to settle or resolve complaint;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-130-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-130;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies to the specified provision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-131-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-131;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal penalty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-2009-8-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-8;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits penalty units;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-132-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-132;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits refusal to comply with notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Notice under subsection 21(5) must be answered.;
+  @action: Refusal to comply results in an offence.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-133-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-133;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-136-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-136;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-138-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-138;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “or”.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-139-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-139;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-44-2-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-44-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified amount;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-141-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-141;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of $10,000;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-142-logic-246 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-142;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “or”.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-143-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-143;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-145-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-145;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘desire that the inquiry be held or continued’;
+  @action: Substitute ‘want the Commission to inquire, or to continue to inquire, into the act or practice’;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-147-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-147;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a mandatory obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-148-logic-250 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-148;
+  logic: Deontic;
+  operator: applies;
+  summary: Obligation applies to complaints made before, on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subparagraph 32(3)(c)(vii) of the Human Rights and Equal Opportunity Commission Act 1986;
+  @action: Complaints made before, on or after commencement are subject to this provision.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-148-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-148;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval applies to complaints made before, on or after commencement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subparagraph 32(3)(c)(vii) of the Human Rights and Equal Opportunity Commission Act 1986;
+  @action: Complaints made between these temporal intervals are subject to this provision.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-148-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-148;
+  logic: LTL;
+  operator: between;
+  summary: Recurring trace applies to complaints made before, on or after commencement.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subparagraph 32(3)(c)(vii) of the Human Rights and Equal Opportunity Commission Act 1986;
+  @action: Complaints made during this recurring trace are subject to this provision.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-148-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-148;
+  logic: Diffusion;
+  operator: applies;
+  summary: Diffusion applies to complaints made before, on or after commencement.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subparagraph 32(3)(c)(vii) of the Human Rights and Equal Opportunity Commission Act 1986;
+  @action: Complaints made before, on or after commencement are subject to this diffusion.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-148-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-148;
+  logic: CogAI;
+  operator: applies;
+  summary: CogAI applies to complaints made before, on or after commencement.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subparagraph 32(3)(c)(vii) of the Human Rights and Equal Opportunity Commission Act 1986;
+  @action: Complaints made before, on or after commencement are subject to this CogAI.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-152-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-152;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to decide not to inquire into a complaint.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-152-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-152;
+  logic: Epistemic;
+  operator: Satisfaction;
+  summary: The President's satisfaction with the person's wishes or the complaint's resolution.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-155-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-155;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-2-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to include specified documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-3-logic-259 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-3;
+  logic: Deontic;
+  operator: does not apply;
+  summary: Prohibition on application of Part 6 to the declaration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Part 6 (sunsetting) of the Legislative Instruments Act 2003;
+  @action: does not apply to the declaration.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-3-logic-260 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-3;
+  logic: AllenInterval;
+  operator: during commencement;
+  summary: Temporal relationship between Part 6 and the declaration.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Part 6 (sunsetting) of the Legislative Instruments Act 2003;
+  @action: does not apply to the declaration during its commencement.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-3-logic-261 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-3;
+  logic: LTL;
+  operator: during commencement;
+  summary: Temporal relationship between Part 6 and the declaration.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Part 6 (sunsetting) of the Legislative Instruments Act 2003;
+  @action: does not apply to the declaration during its commencement.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-3-logic-262 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-3;
+  logic: Diffusion;
+  operator: during commencement;
+  summary: Temporal relationship between Part 6 and the declaration.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Part 6 (sunsetting) of the Legislative Instruments Act 2003;
+  @action: does not apply to the declaration during its commencement.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-46-2-ss-3-logic-263 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-46-2-ss-3;
+  logic: CogAI;
+  operator: during commencement;
+  summary: Temporal relationship between Part 6 and the declaration.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Part 6 (sunsetting) of the Legislative Instruments Act 2003;
+  @action: does not apply to the declaration during its commencement.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-158-logic-264 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158;
+  logic: Deontic;
+  operator: applies;
+  summary: Subsections apply to declarations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subsection 47(2) of the Human Rights and Equal Opportunity Commission Act applies...;
+  @action: ...to declarations made after the commencement of this Part.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-158-logic-265 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158;
+  logic: Deontic;
+  operator: applies;
+  summary: Subsections apply to declarations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subsection 47(3) of the Human Rights and Equal Opportunity Commission Act applies...;
+  @action: ...to declarations made before, on or after the commencement of this Part.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-158-logic-266 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158;
+  logic: AllenInterval;
+  operator: during;
+  summary: Subsections apply to declarations during specified time periods.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Subsection 47(2) of the Human Rights and Equal Opportunity Commission Act applies...;
+  @action: ...to declarations made after the commencement of this Part.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-158-logic-267 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158;
+  logic: AllenInterval;
+  operator: during;
+  summary: Subsections apply to declarations during specified time periods.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Subsection 47(3) of the Human Rights and Equal Opportunity Commission Act applies...;
+  @action: ...to declarations made before, on or after the commencement of this Part.;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-1-logic-268 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Subsection applies to the specified persons.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-2-logic-269 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: Good faith implies no liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Act done in good faith;
+  @action: No liability;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-2-logic-270 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Good faith overlaps with the start of the subsection;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Act done in good faith is before or at the same time as the start of Subsection 159(2);
+  @action: Subsection 159(2) includes Act done in good faith;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-2-logic-271 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-2;
+  logic: LTL;
+  operator: Reaches;
+  summary: Good faith reaches the end of the subsection;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Act done in good faith is before or at the same time as the end of Subsection 159(2);
+  @action: Subsection 159(2) includes Act done in good faith;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-2-logic-272 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-2;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Good faith diffuses to other parts of the subsection;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Act done in good faith is related to other parts of Subsection 159(2);
+  @action: Subsection 159(2) includes Act done in good faith;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-159-ss-2-logic-273 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-159-ss-2;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: State recognizes the good faith exemption;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: State is aware of Subsection 159(2);
+  @action: State recognizes the good faith exemption;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-160-logic-274 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-160;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-2009-10-logic-275 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-2009-10;
+  logic: Deontic;
+  operator: INSERTION;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-164-logic-276 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-164;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-165-logic-277 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-165;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-166-logic-278 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-166;
+  logic: Deontic;
+  operator: insertion;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-177-ss-1-logic-279 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-177-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to perform actions in good faith;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-178-logic-280 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-178;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-3-sec-180-ss-1-logic-281 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-180-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to act in good faith;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-1-4-logic-282 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-1-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits the penalty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-3-3-logic-283 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-3-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of $10,000;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-5-8-logic-284 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-5-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of $5,000 and substitution with 50 penalty units;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-6-2-logic-285 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-6-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals a section;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-8-4-logic-286 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-8-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits the penalty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-9-2-logic-287 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-9-2;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal penalty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-2009-logic-288 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-2009;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits penalty units;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-10-2-logic-289 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-10-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the payment of $2,500.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-11-2-logic-290 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-11-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of $10,000;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+disability-discrimination-and-other-human-rights-legislation-amendment-act-2009-sch-4-sec-14-logic-291 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-4-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of $5,000;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

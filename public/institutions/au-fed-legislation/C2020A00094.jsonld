@@ -1,0 +1,433 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:c2020a00094-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.7",
+      "skos:note": "Add goods that underwent one or more processes prescribed by the regulations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of subsection 255(2) of Schedule 2"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": [
+        "concept:c2020a00094-sch-1-sec-1-norm",
+        "concept:c2020a00094-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3cd4f6c6a4a16281c9d5002f1862c6315675dd9588833e200f2db966e281b2f8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adding goods to a list.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "addition"
+    },
+    {
+      "@id": "concept:c2020a00094-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": [
+        "concept:c2020a00094-sec-1-norm",
+        "concept:c2020a00094-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dddd07b04030a8f22d90029406f5140d08996e919b871d714bcf020f94d4263f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:note": "Table of sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-1-2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 October 2020."
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-1-3"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-4",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 October 2020"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-1-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-1-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-1-4"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Competition and Consumer Amendment (Australian Consumer Law—Country of Origin Representations) Act 2020.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-1"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 November"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-10-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-10"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7648c3e4512aa39823dbb36b97c0f9e0726e4110d39aa5e7572221c386ebb545",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-2-2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2020a00094.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "c2020a00094.pdf",
+      "asserts": "concept:c2020a00094-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d2325686cf0210e288aee48bc088ec412a91b12758fb10a566304637eef0ce64",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2020a00094#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2020a00094-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2020a00094-sec-3"
+    },
+    {
+      "@id": "doc:au/c2020a00094",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Competition and Consumer Act 2010, and for related purposes",
+      "dc:identifier": [
+        "C2020A00094",
+        "No. 94 of 2020"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Competition and Consumer Amendment (Australian Consumer Law—Country of Origin Representations) Act 2020"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2020A00094/latest/downloads",
+        "c2020a00094.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

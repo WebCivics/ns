@@ -1,0 +1,93 @@
+# CogAI proposed logic-routing chunks — Copyright Amendment (Film Directors’ Rights) Act 2005
+# Machine-derived; every chunk remains cml:Proposed.
+
+copyright-amendment-film-directors-rights-act-2005-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Identifies temporal intervals for section commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement is specified as a day;
+  @action: Temporal interval for section commencement;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sec-2-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional commencement provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Provisions not commenced within 6 months;
+  @action: Commence on first day after end of period;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sch-1-sec-1-ss-5-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Employer has obligation to substitute for director.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Director's employment contract;
+  @action: Employer must substitute for director.;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sch-1-sec-1-ss-5-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-5;
+  logic: Deontic;
+  operator: Permission;
+  summary: Director's employment contract permits substitution by employer.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Director's employment contract;
+  @action: Employer is permitted to substitute for director.;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sch-1-sec-1-ss-6-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-6;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Has right to include in retransmission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person becomes owner of copyright;
+  @action: Person has right to include in retransmission;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sch-1-sec-1-ss-6-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: During operation of subsections (4) and (5);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Person becomes owner of copyright;
+  @action: Operation of subsections (4) and (5) occurs during person becoming owner of copyright;
+}
+
+copyright-amendment-film-directors-rights-act-2005-sch-1-sec-1-ss-6-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1-ss-6;
+  logic: LTL;
+  operator: during;
+  summary: During operation of subsections (4) and (5);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Person becomes owner of copyright;
+  @action: Operation of subsections (4) and (5) occurs during person becoming owner of copyright;
+}

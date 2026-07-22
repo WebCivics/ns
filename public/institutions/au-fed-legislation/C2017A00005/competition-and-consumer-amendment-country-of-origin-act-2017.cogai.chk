@@ -1,0 +1,212 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment (Country of Origin) Act 2017
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sec-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Competition and Consumer Amendment (Country of Origin) Act 2017.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace section 255(3) with section 255(2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to comply with requirements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person making the representation must meet the requirements.;
+  @action: The person does not contravene section 18, 29(1)(a) or (k) or 151(1)(a) or (k);
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between production and manufacture processes;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: All, or virtually all, processes involved in the production or manufacture of the goods happened in that country.;
+  @action: The representation is valid if...;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace of production and manufacture processes;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: All, or virtually all, processes involved in the production or manufacture of the goods happened in that country.;
+  @action: The representation is valid if...;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-1-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Diffusion;
+  operator: Diffusion;
+  summary: Diffusion of information about country of origin;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The representation must be made in good faith.;
+  @action: The person does not contravene section 18, 29(1)(a) or (k) or 151(1)(a) or (k);
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-1-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: CogAI;
+  operator: Knowledge representation;
+  summary: Knowledge representation of country of origin;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The representation must be accurate.;
+  @action: The person does not contravene section 18, 29(1)(a) or (k) or 151(1)(a) or (k);
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Goods must meet specific requirements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Goods were substantially transformed in a country if: (a) the goods met, in relation to that country, the requirements of item 1 or 2 in the second column of the table in subsection (1); or (b) as a result of one or more processes undertaken in that country, the goods are fundamentally different in identity, nature or essential character from all of their ingredients or components that were imported into that country.;
+  @action: (2) Goods were substantially transformed in a country if: (a) the goods met, in relation to that country, the requirements of item 1 or 2 in the second column of the table in subsection (1); or (b) as a result of one or more processes undertaken in that country, the goods are fundamentally different in identity, nature or essential character from all of their ingredients or components that were imported into that country.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-3-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: May prescribe processes or combinations of processes for particular classes of goods.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-2-ss-3-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeal subsection;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-4-ss-9-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-9;
+  logic: Deontic;
+  operator: treatedAs;
+  summary: Obligation to treat ingredient or component as having the same origin.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (9) For the purposes of item 1 of the table in subsection (1);
+  @action: ingredient or component is treated as having the same origin as its actual origin if certain conditions are met.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-4-ss-9-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-9;
+  logic: AllenInterval;
+  operator: duringEvaporation;
+  summary: Water added to ingredient or component during evaporation is treated as having the same origin.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the added water returns the water content of the ingredient or component to no more than its natural level.;
+  @action: water added to ingredient or component during evaporation is treated as having the same origin.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-4-ss-9-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-9;
+  logic: LTL;
+  operator: duringEvaporation;
+  summary: Water added to ingredient or component during evaporation is treated as having the same origin.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the added water returns the water content of the ingredient or component to no more than its natural level.;
+  @action: water added to ingredient or component during evaporation is treated as having the same origin.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-4-ss-9-logic-15 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-9;
+  logic: Diffusion;
+  operator: duringEvaporation;
+  summary: Water added to ingredient or component during evaporation diffuses into it.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (b) the added water returns the water content of the ingredient or component to no more than its natural level.;
+  @action: water added to ingredient or component during evaporation diffuses into it.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-4-ss-9-logic-16 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-9;
+  logic: CogAI;
+  operator: duringEvaporation;
+  summary: Water added to ingredient or component during evaporation is treated as having the same origin using AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) the added water returns the water content of the ingredient or component to no more than its natural level.;
+  @action: water added to ingredient or component during evaporation is treated as having the same origin using AI.;
+}
+
+competition-and-consumer-amendment-country-of-origin-act-2017-sch-1-sec-5-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes a duty to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

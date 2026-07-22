@@ -1,0 +1,443 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.1",
+      "skos:note": "Citation provision for the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e19e0f8fa532265b1c3f8a28581d3fa106c678e489083e8bf41bbbae007d9dda",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-1"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.1",
+      "skos:note": "Commencement date fixed by proclamation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "853f97be3a2722b3837c286668526d7246bfa2f07843d1610e862b28339ec962",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.1",
+      "skos:note": "Repeals Section six of the Seal oj Government Act 1908 and amends the Seat of Government Act 1908.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-norm",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-logic-deontic-1",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "33621309a444ef3d521aeae7d7e66c603746fe3a5d598d5f9fc50ecef0938191",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for the amendment.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation to repeal a section.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-3"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.1",
+      "skos:note": "Repeals section 10 of the Seat oj Government Acceptance Act and amends it.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4-norm",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "268033c00a27501366b06e75b9863c1e7035e112cba6b0f00ee3754328bf7b12",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Repeal of section 10",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeals a provision",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Provision repealed"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-4"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.1",
+      "skos:note": "Inserts new section 7A regarding application of Lands Acquisition Act 1955 in relation to land in the Territory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Section 5"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5-norm",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f9bb39e22bfb7228f0303eb4e4e4f93fc3d9cc47180b84e975848092b08d8c11",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Relates to the application of the Lands Acquisition Act 1955 in relation to land in the Territory.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "relation"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-5"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.2",
+      "skos:note": "Amends sub-section (1A) of the Seat of Government (Administration) Act 1930-1935.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Section 6"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2ae195d59d0e34dae12ffbb703692ed4db5e59edb9602eb40e99564a98a2b150",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-6"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf, p.2",
+      "skos:note": "Repeals Section 6 of the Jervis Bay Territory Acceptance Act 1915 and amends it.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Section 7"
+      },
+      "wasDerivedFrom": "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf",
+      "asserts": [
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-norm",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-logic-deontic-1",
+        "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-logic-deontic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a80ca7669d20f363e6554c207a4ad13165cb25fd98d3a8a1a9b15b4f8e93a3e7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-capital-territory-and-jervis-bay-lands-acquisition#sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Repeals Section 6 of the Jervis Bay Territory Acceptance Act 1915.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Repeal"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amends Section 6 of the Jervis Bay Territory Acceptance Act 1915.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Amend"
+    },
+    {
+      "@id": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-capital-territory-and-jervis-bay-lands-acquisition-sec-7"
+    },
+    {
+      "@id": "doc:au/c1955a00070",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act relating to the Acquisition of Land In the Australian Capital Territory and the Jervis Bay Territory and Dealings with Land so Acquired.",
+      "dc:identifier": [
+        "C1955A00070",
+        "No. 70 of 1955"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Capital Territory and Jervis Bay (Lands Acquisition)"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C1955A00070/latest/downloads",
+        "australian-capital-territory-and-jervis-bay-lands-acquisition.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

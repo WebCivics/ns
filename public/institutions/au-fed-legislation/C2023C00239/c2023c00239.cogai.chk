@@ -1,0 +1,1087 @@
+# CogAI proposed logic-routing chunks — Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020
+# Machine-derived; every chunk remains cml:Proposed.
+
+c2023c00239-sch-3-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a specific title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020.;
+}
+
+c2023c00239-sch-3-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1-2;
+  logic: Deontic;
+  operator: receives;
+  summary: Receives the Royal Assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act is enacted.;
+  @action: The day this Act receives the Royal Assent.;
+}
+
+c2023c00239-sch-3-sec-1-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1-2;
+  logic: AllenInterval;
+  operator: on;
+  summary: On the day this Act receives the Royal Assent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Act comes into effect on a specific date.;
+  @action: The day this Act receives the Royal Assent is the commencement date.;
+}
+
+c2023c00239-sch-3-sec-1-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1-2;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication of receiving the Royal Assent;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Receiving the Royal Assent implies that the Act is enacted.;
+  @action: The day this Act receives the Royal Assent is the commencement date.;
+}
+
+c2023c00239-sch-3-sec-1-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1-2;
+  logic: Diffusion;
+  operator: through;
+  summary: Through the Act's table of coverage;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: This Act has a table of coverage that defines its scope.;
+  @action: Anything in this Act not elsewhere covered by this table is exempt.;
+}
+
+c2023c00239-sch-3-sec-1-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-1-2;
+  logic: CogAI;
+  operator: by;
+  summary: By the Act's table of coverage;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: This Act has a table of coverage that defines its scope.;
+  @action: Anything in this Act not elsewhere covered by this table is exempt.;
+}
+
+c2023c00239-sch-3-sec-3-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-3-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation between schedules and the Act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Schedules are amended or repealed according to their terms;
+  @action: Temporal relation exists;
+}
+
+c2023c00239-sch-1-sec-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: =;
+  summary: Defines term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: insurance contract means a contract of insurance to which the Insurance Contracts Act 1984 applies.;
+}
+
+c2023c00239-sch-1-sec-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to Insurance Contracts Act insurance contracts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-1-sec-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-1-sec-5-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: !;
+  summary: Negates the Subdivision's application for these contracts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+c2023c00239-sch-1-sec-6-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: add;
+  summary: Addition of a person who is a third party beneficiary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-1-sec-325-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-1;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply to contracts entered into on or after commencement of Schedule.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-1-sec-325-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-3;
+  logic: Deontic;
+  operator: applies;
+  summary: Provision applies to contracts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If paragraph (2)(b) of this section applies...;
+  @action: ...subsection 12BF(2) and section 12BK of this Act apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-3;
+  logic: AllenInterval;
+  operator: applies;
+  summary: Temporal relation between provisions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If paragraph (2)(b) of this section applies...;
+  @action: ...subsection 12BF(2) and section 12BK of this Act apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-3;
+  logic: LTL;
+  operator: applies;
+  summary: Ordered trace for provision application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) If paragraph (2)(b) of this section applies...;
+  @action: ...subsection 12BF(2) and section 12BK of this Act apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-3;
+  logic: Diffusion;
+  operator: applies;
+  summary: Provision affects contracts;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) If paragraph (2)(b) of this section applies...;
+  @action: ...subsection 12BF(2) and section 12BK of this Act apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-3;
+  logic: CogAI;
+  operator: applies;
+  summary: Artificial agent application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) If paragraph (2)(b) of this section applies...;
+  @action: ...subsection 12BF(2) and section 12BK of this Act apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the application of amendments to certain contracts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The operation of the amendments would result in an acquisition of property from a person otherwise than on just terms.;
+  @action: The exemptions apply.;
+}
+
+c2023c00239-sch-1-sec-325-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Exclusion;
+  summary: Exempts contracts from amendments due to temporal overlap.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The operation of the amendments would result in an acquisition of property...;
+  @action: The exemptions apply during this time period.;
+}
+
+c2023c00239-sch-1-sec-325-ss-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-4;
+  logic: LTL;
+  operator: Temporal Inclusion;
+  summary: Incorporates temporal logic to define the exemption period.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The amendments do not apply to a contract, or a term of a contract...;
+  @action: The exemptions are valid during this time frame.;
+}
+
+c2023c00239-sch-1-sec-325-ss-4-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-4;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Represents the exemption as a knowledge representation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The amendments do not apply to a contract, or a term of a contract...;
+  @action: The exemptions are represented by this rule.;
+}
+
+c2023c00239-sch-1-sec-325-ss-4-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-325-ss-4;
+  logic: SHACL;
+  operator: Schema Validation;
+  summary: Validates the exemption schema.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The amendments do not apply to a contract, or a term of a contract...;
+  @action: The exemptions conform to this schema.;
+}
+
+c2023c00239-sch-1-sec-9-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: prohibition;
+  summary: Prohibit omission of words;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text;
+  @action: New text;
+}
+
+c2023c00239-sch-2-sec-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: not;
+  summary: Negative statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Funeral expenses facility is not a funeral benefit;
+}
+
+c2023c00239-sch-2-sec-765b-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-765b;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Funeral expenses facilities are not considered funeral benefits.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-15a-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-1;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definition of associate for National Credit Code purposes;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-15a-ss-2-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Associates are defined by regulations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations.;
+  @action: a person is an associate of another person;
+}
+
+c2023c00239-sch-3-sec-15a-ss-2-logic-29 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Associates are defined during specific circumstances.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations.;
+  @action: circumstances prescribed by regulations: associates;
+}
+
+c2023c00239-sch-3-sec-15a-ss-2-logic-30 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: Associates are defined during specific circumstances.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations.;
+  @action: circumstances prescribed by regulations: associates;
+}
+
+c2023c00239-sch-3-sec-15a-ss-2-logic-31 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-2;
+  logic: Diffusion;
+  operator: during;
+  summary: Associates are defined during specific circumstances.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations.;
+  @action: circumstances prescribed by regulations: associates;
+}
+
+c2023c00239-sch-3-sec-15a-ss-2-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-15a-ss-2;
+  logic: CogAI;
+  operator: during;
+  summary: Associates are defined during specific circumstances.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations.;
+  @action: circumstances prescribed by regulations: associates;
+}
+
+c2023c00239-sch-3-sec-15b-ss-1-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15b-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of a mortgage broker;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A licensee is a mortgage broker if: (a) the licensee carries on a business of providing credit assistance in relation to credit contracts secured by mortgages over residential property; and (b) the licensee does not perform the obligations, or exercise the rights, of a credit provider in relation to the majority of those credit contracts; and (c) in carrying on the business, the licensee provides credit assistance in relation to credit contracts offered by more than one credit provider.;
+  @action: (1) A licensee is a mortgage broker if: (a) the licensee carries on a business of providing credit assistance in relation to credit contracts secured by mortgages over residential property; and (b) the licensee does not perform the obligations, or exercise the rights, of a credit provider in relation to the majority of those credit contracts; and (c) in carrying on the business, the licensee provides credit assistance in relation to credit contracts offered by more than one credit provider.;
+}
+
+c2023c00239-sch-3-sec-15b-ss-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15b-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of a mortgage broker;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-15c-ss-1-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-15c-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158k-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158k;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must act in the best interests of consumers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158kb-ss-1-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158kb-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: Authorization is granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Primary representative authorizes secondary representative;
+  @action: Secondary representative is authorized;
+}
+
+c2023c00239-sch-3-sec-158kb-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158kb-ss-2;
+  logic: Deontic;
+  operator: within;
+  summary: Scope of authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Actual or apparent authority;
+  @action: Obligation;
+}
+
+c2023c00239-sch-3-sec-158l-ss-1-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: The provision applies to credit assistance provided by a licensee.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.;
+  @action: This Subdivision applies.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-1-logic-40 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-1;
+  logic: AllenInterval;
+  operator: applies;
+  summary: The provision specifies the temporal scope of application for this Subdivision.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.;
+  @action: This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-1-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-1;
+  logic: LTL;
+  operator: applies;
+  summary: The provision specifies the temporal scope of application for this Subdivision.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.;
+  @action: This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-2-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158l-ss-2-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Exemption;
+  summary: Exemption for temporal period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-2;
+  logic: LTL;
+  operator: Temporal Exemption;
+  summary: Exemption for temporal period;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-2;
+  logic: CogAI;
+  operator: Entity Classification;
+  summary: Classification of entities involved;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee.;
+}
+
+c2023c00239-sch-3-sec-158l-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158l-ss-2;
+  logic: SHACL;
+  operator: Entity Validation;
+  summary: Validation of entity relationships;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee.;
+}
+
+c2023c00239-sch-3-sec-158la-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158la;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to act in best interests;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158lb-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lb;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to prioritize consumer's interests;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158ld-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ld;
+  logic: Deontic;
+  operator: applies;
+  summary: The provision applies to credit assistance provided by a credit representative.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158le-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158le-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to act in the best interests.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158le-ss-2-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158le-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158lf-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lf;
+  logic: Deontic;
+  operator: Knows;
+  summary: Knowledge obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The credit representative knows or reasonably ought to know...;
+  @action: ...there is a conflict between the interests of...;
+}
+
+c2023c00239-sch-3-sec-158lf-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lf;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap of knowledge and conflict;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: If the credit representative knows, or reasonably ought to know...;
+  @action: ...that there is a conflict between the interests of...;
+}
+
+c2023c00239-sch-3-sec-158lf-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lf;
+  logic: LTL;
+  operator: Recurring;
+  summary: Recurring trace of knowledge and conflict;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: If the credit representative knows, or reasonably ought to know...;
+  @action: ...that there is a conflict between the interests of...;
+}
+
+c2023c00239-sch-3-sec-158lf-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lf;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion of knowledge and conflict;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: If the credit representative knows, or reasonably ought to know...;
+  @action: ...that there is a conflict between the interests of...;
+}
+
+c2023c00239-sch-3-sec-158lf-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158lf;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Recognition of conflicts by AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: If the credit representative knows, or reasonably ought to know...;
+  @action: ...that there is a conflict between the interests of...;
+}
+
+c2023c00239-sch-3-sec-158n-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158n;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with obligations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158n-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158n;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158na-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158na;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits accepting conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158nb-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nb;
+  logic: Deontic;
+  operator: Must Not;
+  summary: Prohibition of accepting conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158nc-ss-1-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nc-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A credit representative of a licensee must not accept conflicted remuneration in circumstances prescribed by the regulations if the credit representative or the licensee is:;
+}
+
+c2023c00239-sch-3-sec-158nc-ss-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nc-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-3-sec-158nd-ss-1-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nd-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Employer must not give employees conflicted remuneration;
+}
+
+c2023c00239-sch-3-sec-158nd-ss-2-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nd-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Employer must not give employees conflicted remuneration;
+}
+
+c2023c00239-sch-3-sec-158ne-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ne-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Credit provider must not give conflicted remuneration;
+  @action: Licensee must not receive conflicted remuneration;
+}
+
+c2023c00239-sch-3-sec-158ne-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ne-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Regulations prescribe circumstances for giving conflicted remuneration.;
+  @action: Credit provider must not give conflicted remuneration.;
+}
+
+c2023c00239-sch-3-sec-158ne-ss-2-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ne-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for conflicted remuneration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Regulations prescribe circumstances for giving conflicted remuneration.;
+  @action: Conflicted remuneration is prohibited within specified circumstances.;
+}
+
+c2023c00239-sch-3-sec-158ne-ss-2-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ne-ss-2;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of regulation;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Regulations prescribe circumstances for giving conflicted remuneration.;
+  @action: Regulation applies to recurring traces of conflicted remuneration.;
+}
+
+c2023c00239-sch-3-sec-158ne-ss-2-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158ne-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of regulation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Regulations prescribe circumstances for giving conflicted remuneration.;
+  @action: Regulation diffuses to all relevant parties.;
+}
+
+c2023c00239-sch-3-sec-158nf-ss-1-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nf-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Licensee is a mortgage broker or intermediary;
+  @action: Mortgage intermediary must not give conflicted remuneration;
+}
+
+c2023c00239-sch-3-sec-158nf-ss-2-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158nf-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of conflicted remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Mortgage intermediary must not give...;
+  @action: ...civil penalty.;
+}
+
+c2023c00239-sch-3-sec-158t-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158t;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits entering into a scheme to avoid application of provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person must not enter into, begin to carry out or carry out the scheme.;
+  @action: The scheme is prohibited.;
+}
+
+c2023c00239-sch-3-sec-158t-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158t;
+  logic: LTL;
+  operator: Trace;
+  summary: Traces the scheme to its prohibited nature;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The scheme has achieved, or apart from this section, would achieve, that purpose.;
+  @action: The scheme is traced to its prohibited nature.;
+}
+
+c2023c00239-sch-3-sec-158t-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158t;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the person from entering into a scheme;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person must not enter into, begin to carry out or carry out the scheme.;
+  @action: The person is prohibited from entering into a scheme.;
+}
+
+c2023c00239-sch-3-sec-158t-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-3-sec-158t;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the persons who entered into, began to carry out or carried out the scheme from doing so;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person must not enter into, begin to carry out or carry out the scheme.;
+  @action: The persons are prohibited from entering into, beginning to carry out or carrying out the scheme.;
+}
+
+c2023c00239-sch-10-sec-1-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-1;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: In this Schedule:;
+  @action: amending Act means the Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020.;
+}
+
+c2023c00239-sch-10-sec-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Division applies to credit assistance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-3-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits benefits given after July 1, 2020.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+}
+
+c2023c00239-sch-10-sec-3-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Benefits given after July 1, 2020, overlap with the ban on conflicted remuneration.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1);
+}
+
+c2023c00239-sch-10-sec-7-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: Deontic;
+  operator: =;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-7-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-7;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Applies to definitions;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-8-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-8;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'commissions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-9-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-9;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-12-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'commissions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-20-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-20;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'commissions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-27-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-27;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'commissions';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-28-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-28;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-29-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-29;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Substitute 'indirect remuneration' for 'commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+c2023c00239-sch-10-sec-17-2-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-10-sec-17-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for commencement dates;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement dates are specified;
+  @action: Undertaking;
+}

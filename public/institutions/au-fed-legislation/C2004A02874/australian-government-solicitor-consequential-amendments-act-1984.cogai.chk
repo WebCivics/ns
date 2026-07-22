@@ -1,0 +1,202 @@
+# CogAI proposed logic-routing chunks — Australian Government Solicitor (Consequential Amendments) Act 1984
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-2-ss-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between Judiciary Amendment Act 1984 and the current Act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Act's commencement depends on Judiciary Amendment Act 1984;
+  @action: Temporal relation required;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-2-ss-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-1;
+  logic: Deontic;
+  operator: Implies;
+  summary: If condition, then obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Immediate preparation of certificate or notice under previous provision.;
+  @action: Provision applies after commencement.;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-2-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: The obligation is triggered by the commencement of the section.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Where, at the commencement of this section—;
+  @action: sub-section 42 (1) of that Act applies in relation to the notice after that commencement.;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-2-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: The obligation is triggered during the commencement of the section.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Where, at the commencement of this section—;
+  @action: sub-section 42 (1) of that Act applies in relation to the notice after that commencement.;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-2-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: The obligation is triggered during the commencement of the section.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Where, at the commencement of this section—;
+  @action: sub-section 42 (1) of that Act applies in relation to the notice after that commencement.;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: The obligation is triggered by the debtor's non-compliance with the notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the debtor has not made sufficient compliance with the notice for the purposes of that Act,;
+  @action: sub-section 42 (1) of that Act applies in relation to the notice after that commencement.;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice to Director of Public Prosecutions and Deputy Crown Solicitor.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an amount of compensation to which a person is entitled under section 11 of the Lands Acquisition Act 1955 has been determined;;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) in a case where paragraph (a) of that sub-section as so in force applied immediately before that commencement—one or more, but not all, of the paragraphs of that sub-section as so in force;;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (iii) in a case where paragraph (a) of that sub-section as so in force did not apply immediately before that commencement—either, but not both, of paragraphs (b) and (c) of that sub-section as so in force;;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: sub-section 32 (1) of that Act as so in force applies after that commencement in relation to the person in relation to the compensation and so applies, in a case where sub-paragraph (b) (ii) or (iii) of this sub-section applies, as if a reference to the Crown Solicitor in the paragraph, or in each paragraph, of sub-section 32 (1) of that Act as so in force with which the person has not complied at that commencement were a reference to the Secretary to the Attorney-General's Department or to a person authorized under sub-section 55E (4) of the Judiciary Act 1903.;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) none of the paragraphs of sub-section 32 (1) of that Act, being that sub-section as in force immediately before that commencement;;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-4-ss-4-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-4-ss-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance with certain paragraphs of sub-section 32 (1) of the Lands Acquisition Act 1955.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person has, in relation to the compensation, complied with—;
+  @action: the person has, in relation to the compensation, complied with—;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-1903-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1903;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Identifies a specific person or officer authorized to perform certain functions.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-government-solicitor-consequential-amendments-act-1984-sec-1903-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1903;
+  logic: Deontic;
+  operator: includes;
+  summary: Defines the scope of authority for the authorized person.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

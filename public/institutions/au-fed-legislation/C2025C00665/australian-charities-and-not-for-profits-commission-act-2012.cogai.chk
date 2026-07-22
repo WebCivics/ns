@@ -1,0 +1,384 @@
+# CogAI proposed logic-routing chunks — Australian Charities and Not-for-profits Commission Act 2012
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: Deontic;
+  operator: DependsOn;
+  summary: Depends on Royal Assent and event in paragraph (b);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is not liable to a pecuniary penalty or prosecution for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for prosecution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to be prosecuted for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to be liable for a pecuniary penalty.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for prosecution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to prosecute for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Binding obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This Act binds the Crown in each of its capacities.;
+  @action: The Crown is bound by this Act.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication from binding obligation;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) This Act binds the Crown in each of its capacities.;
+  @action: If the Crown is bound by this Act, then it must comply with its provisions.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-1;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Temporal overlap between binding obligation and Crown's capacity;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This Act binds the Crown in each of its capacities.;
+  @action: The binding obligation overlaps with the Crown's capacity in this Act.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-1;
+  logic: Diffusion;
+  operator: InformationSpread;
+  summary: Information spread from binding obligation to Crown;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) This Act binds the Crown in each of its capacities.;
+  @action: The information spreads that the Crown is bound by this Act.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-1-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-1;
+  logic: CogAI;
+  operator: KnowledgeRepresentation;
+  summary: Knowledge representation of binding obligation and Crown's capacity;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This Act binds the Crown in each of its capacities.;
+  @action: The knowledge represents that the Crown is bound by this Act.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is not liable to a pecuniary penalty or prosecution for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for prosecution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to be prosecuted for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for liability;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to be liable for a pecuniary penalty.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-2-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-2-ss-2;
+  logic: Deontic;
+  operator: permission;
+  summary: Permission for prosecution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) This Act does not make the Crown liable to a pecuniary penalty or to be prosecuted for an offence.;
+  @action: The Crown is permitted to prosecute for an offence.;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: The Commissioner may revoke a decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-1-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Imposition of conditions is a duty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-1-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: Allow;
+  summary: Commissioner allows registered entities to prepare and lodge a single information statement or financial report.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-2-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Commissioner allows reporting group to prepare and lodge financial reports on a basis other than entity-by-entity basis.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between reporting group preparation and lodging of financial reports.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: The Commissioner may revoke a decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-1-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Imposition of conditions is a duty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-1-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: Allow;
+  summary: Commissioner allows registered entities to prepare and lodge a single information statement or financial report.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-2-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Commissioner allows reporting group to prepare and lodge financial reports on a basis other than entity-by-entity basis.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between reporting group preparation and lodging of financial reports.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-3-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: The Commissioner may revoke a decision.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-31-ss-4-logic-29 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-31-ss-4;
+  logic: Deontic;
+  operator: ought;
+  summary: Obligation to consider public interest;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: public interest in transparency and accountability;
+  @action: Commissioner must consider;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-4-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-4;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Never commenced;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-3-4-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-charities-and-not-for-profits-commission-act-2012-sec-4-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Describes the nature of the provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: How affected;
+  @action: Chapter 2;
+}

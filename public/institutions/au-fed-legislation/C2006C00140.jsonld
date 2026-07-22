@@ -1,0 +1,699 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:note": "Arrange with states and territories for officers to exercise powers and perform functions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 3B(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": [
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1-norm",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7bcb232b3d317444994faad76e43fa21af63abffbd7e9df6d14b91828833afdc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Governor-General has an obligation to arrange with states and territories.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:note": "Continuation of arrangements made under subsection 3B(1) of the Crimes Act 1914 after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Transitional provision"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cfdee404b69af300c1266a4fe46e79702e4ba72b576a731bf3526ddb23d2b563",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:note": "Substitute “section” for “sections, 15A and”.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 3B(2)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "159b7f6527f5255a46f34fcfbc5db3b210fe22393f03f1fc0e6619b2493ec54f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:note": "Inserts a sentence into an order.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 3B(3)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56a366fde746f32c0e0077d3ce0c7b24a162e6b95ac64841c45b084a9090b527",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.8",
+      "skos:note": "Notify a person or organisation; provide information to a person or organisation.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Crimes Amendment (Enforcement of Fines) Act 1998"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": [
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2-norm",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "79ea15e4c18b627a32e5a717b4c68fa757377a09d0f497edf2a4bc6b1bdd4f9a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Notification obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "OBLIG"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:note": "A law of a State or Territory relating to the enforcement or recovery of a fine imposed on an offender applies to a person convicted in the State or Territory of an offence against a law of the Commonwealth.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Subsection 15A(1)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": [
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5-norm",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "62454fb465c3f7571e4739d3800b57998eb9494378f4aed02a4ee09000e1ae5d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on States and Territories to apply their laws to Commonwealth offences.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.8",
+      "skos:note": "Substitute a phrase in subsection (1AA)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 Subsection 15A(1A)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "54456ba27f3ed3f28fb107c973073611833dff200f770bbf6ad4cbd0e14da820",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.8",
+      "skos:note": "Defines modifications in section 15A",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 At the end of section 15A"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8393de654896dc0a43b365a04c20fdf367339fd329e4498fcccbbece631c7e7b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.8",
+      "skos:note": "Amendments apply regardless of when fine was imposed",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Application"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": [
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-norm",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-deontic-1",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-alleninterval-2",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-ltl-3",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-diffusion-4",
+        "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6fe92d63a2949ac51a0eae6ba0f7f05544e69d5e99f550f0dd286d30ef4dde54",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal applicability of amendments",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "TemporalRelation",
+      "cml:premiseText": "The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Amendments and their applicability",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "KnowledgeRepresentation",
+      "cml:premiseText": "The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applicability of amendments",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "Amendments apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Amendments and their applicability",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "InformationFlow",
+      "cml:premiseText": "The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Temporal applicability of amendments",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "RecurringTrace",
+      "cml:premiseText": "The amendments of section 15A of the Crimes Act 1914 made by this Act apply in relation to a fine regardless of whether it was imposed before, on or after the commencement of this Act."
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d026a6d5f7b560e2f04c32f8b5716feee2dab910ca83f5d82d5d546eafff90e0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-1"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.5",
+      "skos:note": "Commences on the day of Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4eed6c7b27751913ba3ce32609cdff12c4ce5ac3cad11b9b35f84b1af99fbc6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Crimes Amendment (Enforcement of Fines) Act 1998"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-amendment-enforcement-of-fines-act-1998.pdf, p.5",
+      "skos:note": "Schedules amendment and repeal provisions for Acts specified in them.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "crimes-amendment-enforcement-of-fines-act-1998.pdf",
+      "asserts": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c6bfddcf9c42dc2d1d9771ec222e61e024a63b12373049c2d6a3115021f90d37",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-amendment-enforcement-of-fines-act-1998#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-amendment-enforcement-of-fines-act-1998-sec-3"
+    },
+    {
+      "@id": "doc:au/c2006c00140",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Crimes Act 1914, and for related purposes",
+      "dc:identifier": [
+        "C2006C00140",
+        "No. 49 of 1998"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Amendment (Enforcement of Fines) Act 1998"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2006C00140",
+        "crimes-amendment-enforcement-of-fines-act-1998.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

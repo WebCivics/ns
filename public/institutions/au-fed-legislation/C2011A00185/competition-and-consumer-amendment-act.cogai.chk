@@ -1,0 +1,1851 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment Act (No. 1) 2011. ComLaw Authoritative Act C2011A00185
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-act-sec-3-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Relation between temporal intervals;
+  @action: Applicable to Schedule items;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Minister must be satisfied;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Prescribed process classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Deontic;
+  operator: takes;
+  summary: The disclosure of information is taken to have been made by the corporation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: The disclosure of information occurs during the intermediary's action.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: LTL;
+  operator: during;
+  summary: The disclosure of information occurs during the intermediary's action.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Diffusion;
+  operator: through;
+  summary: The disclosure of information spreads through the intermediary.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: The intermediary's action implies the disclosure of information.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion from obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The disclosure of information is an obligation.;
+  @action: The disclosure of information is not an obligation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: LTL;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: Diffusion;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: CogAI;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-1-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Private disclosure obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Minister must be satisfied;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Prescribed process classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Deontic;
+  operator: takes;
+  summary: The disclosure of information is taken to have been made by the corporation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: The disclosure of information occurs during the intermediary's action.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: LTL;
+  operator: during;
+  summary: The disclosure of information occurs during the intermediary's action.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Diffusion;
+  operator: through;
+  summary: The disclosure of information spreads through the intermediary.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: The intermediary's action implies the disclosure of information.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) a corporation makes a disclosure of information to a person (the intermediary); and (b) the corporation makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons; and (c) the information is so disclosed to one or more of those other persons (the recipients);;
+  @action: (d) the disclosure of the information to the recipients is taken to have been made by the corporation;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion from obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The disclosure of information is an obligation.;
+  @action: The disclosure of information is not an obligation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: LTL;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: Diffusion;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-4-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-4;
+  logic: CogAI;
+  operator: during;
+  summary: Temporal interval during which disclosure is disregarded;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Disclosure is disregarded during certain circumstances.;
+  @action: The accident, default of another person, or other cause beyond the control of the corporation falls within this temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-4-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Private disclosure obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Disclosures must be made to competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures to non-competitors are disregarded if made to avoid section 44ZZW application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Disclosure must be within a specific time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures must be made within a specific time frame if they are not made to competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: LTL;
+  operator: Recurring;
+  summary: Disclosure is recurring if it is made to non-competitors.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures are recurring if they are made to non-competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Diffusion;
+  operator: Through;
+  summary: Disclosure is through an intermediary if it is directed or requested by the corporation.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures are through an intermediary if they are directed or requested by the corporation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Corporation must make disclosure for market purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Corporations must make disclosure for market purposes if they are not making it to competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Court may consider factors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 6(2);
+  @action: Obligation to disclose information;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-3-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of pricing information to competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-1-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Disclosures must be made to competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures to non-competitors are disregarded if made to avoid section 44ZZW application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Disclosure must be within a specific time frame.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures must be made within a specific time frame if they are not made to competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: LTL;
+  operator: Recurring;
+  summary: Disclosure is recurring if it is made to non-competitors.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures are recurring if they are made to non-competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Diffusion;
+  operator: Through;
+  summary: Disclosure is through an intermediary if it is directed or requested by the corporation.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Disclosures are through an intermediary if they are directed or requested by the corporation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Corporation must make disclosure for market purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW applies to disclosures.;
+  @action: Corporations must make disclosure for market purposes if they are not making it to competitors.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Court may consider factors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 6(2);
+  @action: Obligation to disclose information;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-3-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The corporation has given the Commission a collective bargaining notice...;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-3-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Establishes an obligation on corporations to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-1-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-2;
+  logic: Deontic;
+  operator: !;
+  summary: Exemption from disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-3-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The corporation has given the Commission a collective bargaining notice...;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-3-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Establishes an obligation on corporations to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-4-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-4;
+  logic: Deontic;
+  operator: !;
+  summary: Negative permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-5-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-5;
+  logic: Deontic;
+  operator: !;
+  summary: Permission to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-ss-6-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-6;
+  logic: Deontic;
+  operator: permittedBy;
+  summary: Permitted by the Act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Disclosure of information by a corporation to a person is permitted if the information relates to goods or services supplied or likely to be supplied, or acquired or likely to be acquired.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-1-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation between disclosure and supply/acquisition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-2-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person is a competitor or potential competitor.;
+  @action: Disclosure of information is permitted.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for disclosure of information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Disclosure of information by the corporation to the person.;
+  @action: The temporal interval for disclosure is from now until the corporation knows or reasonably expects to know that the person is a competitor or potential competitor.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of information about competitors and potential competitors;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The disclosure of information by the corporation to the person.;
+  @action: Information about competitors and potential competitors is diffused through the market.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-2-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: CogAI;
+  operator: Inference;
+  summary: Inference from disclosure of information;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The corporation did not know, and could not reasonably be expected to have known, that the person was such a competitor or potential competitor.;
+  @action: The inference is that the person is a competitor or potential competitor.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-2;
+  logic: SHACL;
+  operator: Validate;
+  summary: Validation of disclosure of information;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The disclosure of information by the corporation to the person.;
+  @action: The validation is that the disclosure of information is valid.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure is made for the purposes of the joint venture or in the course of negotiations for the joint venture.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3a-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3a;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval condition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3A) Section 44ZZW does not apply to the disclosure of information between 2 or more corporations (the relevant corporations) if:;
+  @action: The disclosure occurs after the effective date.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3a-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3a;
+  logic: LTL;
+  operator: <=;
+  summary: Temporal interval condition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3A) Section 44ZZW does not apply to the disclosure of information between 2 or more corporations (the relevant corporations) if:;
+  @action: The disclosure occurs before the effective date.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3a-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3a;
+  logic: Deontic;
+  operator: =;
+  summary: Classifies disclosure as permitted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3A) Section 44ZZW does not apply to the disclosure of information between 2 or more corporations (the relevant corporations) if:;
+  @action: The disclosure is permitted.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3b-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3b;
+  logic: Deontic;
+  operator: Permit;
+  summary: Disclosure of information by a corporation to another person is permitted under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-3b-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-3b;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-10-ss-4-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Section 44ZZW does not apply to disclosure of information in connection with a contract or arrangement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-5-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-5;
+  logic: Deontic;
+  operator: !;
+  summary: Discloses conditions under which disclosure is permitted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The text states that disclosure is permitted if certain conditions are met;
+  @action: These conditions must be satisfied for disclosure to be allowed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-5-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-5;
+  logic: AllenInterval;
+  operator: <>;
+  summary: Defines temporal intervals for loan and credit provision;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The text mentions loans and credits provided by corporations;
+  @action: These provisions are relevant to determining whether disclosure is permitted;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-5-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-5;
+  logic: LTL;
+  operator: <>;
+  summary: Describes the relationship between loan provision and insolvency notification;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The text states that a corporation must have been notified of an insolvency situation before disclosing information;
+  @action: This notification is necessary for determining whether disclosure is permitted;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-5-logic-68 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-5;
+  logic: CogAI;
+  operator: <>;
+  summary: Analyzes the role of artificial intelligence in loan and credit provision;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The text mentions loans and credits provided by corporations, which may involve AI;
+  @action: This analysis is not directly applicable to the disclosure provision;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-5-logic-69 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-5;
+  logic: SHACL;
+  operator: <>;
+  summary: Validates the structure of loan and credit information;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The text mentions loans and credits provided by corporations, which may involve structured data;
+  @action: This validation is not directly applicable to the disclosure provision;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The corporation is notified of a borrower insolvency situation if there are reasonable grounds for suspecting that one or more of the following may be or become insolvent.;
+  @action: The corporation must be notified of the borrower insolvency situation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification if grounds exist;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: There are reasonable grounds for suspecting that one or more of the following may be or become insolvent.;
+  @action: The corporation must be notified of the borrower insolvency situation if there are reasonable grounds for suspecting that one or more of the following may be or become insolvent.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification by borrower or guarantor;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The notification is given by the borrower, or by a person referred to in subparagraph (a)(ii).;
+  @action: The corporation must be notified of the borrower insolvency situation by the borrower or guarantor.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification if grounds exist and person seeks to rely on subsection 44ZZU(2) or (4);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person bears an evidential burden in relation to the matters set out in that subsection on which the person seeks to rely.;
+  @action: The corporation must be notified of the borrower insolvency situation if the person bears an evidential burden in relation to the matters set out in that subsection on which the person seeks to rely.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST NOT;
+  summary: Must not be directly or indirectly knowingly concerned in, or party to, a contravention of section 44ZZW or 44ZZX;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person is not taken to be directly or indirectly knowingly concerned in, or party to, a contravention of section 44ZZW or 44ZZX merely because the person is a recipient of information disclosed in contravention of that section.;
+  @action: The corporation must not be directly or indirectly knowingly concerned in, or party to, a contravention of section 44ZZW or 44ZZX.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-ss-6-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-6;
+  logic: Deontic;
+  operator: MUST NOT;
+  summary: Must not be directly or indirectly knowingly involved in contravention of section 44ZZW or 44ZZX;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person is not taken to be directly or indirectly knowingly concerned in, or party to, a contravention of section 44ZZW or 44ZZX merely because the person is a recipient of information disclosed in contravention of that section.;
+  @action: The corporation must not be directly or indirectly knowingly involved in contravention of section 44ZZW or 44ZZX.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6a-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6a;
+  logic: Deontic;
+  operator: Grant;
+  summary: Commission grants permission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6b-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6b;
+  logic: Deontic;
+  operator: Cannot;
+  summary: Prohibition on granting authorisation for disclosure of information before determination.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6B) The Commission does not have power to grant an authorisation under subsection (6A) to a corporation to make a particular disclosure of information if the disclosure occurred before the Commission makes a determination in respect of the application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6b-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6b;
+  logic: AllenInterval;
+  operator: Before;
+  summary: Disclosure must occur before Commission's determination.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6B) The Commission does not have power to grant an authorisation under subsection (6A) to a corporation to make a particular disclosure of information if the disclosure occurred before the Commission makes a determination in respect of the application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6b-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6b;
+  logic: LTL;
+  operator: Recurring;
+  summary: Disclosure must be recurring for Commission's power to apply.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (6B) The Commission does not have power to grant an authorisation under subsection (6A) to a corporation to make a particular disclosure of information if the disclosure occurred before the Commission makes a determination in respect of the application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6b-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6b;
+  logic: Diffusion;
+  operator: None;
+  summary: No diffusion logic applies.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6B) The Commission does not have power to grant an authorisation under subsection (6A) to a corporation to make a particular disclosure of information if the disclosure occurred before the Commission makes a determination in respect of the application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6b-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6b;
+  logic: CogAI;
+  operator: None;
+  summary: No CogAI logic applies.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (6B) The Commission does not have power to grant an authorisation under subsection (6A) to a corporation to make a particular disclosure of information if the disclosure occurred before the Commission makes a determination in respect of the application.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6c-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6c;
+  logic: Deontic;
+  operator: Permit;
+  summary: Commission may grant a single authorisation in respect of all the disclosures or separate authorisations for any one or more of the disclosures.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-5-ss-6c-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-6c;
+  logic: LinearLogic;
+  operator: or;
+  summary: Alternative authorisation options;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5c-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5c;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibition on unauthorized disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5C) The Commission must not make a determination...;
+  @action: ...the proposed disclosure should be allowed to be made.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5c-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5c;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Commission's obligation to consider public benefit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5C) The Commission must not make a determination...;
+  @action: ...the proposed disclosure should be allowed to be made.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5c-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5c;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Temporal overlap between authorization and public benefit consideration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5C) The Commission must not make a determination...;
+  @action: ...the proposed disclosure should be allowed to be made.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5c-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5c;
+  logic: LTL;
+  operator: RecurringTrace;
+  summary: Recurring trace of public benefit consideration;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5C) The Commission must not make a determination...;
+  @action: ...the proposed disclosure should be allowed to be made.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5c-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5c;
+  logic: Diffusion;
+  operator: InformationFlow;
+  summary: Information flow between authorization and public benefit consideration;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5C) The Commission must not make a determination...;
+  @action: ...the proposed disclosure should be allowed to be made.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5d-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5d;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of authorization under subsection 88(6A);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5D) The Commission must not make a determination...;
+  @action: ...unless the Commission is satisfied in all the circumstances:;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5d-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5d;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for authorization under subsection 88(6A);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5D) The Commission must not make a determination...;
+  @action: ...unless the Commission is satisfied in all the circumstances: (a) that the proposed disclosure would result, or be likely to result, in a benefit to the public;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5d-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5d;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace for authorization under subsection 88(6A);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5D) The Commission must not make a determination...;
+  @action: ...unless the Commission is satisfied in all the circumstances: (a) that the proposed disclosure would result, or be likely to result, in a benefit to the public;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5d-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5d;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of information under subsection 88(6A);
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5D) The Commission must not make a determination...;
+  @action: ...unless the Commission is satisfied in all the circumstances: (a) that the proposed disclosure would result, or be likely to result, in a benefit to the public;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-6-2-ss-5d-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2-ss-5d;
+  logic: CogAI;
+  operator: Reasoning;
+  summary: Artificial intelligence reasoning for authorization under subsection 88(6A);
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5D) The Commission must not make a determination...;
+  @action: ...unless the Commission is satisfied in all the circumstances: (a) that the proposed disclosure would result, or be likely to result, in a benefit to the public;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-8-2-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-2;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces a provision with another;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-11-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: REPEAL;
+  summary: Imposes a duty to repeal the heading.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-12-2-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-2;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: takes;
+  summary: The law takes action on behalf of the discloser.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to person's agent.;
+  @action: Disclosure is taken to have been made by discloser to that person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: extension;
+  summary: The law extends the scope of the obligation to include disclosures to agents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to person's agent.;
+  @action: Disclosure is taken to have been made by discloser to that person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: extension;
+  summary: The law extends the scope of the obligation to include disclosures to agents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to another person in the same capacity.;
+  @action: Disclosure is taken to have been made by discloser to that other person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information to competitors or potential competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Disclosure is private if it overlaps with a particular market.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-2-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-2;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of disclosure based on agency relationship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure made in capacity as agent;
+  @action: Disclosure disregarded;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Duty exists;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Private disclosure made to competitors;
+  @action: Obligation to determine;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-3-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The first person makes a disclosure of information to the intermediary.;
+  @action: The disclosure of the information is taken to have been made by the first person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-3-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Disclosure overlaps with recipient disclosure;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (d) the disclosure of the information to the recipients is taken to have been made by the first person;;
+  @action: The disclosure of the information to the intermediary is disregarded unless it overlaps with the recipient disclosure.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-3-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-3;
+  logic: Deontic;
+  operator: Permission;
+  summary: Intermediary may disclose information to others;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the first person makes the disclosure to the intermediary for the purpose of the intermediary disclosing (or arranging for the disclosure of) the information to one or more other persons;;
+  @action: The intermediary is permitted to disclose the information to others.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-3-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State obligation to regulate disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Competition and Consumer Amendment Act C2011A00185;
+  @action: The state is obligated to regulate the disclosure.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-4-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-4;
+  logic: Deontic;
+  operator: excludedBy;
+  summary: Exclusion by accident, default, or other cause beyond control.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: takes;
+  summary: The law takes action on behalf of the discloser.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to person's agent.;
+  @action: Disclosure is taken to have been made by discloser to that person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: extension;
+  summary: The law extends the scope of the obligation to include disclosures to agents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to person's agent.;
+  @action: Disclosure is taken to have been made by discloser to that person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: extension;
+  summary: The law extends the scope of the obligation to include disclosures to agents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Discloser makes disclosure to another person in the same capacity.;
+  @action: Disclosure is taken to have been made by discloser to that other person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information to competitors or potential competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-1-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Disclosure is private if it overlaps with a particular market.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-2-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-2;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of disclosure based on agency relationship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure made in capacity as agent;
+  @action: Disclosure disregarded;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-16-2-ss-2-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Duty exists;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Private disclosure made to competitors;
+  @action: Obligation to determine;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-18-ss-3-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of pricing information to competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-18-ss-1-logic-117 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of information about Division 1A goods or services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-18-ss-2-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Court may consider factors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-18-ss-3-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of pricing information to competitors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-1-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Authorized by law.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-2-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Disclosure of information to related bodies corporate is permitted.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-3-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Notice given;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-4-logic-123 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an authorisation under section 88 (other than subsection 88(6A)) applies to or in relation to the person; and (b) the authorisation is in force;;
+  @action: The disclosure of the information is made in the course of engaging in conduct that is covered by the authorisation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-4-logic-124 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exemption from section 44ZZW or 44ZZX under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) an authorisation under section 88 (other than subsection 88(6A)) applies to or in relation to the person; and (b) the authorisation is in force;;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-4-logic-125 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: LTL;
+  operator: Temporal Interval;
+  summary: Temporal interval for disclosure under section 44ZZW or 44ZZX.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) the disclosure of the information is made in the course of engaging in conduct that is covered by the authorisation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-4-logic-126 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-4;
+  logic: Deontic;
+  operator: Authorization;
+  summary: Authorization under section 88(6A) for disclosure under section 44ZZW or 44ZZX.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Disclosure covered by notification under section 93;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-20-ss-5-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20-ss-5;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-1-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Disclosure of information by a person to another is permitted if the information relates to goods or services supplied or likely to be supplied, or acquired or likely to be acquired.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-1-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval for disclosure of information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-2-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted by the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The recipient is a competitor or potential competitor.;
+  @action: Disclosure is permitted.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-2-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-2;
+  logic: Epistemic;
+  operator: Ignorance;
+  summary: Lack of knowledge about the recipient's status.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: The first person did not know, and could not reasonably be expected to have known, that the recipient was such a competitor or potential competitor.;
+  @action: Disclosure is permitted due to ignorance.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-2-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-2;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of disclosure to competitors.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The recipient is a competitor or potential competitor in the market referred to in that section.;
+  @action: Disclosure is permitted due to recurring trace.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-2-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-2;
+  logic: Argumentation;
+  operator: Inference;
+  summary: Inference of permission from definition.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Section 44ZZW does not apply to the disclosure of information by a person (the first person) to another person (the recipient).;
+  @action: Disclosure is permitted due to inference.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval of disclosure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The disclosure occurs in the market referred to in that section.;
+  @action: Disclosure is permitted due to temporal interval.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to disclose information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The disclosure is made for the purposes of the joint venture or in the course of negotiations for the joint venture.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between disclosure and joint venture.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The disclosure is made for the purposes of the joint venture or in the course of negotiations for the joint venture.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace of participants in a joint venture.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The disclosure is to one or more participants or proposed participants in the joint venture, and is not to any other person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: CogAI;
+  operator: Knowledge representation;
+  summary: Knowledge representation of joint ventures.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The disclosure is made for the purposes of the joint venture or in the course of negotiations for the joint venture.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3;
+  logic: SHACL;
+  operator: Schema validation;
+  summary: Validation of schema against joint venture data.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The disclosure is to one or more participants or proposed participants in the joint venture, and is not to any other person.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3a-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3a;
+  logic: Deontic;
+  operator: !;
+  summary: Indicates that disclosure is permitted under certain conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-3b-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-3b;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-22-ss-4-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22-ss-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-5-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-5;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval condition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the disclosure is for the purpose of one or more of the relevant persons considering whether to take measures to return the borrower to solvency;
+  @action: the disclosure is made after the borrower has been notified of a borrower insolvency situation;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-5-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-5;
+  logic: LTL;
+  operator: <=;
+  summary: Temporal interval condition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the disclosure is for the purpose of one or more of the relevant persons considering whether to take measures to return the borrower to solvency;
+  @action: the disclosure is made before the borrower becomes insolvent;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-5-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-5;
+  logic: Deontic;
+  operator: =;
+  summary: Classifies deontic type;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: at least one of the relevant persons has provided a loan or credit to another person (the borrower);
+  @action: has provided a loan or credit to another person (the borrower);
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-6-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: There are reasonable grounds for suspecting that the borrower or someone who gave a guarantee may become insolvent.;
+  @action: The relevant person must be notified of the situation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-6-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notification if notified by the borrower or guarantor;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The notification is given by the borrower, or by a person referred to in subparagraph (a)(ii).;
+  @action: The relevant person must be notified of the situation.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-6-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-6;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Notification must occur before the borrower becomes insolvent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: If: (a) proceedings are brought against a person in respect of section 44ZZW or 44ZZX; and (b) the person seeks to rely on subsection 44ZZU(2) or (4), or on a subsection of section 44ZZY or 44ZZZ;;
+  @action: The notification must occur before the borrower becomes insolvent.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-6-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Person bears evidential burden if seeking to rely on subsections of section 44ZZY or 44ZZZ;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: If: (a) proceedings are brought against a person in respect of section 44ZZW or 44ZZX; and (b) the person seeks to rely on subsection 44ZZU(2) or (4), or on a subsection of section 44ZZY or 44ZZZ;;
+  @action: The person bears an evidential burden.;
+}
+
+competition-and-consumer-amendment-act-sch-1-sec-24-ss-6-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Person must provide evidence if seeking to rely on subsections of section 44ZZY or 44ZZZ;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: If: (a) proceedings are brought against a person in respect of section 44ZZW or 44ZZX; and (b) the person seeks to rely on subsection 44ZZU(2) or (4), or on a subsection of section 44ZZY or 44ZZZ;;
+  @action: The person must provide evidence.;
+}

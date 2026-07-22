@@ -1,0 +1,129 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment (Abolition of Limited Merits Review) Act 2017
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Competition and Consumer Amendment (Abolition of Limited Merits Review) Act 2017.;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits merits review;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specified phrase;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-4-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits merits review by Tribunal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-5-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendment applies to decisions made before, on or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-6-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-21-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prevents an application for merits review.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subitem (3) prevents an application for merits review by the Tribunal of the decision on the remitted matter.;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-21-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines a temporal interval for the application of merits review.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A matter may be remitted by the Tribunal following merits review by the Tribunal of such a decision if an application for merits review was made before 21 June 2017.;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-21-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Defines a recurring trace for the application of merits review.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: An application for merits review by the Tribunal of the decision on the remitted matter is prevented if an application was made before 21 June 2017.;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-21-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffuses information about the application of merits review.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The decision on the remitted matter is not subject to merits review if an application was made before 21 June 2017.;
+}
+
+competition-and-consumer-amendment-abolition-of-limited-merits-review-act-2017-sch-1-sec-21-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: CogAI;
+  operator: Inferential;
+  summary: Inferentially relates the application of merits review to the decision on the remitted matter.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Tribunal may remit a matter following merits review by the Tribunal of such a decision if an application for merits review was made before 21 June 2017.;
+}

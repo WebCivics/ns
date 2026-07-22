@@ -1,0 +1,335 @@
+# CogAI proposed logic-routing chunks — Australian Citizenship Amendment (Citizenship Testing) Act 2007
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires a pledge of commitment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires satisfying general eligibility criteria;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Possesses a basic knowledge of the English language;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (e);
+  @action: (e);
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Has an adequate knowledge of Australia and of the responsibilities and privileges of Australian citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (f);
+  @action: (f);
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Is likely to reside, or to continue to reside, in Australia or to maintain a close and continuing association with Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (g);
+  @action: (g);
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Is of good character at the time of the Minister's decision on the application;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (h);
+  @action: (h);
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2a-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must have a certain condition met;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2A) Paragraphs (2)(d), (e) and (f);
+  @action: (a) sat a test approved in a determination under section 23A; and (b) successfully completed that test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2a-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2a;
+  logic: AllenInterval;
+  operator: BEFORE;
+  summary: The condition must be met before making an application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2A) Paragraphs (2)(d), (e) and (f);
+  @action: the Minister is satisfied that the person has, before making the application: sat a test approved in a determination under section 23A; and successfully completed that test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2a-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2a;
+  logic: LTL;
+  operator: BEFORE;
+  summary: The condition must be met before making an application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2A) Paragraphs (2)(d), (e) and (f);
+  @action: the Minister is satisfied that the person has, before making the application: sat a test approved in a determination under section 23A; and successfully completed that test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2a-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2a;
+  logic: Diffusion;
+  operator: BEFORE;
+  summary: The condition must be met before making an application;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2A) Paragraphs (2)(d), (e) and (f);
+  @action: the Minister is satisfied that the person has, before making the application: sat a test approved in a determination under section 23A; and successfully completed that test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-4-ss-2a-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-2a;
+  logic: CogAI;
+  operator: BEFORE;
+  summary: The condition must be met before making an application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2A) Paragraphs (2)(d), (e) and (f);
+  @action: the Minister is satisfied that the person has, before making the application: sat a test approved in a determination under section 23A; and successfully completed that test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-1-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to approve a test;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must specify eligibility criteria;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-3-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must satisfy eligibility criteria;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-4-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be a permanent resident;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of subsection (3), the determination may provide that a person is not eligible to sit the test unless the person is a permanent resident and the Minister is satisfied of the identity of the person.;
+  @action: The person must be a permanent resident;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-4-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-4;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Person must have been a permanent resident for a certain period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of subsection (3), the determination may provide that a person is not eligible to sit the test unless the person is a permanent resident and the Minister is satisfied of the identity of the person.;
+  @action: The person has been a permanent resident for at least some period;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-4;
+  logic: LTL;
+  operator: >=;
+  summary: Person must have been a permanent resident for a certain period;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of subsection (3), the determination may provide that a person is not eligible to sit the test unless the person is a permanent resident and the Minister is satisfied of the identity of the person.;
+  @action: The person has been a permanent resident for at least some period;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-4;
+  logic: Diffusion;
+  operator: IS_A;
+  summary: Permanent residency is a requirement that must be met by all persons sitting the test;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of subsection (3), the determination may provide that a person is not eligible to sit the test unless the person is a permanent resident and the Minister is satisfied of the identity of the person.;
+  @action: Permanent residency is a requirement for all persons sitting the test;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-4;
+  logic: CogAI;
+  operator: IS_A;
+  summary: The determination provides a clear definition of permanent residency;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) For the purposes of subsection (3), the determination may provide that a person is not eligible to sit the test unless the person is a permanent resident and the Minister is satisfied of the identity of the person.;
+  @action: The determination provides a clear definition of permanent residency;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-5-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-5;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies does not limit subsection (3);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) does not limit (3);
+  @action: (5) does not limit (4);
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-23a-ss-6-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-23a-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Implies an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-6-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Request for personal identifiers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-6-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Class of persons authorized under subsection (4);
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-9-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: includes;
+  summary: Fee obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-11-logic-25 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Subsection (1) obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 53 subsection (1);
+  @action: Exemption for approval of citizenship test function;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-13-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Preservation;
+  summary: Preserves the effect of requests and authorizations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a request was made under subsection 40(1) of the Australian Citizenship Act 2007 before the commencement of this item;;
+  @action: the request has effect after that commencement as if it were a request made under that subsection after that commencement.;
+}
+
+australian-citizenship-amendment-citizenship-testing-act-2007-sch-1-sec-13-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Preservation;
+  summary: Preserves the effect of authorizations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) An authorisation in force under subsection 40(3) or (4) of the Australian Citizenship Act 2007 immediately before the commencement of this item has effect after that commencement as if it were an authorisation made under that subsection immediately after that commencement.;
+  @action: the request has effect after that commencement as if it were a request made under that subsection after that commencement.;
+}

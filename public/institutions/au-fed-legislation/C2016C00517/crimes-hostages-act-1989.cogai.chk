@@ -1,0 +1,388 @@
+# CogAI proposed logic-routing chunks — Crimes (Hostages) Act 1989
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-hostages-act-1989-article-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits taking hostages.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: States must impose penalties.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State Party has an obligation to take measures.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-4-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-4;
+  logic: Deontic;
+  operator: shall;
+  summary: Imperative mood;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-5-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-5;
+  logic: Deontic;
+  operator: shall;
+  summary: Imposes a duty on States to establish jurisdiction.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-6-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: States must take measures.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-7-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State Party has an obligation to communicate.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-8-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State Party has an obligation to submit the case.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The State Party is required to do so.;
+  @action: Submission of the case is mandatory.;
+}
+
+crimes-hostages-act-1989-article-8-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-8;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The obligation applies to all stages of the proceedings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The obligation is not limited to specific stages.;
+  @action: The obligation overlaps with all stages of the proceedings.;
+}
+
+crimes-hostages-act-1989-article-8-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-8;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Submission of the case implies prosecution.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Submission of the case is required.;
+  @action: Prosecution follows from submission of the case.;
+}
+
+crimes-hostages-act-1989-article-9-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-9;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits extradition request if discriminatory grounds exist.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Request for extradition shall not be granted...;
+  @action: ...if the requested State Party has substantial grounds for believing...;
+}
+
+crimes-hostages-act-1989-article-9-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-9;
+  logic: AllenInterval;
+  operator: during;
+  summary: Extradition request denied if discriminatory grounds exist during communication with the person.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ...the person’s position may be prejudiced: (ii) for the reason that communication with him by...;
+  @action: ...if the requested State Party has substantial grounds for believing...;
+}
+
+crimes-hostages-act-1989-article-9-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-9;
+  logic: LTL;
+  operator: until;
+  summary: Extradition request denied if discriminatory grounds exist until communication with the person can be effected.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: ...the person’s position may be prejudiced: (i) for any of the reasons mentioned in subparagraph...;
+  @action: ...if the requested State Party has substantial grounds for believing...;
+}
+
+crimes-hostages-act-1989-article-9-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-9;
+  logic: Diffusion;
+  operator: through;
+  summary: Extradition request denied if discriminatory grounds exist through communication with the person.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: ...the appropriate authorities of the State entitled to exercise rights of protection cannot be effected.;
+  @action: ...if the requested State Party has substantial grounds for believing...;
+}
+
+crimes-hostages-act-1989-article-9-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-9;
+  logic: CogAI;
+  operator: by;
+  summary: Extradition request denied if discriminatory grounds exist by reason of communication with the person.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: ...the appropriate authorities of the State entitled to exercise rights of protection cannot be effected.;
+  @action: ...if the requested State Party has substantial grounds for believing...;
+}
+
+crimes-hostages-act-1989-article-10-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-10;
+  logic: Deontic;
+  operator: undertaking;
+  summary: States Parties undertake...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-11-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: States have an obligation to provide assistance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-12-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-12;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits hostage-taking in armed conflicts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-13-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-13;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-14-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-14;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits violation of territorial integrity or political independence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-15-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-15;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits invoking other treaties with respect to another State Party that is also a party to this Convention.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State Party may not invoke those Treaties...;
+  @action: ...with respect to another State Party to this Convention which is not a party to those treaties.;
+}
+
+crimes-hostages-act-1989-article-15-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-15;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: States that the application of other treaties on Asylum overlaps with the provisions of this Convention.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: ...as between the States which are parties to those Treaties;;
+  @action: ...but a State Party to this Convention may not invoke those Treaties...;
+}
+
+crimes-hostages-act-1989-article-15-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-15;
+  logic: LTL;
+  operator: Until;
+  summary: States that the application of other treaties on Asylum is until the adoption of this Convention.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: on Asylum, in force at the date of the adoption of this Convention...;
+  @action: ...as between the States which are parties to those Treaties; but a State Party to this Convention may not invoke those Treaties...;
+}
+
+crimes-hostages-act-1989-article-15-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-15;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permits a State Party to invoke other treaties with respect to another State Party that is also a party to this Convention.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...but a State Party to this Convention may not invoke those Treaties...;
+  @action: ...with respect to another State Party to this Convention which is not a party to those treaties.;
+}
+
+crimes-hostages-act-1989-article-15-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-15;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on a State Party to invoke other treaties with respect to another State Party that is also a party to this Convention.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...but a State Party to this Convention may not invoke those Treaties...;
+  @action: ...with respect to another State Party to this Convention which is not a party to those treaties.;
+}
+
+crimes-hostages-act-1989-article-16-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-16;
+  logic: Deontic;
+  operator: MUST;
+  summary: States Parties must submit disputes to arbitration or the International Court of Justice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-17-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-17;
+  logic: Deontic;
+  operator: MUST;
+  summary: States are required to ratify or accede.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-article-18-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-18;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement requires temporal intervals;
+  @action: Temporal intervals are required for commencement;
+}
+
+crimes-hostages-act-1989-article-19-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-19;
+  logic: Deontic;
+  operator: Deny;
+  summary: Denial of membership;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Membership in the Convention;
+  @action: No longer a member;
+}
+
+crimes-hostages-act-1989-article-20-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: article-20;
+  logic: Deontic;
+  operator: OBLIGES;
+  summary: The United Nations is obligated to deposit certified copies of the Convention.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Convention was signed by the undersigned.;
+  @action: The Secretary-General shall send certified copies thereof to all States.;
+}
+
+crimes-hostages-act-1989-sec-6-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: Deontic;
+  operator: imposes;
+  summary: States an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-hostages-act-1989-sec-19-2-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19-2;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Describes the Act's purpose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act revises statute law;
+  @action: Purpose stated;
+}

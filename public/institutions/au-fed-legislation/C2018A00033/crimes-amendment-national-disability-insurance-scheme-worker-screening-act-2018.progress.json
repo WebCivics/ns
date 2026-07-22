@@ -1,0 +1,537 @@
+{
+  "version": 6,
+  "sourceSha256": "4604705857aad717eb137e24817dea7f29edb6bf5f2d0435a5bd69dbd6ca67ad",
+  "model": "llama3.2:3b-instruct-q4_K_M",
+  "segmentConfig": {
+    "maxSegmentChars": 8000,
+    "overlapChars": 500,
+    "maxItems": 1
+  },
+  "completed": {
+    "b5fcdfb11bd25f01759c672e": {
+      "keys": [
+        "sec-1"
+      ],
+      "characters": 196,
+      "results": {
+        "sec-1": {
+          "deonticType": "Obligation",
+          "summary": "Short title of the Act",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "4d57def04afcf404e679000b": {
+      "keys": [
+        "sec-2"
+      ],
+      "characters": 306,
+      "results": {
+        "sec-2": {
+          "deonticType": "Undertaking",
+          "summary": "Commencement rules for provisions in the Act.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "69e394434aa23226543b9975": {
+      "keys": [
+        "sec-1-2"
+      ],
+      "characters": 104,
+      "results": {
+        "sec-1-2": {
+          "deonticType": "Undertaking",
+          "summary": "The day this Act receives the Royal Assent.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": [
+            {
+              "logic": "AllenInterval",
+              "operator": "Applicable",
+              "summary": "Requires a relation between temporal intervals",
+              "premise": "Specifies the day of Royal Assent",
+              "conclusion": "Establishes the commencement date",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "fa35e3ea29afa7d7670af217": {
+      "keys": [
+        "sec-22"
+      ],
+      "characters": 0,
+      "results": {
+        "sec-22": {
+          "deonticType": "Undertaking",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "d96709b109738688d381f51c": {
+      "keys": [
+        "sec-2-2"
+      ],
+      "characters": 226,
+      "results": {
+        "sec-2-2": {
+          "deonticType": "Undertaking",
+          "summary": "Commencement provision for Schedule 1",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "323d4b2b9f88288c530d1be8": {
+      "keys": [
+        "sec-22-2"
+      ],
+      "characters": 341,
+      "results": {
+        "sec-22-2": {
+          "deonticType": "Undertaking",
+          "summary": "Note: This table relates only to the provisions of this Act as originally enacted.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "e73ae22d786392c4c06127d8": {
+      "keys": [
+        "sec-3"
+      ],
+      "characters": 340,
+      "results": {
+        "sec-3": {
+          "deonticType": "Undertaking",
+          "summary": "Legislation in schedules is amended or repealed according to its terms.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "a37e458599577ef6f0ef3715": {
+      "keys": [
+        "sch-1-sec-1"
+      ],
+      "characters": 107,
+      "results": {
+        "sch-1-sec-1": {
+          "deonticType": "Obligation",
+          "summary": "Repeal a heading and substitute it with a new one.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 0.0,
+          "logicApplications": []
+        }
+      }
+    },
+    "a1beaf6b3188e1d5b6ff2a96": {
+      "keys": [
+        "sch-1-sec-2-ss-1"
+      ],
+      "characters": 91,
+      "results": {
+        "sch-1-sec-2-ss-1": {
+          "deonticType": "Obligation",
+          "summary": "Conduct reviews of the operation of this Subdivision.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Obligation to conduct reviews.",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "43dfb1792cdbc54608e5ffca": {
+      "keys": [
+        "sch-1-sec-2-ss-2"
+      ],
+      "characters": 71,
+      "results": {
+        "sch-1-sec-2-ss-2": {
+          "deonticType": "Undertaking",
+          "summary": "Completion of first review by 31 December 2019",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Obligation to complete review by December 31, 2019",
+              "premise": "(2) The first review must be completed not later than 31 December 2019.",
+              "conclusion": "The first review must be completed by December 31, 2019.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "AllenInterval",
+              "operator": "CONTAINS",
+              "summary": "Temporal interval for review completion",
+              "premise": "(2) The first review must be completed not later than 31 December 2019.",
+              "conclusion": "The review completion is contained within the temporal interval from January 1, 2020 to December 31, 2019.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "LTL",
+              "operator": "CONTAINS",
+              "summary": "Temporal trace for review completion",
+              "premise": "(2) The first review must be completed not later than 31 December 2019.",
+              "conclusion": "The review completion is part of the temporal trace from January 1, 2020 to December 31, 2019.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "Diffusion",
+              "operator": "CONTAINS",
+              "summary": "Temporal diffusion for review completion",
+              "premise": "(2) The first review must be completed not later than 31 December 2019.",
+              "conclusion": "The review completion is part of the temporal diffusion from January 1, 2020 to December 31, 2019.",
+              "confidence": 1.0
+            },
+            {
+              "logic": "CogAI",
+              "operator": "CONTAINS",
+              "summary": "Artificial intelligence involvement in review completion",
+              "premise": "(2) The first review must be completed not later than 31 December 2019.",
+              "conclusion": "The review completion is part of the artificial intelligence involvement from January 1, 2020 to December 31, 2019.",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "b245a9363e1dae7dd647849e": {
+      "keys": [
+        "sch-1-sec-2-ss-3"
+      ],
+      "characters": 72,
+      "results": {
+        "sch-1-sec-2-ss-3": {
+          "deonticType": "Undertaking",
+          "summary": "Second review must be completed by December 31, 2022.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Obligation to complete review by December 31, 2022.",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "561d9f4fbec970ca78b22e59": {
+      "keys": [
+        "sch-1-sec-2-ss-4"
+      ],
+      "characters": 78,
+      "results": {
+        "sch-1-sec-2-ss-4": {
+          "deonticType": "Obligation",
+          "summary": "The Minister must prepare a written report about each review.",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Obligation to prepare a written report",
+              "premise": "",
+              "conclusion": "The Minister must cause a written report about each review to be prepared.",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "9b1ff760853ca3b792ea8f8d": {
+      "keys": [
+        "sch-1-sec-2-ss-5"
+      ],
+      "characters": 313,
+      "results": {
+        "sch-1-sec-2-ss-5": {
+          "deonticType": "Obligation",
+          "summary": "Minister must provide a copy of each report to each House of Parliament within 15 sitting days.",
+          "mustProvide": "true",
+          "conditions": [],
+          "crossReferences": [],
+          "confidence": 1.0,
+          "logicApplications": [
+            {
+              "logic": "Deontic",
+              "operator": "MUST",
+              "summary": "Expresses a duty",
+              "premise": "",
+              "conclusion": "",
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "classifications": {
+    "sec-22-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Note: This table relates only to the provisions of this Act as originally enacted.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-2-ss-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Completion of first review by 31 December 2019",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Obligation to complete review by December 31, 2019",
+          "premise": "(2) The first review must be completed not later than 31 December 2019.",
+          "conclusion": "The first review must be completed by December 31, 2019.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "AllenInterval",
+          "operator": "CONTAINS",
+          "summary": "Temporal interval for review completion",
+          "premise": "(2) The first review must be completed not later than 31 December 2019.",
+          "conclusion": "The review completion is contained within the temporal interval from January 1, 2020 to December 31, 2019.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "LTL",
+          "operator": "CONTAINS",
+          "summary": "Temporal trace for review completion",
+          "premise": "(2) The first review must be completed not later than 31 December 2019.",
+          "conclusion": "The review completion is part of the temporal trace from January 1, 2020 to December 31, 2019.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "Diffusion",
+          "operator": "CONTAINS",
+          "summary": "Temporal diffusion for review completion",
+          "premise": "(2) The first review must be completed not later than 31 December 2019.",
+          "conclusion": "The review completion is part of the temporal diffusion from January 1, 2020 to December 31, 2019.",
+          "confidence": 1.0
+        },
+        {
+          "logic": "CogAI",
+          "operator": "CONTAINS",
+          "summary": "Artificial intelligence involvement in review completion",
+          "premise": "(2) The first review must be completed not later than 31 December 2019.",
+          "conclusion": "The review completion is part of the artificial intelligence involvement from January 1, 2020 to December 31, 2019.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Commencement rules for provisions in the Act.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-2-ss-4": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "The Minister must prepare a written report about each review.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Obligation to prepare a written report",
+          "premise": "",
+          "conclusion": "The Minister must cause a written report about each review to be prepared.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-1-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "The day this Act receives the Royal Assent.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": [
+        {
+          "logic": "AllenInterval",
+          "operator": "Applicable",
+          "summary": "Requires a relation between temporal intervals",
+          "premise": "Specifies the day of Royal Assent",
+          "conclusion": "Establishes the commencement date",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-2-ss-5": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "true",
+      "summary": "Minister must provide a copy of each report to each House of Parliament within 15 sitting days.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Expresses a duty",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-2-ss-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Conduct reviews of the operation of this Subdivision.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Obligation to conduct reviews.",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sch-1-sec-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Repeal a heading and substitute it with a new one.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sch-1-sec-2-ss-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Second review must be completed by December 31, 2022.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 1.0,
+      "logicApplications": [
+        {
+          "logic": "Deontic",
+          "operator": "MUST",
+          "summary": "Obligation to complete review by December 31, 2022.",
+          "premise": "",
+          "conclusion": "",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "sec-1": {
+      "deonticType": "Obligation",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Short title of the Act",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-2-2": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Commencement provision for Schedule 1",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-3": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "Legislation in schedules is amended or repealed according to its terms.",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    },
+    "sec-22": {
+      "deonticType": "Undertaking",
+      "borneBy": "",
+      "heldBy": "",
+      "mustProvide": "",
+      "summary": "",
+      "conditions": [],
+      "crossReferences": [],
+      "confidence": 0.0,
+      "logicApplications": []
+    }
+  }
+}

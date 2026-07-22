@@ -1,0 +1,3865 @@
+# CogAI proposed logic-routing chunks — Australian Broadcasting Corporation Act 1983
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-broadcasting-corporation-act-1983-sec-3-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Definitions for key terms in the Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: DescriptionLogic;
+  operator: defined;
+  summary: Defines key terms.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3a-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a-ss-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Digital media service is a subclass of service;
+  @action: Service is a superclass of digital media service;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3a-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a-ss-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Defines content for digital media service;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3a-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a-ss-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Explicit class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3a-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: Deontic;
+  operator: MUST HAVE;
+  summary: Must have a seal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to take judicial notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The seal of the Corporation is a mark of authenticity.;
+  @action: All courts, judges and persons acting judicially must take judicial notice.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-3-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between judicial notice and document sealing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The seal of the Corporation appears on a document.;
+  @action: The document was sealed during the time the judicial notice is taken.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: Diffusion;
+  operator: must;
+  summary: Diffusion of information about the seal of the Corporation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: All courts, judges and persons acting judicially take judicial notice of the seal of the Corporation.;
+  @action: The information about the seal of the Corporation is diffused to all relevant parties.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: CogAI;
+  operator: must;
+  summary: Artificial intelligence application of the obligation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: All courts, judges and persons acting judicially take judicial notice of the seal of the Corporation.;
+  @action: The artificial intelligence system must apply the obligation to all relevant parties.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-5-ss-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: SHACL;
+  operator: must;
+  summary: Validation of the seal of the Corporation using SHACL;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: The seal of the Corporation is a mark of authenticity.;
+  @action: The seal of the Corporation must be validated using SHACL.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-1-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Contains specific types of programs;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) broadcasting programs that contribute to a sense of national identity and inform and entertain, and reflect the cultural diversity of, the Australian community;;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Implication for citizens living abroad;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (ii) broadcasting programs of an educational nature; Establishment, functions and management of the Corporation Part II Section 6 Australian Broadcasting Corporation Act 1983;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: Diffusion;
+  operator: SPREADS;
+  summary: Spreads information about Australia;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (i) encourage awareness of Australia and an international understanding of Australian attitudes on world affairs;;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-1-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-1;
+  logic: CogAI;
+  operator: REQUIRES;
+  summary: Requires digital media services;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (b) to provide digital media services;;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6-ss-2-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Corporation must take account of certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6a-ss-1-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6a-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: Corporation has obligation to provide datacasting service.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-6a-ss-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6a-ss-2;
+  logic: Deontic;
+  operator: Implies;
+  summary: Obligation implies no obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2);
+  @action: No obligation to provide datacasting service beyond licence requirements.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-8-ss-1-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-1;
+  logic: Deontic;
+  operator: Duty;
+  summary: Board has a duty to perform Corporation functions efficiently.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-8-ss-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must consider policy;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-8-ss-3-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: Deontic;
+  operator: ¬;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) or (2);
+  @action: No duty imposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-9-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the provision as a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Provision starts with 'There shall be';
+  @action: Obligation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a mandatory duty.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Managing Director must act in accordance with policies and directions given by the Board.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) All acts and things done in the name of, or on behalf of, the Corporation by the Managing Director.;
+  @action: All acts and things done by the Managing Director are taken to have been done by the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-3-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) All acts and things done in the name of, or on behalf of, the Corporation by the Managing Director.;
+  @action: The Managing Director's actions overlap with the Corporation's actions.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-3-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) All acts and things done in the name of, or on behalf of, the Corporation by the Managing Director.;
+  @action: If the Managing Director does something, then it is as if the Corporation did it.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-3-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) All acts and things done in the name of, or on behalf of, the Corporation by the Managing Director.;
+  @action: The Managing Director's actions diffuse to the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-10-ss-3-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: CogAI;
+  operator: CogAI;
+  summary: Cognitive agent;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) All acts and things done in the name of, or on behalf of, the Corporation by the Managing Director.;
+  @action: The Managing Director is a cognitive agent that acts on behalf of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-11-ss-1-logic-32 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-ss-1;
+  logic: Deontic;
+  operator: establish;
+  summary: Create obligation to establish Advisory Council;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Board shall...;
+  @action: The Board must establish an Advisory Council.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-11-ss-3-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-3;
+  logic: Deontic;
+  operator: advises;
+  summary: Advisory duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-11-ss-4-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide advice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-11-ss-6-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Board must include a broad representation of the Australian community.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-11-ss-9-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-9;
+  logic: Deontic;
+  operator: mayDetermine;
+  summary: The Board may determine certain procedures.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-1-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-1;
+  logic: Deontic;
+  operator: hasMember;
+  summary: Membership requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Board shall consist of:;
+  @action: The Managing Director, Chairperson, and staff-elected Director are members.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-1-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The Board shall consist of:;
+  @action: The Managing Director, Chairperson, and staff-elected Director are members during the Board's existence.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-1-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-12-ss-1;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) The Board shall consist of:;
+  @action: If the Board exists, then it has these three types of members.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be appointed by Governor-General;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A Director referred to in paragraph (1)(b) or (c);
+  @action: shall be appointed by the Governor-General;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must hold office on a part-time basis not exceeding 5 years;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A Director referred to in paragraph (1)(b) or (c);
+  @action: holds office on a part-time basis for such period, not exceeding 5 years;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2-logic-42 {
+  activation: 0.8000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Director's appointment period is between 5 years and the specified period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A Director referred to in paragraph (1)(b) or (c);
+  @action: is appointed for such period, not exceeding 5 years;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2-logic-43 {
+  activation: 0.8000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Director must be re-appointed subject to sections 16 and 18;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A Director referred to in paragraph (1)(b) or (c);
+  @action: holds office on a part-time basis for such period, not exceeding 5 years, subject to sections 16 and 18;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2a-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2a;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits exceeding 10 years of holding certain offices;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2A) The sum of the periods for which a person holds either or both of...;
+  @action: ...the following offices must not exceed 10 years:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2a-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2a;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits holding office as Chairperson again after exceeding 5-year term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Example 1:Assume a person holds office as Chairperson for an initial period of 5 years...;
+  @action: ...the person cannot hold office as Chairperson again and cannot hold office as a Director referred to in paragraph (1)(c).;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2a-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2a;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits holding office as Director after exceeding 5-year term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Example 2:Assume a person holds office as a Director referred to in paragraph (1)(c) for a period of 5 years...;
+  @action: ...the person may now hold office as Chairperson, or as a Director referred to in paragraph (1)(c), for a maximum period of 2 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2a-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2a;
+  logic: AllenInterval;
+  operator: Intersection;
+  summary: Describes the temporal relationship between office holding periods;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2A) The sum of the periods for which a person holds either or both of...;
+  @action: ...must not exceed 10 years:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-2a-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2a;
+  logic: LTL;
+  operator: Until;
+  summary: Describes the temporal relationship between office holding periods;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2A) The sum of the periods for which a person holds either or both of...;
+  @action: ...must not exceed 10 years:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-12-ss-3-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The Governor-General shall appoint one of the non-executive Directors to be the Deputy Chairperson of the Board.;
+  @action: The Governor-General MUST appoint one of the non-executive Directors to be the Deputy Chairperson of the Board.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Managing Director must be appointed by the Board.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-2-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: Deontic;
+  operator: =;
+  summary: Fixed term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Where the person holding office as Managing Director is re-appointed, the re-appointment shall be for a period not exceeding 5 years.;
+  @action: The re-appointment period must not exceed 5 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-2-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Where the person holding office as Managing Director is re-appointed, the re-appointment shall be for a period not exceeding 5 years.;
+  @action: The re-appointment period is an interval of at most 5 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-2-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: LinearLogic;
+  operator: =;
+  summary: Fixed term;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (2) Where the person holding office as Managing Director is re-appointed, the re-appointment shall be for a period not exceeding 5 years.;
+  @action: The re-appointment period must be fixed at 5 years or less.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: Diffusion;
+  operator: =;
+  summary: Fixed term;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Where the person holding office as Managing Director is re-appointed, the re-appointment shall be for a period not exceeding 5 years.;
+  @action: The re-appointment period must diffuse into the future with a maximum duration of 5 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-2;
+  logic: CogAI;
+  operator: =;
+  summary: Fixed term;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Where the person holding office as Managing Director is re-appointed, the re-appointment shall be for a period not exceeding 5 years.;
+  @action: The re-appointment period must be fixed at 5 years or less by an artificial intelligence system.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-1-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide information about election process.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-2;
+  logic: Deontic;
+  operator: hasObligation;
+  summary: Staff-elected Director has obligation to devote time to duties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person is eligible to be a candidate for election, and to hold office, as the staff-elected Director if:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-2-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-2;
+  logic: Deontic;
+  operator: hasObligation;
+  summary: Staff-elected Director has obligation to perform services under contract;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person (the relevant person) performs services for the Corporation, under the direction and control of the Managing Director or an employee of the Corporation, under:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-2-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-2;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Eligibility criteria overlaps with contract duration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the person is an employee of the Corporation who, by the terms of his or her employment, is required to devote at least 22 hours a week to the duties of that employment; or (b) the person (the relevant person) performs services for the Corporation, under the direction and control of the Managing Director or an employee of the Corporation, under:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-2;
+  logic: LTL;
+  operator: occursBefore;
+  summary: Eligibility criteria occurs before contract commencement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) the person is an employee of the Corporation who, by the terms of his or her employment, is required to devote at least 22 hours a week to the duties of that employment; or (b) the person (the relevant person) performs services for the Corporation, under the direction and control of the Managing Director or an employee of the Corporation, under:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to proceed with election;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person ceases to be eligible for election;
+  @action: Election must proceed as if they were not a candidate;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-3-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-3;
+  logic: LinearLogic;
+  operator: ⇒;
+  summary: Implication of person's eligibility;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Person ceases to be eligible for election;
+  @action: Election must proceed as if they were not a candidate;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-3-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-3;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Implication of person's eligibility on election outcome;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Person ceases to be eligible for election;
+  @action: Election must proceed as if they were not a candidate;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-3-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-3;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval of person's eligibility;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Person ceases to be eligible for election;
+  @action: Election must proceed as if they were not a candidate;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-3-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-3;
+  logic: LTL;
+  operator: NEXT;
+  summary: Next step in election process;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Person ceases to be eligible for election;
+  @action: Election must proceed as if they were not a candidate;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-4-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-4;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Has right to vote;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-4-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-4;
+  logic: Deontic;
+  operator: hasPermissionToVote;
+  summary: Has permission to vote;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A person who is eligible to be a candidate for election as the staff-elected Director is eligible to vote at the election.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-4-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-4;
+  logic: LinearLogic;
+  operator: implies;
+  summary: Implies eligibility to vote;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (4) A person who is eligible to be a candidate for election as the staff-elected Director is eligible to vote at the election.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-4-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: During period of office;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) A person who is eligible to be a candidate for election as the staff-elected Director is eligible to vote at the election.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-4-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-4;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffuses eligibility to vote;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) A person who is eligible to be a candidate for election as the staff-elected Director is eligible to vote at the election.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-6-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-6;
+  logic: Deontic;
+  operator: =;
+  summary: Cannot be elected;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) A person who has been elected as the staff-elected Director at 2 elections is not eligible for election at any other election of the staff-elected Director.;
+  @action: Not eligible;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-6-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-6;
+  logic: LinearLogic;
+  operator: =;
+  summary: Staff-elected Director eligibility;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (6) A person who has been elected as the staff-elected Director at 2 elections is not eligible for election at any other election of the staff-elected Director.;
+  @action: Eligibility condition;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-6-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-6;
+  logic: AllenInterval;
+  operator: =;
+  summary: Staff-elected Director eligibility;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) A person who has been elected as the staff-elected Director at 2 elections is not eligible for election at any other election of the staff-elected Director.;
+  @action: Eligibility condition;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-6-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-6;
+  logic: Argumentation;
+  operator: =;
+  summary: Staff-elected Director eligibility;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (6) A person who has been elected as the staff-elected Director at 2 elections is not eligible for election at any other election of the staff-elected Director.;
+  @action: Eligibility condition;
+}
+
+australian-broadcasting-corporation-act-1983-sec-13a-ss-6-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-6;
+  logic: Diffusion;
+  operator: =;
+  summary: Staff-elected Director eligibility;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) A person who has been elected as the staff-elected Director at 2 elections is not eligible for election at any other election of the staff-elected Director.;
+  @action: Eligibility condition;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-1-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Managing Director has an obligation to be paid remuneration.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to pay remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Corporation is required to pay non-executive Directors remuneration.;
+  @action: The Corporation must pay non-executive Directors remuneration.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-2-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Remuneration payment is within a specific time frame;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Non-executive Directors are paid remuneration between certain dates.;
+  @action: The Corporation must pay non-executive Directors remuneration during the specified time frame.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-2-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Diffusion;
+  operator: IS-PAID-BY;
+  summary: Remuneration payment is a result of diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Non-executive Directors receive remuneration from the Corporation.;
+  @action: The Corporation must pay non-executive Directors remuneration.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-2-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: CogAI;
+  operator: IS-RECEIVED-BY;
+  summary: Remuneration payment is a result of CogAI processing;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Non-executive Directors receive remuneration from the Corporation's AI system.;
+  @action: The Corporation must pay non-executive Directors remuneration.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-2-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: SHACL;
+  operator: IS-VALIDATED-BY;
+  summary: Remuneration payment is validated by SHACL;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: Non-executive Directors' remuneration is verified against SHACL rules.;
+  @action: The Corporation must pay non-executive Directors remuneration.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-ss-3-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Pay allowances to Managing Director and non-executive Directors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14a-ss-1-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14a-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: The Managing Director has an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14a-ss-2-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Managing Director must obtain approval.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-15-ss-1-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-1;
+  logic: Deontic;
+  operator: grant;
+  summary: Grant permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister may grant leave;
+  @action: Chairperson is granted leave;
+}
+
+australian-broadcasting-corporation-act-1983-sec-15-ss-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-2;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission to absent from meeting;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-15-ss-3-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-ss-3;
+  logic: Deontic;
+  operator: reflexive;
+  summary: Self-reference;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-16-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16;
+  logic: Deontic;
+  operator: MUST;
+  summary: Non-executive Directors must resign.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-17-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member must disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-17-ss-4-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-4;
+  logic: Deontic;
+  operator: cannot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Member is present during deliberation.;
+  @action: Cannot be present during deliberation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-18-2-ss-1-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-18-2-ss-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-2-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition on actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+  @action: ...or makes an assignment...;
+}
+
+australian-broadcasting-corporation-act-1983-sec-19-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to act as Chairperson;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chairperson absent;
+  @action: Deputy Chairperson or Governor-General must act;
+}
+
+australian-broadcasting-corporation-act-1983-sec-19-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: If Chairperson is absent, Deputy Chairperson or Governor-General must act;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Chairperson absent;
+  @action: Deputy Chairperson or Governor-General must act as Chairperson;
+}
+
+australian-broadcasting-corporation-act-1983-sec-19-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Chairperson absence overlaps with Deputy Chairperson and Governor-General availability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Chairperson absent;
+  @action: Deputy Chairperson or Governor-General must act as Chairperson;
+}
+
+australian-broadcasting-corporation-act-1983-sec-19-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: Argumentation;
+  operator: Implication;
+  summary: If Chairperson is absent, Deputy Chairperson or Governor-General must act;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Chairperson absent;
+  @action: Deputy Chairperson or Governor-General must act as Chairperson;
+}
+
+australian-broadcasting-corporation-act-1983-sec-19-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: Diffusion;
+  operator: TemporalOverlap;
+  summary: Chairperson absence spreads to Deputy Chairperson and Governor-General availability;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Chairperson absent;
+  @action: Deputy Chairperson or Governor-General must act as Chairperson;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-1-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to act as Managing Director;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-3-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-3;
+  logic: Deontic;
+  operator: determine;
+  summary: Establishes obligation to determine terms and conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-4-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to pay additional remuneration and allowances;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Employee is acting as Managing Director;
+  @action: Must be paid additional remuneration and allowances;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-4-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap: Employee must be paid additional remuneration and allowances when acting as Managing Director;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Employee is acting as Managing Director at some point in time;
+  @action: Must be paid additional remuneration and allowances when acting as Managing Director;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-4-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication: Employee must be paid additional remuneration and allowances when acting as Managing Director;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Employee is an employee of the Corporation;
+  @action: Must be paid additional remuneration and allowances when acting as Managing Director;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-4-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion: Employee must be paid additional remuneration and allowances when acting as Managing Director;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Employee is an employee of the Corporation;
+  @action: Must be paid additional remuneration and allowances when acting as Managing Director;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-4-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-4;
+  logic: CogAI;
+  operator: CogAI;
+  summary: Cognitive agent: Employee must be paid additional remuneration and allowances when acting as Managing Director;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Employee is an employee of the Corporation;
+  @action: Must be paid additional remuneration and allowances when acting as Managing Director;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-6-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-6;
+  logic: Deontic;
+  operator: hasObligation;
+  summary: Appointment cessation due to resignation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-20-ss-8-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-ss-8;
+  logic: Deontic;
+  operator: refers to;
+  summary: Reference interpretation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 9;
+  @action: Acting person;
+}
+
+australian-broadcasting-corporation-act-1983-sec-21-ss-1-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-21-ss-2-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Governor-General has the power to determine terms and conditions of appointment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-21-ss-3-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Mandatory payment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: State must provide remuneration and allowances;
+  @action: Non-executive Directors must be paid the same remuneration and allowances as executive Directors.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-21-ss-7-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-7;
+  logic: Deontic;
+  operator: includes;
+  summary: Defines a term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Staff-elected Director is not included;
+  @action: Non-executive Director includes...;
+}
+
+australian-broadcasting-corporation-act-1983-sec-21-ss-7-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-ss-7;
+  logic: Deontic;
+  operator: excludes;
+  summary: Defines an exclusion;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Staff-elected Director is excluded from non-executive Director;
+  @action: Non-executive Director does not include staff-elected Director;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Chairperson has a duty to convene meetings.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-2-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Meetings of the Board shall be held...;
+  @action: Meetings of the Board must be held...;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-3-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chairperson is present;
+  @action: Chairperson must preside;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-4-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-5-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Directors must elect a presiding Director.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Another Director is not present to act as Chairperson.;
+  @action: A Director must be elected to preside.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-5-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Directors present must elect a presiding Director.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No other Director is available to act as Chairperson.;
+  @action: A Director must be elected to preside.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-5-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-5;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: A meeting can only take place between the presence of two Directors.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: No other Director is available to act as Chairperson.;
+  @action: The absence of both Chairperson and Deputy Chairperson creates a gap in leadership.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-5-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-5;
+  logic: LTL;
+  operator: BETWEEN;
+  summary: A meeting can only take place between the presence of two Directors.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: No other Director is available to act as Chairperson.;
+  @action: The absence of both Chairperson and Deputy Chairperson creates a gap in leadership.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-5-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Directors present must elect a presiding Director.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Another Director is acting as Chairperson.;
+  @action: A Director must be elected to preside.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-6-logic-121 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-22-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Directive obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-7-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-7;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires a quorum of Directors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) At a meeting of the Board:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-7-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-7;
+  logic: AllenInterval;
+  operator: during;
+  summary: During Board meetings, a quorum is required;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) a quorum is constituted by:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-22-ss-8-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-8;
+  logic: Deontic;
+  operator: not;
+  summary: Prohibition of participation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-1-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to delegate powers;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-2-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-2;
+  logic: Deontic;
+  operator: implies;
+  summary: Exercise of delegated power implies Corporation's exercise;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-3-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: Obligation to exercise power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A delegation of a power under this section does not prevent the exercise of the power by the Corporation.;
+  @action: The Corporation must exercise its power.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-3-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-3;
+  logic: LinearLogic;
+  operator: Conjunction;
+  summary: Exercise of power and delegation are independent;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) A delegation of a power under this section does not prevent the exercise of the power by the Corporation.;
+  @action: The exercise of power is conjunction with the delegation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-3-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Delegation and exercise of power overlap in time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A delegation of a power under this section does not prevent the exercise of the power by the Corporation.;
+  @action: The delegation overlaps with the exercise of power;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-3-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Delegation diffuses to other agents;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A delegation of a power under this section does not prevent the exercise of the power by the Corporation.;
+  @action: The delegation diffuses to other agents;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-3-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-3;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Delegation recognized by AI system;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A delegation of a power under this section does not prevent the exercise of the power by the Corporation.;
+  @action: The AI system recognizes the delegation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-2-ss-4-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-2-ss-4;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusive scope;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission or Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-2;
+  logic: Deontic;
+  operator: has-power;
+  summary: Exercise of power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-3-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Exercise of power not prevented by delegation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A delegation under this section does not prevent the exercise of a power by the Managing Director.;
+  @action: The Managing Director can still exercise their power.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-3-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Delegation and exercise of power do not overlap in time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A delegation under this section does not prevent the exercise of a power by the Managing Director.;
+  @action: The exercise of power and delegation do not overlap.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-3-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-3;
+  logic: LTL;
+  operator: Until;
+  summary: Delegation is until the exercise of power.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) A delegation under this section does not prevent the exercise of a power by the Managing Director.;
+  @action: The delegation ends when the power is exercised.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-ss-3-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Delegation diffuses to the Managing Director's power.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A delegation under this section does not prevent the exercise of a power by the Managing Director.;
+  @action: The delegation affects the Managing Director's power.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24b-ss-1-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24b-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: The Nomination Panel has functions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24b-ss-2-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide assessment based on merit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24b-ss-3-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24b-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide written applications;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraph 12(1)(b) or (c);
+  @action: Nomination Panel must invite written applications;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24c-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24c;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No direction is allowed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24d-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24d;
+  logic: Deontic;
+  operator: has;
+  summary: Possession of privileges and immunities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+  @action: The Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24d-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24d;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship: Nomination Panel's privileges and immunities during the Commonwealth's existence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+  @action: Nomination Panel's privileges and immunities exist during the Commonwealth's existence.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24d-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24d;
+  logic: Deontic;
+  operator: has;
+  summary: Privileges and immunities of the Crown;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+  @action: The Nomination Panel has the privileges and immunities of the Crown.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24d-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24d;
+  logic: Deontic;
+  operator: has;
+  summary: Right of the Commonwealth;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+  @action: The Nomination Panel has a right in the Commonwealth.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24d-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24d;
+  logic: Deontic;
+  operator: has;
+  summary: Obligation to respect;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Nomination Panel has the privileges and immunities of the Crown in right of the Commonwealth.;
+  @action: There is an obligation to respect the Nomination Panel's privileges and immunities.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24e-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24e;
+  logic: Deontic;
+  operator: must-have;
+  summary: The Nomination Panel must consist of at least 2 and not more than 3 members.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-1-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a mandatory obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-2-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A member holds office on a part-time basis.;
+  @action: A member must hold office on a part-time basis.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-2-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Part-time basis implies interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A member holds office on a part-time basis.;
+  @action: The part-time basis implies an interval of time.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-2-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-2;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Part-time basis implies trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) A member holds office on a part-time basis.;
+  @action: The part-time basis implies an ordered or recurring trace.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-2-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-2;
+  logic: Diffusion;
+  operator: IMPLIES;
+  summary: Part-time basis implies diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) A member holds office on a part-time basis.;
+  @action: The part-time basis implies diffusion of work or responsibilities.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-2-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-2;
+  logic: CogAI;
+  operator: IMPLIES;
+  summary: Part-time basis implies cognitive load;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) A member holds office on a part-time basis.;
+  @action: The part-time basis implies a cognitive load or workload.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-3-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-3;
+  logic: Deontic;
+  operator: holds;
+  summary: Member holds office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A member holds office for the period specified in the instrument of appointment.;
+  @action: The member must hold office for a specified period not exceeding 3 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-3-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Member's term is during a specified period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) A member holds office for the period specified in the instrument of appointment.;
+  @action: The member's term must be during a specified period not exceeding 3 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-3-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-3;
+  logic: Argumentation;
+  operator: must;
+  summary: Member must hold office;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) A member holds office for the period specified in the instrument of appointment.;
+  @action: The member must hold office for a specified period not exceeding 3 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-3-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-3;
+  logic: Diffusion;
+  operator: must;
+  summary: Member's term is required;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) A member holds office for the period specified in the instrument of appointment.;
+  @action: The member's term must be during a specified period not exceeding 3 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-3-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-3;
+  logic: CogAI;
+  operator: must;
+  summary: Member must hold office;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) A member holds office for the period specified in the instrument of appointment.;
+  @action: The member must hold office for a specified period not exceeding 3 years.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24f-ss-4-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24f-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24g-ss-1-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24g-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Possibility;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24g-ss-2-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24g-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24h-ss-1-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24h-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to pay remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24h-ss-2-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24h-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member of Nomination Panel must be paid allowances prescribed by regulations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24j-ss-1-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24j-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Granting of leave is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24j-ss-2-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24j-ss-2;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission to take a leave;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24k-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24k;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member must disclose interests.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-1-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member of Nomination Panel must disclose interest.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-2-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member must disclose interests.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-2-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-2;
+  logic: Epistemic;
+  operator: KNOWS;
+  summary: Member knows relevant facts.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-2-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-2;
+  logic: LTL;
+  operator: AT;
+  summary: Disclosure must occur at a specific point in time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-2-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-2;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Disclosure implies knowledge of relevant facts.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24l-ss-3-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24l-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to record disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24m-ss-1-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24m-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member of Nomination Panel must provide written resignation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24n-ss-1-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24n-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24n-ss-2-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24n-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition on termination under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Secretary...;
+  @action: The appointment may not be terminated.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24n-ss-2-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24n-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for absence from meetings.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: b) the member is absent, except on leave of absence, from 3 consecutive meetings...;
+  @action: Absence from 3 consecutive meetings without leave constitutes a condition for termination.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24n-ss-2-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24n-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of failure to comply with disclosure of interests.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: c) the member fails, without reasonable excuse, to comply with section 24K or 24L...;
+  @action: Failure to comply with disclosure of interests implies termination.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24n-ss-2-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24n-ss-2;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffusion of conditions for termination.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the member... (b) the member...;
+  @action: Conditions for termination diffuse across multiple scenarios.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-1-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to hold meetings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Nomination Panel is to hold such meetings as are necessary for the performance of its functions.;
+  @action: The Nomination Panel MUST hold meetings as necessary for the performance of its functions.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-1-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-1;
+  logic: LinearLogic;
+  operator: IMPLIES;
+  summary: Meeting necessity implies performance;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (1) The Nomination Panel is to hold such meetings as are necessary for the performance of its functions.;
+  @action: If a meeting is necessary, then the Nomination Panel MUST perform it.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-1-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-1;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Meeting necessity implies temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The Nomination Panel is to hold such meetings as are necessary for the performance of its functions.;
+  @action: The meeting necessity contains a temporal interval.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-1-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-1;
+  logic: Diffusion;
+  operator: APPLIES;
+  summary: Meeting necessity applies to Nomination Panel;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) The Nomination Panel is to hold such meetings as are necessary for the performance of its functions.;
+  @action: The meeting necessity applies to the Nomination Panel.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-1-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-1;
+  logic: CogAI;
+  operator: ENFORCEMENT;
+  summary: Meeting necessity enforces Nomination Panel action;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) The Nomination Panel is to hold such meetings as are necessary for the performance of its functions.;
+  @action: The meeting necessity enforces the Nomination Panel's action.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24q-ss-2-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24q-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to convene meetings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24r-ss-1-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24r-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to preside;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Chair must preside;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24r-ss-2-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24r-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to appoint a presider;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24s-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24s;
+  logic: Deontic;
+  operator: constitutes;
+  summary: Membership requirement for a quorum;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24t-ss-1-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24t-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to follow majority vote;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24t-ss-2-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24t-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: The person presiding at a meeting has a deliberative vote.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24u-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24u;
+  logic: Deontic;
+  operator: May;
+  summary: Regulation of proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24v-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24v;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to keep records;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24w-ss-1-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24w-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to determine selection criteria;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24w-ss-2-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24w-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to provide additional criteria;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24x-ss-1-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24x-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to consult;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Nomination Panel report;
+  @action: Consultation with Leader of Opposition;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24x-ss-2-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24x-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to table reasons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24x-ss-3-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24x-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to inform Prime Minister;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24x-ss-4-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24x-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must provide reasons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24y-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24y;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide annual report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25-ss-1-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-1;
+  logic: Deontic;
+  operator: hasPower;
+  summary: Has power to do all things necessary or convenient;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25-ss-1-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-1;
+  logic: DescriptionLogic;
+  operator: isA;
+  summary: Is a general provision for the Corporation's powers;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25-ss-3-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits accepting payments for broadcasting.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25-ss-4-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-4;
+  logic: Deontic;
+  operator: cannot;
+  summary: Cannot perform service;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25-ss-5-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-5;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to accept services, facilities, or payment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-25b-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25b;
+  logic: Deontic;
+  operator: May;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-26-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-26;
+  logic: Deontic;
+  operator: MUST HAVE REGARD TO;
+  summary: Must consider services of the Special Broadcasting Service Corporation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-2-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Daily news broadcasts are mandatory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-2-logic-208 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Daily news broadcasts contain current events information.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-3-logic-209 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-4-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to procure news and information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-5-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-5;
+  logic: Deontic;
+  operator: Permission;
+  summary: Granting permission to certain services.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-ss-6-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to specify a service;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29-ss-1-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Corporation must perform certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29-ss-2-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to determine charges;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29-ss-3-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29-ss-3;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29a-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29a;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29a-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29a;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: Availability implies provision of service;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29a-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29a;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Facilities and staff are available during broadcasting service;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-29a-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29a;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Service provision implies availability of facilities and staff;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31-ss-1-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits broadcasting advertisements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31-ss-2-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31-ss-2;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31aa-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31aa;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits provision of international broadcasting services by entities other than the Corporation or prescribed companies.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31aa-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31aa;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for provision of international broadcasting services.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation; or (b) a prescribed company (within the meaning of section 25A);;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31aa-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31aa;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implicates that only the Corporation or prescribed companies can provide Commonwealth-funded international broadcasting services.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The contract or arrangement is for the provision of international broadcasting services;;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31aa-logic-225 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31aa;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagates prohibition on provision of international broadcasting services by entities other than the Corporation or prescribed companies.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: if the contract or arrangement: is for the provision of international broadcasting services;;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31aa-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31aa;
+  logic: CogAI;
+  operator: Classification;
+  summary: Classifies entities that can provide Commonwealth-funded international broadcasting services using artificial intelligence.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Corporation; or a prescribed company (within the meaning of section 25A);;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31b-ss-1-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide a corporate plan;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31b-ss-3-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31b-ss-3;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subsidiary is a prescribed company within the meaning of section 25A;
+  @action: within the meaning of section 25A;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31b-ss-3-logic-229 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31b-ss-3;
+  logic: Deontic;
+  operator: is controlled by;
+  summary: Control relation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the Corporation controls the subsidiary;
+  @action: the Corporation controls the subsidiary;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31b-ss-4-logic-230 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31b-ss-4;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of subsidiary;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 8 definition;
+  @action: Subsidiary for section 35;
+}
+
+australian-broadcasting-corporation-act-1983-sec-31c-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31c;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide corporate plan;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-1-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to engage employees;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-2-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-2;
+  logic: Deontic;
+  operator: determines;
+  summary: Determining terms and conditions of employment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The terms and conditions of employment shall be determined by the Corporation.;
+  @action: The Corporation determines the terms and conditions of employment.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-2-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Terms and conditions are in effect during the period determined by the Corporation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The terms and conditions of employment shall be determined by the Corporation.;
+  @action: The Corporation determines the duration of the terms and conditions of employment.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-2-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-2;
+  logic: Argumentation;
+  operator: implies;
+  summary: If the Corporation determines the terms and conditions, then they must be followed.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) The terms and conditions of employment shall be determined by the Corporation.;
+  @action: The Corporation implies that the terms and conditions of employment must be followed.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-2-logic-236 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-2;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: The Corporation diffuses its determination of terms and conditions to employees.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The terms and conditions of employment shall be determined by the Corporation.;
+  @action: The Corporation diffuses its determination of the terms and conditions of employment.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-32-ss-2-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32-ss-2;
+  logic: CogAI;
+  operator: recognizes;
+  summary: The Corporation recognizes its authority to determine terms and conditions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The terms and conditions of employment shall be determined by the Corporation.;
+  @action: The Corporation recognizes its authority to determine the terms and conditions of employment.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-33-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to maintain high standards;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-67-ss-1-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-67-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Mandatory appropriation by Parliament.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-68-ss-1-logic-240 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-68-ss-1;
+  logic: Deontic;
+  operator: only;
+  summary: Restricts application of money;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-68-ss-2-logic-241 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-68-ss-2;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to invest;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-1-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70a-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted by the Finance Minister;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Finance Minister may, on behalf of the Commonwealth, lend money to the Corporation.;
+  @action: The Finance Minister may lend money to the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-1-logic-243 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70a-ss-1;
+  logic: AllenInterval;
+  operator: None;
+  summary: Temporal relation between lending and borrowing;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The Finance Minister may, on behalf of the Commonwealth, lend money to the Corporation.;
+  @action: The lending event occurs before the borrowing event.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-1-logic-244 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70a-ss-1;
+  logic: Argumentation;
+  operator: None;
+  summary: Rationale for lending;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) The Finance Minister may, on behalf of the Commonwealth, lend money to the Corporation.;
+  @action: The Finance Minister lends money to the Corporation because it is in the best interest of the Commonwealth.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-1-logic-245 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70a-ss-1;
+  logic: Diffusion;
+  operator: None;
+  summary: Spread of information about lending;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) The Finance Minister may, on behalf of the Commonwealth, lend money to the Corporation.;
+  @action: The information that the Finance Minister lends money to the Corporation spreads through the community.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-1-logic-246 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70a-ss-1;
+  logic: CogAI;
+  operator: None;
+  summary: Artificial intelligence application;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) The Finance Minister may, on behalf of the Commonwealth, lend money to the Corporation.;
+  @action: The artificial intelligence system can analyze the lending decision made by the Finance Minister.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-2-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70a-ss-2;
+  logic: Deontic;
+  operator: determines;
+  summary: Determining obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Finance Minister determines the terms and conditions.;
+  @action: There is an obligation to lend money on these terms.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70a-ss-3-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide written determination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-1-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to borrow money from someone other than the Commonwealth.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Corporation may, with the approval of the Finance Minister:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-1-logic-250 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: The key 'sec-70b-ss-1' specifies a temporal interval.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The Corporation may, with the approval of the Finance Minister:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-1-logic-251 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-1;
+  logic: Argumentation;
+  operator: Implication;
+  summary: The key 'sec-70b-ss-1' implies that borrowing money from someone other than the Commonwealth is allowed.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) The Corporation may, with the approval of the Finance Minister:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-1-logic-252 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-1;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: The key 'sec-70b-ss-1' propagates a permission.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) The Corporation may, with the approval of the Finance Minister:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-1-logic-253 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-1;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: The key 'sec-70b-ss-1' uses knowledge representation.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) The Corporation may, with the approval of the Finance Minister:;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-2-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide written approval.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-3-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide borrowing terms and conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-4-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-4;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to borrow;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-5-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-5;
+  logic: Deontic;
+  operator: Permit;
+  summary: The Corporation may borrow or raise money in a foreign country.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-5-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes temporal relationship between borrowing and raising money;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-6-logic-259 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-6;
+  logic: Deontic;
+  operator: may;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-6-logic-260 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-6;
+  logic: DescriptionLogic;
+  operator: none;
+  summary: Classifying transactions;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-7-logic-261 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation has an obligation to acknowledge a debt and issue an instrument.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt;;
+  @action: the Corporation shall be taken to raise money otherwise than by borrowing.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-7-logic-262 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation must issue an instrument in consideration of payment or deposit for non-routine transactions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the instrument is issued in consideration of the payment or deposit of money;;
+  @action: the amount of money raised shall be taken to be the amount of the money paid or deposited.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-7-logic-263 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The transactions are non-routine and involve payment or deposit.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt; (b) the instrument is issued in consideration of the payment or deposit of money;;
+  @action: the amount of money raised shall be taken to be the amount of the money paid or deposited.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-7-logic-264 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-7;
+  logic: LTL;
+  operator: Recurrently;
+  summary: The transactions are non-routine and involve payment or deposit.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt; (b) the instrument is issued in consideration of the payment or deposit of money;;
+  @action: the amount of money raised shall be taken to be the amount of the money paid or deposited.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-7-logic-265 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation must acknowledge a debt and issue an instrument in consideration of payment or deposit for non-routine transactions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt; (b) the instrument is issued in consideration of the payment or deposit of money;;
+  @action: the amount of money raised shall be taken to be the amount of the money paid or deposited.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-8-logic-266 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation has an obligation to raise money from a non-borrowing source.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt;;
+  @action: the Corporation shall be taken to raise money otherwise than by borrowing.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-8-logic-267 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-8;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The instrument is issued in consideration of credit provided.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the instrument is issued in consideration of the provision of credit;;
+  @action: the Corporation shall be taken to raise money otherwise than by borrowing.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-8-logic-268 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation must raise money from a non-borrowing source.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt;;
+  @action: the amount of money raised shall be taken to be the amount of the value of the credit provided.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-8-logic-269 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-8;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: The Corporation must raise money from a non-borrowing source.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation issues an instrument that acknowledges a debt;;
+  @action: the amount of money raised shall be taken to be the amount of the value of the credit provided.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-9-logic-270 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70b-ss-9;
+  logic: Deontic;
+  operator: Obligation;
+  summary: The Corporation has an obligation to raise money from credit.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the Corporation obtains credit; and (b) the credit is obtained in relation to a transaction that is not a routine operational transaction;;
+  @action: The Corporation shall be taken to raise money otherwise than by borrowing.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-271 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: Deontic;
+  operator: is;
+  summary: Routine operational transaction is defined;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: routine operational transaction means a transaction that is carried out in the ordinary course of the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-272 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Definition applies to transactions;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: The definition applies to transactions carried out in the ordinary course of the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-273 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: AllenInterval;
+  operator: during;
+  summary: Definition applies during day-to-day operations;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: The definition applies during the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-274 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: LTL;
+  operator: during;
+  summary: Definition applies during temporal interval;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: The definition applies during a temporal interval of the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-275 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: Diffusion;
+  operator: during;
+  summary: Definition spreads to day-to-day operations;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: The definition diffuses to the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70b-ss-10-logic-276 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-70b-ss-10;
+  logic: CogAI;
+  operator: during;
+  summary: Definition applies during cognitive process;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (10) In subsections (7), (8) and (9):;
+  @action: The definition applies during a cognitive process of the day-to-day operations of the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70c-logic-277 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70c;
+  logic: Deontic;
+  operator: guarantees;
+  summary: Guarantee obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-70d-logic-278 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-70d;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide payment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-71-logic-279 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-71;
+  logic: Deontic;
+  operator: exemption;
+  summary: Taxation exemption;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-71a-ss-2-logic-280 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-71a-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Official must comply with Finance Minister's directions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Official has delegated powers under the Finance Minister.;
+  @action: Official must comply with Finance Minister's directions.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-1-logic-281 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Minister may direct Corporation to broadcast matter.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-3-logic-282 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-78-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: Section 79A implies subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) has effect subject to section 79A.;
+  @action: Section 79A applies to subsection (1);
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-3a-logic-283 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-3a;
+  logic: Deontic;
+  operator: may;
+  summary: Minister may direct Corporation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-4-logic-284 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide direction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-5-logic-285 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-6-logic-286 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-6;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-7-logic-287 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-7;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Section 22 is excluded from application.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 22 applies to corporate Commonwealth entities.;
+  @action: Section 22 does not apply to the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-7-logic-288 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-7;
+  logic: AllenInterval;
+  operator: Temporal Exclusion;
+  summary: The exclusion applies to a specific temporal interval.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Public Governance, Performance and Accountability Act 2013 defines a specific temporal interval for section 22.;
+  @action: Section 22 does not apply during the specified period.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-7-logic-289 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-7;
+  logic: LTL;
+  operator: Temporal Exclusion;
+  summary: The exclusion applies to a specific temporal interval.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Public Governance, Performance and Accountability Act 2013 defines a specific temporal interval for section 22.;
+  @action: Section 22 does not apply during the specified period.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-7-logic-290 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-7;
+  logic: Diffusion;
+  operator: Temporal Exclusion;
+  summary: The exclusion applies to a specific temporal interval.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Public Governance, Performance and Accountability Act 2013 defines a specific temporal interval for section 22.;
+  @action: Section 22 does not apply during the specified period.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-78-ss-7-logic-291 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-78-ss-7;
+  logic: CogAI;
+  operator: Temporal Exclusion;
+  summary: The exclusion applies to a specific temporal interval.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Public Governance, Performance and Accountability Act 2013 defines a specific temporal interval for section 22.;
+  @action: Section 22 does not apply during the specified period.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79-logic-292 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79;
+  logic: Deontic;
+  operator: does not apply;
+  summary: The Broadcasting Act does not apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Corporation provides broadcasting services;
+  @action: The Broadcasting Act does not apply;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79aa-logic-293 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79aa;
+  logic: Deontic;
+  operator: may;
+  summary: Minister may direct ACMA to investigate.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Complaint not responded to within 60 days.;
+  @action: Investigation required.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79a-logic-294 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79a;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to broadcast;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79a-logic-295 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-79a;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval for broadcasting determination;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this Act, the Corporation may determine...;
+  @action: ...in what manner political matter or controversial matter will be broadcast by the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79a-logic-296 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-79a;
+  logic: Argumentation;
+  operator: Justification;
+  summary: Justification for broadcasting determination;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this Act, the Corporation may determine...;
+  @action: ...political matter or controversial matter will be broadcast by the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79a-logic-297 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-79a;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagating broadcasting determination;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this Act, the Corporation may determine...;
+  @action: ...in what manner political matter or controversial matter will be broadcast by the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79a-logic-298 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-79a;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Knowledge representation for broadcasting determination;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Subject to this Act, the Corporation may determine...;
+  @action: ...political matter or controversial matter will be broadcast by the Corporation.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-1-logic-299 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Corporation has a duty to record broadcasts.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-2-logic-300 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-2;
+  logic: Deontic;
+  operator: retain;
+  summary: Must retain records;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-3-logic-301 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-3;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-4-logic-302 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to retain record;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Notice given to Corporation;
+  @action: Corporation must retain record;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-5-logic-303 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-5;
+  logic: Deontic;
+  operator: cease;
+  summary: Ceases to apply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) ceases to apply;
+  @action: if proceedings are not instituted within a period of 3 months;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-5-logic-304 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: During the period after which (4) ceases to apply;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) If the proceedings are not instituted within a period of 3 months;
+  @action: after the notice is given to the Corporation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-5-logic-305 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-5;
+  logic: LTL;
+  operator: during;
+  summary: During the period after which (4) ceases to apply;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) If the proceedings are not instituted within a period of 3 months;
+  @action: after the notice is given to the Corporation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-5-logic-306 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-5;
+  logic: Diffusion;
+  operator: during;
+  summary: During the period after which (4) ceases to apply;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) If the proceedings are not instituted within a period of 3 months;
+  @action: after the notice is given to the Corporation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-5-logic-307 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-5;
+  logic: CogAI;
+  operator: during;
+  summary: During the period after which (4) ceases to apply;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) If the proceedings are not instituted within a period of 3 months;
+  @action: after the notice is given to the Corporation;
+}
+
+australian-broadcasting-corporation-act-1983-sec-79b-ss-6-logic-308 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-79b-ss-6;
+  logic: Deontic;
+  operator: Implies;
+  summary: If the record is not in the custody of a court, then the Corporation does not have to retain it.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The obligation imposed by this section on the Corporation to retain a record does not apply at any time when the record is in the custody of a court.;
+  @action: The Corporation does not have to retain the record.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-80-logic-309 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-80;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide specified information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-81-ss-2-logic-310 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-81-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Rules must make provision for the Joint Consultative Committee's constitution, functions, and carrying out of those functions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-83-ss-2-logic-311 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-83-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to make rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-83-ss-2-logic-312 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-83-ss-2;
+  logic: DescriptionLogic;
+  operator: Prescribing;
+  summary: Rules prescribed by the Board;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) required or permitted by this Act to be prescribed by rules; or (b) necessary or convenient to be prescribed by rules for carrying out or giving effect to this Act.;
+}
+
+australian-broadcasting-corporation-act-1983-sec-24-2-logic-313 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on June 24, 1986;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-23-3-logic-314 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified as October 5, 1992;
+  @action: Temporal interval required;
+}
+
+australian-broadcasting-corporation-act-1983-sec-18-4-logic-315 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Reporting obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-3-3-logic-316 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-17-2-logic-317 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the Australian Broadcasting Corporation Amendment Act 2006;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-27-5-logic-318 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-5;
+  logic: Deontic;
+  operator: imposes;
+  summary: Imposes obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-broadcasting-corporation-act-1983-sec-16-3-logic-319 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: October 17, 2014 is a specific date;
+  @action: Undertaking;
+}
+
+australian-broadcasting-corporation-act-1983-sec-14-3-logic-320 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

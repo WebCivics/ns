@@ -1,0 +1,1314 @@
+# CogAI proposed logic-routing chunks — Data-matching Program (Assistance and Tax) Act 1990
+# Machine-derived; every chunk remains cml:Proposed.
+
+data-matching-program-assistance-and-tax-act-1990-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies the text as a compilation of the Data-matching Program (Assistance and Tax) Act 1990.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: This is a compilation...;
+  @action: The notes at the end...;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-2a-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2a;
+  logic: Deontic;
+  operator: applies;
+  summary: Chapter 2 of the Criminal Code applies to all offences against this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-3-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: DescriptionLogic;
+  operator: type;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: agency means: (a) the matching agency; or (b) a source agency.;
+  @action: assistance agency means: (b) the Education Department; or (c) the Social Services Department; or (d) the Veterans’ Affairs Department; or (e) the Human Services Department.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-3-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: DescriptionLogic;
+  operator: type;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: assisted person means a person:;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-3a-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a;
+  logic: Deontic;
+  operator: hasPower;
+  summary: Delegate power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If the Secretary of the Social Services Department delegates to...;
+  @action: ...all or any of that Secretary's powers under an Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-3a-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3a;
+  logic: AllenInterval;
+  operator: withinTemporalInterval;
+  summary: Within temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (within the meaning of the Human Services (Centrelink) Act 1997);;
+  @action: ...the power of delegation.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to ensure data matching.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to ensure employees are responsible for data matching.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) While a direction under section 3A is in force, the Chief Executive;
+  @action: Centrelink is to ensure that there are Departmental employees who are responsible for the matching of data under this Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval of obligation starts with section 3A direction.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) While a direction under section 3A is in force, the Chief Executive;
+  @action: Centrelink is to ensure that there are Departmental employees who are responsible for the matching of data under this Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: LTL;
+  operator: >=;
+  summary: Temporal interval of obligation has a lower bound.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) While a direction under section 3A is in force, the Chief Executive;
+  @action: Centrelink is to ensure that there are Departmental employees who are responsible for the matching of data under this Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: Diffusion;
+  operator: IS_A;
+  summary: Obligation is a type of diffusion.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) While a direction under section 3A is in force, the Chief Executive;
+  @action: Centrelink is to ensure that there are Departmental employees who are responsible for the matching of data under this Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-ss-2;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Obligation is a type of cognitive action.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) While a direction under section 3A is in force, the Chief Executive;
+  @action: Centrelink is to ensure that there are Departmental employees who are responsible for the matching of data under this Act.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-5-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-1;
+  logic: Deontic;
+  operator: except;
+  summary: Exclusion clause;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (other laws);
+  @action: Limitation of this Act;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-5-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: Deontic;
+  operator: exempts;
+  summary: Exemption from breach of TFN data or tax-file number information rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Compliance with Privacy Act provisions;
+  @action: No breach of TFN data or tax-file number information rules;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-5-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Compliance with Privacy Act provisions occurs during the effective period of the exemption;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Effective period of the exemption;
+  @action: Compliance with Privacy Act provisions;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-5-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: Deontic;
+  operator: Continuum;
+  summary: No obligation broken;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Officer's actions are in course of carrying out functions.;
+  @action: Oath or declaration not broken;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-6-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Data transfer obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Subject to subsections (2) and (3):;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-1-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-3;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide basic data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-2-2-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to check TFN data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 2(1);
+  @action: TFN data must be valid;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-4-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Agency has an obligation to provide incorrect TFN data.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-5-2-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to extract data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-7-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-2;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Tax agency must provide data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-8-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Tax agency must provide data and identification numbers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11;
+  logic: Deontic;
+  operator: MUST PROVIDE;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-13-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to match TFN data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-14-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to perform action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-14a-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Source agency must perform actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-14a-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14a;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Matching must be complete before sample destruction.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-15-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits tax evasion.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-16-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide TFN data;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-1-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must complete data matching cycle;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A data matching cycle is to be completed no later than 2 months after it began.;
+  @action: Obligation to complete data matching cycle within 2 months;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-1-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Data matching cycle must start at least 2 months ago;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A data matching cycle is to be completed no later than 2 months after it began.;
+  @action: Temporal relationship between data matching cycle and its start time;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-1-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-1;
+  logic: LinearLogic;
+  operator: ⇒;
+  summary: Completing data matching cycle implies obligation;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (1) A data matching cycle is to be completed no later than 2 months after it began.;
+  @action: Obligation to complete data matching cycle implies completion of data matching cycle;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-1-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-1;
+  logic: Argumentation;
+  operator: ⇒;
+  summary: Completing data matching cycle is a rational action;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) A data matching cycle is to be completed no later than 2 months after it began.;
+  @action: Rationality of completing data matching cycle implies obligation;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-1-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-1;
+  logic: Diffusion;
+  operator: ⇒;
+  summary: Completing data matching cycle has a positive impact on the system;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A data matching cycle is to be completed no later than 2 months after it began.;
+  @action: Positive impact of completing data matching cycle implies obligation;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must complete step within time limit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Step 5 in a data matching cycle is to be completed no later than 7 days after it began.;
+  @action: Step 5 must be completed by the end of the 7-day period;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-2-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Step 5 occurs during a specific time period;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Step 5 in a data matching cycle is to be completed no later than 7 days after it began.;
+  @action: The completion of step 5 must occur within the 7-day period;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-2-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-2;
+  logic: LTL;
+  operator: until;
+  summary: Step 5 has a temporal limit;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Step 5 in a data matching cycle is to be completed no later than 7 days after it began.;
+  @action: The completion of step 5 must occur before the end of the 7-day period;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-2-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-2;
+  logic: Diffusion;
+  operator: within;
+  summary: Step 5 is part of a process with a time limit;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Step 5 in a data matching cycle is to be completed no later than 7 days after it began.;
+  @action: The completion of step 5 must occur within the 7-day period;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-9-2-ss-2-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-2-ss-2;
+  logic: CogAI;
+  operator: mustCompleteBy;
+  summary: Step 5 has a deadline for completion;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Step 5 in a data matching cycle is to be completed no later than 7 days after it began.;
+  @action: The completion of step 5 must occur by the end of the 7-day period;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-1-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to take action on the basis of information received.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-1a-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-1a;
+  logic: Deontic;
+  operator: May;
+  summary: Source agency may quote a person's tax file number.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory destruction of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The agency must destroy particular information within 90 days.;
+  @action: Unless certain conditions are met, the agency must destroy the information.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: AllenInterval;
+  operator: within 90 days;
+  summary: Timeframe for destruction of information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The agency must destroy particular information within 90 days.;
+  @action: The timeframe for destruction is 90 days.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: must not;
+  summary: Prohibition on destroying information without conditions being met;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Unless certain conditions are met, the agency must destroy the information.;
+  @action: The agency may not destroy the information unless certain conditions are met.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory action on basis of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The agency has considered that particular information and made a decision to take action on the basis of that information.;
+  @action: The agency must take action on the basis of the information.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-2-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-2;
+  logic: Deontic;
+  operator: must;
+  summary: Investigation required before taking action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The agency has considered that particular information and made a decision to carry out an investigation of the need to take action on the basis of that information.;
+  @action: The agency must investigate the need to take action on the basis of the information.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-3-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide action within 12 months.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-3-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3;
+  logic: AllenInterval;
+  operator: WITHIN;
+  summary: Temporal interval within 12 months.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-3a-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3a;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-3b-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-3b;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Cannot delegate power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-ss-4-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-ss-4;
+  logic: Deontic;
+  operator: Must Not;
+  summary: Prohibition of information retention;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-1-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-1b-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-1b;
+  logic: Deontic;
+  operator: MUST;
+  summary: Agency must provide written notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-2-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Tax agency must take action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-3-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-4-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Exemption from compliance with certain paragraphs when investigation into possible offence is effective;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The assistance agency may take action described in subsection (1) without complying with paragraphs (1)(e) and (f);
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-4-logic-59 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Exemption from compliance with certain paragraphs when investigation into possible offence is effective;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) The assistance agency may take action described in subsection (1) without complying with paragraphs (1)(e) and (f);
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-4-logic-60 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-4;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Exemption from compliance with certain paragraphs when investigation into possible offence is effective;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) The assistance agency may take action described in subsection (1) without complying with paragraphs (1)(e) and (f);
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-4-logic-61 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Exemption from compliance with certain paragraphs when investigation into possible offence is effective;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) The assistance agency may take action described in subsection (1) without complying with paragraphs (1)(e) and (f);
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-4-logic-62 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-4;
+  logic: CogAI;
+  operator: Exempts;
+  summary: Exemption from compliance with certain paragraphs when investigation into possible offence is effective;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) The assistance agency may take action described in subsection (1) without complying with paragraphs (1)(e) and (f);
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-2-ss-5a-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-2-ss-5a;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make written record.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-1-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to comply with rules;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The matching agency and the source agencies must comply with rules issued under this section.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-1-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-1;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval of rule applicability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The matching agency and the source agencies must comply with rules issued under this section.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses permission or obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-3-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Function is a privacy function;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The function conferred by subsection (2);
+  @action: is a privacy function for the purposes of the Australian Information Commissioner Act 2010.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-3-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Function is active during the period of the Act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The function conferred by subsection (2);
+  @action: is a privacy function for the purposes of the Australian Information Commissioner Act 2010.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-3-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Function ceases to be active after the period of the Act;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The function conferred by subsection (2);
+  @action: is a privacy function for the purposes of the Australian Information Commissioner Act 2010.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-3-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-3;
+  logic: Diffusion;
+  operator: through;
+  summary: Function is applied through the Act;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) The function conferred by subsection (2);
+  @action: is a privacy function for the purposes of the Australian Information Commissioner Act 2010.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-3-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-3;
+  logic: CogAI;
+  operator: for;
+  summary: Function is used for the purpose of the Act;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) The function conferred by subsection (2);
+  @action: is a privacy function for the purposes of the Australian Information Commissioner Act 2010.;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-4-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Agency must provide report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-5-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Agency must provide report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-2-ss-6-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-2-ss-6;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Defines temporal intervals for rule commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-13-2-ss-1-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-2-ss-1;
+  logic: DescriptionLogic;
+  operator: definition;
+  summary: Defines the term "Commissioner";
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-13-2-ss-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-2-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Commissioner has the power to investigate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-13-2-ss-4-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-2-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Commissioner must make a report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-14-2-ss-1-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-2-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-14-2-ss-3-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-2-ss-3;
+  logic: Deontic;
+  operator: shall;
+  summary: Imposes a duty on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-15-2-ss-1-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15-2-ss-1;
+  logic: Deontic;
+  operator: Must Not;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-15-2-ss-1a-logic-81 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-2-ss-1a;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts from subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A) Subsection (1) does not apply if the information is recorded or disclosed:;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-15a-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Payment of personal assistance is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-15a-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-15a;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: The payment is a class inclusion of the Consolidated Revenue Fund.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-19-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-2-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the legislation as a law with no specific duties or prohibitions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Legislation type;
+  @action: Social Security (Home Child Care and Partner Allowances) Legislation Amendment Act 1994;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: N3Logic;
+  operator: Applicable;
+  summary: Classifies the legislation as a law with no specific relationships to other laws;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+  @condition: Legislation type;
+  @action: Social Security (Home Child Care and Partner Allowances) Legislation Amendment Act 1994;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-2-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: SHACL;
+  operator: Applicable;
+  summary: Classifies the legislation as a law with no specific constraints or rules;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: Legislation type;
+  @action: Social Security (Home Child Care and Partner Allowances) Legislation Amendment Act 1994;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-2-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: CogAI;
+  operator: Applicable;
+  summary: Classifies the legislation as a law with no specific artificial intelligence applications;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Legislation type;
+  @action: Social Security (Home Child Care and Partner Allowances) Legislation Amendment Act 1994;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-2-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-2;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Classifies the legislation as a law with no specific diffusion applications;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Legislation type;
+  @action: Social Security (Home Child Care and Partner Allowances) Legislation Amendment Act 1994;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-16-3-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 1 July 1995 (s 2(1)) Sch 4 (items 37, 43): 1 Jan 1995 (s 2(5));
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-29-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29;
+  logic: N3Logic;
+  operator: Applicable;
+  summary: Defines data-matching program;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-29-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking, not Prohibition;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-16-4-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines temporal interval for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Commencement definition;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-17-3-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-10-2-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between July 8, 1999 and the commencement date;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal interval specified;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-6-3-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified as July 2000 (s 2(1));
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-6-3-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-3;
+  logic: LTL;
+  operator: Applicable;
+  summary: Requires an ordered or recurring trace for conditional commencement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified as July 2000 (s 2(1));
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-3-logic-98 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-24-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement on 1 Jan 2001 (s 2(2)(c));
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-3-logic-99 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-24-3;
+  logic: LTL;
+  operator: Applicable;
+  summary: Requires ordered or recurring trace for conditional commencement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Conditional commencement on 1 Jan 2001 (s 2(2)(c));
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-24-3-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24-3;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies the legal effect as Undertaking;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: No explicit duty, ban conduct, grant permission, or create a right;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-27-2-logic-101 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-27-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Date range specified;
+  @action: Undertaking;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-27-3-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-3-3-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3-3;
+  logic: Deontic;
+  operator: hasPartOf;
+  summary: Part of a legislative provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-31-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide paid parental leave;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-22-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified as October 1, 2012;
+  @action: Temporal interval required;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-12-5-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-27-4-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-11-4-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified;
+  @action: Temporal relation required;
+}
+
+data-matching-program-assistance-and-tax-act-1990-sec-25-5-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-5;
+  logic: N3Logic;
+  operator: Applicable;
+  summary: Defines compilation date and act information;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+}

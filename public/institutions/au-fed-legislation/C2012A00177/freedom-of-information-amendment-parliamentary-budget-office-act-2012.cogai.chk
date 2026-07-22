@@ -1,0 +1,341 @@
+# CogAI proposed logic-routing chunks — Freedom of Information Amendment (Parliamentary Budget Office) Act 2012
+# Machine-derived; every chunk remains cml:Proposed.
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Defines commencement date;
+  @action: Commences at a specific time;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting words after 'last-mentioned document';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Agency or Minister may not confirm or deny existence of a document.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Epistemic;
+  operator: Deny;
+  summary: Agency or Minister may not confirm or deny existence of a document.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-2-ss-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits granting access to a document if it existed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If a notice is given under subsection (2) of this section:;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-1;
+  logic: Deontic;
+  operator: is;
+  summary: Exemption is a property of documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request.;
+  @action: The document is exempt.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-1;
+  logic: Deontic;
+  operator: must;
+  summary: A document must be exempt if it meets the conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request.;
+  @action: The document is exempt.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-1;
+  logic: Deontic;
+  operator: must;
+  summary: A document must be provided if it meets the conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Document originated from the Parliamentary Budget Officer or was prepared in response to a confidential request.;
+  @action: The document is provided.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-2;
+  logic: Deontic;
+  operator: implies;
+  summary: Exempt documents are documents containing extracts from exempt documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Document is exempt if it contains an extract from an exempt document;
+  @action: Document is exempt;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-2;
+  logic: AllenInterval;
+  operator: contains;
+  summary: Temporal interval of exemption;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Exemption starts at the beginning of the document and ends when it contains a non-exempt section;
+  @action: Document is exempt until it contains a non-exempt section;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-2;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval of exemption;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Exemption starts at the beginning of the document and ends when it contains a non-exempt section;
+  @action: Document is exempt until it contains a non-exempt section;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-2;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spread of exemption;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Exemption spreads to documents containing extracts from the original document;
+  @action: Documents containing extracts from exempt documents are also exempt;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-3;
+  logic: Deontic;
+  operator: Restrict;
+  summary: Restricts disclosure of confidential information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Confidential request made to Parliamentary Budget Officer.;
+  @action: Disclosure of request information is restricted.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-4-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-4;
+  logic: Deontic;
+  operator: not;
+  summary: Negation of exemption;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Document is exempt;
+  @action: Document is not exempt;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-5-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information made publicly available by the Parliamentary Budget Officer.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-6;
+  logic: Deontic;
+  operator: Implies;
+  summary: If information is publicly available, it's not exempt.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information made publicly available by Senator or MP.;
+  @action: Not exempt matter.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-6-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-6;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Public availability overlaps with exemption conditions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Information has been made publicly available by Senator or MP.;
+  @action: Exemption condition met.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-7-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-7;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to disclose factual information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Information in a document is not exempt matter.;
+  @action: Disclosure of factual information is not exempt if it reveals a confidential request.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-8;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a key term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-45a-ss-8-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-45a-ss-8;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omitting specific documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-55u-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-55u;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide national security documents.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-6-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines temporal interval for application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) commencing on the day after the Bill was introduced into the House of Representatives; and (b) ending immediately before the commencement of this item.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: LTL;
+  operator: until;
+  summary: Defines temporal interval for application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) commencing on the day after the Bill was introduced into the House of Representatives; and (b) ending immediately before the commencement of this item.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: obliges;
+  summary: Imposes duty to make decision on request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: if the agency or Minister to whom the request was made has not made a decision on the request, or has not been taken to have made a decision on the request, before the commencement of this item.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-12-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: obliges;
+  summary: Imposes duty to make decision on request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: before the commencement of this item.;
+}
+
+freedom-of-information-amendment-parliamentary-budget-office-act-2012-sch-1-sec-13-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Omit words after 'last-mentioned document';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

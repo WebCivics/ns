@@ -1,0 +1,1098 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "Substitute phrase in defence service requirement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Paragraphs 21(2)(c), (3)(c) and (4)(d)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6883a62873eaacefb5134e55206406e2c160903513af4a2f465f7971fd56d040",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Modified text",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Replace text with alternative",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Substitution",
+      "cml:premiseText": "Text to be modified"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "Repeal section and substitute with new content.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 23"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e760fc8d63da5406b762d346b67c33f828593d7f3e1e89f1a1e04f768edbdfa9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Defence service requirement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3"
+        },
+        {
+          "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4"
+        }
+      ],
+      "cml:integrityHash": "fa5b74decc3ea59f796aade42d298028983119d6dd4e2e55e2481c1b647a6a09",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "Person must have completed relevant defence service to satisfy the defence service requirement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23(1) Defence service requirement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-deontic-1",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-ltl-3",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-diffusion-4",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "23461d24f085a2e9dbfb3983d4e0d7cdba8204c5e3d3874ed66c3d4a8c1a5b0a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-23-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Yes",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The completion of relevant defence service is a temporal interval that must be greater than or equal to the current time.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Yes",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The state of mind required to satisfy the defence service requirement is a cognitive state.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Yes",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Has the defence service requirement?",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Yes",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The completion of relevant defence service is equivalent to the satisfaction of the defence service requirement.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "iff",
+      "cml:premiseText": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Yes",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The completion of relevant defence service is a temporal interval that must be less than or equal to the current time plus some fixed interval.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "<=",
+      "cml:premiseText": "(1) For the purposes of section 21, a person satisfies the defence service requirement if the person has completed relevant defence service."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "Relative satisfies defence service requirement for visa purposes.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23(2) Defence service requirement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-deontic-1",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-ltl-3",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-deontic-4",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-argumentation-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b791af026a110d5df9518c5064d4d5e990b06234f4edf52a603b72e80fa4e4de",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-23-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Relative completed relevant defence service during the same period as the defence person.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "During",
+      "cml:premiseText": "(b) the defence person has completed relevant defence service;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-argumentation-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative holds a visa of that kind because the relative is a member of the family unit of the defence person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Relative's visa is granted if they satisfy the defence service requirement.",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Implication",
+      "cml:premiseText": "(2) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Relative must satisfy the defence service requirement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Satisfies",
+      "cml:premiseText": "(2) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Relative must provide proof of completion of relevant defence service.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MustProvide",
+      "cml:premiseText": "(2) If..."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Relative's visa is valid until the defence person's visa expires.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Until",
+      "cml:premiseText": "(d) the relative holds a visa of that kind because the relative is a member of the family unit of the defence person;"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "Relative satisfies defence service requirement if certain conditions met.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23(3) Defence service requirement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-1",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-alleninterval-2",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-ltl-3",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-4",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "531bd17f114e32d926f5ab33d9e914c196b6878a4161a63799b2b10a4490d598",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-23-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative's visa status started before the defence person's death.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Relative's visa status starts before defence person's death.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">=",
+      "cml:premiseText": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Relative satisfies obligation if conditions met.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if-then",
+      "cml:premiseText": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative satisfies the defence service requirement for the purposes of section 21.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Relative satisfies obligation if certain conditions met.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "if-then",
+      "cml:premiseText": "the relative was a member of the family unit of the defence person when the defence person was granted the visa"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative is a member of the family unit of the defence person.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Relative's visa status equals their family unit membership.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "the relative was a member of the family unit of the defence person when the defence person was granted the visa"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "the relative's visa status ended after the defence person's death.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Relative's visa status ends after defence person's death.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "<=",
+      "cml:premiseText": "the relative held a visa of that kind because the relative was a member of the family unit of the defence person"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.7",
+      "skos:note": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23(4) Defence service requirement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-1",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-descriptionlogic-2",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-3",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-4",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-linearlogic-5",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-descriptionlogic-6"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cf9afd2b368a0820ded1aea6e00694d58482bae6fe39adef7417cc5c6c841926",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-23-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The person has completed relevant defence service.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(4) In this section:"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The person is entitled to be paid for duty.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The person is medically unfit for service.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "(c) the person: (i) was discharged from service undertaken in one of the Permanent Forces or the Reserves as medically unfit for that service; and (ii) became so unfit because of service undertaken in any of the Permanent Forces or the Reserves."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "A person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is defined as",
+      "cml:premiseText": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous);"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-descriptionlogic-6",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "A person undertakes service in the Permanent Forces or the Reserves only if they are appointed, enlisted or transferred into any of the Permanent Forces or the Reserves.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is defined as",
+      "cml:premiseText": "service: a person undertakes service in the Permanent Forces or the Reserves only if the person is appointed, enlisted or transferred into any of the Permanent Forces or the Reserves."
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-logic-linearlogic-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::linear",
+      "cml:logicSummary": "The person has completed relevant defence service if they have undertaken a total of at least 90 days service in one or more of the Permanent Forces or the Reserves.",
+      "cml:modality": {
+        "@id": "cml:LinearLogic"
+      },
+      "cml:operator": "and",
+      "cml:premiseText": "(a) the person has undertaken a total of at least 90 days service in one or more of the Permanent Forces (whether or not that service was continuous); or (b) the person has undertaken a total of at least 90 days service on which he or she was required for, and attended and was entitled to be paid for, duty in one or more of the Reserves (whether or not that service was continuous);"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-23-ss-4"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.9",
+      "skos:note": "Amendments apply in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Application"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d91b365136bc59c4ba10e4adc158d2acd2752c55da2aefcc542d842041d05df8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to apply amendments in relation to decisions made under section 24 of the Australian Citizenship Act 2007 after commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "obligation"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bef58c0b84ceb188f08f0f045cbf777d205dbd623b50df3f7a28d796d2fa6747",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:note": "Table of sections",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:note": "Note on table limitations and amendments",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 January 2013"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2feb334ea1d4061d48b89551f1fda1308ca58208c84b01d76e2cb0186ddca87d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-3"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-1"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 September"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-12-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-12"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c980fffb09f2a407258b1754f7e3ca3d52b17b4f4317a73c7d44036a362a46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:note": "Conditional commencement of provisions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": [
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2-norm",
+        "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "24a149249e2dc04207bc143f896a4659d92590588e25518882391dbf092691a8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "australian-citizenship-amendment-defence-families-act-2012.pdf, p.6",
+      "skos:note": "Schedules for amendment or repeal of Acts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "australian-citizenship-amendment-defence-families-act-2012.pdf",
+      "asserts": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1074b08126d9bdda50f7629de2e84eb414c4b21109cc890a41b343500d7e20d9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:australian-citizenship-amendment-defence-families-act-2012#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:australian-citizenship-amendment-defence-families-act-2012-sec-3"
+    },
+    {
+      "@id": "doc:au/c2012a00119",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Australian Citizenship Act 2007, and for other purposes",
+      "dc:identifier": [
+        "C2012A00119",
+        "No. 119 of 2012"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Australian Citizenship Amendment (Defence Families) Act 2012"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2012A00119/latest/downloads",
+        "australian-citizenship-amendment-defence-families-act-2012.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

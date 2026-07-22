@@ -1,0 +1,72 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment Act 2005
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-act-2005-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permits State agencies and Territory agencies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-act-2005-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-act-2005-sch-1-sec-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Territory;
+  @action: authority of that Territory;
+}
+
+crimes-amendment-act-2005-sch-1-sec-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: =;
+  summary: Definition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Territory agency;
+  @action: means that Territory or an authority of that Territory;
+}
+
+crimes-amendment-act-2005-sch-1-sec-7-ss-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: State agency must comply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-act-2005-sch-1-sec-7-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7-ss-2;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory compliance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

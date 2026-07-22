@@ -1,0 +1,1727 @@
+# CogAI proposed logic-routing chunks — Australian Centre for International Agricultural Research Amendment Act 2007
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-4-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: DescriptionLogic;
+  operator: type;
+  summary: Identifies the type of entity;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: CEO means the Chief Executive Officer of the Centre.;
+  @action: The term 'CEO' refers to the Chief Executive Officer of the Centre.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-5-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace an existing definition with a new one.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-5-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: DescriptionLogic;
+  operator: Definition Substitution;
+  summary: Apply the substitution to the definition of Chair.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-12-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12;
+  logic: Deontic;
+  operator: Replace;
+  summary: Replace text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Original text;
+  @action: Modified text;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-13-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'its';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Omit 'its', substitute 'those';
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a moral obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The CEO must, in performing his or her functions with respect to agricultural research...;
+  @action: The CEO MUST have regard to the need for persons or institutions in developing countries to share in that research.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Describes the temporal relationship between the provision and other provisions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The CEO must, in performing his or her functions with respect to agricultural research...;
+  @action: This provision contains Subsections 5(2) and (3).;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Describes the temporal relationship between the provision and other provisions.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The CEO must, in performing his or her functions with respect to agricultural research...;
+  @action: This provision contains Subsections 5(2) and (3).;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Describes the relationship between the provision and other provisions.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The CEO must, in performing his or her functions with respect to agricultural research...;
+  @action: This provision contains Subsections 5(2) and (3).;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-2;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Describes the relationship between the provision and other provisions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The CEO must, in performing his or her functions with respect to agricultural research...;
+  @action: This provision contains Subsections 5(2) and (3).;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-3-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits research on behalf of the Commonwealth.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Nothing in this section authorises, or permits, the CEO to carry out research on behalf of the Commonwealth.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-3;
+  logic: LinearLogic;
+  operator: Implication;
+  summary: Implies that research on behalf of the Commonwealth is prohibited if this section applies.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (3) Nothing in this section authorises, or permits, the CEO to carry out research on behalf of the Commonwealth.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Directions given under section 5A.;
+  @action: CEO must comply.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-ss-4-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-ss-4;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 14 subsection 4;
+  @action: Temporal interval contains section 14 subsection 4;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-5a-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5a-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to direct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-6-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Staff have an obligation to assist CEO.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-9-2-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Commission must provide advice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-10-2-ss-2-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2-ss-2;
+  logic: Deontic;
+  operator: holds;
+  summary: Commissioner holds office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A Commissioner...;
+  @action: The period must not exceed 3 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-10-2-ss-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10-2-ss-3;
+  logic: Deontic;
+  operator: cannot;
+  summary: Cannot be appointed;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Member of the Council;
+  @action: Prohibition;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-11-2-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must be part-time;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-13-2-ss-1-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-13-2-ss-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-2-ss-1-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Obligation to appoint a person as Commissioner;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-14-2-ss-2-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14-2-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to act under an appointment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-15-2-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15-2-ss-1;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission to grant leave;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide written resignation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-1-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition on Commissioner's actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Governor-General must terminate...;
+  @action: ...the appointment of a Commissioner if...;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-2;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between Commissioner's actions.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the Commissioner is absent, except on leave of absence, from 3 consecutive meetings...;
+  @action: ...the Commissioner fails, without reasonable excuse, to comply with section 16B.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation on Governor-General to terminate appointment.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Governor-General must terminate...;
+  @action: ...the appointment of a Commissioner if...;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-2;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of Commissioner's actions on appointment.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: ...if the Commissioner becomes bankrupt; or applies to take the benefit...;
+  @action: ...the Governor-General must terminate the appointment of a Commissioner.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16a-ss-2-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16a-ss-2;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagation of obligation from Governor-General to Commissioner.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The Governor-General must terminate...;
+  @action: ...the appointment of a Commissioner if...;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-1-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-2-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-3-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to disclose interests;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-4-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to record disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-5-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-5;
+  logic: Deontic;
+  operator: cannot;
+  summary: Cannot;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) The Commissioner:;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16b-ss-5-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16b-ss-5;
+  logic: Deontic;
+  operator: cannot;
+  summary: Cannot take part;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) must not take part in any decision of the Commission with respect to the matter.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16c-ss-1-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16c-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16c-ss-2-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16c-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to hold meetings at specified times and places.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Meetings are to be held...;
+  @action: ...at the times and places determined by the Commission.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16c-ss-3-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16c-ss-3;
+  logic: Deontic;
+  operator: May;
+  summary: Chair has the power to call a meeting.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16c-ss-4-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16c-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Ensure at least 4 meetings are held each financial year.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) The Chair must ensure that...;
+  @action: ...at least 4 meetings are held each financial year.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16d-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16d;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Right to receive notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16e-ss-1-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16e-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to preside;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The Chair presides...;
+  @action: Chair must preside.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16e-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16e-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to preside;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If the Chair is not present...;
+  @action: Commissioner must preside at meeting.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16e-ss-2-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16e-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation: Commissioner must preside after Chair's absence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If the Chair is not present...;
+  @action: Commissioner must preside at meeting if Chair is not present.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16e-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16e-ss-2;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Presiding officer implies meeting legitimacy;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) If the Chair is not present...;
+  @action: Meeting is legitimate if Commissioner presides.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16f-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16f;
+  logic: Deontic;
+  operator: constitutes;
+  summary: Quorum requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-1-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires majority vote;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A question arising at a meeting of the Commission is to be decided by a majority of the votes of the Commissioners present and voting.;
+  @action: A majority of votes are required for decisions;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-1;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal interval for voting decisions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) A question arising at a meeting of the Commission is to be decided by a majority of the votes of the Commissioners present and voting.;
+  @action: Voting decisions occur during meetings;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-1;
+  logic: LTL;
+  operator: holdsForAll;
+  summary: Temporal logic for voting decisions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) A question arising at a meeting of the Commission is to be decided by a majority of the votes of the Commissioners present and voting.;
+  @action: Voting decisions hold for all time;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-1-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-1;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffusion logic for voting decisions;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) A question arising at a meeting of the Commission is to be decided by a majority of the votes of the Commissioners present and voting.;
+  @action: Voting decisions diffuse through time;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-1-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-1;
+  logic: CogAI;
+  operator: cognizes;
+  summary: Cognitive logic for voting decisions;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) A question arising at a meeting of the Commission is to be decided by a majority of the votes of the Commissioners present and voting.;
+  @action: Voting decisions are recognized by CogAI;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Commissioner has a deliberative vote.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Commissioner presiding at a meeting of the Commission;
+  @action: has a deliberative vote;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16g-ss-2-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16g-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Commissioner has a casting vote.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The Commissioner presiding at a meeting of the Commission;
+  @action: has a casting vote;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16h-ss-1-logic-56 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-16h-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: May regulate proceedings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16h-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16h-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Ensure action is taken;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: minutes of meetings are kept;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16h-ss-2-logic-58 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-16h-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval for keeping minutes;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16j-ss-1-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16j-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16j-ss-2-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16j-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16j-ss-3-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16j-ss-3;
+  logic: Deontic;
+  operator: continuesDespite;
+  summary: Obligation to continue delegation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16j-ss-5-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16j-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chair's signature;
+  @action: Prima facie evidence;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16j-ss-6-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16j-ss-6;
+  logic: Deontic;
+  operator: TAKE;
+  summary: Taking as true;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16k-ss-1-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16k-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by the Minister.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16k-ss-2-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16k-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to consider relevant advice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister is giving a direction.;
+  @action: The Minister must have regard to any relevant advice.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16k-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16k-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Direction has a temporal relationship with consideration of advice.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Minister gives a direction at some point in time.;
+  @action: The direction was given before the relevant advice was considered.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16k-ss-2-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16k-ss-2;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Consideration of advice implies a duty to consider it.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The Minister considers relevant advice.;
+  @action: The Minister must have regard to the advice.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-16k-ss-3-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16k-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Minister must give a copy of the direction to the CEO.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-20-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-20;
+  logic: Deontic;
+  operator: cannot;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-19a-ss-1-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Appointed member of the Council;
+  @action: Remuneration determined by the Remuneration Tribunal;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-19a-ss-2-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-19a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Member of the Council must be paid allowances prescribed by regulations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Mandatory appointment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-2-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Deontic;
+  operator: holds;
+  summary: CEO holds office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The CEO holds office for the period specified in the instrument of appointment.;
+  @action: The CEO must hold office for a period not exceeding 7 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-2-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: CEO's office is during a period not exceeding 7 years;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The CEO holds office for the period specified in the instrument of appointment.;
+  @action: The CEO's office is during a period not exceeding 7 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-2-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Argumentation;
+  operator: must;
+  summary: CEO must hold office for a period not exceeding 7 years;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) The CEO holds office for the period specified in the instrument of appointment.;
+  @action: The CEO must hold office for a period not exceeding 7 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: Diffusion;
+  operator: must;
+  summary: CEO's office is diffused during a period not exceeding 7 years;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The CEO holds office for the period specified in the instrument of appointment.;
+  @action: The CEO's office is diffused during a period not exceeding 7 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-24-2-ss-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-24-2-ss-2;
+  logic: CogAI;
+  operator: must;
+  summary: CEO must hold office for a period not exceeding 7 years;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The CEO holds office for the period specified in the instrument of appointment.;
+  @action: The CEO must hold office for a period not exceeding 7 years.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-25-2-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-27-ss-1-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-27-ss-2-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to pay prescribed allowances.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-28-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Imposes a duty on the CEO;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29-ss-1-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by the Minister;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29-ss-2-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to act under an appointment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Anything done by or in relation to a person purporting to act under an appointment is not invalid.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29-ss-2-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Appointment overlap interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Anything done by or in relation to a person purporting to act under an appointment is not invalid.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29a-ss-1-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29a-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: CEO has a duty to receive recreation leave entitlements.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29a-ss-2-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29a-ss-2;
+  logic: Deontic;
+  operator: grant;
+  summary: Permission to grant leave of absence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29c-ss-1-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29c-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29c-ss-2-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29c-ss-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibition of CEO appointment under specified conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the CEO becomes bankrupt; or (b) the CEO is absent for 14 consecutive days; or (c) the CEO engages in paid employment outside duties;
+  @action: The Governor-General must terminate the appointment of the CEO;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29c-ss-2-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29c-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: CEO's absence for 14 consecutive days overlaps with specified conditions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the CEO is absent for 14 consecutive days; or (c) the CEO engages in paid employment outside duties;
+  @action: The CEO's absence for 14 consecutive days overlaps with specified conditions;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29c-ss-2-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29c-ss-2;
+  logic: LTL;
+  operator: Recurrently;
+  summary: CEO's absence for 14 consecutive days is recurrently absent under specified conditions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (b) the CEO is absent for 14 consecutive days; or (c) the CEO engages in paid employment outside duties;
+  @action: The CEO's absence for 14 consecutive days is recurrently absent under specified conditions;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29c-ss-2-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29c-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Governor-General has an obligation to terminate CEO appointment under specified conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the CEO becomes bankrupt; or (b) the CEO is absent for 14 consecutive days; or (c) the CEO engages in paid employment outside duties;
+  @action: The Governor-General must terminate the appointment of the CEO;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29d-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29d;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to disclose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29e-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29e;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of direction by the Commission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The CEO is not subject to direction by the Commission.;
+  @action: The CEO's performance of functions and exercise of powers are exempt from Commission direction.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29e-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29e;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between CEO's exemption and Commission direction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The CEO is not subject to direction by the Commission in relation to certain matters.;
+  @action: The CEO's performance of functions and exercise of powers are exempt from Commission direction during the period when they relate to certain matters.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29e-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29e;
+  logic: LTL;
+  operator: until;
+  summary: Temporal relationship between CEO's exemption and Commission direction;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The CEO is not subject to direction by the Commission in relation to certain matters.;
+  @action: The CEO's performance of functions and exercise of powers are exempt from Commission direction until they relate to certain matters.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29e-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29e;
+  logic: Diffusion;
+  operator: if-then;
+  summary: Conditional relationship between CEO's exemption and Commission direction;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The CEO is not subject to direction by the Commission in relation to certain matters.;
+  @action: If the CEO's performance of functions relates to certain matters, then they are exempt from Commission direction.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-29e-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29e;
+  logic: CogAI;
+  operator: classification;
+  summary: Classification of CEO's exemption as a rule;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The CEO is not subject to direction by the Commission in relation to certain matters.;
+  @action: The CEO's performance of functions and exercise of powers are exempt from Commission direction if they relate to certain matters, which can be classified as a rule.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-26-2-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26-2;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace 'Director' with 'CEO';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-27-2-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-27-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Board';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: CEO must be used instead.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-32-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to engage consultants;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-34-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-35-ss-1-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: Deontic;
+  operator: sets out;
+  summary: Establishes obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-35-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-2;
+  logic: Deontic;
+  operator: imposes;
+  summary: Duty on Commonwealth;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-33-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Board';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: CEO must be used instead.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-34-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-34-2;
+  logic: Deontic;
+  operator: add;
+  summary: Adds obligations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-1-sec-41-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-41;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by the Minister.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-1-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for defined terms;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Definitions are used throughout Schedule 2;
+  @action: Terms must be classified according to their definitions;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-1-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: Deontic;
+  operator: includes;
+  summary: Enumerates types of assets and instruments;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Assets and instruments are defined in the Schedule;
+  @action: These definitions apply to all relevant provisions;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines key terms.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Establishes a class hierarchy for land registration official and liability.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-4-logic-111 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires certificate for land vesting;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Certificate signed by Minister, identifying land and stating it has vested in Commonwealth;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-4-logic-112 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: allows;
+  summary: Allows registration of matter with certificate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The land registration official may: (a) register the matter in a way that is the same as, or similar to, the way in which dealings in land of that kind are registered;;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-4-logic-113 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires registration with certificate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The land registration official may: (b) deal with, and give effect to, the certificate.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-5-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Asset must be lodged with an assets official.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) is signed by the Minister; (ii) identifies the asset; (iii) states that the asset has become vested in the Commonwealth under this Part.;
+  @action: The certificate must be lodged with an assets official.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-5-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: AllenInterval;
+  operator: BECOMES;
+  summary: Asset becomes vested in the Commonwealth under this Part.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (iii) states that the asset has become vested in the Commonwealth under this Part.;
+  @action: The asset becomes vested in the Commonwealth under this Part.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-5-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: LTL;
+  operator: RECURSIVE;
+  summary: Assets official must deal with and give effect to the certificate.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) deal with, and give effect to, the certificate as if it were a proper and appropriate instrument for transactions in relation to assets of that kind.;
+  @action: The assets official must deal with and give effect to the certificate.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-5-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Assets official must make entries in the register.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: make such entries in the register as are necessary, having regard to the effect of this Schedule.;
+  @action: The assets official must make entries in the register.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-5-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Assets official must deal with and give effect to the certificate.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) deal with, and give effect to, the certificate as if it were a proper and appropriate instrument for transactions in relation to assets of that kind.;
+  @action: The assets official must deal with and give effect to the certificate.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-8-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: implies;
+  summary: If an instrument contains a reference to the Centre or Director, it has effect from the commencement time as if the reference were a reference to the CEO.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: An instrument is in force immediately before the commencement time.;
+  @action: The instrument has effect from the commencement time as if the reference were a reference to the CEO.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-8-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: implies;
+  summary: If an instrument relates to assets or liabilities covered by item 2 or 3, and it refers to the Centre or to the Director, the reference is to be read as a reference to the Commonwealth.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: An instrument is in force immediately before the commencement time.;
+  @action: The reference is to be read as a reference to the Commonwealth.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-8-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: implies;
+  summary: If an instrument contains a reference to the Board, it has effect from the commencement time as if the reference were a reference to the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: An instrument is in force immediately before the commencement time.;
+  @action: The instrument has effect from the commencement time as if the reference were a reference to the Commission.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-8-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: implies;
+  summary: The Minister may provide otherwise in relation to specified references.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister may, by writing, determine that subitem (1), (2) or (3): does not apply in relation to a specified reference;;
+  @action: The Minister may override the application of subitem (1), (2) or (3).;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-3-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-3;
+  logic: Deontic;
+  operator: apply;
+  summary: Apply references as if.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) applies as if: (i) in the case of subitem (1)—the reference in that subitem to the CEO were a reference to the Commonwealth; or (ii) in the case of subitem (2)—the reference in that subitem to the Commonwealth were a reference to the CEO; or (iii) in the case of subitem (3)—the reference in that subitem to the Commission were a reference to the CEO.;
+  @action: (5) The regulations may provide that an instrument containing a reference specified in a determination under paragraph (4)(a) has effect from the commencement time as if: (a) in the case of an instrument covered by subitem (1)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (b) in the case of an instrument covered by subitem (2)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (c) in the case of an instrument covered by subitem (3)—the reference were a reference to a specified person or body other than the Commission or the CEO.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-3-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Determination has effect from commencement time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) The regulations may provide that an instrument containing a reference specified in a determination under paragraph (4)(a) has effect from the commencement time as if: (a) in the case of an instrument covered by subitem (1)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (b) in the case of an instrument covered by subitem (2)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (c) in the case of an instrument covered by subitem (3)—the reference were a reference to a specified person or body other than the Commission or the CEO.;
+  @action: (5) The regulations may provide that an instrument containing a reference specified in a determination under paragraph (4)(a) has effect from the commencement time as if: (a) in the case of an instrument covered by subitem (1)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (b) in the case of an instrument covered by subitem (2)—the reference were a reference to a specified person or body other than the Commonwealth or the CEO; or (c) in the case of an instrument covered by subitem (3)—the reference were a reference to a specified person or body other than the Commission or the CEO.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-3-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-3;
+  logic: LTL;
+  operator: until;
+  summary: Determination has effect until commencement time.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (6) A determination under subitem (4) is not a legislative instrument.;
+  @action: (6) A determination under subitem (4) is not a legislative instrument.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-3-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-3;
+  logic: Deontic;
+  operator: not;
+  summary: Determination is not a legislative instrument.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) A determination under subitem (4) is not a legislative instrument.;
+  @action: (6) A determination under subitem (4) is not a legislative instrument.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-10-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: CEO must provide report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-4-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-4;
+  logic: Deontic;
+  operator: obligation;
+  summary: CEO has an obligation to provide report.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-11-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-11;
+  logic: Deontic;
+  operator: takes;
+  summary: The person holding office is taken to have been duly appointed.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-12-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-12;
+  logic: Deontic;
+  operator: takes;
+  summary: Staff engagement upon commencement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1);
+  @action: (2);
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-14-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Deontic;
+  operator: =;
+  summary: Identity obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Person A is engaged as consultant under old law.;
+  @action: Person A is taken to be engaged as consultant under new law.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-14-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation between engagement under old and new laws;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Engagement under old law occurred before commencement time.;
+  @action: Engagement under new law occurs after commencement time.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-14-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: LTL;
+  operator: <=;
+  summary: Temporal relation between engagement under old and new laws;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Engagement under old law occurred before commencement time.;
+  @action: Engagement under new law occurs after or at commencement time.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-14-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Dialectical;
+  operator: implies;
+  summary: Implication of engagement under old law on engagement under new law;
+  executionSurface: modalities::dialectical;
+  curationStatus: Proposed;
+  @condition: Person A is engaged as consultant under old law.;
+  @action: Person A is taken to be engaged as consultant under new law.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-14-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-14;
+  logic: Diffusion;
+  operator: iff;
+  summary: Equivalence of engagement under old and new laws;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Person A is engaged as consultant under old law.;
+  @action: Person A is taken to be engaged as consultant under new law.;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-5-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-5;
+  logic: Deontic;
+  operator: continuity;
+  summary: Continuity of terms and conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2);
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-15-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No stamp duty or tax is payable.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-15-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-15;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Transfer of an asset or liability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-16-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-16;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to pay compensation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-17-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-17;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-18-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-18;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by the Minister.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-2007-6-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2007-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: The CEO is obligated to comply with the Minister's directions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-centre-for-international-agricultural-research-amendment-act-2007-sch-2-sec-19-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-19;
+  logic: Deontic;
+  operator: may prescribe;
+  summary: Governor-General has obligation to prescribe regulations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

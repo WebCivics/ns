@@ -1,0 +1,133 @@
+# CogAI proposed logic-routing chunks — Australian Human Rights Commission Amendment (Costs Protection) Act 2024
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-1;
+  logic: Deontic;
+  operator: applicableTo;
+  summary: Applicable to proceedings in a court relating to an application under section 46PO.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Applicable during proceedings (including an appeal) in a court relating to an application under section 46PO.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide costs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-4-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-4;
+  logic: Deontic;
+  operator: exclusion;
+  summary: Exclusion of liability for costs incurred due to unreasonable act or omission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If the court is satisfied...;
+  @action: ...the court is not required to order the respondent to pay the costs incurred as a result of that act or omission.;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-4-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between 'act' and 'omission';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) If the court is satisfied...;
+  @action: ...the court is not required to order the respondent to pay the costs incurred as a result of that act or omission.;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-4-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-4;
+  logic: LTL;
+  operator: orderedBy;
+  summary: Ordered trace between 'act' and 'omission';
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (4) If the court is satisfied...;
+  @action: ...the court is not required to order the respondent to pay the costs incurred as a result of that act or omission.;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-4;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffusion of liability for costs incurred due to unreasonable act or omission;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) If the court is satisfied...;
+  @action: ...the court is not required to order the respondent to pay the costs incurred as a result of that act or omission.;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-3-ss-4-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3-ss-4;
+  logic: CogAI;
+  operator: cognizes;
+  summary: Cognitive processing of 'unreasonable act' and 'omission';
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If the court is satisfied...;
+  @action: ...the court is not required to order the respondent to pay the costs incurred as a result of that act or omission.;
+}
+
+australian-human-rights-commission-amendment-costs-protection-act-2024-sch-1-sec-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to provide redress for unlawful discrimination;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

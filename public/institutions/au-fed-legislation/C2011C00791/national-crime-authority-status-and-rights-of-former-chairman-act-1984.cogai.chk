@@ -1,0 +1,497 @@
+# CogAI proposed logic-routing chunks — National Crime Authority (Status and Rights of Former Chairman) Act 1984
+# Machine-derived; every chunk remains cml:Proposed.
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Classifies offices;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an office or appointment in the service or employment of such an incorporated company.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Defines temporal intervals for offices;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an office established by, or an appointment made under, a law of the Commonwealth or a law of a Territory other than the Northern Territory;;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Deontic;
+  operator: includes;
+  summary: Classifies offices as part of the Commonwealth's authority;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an office or appointment in the service or employment of a corporation established for a public purpose by or under a law of the Commonwealth or a law of a Territory other than the Northern Territory;;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Argumentation;
+  operator: includes;
+  summary: Classifies offices as part of the Commonwealth's authority;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an appointment made by the Governor-General or a Minister otherwise than under such a law;;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Diffusion;
+  operator: includes;
+  summary: Classifies offices as part of the Commonwealth's authority;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an appointment as a director of an incorporated company over which the Commonwealth is in a position to exercise control;;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: CogAI;
+  operator: includes;
+  summary: Classifies offices as part of the Commonwealth's authority;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: office under the Commonwealth includes...;
+  @action: ...an office or appointment in the service or employment of such an incorporated company.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-4-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: Obligate;
+  summary: The Act applies only if the Chairman of the National Crime Authority has resigned his office as a Judge of the Supreme Court of New South Wales.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-5-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: hasSameDesignation;
+  summary: Same designation as a Judge of the Supreme Court of the Australian Capital Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Honourable Donald Gerard Stewart shall have the same designation, rank, status and precedence as a Judge of the Supreme Court of the Australian Capital Territory.;
+  @action: Donald Gerard Stewart has the same designation as a Judge of the Supreme Court of the Australian Capital Territory.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-5-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: During a specific period of service.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Honourable Donald Gerard Stewart shall have the same designation, rank, status and precedence during his service in the office of Chairman of the National Crime Authority.;
+  @action: Donald Gerard Stewart is serving during the specified period.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-5-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: LTL;
+  operator: during;
+  summary: During a specific period of service.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Honourable Donald Gerard Stewart shall have the same designation, rank, status and precedence during his service in the office of Chairperson of the Resource Assessment Commission.;
+  @action: Donald Gerard Stewart is serving during the specified period.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-5-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: hasSameRank;
+  summary: Same rank as a Judge of the Supreme Court of the Australian Capital Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Honourable Donald Gerard Stewart shall have the same designation, rank, status and precedence as a Judge of the Supreme Court of the Australian Capital Territory.;
+  @action: Donald Gerard Stewart has the same rank as a Judge of the Supreme Court of the Australian Capital Territory.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-5-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5;
+  logic: Deontic;
+  operator: hasSameStatus;
+  summary: Same status as a Judge of the Supreme Court of the Australian Capital Territory.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Honourable Donald Gerard Stewart shall have the same designation, rank, status and precedence as a Judge of the Supreme Court of the Australian Capital Territory.;
+  @action: Donald Gerard Stewart has the same status as a Judge of the Supreme Court of the Australian Capital Territory.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-1a-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1a;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Conditions of service apply to the Chairperson.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-2;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Entitlement to long leave.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Pay remuneration to Judge of Supreme Court during long leave.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-4;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of payment during office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If the Honourable Donald Gerard Stewart becomes entitled to a payment...;
+  @action: ...the making of the payment shall be deferred...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between office and payment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the making of the payment shall be deferred until he has ceased to hold such an office:;
+  @action: ...the amount payable shall be calculated as if the annual rate of salary that was payable...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-4-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-4;
+  logic: Argumentation;
+  operator: implies;
+  summary: Payment deferral implies ceasing office;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (a) the making of the payment shall be deferred until he has ceased to hold such an office:;
+  @action: ...the amount payable shall be calculated as if...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-4-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-4;
+  logic: Diffusion;
+  operator: and;
+  summary: Multiple conditions for deferral;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the making of the payment shall be deferred until he has ceased to hold such an office; (b) his qualifying service for the purpose of calculating...;
+  @action: ...the amount payable shall be calculated as if...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-7-ss-4-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-4;
+  logic: CogAI;
+  operator: asserts;
+  summary: Payment deferral is asserted by section 4;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) If the Honourable Donald Gerard Stewart becomes entitled to a payment under section 4 of the Judges (Long Leave Payments) Act 1979...;
+  @action: ...the making of the payment shall be deferred...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-4-2-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to pay upon ceasing full-time office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Deontic;
+  operator: DEEMED;
+  summary: Implies a duty to provide service as Judge for purposes of Judges' Pensions Act 1968.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Service by Donald Gerard Stewart as Chairman of National Crime Authority or Chairperson of Resource Assessment Commission.;
+  @action: Service is deemed to be Judge's service for purposes of Judges' Pensions Act 1968.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Establishes temporal interval between appointment as Chairperson of Resource Assessment Commission and retirement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Donald Gerard Stewart's appointment as Chairperson of Resource Assessment Commission.;
+  @action: Appointment is within a temporal interval preceding Donald Gerard Stewart's retirement.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: LinearLogic;
+  operator: AND;
+  summary: Combines multiple obligations to provide service as Judge for purposes of Judges' Pensions Act 1968.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Service by Donald Gerard Stewart as Chairman of National Crime Authority.;
+  @action: Service is deemed to be Judge's service for purposes of Judges' Pensions Act 1968.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Dialectical;
+  operator: OR;
+  summary: Establishes alternative conditions under which Donald Gerard Stewart's service as Chairman of National Crime Authority or Chairperson of Resource Assessment Commission is deemed Judge's service.;
+  executionSurface: modalities::dialectical;
+  curationStatus: Proposed;
+  @condition: Service by Donald Gerard Stewart as Chairman of National Crime Authority.;
+  @action: Service is deemed to be Judge's service for purposes of Judges' Pensions Act 1968.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Establishes implication between Donald Gerard Stewart's service as Chairman of National Crime Authority or Chairperson of Resource Assessment Commission and Judge's service for purposes of Judges' Pensions Act 1968.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Service by Donald Gerard Stewart as Chairman of National Crime Authority.;
+  @action: Service implies Judge's service for purposes of Judges' Pensions Act 1968.;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-1-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of receiving remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-3-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No remuneration for Deputy President office;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-3-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Remuneration overlap between offices;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) If the Honourable Donald Gerard Stewart holds office as a full-time Deputy President of the Administrative Appeals Tribunal while he holds the office of Chairperson of the Resources Assessment Commission...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-3-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Remuneration for Deputy President office if not exceeding ComLaw Authoritative Act C2011C00791;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If the Honourable Donald Gerard Stewart holds office as a full-time Deputy President of the Administrative Appeals Tribunal while he holds the office of Chairperson of the Resources Assessment Commission...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-9-ss-3-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: Deontic;
+  operator: Permission;
+  summary: Remuneration for Deputy President office if exceeding ComLaw Authoritative Act C2011C00791;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If the Honourable Donald Gerard Stewart holds office as a full-time Deputy President of the Administrative Appeals Tribunal while he holds the office of Chairperson of the Resources Assessment Commission...;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-6-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Chairman's right to remuneration;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-15-3-logic-35 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Defines temporal intervals for royal assent;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 13 July Ss. 4–11;
+  @action: 1 Dec 1988 (see Gazette 1988, No. S366);
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-15-3-logic-36 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-3;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Classifies sections by type of assent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Ss. 1–3, 12 and 20–23: Royal Assent;
+  @action: Ss. 4–11: 13 July Ss. 13–19: 1 Dec 1988 (see Gazette 1988, No. S366) S. 24: 15 June;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-15-3-logic-37 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-3;
+  logic: LTL;
+  operator: Applicable;
+  summary: Defines trace for royal assent;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: 13 July Ss. 4–11;
+  @action: 1 Dec 1988 (see Gazette 1988, No. S366);
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-15-3-logic-38 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-3;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Applies to royal assent sections;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Ss. 1–3, 12 and 20–23: Royal Assent;
+  @action: Ss. 4–11: 13 July Ss. 13–19: 1 Dec 1988 (see Gazette 1988, No. S366) S. 24: 15 June;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-15-3-logic-39 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-15-3;
+  logic: CogAI;
+  operator: Applicable;
+  summary: Analyzes royal assent sections for AI applications;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Ss. 1–3, 12 and 20–23: Royal Assent;
+  @action: Ss. 4–11: 13 July Ss. 13–19: 1 Dec 1988 (see Gazette 1988, No. S366) S. 24: 15 June;
+}
+
+national-crime-authority-status-and-rights-of-former-chairman-act-1984-sec-8-2-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Requires a relation between identifiable temporal intervals.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}

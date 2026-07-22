@@ -1,0 +1,274 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Penalty Unit) Act 2015
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace existing definition with new one.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: Definition Substitution;
+  summary: Update definition of quarter.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines a term with a specific meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: DescriptionLogic;
+  operator: substitutes;
+  summary: Replaces an existing definition with a new one;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-3-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must publish penalty unit amount.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-3-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-3;
+  logic: AllenInterval;
+  operator: >;
+  summary: Defines a relation between temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-5-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Mandatory rounding instruction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) An indexation factor is to be calculated...;
+  @action: An indexation factor must be rounded up if the fourth decimal place is 5 or more.;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-5-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-5;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval for rounding instruction;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) An indexation factor is to be calculated...;
+  @action: The rounding instruction applies to the calculation of an indexation factor at any time.;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-5-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-5;
+  logic: LTL;
+  operator: RECURSIVE;
+  summary: Recurring trace for rounding instruction;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) An indexation factor is to be calculated...;
+  @action: The rounding instruction applies recursively to the calculation of an indexation factor at any time.;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-5-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-5;
+  logic: Diffusion;
+  operator: APPLIES_TO;
+  summary: Applicability of rounding instruction;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) An indexation factor is to be calculated...;
+  @action: The rounding instruction applies to the calculation of an indexation factor.;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-5-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-5;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Rounding instruction for AI applications;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) An indexation factor is to be calculated...;
+  @action: A rounding instruction like this applies to AI applications.;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-6-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must round amounts;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) Amounts worked out under subsection (3);
+  @action: Amounts must be rounded to the nearest whole dollar;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-6-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-6;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Rounding applies to a specific interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) Amounts worked out under subsection (3);
+  @action: Amounts are rounded at the end of section 4AA;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-6-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-6;
+  logic: Diffusion;
+  operator: APPLIES_TO;
+  summary: Rounding applies to a specific context;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) Amounts worked out under subsection (3);
+  @action: Amounts are rounded in the context of section 4AA;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-6-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-6;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Rounding is a cognitive action;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (6) Amounts worked out under subsection (3);
+  @action: Amounts are rounded by the system;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-7-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-7;
+  logic: Deontic;
+  operator: use;
+  summary: Use specified index numbers.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) Calculations under subsection (4):;
+  @action: are to be made using only the index numbers published in terms of the most recently published index reference period;;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-7-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-7;
+  logic: AllenInterval;
+  operator: between;
+  summary: Index numbers are used between specified periods.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (7) Calculations under subsection (4):;
+  @action: are to be made using only the index numbers published in terms of the most recently published index reference period;;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-7-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-7;
+  logic: LTL;
+  operator: between;
+  summary: Index numbers are used between specified periods.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (7) Calculations under subsection (4):;
+  @action: are to be made using only the index numbers published in terms of the most recently published index reference period;;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-7-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-7;
+  logic: Diffusion;
+  operator: through;
+  summary: Index numbers are used through specified periods.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (7) Calculations under subsection (4):;
+  @action: are to be made using only the index numbers published in terms of the most recently published index reference period;;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-7-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-7;
+  logic: CogAI;
+  operator: classify;
+  summary: Classify calculations as using specified index numbers.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (7) Calculations under subsection (4):;
+  @action: are to be made using only the index numbers published in terms of the most recently published index reference period;;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-4-ss-8-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4-ss-8;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Indexation day;
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-penalty-unit-act-2015-sch-1-sec-5-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: implies;
+  summary: Amendment applies to offences committed after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

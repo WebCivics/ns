@@ -1,0 +1,5601 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.7",
+      "skos:note": "Definition of insurance contract",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 12BA(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-1-norm",
+        "concept:c2023c00239-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f594aed4e6b42b5051c1ea53af74b0a90005bad60fd39538ea7e53d431050988",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "insurance contract means a contract of insurance to which the Insurance Contracts Act 1984 applies.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "="
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.10",
+      "skos:note": "Amendments of Insurance Contracts Act 1984 apply to Australian Securities and Investments Commission Act 2001",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Application of amendments of the Insurance Contracts"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-1-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d63275131f7e7a7e6535f7bf78dbf91b8ccd98931415247165398de89c9ec575",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-10-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-10"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.7",
+      "skos:note": "Applicability of Insurance Contracts Act to insurance contracts",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 At the end of section 12BF"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-2-norm",
+        "concept:c2023c00239-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7073f0cc5de9e51f2973c878765a4b2f32428981c4913ad363623951a0cb1ba0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies to Insurance Contracts Act insurance contracts",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:description": "Transparent term disclosure",
+      "dc:source": "c2023c00239.pdf, p.7",
+      "skos:note": "Insurance contracts must disclose transparent terms at or before entry.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 At the end of subsection 12BI(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-3-norm",
+        "concept:c2023c00239-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "35497118aac0f98d382ac1b1f792a6ac20656b51d8d93976a20e3d15c62032a3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "325 Application—unfair contract terms"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-1-sec-325-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-1-sec-325-ss-2"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-1-sec-325-ss-3"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-1-sec-325-ss-4"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-325",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "Amendments apply to contracts entered into on or after commencement of Schedule.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "325(1) Application—unfair contract terms"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-325-ss-1-norm",
+        "concept:c2023c00239-sch-1-sec-325-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a662c2c5e9c1d390e670af39401fa5899c2c0a145412939f26b4e8d01465652c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-325-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-1-sec-325"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendments apply to contracts entered into on or after commencement of Schedule.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-325-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "Exempts contracts entered into before the commencement of Schedule 1 from the amendments.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "325(2) Application—unfair contract terms"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-1-sec-325-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "472282fd36fda176807f90a1424232cbbdbbcb68897a8fe07792bc966a4ed173",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-325-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-1-sec-325"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-325-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "Applicable provision for unfair contract terms",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "325(3) Application—unfair contract terms"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-325-ss-3-norm",
+        "concept:c2023c00239-sch-1-sec-325-ss-3-logic-deontic-1",
+        "concept:c2023c00239-sch-1-sec-325-ss-3-logic-alleninterval-2",
+        "concept:c2023c00239-sch-1-sec-325-ss-3-logic-ltl-3",
+        "concept:c2023c00239-sch-1-sec-325-ss-3-logic-diffusion-4",
+        "concept:c2023c00239-sch-1-sec-325-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c3544ecb9d344b43fb0f69d6ad3546a49c93e15584fed5c33d6bfe48690c03f4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-325-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-1-sec-325"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...subsection 12BF(2) and section 12BK of this Act apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between provisions",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3) If paragraph (2)(b) of this section applies..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...subsection 12BF(2) and section 12BK of this Act apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Artificial agent application",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3) If paragraph (2)(b) of this section applies..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...subsection 12BF(2) and section 12BK of this Act apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Provision applies to contracts",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3) If paragraph (2)(b) of this section applies..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...subsection 12BF(2) and section 12BK of this Act apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Provision affects contracts",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3) If paragraph (2)(b) of this section applies..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...subsection 12BF(2) and section 12BK of this Act apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Ordered trace for provision application",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(3) If paragraph (2)(b) of this section applies..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-325-ss-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "Exempts contracts from amendments if it would result in an unfair acquisition of property.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "325(4) Application—unfair contract terms"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-325-ss-4-norm",
+        "concept:c2023c00239-sch-1-sec-325-ss-4-logic-deontic-1",
+        "concept:c2023c00239-sch-1-sec-325-ss-4-logic-alleninterval-2",
+        "concept:c2023c00239-sch-1-sec-325-ss-4-logic-ltl-3",
+        "concept:c2023c00239-sch-1-sec-325-ss-4-logic-cogai-4",
+        "concept:c2023c00239-sch-1-sec-325-ss-4-logic-shacl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d24d5214c6164307b4289896cc8b30c5b58faa9466229b2b40e54b8428a20cc0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-325-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-1-sec-325"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemptions apply during this time period.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Exempts contracts from amendments due to temporal overlap.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "The operation of the amendments would result in an acquisition of property..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemptions are represented by this rule.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Represents the exemption as a knowledge representation.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Knowledge Representation",
+      "cml:premiseText": "The amendments do not apply to a contract, or a term of a contract..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemptions apply.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the application of amendments to certain contracts.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "The operation of the amendments would result in an acquisition of property from a person otherwise than on just terms."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemptions are valid during this time frame.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Incorporates temporal logic to define the exemption period.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Inclusion",
+      "cml:premiseText": "The amendments do not apply to a contract, or a term of a contract..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-logic-shacl-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The exemptions conform to this schema.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::shacl",
+      "cml:logicSummary": "Validates the exemption schema.",
+      "cml:modality": {
+        "@id": "cml:SHACL"
+      },
+      "cml:operator": "Schema Validation",
+      "cml:premiseText": "The amendments do not apply to a contract, or a term of a contract..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-325-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-325-ss-4"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.7",
+      "skos:note": "Have regard to the main subject matter of the contract only to the extent that it describes what is being insured.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of section 12BI"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2590130fc06f79e7903106396f98e296645d6c6242714f9d8cc5b550dda7a374",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.7",
+      "skos:note": "Exempts certain medical indemnity contracts from the Subdivision's application.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After subsection 12BL(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-5-norm",
+        "concept:c2023c00239-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f54cc850935c25229137d376b96754159270fc7be6199d9a9cc23d6498469b28",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "None",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negates the Subdivision's application for these contracts",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "!",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "A person who is a third party beneficiary under the contract.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 At the end of subsections 12GND(1) and (2)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-6-norm",
+        "concept:c2023c00239-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "85297fc3c00e01add8b32818a2e994971a0bd5f1a89554eaa10d6b7b8903e70f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies beneficiaries of a contract.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "hasBeneficiary"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.8",
+      "skos:note": "Insert in an appropriate position",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 In the appropriate position"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-1-sec-7-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-7-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.9",
+      "skos:note": "This Part operates in addition to the unfair contract terms provisions of the Australian Securities and Investments Commission Act 2001.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 At the end of section 12"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-1-sec-8-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f5639bb7f98aae650fa8be3877160127bf8f0e61d554c66935b86e7c9310bfd1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-8-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-8"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.9",
+      "skos:note": "Omit all words after 'but does not' and substitute with specific clauses.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Subsection 15(2)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-1-sec-9-norm",
+        "concept:c2023c00239-sch-1-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5efd48c34ec1a9b86149f5ee75a323deab27b56011621a36de6995e372a65c7f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-1-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "New text",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibit omission of words",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "prohibition",
+      "cml:premiseText": "Text"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-1-sec-9-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-1-sec-9"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.22",
+      "skos:note": "Defines 'amending Act'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Definitions"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-1-norm",
+        "concept:c2023c00239-sch-10-sec-1-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b64ed620d631a163c75acdb94d37a40cc7a2b04938a13c058ba923e0d48e9d3e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-1-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "amending Act means the Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "is-a",
+      "cml:premiseText": "In this Schedule:"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-10",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Substitute 'indirect remuneration' for 'commissions'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "10 Subparagraph 113(2)(g)(i)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-10-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-10",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-10-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-10"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-11",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Omit 'those commissions', substitute 'that indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "11 Subparagraph 113(2)(g)(ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-11-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f022865a1edcd6492f130341c87c79255499b650a8390f2a5532a2be50260bb1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-11",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-11-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-11"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Omit 'commissions' and substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 Subparagraphs 113(3)(b)(i) and (ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-12-norm",
+        "concept:c2023c00239-sch-10-sec-12-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48106c15a363a29d5dc111b2c06c4f696416520795e431deccb8dcdb13ceac9f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-12-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'commissions'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-12-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-12"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-13",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "13 Division 5 of Part 3-1 of Chapter 3 (heading)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-13-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-13",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-13-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-13"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-14",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Substitute 'indirect remuneration' for 'commissions'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Section 121 (heading)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-14-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-14",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-14-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.29",
+      "skos:note": "Conditional commencement of Schedule 1 item 10",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "14 Sept"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-14-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b6049b73cdf163a3c2e54577e44036fdc58453b97c184481bb9d0e492c90446e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-14-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-14-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-14-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-14-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-14"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Substitute 'indirect remuneration' for 'commissions'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 Paragraph 121(2)(b)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ed6e149b2a921e358e4377e8033fb451e1459a3d2f8a13b4ebc9e7962ff509bc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-15-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-15"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-16",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "16 Paragraphs 121(3)(a) and (b)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-16-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-16",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-16-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-16"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commission', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Section 134 (paragraph beginning “Division 5”)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1a3ecaa823bb26a31d05b6ee34fc2523ca718186d38ab406a21d896c0b1e19b4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-17-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.29",
+      "skos:note": "Commencement dates for Treasury Laws Amendment (Modernising Business Communications and Other Measures) Act 2023",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 Feb"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-17-2-norm",
+        "concept:c2023c00239-sch-10-sec-17-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc7d436ef98599dc9ad48c28f53b4f71b32aeca8b5c875a6f8a1767057a27c9f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-17-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-17-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Undertaking",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Requires temporal intervals for commencement dates",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Commencement dates are specified"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-17-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-17-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-17-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-17"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 Subparagraph 136(2)(g)(i)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-18-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-18-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-18"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-19",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'those commissions', substitute 'that indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "19 Subparagraph 136(2)(g)(ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-19-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f022865a1edcd6492f130341c87c79255499b650a8390f2a5532a2be50260bb1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-19",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-19-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-19"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.22",
+      "skos:note": "Division 2 of Part 3-5A applies to credit assistance on or after July 1, 2020.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Application of best interests obligations"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-2-norm",
+        "concept:c2023c00239-sch-10-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9eb9cef2b51b209d43c8e0909b1fcf90ff0172d1047c54ddd314f6d7fb385918",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Division applies to credit assistance",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-20",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions' and substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "20 Subparagraphs 136(3)(b)(i) and (ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-20-norm",
+        "concept:c2023c00239-sch-10-sec-20-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48106c15a363a29d5dc111b2c06c4f696416520795e431deccb8dcdb13ceac9f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-20",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-20-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'commissions'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-20-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-20"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Substitute 'indirect remuneration' for 'commissions'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 Division 5 of Part 3-3 of Chapter 3 (heading)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-21-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-21-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-21"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-22",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Substitute 'indirect remuneration' for 'commissions'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "22 Section 144 (heading)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-22-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-22",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-22-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-22"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-23",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "23 Paragraph 144(2)(b)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-23-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-23",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-23-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-23"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-24",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "24 Paragraphs 144(3)(a) and (b)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-24-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-24",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-24-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-24"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-25",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit 'commissions', substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "25 Subparagraph 158(2)(g)(i)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-25-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c086cb70c1ee86e80173c5f17e3d425016da900609d12ee9e5d73eba19b657f0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-25",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-25-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-25"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-26",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.24",
+      "skos:note": "Omit “those commissions”, substitute ‘that indirect remuneration’.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "26 Subparagraph 158(2)(g)(ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-10-sec-26-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b948123c1cb07b6a5fa146e2edbd1124ca6a2c55b06f095c0bbb3e91cc8078ce",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-26",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-26-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-26"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-27",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.25",
+      "skos:note": "Omit 'commissions' and substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "27 Subparagraphs 158(3)(b)(i) and (ii)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-27-norm",
+        "concept:c2023c00239-sch-10-sec-27-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48106c15a363a29d5dc111b2c06c4f696416520795e431deccb8dcdb13ceac9f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-27",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-27-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'commissions'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-27-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-27"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-28",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.25",
+      "skos:note": "Omit specific wording from a provision.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "28 Subparagraph 160B(2)(a)(i)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-28-norm",
+        "concept:c2023c00239-sch-10-sec-28-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2b5a94b2967f900c6b727dc2b3ff6434bc1e50be0ab8d9c42b0eac7d5eb9386c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-28",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-28-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the specified action.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-28-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-28"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.25",
+      "skos:note": "Substitute 'indirect remuneration' for 'commission'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 Paragraph 160B(2)(d)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-29-norm",
+        "concept:c2023c00239-sch-10-sec-29-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e32bd8ab864861964c23a979beed300f4473970a502e0b36e88369f4d85d18c8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-29-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Substitute 'indirect remuneration' for 'commission'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-29-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-29"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.22",
+      "skos:note": "Ban on conflicted remuneration applies to benefits given after July 1, 2020.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Application of ban on conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-3-norm",
+        "concept:c2023c00239-sch-10-sec-3-logic-deontic-1",
+        "concept:c2023c00239-sch-10-sec-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "33883758dc439711c26cd920bed773576970433e36af0492411ad8638be8af68",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Benefits given after July 1, 2020, overlap with the ban on conflicted remuneration.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "(1)"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits benefits given after July 1, 2020.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(1)"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Definition of indirect remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Subsection 5(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-7-norm",
+        "concept:c2023c00239-sch-10-sec-7-logic-deontic-1",
+        "concept:c2023c00239-sch-10-sec-7-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6b58488aa4c68f908fff605e39da74825be4d3c0f54fa2a6d2aec353a06ab85",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "="
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-7-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Applies to definitions",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "="
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: LegalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:LegalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-7"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-8",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Omit 'commissions' and substitute 'indirect remuneration'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "8 Paragraph 92(e)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-8-norm",
+        "concept:c2023c00239-sch-10-sec-8-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "48106c15a363a29d5dc111b2c06c4f696416520795e431deccb8dcdb13ceac9f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-8",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-8-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the use of 'commissions'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-8-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-8"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-9",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.23",
+      "skos:note": "Substitute 'indirect remuneration' for 'commission'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "9 Section 111 (paragraph beginning “Division 5”)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-10-sec-9-norm",
+        "concept:c2023c00239-sch-10-sec-9-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1a3ecaa823bb26a31d05b6ee34fc2523ca718186d38ab406a21d896c0b1e19b4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-10-sec-9",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-9-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-10-sec-9-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-10-sec-9"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.11",
+      "skos:note": "Funeral expenses facility is not a funeral benefit for the purposes of this Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of section 12BAA"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-2-sec-1-norm",
+        "concept:c2023c00239-sch-2-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7d83f5e6244e9705084c213a8d3c6ea92ca343d1b527ea74a8e810a1defa1767",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Funeral expenses facility is not a funeral benefit",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Negative statement",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "not"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.11",
+      "skos:note": "Note: A funeral expenses facility is not a funeral benefit.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 761A (at the end of the definition of funeral benefit)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-2-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "679f5437cb5cf465e7fcdbbfffac5dc21d18bea9c62a3c2075496e6c380455b8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.11",
+      "skos:note": "Definition of funeral expenses facility",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 761A"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-2-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e4157811f8ff48883bbf4449ebb89058b53ab2a760e89694c75d2e56daade42b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-2-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-2-sec-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.11",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of Subdivision D of Division 3 of Part 7.1"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-2-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-2-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-2-sec-4"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-765b",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.11",
+      "skos:note": "Funeral expenses facilities are not considered funeral benefits.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "765B Funeral expenses facilities are not funeral benefits"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-2-sec-765b-norm",
+        "concept:c2023c00239-sch-2-sec-765b-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3b61036ce9d1f4a3dae0f5aa4c6975c3e66b8a1a076f08e2a0e65554da2b98aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-2-sec-765b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-765b-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Funeral expenses facilities are not considered funeral benefits.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-2-sec-765b-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-2-sec-765b"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-1-norm",
+        "concept:c2023c00239-sch-3-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c70cad8f6eeb95f860cc023328f2ebb4f2f1144f00f52ff3920bb48de99816db",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-1-2-norm",
+        "concept:c2023c00239-sch-3-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Commencement on day of Royal Assent",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Temporal commencement"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-1-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "References section 15A for definition of associate.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 5(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "69bd33fab8c664b423a01697855126898437b3d8fc3bcab8ce35799c290a8e66",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-1-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a specific title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158k",
+      "@type": "cml:Concept",
+      "dc:description": "Credit assistance in relation to credit contracts.",
+      "dc:source": "c2023c00239.pdf, p.14",
+      "skos:note": "Mortgage brokers must act in the best interests of consumers.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158K Guide to this Part"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158k-norm",
+        "concept:c2023c00239-sch-3-sec-158k-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a118d393e88c448c51e0233d89beaceb8d7617c14baf096076a8f82c9058e4aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158k",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158k-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must act in the best interests of consumers.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158k-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158k"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ka",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.15",
+      "skos:note": "A reference in this Part to doing an act or thing includes a reference to causing or authorising the act or thing to be done.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158KA Doing acts"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-158ka-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3497f63c4dc145f8da0dba1499751f504f088c2817eb04191b7d98f6e137a770",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158ka",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ka-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158ka"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158KB Circumstances in which a secondary representative is taken"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-2"
+        }
+      ],
+      "cml:integrityHash": "b0113d71177ace8736fd1e33b7d9b81f81f39419e255b5b487d9406357b94512",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158kb",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.15",
+      "skos:note": "A secondary representative is authorized as a credit representative of a licensee by a primary representative.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158KB(1) Circumstances in which a secondary representative is taken"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158kb-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158kb-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fcf102036973e467387f81bd248a31a2779aea27a0303fa9cf8ef99dd6f1e4d1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158kb-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158kb"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Secondary representative is authorized",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Authorization is granted",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "has",
+      "cml:premiseText": "Primary representative authorizes secondary representative"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158kb-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.15",
+      "skos:note": "Secondary representative acting within scope of authority",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158KB(2) Circumstances in which a secondary representative is taken"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158kb-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158kb-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "492bb1196d544fc94328cf0ecc9a2cbd52d5bc04a3cd740f3aa80b6a00bd40a4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158kb-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158kb"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Obligation",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Scope of authority",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "within",
+      "cml:premiseText": "Actual or apparent authority"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kb-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158kb-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kc",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.15",
+      "skos:note": "Obligations under this Part in addition to other obligations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158KC Obligations under this Part in addition to other obligations"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-158kc-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1672584ee920b2ed70ed1f42c6e312a10b160546e5249f758cf8104111992dfd",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158kc",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158kc-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158kc"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158L Application of this Subdivision"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158l",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.16",
+      "skos:note": "This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158L(1) Application of this Subdivision"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158l-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-alleninterval-2",
+        "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "570ede50c53deee109c1fb8dbeabc28f19b9a5e7ca80bca717d02b550251fdaa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158l-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158l"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The provision specifies the temporal scope of application for this Subdivision.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This Subdivision applies.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The provision applies to credit assistance provided by a licensee.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The provision specifies the temporal scope of application for this Subdivision.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "applies",
+      "cml:premiseText": "(1) This Subdivision applies in relation to credit assistance provided by a licensee to a consumer in relation to a credit contract if the licensee is a mortgage broker."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158l-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.16",
+      "skos:note": "Exemption from application of this subdivision for credit assistance provided by a credit representative acting within their actual or apparent authority.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158L(2) Application of this Subdivision"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-alleninterval-2",
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-ltl-3",
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-cogai-4",
+        "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-shacl-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "fd88b1a8452a7f831ddbb64b79588c91bb16766866a5c554b87689a043194c26",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158l-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158l"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Exemption for temporal period",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Exemption",
+      "cml:premiseText": "(2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-cogai-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Classification of entities involved",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Entity Classification",
+      "cml:premiseText": "(2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of application",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Exemption for temporal period",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Exemption",
+      "cml:premiseText": "(2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-logic-shacl-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::shacl",
+      "cml:logicSummary": "Validation of entity relationships",
+      "cml:modality": {
+        "@id": "cml:SHACL"
+      },
+      "cml:operator": "Entity Validation",
+      "cml:premiseText": "(2) However, this Subdivision does not apply in relation to credit assistance provided by a credit representative acting within the scope of the credit representative’s actual or apparent authority from the licensee."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158l-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158l-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158la",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.16",
+      "skos:note": "Must act in best interests of consumer",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LA Licensee must act in the best interests of the consumer"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158la-norm",
+        "concept:c2023c00239-sch-3-sec-158la-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8bbcd4c9912232b6e434864f96175426f8471f150eef760ac3833f8a784f83cc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158la",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158la-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to act in best interests",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158la-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158la"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lb",
+      "@type": "cml:Concept",
+      "dc:description": "Yes",
+      "dc:source": "c2023c00239.pdf, p.16",
+      "skos:note": "Licensee must give priority to consumer's interests when providing credit assistance.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LB Conflict between consumer’s interests and those of the"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158lb-norm",
+        "concept:c2023c00239-sch-3-sec-158lb-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "ed0e67111aa799d03199905779ca5dc26f39f8d86bd5385d387bda3b94cd6db1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158lb",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lb-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to prioritize consumer's interests",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lb-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158lb"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ld",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.17",
+      "skos:note": "This Subdivision applies in relation to credit assistance provided to a consumer in relation to a credit contract by a credit representative acting within the scope of the credit representative’s actual or apparent authority from a licensee, if either the credit representative or the licensee is a mortgage broker.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LD Application of this Subdivision"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158ld-norm",
+        "concept:c2023c00239-sch-3-sec-158ld-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dcf7d8fd486f681c58de59e95dea9f73b91610dd1d47233c3fdbef34c94343fa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158ld",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ld-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The provision applies to credit assistance provided by a credit representative.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ld-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158ld"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.17",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LE Credit representative must act in the best interests of the"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158le-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158le-ss-2"
+        }
+      ],
+      "cml:integrityHash": "6bfbd709d5fdc0618ab5ea71913d552464b1fad43b2fc34cf25e96f3d2a904dc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158le",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.17",
+      "skos:note": "Credit representative must act in the best interests of consumers.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LE(1) Credit representative must act in the best interests of the"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158le-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158le-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "2322e4979402eb2f8ae97f71edb4b9e8fcf28e0f47c729b6152ee2f17b036ab0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158le-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158le"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to act in the best interests.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158le-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.17",
+      "skos:note": "Credit representative must comply with subsection (1)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LE(2) Credit representative must act in the best interests of the"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158le-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158le-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c639df1671d4cc9e83f2b75806a0abf3311d0f8341d91177908b68d009ef3f3a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158le-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158le"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Mandatory duty",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158le-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158le-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.17",
+      "skos:note": "Credit representative must know of conflicts between consumer's interests and those of the credit representative, licensee, or their associates.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158LF Conflict between consumer’s interests and those of the credit"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158lf-norm",
+        "concept:c2023c00239-sch-3-sec-158lf-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158lf-logic-alleninterval-2",
+        "concept:c2023c00239-sch-3-sec-158lf-logic-ltl-3",
+        "concept:c2023c00239-sch-3-sec-158lf-logic-diffusion-4",
+        "concept:c2023c00239-sch-3-sec-158lf-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a8a1095899e494d8ffdfe33587277c16769a76e7c8b80f3e8a4bbb1ba37c34af",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158lf",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that there is a conflict between the interests of...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal overlap of knowledge and conflict",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Overlaps",
+      "cml:premiseText": "If the credit representative knows, or reasonably ought to know..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that there is a conflict between the interests of...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognition of conflicts by AI",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "If the credit representative knows, or reasonably ought to know..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...there is a conflict between the interests of...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Knowledge obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Knows",
+      "cml:premiseText": "The credit representative knows or reasonably ought to know..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that there is a conflict between the interests of...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of knowledge and conflict",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "If the credit representative knows, or reasonably ought to know..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...that there is a conflict between the interests of...",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recurring trace of knowledge and conflict",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring",
+      "cml:premiseText": "If the credit representative knows, or reasonably ought to know..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158lf-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158lf"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158n",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.18",
+      "skos:note": "Definition of conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158N Conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158n-norm",
+        "concept:c2023c00239-sch-3-sec-158n-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158n-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a20029795e75033aa891789f8f24f0564094c02fc56bf336f02d2a6e31b64c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158n",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158n-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term with obligations",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "definition"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158n-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Applies to explicit class hierarchies",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "class hierarchy"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158n-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158n"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158na",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.18",
+      "skos:note": "Ban on accepting conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NA Regulations may further define conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158na-norm",
+        "concept:c2023c00239-sch-3-sec-158na-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9f3a833e21a393076592406cb65352e515c0ec2aa01a70d2de6dada3ffbce2f7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158na",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158na-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits accepting conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158na-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158na"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nb",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.19",
+      "skos:note": "Licensee must not accept conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NB Licensee must not accept conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nb-norm",
+        "concept:c2023c00239-sch-3-sec-158nb-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "56eb39223011690325b4ac374333b4fc377aa1828aa9007fedb31daea04e8708",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nb",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nb-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of accepting conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Must Not"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nb-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nb"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.19",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NC Credit representative must not accept conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-2"
+        }
+      ],
+      "cml:integrityHash": "b38a48f69e29367668ca31d90f93a182882dccccc87f856868ce600362dad298",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nc",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.19",
+      "skos:note": "Credit representative must not accept conflicted remuneration.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NC(1) Credit representative must not accept conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nc-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158nc-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f3a66d3501ff4eb892256f3873b68de9c79187bda21a71819c5bf92d61cc501a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nc-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nc"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(1) A credit representative of a licensee must not accept conflicted remuneration in circumstances prescribed by the regulations if the credit representative or the licensee is:"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nc-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.19",
+      "skos:note": "Credit representative must comply with subsection (1)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NC(2) Credit representative must not accept conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nc-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158nc-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d2c3f26129aca542f208b8525c53f40334d5b21aed4608256866bafc6c6fad6e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nc-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nc"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Must comply",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nc-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nc-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158ND Employer must not give employees conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nd",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:note": "Employer must not give employees conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158ND(1) Employer must not give employees conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nd-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158nd-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "760f9e404769e4cbca4688c738d7f53bbbed408bde1848838e45b3aa33bffaf5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nd-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nd"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Employer must not give employees conflicted remuneration"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nd-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:note": "Employer must not give employees conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158ND(2) Employer must not give employees conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nd-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158nd-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f49b6d2fdb1d3cb620d0b46948cf5cfecfdb2bc4733a605ef875b06b632022a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nd-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nd"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Employer must not give employees conflicted remuneration"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nd-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nd-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NE Credit provider must not give conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158ne",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:note": "Credit provider must not give conflicted remuneration to licensees in certain circumstances.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NE(1) Credit provider must not give conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158ne-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158ne-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0f2bb2ab981b0559630c0c56c71c3a73337a16b374ebfe14e741e6430b0a3dec",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158ne-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158ne"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Licensee must not receive conflicted remuneration",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Credit provider must not give conflicted remuneration"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158ne-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.20",
+      "skos:note": "Credit provider must not give conflicted remuneration to mortgage brokers and intermediaries.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NE(2) Credit provider must not give conflicted remuneration"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158ne-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-alleninterval-2",
+        "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-ltl-3",
+        "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-diffusion-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d1418d271d4916b372f722d4d1f8ecf472e09c16fa7a91af5d9f497e20e57239",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158ne-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158ne"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Conflicted remuneration is prohibited within specified circumstances.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval for conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "Regulations prescribe circumstances for giving conflicted remuneration."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Credit provider must not give conflicted remuneration.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Regulations prescribe circumstances for giving conflicted remuneration."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Regulation diffuses to all relevant parties.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffusion of regulation",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuse",
+      "cml:premiseText": "Regulations prescribe circumstances for giving conflicted remuneration."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Regulation applies to recurring traces of conflicted remuneration.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Recurring trace of regulation",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring Trace",
+      "cml:premiseText": "Regulations prescribe circumstances for giving conflicted remuneration."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158ne-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158ne-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.21",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NF Mortgage intermediary must not give conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-2"
+        }
+      ],
+      "cml:integrityHash": "b38a48f69e29367668ca31d90f93a182882dccccc87f856868ce600362dad298",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nf",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.21",
+      "skos:note": "Must not give conflicted remuneration to licensees",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NF(1) Mortgage intermediary must not give conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nf-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-158nf-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "10cf894d2905cdd4616d175362f7045a4b9af95c899ebb4352a430bd61a818db",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nf-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nf"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Mortgage intermediary must not give conflicted remuneration",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Licensee is a mortgage broker or intermediary"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nf-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.21",
+      "skos:note": "Mortgage intermediary must not give conflicted remuneration to licensees or their representatives.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158NF(2) Mortgage intermediary must not give conflicted"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158nf-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-158nf-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f649a97a736dd94669d605de8c817a5bef4d8324a0411f5172b44423b1a6c01a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158nf-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-158nf"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "...civil penalty.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of conflicted remuneration",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "Mortgage intermediary must not give..."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158nf-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158nf-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.21",
+      "skos:note": "Entering into a scheme to avoid application of provisions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "158T Anti-avoidance"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-158t-norm",
+        "concept:c2023c00239-sch-3-sec-158t-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-158t-logic-ltl-2",
+        "concept:c2023c00239-sch-3-sec-158t-logic-deontic-3",
+        "concept:c2023c00239-sch-3-sec-158t-logic-deontic-4"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "63dec463e0080c15a5b4c9eb0dcfdf4cc617f9010f2e761f05b0223a1ec52b9d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-158t",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The scheme is prohibited.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits entering into a scheme to avoid application of provisions",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "The person must not enter into, begin to carry out or carry out the scheme."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The person is prohibited from entering into a scheme.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the person from entering into a scheme",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "The person must not enter into, begin to carry out or carry out the scheme."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The persons are prohibited from entering into, beginning to carry out or carrying out the scheme.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the persons who entered into, began to carry out or carried out the scheme from doing so",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "The person must not enter into, begin to carry out or carry out the scheme."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t-logic-ltl-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The scheme is traced to its prohibited nature.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Traces the scheme to its prohibited nature",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Trace",
+      "cml:premiseText": "The scheme has achieved, or apart from this section, would achieve, that purpose."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-158t-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-158t"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15A Meaning of associate"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15a-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "Definition of associate for National Credit Code purposes",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15A(1) Meaning of associate"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-15a-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-15a-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9421b8bfe3f0c58b83d1122df44d3813f49418d7ac6f93cfe9671b7448a8931a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15a-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15a"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of associate for National Credit Code purposes",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15a-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "Definition of associate in mortgage brokers regulations.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15A(2) Meaning of associate"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-deontic-1",
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-alleninterval-2",
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-ltl-3",
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-diffusion-4",
+        "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0034e61163c3aed4aef9e791878ddf96e75f903700306c4807f403dd60b1dae4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15a-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15a"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "circumstances prescribed by regulations: associates",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Associates are defined during specific circumstances.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "circumstances prescribed by regulations: associates",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Associates are defined during specific circumstances.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "a person is an associate of another person",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Associates are defined by regulations.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "circumstances prescribed by regulations: associates",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Associates are defined during specific circumstances.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "circumstances prescribed by regulations: associates",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Associates are defined during specific circumstances.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "during",
+      "cml:premiseText": "(2) In any other case, a person is an associate of another person in the circumstances prescribed by the regulations."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15a-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15a-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15B Meaning of mortgage broker"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15b-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15b-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15b",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:note": "A licensee is a mortgage broker if they carry on a business of providing credit assistance in relation to credit contracts secured by mortgages over residential property.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15B(1) Meaning of mortgage broker"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-15b-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-15b-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3dee54c84bd6fadfe20e1713ae9bdf652c9ef1b4a177fa2f1909a75ecb27b3c7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15b-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15b"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "(1) A licensee is a mortgage broker if:  (a) the licensee carries on a business of providing credit assistance in relation to credit contracts secured by mortgages over residential property; and  (b) the licensee does not perform the obligations, or exercise the rights, of a credit provider in relation to the majority of those credit contracts; and  (c) in carrying on the business, the licensee provides credit assistance in relation to credit contracts offered by more than one credit provider.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of a mortgage broker",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is",
+      "cml:premiseText": "(1) A licensee is a mortgage broker if:  (a) the licensee carries on a business of providing credit assistance in relation to credit contracts secured by mortgages over residential property; and  (b) the licensee does not perform the obligations, or exercise the rights, of a credit provider in relation to the majority of those credit contracts; and  (c) in carrying on the business, the licensee provides credit assistance in relation to credit contracts offered by more than one credit provider."
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: LegalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:LegalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15b-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:note": "A credit representative is a mortgage broker if they meet specific conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15B(2) Meaning of mortgage broker"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-15b-ss-2-norm",
+        "concept:c2023c00239-sch-3-sec-15b-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "17f0f63092d55a0a453b354aa6a43cc57d1c9ef41b7a32fc1b52b79ad412e82a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15b-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15b"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of a mortgage broker",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15b-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: LegalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:LegalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15b-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15C Meaning of mortgage intermediary"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15c-ss-1"
+        },
+        {
+          "@id": "concept:c2023c00239-sch-3-sec-15c-ss-2"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15c",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:note": "Licensee must act as an intermediary in relation to credit contracts.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15C(1) Meaning of mortgage intermediary"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-15c-ss-1-norm",
+        "concept:c2023c00239-sch-3-sec-15c-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "54a370c681974434c7cf96a0e24b1eae18e089a2818ee0386b5106accde7fca6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15c-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15c"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: LegalPerson",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:LegalPerson",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15c-ss-1"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.13",
+      "skos:note": "Definition of credit representative as mortgage intermediary",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15C(2) Meaning of mortgage intermediary"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-15c-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9eeafe9c1682b63aa581153441f7a05f5db164f2ed5ef54b8903096f6d0b5c4a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-15c-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:c2023c00239-sch-3-sec-15c"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-15c-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-15c-ss-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-17",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "17 February"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-17-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-17",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-17-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-17"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-18",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "Note: This table relates only to the provisions of this Act as originally enacted.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "18 February"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-18-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "51105b8ac939d30a4c13d8f4919f35a0c33302fd707ff49bd88a8cb62c432af4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-18",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-18-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-18"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "Schedule 1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7648c3e4512aa39823dbb36b97c0f9e0726e4110d39aa5e7572221c386ebb545",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-2-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "Note on conflicted remuneration",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 5(1) (at the end of the definition of commission)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-2-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d1d30b1cc0359078e6e511accf438db0aaa3665607b56f780370f1d64d5e102",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-2-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-2-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:note": "The day after this Act receives the Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e73e5c18e2d92f5754835558ae9c416a256e6fc71e54f21de249caf8645fbf83",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": [
+        "concept:c2023c00239-sch-3-sec-3-2-norm",
+        "concept:c2023c00239-sch-3-sec-3-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1909a2d4838ee4acfa106c8109c88c8adeca563eee803c77d2f553e1759221b3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Temporal relation exists",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between schedules and the Act",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "Schedules are amended or repealed according to their terms"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-3-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "References for definitions of conflicted remuneration, mortgage broker, and mortgage intermediary.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 5(1)"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-3-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "df1305a204aace9a60e520399c974589769754e273a31b876bd98fcb660ee509",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-3-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-3-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.12",
+      "skos:note": "Insert clause after section 15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After section 15"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 April 2021."
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5-2",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 April 2021"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-5-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-5-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-5-2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5-3",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 After Part 3-5"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-5-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-5-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-5-3"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-5"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.22",
+      "skos:note": "Insert in an appropriate position",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 In the appropriate position"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sch-3-sec-6-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8445d5cfe714f4491bdd7be3a32948e53e2a96ef2d6d75ca8d501fbc73a359c4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sch-3-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sch-3-sec-6-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sch-3-sec-6"
+    },
+    {
+      "@id": "concept:c2023c00239-sec-15",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.1",
+      "skos:note": "Includes amendments up to Act No. 69, 2023",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "15 September 2023"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sec-15-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6b34c24fed7343c60b02ef6dec297dbcff189f6eb8209ea9e3c9996f20f449cf",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sec-15",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sec-15-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sec-15"
+    },
+    {
+      "@id": "concept:c2023c00239-sec-21",
+      "@type": "cml:Concept",
+      "dc:source": "c2023c00239.pdf, p.1",
+      "skos:note": "Compilation information and notes on amendments.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "21 September 2023"
+      },
+      "wasDerivedFrom": "c2023c00239.pdf",
+      "asserts": "concept:c2023c00239-sec-21-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d50ac0bd6c490b2234b25986837b0759e652264f783cd428395a5a2a62a19fed",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:c2023c00239#sec-21",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:c2023c00239-sec-21-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:c2023c00239-sec-21"
+    },
+    {
+      "@id": "doc:au/c2023c00239",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "date": "15 September 2023",
+      "dc:description": "An Act to amend the law relating to unfair contract terms and insurance contracts, funeral expenses facilities, funeral benefits, mortgage brokers and mortgage intermediaries, and for related purposes",
+      "dc:identifier": [
+        "C2023C00239",
+        "No. 2 of 2020"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Financial Sector Reform (Hayne Royal Commission Response—Protecting Consumers (2019 Measures)) Act 2020"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2023C00239",
+        "c2023c00239.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

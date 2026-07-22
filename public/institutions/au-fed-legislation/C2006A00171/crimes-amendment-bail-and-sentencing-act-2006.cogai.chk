@@ -1,0 +1,483 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment (Bail and Sentencing) Act 2006
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: bail authority is a court or person;
+  @action: is authorised to grant bail;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: authorises;
+  summary: Authority to grant bail;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: court or person authorises;
+  @action: to grant bail;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must consider;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to consider impact of granting bail on a person living in a remote community.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Remote communities are typically characterized by geographical isolation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-2;
+  logic: LTL;
+  operator: >=;
+  summary: Remote communities are typically characterized by geographical isolation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-2;
+  logic: Diffusion;
+  operator: IS-A;
+  summary: Potential impact of granting bail on a person living in a remote community can be considered.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-2;
+  logic: CogAI;
+  operator: IS-A;
+  summary: Potential impact of granting bail on a person living in a remote community can be considered.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) If a person referred to in subparagraph (1)(a)(i) or (ii) is living in, nor otherwise located in, a remote community...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-3;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes conduct, omission, circumstance or result in criminal behaviour.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question;;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-15ab-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-15ab-ss-3;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes fault element relating to such a physical element.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) any fault element relating to such a physical element.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of cultural background;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court must not consider...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2A) However, the court must not take into account...;
+  @action: ...any form of customary law or cultural practice...;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2a;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval between (2A) and the preceding subsections.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2A) However, the court must not take into account...;
+  @action: ...under subsection (1) or (2);
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2a-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2a;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Recurring trace of court decisions on customary law or cultural practice.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2A) However, the court must not take into account...;
+  @action: ...as a reason for: (a) excusing, justifying, authorising, requiring or lessening the seriousness of the criminal behaviour to which the offence relates;;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2b;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes conduct, omission, circumstance or result in physical element of the offence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) In subsection (2A): criminal behaviour includes:;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2b;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes fault element relating to such a physical element;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2B) In subsection (2A): criminal behaviour includes: any fault element relating to such a physical element.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2b;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Subclass of physical element of the offence in question;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2b;
+  logic: AllenInterval;
+  operator: includesTemporalInterval;
+  summary: Includes temporal interval as part of physical element of the offence;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5-ss-2b-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-2b;
+  logic: LTL;
+  operator: includesTemporalInterval;
+  summary: Includes temporal interval as part of physical element of the offence;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2B) In subsection (2A): criminal behaviour includes: any conduct, omission to act, circumstance or result that is, or forms part of, a physical element of the offence in question.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5b-ss-1a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court cannot consider customary law or cultural practice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Customary law or cultural practice;
+  @action: Cannot be considered as a reason for excusing, justifying, authorizing, requiring, or lessening the seriousness of criminal behavior.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5b-ss-1a;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Court cannot consider customary law or cultural practice in relation to the offense.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Customary law or cultural practice;
+  @action: Cannot be considered as a reason for aggravating the seriousness of criminal behavior.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5b-ss-1a;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with time period of customary law or cultural practice.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Customary law or cultural practice;
+  @action: Does not affect the seriousness of criminal behavior within this time period.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5b-ss-1a;
+  logic: LTL;
+  operator: Overlap;
+  summary: Overlaps with temporal interval of customary law or cultural practice.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Customary law or cultural practice;
+  @action: Does not affect the seriousness of criminal behavior within this time period.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5b-ss-1a-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5b-ss-1a;
+  logic: Diffusion;
+  operator: Overlap;
+  summary: Overlaps with diffusion of customary law or cultural practice.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Customary law or cultural practice;
+  @action: Does not affect the seriousness of criminal behavior within this time period.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5c-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5c;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5e;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory consideration of religious beliefs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Religious beliefs are relevant to forensic procedure;
+  @action: Constable must consider religious beliefs;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5e-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5e;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Forensic procedure overlaps with religious practice;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Religious practices often involve forensic procedures;
+  @action: Forensic procedure and religious practice overlap;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5g-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5g;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Repeals a paragraph;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5h;
+  logic: Deontic;
+  operator: Must;
+  summary: Senior constable has a duty to consider suspect's religious beliefs.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The senior constable must take into account the intrusiveness of the forensic procedure.;
+  @action: The senior constable must also consider the suspect's religious beliefs.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5h;
+  logic: AllenInterval;
+  operator: Within;
+  summary: Consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.;
+  @action: The consideration of suspect's religious beliefs must occur within the timeframe of the forensic procedure.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5h;
+  logic: LTL;
+  operator: Until;
+  summary: Consideration of suspect's religious beliefs continues until the forensic procedure is completed.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.;
+  @action: The consideration of suspect's religious beliefs continues until the forensic procedure is completed.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5h;
+  logic: Diffusion;
+  operator: Through;
+  summary: Consideration of suspect's religious beliefs spreads to other relevant parties.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.;
+  @action: The consideration of suspect's religious beliefs spreads to other relevant parties.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5h-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5h;
+  logic: CogAI;
+  operator: By;
+  summary: Artificial intelligence system assists in considering suspect's religious beliefs.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The senior constable must consider the suspect's religious beliefs when determining intrusiveness of the forensic procedure.;
+  @action: The artificial intelligence system assists in considering suspect's religious beliefs.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5j-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5j;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Replace certain words with new ones.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-5l-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5l;
+  logic: Deontic;
+  operator: MUST;
+  summary: Magistrate has a duty to consider suspect's religious beliefs;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Paragraph (3)(f);
+  @action: Obligation to consider religious beliefs;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments apply to offences committed before or after commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Amendments apply to offences committed before or after commencement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: LTL;
+  operator: Temporal Interval;
+  summary: Amendments apply to offences committed before or after commencement.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) The amendments made by items 1 to 3 of this Schedule apply, after the commencement of this Act, in relation to offences committed, or alleged to have been committed, before or after that commencement.;
+}
+
+crimes-amendment-bail-and-sentencing-act-2006-sch-1-sec-6-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Amendments do not apply to offences committed before commencement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The amendments made by items 4 to 5L of this Schedule do not apply in relation to offences committed before the commencement of this Act.;
+}

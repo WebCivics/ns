@@ -1,0 +1,441 @@
+# CogAI proposed logic-routing chunks — Health Legislation Amendment (Data-matching and Other Matters) Act 2019
+# Machine-derived; every chunk remains cml:Proposed.
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies the Act as a short title;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Act is the Health Legislation Amendment (Data-matching and Other Matters) Act 2019.;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sec-1-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to match information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-1;
+  logic: DescriptionLogic;
+  operator: Classifies;
+  summary: Classification of permitted purposes;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-2;
+  logic: Deontic;
+  operator: authorise;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chief Executive Medicare may authorise;
+  @action: a Commonwealth entity may match information;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-2;
+  logic: AllenInterval;
+  operator: on behalf of;
+  summary: Temporal relation between Chief Executive Medicare and Commonwealth entity;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the Chief Executive Medicare may authorise a Commonwealth entity to match information;
+  @action: for a permitted purpose;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-2;
+  logic: CogAI;
+  operator: authorisation;
+  summary: Artificial intelligence application of the authorisation;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: This subsection constitutes an authorisation;
+  @action: for the purposes of the Privacy Act 1988;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-2-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-2;
+  logic: SHACL;
+  operator: validates;
+  summary: Validation of the authorisation against a schema;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: Note: This subsection constitutes an authorisation;
+  @action: for the purposes of the Privacy Act 1988;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-2-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-2;
+  logic: N3Logic;
+  operator: implies;
+  summary: Implication of the authorisation on data-matching;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+  @condition: the Chief Executive Medicare may authorise a Commonwealth entity to match information;
+  @action: for a permitted purpose;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132b-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132b-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132c-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132c-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132d-ss-1-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132d-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Authorisation for disclosure of information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Australian law;
+  @action: Disclosure permitted;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132d-ss-3-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132d-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to disclose information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) If information is disclosed...;
+  @action: ...the disclosure is taken to be an authorized disclosure.;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132e-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132e;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Interference with privacy is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132f-ss-1-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132f-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-132f-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-132f-ss-2;
+  logic: Deontic;
+  operator: require;
+  summary: Mandatory action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-5-ss-9-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-9;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking, not Prohibition;
+  @action: Undertaking;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-5-ss-11-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Must follow directions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Delegate has power delegated;
+  @action: Must follow directions from Chief Executive Medicare;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-5-ss-11-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-11;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Directions may overlap with delegated power;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Directions from Chief Executive Medicare;
+  @action: Directions from Chief Executive Medicare may overlap with delegated power;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-5-ss-12-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-12;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Exercise of power is not prevented by delegation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (9);
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-6-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: PERM;
+  summary: Permission to divulge information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-7-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: obligation;
+  summary: Ensure compliance with the National Health Act 1953;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Matching of information under Part VIIIA is required;
+  @action: The matching must be in accordance with that Part;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-7-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: AllenInterval;
+  operator: during;
+  summary: Ensure compliance during the handling of information;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The handling of information occurs during the matching period;
+  @action: The matching must be in accordance with that Part during the handling period;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-7-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: LTL;
+  operator: during;
+  summary: Ensure compliance during the handling of information;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The handling of information occurs during the matching period;
+  @action: The matching must be in accordance with that Part during the handling period;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-7-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Diffusion;
+  operator: through;
+  summary: Ensure compliance through the principles made by the Minister;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The principles made by the Minister are applied to the matching;
+  @action: The matching must be in accordance with those principles;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-1-sec-7-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: CogAI;
+  operator: through;
+  summary: Ensure compliance through the terms and conditions relating to the matching of information;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The terms and conditions are applied to the matching;
+  @action: The matching must be in accordance with those terms and conditions;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-2-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to report service rendered in connection with treatment under relevant DVA law.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-2-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Service is contained within the interval of services that would have been payable medicare or dental benefit if not rendered in connection with treatment under relevant DVA law.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Service is contained within the trace of services that would have been payable medicare or dental benefit if not rendered in connection with treatment under relevant DVA law.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-2-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Service is contained within the diffusion of services that would have been payable medicare or dental benefit if not rendered in connection with treatment under relevant DVA law.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-2-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Service is contained within the cognitive AI model of services that would have been payable medicare or dental benefit if not rendered in connection with treatment under relevant DVA law.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-3-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of a clause;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-4-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Repayment obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-5-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: imposes;
+  summary: Imposition of obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-6-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits payment of amount for treatment under relevant DVA law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-8-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: hasPurpose;
+  summary: Expresses purpose;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+health-legislation-amendment-data-matching-and-other-matters-act-2019-sch-2-sec-9-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-9;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts a provision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,297 @@
+# CogAI proposed logic-routing chunks — Crimes Legislation Amendment (Harming Australians) Act 2015
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion of a condition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Repeal;
+  summary: Obligation to repeal;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-4-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between sections;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 4 is after section 115.1(1);
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-5-ss-1b-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-5-ss-1b-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines temporal interval for which the prohibition applies;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-5-ss-1b-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: CogAI;
+  operator: KnowledgeGraph;
+  summary: Represents knowledge graph for the prohibition;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-5-ss-1b-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: SHACL;
+  operator: Constraint;
+  summary: Defines constraint for the prohibition;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-5-ss-1b-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-5-ss-1b;
+  logic: N3Logic;
+  operator: RDF;
+  summary: Represents RDF graph for the prohibition;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-7-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-11-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between sections;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Section 11 and subsection 115.2(1);
+  @action: Undertaking;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1a-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1a;
+  logic: Deontic;
+  operator: =;
+  summary: Defines obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A) If the conduct constituting an offence against subsection (1) was engaged in...;
+  @action: the offence is punishable on conviction by...;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1a-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1a;
+  logic: AllenInterval;
+  operator: =;
+  summary: Requires relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) otherwise—a maximum penalty of imprisonment for a term of not more than 25 years.;
+  @action: a maximum penalty of imprisonment for a term of not more than 25 years;;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1a-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1a;
+  logic: Deontic;
+  operator: =;
+  summary: Defines obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) otherwise—a maximum penalty of imprisonment for a term of not more than 25 years.;
+  @action: a maximum penalty of imprisonment for a term of not more than 25 years;;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1a-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1a;
+  logic: Deontic;
+  operator: =;
+  summary: Defines obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) if, at the time the conduct was engaged in...;
+  @action: a maximum penalty of imprisonment for a term of not more than that term;;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1b-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1b;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits maximum penalty for conduct engaged after October 2002;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1B);
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1b-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1b;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for conduct engagement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002, the offence is punishable...;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1b-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1b;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines recurring trace for conduct engagement;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002, the offence is punishable...;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1b-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1b;
+  logic: Diffusion;
+  operator: Diffusion;
+  summary: Diffuses prohibition to conduct engagement;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002, the offence is punishable...;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-12-ss-1b-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-12-ss-1b;
+  logic: CogAI;
+  operator: Classification;
+  summary: Classifies conduct as an offence using CogAI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1B) If the conduct constituting an offence against subsection (1) was engaged in on or after 1 October 2002, the offence is punishable...;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-14-logic-20 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exempts conduct under foreign law from prosecution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Engaged before 1 October 2002.;
+  @action: Cannot be convicted of an offence against this section in respect of that conduct.;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-14-logic-21 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for exemption from prosecution.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Before 1 October 2002.;
+  @action: Exempts conduct under foreign law from prosecution if engaged before 1 October 2002.;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-14-logic-22 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines recurring trace for exemption from prosecution.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Engaged in conduct before 1 October 2002.;
+  @action: Exempts conduct under foreign law from prosecution if engaged before 1 October 2002.;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-14-logic-23 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: Diffusion;
+  operator: Diffusion;
+  summary: Diffuses exemption from prosecution to related concepts.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Conduct under foreign law.;
+  @action: Exempts conduct under foreign law from prosecution if engaged before 1 October 2002.;
+}
+
+crimes-legislation-amendment-harming-australians-act-2015-sch-1-sec-14-logic-24 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: CogAI;
+  operator: Classification;
+  summary: Classifies conduct under foreign law as exempt from prosecution using AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Foreign country or part of a foreign country.;
+  @action: Exempts conduct under foreign law from prosecution if engaged before 1 October 2002.;
+}

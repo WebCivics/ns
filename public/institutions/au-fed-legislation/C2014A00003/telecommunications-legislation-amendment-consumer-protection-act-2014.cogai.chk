@@ -1,0 +1,552 @@
+# CogAI proposed logic-routing chunks — Telecommunications Legislation Amendment (Consumer Protection) Act 2014
+# Machine-derived; every chunk remains cml:Proposed.
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establishes the citation of this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits telemarketing calls.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-4-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'covered by';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Omit 'covered by', substitute 'that are made in order to give effect to';
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-4-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-4;
+  logic: Deontic;
+  operator: Modify;
+  summary: Modifies the text to omit 'covered by';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: Omit 'covered by', substitute 'that are made in order to give effect to';
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-6-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-7-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of ‘covered by’.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-9-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires compliance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-11-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must publish submissions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-1-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-1;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Received within a certain timeframe;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) subparagraph 117(1)(e)(iii); (ii) subparagraph 117(1)(f)(iii); (iii) subparagraph 119A(1)(e)(iii); (iv) subparagraph 119A(1)(f)(iii);
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-1-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-1;
+  logic: LTL;
+  operator: RECURRING;
+  summary: Recurring trace of submissions;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (i) subparagraph 117(1)(e)(iii); (ii) subparagraph 117(1)(f)(iii); (iii) subparagraph 119A(1)(e)(iii); (iv) subparagraph 119A(1)(f)(iii);
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-1-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-1;
+  logic: Diffusion;
+  operator: SPREADS TO;
+  summary: Spreads to other submissions;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (i) subparagraph 117(1)(e)(iii); (ii) subparagraph 117(1)(f)(iii); (iii) subparagraph 119A(1)(e)(iii); (iv) subparagraph 119A(1)(f)(iii);
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-1-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-1;
+  logic: CogAI;
+  operator: REQUIRES;
+  summary: Requires publication of submissions;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (i) subparagraph 117(1)(e)(iii); (ii) subparagraph 117(1)(f)(iii); (iii) subparagraph 119A(1)(e)(iii); (iv) subparagraph 119A(1)(f)(iii);
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to publish;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-4-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-4;
+  logic: Deontic;
+  operator: Permission;
+  summary: Granting permission to the body or association not to publish submission material;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-119b-ss-5-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-119b-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must publish statement if material is removed from submission before publishing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-13-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-13;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-18-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-18;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-22-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-25-ss-2a-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25-ss-2a;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Must declare if application meets certain conditions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-25-ss-2b-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-25-ss-2b;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits making declaration if ACMA is not satisfied;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ACMA's satisfaction with matters set out in subsection (2A);
+  @action: Refusal to make declaration;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-26-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Insertion of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Text to be inserted;
+  @action: Text 'or varying';
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-28-ss-3a-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28-ss-3a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: ACMA has an obligation to determine that the body or association is entitled to be paid a specified amount if certain conditions are met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: a section 136B declaration was made in relation to the variation of an industry code by a body or association;
+  @action: the ACMA must, by written notice given to the body or association, determine that the body or association is entitled to be paid a specified amount.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-28-ss-3b-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28-ss-3b;
+  logic: Deontic;
+  operator: =;
+  summary: Equality obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Costs must be equal;
+  @action: Total costs;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-28-ss-3b-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-28-ss-3b;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval comparison;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Total costs must be equal to specified amount;
+  @action: Specified amount;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-29-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-29;
+  logic: Deontic;
+  operator: insert;
+  summary: Insertion obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-30-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-30;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-8-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-8;
+  logic: Deontic;
+  operator: must;
+  summary: Mandatory compliance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-9-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-9;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to determine standards;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-10-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider certain matters;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (10) In making a determination under subsection (9), the Minister must...;
+  @action: The Minister MUST have regard to the following matters:;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-10-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-10;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Temporal interval of consideration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (10) In making a determination under subsection (9), the Minister must...;
+  @action: The consideration period is BETWEEN the time the determination is made and the end of section 128.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-10-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-10;
+  logic: LTL;
+  operator: BUT;
+  summary: Temporal interval of consideration;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (10) In making a determination under subsection (9), the Minister must...;
+  @action: The consideration period is BUT the time the determination is made.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-10-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-10;
+  logic: Diffusion;
+  operator: IS_A;
+  summary: Spread of consideration to other matters;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) accessibility; (b) independence; (c) fairness; (d) accountability; (e) efficiency; (f) effectiveness.;
+  @action: The matter is considered ACCESSIBLE if it is related to accessibility.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-10-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-10;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Classification of matters as relevant;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (g) such other matters (if any) as the Minister considers relevant.;
+  @action: The matter is considered RELEVANT if the Minister considers it so.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-31-ss-11-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31-ss-11;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consult;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister must consult...;
+  @action: ...before making a determination under subsection (9);
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-1-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-2-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to complete review within timeframe.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-3-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to complete reviews within a certain timeframe.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-4-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to conduct review;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Review must be conducted by a person or body...;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-5-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide public consultation and consultation with the Telecommunications Industry Ombudsman and ACMA.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-5-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-5;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: The review contains a temporal interval that must be reviewed within a certain timeframe.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-5-logic-42 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-5;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: The review is part of a larger trace that must be followed.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-6-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to prepare and provide report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-7-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to perform actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-8-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to respond;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-133a-ss-9-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-133a-ss-9;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between review completion and receipt of report;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The report is given to the Telecommunications Industry Ombudsman.;
+  @action: A review is completed during this time.;
+}
+
+telecommunications-legislation-amendment-consumer-protection-act-2014-sch-1-sec-33-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

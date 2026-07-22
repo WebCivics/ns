@@ -1,0 +1,159 @@
+# CogAI proposed logic-routing chunks — Privacy Amendment (Office of the Privacy Commissioner) Act 2000
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sec-2-ss-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the time period for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-26a-ss-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Staff must be appointed or employed under the Public Service Act 1922.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-26a-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26a-ss-2;
+  logic: Deontic;
+  operator: has power;
+  summary: Commissioner has power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Commissioner is a Secretary;
+  @action: Commissioner has power;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-26a-ss-3-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26a-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to engage consultants;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-5-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the legislative body to make the substitution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-6-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'Commission';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Use 'Commissioner' instead.;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-11-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The State must add “and”.;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-14-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-14;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of 'staff and';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-15-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Deontic;
+  operator: Continuity;
+  summary: Section continues in effect despite amendment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 96 of the Privacy Act 1988 was amended by item 7 of this Schedule;
+  @action: Section 96 still applies;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-15-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Section continues in effect despite amendment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The amendment does not affect persons who were staff before the item commenced;
+  @action: Section 96 still applies to those persons;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-15-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Section continues in effect despite amendment;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The amendment does not affect persons who were staff before the item commenced;
+  @action: Therefore, section 96 still applies to those persons;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-15-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Section continues in effect despite amendment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The amendment does not affect persons who were staff before the item commenced;
+  @action: Therefore, section 96 still applies to those persons;
+}
+
+privacy-amendment-office-of-the-privacy-commissioner-act-2000-sch-1-sec-15-logic-13 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-15;
+  logic: CogAI;
+  operator: Inference;
+  summary: Section continues in effect despite amendment;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The amendment does not affect persons who were staff before the item commenced;
+  @action: Therefore, section 96 still applies to those persons;
+}

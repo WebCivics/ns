@@ -1,0 +1,2531 @@
+# CogAI proposed logic-routing chunks — Australian Citizenship Amendment (Allegiance to Australia) Act 2015
+# Machine-derived; every chunk remains cml:Proposed.
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establishes the citation of this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sec-4-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on citizens to uphold the shared values of the Australian community.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Parliament recognises that Australian citizenship is a common bond...;
+  @action: Citizens may demonstrate that they have severed that bond and repudiated their allegiance to Australia.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-1-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits serving in armed forces of a country at war with Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-1-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to renounce citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-2;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits conduct;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subject to subsections (3) to (5), subsection (1) applies to the following conduct:;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines a temporal interval for prohibited conduct;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Subject to subsections (3) to (5), subsection (1) applies to the following conduct:;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-2;
+  logic: LTL;
+  operator: until;
+  summary: Defines a temporal interval for prohibited conduct;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Subject to subsections (3) to (5), subsection (1) applies to the following conduct:;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits coercion or intimidation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies to conduct specified in any of paragraphs (2)(a) to (h) only if the conduct is engaged in...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-3-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-3;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for coercion or intimidation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies to conduct specified in any of paragraphs (2)(a) to (h) only if the conduct is engaged in...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-3-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-3;
+  logic: LTL;
+  operator: Temporal Interval;
+  summary: Defines temporal interval for coercion or intimidation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies to conduct specified in any of paragraphs (2)(a) to (h) only if the conduct is engaged in...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-3-logic-11 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-3;
+  logic: Diffusion;
+  operator: Coercion;
+  summary: Defines coercion as a diffusion process.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies to conduct specified in any of paragraphs (2)(a) to (h) only if the conduct is engaged in...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-3-logic-12 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-3;
+  logic: CogAI;
+  operator: Coercion Detection;
+  summary: Detects coercion using CogAI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Subsection (1) applies to conduct specified in any of paragraphs (2)(a) to (h) only if the conduct is engaged in...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-4-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Supporting terrorism is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) A person is taken to have engaged in conduct with an intention referred to in subsection (3);
+  @action: A person is taken to have engaged in conduct with an intention to support a declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-5-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-5;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes subsection (4) from preventing proof or establishment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4);
+  @action: (5);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-33aa-ss-5-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-33aa-ss-5;
+  logic: DescriptionLogic;
+  operator: SubclassOf;
+  summary: Relates to explicit class hierarchy of subsections;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: subsection (3);
+  @action: subsection (4);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-7-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-7;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (7) This section does not apply in relation to conduct by a person;
+  @action: unless...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-7-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-7;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Specifies the temporal overlap between conduct and prosecution;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the person left Australia after engaging in the conduct;
+  @action: and, at the time that the person left Australia;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-7-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-7;
+  logic: Deontic;
+  operator: Permission;
+  summary: Grants permission to engage in conduct outside Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person was not in Australia when the person engaged in the conduct;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-8-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to be an Australian citizen;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-9-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-9;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the Minister to give notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (9) Where a person renounces their Australian citizenship...;
+  @action: The Minister must give notice.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-9-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-9;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines the temporal relationship between conduct and renunciation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (9) Where a person renounces their Australian citizenship...;
+  @action: Renunciation occurs immediately upon conduct.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-9-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-9;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Establishes the causal relationship between conduct and renunciation.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (9) Where a person renounces their Australian citizenship...;
+  @action: Renunciation is caused by conduct.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-9-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-9;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Describes the spread of renunciation to the Minister.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (9) Where a person renounces their Australian citizenship...;
+  @action: The Minister is affected by renunciation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-9-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-9;
+  logic: CogAI;
+  operator: Inference;
+  summary: Identifies the cognitive process of giving notice.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (9) Where a person renounces their Australian citizenship...;
+  @action: The Minister must give notice.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-10-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to give written notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-11-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-11;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-12-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-12;
+  logic: Deontic;
+  operator: may;
+  summary: The Minister has the power to determine that a notice should not be given.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-12-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-12;
+  logic: Epistemic;
+  operator: satisfaction;
+  summary: The Minister must consider whether to revoke such a determination.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-12-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-12;
+  logic: LTL;
+  operator: interval;
+  summary: The Minister's power is subject to periodic review and revocation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-13-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-13;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to renounce citizenship affects applicability.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsections (14) to (19) apply only if a person has renounced his/her citizenship under this section.;
+  @action: Applicability of subsections depends on renunciation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-13-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-13;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Renunciation affects applicability of certain subsections over time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsections (14) to (19) apply only if a person has renounced his/her citizenship under this section.;
+  @action: Applicability of subsections depends on renunciation at some point in the past or future.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-13-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-13;
+  logic: LTL;
+  operator: Until;
+  summary: Renunciation affects applicability of certain subsections until a certain point.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Subsections (14) to (19) apply only if a person has renounced his/her citizenship under this section.;
+  @action: Applicability of subsections depends on renunciation at some point in the past or future.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-13-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-13;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Renunciation affects applicability of certain subsections over time and space.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Subsections (14) to (19) apply only if a person has renounced his/her citizenship under this section.;
+  @action: Applicability of subsections depends on renunciation at some point in the past or future.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-13-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-13;
+  logic: CogAI;
+  operator: Infer;
+  summary: Renunciation affects applicability of certain subsections using AI inference.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Subsections (14) to (19) apply only if a person has renounced his/her citizenship under this section.;
+  @action: Applicability of subsections depends on renunciation at some point in the past or future.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-14-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-14;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (14) At any time after a person has renounced his or her citizenship under this section, the Minister may make a determination to:;
+  @action: rescind notice or exempt person from section's effect.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-14-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-14;
+  logic: Deontic;
+  operator: Exempt;
+  summary: Granting exemption;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (14) At any time after a person has renounced his or her citizenship under this section, the Minister may make a determination to:;
+  @action: exempt person from the effect of this section in relation to matters that were the basis for the notice, or in relation to matters that would have been the basis for giving a notice in respect of the person under paragraph (10)(a), but for the operation of subsection (12).;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-14-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-14;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between renunciation and minister's action;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (14) At any time after a person has renounced his or her citizenship under this section, the Minister may make a determination to:;
+  @action: rescind notice or exempt person from section's effect.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-14-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-14;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace of minister's action;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (14) At any time after a person has renounced his or her citizenship under this section, the Minister may make a determination to:;
+  @action: rescind notice or exempt person from section's effect.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-14-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-14;
+  logic: Deontic;
+  operator: Rescue;
+  summary: Rescinding notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (14) At any time after a person has renounced his or her citizenship under this section, the Minister may make a determination to:;
+  @action: rescind any notice given under subsection (10) in respect of the person.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-15-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-15;
+  logic: Deontic;
+  operator: ¬;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister has a duty to consider exercising power under subsection (14);
+  @action: Minister does not have a duty to consider exercising power under subsection (14);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-15-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-15;
+  logic: AllenInterval;
+  operator: ⊆;
+  summary: Temporal interval for the exercise of power;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Power under subsection (14) can be exercised at any time;
+  @action: The Minister does not have a duty to consider exercising power under subsection (14) in respect of any person, regardless of the temporal interval;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-15-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-15;
+  logic: LTL;
+  operator: ¬∀x;
+  summary: Negative existential quantification;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Minister does not have a duty to consider exercising power under subsection (14) in respect of any person;
+  @action: There exists no person with respect to whom the Minister has a duty to consider exercising power under subsection (14);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-15-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-15;
+  logic: Diffusion;
+  operator: ¬∀x;
+  summary: Negative universal quantification;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Minister does not have a duty to consider exercising power under subsection (14) in respect of any person;
+  @action: There exists no person with respect to whom the Minister has a duty to consider exercising power under subsection (14);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-15-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-15;
+  logic: CogAI;
+  operator: ¬∀x;
+  summary: Negative existential quantification in AI context;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Minister does not have a duty to consider exercising power under subsection (14) in respect of any person;
+  @action: There exists no person with respect to whom the Minister has a duty to consider exercising power under subsection (14);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-16-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-16;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister has an obligation to exercise power without considering matters.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (14);
+  @action: (16);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-17-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-17;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has an obligation to consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (17) If the Minister decides to consider whether to exercise the power in subsection (14), then, in that consideration, the Minister must have regard to...;
+  @action: ...the Minister must have regard to...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-17-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-17;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval of consideration.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (17) If the Minister decides to consider whether to exercise the power in subsection (14), then, in that consideration, the Minister must have regard to...;
+  @action: ...the degree of threat posed by the person to the Australian community;;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-17-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-17;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Temporal interval of consideration.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (17) If the Minister decides to consider whether to exercise the power in subsection (14), then, in that consideration, the Minister must have regard to...;
+  @action: ...the age of the person;;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-17-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-17;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Temporal interval of consideration.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (17) If the Minister decides to consider whether to exercise the power in subsection (14), then, in that consideration, the Minister must have regard to...;
+  @action: ...whether the person is being or is likely to be prosecuted in relation to matters referred to in paragraph (a);;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-17-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-17;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Temporal interval of consideration.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (17) If the Minister decides to consider whether to exercise the power in subsection (14), then, in that consideration, the Minister must have regard to...;
+  @action: ...the person’s connection to the other country of which the person is a national or citizen and the availability of the rights of citizenship of that country to the person;;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-18-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-18;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to provide statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-19-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-19;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits publication of names;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-20-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-20;
+  logic: Deontic;
+  operator: only;
+  summary: Restricting Minister's actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (20) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The Minister can only exercise their powers personally.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-20-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-20;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between actions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (20) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The action occurs during the Minister's personal exercise of powers.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-20-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-20;
+  logic: Argumentation;
+  operator: implies;
+  summary: Inference from Minister's actions;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (20) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: If the action is exercised, then it must be done personally.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-20-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-20;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Spreading information about Minister's actions;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (20) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The action spreads information that it must be done personally.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-20-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-20;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Machine understanding of Minister's actions;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (20) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The machine recognizes that the action must be done personally.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-21-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-21;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the State;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-22-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-22;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Rules of natural justice apply to Minister's decisions under subsection (14);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-22-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-22;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: (22) The rules of natural justice apply to a decision by the Minister to make, or not make, a determination under subsection (14);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-22-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-22;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Rules of natural justice apply to Minister's decisions under subsection (14);
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-23-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-23;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (23) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+  @action: An instrument exercising Minister's powers under this section is a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-23-logic-63 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-23;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation between Minister's powers and legislative instruments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (23) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+  @action: An instrument exercising Minister's powers under this section is a legislative instrument if it exercises any of the Minister’s powers during this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-23-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-23;
+  logic: LTL;
+  operator: during;
+  summary: Temporal relation between Minister's powers and legislative instruments;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (23) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+  @action: An instrument exercising Minister's powers under this section is a legislative instrument if it exercises any of the Minister’s powers during this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-23-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-23;
+  logic: Diffusion;
+  operator: if;
+  summary: Conditional relation between Minister's powers and legislative instruments;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (23) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+  @action: An instrument exercising Minister's powers under this section is a legislative instrument if it exercises any of the Minister’s powers under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-23-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-23;
+  logic: CogAI;
+  operator: if;
+  summary: Conditional relation between Minister's powers and legislative instruments;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (23) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+  @action: An instrument exercising Minister's powers under this section is a legislative instrument if it exercises any of the Minister’s powers under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-24-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-24;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to not cease citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person's citizenship is taken never to have ceased under this section.;
+  @action: If certain conditions are met, the person's citizenship is not taken to have ceased.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-24-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-24;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between conduct and declaration;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A declaration under section 35AA is disallowed by either House of Parliament if the person's citizenship would not have ceased under this section.;
+  @action: The temporal overlap between the conduct and the declaration is significant.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-24-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-24;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal until condition;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: A court finds that the person was not a national or citizen of a country other than Australia at the time of the conduct.;
+  @action: The temporal condition is met if the person was not a national or citizen of a country other than Australia at the time of the conduct.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-101-ss-24-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-101-ss-24;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Citizenship diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: A declaration under section 35AA is disallowed by either House of Parliament if the person's citizenship would not have ceased under this section.;
+  @action: The citizenship diffuses to the person if they do not cease under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-1-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits ceasing to be an Australian citizen under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person is a national or citizen of a country other than Australia; and (b) the person: ComLaw Authoritative Act C2015A00166 Main amendments Schedule 1 No. 166, 2015;
+  @action: ceases to be an Australian citizen if serves in armed forces of enemy country or fights for declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-1-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: The conditions under which a person ceases to be an Australian citizen overlap with the definition of serving in armed forces of an enemy country or fighting for a declared terrorist organisation.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) serves in the armed forces of a country at war with Australia; or (ii) fights for, or is in the service of, a declared terrorist organisation (see section 35AA); and;
+  @action: ceases to be an Australian citizen if serves in armed forces of enemy country or fights for declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-1-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: LTL;
+  operator: Repeats;
+  summary: The conditions under which a person ceases to be an Australian citizen repeat the definition of serving in armed forces of an enemy country or fighting for a declared terrorist organisation.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (i) serves in the armed forces of a country at war with Australia; or (ii) fights for, or is in the service of, a declared terrorist organisation (see section 35AA); and;
+  @action: ceases to be an Australian citizen if serves in armed forces of enemy country or fights for declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-1-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: Deontic;
+  operator: Justifies;
+  summary: Justifies the prohibition on ceasing to be an Australian citizen under certain conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the person is a national or citizen of a country other than Australia; and (b) the person: ComLaw Authoritative Act C2015A00166 Main amendments Schedule 1 No. 166, 2015;
+  @action: ceases to be an Australian citizen if serves in armed forces of enemy country or fights for declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-1-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-1;
+  logic: Argumentation;
+  operator: Implicates;
+  summary: The conditions under which a person ceases to be an Australian citizen imply that serving in armed forces of an enemy country or fighting for a declared terrorist organisation is a sufficient condition.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (i) serves in the armed forces of a country at war with Australia; or (ii) fights for, or is in the service of, a declared terrorist organisation (see section 35AA); and;
+  @action: ceases to be an Australian citizen if serves in armed forces of enemy country or fights for declared terrorist organisation.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-2-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-2;
+  logic: Deontic;
+  operator: cease;
+  summary: Loss of citizenship due to service;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen...;
+  @action: The person is no longer an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Service timing and citizenship loss;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen...;
+  @action: The person's citizenship loss is during their military service.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-2-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-2;
+  logic: Argumentation;
+  operator: implies;
+  summary: Service implies citizenship loss;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen...;
+  @action: If the person serves, they lose their citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-3-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-3;
+  logic: Deontic;
+  operator: =;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The person is an Australian citizen regardless of how they became an Australian citizen.;
+  @action: There is an obligation on the state to recognize this citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-3-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-3;
+  logic: AllenInterval;
+  operator: =;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person's citizenship applies regardless of when they became an Australian citizen.;
+  @action: There is a temporal relation between the person's birth and their citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-3-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-3;
+  logic: Argumentation;
+  operator: =;
+  summary: Inference;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The person is an Australian citizen regardless of how they became an Australian citizen.;
+  @action: Therefore, there is an obligation on the state to recognize this citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-3-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-3;
+  logic: Diffusion;
+  operator: =;
+  summary: Propagation;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The person's citizenship applies regardless of how they became an Australian citizen.;
+  @action: This obligation will be propagated through the system.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-4-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister must give notice;
+  @action: State obligation;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-4-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-4;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal relation between 'notice' and 'service';
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Notice must be given before service begins;
+  @action: Minister must give notice when person is not in service;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-4-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-4;
+  logic: Argumentation;
+  operator: IMPLIES;
+  summary: Consequence of 'not in service';
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Person is not in service to that extent;
+  @action: Minister must give notice;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-5-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to give written notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-6-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-7-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-7;
+  logic: Deontic;
+  operator: may;
+  summary: The Minister may determine not to give a notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-8-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-8;
+  logic: Deontic;
+  operator: onlyIf;
+  summary: Ceases to be a citizen before applying subsections (9) to (14);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8) Subsections (9) to (14) apply only if a person has ceased to be a citizen under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-8-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-8;
+  logic: AllenInterval;
+  operator: during;
+  summary: Subsections (9) to (14) apply during the period of ceasing citizenship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) Subsections (9) to (14) apply only if a person has ceased to be a citizen under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-8-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-8;
+  logic: LTL;
+  operator: during;
+  summary: Subsections (9) to (14) apply during the period of ceasing citizenship;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (8) Subsections (9) to (14) apply only if a person has ceased to be a citizen under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-8-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-8;
+  logic: Diffusion;
+  operator: during;
+  summary: Subsections (9) to (14) apply during the period of ceasing citizenship;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) Subsections (9) to (14) apply only if a person has ceased to be a citizen under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-8-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-8;
+  logic: CogAI;
+  operator: during;
+  summary: Subsections (9) to (14) apply during the period of ceasing citizenship;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) Subsections (9) to (14) apply only if a person has ceased to be a citizen under this section.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-9-logic-94 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-9;
+  logic: Deontic;
+  operator: Permit;
+  summary: The Minister has the power to permit an exemption.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Minister may make a determination to exempt the person.;
+  @action: An exemption is permitted.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-10-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister has no obligation to consider exercising power;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-11-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister has an obligation to exercise power in subsection (9);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (9) grants the Minister power;
+  @action: Minister must consider exercising power;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-11-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-11;
+  logic: Deontic;
+  operator: Permission;
+  summary: Minister is permitted to exercise power in subsection (9);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (9) grants the Minister permission;
+  @action: Minister can consider exercising power;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-11-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister has an obligation to have regard to matters in subsection (12);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (12) defines the scope of consideration for the Minister;
+  @action: Minister must consider these matters;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-11-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-11;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Power in subsection (9) overlaps with considerations in subsection (12);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (12) defines the scope of consideration for the Minister;
+  @action: Minister's power and considerations overlap;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-11-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister is obligated to decide whether to exercise power in subsection (9);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (9) grants the Minister power;
+  @action: Minister must make a decision about exercising power;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-12-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-12;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must consider certain factors;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (12) If the Minister decides to consider whether to exercise the power in subsection (9), then, in that consideration, the Minister must have regard to...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-13-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-13;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister has a duty to provide statement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-14-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-14;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits publication of names;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-15-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-15;
+  logic: Deontic;
+  operator: Must;
+  summary: Minister's power is absolute;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-16-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-16;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to make a determination under subsection (9);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-17-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-17;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister must follow rules of natural justice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-18-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-18;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits exercising Minister's powers under section 35(18);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (18) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-18-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-18;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes obligation on instruments exercising Minister's powers under section 35(18);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (18) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-18-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-18;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Defines temporal overlap between section 35(18) and legislative instruments;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (18) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-18-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-18;
+  logic: LTL;
+  operator: Contains;
+  summary: Defines temporal relationship between section 35(18) and legislative instruments;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (18) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-18-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-18;
+  logic: Deontic;
+  operator: Permission;
+  summary: Permits exercise of Minister's powers under section 35(18);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (18) An instrument exercising any of the Minister’s powers under this section is not a legislative instrument.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35-ss-19-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35-ss-19;
+  logic: Deontic;
+  operator: Obligation;
+  summary: A person's citizenship is taken never to have ceased under this section if certain conditions are met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-2-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must be satisfied on reasonable grounds;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before declaring that an organisation is a declared terrorist organisation, the Minister...;
+  @action: the Minister MUST be satisfied on reasonable grounds;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-2-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Organisation must not advocate doing of a terrorist act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before declaring that an organisation is a declared terrorist organisation, the Minister...;
+  @action: the organisation MUST NOT advocate the doing of a terrorist act;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-2-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Organisation must not oppose Australia's interests, values, democratic beliefs, rights or liberties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Before declaring that an organisation is a declared terrorist organisation, the Minister...;
+  @action: the organisation MUST NOT oppose Australia's interests, values, democratic beliefs, rights or liberties;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-2-logic-116 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-2;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Organisation's declaration must be within a certain time frame;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Before declaring that an organisation is a declared terrorist organisation, the Minister...;
+  @action: the organisation's declaration MUST BE BETWEEN a certain time frame;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-3-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-3;
+  logic: Deontic;
+  operator: excluded;
+  summary: Exclusion from administrative action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The making of a declaration under subsection (1) is taken not to be prescribed administrative action for the purposes of Part IV of the Australian Security Intelligence Organisation Act 1979.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35aa-ss-4-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35aa-ss-4;
+  logic: Deontic;
+  operator: MAY;
+  summary: Expresses obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-1-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-1;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exempts Australian law enforcement or intelligence bodies from certain sections.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Identifies a specific type of entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-121 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: DescriptionLogic;
+  operator: is-a;
+  summary: Defines a subclass of entities;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-122 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Defines the scope of entities;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-123 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: CogAI;
+  operator: is-a;
+  summary: Defines a specific type of entity;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-124 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: SHACL;
+  operator: is-a;
+  summary: Defines a specific type of entity;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35ab-ss-2-logic-125 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35ab-ss-2;
+  logic: N3Logic;
+  operator: is-a;
+  summary: Defines a specific type of entity;
+  executionSurface: modalities::logic::n3_compiler;
+  curationStatus: Proposed;
+  @condition: Australian law enforcement or intelligence body means a body, agency or organisation...;
+  @action: This is an Australian law enforcement or intelligence body.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Loss of citizenship due to conviction.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Conviction for terrorism offences and certain other offences.;
+  @action: No longer an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between conviction and loss of citizenship.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person has, in respect of the conviction or convictions, been sentenced to a period of imprisonment of at least 6 years...;
+  @action: The person's conviction overlaps with their loss of citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: LTL;
+  operator: Reaches;
+  summary: Temporal reach between conviction and loss of citizenship.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Minister is satisfied that it is not in the public interest for the person to remain an Australian citizen:;
+  @action: The person's conviction reaches the point where they no longer have a right to remain an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion of information about loss of citizenship.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: A person may seek review of a determination made under this subsection in the High Court of Australia under section 75 of the Constitution, or in the Federal Court of Australia under section 39B of the Judiciary Act 1903.;
+  @action: The information about the loss of citizenship diffuses through the legal system.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Argumentation;
+  operator: Implicates;
+  summary: Implication of conviction on Australian citizenship.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Having regard to the following factors, the Minister is satisfied that it is not in the public interest for the person to remain an Australian citizen:;
+  @action: The conviction implies a loss of right to remain an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Deontic;
+  operator: cease;
+  summary: Ceases to be an Australian citizen;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Diffusion;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: CogAI;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of certain information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: DescriptionLogic;
+  operator: Restrict;
+  summary: Restricts disclosure of sensitive information.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-140 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies that being an Australian citizen is necessary for the application of subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) applies to a person who is an Australian citizen regardless of how the person became an Australian citizen;
+  @action: The person must be an Australian citizen;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-141 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Describes the temporal relationship between being born and becoming an Australian citizen;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A person who became an Australian citizen upon the person’s birth;
+  @action: The person was born before becoming an Australian citizen;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-142 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies that being born in Australia is necessary for citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person who became an Australian citizen upon the person’s birth;
+  @action: The person was born in Australia;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-4-logic-143 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-4;
+  logic: Deontic;
+  operator: takes;
+  summary: The state takes an obligation on a person.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) For the purpose of paragraph (1)(b):;
+  @action: the person is taken to have been sentenced...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-4-logic-144 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-4;
+  logic: AllenInterval;
+  operator: includes;
+  summary: The total period of imprisonment includes a part that relates to the offence.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) if it is clear that only a particular part of the total period...;
+  @action: ...the person is taken to have been sentenced...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-4-logic-145 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-4;
+  logic: Deontic;
+  operator: implies;
+  summary: If it is not clear that only a particular part of the total period relates to the offence, then the person is taken to have been sentenced for the whole of the total period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (ii) if subparagraph (i) does not apply...;
+  @action: ...the person is taken to have been sentenced...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-4-logic-146 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-4;
+  logic: Deontic;
+  operator: implies;
+  summary: If it is clear that only a particular part of the total period relates to the offence, then the person is taken to have been sentenced for that part of the total period.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) if it is clear that only a particular part of the total period...;
+  @action: ...the person is taken to have been sentenced...;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-5-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Minister must give written notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-6-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-7-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits giving notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister's satisfaction;
+  @action: Notice not given;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-8-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Minister has an obligation to revoke determination.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Conviction is overturned on appeal.;
+  @action: Determination must be revoked.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-9-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-9;
+  logic: Deontic;
+  operator: if-then;
+  summary: Conditional obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister revokes determination;
+  @action: Person's citizenship is taken never to have ceased.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-10-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-10;
+  logic: Deontic;
+  operator: Must;
+  summary: Minister's obligation to exercise powers personally.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (10) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The Minister must exercise powers personally.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-10-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-10;
+  logic: AllenInterval;
+  operator: Between;
+  summary: Temporal interval between exercise of powers and personal exercise.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (10) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The temporal interval is between the exercise of powers and the personal exercise.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-10-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-10;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal limit on exercise of powers.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (10) The powers of the Minister under this section may only be exercised by the Minister personally.;
+  @action: The temporal limit is until the personal exercise.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-11-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-11;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No application of natural justice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (11) Except for the powers of the Minister under subsection (1),;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-12-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-12;
+  logic: Deontic;
+  operator: Implies;
+  summary: Minister's actions are not subject to Section 47.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 47 applies to Minister's powers under this section.;
+  @action: Section 47 does not apply.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-12-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-12;
+  logic: LinearLogic;
+  operator: Implies;
+  summary: Minister's actions are not subject to Section 47.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Section 47 applies to Minister's powers under this section.;
+  @action: Section 47 does not apply.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-12-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-12;
+  logic: Deontic;
+  operator: Exempts;
+  summary: Minister is exempt from Section 47.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 47 applies to Minister's powers under this section.;
+  @action: Section 47 does not apply.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-12-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-12;
+  logic: Deontic;
+  operator: Justifies;
+  summary: Minister's actions are justified by Section 47 exemption.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 47 applies to Minister's powers under this section.;
+  @action: Section 47 does not apply.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-13-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-13;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits exercising Minister's powers under this section.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Loss of citizenship due to conviction.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Conviction for terrorism offences and certain other offences.;
+  @action: No longer an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap between conviction and loss of citizenship.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The person has, in respect of the conviction or convictions, been sentenced to a period of imprisonment of at least 6 years...;
+  @action: The person's conviction overlaps with their loss of citizenship.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: LTL;
+  operator: Reaches;
+  summary: Temporal reach between conviction and loss of citizenship.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The Minister is satisfied that it is not in the public interest for the person to remain an Australian citizen:;
+  @action: The person's conviction reaches the point where they no longer have a right to remain an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffusion of information about loss of citizenship.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: A person may seek review of a determination made under this subsection in the High Court of Australia under section 75 of the Constitution, or in the Federal Court of Australia under section 39B of the Judiciary Act 1903.;
+  @action: The information about the loss of citizenship diffuses through the legal system.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-1-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-1;
+  logic: Argumentation;
+  operator: Implicates;
+  summary: Implication of conviction on Australian citizenship.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Having regard to the following factors, the Minister is satisfied that it is not in the public interest for the person to remain an Australian citizen:;
+  @action: The conviction implies a loss of right to remain an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Deontic;
+  operator: cease;
+  summary: Ceases to be an Australian citizen;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: LTL;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: Diffusion;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-2-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-2;
+  logic: CogAI;
+  operator: during;
+  summary: During conviction, ceases citizenship;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The person ceases to be an Australian citizen at the time when the determination is made.;
+  @action: The person ceases to be an Australian citizen during their conviction.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits disclosure of certain information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: DescriptionLogic;
+  operator: Restrict;
+  summary: Restricts disclosure of sensitive information.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-175 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies that being an Australian citizen is necessary for the application of subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1) applies to a person who is an Australian citizen regardless of how the person became an Australian citizen;
+  @action: The person must be an Australian citizen;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-176 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Describes the temporal relationship between being born and becoming an Australian citizen;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: A person who became an Australian citizen upon the person’s birth;
+  @action: The person was born before becoming an Australian citizen;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-35a-ss-3-logic-177 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-35a-ss-3;
+  logic: Deontic;
+  operator: implies;
+  summary: Implies that being born in Australia is necessary for citizenship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A person who became an Australian citizen upon the person’s birth;
+  @action: The person was born in Australia;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-6-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits omission of text;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-36a-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-36a;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No resumption of citizenship.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-8-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to persons who became Australian citizens before, on or after the commencement of this item.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 33AA of the Australian Citizenship Act 2007 (as amended by this Schedule) applies in relation to:;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-8-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to conduct engaged in on or after the commencement of this item.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 35 of the Australian Citizenship Act 2007 (as amended by this Schedule) applies in relation to:;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-1-sec-8-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: applies;
+  summary: Section does not apply to a conviction of a person before the commencement of this item unless...;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 35A of the Australian Citizenship Act 2007 (as amended by this Schedule):;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-1-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: The Minister must table a report.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition on sensitive information disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The report must not contain...;
+  @action: ...or might prejudice the security, defence or international relations of Australia.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of sensitive information;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) the information or content includes any operationally sensitive information...;
+  @action: ...within the meaning of the Independent National Security Legislation Monitor Act 2010.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Restriction;
+  summary: Restriction on disclosure during certain periods;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the disclosure of the information or content would or might prejudice...;
+  @action: ...the performance by a law enforcement or security agency (within the meaning of the Independent National Security Legislation Monitor Act 2010) of its functions.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: LTL;
+  operator: Temporal Restriction;
+  summary: Restriction on disclosure during certain periods;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (c) the disclosure of the information or content would or might endanger a person’s safety;;
+  @action: ...or might be likely to be contrary to the public interest for any other reason.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: Diffusion;
+  operator: Information Control;
+  summary: Control on sensitive information dissemination;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (d) the disclosure of the information or content would be likely...;
+  @action: ...to be contrary to the public interest for any other reason.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-2-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-2;
+  logic: CogAI;
+  operator: Knowledge Management;
+  summary: Management of sensitive information knowledge;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The report must not contain...;
+  @action: ...or might prejudice the security, defence or international relations of Australia.;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51b-ss-3-logic-190 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-51b-ss-3;
+  logic: DescriptionLogic;
+  operator: definedBy;
+  summary: Defines a term;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (reporting period) is defined as the period of 6 months beginning on the day this section commences; and each subsequent 6-month period.;
+  @action: (reporting period);
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-1-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Minister gives or unsuccessfully attempts to give a notice;
+  @action: Obligation to provide notice;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-1-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-1;
+  logic: AllenInterval;
+  operator: BETWEEN;
+  summary: Temporal interval for giving notice;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Minister gives or unsuccessfully attempts to give a notice under paragraph 33AA(10)(a) or 35(5)(a);;
+  @action: Temporal interval for giving notice;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-1-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-1;
+  logic: LTL;
+  operator: BUT;
+  summary: Notice must be given but not necessarily at a specific time;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Minister gives or unsuccessfully attempts to give a notice under paragraph 33AA(10)(a) or 35(5)(a);;
+  @action: Notice must be given but not necessarily at a specific time;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-1-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-1;
+  logic: Diffusion;
+  operator: AND;
+  summary: Multiple conditions for giving notice;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Minister gives or unsuccessfully attempts to give a notice under paragraph 33AA(10)(a) or 35(5)(a); Minister gives or unsuccessfully attempts to give a notice under paragraph 35A(5)(a);;
+  @action: Multiple conditions for giving notice;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-1-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-1;
+  logic: CogAI;
+  operator: IS_A;
+  summary: Minister's action is an instance of a specific type;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Minister gives or unsuccessfully attempts to give a notice under paragraph 33AA(10)(a) or 35(5)(a); Minister gives or unsuccessfully attempts to give a notice under paragraph 35A(5)(a);;
+  @action: Minister's action is an instance of a specific type;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-2-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to inform;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-3-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide briefing;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Request for briefing;
+  @action: Fulfillment required;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-51c-ss-5-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-51c-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide details.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-2-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: INSERTS;
+  summary: Inserts sections of the Australian Citizenship Act into counter-terrorism and national security legislation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-3-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: definition;
+  summary: Defines a term with a clear meaning;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-3-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: DescriptionLogic;
+  operator: class hierarchy;
+  summary: Applies to explicit class hierarchies;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-5-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of specific words.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-6-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-6;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding a new entity to a list.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+australian-citizenship-amendment-allegiance-to-australia-act-2015-sch-2-sec-8-logic-204 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: addition;
+  summary: Adding an agency to a list is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

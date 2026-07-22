@@ -1,0 +1,2082 @@
+# CogAI proposed logic-routing chunks — Financial Sector (Collection of Data) Act 2001
+# Machine-derived; every chunk remains cml:Proposed.
+
+financial-sector-collection-of-data-act-2001-sec-21-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Classifies the text as a compilation of the Financial Sector (Collection of Data) Act 2001.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The text is classified as a compilation.;
+  @action: Financial Sector (Collection of Data) Act 2001.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-2-ss-3-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the temporal interval for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-4-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-4;
+  logic: Deontic;
+  operator: extends;
+  summary: Extension obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act extends to every external Territory.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Classification of entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) a registered entity; or (b) a regulated entity; or (c) a corporation to which section 5A applies; or (d) a discretionary mutual fund; or (e) a person who...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Classification of entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) provides a financial service (within the meaning of the Corporations Act 2001); and (ii) is not an entity, corporation or fund referred to in paragraphs (a) to (d) of this subsection; or (f) a person who...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: AllenInterval;
+  operator: within the meaning of;
+  summary: Temporal relation between financial service and Corporations Act 2001;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) provides a financial service (within the meaning of the Corporations Act 2001); and (ii) is not an entity, corporation or fund referred to in paragraphs (a) to (d) of this subsection;;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: LTL;
+  operator: is a participant in;
+  summary: Temporal relation between payment system and Payment Systems (Regulation) Act 1998;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (i) is a participant in a payment system (within the meaning of section 7 of the Payment Systems (Regulation) Act 1998); and (ii) is not an entity, corporation or fund referred to in paragraphs (a) to (d) of this subsection;;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-5-ss-2;
+  logic: Deontic;
+  operator: is;
+  summary: Classification of entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) is a participant in a payment system (within the meaning of section 7 of the Payment Systems (Regulation) Act 1998); and (ii) is not an entity, corporation or fund referred to in paragraphs (a) to (d) of this subsection;;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-3-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-3;
+  logic: Deontic;
+  operator: is;
+  summary: Definition of a registered entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) A registered entity is a corporation...;
+  @action: ...whose name is entered in the Register...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-4-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-4;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) A regulated entity is any of the following:;
+  @action: Entities covered by the Act;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-6-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-6;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Entity classification;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Entities covered by the Act;
+  @action: Fund is not a discretionary mutual fund if certain conditions are met;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-6-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-6;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A fund is not a discretionary mutual fund if certain conditions are met;
+}
+
+financial-sector-collection-of-data-act-2001-sec-5-ss-7-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-5-ss-7;
+  logic: Deontic;
+  operator: !;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: There is no obligation to classify the Reserve Bank as a financial sector entity.;
+  @action: The Reserve Bank is not a financial sector entity.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-6-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6;
+  logic: Deontic;
+  operator: applies;
+  summary: Chapter 2 of the Criminal Code applies to all offences against this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1;
+  logic: DescriptionLogic;
+  operator: Classifies;
+  summary: Corporation classification.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) the corporation engages in finance provision.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1c-logic-18 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-7-ss-1c;
+  logic: Deontic;
+  operator: is;
+  summary: Determinations are obligations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A)(b);
+  @action: legislative instrument;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: Deontic;
+  operator: MUST;
+  summary: Duty to consider business activities in Australia that include the provision of finance.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: APRA must consider...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: DescriptionLogic;
+  operator: IS_A;
+  summary: Business activities in Australia that include the provision of finance are relevant to the determination.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: ...business activities in Australia...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Business activities in Australia that include the provision of finance must be considered before making a determination.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: ...business activities in Australia...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: LTL;
+  operator: >=;
+  summary: Business activities in Australia that include the provision of finance must be considered before making a determination.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: ...business activities in Australia...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: Diffusion;
+  operator: >=;
+  summary: Business activities in Australia that include the provision of finance must be considered before making a determination.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: ...business activities in Australia...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-7-ss-1d-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-7-ss-1d;
+  logic: CogAI;
+  operator: >=;
+  summary: Business activities in Australia that include the provision of finance must be considered before making a determination.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1A)(a) or (b);
+  @action: ...business activities in Australia...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-8-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to keep a Register of Entities;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-8-ss-2-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to ensure public inspection;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-8-ss-3-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-8-ss-3;
+  logic: Deontic;
+  operator: can;
+  summary: Permits action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-9-ss-1-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-9-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide documents within 60 days.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-9-ss-3-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Permission granted by APRA;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-9-ss-4-logic-31 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-9-ss-4;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exempts corporations from subsections (1) and (2);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The corporation ceases to be a registrable corporation.;
+  @action: No subsections apply.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-9-ss-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-9-ss-5;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires a list of documents;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-10-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-1-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to maintain a list;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-2-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: List of names and categories of registered entities may be varied.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-3-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must consider assets, liabilities, borrowing methods, and finance when categorizing corporations.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) In determining the category in which a corporation is to be included or in determining whether a corporation should be transferred from one category to another category, APRA must have regard to:;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-3-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-3;
+  logic: AllenInterval;
+  operator: CONTINUOUSLY;
+  summary: Consider assets, liabilities, borrowing methods, and finance over time.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the assets and liabilities of the corporation; and (b) the principal methods by which the corporation ordinarily borrows moneys; and (c) the principal kinds of finance ordinarily provided by the corporation;;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-3-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-3;
+  logic: LTL;
+  operator: RECURRING;
+  summary: Consider assets, liabilities, borrowing methods, and finance in a recurring manner.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) the assets and liabilities of the corporation; and (b) the principal methods by which the corporation ordinarily borrows moneys; and (c) the principal kinds of finance ordinarily provided by the corporation;;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-3-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-3;
+  logic: Deontic;
+  operator: MUST TRY TO ENSURE;
+  summary: Must try to ensure that corporations carrying on the same or similar kinds of business are included in the same category.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: must try to ensure that, as far as practicable, corporations carrying on the same or similar kinds of business are included in the same category.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-4-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must publish a copy of the list in the Gazette.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA must cause a copy of the list to be published in the Gazette.;
+  @action: The list must be published in the Gazette.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-6-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to notify;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-6-logic-42 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-11-ss-6;
+  logic: AllenInterval;
+  operator: during;
+  summary: Notify within a reasonable time frame;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) As soon as practicable after a corporation is included in a category...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-11-ss-7-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-11-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider corporation's request;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Corporation requests category change;
+  @action: APRA must reconsider;
+}
+
+financial-sector-collection-of-data-act-2001-sec-12-ss-2-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-12-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Regulated entity must provide documents to APRA.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13-ss-1-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: APRA has a duty to determine reporting standards.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13a-ss-1-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide a copy of the reporting standard.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13a-ss-2-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide a written statement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-1-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-1;
+  logic: Deontic;
+  operator: must-not;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Given a reporting standard, the financial sector entity must not disclose confidential information.;
+  @action: The financial sector entity must not disclose confidential information given a reporting standard.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-1-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The financial sector entity must not disclose confidential information during the period it has been given a reporting standard.;
+  @action: The financial sector entity must not disclose confidential information during the period it has been given a reporting standard.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-1;
+  logic: Argumentation;
+  operator: must-not-disclose;
+  summary: Must not disclose;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Given a reporting standard, the financial sector entity must not disclose confidential information.;
+  @action: The financial sector entity must not disclose confidential information given a reporting standard.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-1;
+  logic: Diffusion;
+  operator: must-not-propagate;
+  summary: Must not propagate;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Given a reporting standard, the financial sector entity must not disclose confidential information to others.;
+  @action: The financial sector entity must not disclose confidential information given a reporting standard.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-1-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-1;
+  logic: CogAI;
+  operator: must-not-act;
+  summary: Must not act;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Given a reporting standard, the financial sector entity must not disclose confidential information.;
+  @action: The financial sector entity must not disclose confidential information given a reporting standard.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-2-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) However, subsection (1) does not apply...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13b-ss-2-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13b-ss-2;
+  logic: AllenInterval;
+  operator: Temporal interval;
+  summary: Temporal intervals for disclosure exceptions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (b) the disclosure is authorised under an Act or another law;...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13c-ss-1-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13c-ss-1;
+  logic: Deontic;
+  operator: Directs;
+  summary: Minister directs APRA.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13c-ss-1-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13c-ss-1;
+  logic: DescriptionLogic;
+  operator: Classifies;
+  summary: Reporting standards classified by Minister.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13c-ss-2-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13c-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission granted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-13c-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-13c-ss-3;
+  logic: Deontic;
+  operator: May;
+  summary: Implies obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Explicit class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-2-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: hasDuty;
+  summary: Entity has a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The principal executive officer has an obligation;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-2-logic-63 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Declaration obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA may make declarations;
+  @action: for the purposes of subsection (1);
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-3-logic-64 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-3;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory action;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-4-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-4;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits contravention of subsection (3);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: DescriptionLogic;
+  operator: Applicable;
+  summary: Explicit class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-1-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-1;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-2-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: hasDuty;
+  summary: Entity has a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The principal executive officer has an obligation;
+}
+
+financial-sector-collection-of-data-act-2001-sec-14-ss-2-logic-70 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-14-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Declaration obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA may make declarations;
+  @action: for the purposes of subsection (1);
+}
+
+financial-sector-collection-of-data-act-2001-sec-16-ss-1b-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16-ss-1b;
+  logic: Deontic;
+  operator: Permit;
+  summary: Granting permission;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1B) APRA may, by legislative instrument...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-16-ss-1b-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-16-ss-1b;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classification of financial sector entities;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (1B) APRA may, by legislative instrument...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-1-logic-73 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Request for explanation or information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA thinks the reporting document is incorrect, incomplete, or misleading.;
+  @action: APRA may give the entity written notice requesting it to give APRA in writing such explanation or information as is specified in the notice.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-1-logic-74 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Deontic;
+  operator: must;
+  summary: Entity must provide explanation or information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA gives the entity written notice requesting it to give APRA in writing such explanation or information as is specified in the notice.;
+  @action: The entity must give APRA in writing such explanation or information as is specified in the notice.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-1-logic-75 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: APRA may request explanation or information at any time;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: APRA thinks the reporting document is incorrect, incomplete, or misleading.;
+  @action: The entity must give APRA in writing such explanation or information as is specified in the notice at any time.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-1-logic-76 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-17-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: APRA may request variation of reporting document;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA thinks that a reporting document given to APRA by a financial sector entity is incorrect, incomplete or misleading; or does not comply with a reporting standard that applies to it; or does not contain information, or adequate information, about a matter.;
+  @action: APRA may give the entity written notice requesting it to give APRA in writing such explanation or information as is specified in the notice.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-2-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must specify period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-3-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: APRA may give written directions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-4-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-4;
+  logic: Deontic;
+  operator: may;
+  summary: APRA may give directions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: APRA thinks necessary;
+  @action: give written directions;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-5-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must provide directions with specified periods.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-6-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-6;
+  logic: Deontic;
+  operator: MUST;
+  summary: APRA must give notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-7-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-7;
+  logic: Deontic;
+  operator: MUST;
+  summary: APRA must give written notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-8-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-8;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-8-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-8;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (8) A financial sector entity must comply with a direction given to it under subsection (3) or (4) or with such a direction as varied under subsection (6) or (7), as the case requires.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-8-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-8;
+  logic: LTL;
+  operator: Applicable;
+  summary: Recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (8) A financial sector entity must comply with a direction given to it under subsection (3) or (4) or with such a direction as varied under subsection (6) or (7), as the case requires.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-8-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-8;
+  logic: Diffusion;
+  operator: Applicable;
+  summary: Diffusion logic;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (8) A financial sector entity must comply with a direction given to it under subsection (3) or (4) or with such a direction as varied under subsection (6) or (7), as the case requires.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-8-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-8;
+  logic: CogAI;
+  operator: Applicable;
+  summary: CogAI logic;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (8) A financial sector entity must comply with a direction given to it under subsection (3) or (4) or with such a direction as varied under subsection (6) or (7), as the case requires.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-9-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-9;
+  logic: Deontic;
+  operator: applies;
+  summary: Section 4K applies to the obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-ss-10-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-ss-10;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the agent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (8);
+  @action: Offence of strict liability;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-1-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must appoint an auditor;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This Division applies if a financial sector entity is required to...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-2-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Division applies if a condition is met.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Also, this Division applies...;
+  @action: ...if a financial sector entity is required to appoint an auditor...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-2-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-2;
+  logic: AllenInterval;
+  operator: requires;
+  summary: Division requires appointment of an auditor if a condition is met.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) Also, this Division applies...;
+  @action: ...if a financial sector entity is required to appoint an auditor...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-2-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-2;
+  logic: LTL;
+  operator: requires;
+  summary: Division requires appointment of an auditor if a condition is met.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) Also, this Division applies...;
+  @action: ...if a financial sector entity is required to appoint an auditor...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-2-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-2;
+  logic: Diffusion;
+  operator: requires;
+  summary: Division requires appointment of an auditor if a condition is met.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) Also, this Division applies...;
+  @action: ...if a financial sector entity is required to appoint an auditor...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17a-ss-2-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17a-ss-2;
+  logic: CogAI;
+  operator: requires;
+  summary: Division requires appointment of an auditor if a condition is met.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) Also, this Division applies...;
+  @action: ...if a financial sector entity is required to appoint an auditor...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-1-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Auditor must notify APRA.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-1-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-1;
+  logic: Epistemic;
+  operator: OBLIGATION;
+  summary: Auditor has an obligation to notify APRA.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-2-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Auditor has a duty to comply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-3-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make necessary arrangements;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-1-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Auditor must notify APRA.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-1-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-1;
+  logic: Epistemic;
+  operator: OBLIGATION;
+  summary: Auditor has an obligation to notify APRA.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17b-ss-2-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Auditor has a duty to comply.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-1-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits giving false or misleading information to auditor.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person commits an offence if...;
+  @action: ...the person knows that the information: (i) is false or misleading in a material particular; or (ii) is missing something that makes the information misleading in a material respect.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-1-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits giving false or misleading information to auditor.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) the person gives information, or allows information to be given, to an auditor of the financial sector entity;;
+  @action: ...the person knows that the information: (i) is false or misleading in a material particular; or (ii) is missing something that makes the information misleading in a material respect.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-1-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-1;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implies imprisonment for 5 years or 200 penalty units if offence committed.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: Penalty: Imprisonment for 5 years or 200 penalty units, or both.;
+  @action: ...the person commits an offence.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-1-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits failing to ensure information is not false or misleading.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Offence—person fails to ensure the information is not false or misleading etc.;
+  @action: ...the person commits an offence.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-2-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of false or misleading information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: The person is committing an offence.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-2-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of providing false or misleading information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: The provision prohibits providing false or misleading information to auditor.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-2-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of giving false or misleading information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: The provision prohibits giving false or misleading information to auditor.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-2-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of allowing false or misleading information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: The provision prohibits allowing false or misleading information to auditor.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17d-ss-2-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17d-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of relating false or misleading information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A person commits an offence...;
+  @action: The provision prohibits relating false or misleading information to auditor.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-1-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: APRA may serve an infringement notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-2-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-2;
+  logic: Deontic;
+  operator: not;
+  summary: Negative obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: An infringement notice must not relate to more than one offence unless...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-3-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits serving infringement notice outside one year limit.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) An infringement notice does not have any effect unless it is served within one year after the day on which the offence or the earlier or earliest of the offences is alleged to have been committed.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-3-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-3;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal interval constraint applies to infringement notice service.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) An infringement notice does not have any effect unless it is served within one year after the day on which the offence or the earlier or earliest of the offences is alleged to have been committed.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-3-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-3;
+  logic: LTL;
+  operator: Traces;
+  summary: Temporal interval constraint traces back to infringement notice service.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) An infringement notice does not have any effect unless it is served within one year after the day on which the offence or the earlier or earliest of the offences is alleged to have been committed.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-3-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-3;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Temporal interval constraint diffuses to infringement notice service.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) An infringement notice does not have any effect unless it is served within one year after the day on which the offence or the earlier or earliest of the offences is alleged to have been committed.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-18-ss-3-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-18-ss-3;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Temporal interval constraint recognized in infringement notice service.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) An infringement notice does not have any effect unless it is served within one year after the day on which the offence or the earlier or earliest of the offences is alleged to have been committed.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-20-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20;
+  logic: Deontic;
+  operator: MUST;
+  summary: Must state name of person on whom notice is to be served;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-2-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: APRA has an obligation to serve written notice of withdrawal.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-3-logic-121 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-3;
+  logic: Deontic;
+  operator: consider;
+  summary: APRA must consider certain factors.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The matters to which APRA may have regard...;
+  @action: APRA may withdraw the infringement notice if it considers these factors.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-3-logic-122 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-3;
+  logic: AllenInterval;
+  operator: between;
+  summary: APRA's consideration of these factors is a temporal interval between withdrawing and not withdrawing the infringement notice.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) The matters to which APRA may have regard...;
+  @action: This interval represents the time during which APRA considers these factors.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-3-logic-123 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-3;
+  logic: LTL;
+  operator: everywhere;
+  summary: APRA's consideration of these factors is a recurring trace in every decision-making process.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) The matters to which APRA may have regard...;
+  @action: This trace represents the pattern of considering these factors in all decisions.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-3-logic-124 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-3;
+  logic: Diffusion;
+  operator: everywhere;
+  summary: APRA's consideration of these factors is a diffusion that affects every decision-making process.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) The matters to which APRA may have regard...;
+  @action: This diffusion represents the spread of considering these factors in all decisions.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-3-logic-125 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-3;
+  logic: CogAI;
+  operator: everywhere;
+  summary: APRA's consideration of these factors is a cognitive process that affects every decision-making process.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) The matters to which APRA may have regard...;
+  @action: This process represents the mental state of considering these factors in all decisions.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-21-2-ss-4-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-21-2-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to refund;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) If...;
+  @action: APRA must refund...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-22-ss-1-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-22-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Payment of penalty before end of period constitutes obligation to comply with infringement notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if: (a) an infringement notice is served on a person; and (b) the person has done the act the failure to do which constituted the offence or offences and pays the penalty specified in the notice before the end of the period referred to in paragraph 20(1)(e); and (c) the infringement notice is not withdrawn.;
+  @action: (1) This section applies if: (a) an infringement notice is served on a person; and (b) the person has done the act the failure to do which constituted the offence or offences and pays the penalty specified in the notice before the end of the period referred to in paragraph 20(1)(e); and (c) the infringement notice is not withdrawn.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-23-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-23;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits serving more than one infringement notice for the same offence.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-24-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-24;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No infringement notice is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25-ss-1-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Obligation to extend period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25-ss-2-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to extend period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25-ss-3-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25-ss-3;
+  logic: Deontic;
+  operator: extension;
+  summary: APRA's extension of the period is an obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25a-ss-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25a-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: APRA must give notice;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25a-ss-2-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25a-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty to provide notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25b-ss-2-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25b-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to make a written request within a specified time period;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-1-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Reconsider decision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (request received);
+  @action: (decision reconsidered);
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-2-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-2;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to confirm decision;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-3-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to serve notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-4-logic-139 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-4;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exemptions from requirements do not affect decision validity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Any failure to comply with the requirements of subsection (3) in relation to a decision does not affect the validity of the decision.;
+  @action: The decision remains valid even if requirements are not met.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-4-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-4;
+  logic: LinearLogic;
+  operator: Conjunction;
+  summary: Decision validity and compliance are independent.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (4) Any failure to comply with the requirements of subsection (3) in relation to a decision does not affect the validity of the decision.;
+  @action: The decision's validity is not affected by non-compliance.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-4-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-4;
+  logic: AllenInterval;
+  operator: Disjointness;
+  summary: Compliance with requirements and decision validity are independent temporal events.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (4) Any failure to comply with the requirements of subsection (3) in relation to a decision does not affect the validity of the decision.;
+  @action: The compliance event is disjoint from the decision validity event.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-4-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-4;
+  logic: Diffusion;
+  operator: No Diffusion;
+  summary: Compliance with requirements has no effect on decision validity.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (4) Any failure to comply with the requirements of subsection (3) in relation to a decision does not affect the validity of the decision.;
+  @action: The compliance event has no diffusion effect on the decision validity event.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25c-ss-4-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25c-ss-4;
+  logic: CogAI;
+  operator: No Causal Relationship;
+  summary: Compliance with requirements and decision validity are unrelated.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (4) Any failure to comply with the requirements of subsection (3) in relation to a decision does not affect the validity of the decision.;
+  @action: The compliance event has no causal relationship with the decision validity event.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25d-ss-1-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25d-ss-1;
+  logic: Deontic;
+  operator: May;
+  summary: Application is permitted;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-25d-ss-3-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-25d-ss-3;
+  logic: Deontic;
+  operator: applies;
+  summary: Applying a rule or regulation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-27-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27;
+  logic: Deontic;
+  operator: MUST;
+  summary: Entity must comply;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-28-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-28;
+  logic: Deontic;
+  operator: !;
+  summary: Expresses prohibition or negation of obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-29-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits holding out as a registered entity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-29a-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29a;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to delegate;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-30-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-30;
+  logic: Deontic;
+  operator: may;
+  summary: Expresses permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-31-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-31;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definitions;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: Deontic;
+  operator: includes;
+  summary: Includes specific activities in the definition of provision of finance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the lending of money, with or without security.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Defines a subclass of 'provision of finance';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the carrying out of activities, whether directly or indirectly...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: AllenInterval;
+  operator: during;
+  summary: Describes the temporal relationship between activities in the definition of provision of finance;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the carrying out of activities, whether directly or indirectly...;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: Argumentation;
+  operator: implies;
+  summary: Suggests that the definition of provision of finance implies certain conditions;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the supplying of goods by way of hire-purchase.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: Diffusion;
+  operator: includes;
+  summary: Includes the definition of provision of finance in a broader context;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the sale (other than a lay-by sale), in the course of the carrying on of a business of selling goods by retail, of goods.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-32-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-32;
+  logic: CogAI;
+  operator: defines;
+  summary: Defines the concept of provision of finance using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The Act defines provision of finance as including...;
+  @action: ...the lending of money, with or without security.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-1-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33-ss-1;
+  logic: Deontic;
+  operator: Obligate;
+  summary: Assets of corporations are taken to be the assets in Australia of the corporation that were included in the last balance-sheet.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-1-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33-ss-1;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal interval relation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-2-logic-160 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-33-ss-2;
+  logic: AllenInterval;
+  operator: <=;
+  summary: Conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) If, for the purposes of the application of this section...;
+  @action: then, for the purposes of the application of sections 7 and 34 in relation to the corporation:;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-2-logic-161 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-33-ss-2;
+  logic: LTL;
+  operator: <=;
+  summary: Ordered trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) If, for the purposes of the application of this section...;
+  @action: then, for the purposes of the application of sections 7 and 34 in relation to the corporation:;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-2-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33-ss-2;
+  logic: Deontic;
+  operator: =;
+  summary: Obligation on state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If, for the purposes of the application of this section...;
+  @action: the assets of the corporation on that day are taken to be the assets in Australia of the corporation;
+}
+
+financial-sector-collection-of-data-act-2001-sec-33-ss-2-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-33-ss-2;
+  logic: Deontic;
+  operator: =;
+  summary: Obligation on state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If, for the purposes of the application of this section...;
+  @action: the value on that day of any of those assets is taken to be the value of the assets concerned as shown in the accounting records of the corporation;
+}
+
+financial-sector-collection-of-data-act-2001-sec-34-ss-1-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-34-ss-1;
+  logic: Deontic;
+  operator: Determine;
+  summary: Obligation to determine related corporations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-34-ss-2-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-34-ss-2;
+  logic: Deontic;
+  operator: Obligate;
+  summary: A corporation is not considered related unless it meets specific conditions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+financial-sector-collection-of-data-act-2001-sec-34-ss-2-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-34-ss-2;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) 50%; (ii) if a greater or lesser percentage is prescribed by the regulations—the percentage so prescribed;;
+  @action: The sum of the amounts of such of the assets in Australia of the first-mentioned corporation as consist of debts due to that corporation, being debts resulting from transactions entered into in the course of the provision of finance by that corporation, exceeds 50% or a greater/lesser percentage.;
+}
+
+financial-sector-collection-of-data-act-2001-sec-17-2-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-17-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified;
+  @action: Temporal interval required;
+}
+
+financial-sector-collection-of-data-act-2001-sec-19-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-19;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditionally commenced on July 1, 2002;
+  @action: Undertaking;
+}
+
+financial-sector-collection-of-data-act-2001-sec-27-2-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-27-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is specified;
+  @action: Undertaking;
+}
+
+financial-sector-collection-of-data-act-2001-sec-1-4-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking;
+  @action: Temporal relation required;
+}
+
+financial-sector-collection-of-data-act-2001-sec-29-3-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-29-3;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 18 Sept 2018 (s 2(1) item 2);
+  @action: Temporal interval;
+}
+
+financial-sector-collection-of-data-act-2001-sec-6-2-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-6-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires relation between identifiable temporal intervals for conditional commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Conditional commencement is Undertaking;
+  @action: Temporal relation required;
+}
+
+financial-sector-collection-of-data-act-2001-sec-20-4-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-20-4;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal intervals for commencement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: 21 Feb 2025 (s 2(1) item 2);
+  @action: Undertaking;
+}

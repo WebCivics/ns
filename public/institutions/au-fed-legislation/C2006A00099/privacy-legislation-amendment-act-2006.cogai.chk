@@ -1,0 +1,239 @@
+# CogAI proposed logic-routing chunks — Privacy Legislation Amendment Act 2006
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-1 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-1;
+  logic: Deontic;
+  operator: Permits;
+  summary: Authorises the collection of health information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If particular health information is disclosed to an organisation;;
+  @action: then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-1;
+  logic: AllenInterval;
+  operator: Between;
+  summary: Describes the temporal relationship between the disclosure and authorisation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) If particular health information is disclosed to an organisation;;
+  @action: and (b) the disclosure is authorised by or under a health law;;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-1;
+  logic: LTL;
+  operator: Until;
+  summary: Describes the temporal scope of the permission;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) If particular health information is disclosed to an organisation;;
+  @action: then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-4 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-1;
+  logic: Diffusion;
+  operator: Through;
+  summary: Describes how the permission is transmitted or conveyed;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) If particular health information is disclosed to an organisation;;
+  @action: and (b) the disclosure is authorised by or under a health law;;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-1-logic-5 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-1;
+  logic: CogAI;
+  operator: By;
+  summary: Describes how the permission is processed or applied;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) If particular health information is disclosed to an organisation;;
+  @action: then the collection of the information by the organisation to whom the information is disclosed is taken to be authorised by or under law for the purposes of subparagraph 10.2(b)(i) of National Privacy Principle 10 in Schedule 3 to the Privacy Act 1988.;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Definition of organisation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: organisation has the same meaning as in the Privacy Act 1988.;
+  @action: Privacy Act 1988;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-2;
+  logic: DescriptionLogic;
+  operator: is defined by;
+  summary: Definition of health law;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (2) In this section: health law means any of the following:;
+  @action: an Act administered by the Minister; / the Medicare Australia Act 1973.;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-2;
+  logic: DescriptionLogic;
+  operator: is defined by;
+  summary: Definition of organisation;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: organisation has the same meaning as in the Privacy Act 1988.;
+  @action: Privacy Act 1988;
+}
+
+privacy-legislation-amendment-act-2006-sch-1-sec-135ac-ss-2-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-135ac-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Definition of health law;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In this section: health law means any of the following:;
+  @action: an Act administered by the Minister; / the Medicare Australia Act 1973.;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-1-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-1;
+  logic: DescriptionLogic;
+  operator: hasClass;
+  summary: Identifies a class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: genetic relative of an individual is another individual who is related to the first individual by blood;
+  @action: is a subclass of genetic relative;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: add;
+  summary: Add to the definition of health information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-3-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: add;
+  summary: Add genetic information;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-1-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-95aa-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows Commissioner to approve guidelines;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-2-logic-14 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-95aa-ss-2;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to approve guidelines;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-95aa-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-95aa-ss-3;
+  logic: Deontic;
+  operator: May;
+  summary: Permission to apply for review;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: must;
+  summary: Organisation has a duty to reasonably believe use or disclosure is necessary;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the organisation has obtained the genetic information in the course of providing a health service to the individual;
+  @action: the use or disclosure is necessary to prevent serious threat to life, health or safety of genetic relative;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: Use or disclosure must occur during provision of health service;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: the organisation has obtained the genetic information in the course of providing a health service to the individual;
+  @action: the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: LTL;
+  operator: until;
+  summary: Use or disclosure must cease when threat has passed;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the organisation reasonably believes that the use or disclosure is necessary to prevent serious threat to life, health or safety of genetic relative;
+  @action: the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA;
+}
+
+privacy-legislation-amendment-act-2006-sch-2-sec-5-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: must;
+  summary: Recipient of genetic information must be a genetic relative;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the recipient of the genetic information is a genetic relative of the individual;
+  @action: the use or disclosure is conducted in accordance with guidelines approved by the Commissioner under section 95AA;
+}

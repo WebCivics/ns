@@ -1,0 +1,3387 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Permits disclosure of information under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 266A(2)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-epistemic-2",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-ltl-3"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "27d2545722a259622314097c8c841a72c29dbb18b072624f80b71ba7846868b8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Grants permission to disclose information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Permit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-epistemic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::epistemic",
+      "cml:logicSummary": "Requires belief on reasonable grounds for disclosure.",
+      "cml:modality": {
+        "@id": "cml:Epistemic"
+      },
+      "cml:operator": "Believe"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Disclosure is permitted if certain conditions are met.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "If-Then"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1-norm",
+      "@type": "doc:Permission",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Insert '(1)' before 'A court'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 315A"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b0bddd47adddeade4ef635b0eca5e3286c243a6823afbac6e2d085208a4dd8ae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Court may only hear application for forfeiture order after exclusion order has been determined.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 At the end of section 315A"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "910f57d009526c010f6f93fe0c32bcb6a7a37d1ba5d8a788c0084129041ad2a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Court may only hear application for forfeiture order.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Conditional obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "onlyIf",
+      "cml:premiseText": "Application for exclusion order has not been withdrawn."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319 Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6"
+        }
+      ],
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Court may stay proceedings in the interests of justice.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(1) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "b01376a8eaa6c37efb513acd4c584e56b300036961d859ba41da7a30a1658631",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Proceedings may be stayed",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to consider justice",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "May",
+      "cml:premiseText": "Court considers it in the interests of justice"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Court cannot stay POCA proceedings on certain grounds",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(2) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "256fbe2afe120a90777d9a2bfe8a4f51e44f8b3bdf75ed0d7fc69610e96f0760",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Cannot",
+      "cml:premiseText": "(2) The court must not stay the POCA proceedings..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Paragraph (2)(a) applies even if circumstances are the same or substantially similar.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(3) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "20102446896f44b4de393529bc66cdf3cf94a00040274b4c2950186a4fc776f8",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "even if circumstances are the same or substantially similar",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Applicability of paragraph (2)(a)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(3) Paragraph (2)(a)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Paragraph (2)(b) applies even if the subject matter of the POCA proceedings is the same as, or substantially similar to, the matter at issue in the criminal proceedings.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(4) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7c31972b5ecf3446e28364c3550241088cd25830eb7e12ccf30010254dec6ad9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "POCA proceedings",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The provision applies regardless of similarity in subject matter.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Applicability",
+      "cml:premiseText": "(2)(b)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Paragraph (2)(d) applies even if the staying of POCA proceedings would avoid a multiplicity of POCA proceedings.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(5) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "63ccbe5a863385b99b5204fc8d5d48569b81ef58395cf06737cb8b4655b064b7",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Always applies",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "always"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Court must consider certain matters when deciding whether to grant a stay of proceedings.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319(6) Stay of proceedings"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4d50c376216fbddfd5ec77f9350c3b5884d62d5d0b029cac6802d05dd0368328",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319-ss-6",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The court must have regard to the following matters:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Court must consider certain matters.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(6) In considering whether a stay of the POCA proceedings is in the interests of justice..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The court must have regard to the following matters:",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Court must consider certain matters.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "IS_A",
+      "cml:premiseText": "(6) In considering whether a stay of the POCA proceedings is in the interests of justice..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319-ss-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.10",
+      "skos:note": "Court may order closed proceedings for administration of criminal justice.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "319A Closed court"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9f8183f62185c667862416bfbeba478d6821b51434f33b2853b3c67cf4dd9acb",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-319a",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to order closed proceedings",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "may"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-319a"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.8",
+      "skos:note": "Repeal section and substitute with new content.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 319"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e760fc8d63da5406b762d346b67c33f828593d7f3e1e89f1a1e04f768edbdfa9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.10",
+      "skos:note": "Application of amended provisions",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Application provisions"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9e3c41e32d00ec52929b8482454a4e8e092981b7b771f42d3a34be9d0617c858",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of Chapter 10 of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.17",
+      "skos:note": "Defines accounting document",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Dictionary of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2-logic-descriptionlogic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6ea05421f728bd67c0a7c95632ae4dbaf049c32111685eace9119e9080d1ea2f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2-logic-descriptionlogic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "accounting document",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Class hierarchy",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "=",
+      "cml:premiseText": "None"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-3"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5"
+        }
+      ],
+      "cml:integrityHash": "437e0c22a8df93467a6724af3c7459aafbcb897078e63a72cc9e3ca449917810",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.14",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4"
+        }
+      ],
+      "cml:integrityHash": "8c6d3d767d2bb513992fc3e4856605fad9923630576a9ffc88e55f604230438c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.14",
+      "skos:note": "Making, altering, destroying or concealing an accounting document is prohibited.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(1) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-2",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-3",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-4",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9dcc2fc91b48a97cc9982b75010743417087bf401941419fce98cce397291e48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-2-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of making, altering, destroying or concealing an accounting document.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(1) A person commits an offence if:  (a) the person:  (i) makes, alters, destroys or conceals an accounting document;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Reckless failure to make or alter an accounting document is prohibited.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(b) the person is reckless as to whether the making, alteration, destruction or concealment of the document (or the failure to make or alter the document) facilitates, conceals or disguises..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Reckless facilitation of illegitimate benefits is prohibited.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(ii) the person receiving a benefit that is not legitimately due to the person;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Reckless concealment of illegitimate benefits is prohibited.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(iv) another person giving a benefit that is not legitimately due to the recipient, or intended recipient, of the benefit (who may be the first-mentioned person);"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-logic-deontic-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Reckless loss to another person is prohibited.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit",
+      "cml:premiseText": "(v) loss to another person that is not legitimately incurred by the other person;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.14",
+      "skos:note": "Penalty for individual",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(2) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "27836197666dcc57c90045632d2731f83df608f9629413189dd3dad8c7c35393",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-2-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits penalty for individual",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.14",
+      "skos:note": "Offence punishable by imprisonment, fine or both",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(3) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "43533c58b40a7edb1a016e3bd27a3494aeff1a59d3be8f0fe498395f4aca6600",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-2-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Definition of obligation",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.14",
+      "skos:note": "Offence against section 490 punishable by fine not exceeding certain amounts.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(4) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-ltl-3",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "de63ec7098793872c6eb34492754799b036bdd6144c5e45dbe5635047a9705d4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-2-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for determining the value of the benefit.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Interval",
+      "cml:premiseText": "if the court can determine the value of the benefit that the body corporate, and any body corporate related to the body corporate, have obtained directly or indirectly and that is reasonably attributable to the conduct constituting the offence—"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Classifies the punishment amount based on the value of the benefit.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Classify",
+      "cml:premiseText": "(b) if the court can determine the value of that benefit—1.5 times the value of that benefit;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits punishment of certain amounts.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(4) An offence against this section committed by a body corporate is punishable on conviction by a fine not more than the greatest of the following:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses the punishment amount based on the value of the benefit.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuse",
+      "cml:premiseText": "(b) if the court can determine the value of that benefit—1.5 times the value of that benefit;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Defines a recurring trace for determining the annual turnover.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring Trace",
+      "cml:premiseText": "5% of the annual turnover of the body corporate during the period (the turnover period) of 12 months ending at the end of the month in which the conduct constituting the offence occurred."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-2-ss-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.15",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-2"
+        }
+      ],
+      "cml:integrityHash": "72e975273f04c305679f83d551e2509e30dafdcb8b1d72b430b541c009c29f75",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.15",
+      "skos:note": "Excludes certain supplies from annual turnover calculation",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(1) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "73a8211cdca7a970318fe1d7404d80e16a571ad73208f613da98b99b49766de3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-3-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the body corporate",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "!"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.15",
+      "skos:note": "Same meaning as in A New Tax System (Goods and Services Tax) Act 1999",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(2) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4f453c1119c333eaddc0d78bb72c46fff8a511fae1ffcce6efcb178b60695671",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-3-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-3-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.16",
+      "skos:note": "Determine related bodies corporate for purposes of this Division",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "64965197a22a6c08522111eb3674bf25f0822f1c1260e7d6d24cb430508fb00e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to determine related bodies corporate",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "should"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.16",
+      "skos:note": "No proof of certain matters is necessary in a prosecution for an offence against this Division.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0cd36e32ce6dc6a372a9e8f870ed3792e0626ddacdb8eb1f0d11107699f08fde",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exemption from proof of certain matters",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "exemption",
+      "cml:premiseText": "No proof is necessary for the following matters:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.16",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2"
+        }
+      ],
+      "cml:integrityHash": "a454a0f19cc782c8d49fa77cb4e39f715c79aaed934172aa20a6e0369a5db2d9",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.16",
+      "skos:note": "Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent under certain conditions.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(1) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-argumentation-3",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8421e8e2ee4e83e9faec69fdfd727eebb3256252a7d7cd2187f310aa0f3bb30c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-6-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a temporal interval for commencement of proceedings.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal interval",
+      "cml:premiseText": "(1) Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent if:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Provides justification for prohibition of proceedings.",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "Justification",
+      "cml:premiseText": "(1) Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent if:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Recognizes the role of Attorney-General in prohibiting proceedings.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "(1) Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent if:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Cannot commence proceedings without Attorney-General's written consent.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Cannot",
+      "cml:premiseText": "(1) Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent if:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Diffuses information about prohibited proceedings.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "(1) Proceedings for an offence against this Division must not be commenced without the Attorney-General’s written consent if:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.16",
+      "skos:note": "Arrest before consent is given is prohibited.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(2) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3d3adcba0bbc65f014624ffd400acdc335787a27fb640c80c6d7783d2d17f72f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-6-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of arrest without consent.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition",
+      "cml:premiseText": "(2) However, a person may be arrested..."
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-6-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.17",
+      "skos:note": "No exclusion or limitation of other laws",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490 Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "da89b963428ced3a9b7a2f69e417e743c65ee8a7963ec0dc0cf23a804592eb43",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Exclusion of other laws",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "excludes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-7"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:note": "Making, altering, destroying or concealing an accounting document is prohibited.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(1) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42d2e1dcca2d893500fb83d08d86cde26ffcf864c01b29b34afe7ac3b3c67d46",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-ss-1",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition of making, altering, destroying or concealing an accounting document.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:note": "Definition of who is subject to the accounting document requirements.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(2) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a6d1289bde69f83b920e5520e511fa81402f56ad58563d0d5c0158d9269b1c5d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Indicates the scope of application.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": ">"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:note": "Absolute liability applies to paragraph (1)(c).",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(3) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c63f38065670e436a8ca9457cb4483faa1da6585f98b1731465553322717c591",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:note": "Offence punishable by imprisonment, fine or both",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(4) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e1697f92ffed21d8bebde695ae3c4c1129f02d7373db4e2a1460ef80d1025153",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits committing an offence",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.12",
+      "skos:note": "Offence against section 490 punishable by fine not exceeding certain amounts.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "490(5) Section 490"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "731882c1c6e81fb62b532dcf5b997ab256479c226624a37062410e81804b2880",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-2-sec-490-ss-5",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits punishment of certain amounts.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibition"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-2-sec-490-ss-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:note": "Repeal a paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Paragraph 301.9(1)(b) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "cc078cae2e328f5f0b138a7f27b27c86e5963d3970b31c70032399ee510a5199",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:note": "Replace groups or atoms with other specified groups or atoms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subparagraph 301.9(1)(c)(iii) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e010d2d8f021c83d65c013bbc952659e15f5ec07f82a263a58f9c393ce7ade73",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 301.9(2) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:hasPart": [
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-2"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3"
+        },
+        {
+          "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-4"
+        }
+      ],
+      "cml:integrityHash": "fc61fc4a50e655d12b70c909f99174b3a8932dca19bfcf9d8128e3cad72db45b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:note": "List of specified groups and atoms",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3(2) Subsection 301.9(2) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6a59ffd736b57f9fe9586dfaced4e0464c94048258c42c2cd8e670a0a8a10249",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-3-ss-2",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:note": "Excludes certain substances from being classified as drug analogues.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3(3) Subsection 301.9(2) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-alleninterval-2",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-ltl-3",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-diffusion-4",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "32f73a097374822a239928602b4c2f24c17dae7f6854cedb4a9941470a78aab5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-3-ss-3",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Excludes substances that are themselves listed controlled drugs from being classified as drug analogues.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "(b) a drug analogue of a listed border controlled drug does not include a substance that is itself a listed border controlled drug;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Excludes substances that are themselves listed controlled drugs from being classified as drug analogues.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "(b) a drug analogue of a listed border controlled drug does not include a substance that is itself a listed border controlled drug;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits certain substances from being classified as drug analogues.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Exclude",
+      "cml:premiseText": "(3) However:"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Excludes substances that are themselves listed controlled drugs from being classified as drug analogues.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "(b) a drug analogue of a listed border controlled drug does not include a substance that is itself a listed border controlled drug;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "Excludes substances that are themselves listed controlled drugs from being classified as drug analogues.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Temporal Exclusion",
+      "cml:premiseText": "(b) a drug analogue of a listed border controlled drug does not include a substance that is itself a listed border controlled drug;"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.18",
+      "skos:note": "Definitions of 'addition' and 'replacement'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3(4) Subsection 301.9(2) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00da86db4553f42d8fc05f0b52d1791b9485fd7c210a73e0b6b45a633d115a28",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-3-ss-4",
+      "cml:schemaVersion": "2",
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-3-ss-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.19",
+      "skos:note": "Defines manufacture for the purposes of this Part.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subsection 305.1(1) of the Criminal Code"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e024e7368c724230bfcda4227f5063e43451900d1a453053f13a42122226a3e4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-3-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines a term with a clear obligation.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "defines"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Includes specific processes in the definition of manufacture.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "includes",
+      "cml:premiseText": "(a) and (b)"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-3-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.20",
+      "skos:note": "Designated agency includes Independent Commissioner Against Corruption of South Australia.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 5 (after paragraph (u) of the definition of"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9859dbb35dc35819fec2b55328e2d87c09b8d74a05bfb59127ee36f133de2b29",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-4-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Designated agency includes Independent Commissioner Against Corruption of South Australia.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.20",
+      "skos:note": "Definition of foreign law enforcement agency",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 5 (definition of foreign law enforcement agency)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4f8e7da4e00aff4aa76b45d86ed0e899b8af0636c2ff1dc2ff556197b2cc36aa",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-4-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines the term 'foreign law enforcement agency'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "defines"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Substitutes a new definition for the existing one",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "substitutes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.20",
+      "skos:note": "List of persons appointed under the Independent Commissioner Against Corruption Act 2012 (SA)",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 At the end of subsection 22(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c44a6555c6650ff306391e64bb45afbba43b05b299d31106b65e0d9037f7951",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-4-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation between appointment and office",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "List of persons appointed under the Independent Commissioner Against Corruption Act 2012 (SA)",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.21",
+      "skos:note": "Duty to disclose information for the purposes of performing duties as an investigating official.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 After paragraph 122(3)(b)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dc04fea1fec4693bacb100337534e1ad89a42bb2eee864b26a2628f7dff0d32e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-4-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the agent to disclose information.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: Agent",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.21",
+      "skos:note": "Application provision for disclosure of information after commencement",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Application provision"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e87761a373f76fe9cfd0ab6cb1b2263b6dcc37c79a7a39b7b65837685e23b587",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-4-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-4-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.22",
+      "skos:note": "Definition of Commonwealth authority",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 4(1) (definition of Commonwealth authority)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-logic-deontic-1",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d3fed79c699584fb1c5e73f97a2e78f3ac78bac85275f91366dab4fb1ea0ca1f",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-5-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines the term Commonwealth authority",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "defines"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Substitutes a new definition for Commonwealth authority",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "substitutes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.22",
+      "skos:note": "Definition of State or Territory authority",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Subsection 4(1)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "1c31d507fd7f9dfaad1acae44d7e21b0e2761b42156f1283fc8e39d3cf7825da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-5-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.22",
+      "skos:note": "Repeal certain functions relating to law enforcement or national security.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subparagraph 14(2)(b)(iii)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "db1866423d8cfb91bb53ffaa6666ec61d508cd7e0ceb660ce1a4c051abb1b220",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-5-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibits the performance of functions.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.22",
+      "skos:note": "Insertion of clause after specific paragraph",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Subparagraph 14(2)(b)(iv)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "bb447e0f62a5796f95a6a77b190f883c901ba40f10369502cf64bd14e5be66a1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-5-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-4-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.22",
+      "skos:note": "Amendments apply in relation to use or disclosure of information after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Application provision"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-5-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a7a8ebd80bc42a81a64c79d512f0d6f1862b25f68d46e2a5d18b0f1e9b322856",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sch-5-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-5-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sch-5-sec-5"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f050cb524ee6fdb1a77dfe6ea80e8dae9eed843c03f9259e4cca4dfc7144852b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Table of sections and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6561f4272607a18d8b92b3d2c6c7741a8af51428a7b329e978fcb9bd6c54aeae",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 March 2016"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "The day after this Act receives the Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "6766f7dc7a2589d2360ff4a5a8b85f75a68122623f0b1a03b761d9bacc1aa980",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 February"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-29",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "29 August 2016"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-29-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-29"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Schedule 5 commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-norm",
+        "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "143a09664a47a54ec6518c438fd59dc1da279524325e7aa4929c6df33d574c13",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf",
+      "asserts": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "dc16f8ef1b1b2664002831f0970e8b31eedba37ab5e43a67edc34dd82a18fced",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "day after end of period",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines commencement period",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Applicable",
+      "cml:premiseText": "6 months after Royal Assent"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016-sec-3"
+    },
+    {
+      "@id": "doc:au/c2016a00015",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend legislation relating to the criminal law, law enforcement and background checking, and for other purposes",
+      "dc:identifier": [
+        "C2016A00015",
+        "No. 15 of 2016"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Legislation Amendment (Proceeds of Crime and Other Measures) Act 2016"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2016A00015/latest/downloads",
+        "crimes-legislation-amendment-proceeds-of-crime-and-other-measures-act-2016.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

@@ -1,0 +1,744 @@
+# CogAI proposed logic-routing chunks — Royal Commissions Amendment Act 2013
+# Machine-derived; every chunk remains cml:Proposed.
+
+royal-commissions-amendment-act-2013-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires temporal relation between intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Defines commencement date;
+  @action: Commences at a specific time;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-1a-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-1a;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exempts certain documents from the operation of this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'authorize';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Omit ‘authorize’;
+  @action: Substitute ‘authorise’;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: Deontic;
+  operator: includes;
+  summary: Inclusion of reference to Royal Commission members.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6;
+  logic: DescriptionLogic;
+  operator: subClassOf;
+  summary: Reference to Royal Commission members is a subclass of references to Royal Commissions.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-6 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1a;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to hold hearings;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission;
+  @action: Commission members may hold hearings without the President or Chair.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-7 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1a;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Hearing overlaps with Commission membership;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission;
+  @action: Hearings overlap with Commission membership;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-8 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1a;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Commission members hold hearings recurrently;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission;
+  @action: Commission members hold hearings recurrently;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-9 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1a;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Hearing diffusion through Commission membership;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission;
+  @action: Hearings diffuse through Commission membership;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1a-logic-10 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1a;
+  logic: CogAI;
+  operator: Recognises;
+  summary: CogAI recognises Commission member hearings;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission; or (b) authorised in writing by the President or Chair of the Commission;
+  @action: CogAI recognises Commission member hearings;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1b;
+  logic: Deontic;
+  operator: preside;
+  summary: Presiding duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1B) The following person presides at an authorised member hearing:;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-8-ss-1b-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-1b;
+  logic: Deontic;
+  operator: preside;
+  summary: Presiding duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the President or Chair of the Commission;;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-10-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: cannot;
+  summary: Prohibition of requiring person to produce document or thing at private session.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Member of Commission;
+  @action: Person must not provide document or thing.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-11-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State to define authorised persons;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-11-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-11;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Defines a class of persons authorised in writing;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-16-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-16;
+  logic: Deontic;
+  operator: Exclude;
+  summary: Exclusion of Commission members;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Relevant Commission references;
+  @action: Commission member references excluded;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-21-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-21;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Exclude Commission members;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-22-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-22;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the use of 'meeting';
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: Substitute 'hearing';
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-26-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-26;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replace authorized with authorised;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oa;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Child Sexual Abuse Royal Commission;
+  @action: is defined as...;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oa-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oa;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Private session definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: private session;
+  @action: means a private session held under...;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-1-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Permission to hold private sessions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Chair of the Commission;
+  @action: Members authorized by the Chair may hold private sessions.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-2-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-2;
+  logic: Deontic;
+  operator: onlyIf;
+  summary: Restriction on private sessions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ob-ss-3-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ob-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to hold private sessions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-25 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prevents a person from appearing at a private session and giving evidence to the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) A person who appears at a private session:;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-1-logic-26 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prevents a person from appearing at a private session and giving evidence to the Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) does not give evidence to the Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-2-logic-27 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-2;
+  logic: Deontic;
+  operator: not;
+  summary: Negative assertion;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: A private session is not a hearing of the Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-3-logic-28 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the Royal Commission.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-4-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-4;
+  logic: Deontic;
+  operator: applies;
+  summary: Applies section 9 to records;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (4) Section 9 (custody and use of records of Royal Commission);
+  @action: also applies as if a record produced by one or 2 members of the Child Sexual Abuse Royal Commission at a private session were produced by the Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-5;
+  logic: Deontic;
+  operator: Applicability;
+  summary: Application of sections to private sessions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-5;
+  logic: AllenInterval;
+  operator: Temporal Relation;
+  summary: Temporal relation between sections and private sessions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-5;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Implication of sections on private sessions;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-5;
+  logic: Diffusion;
+  operator: Propagation;
+  summary: Propagation of sections to related concepts;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-5-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-5;
+  logic: CogAI;
+  operator: Entity Recognition;
+  summary: Recognition of entities in sections;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Sections 6H-6N apply as if a person appeared at a private session before the Child Sexual Abuse Royal Commission.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oc-ss-6-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oc-ss-6;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies in relation to a private session;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) Section 6O (contempt of Royal Commission);
+  @action: Section 6O applies;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oe-ss-1-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oe-ss-1;
+  logic: Deontic;
+  operator: Exclude;
+  summary: Excludes private session statements and documents from evidence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-1;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to protect witnesses;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Any person who appears, or is authorised to be present, at a private session has the same protection and...;
+  @action: ...is to be subject to the same liabilities in any civil or criminal proceeding...;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-1;
+  logic: AllenInterval;
+  operator: between;
+  summary: Temporal interval between appearance and liability;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) Any person who appears, or is authorised to be present, at a private session has the same protection and...;
+  @action: ...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-1;
+  logic: LTL;
+  operator: between;
+  summary: Temporal interval between appearance and liability;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) Any person who appears, or is authorised to be present, at a private session has the same protection and...;
+  @action: ...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-1;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffusion of protection to authorized persons;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Any person who appears, or is authorised to be present, at a private session has the same protection and...;
+  @action: ...is to be subject to the same liabilities in any civil or criminal proceeding, as a witness in any case tried in the High Court.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-1-logic-41 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-1;
+  logic: CogAI;
+  operator: cognizes;
+  summary: Cognitive recognition of witnesses' protection;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Any person who appears, or is authorised to be present, at a private session has the same protection and...;
+  @action: ...as a witness in any case tried in the High Court.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6of-ss-2-logic-42 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6of-ss-2;
+  logic: Deontic;
+  operator: has;
+  summary: Possession of protection and immunity;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) A legal practitioner...;
+  @action: ...has the same protection...;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-43 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6og;
+  logic: Deontic;
+  operator: onlyIf;
+  summary: Authorized presence;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Private session must be held in private.;
+  @action: Only persons authorized by a member may be present.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6og-logic-44 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6og;
+  logic: Deontic;
+  operator: mustBe;
+  summary: Authorized presence requirement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Only persons who are authorized by a member may be present during the private session.;
+  @action: Authorized presence is required.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oh-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oh;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6oj-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6oj;
+  logic: Deontic;
+  operator: include;
+  summary: Mandatory inclusion of private session information.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-47 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ok;
+  logic: Deontic;
+  operator: obligation;
+  summary: Defendant bears evidential burden;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ok-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ok;
+  logic: Epistemic;
+  operator: evidential burden;
+  summary: Defendant must provide evidence;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-1-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ol-ss-1;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Prohibits record, use or disclosure;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) would contravene a provision of this Division;
+  @action: (b) would not be permitted by a provision of this Division;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6ol-ss-2-logic-50 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6ol-ss-2;
+  logic: Deontic;
+  operator: Always;
+  summary: The obligation applies regardless of timing.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) has effect...;
+  @action: ...regardless of when the provision is made.;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-1-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-1;
+  logic: Deontic;
+  operator: Must;
+  summary: Mandatory access requirement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) For the purposes of the Archives Act 1983, a record...;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-52 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-2;
+  logic: Deontic;
+  operator: applies;
+  summary: Clarifies application of subsection (1);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session.;
+  @action: subsection (1) applies in relation to a record created after the private session;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-53 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-2;
+  logic: AllenInterval;
+  operator: applies;
+  summary: Clarifies application of subsection (1);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session.;
+  @action: subsection (1) applies in relation to a record created after the private session;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-2-logic-54 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-2;
+  logic: LTL;
+  operator: applies;
+  summary: Clarifies application of subsection (1);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) To avoid doubt, subsection (1) applies in relation to a record even if the record came into existence after the private session.;
+  @action: subsection (1) applies in relation to a record created after the private session;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-3;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Records exempted from Archives Act 1983.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1).;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-3;
+  logic: AllenInterval;
+  operator: TemporalExclusion;
+  summary: Temporal exclusion for records.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1).;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-3;
+  logic: LTL;
+  operator: TemporalExclusion;
+  summary: Temporal exclusion for records.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1).;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-3;
+  logic: Diffusion;
+  operator: TemporalExclusion;
+  summary: Temporal exclusion for records.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1).;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-6om-ss-3-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6om-ss-3;
+  logic: CogAI;
+  operator: TemporalExclusion;
+  summary: Temporal exclusion for records.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (3) Subsection 3(7) and section 56 of the Archives Act 1983 do not apply to a record referred to in subsection (1).;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-31a-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-31a;
+  logic: Deontic;
+  operator: May;
+  summary: Expresses a permission or obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+royal-commissions-amendment-act-2013-sch-1-sec-32-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-32;
+  logic: Deontic;
+  operator: exclude;
+  summary: Exclusion of references;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

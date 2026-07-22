@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cml: <https://ns.webcivics.net/cml/> .
+@prefix concept: <https://ns.webcivics.net/concept/> .
+
+concept:australian-citizenship-legislation-amendment-act-2002-LogicApplicationShape a sh:NodeShape ;
+    sh:targetClass cml:LogicApplication ;
+    sh:property [ sh:path cml:modality ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( cml:Deontic cml:Epistemic cml:LTL cml:Paraconsistent cml:AnswerSetProgramming cml:Dialectical cml:LinearLogic cml:DescriptionLogic cml:Argumentation cml:AllenInterval cml:Diffusion cml:CogAI cml:SHACL cml:N3Logic ) ] ;
+    sh:property [ sh:path cml:logicSummary ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path cml:executionSurface ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path cml:confidence ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxInclusive 1 ] ;
+    sh:property [ sh:path cml:curationStatus ; sh:hasValue cml:Proposed ; sh:minCount 1 ] .
+
+concept:australian-citizenship-legislation-amendment-act-2002-ConceptShape a sh:NodeShape ;
+    sh:targetClass cml:Concept ;
+    sh:property [ sh:path cml:realizedBy ; sh:minCount 1 ] ;
+    sh:property [ sh:path cml:curationStatus ; sh:hasValue cml:Proposed ; sh:minCount 1 ] .

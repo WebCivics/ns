@@ -1,0 +1,597 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.7",
+      "skos:note": "Omit 'Within 30 days' and substitute 'On or before the 21st day of the third month'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Subsection 96(2)"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": [
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1-norm",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "95d406a56abce2a1529ac9d4d9d1c99dea6cb933d87005a94ae6307fca5d9501",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Prohibition on using outdated language",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Omit",
+      "cml:premiseText": "Substitute 'On or before the 21st day of the third month'"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.7",
+      "skos:note": "Substitute 'second last quarter before the current quarter' for 'previous quarter'.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Paragraphs 100(1)(b) and (c)"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d74184854ab3588225d9546ba77fc5264238ae7d93c78a59162a6b17a83bb00b",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.7",
+      "skos:note": "Omit '14th', substitute 'seventh'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Subsection 101(2)"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "d1d12859f13d69a6d9133f2e173b1ea09bb3be3d7d9337ffd4872fc2f870d094",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-3-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.7",
+      "skos:note": "Application of amendments to levy quarters",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Application"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f6270e20c52633129e985afeabe0f140c30d179ecaf59c2061a9b72fba5aff1a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.8",
+      "skos:note": "Second reading speech made in House of Representatives on 9 December 1999 and Senate on 17 February 2000",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Telecommunications (Consumer Protection and Service Standards) Amendment Act 2000"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": [
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2-norm",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "04690fbe671e6fe5b2972bc288b936b72cd4a8f9777af65f0e2e2a55ed469516",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-4-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Expresses a requirement or necessity",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.7",
+      "skos:note": "The total levy for the first quarter is the estimated NRS cost.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Transitional"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": [
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-norm",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-deontic-1",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-alleninterval-2",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-ltl-3",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-diffusion-4",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59cc837eb7b67f5951748e5d3fae268d14a5d6715862ee5f396cbd84a1fd57f6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The total levy for the first quarter is the estimated NRS cost.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "The levy applies to a specific quarter.",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "Within",
+      "cml:premiseText": "The phrase 'the first quarter that commences after the day on which this Act receives the Royal Assent'"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The total levy for the first quarter is the estimated NRS cost.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "The levy is recognized by a cognitive agent.",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "Recognizes",
+      "cml:premiseText": "The phrase 'the Telecommunications (Consumer Protection and Service Standards) Act 1999'"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The total levy for the first quarter is the estimated NRS cost.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "The levy is obligatory.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Implies",
+      "cml:premiseText": "Section 100 of the Telecommunications (Consumer Protection and Service Standards) Act 1999"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The total levy for the first quarter is the estimated NRS cost.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "The levy diffuses to a specific entity.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "Diffuses",
+      "cml:premiseText": "The phrase 'the total levy for the first quarter'"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-logic-ltl-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The total levy for the first quarter is the estimated NRS cost.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::temporal_ltl",
+      "cml:logicSummary": "The levy applies to a recurring event.",
+      "cml:modality": {
+        "@id": "cml:LTL"
+      },
+      "cml:operator": "Recurring",
+      "cml:premiseText": "The phrase 'the first quarter that commences after the day on which this Act receives the Royal Assent'"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "32bc67edf804460e80811fe438cd767c0228e3cd5de918e4ac7a5ae09cd37c9e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-1"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.6",
+      "skos:note": "No. 33, 2000",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Telecommunications (Consumer Protection and Service Standards) Amendment Act 2000"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "759f409fbac0e0e280b34d50ff050cd1be0e3e0087172e30b16666abcc1e7f87",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.6",
+      "skos:note": "Commences on day of Royal Assent",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": [
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2-norm",
+        "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c4eed6c7b27751913ba3ce32609cdff12c4ce5ac3cad11b9b35f84b1af99fbc6",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Starts on specified date",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "begins"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf, p.6",
+      "skos:note": "Amendment of Acts specified in Schedules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf",
+      "asserts": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7283606bee7df60b45d783cf704f69cd7e1b6c2d5e68d0f6982586a9668f9ea1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:telecommunications-consumer-protection-and-service-standards-amendment-act-2000#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:telecommunications-consumer-protection-and-service-standards-amendment-act-2000-sec-3"
+    },
+    {
+      "@id": "doc:au/c2004a00625",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Telecommunications (Consumer Protection and Service Standards) Act 1999, and for related purposes",
+      "dc:identifier": [
+        "C2004A00625",
+        "No. 33 of 2000"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Telecommunications (Consumer Protection and Service Standards) Amendment Act 2000"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2004A00625/latest/downloads",
+        "telecommunications-consumer-protection-and-service-standards-amendment-act-2000.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

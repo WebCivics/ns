@@ -1,0 +1,242 @@
+# CogAI proposed logic-routing chunks — Privacy Amendment Act 2004
+# Machine-derived; every chunk remains cml:Proposed.
+
+privacy-amendment-act-2004-sch-1-sec-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: No extra-territorial application limitation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Subsection (1A);
+  @action: Paragraph (1)(a) does not apply;
+}
+
+privacy-amendment-act-2004-sch-1-sec-2-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal interval limitation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Subsection (1A);
+  @action: No extra-territorial application limitation within this interval;
+}
+
+privacy-amendment-act-2004-sch-1-sec-3-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-5-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the State.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-1-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: Deontic;
+  operator: Permit;
+  summary: Allows approval of privacy codes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) Despite paragraph 7(1)(ee), a privacy code may be approved even if it covers exempt acts or practices.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-1-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: LinearLogic;
+  operator: Imply;
+  summary: Implies that approval of privacy codes is permitted despite covering exempt acts or practices.;
+  executionSurface: modalities::linear;
+  curationStatus: Proposed;
+  @condition: (1) Despite paragraph 7(1)(ee), a privacy code may be approved even if it covers exempt acts or practices.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-1-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: Diffusion;
+  operator: Allow;
+  summary: Allows the diffusion of information about approval of privacy codes despite covering exempt acts or practices.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) Despite paragraph 7(1)(ee), a privacy code may be approved even if it covers exempt acts or practices.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-1-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: CogAI;
+  operator: Enable;
+  summary: Enables the use of artificial intelligence to approve privacy codes despite covering exempt acts or practices.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) Despite paragraph 7(1)(ee), a privacy code may be approved even if it covers exempt acts or practices.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-1-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-1;
+  logic: SHACL;
+  operator: Validate;
+  summary: Validates the approval of privacy codes despite covering exempt acts or practices.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (1) Despite paragraph 7(1)(ee), a privacy code may be approved even if it covers exempt acts or practices.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-2-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Deontic;
+  operator: implies;
+  summary: The Act applies in relation to the code as if those acts or practices were not exempt.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: An approved privacy code covers exempt acts or practices.;
+  @action: The Act applies in relation to the code as if those acts or practices were not exempt.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-2-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: The excerpt describes a temporal relationship between the approved privacy code and the Act.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: An approved privacy code covers exempt acts or practices, and the Act applies in relation to the code as if those acts or practices were not exempt.;
+  @action: The approved privacy code is during the application of the Act.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: LTL;
+  operator: until;
+  summary: The excerpt describes a temporal relationship between the approved privacy code and the Act.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: An approved privacy code covers exempt acts or practices, and the Act applies in relation to the code as if those acts or practices were not exempt.;
+  @action: The approved privacy code is until the application of the Act.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Diffusion;
+  operator: if-then;
+  summary: The excerpt describes a conditional relationship between the approved privacy code and the Act.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: An approved privacy code covers exempt acts or practices, and the Act applies in relation to the code as if those acts or practices were not exempt.;
+  @action: If an approved privacy code covers exempt acts or practices, then the Act applies in relation to the code as if those acts or practices were not exempt.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-6-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-6-ss-2;
+  logic: Argumentation;
+  operator: entails;
+  summary: The excerpt describes a logical relationship between the approved privacy code and the Act.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: An approved privacy code covers exempt acts or practices, and the Act applies in relation to the code as if those acts or practices were not exempt.;
+  @action: The approved privacy code entails that the Act applies in relation to the code as if those acts or practices were not exempt.;
+}
+
+privacy-amendment-act-2004-sch-1-sec-8-ss-3-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consult;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-8-ss-3-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-3;
+  logic: DescriptionLogic;
+  operator: CLASSIFICATION;
+  summary: Classification of regulations;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) the regulations prescribe an organisation, or class of organisations;;
+}
+
+privacy-amendment-act-2004-sch-1-sec-8-ss-4-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-4;
+  logic: Deontic;
+  operator: includes;
+  summary: States what is included in superannuation services;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-8-ss-4-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8-ss-4;
+  logic: DescriptionLogic;
+  operator: subclassOf;
+  summary: Defines a subclass of 'superannuation services';
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-9-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-9;
+  logic: Deontic;
+  operator: Substitution;
+  summary: Replaces a specific reference with another;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+privacy-amendment-act-2004-sch-1-sec-10-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-10;
+  logic: Deontic;
+  operator: MUST;
+  summary: Agency must conduct audits.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

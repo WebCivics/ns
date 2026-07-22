@@ -1,0 +1,684 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.7",
+      "skos:note": "Imprisonment for 2 years for crimes under Crimes Act 1914",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 At the end of subsection 60A(2)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1-norm",
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "70ff5c770d706a56bd2ad0b6d2e7bd87bc6a89f1a3ced5a47ea3e12cc2dc17ee",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imprisonment for crimes under Crimes Act 1914",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Prohibit"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1-norm",
+      "@type": "doc:Prohibition",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.7",
+      "skos:note": "Substitute persons to commence a further independent review",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Paragraph 23YV(5)(a)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2-norm",
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "40e1f762d33fb30160da37e6f7c1c609859940316e579fa8a912a9e1f6d0b029",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes an obligation on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligation"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.7",
+      "skos:note": "Inserts the Criminal Code 2002 of the Australian Capital Territory in its application to the Jervis Bay Territory.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 After subparagraph 15(1)(b)(ii)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3-norm",
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "00713afb293927836fddca2f8f37276182a08be58ee6a21e0916249ff9e5169e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Inserts a provision into the law",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "inserts"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.7",
+      "skos:note": "Prescribes additional laws for Jervis Bay Territory",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of paragraph 15(1)(b)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": [
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4-norm",
+        "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "e6a2f6f568c497dec5a3f554aa41b29ca37b40b3f5fe8e3b2860aaa19e46a08e",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Imposes a duty on the State",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "prescribes"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.5",
+      "skos:note": "Citation of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "573ed8f8724be312f69306be3092e58ec30830db1ac890286755c19a30ae0b05",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "Table of sections and commencement provision",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0d23f7ffd714b61f871d6fecd00be20170f6c9ff45b2b3a5a748dbbe338eee61",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2008"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-1-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 July 2008"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-1-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-4"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-1"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "Commencement rules",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "5c980fffb09f2a407258b1754f7e3ca3d52b17b4f4317a73c7d44036a362a46c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "Conditional commencement of item 4 of Schedule 1 to the Law Enforcement Integrity Commissioner (Consequential Amendments) Act 2006.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 2"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "3a9e6c2a691dee1ebb0a506ef6f6060269375f9f17dcf92622bbf7d95039cddc",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-2-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "Note on table expansion",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 July 2008"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "a85a45923db3a387f12b1eccbede4142ab57ab3251da0bc78ba9f5402c90afb3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-2-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "The day on which this Act receives the Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Section 3"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7fbc3859c3b3d7f6159c8d6c18705a95b3bb425ce8f3cff7ab6fb2ba5bb5a6a4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-2",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "Amendments to Acts specified in a Schedule",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedule(s)"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "608ff0d9999c7428d7699666117ef2a05836db52e5f5dc72a5d7ce8dfd65f70d",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-3-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-3"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-30",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "30 December"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-30-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-30",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-30-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-30"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf, p.6",
+      "skos:note": "The day after this Act receives the Royal Assent.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 Section 4"
+      },
+      "wasDerivedFrom": "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf",
+      "asserts": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "7ebfdd44b6a55b67d8a72105fd5e39ed6d9fa3fc9258db1861136bdbe11933da",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:crimes-legislation-amendment-miscellaneous-matters-act-2008#sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:crimes-legislation-amendment-miscellaneous-matters-act-2008-sec-4"
+    },
+    {
+      "@id": "doc:au/c2008a00070",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to make minor amendments to various Acts, and for related purposes",
+      "dc:identifier": [
+        "C2008A00070",
+        "No. 70 of 2008"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Crimes Legislation Amendment (Miscellaneous Matters) Act 2008"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2008A00070/latest/downloads",
+        "crimes-legislation-amendment-miscellaneous-matters-act-2008.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

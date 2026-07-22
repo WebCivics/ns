@@ -1,0 +1,125 @@
+# CogAI proposed logic-routing chunks — Crimes Amendment (National Disability Insurance Scheme—Worker Screening) Act 2018
+# Machine-derived; every chunk remains cml:Proposed.
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sec-1-2-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Requires a relation between temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Specifies the day of Royal Assent;
+  @action: Establishes the commencement date;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-1-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-1;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to conduct reviews.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-2-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to complete review by December 31, 2019;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The first review must be completed not later than 31 December 2019.;
+  @action: The first review must be completed by December 31, 2019.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: AllenInterval;
+  operator: CONTAINS;
+  summary: Temporal interval for review completion;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) The first review must be completed not later than 31 December 2019.;
+  @action: The review completion is contained within the temporal interval from January 1, 2020 to December 31, 2019.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-2-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: LTL;
+  operator: CONTAINS;
+  summary: Temporal trace for review completion;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) The first review must be completed not later than 31 December 2019.;
+  @action: The review completion is part of the temporal trace from January 1, 2020 to December 31, 2019.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-2-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: Diffusion;
+  operator: CONTAINS;
+  summary: Temporal diffusion for review completion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) The first review must be completed not later than 31 December 2019.;
+  @action: The review completion is part of the temporal diffusion from January 1, 2020 to December 31, 2019.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-2-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-2;
+  logic: CogAI;
+  operator: CONTAINS;
+  summary: Artificial intelligence involvement in review completion;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) The first review must be completed not later than 31 December 2019.;
+  @action: The review completion is part of the artificial intelligence involvement from January 1, 2020 to December 31, 2019.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-3-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to complete review by December 31, 2022.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-4-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-4;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to prepare a written report;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: The Minister must cause a written report about each review to be prepared.;
+}
+
+crimes-amendment-national-disability-insurance-scheme-worker-screening-act-2018-sch-1-sec-2-ss-5-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-2-ss-5;
+  logic: Deontic;
+  operator: MUST;
+  summary: Expresses a duty;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}

@@ -1,0 +1,825 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "values": "https://ns.webcivics.net/values/",
+    "sense": "https://ns.webcivics.net/sense/",
+    "cml": "https://ns.webcivics.net/cml/",
+    "concept": "https://ns.webcivics.net/concept/",
+    "doc": "https://ns.webcivics.net/values/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "title": "dc:title",
+    "date": "dc:date",
+    "source": {
+      "@id": "values:source",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "heldBy": {
+      "@id": "values:heldBy",
+      "@type": "@id"
+    },
+    "borneBy": {
+      "@id": "values:borneBy",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "values:partOf",
+      "@type": "@id"
+    },
+    "asserts": {
+      "@id": "cml:asserts",
+      "@type": "@id"
+    },
+    "realizedBy": {
+      "@id": "cml:realizedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.7",
+      "skos:note": "Insert '(1)' before 'In'",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 6OA"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c2582c17f60b08eca7e563b203a809dad64a6ba9e475593a511019f5234d75b5",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "Before In, insert (1)",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Obligation to insert '(1)' before 'In'",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "MUST",
+      "cml:premiseText": "(1)"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.7",
+      "skos:note": "Defines terms for the Royal Commission into Defence and Veteran Suicide.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Section 6OA"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-logic-deontic-1",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-logic-descriptionlogic-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "c33c599bb80a27c026dbd1b6eea17b48a9d930d7bc82d74058d5c099f03ca66a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines key terms with obligations.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "defines"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-logic-descriptionlogic-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::dl",
+      "cml:logicSummary": "Includes definitions for the Royal Commission and its members.",
+      "cml:modality": {
+        "@id": "cml:DescriptionLogic"
+      },
+      "cml:operator": "includes"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.7",
+      "skos:note": "Defines terms for Defence Force, Permanent Forces, and Reserves.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 At the end of section 6OA"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-deontic-1",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-alleninterval-2",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-argumentation-3",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-diffusion-4",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-cogai-5"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "9a6349134524344bfbbb4e129672ee1b9dd58b1b478a649d7943ad2d4a7e04c1",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "This section is related to the Defence Act 1903.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Defines a relation between temporal intervals",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "relation between temporal intervals",
+      "cml:premiseText": "The Defence Act 1903 is related to this section."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-argumentation-3",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "These terms have clear definitions in this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::argumentation",
+      "cml:logicSummary": "Defines terms with clear definitions",
+      "cml:modality": {
+        "@id": "cml:Argumentation"
+      },
+      "cml:operator": "definition of terms",
+      "cml:premiseText": "The Defence Force, Permanent Forces, and Reserves are defined clearly."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-cogai-5",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Defence Force, Permanent Forces, and Reserves are defined using AI in this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "sparql_library::parsers::chk_parser",
+      "cml:logicSummary": "Applies artificial intelligence to the definition of terms",
+      "cml:modality": {
+        "@id": "cml:CogAI"
+      },
+      "cml:operator": "artificial intelligence application",
+      "cml:premiseText": "This section uses AI to define these terms."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "These terms have the same meaning in this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Defines terms with the same meaning",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "same meaning as",
+      "cml:premiseText": "The Defence Act 1903 defines these terms."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-logic-diffusion-4",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Defence Force, Permanent Forces, and Reserves are disseminated in this section.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "0.5000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::diffusion",
+      "cml:logicSummary": "Disseminates information about the Defence Force, Permanent Forces, and Reserves.",
+      "cml:modality": {
+        "@id": "cml:Diffusion"
+      },
+      "cml:operator": "information dissemination",
+      "cml:premiseText": "This section provides information about these terms."
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-3"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-4",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "4 At the end of Division 3 of Part 4"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-4-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "f552a1e79bdc74d313b3f0f000e309faa363c9b81f8db6b9d0fb2b41f0dcea48",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-4",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-4-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-4"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.9",
+      "skos:note": "Section applies in relation to information given before, on or after commencement.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "5 Application provision"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "772016c6bfe3e540d21280d13b65b1286d89960cf7255faac2fde86615aad2b3",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-5",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Section applies to information given before, on or after commencement.",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "applies"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-5"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.10",
+      "skos:note": "Add information about section 6OQ of the Act that applies to the Defence and Veteran Suicide Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6 At the end of paragraph 7(2E)(a)"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "01e110d4b35b45e08db0d23f43afbc2c09d4c128d73e150d54ee9fe2e7fcf31c",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-6",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Adds information about section 6OQ of the Act that applies to the Defence and Veteran Suicide Royal Commission",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "add"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6oq",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.7",
+      "skos:note": "Protection of certain information given to the Defence and Veteran Suicide Royal Commission",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "6OQ Protection of certain information given to the Defence and"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6oq-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "4dc0f19491feab7567eec554aeed39d8a48a8acdb8853a3fe815028083e018ab",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-6oq",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6oq-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-6oq"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.10",
+      "skos:note": "Amendment applies to certain requests and applications made after a report is submitted",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "7 Application provision"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-logic-deontic-1",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-logic-alleninterval-2"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8627cba846eea2d13f32a204e9ec9e1d83e4174d76e475e4efd0fc83ae92c222",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sch-1-sec-7",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-logic-alleninterval-2",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal interval condition",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": ">="
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Amendment applies to certain requests and applications made after a report is submitted",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "Obligate"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7-norm",
+      "@type": "doc:Obligation",
+      "skos:scopeNote": "borne by: State",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:State",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sch-1-sec-7"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.5",
+      "skos:note": "Short title of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Short title"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-logic-deontic-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "0ee07a5043dc8492a38d03745ce0a8e5a36f8ab349edaf0f93970ab1fe72f3f4",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sec-1",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.6",
+      "skos:note": "Commencement of the Act",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "1 Section 1"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": [
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2-norm",
+        "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2-logic-alleninterval-1"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "42377231518c8d51cdbcbba02966eaf5df2d368b3930a73435f28a8ba6f1351a",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sec-1-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2-logic-alleninterval-1",
+      "@type": "cml:LogicApplication",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::interval_reasoning",
+      "cml:logicSummary": "Temporal relation",
+      "cml:modality": {
+        "@id": "cml:AllenInterval"
+      },
+      "cml:operator": "during"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-logic-deontic-1",
+      "@type": "cml:LogicApplication",
+      "cml:conclusionText": "The Act is the Royal Commissions Amendment (Enhancing Engagement) Act 2023.",
+      "cml:confidence": {
+        "@type": "xsd:decimal",
+        "@value": "1.0000"
+      },
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:executionSurface": "modalities::logic::deontic",
+      "cml:logicSummary": "Identifies the Act as a short title",
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "cml:operator": "is"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1-norm",
+      "@type": "doc:Obligation",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "borneBy": "doc:Agent",
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-1"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-12",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.6",
+      "skos:note": "Note on table limitations",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "12 April 2023"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-12-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "59eba1666204418f83d446df3c428951055e5c4363adcd4a9c7ba5521bc93010",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sec-12",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-12-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-12"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-2",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.6",
+      "skos:note": "Commencement rules for provisions in the Act.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "2 Commencement"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-2-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "af1d7289adca73e208b5fcaf7c0b0bd6bb64471d7dd79aa90db6297c57f2bc99",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sec-2",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-2-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-3",
+      "@type": "cml:Concept",
+      "dc:source": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf, p.6",
+      "skos:note": "Legislation in schedules is amended or repealed according to its terms.",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "3 Schedules"
+      },
+      "wasDerivedFrom": "royal-commissions-amendment-enhancing-engagement-act-2023.pdf",
+      "asserts": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-3-norm",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:integrityHash": "8a31120046af08ca9c632d38c17bfe9d7dbe047f5d4a9aeb67008a7c232bcfc0",
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "realizedBy": "doc:royal-commissions-amendment-enhancing-engagement-act-2023#sec-3",
+      "cml:schemaVersion": "2"
+    },
+    {
+      "@id": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-3-norm",
+      "@type": "doc:Undertaking",
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:modality": {
+        "@id": "cml:Deontic"
+      },
+      "doc:deonticStatus": {
+        "@id": "doc:HeuristicDerived"
+      },
+      "partOf": "concept:royal-commissions-amendment-enhancing-engagement-act-2023-sec-3"
+    },
+    {
+      "@id": "doc:au/c2023a00013",
+      "@type": "https://ns.webcivics.net/cof/Document",
+      "dc:description": "An Act to amend the Royal Commissions Act 1902, and for other purposes",
+      "dc:identifier": [
+        "C2023A00013",
+        "No. 13 of 2023"
+      ],
+      "title": {
+        "@language": "en",
+        "@value": "Royal Commissions Amendment (Enhancing Engagement) Act 2023"
+      },
+      "wasDerivedFrom": [
+        "https://www.legislation.gov.au/C2023A00013/latest/downloads",
+        "royal-commissions-amendment-enhancing-engagement-act-2023.pdf"
+      ],
+      "cml:curationStatus": {
+        "@id": "cml:Proposed"
+      },
+      "cml:proposedBy": {
+        "@id": "https://ns.webcivics.net/tools/legis2cml"
+      },
+      "doc:category": "AU"
+    }
+  ]
+}

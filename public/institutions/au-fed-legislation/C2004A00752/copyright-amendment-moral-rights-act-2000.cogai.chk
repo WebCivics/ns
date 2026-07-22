@@ -1,0 +1,3199 @@
+# CogAI proposed logic-routing chunks — Copyright Amendment (Moral Rights) Act 2000
+# Machine-derived; every chunk remains cml:Proposed.
+
+copyright-amendment-moral-rights-act-2000-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establishes the citation of this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sec-2-ss-1-logic-2 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: Deontic;
+  operator: begins;
+  summary: Starts on a specific day;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This Act, other than Schedule 2, commences...;
+  @action: The Act begins on the specified day.;
+}
+
+copyright-amendment-moral-rights-act-2000-sec-2-ss-1-logic-3 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sec-2-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Commences on a specific day during which it is in force;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This Act, other than Schedule 2...;
+  @action: The commencement provision specifies the start date.;
+}
+
+copyright-amendment-moral-rights-act-2000-sec-2-ss-2-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-2-ss-2;
+  logic: AllenInterval;
+  operator: Applicable;
+  summary: Describes temporal relationship;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Temporal commencement;
+  @action: Commencement after Schedule 1;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-189-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-189;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy for works and authors;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Work is a subclass of Author;
+  @action: Author is a superclass of Work;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-189-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-189;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Temporal intervals for work creation;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Work was created before 2023-01-01;
+  @action: Work was created after 2022-12-31;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-189-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-189;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of key terms;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Infringing article is an article that embodies a literary work;
+  @action: Article embodies a literary work if it contains the work;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-189-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-189;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implications for moral rights;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Author's moral right implies that the work cannot be derogated;
+  @action: Derogation of the work implies a violation of the author's moral right;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-189-logic-9 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-189;
+  logic: Diffusion;
+  operator: =;
+  summary: Propagation of moral rights;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Author's moral right is propagated to persons representing the author;
+  @action: Person representing the author has the same moral right as the author;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-190-logic-10 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-190;
+  logic: Deontic;
+  operator: hasMoralRights;
+  summary: Confers moral rights on individuals;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Only individuals have moral rights.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-1-logic-11 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-1;
+  logic: Deontic;
+  operator: =;
+  summary: Definition of principal director;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-2-logic-12 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-2;
+  logic: Deontic;
+  operator: refers to;
+  summary: Identifies the producer of a film for moral rights purposes.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The term 'producer' is used in this context.;
+  @action: The individual or individuals referred to as the producer are those who produced the film.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-2-logic-13 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-2;
+  logic: AllenInterval;
+  operator: between;
+  summary: Defines a temporal interval for the production of a film.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The term 'producer' is used in this context.;
+  @action: The producer refers to the individual or individuals who produced the film between the start and end dates specified.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-2-logic-14 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-2;
+  logic: LTL;
+  operator: everywhere;
+  summary: Applies to all films produced within a certain temporal interval.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: The term 'producer' is used in this context.;
+  @action: Every film produced between the start and end dates specified must have a producer who meets the definition.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-2-logic-15 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-2;
+  logic: Diffusion;
+  operator: everywhere;
+  summary: Applies to all films produced within a certain temporal interval.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The term 'producer' is used in this context.;
+  @action: Every film produced between the start and end dates specified must be affected by the definition of producer.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-2-logic-16 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-2;
+  logic: CogAI;
+  operator: everywhere;
+  summary: Applies to all films produced within a certain temporal interval.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The term 'producer' is used in this context.;
+  @action: Every film produced between the start and end dates specified must be recognized by AI systems as having a producer.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-3-logic-17 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-3;
+  logic: Deontic;
+  operator: prevails;
+  summary: Moral rights obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Director and screenwriter have moral rights;
+  @action: Producer's corporate entity does not prevail;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-3-logic-18 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal relationship between director, screenwriter, and producer;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Producer was involved during production;
+  @action: Director and screenwriter's moral rights prevail despite producer's involvement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-3-logic-19 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: Inference from director and screenwriter's moral rights;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: Moral rights imply a duty to respect creator's work;
+  @action: Producer has a duty to respect director and screenwriter's work;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-3-logic-20 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-3;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Influence of moral rights on producer's entity;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Moral rights affect the producer's entity as a whole;
+  @action: Producer's entity is affected by director and screenwriter's moral rights;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-191-ss-3-logic-21 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-191-ss-3;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Artificial intelligence recognizes moral rights;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Moral rights are recognized in law;
+  @action: Artificial intelligence can recognize director and screenwriter's moral rights;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-192-logic-22 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-192;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Moral rights obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-193-ss-1-logic-23 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-193-ss-1;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Right of attribution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Authorship is attributed.;
+  @action: Right exists.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-193-ss-2-logic-24 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-193-ss-2;
+  logic: Deontic;
+  operator: has right;
+  summary: Author's right to attribution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-1-logic-25 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-1;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Has the right of attribution of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) If the work is a literary, dramatic or musical work...;
+  @action: ...the attributable acts are the following:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-1-logic-26 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-1;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Is the act of reproduction before or at the same time as the publication?;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (a) to reproduce the work in a material form...;
+  @action: ...the attributable acts are the following:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-1-logic-27 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-1;
+  logic: LTL;
+  operator: <=;
+  summary: Is the act of reproduction before or at the same time as the transmission?;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (a) to reproduce the work in a material form...;
+  @action: ...the attributable acts are the following:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-1-logic-28 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-1;
+  logic: Deontic;
+  operator: hasPermission;
+  summary: Has permission to publish the work?;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (b) to publish the work...;
+  @action: ...the attributable acts are the following:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-2-logic-29 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-2;
+  logic: Deontic;
+  operator: hasRight;
+  summary: Has right of attribution of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-194-ss-3-logic-30 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-194-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195-ss-1-logic-31 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195-ss-1;
+  logic: Deontic;
+  operator: MAY;
+  summary: May identify author;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195-ss-2-logic-32 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Author's wish to be identified.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Author has made known their wish.;
+  @action: Identification must be in specified way.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aa-logic-33 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aa;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide clear author identification.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ab-logic-34 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ab;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to provide identification of author's identity.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ac-ss-1-logic-35 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ac-ss-1;
+  logic: Deontic;
+  operator: hasRightTo;
+  summary: Author has a right.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @action: authorship falsely attributed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ac-ss-2-logic-36 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ac-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Right to non-attribution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ad-logic-37 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ad;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits acts of false attribution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ae-ss-1-logic-38 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ae-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits acts of false attribution of authorship of artistic work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is an artistic work.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ae-ss-2-logic-39 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ae-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits false attribution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-1-logic-40 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the act;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is a cinematograph film.;
+  @action: The act of false attribution is prohibited.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-1-logic-41 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-1;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Defines the temporal interval for application;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is a cinematograph film.;
+  @action: The provision applies to works produced after this section's commencement.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-1-logic-42 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-1;
+  logic: LTL;
+  operator: Recurring Trace;
+  summary: Defines the recurring trace for application;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is a cinematograph film.;
+  @action: The provision applies to works produced by the same author or producer.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-1-logic-43 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-1;
+  logic: CogAI;
+  operator: Knowledge Representation;
+  summary: Represents the knowledge about the provision;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is a cinematograph film.;
+  @action: The provision represents the prohibition of false attribution.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-1-logic-44 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-1;
+  logic: SHACL;
+  operator: Validation;
+  summary: Validates the provision against a schema;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (1) This section applies if the work is a cinematograph film.;
+  @action: The provision conforms to the schema for prohibiting false attribution.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195af-ss-2-logic-45 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195af-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits false attribution of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ag-ss-1-logic-46 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ag-ss-1;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition on dealing with an altered work as if it were unaltered or a reproduction of the unaltered work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ag-ss-2-logic-47 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ag-ss-2;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Exemptions from duties;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Alteration is insubstantial or necessary to avoid a breach of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ah-ss-1-logic-48 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ah-ss-1;
+  logic: Deontic;
+  operator: Forbid;
+  summary: Dealing with a copy of an altered film as if it were unaltered is false attribution.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ah-ss-2-logic-49 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ah-ss-2;
+  logic: Deontic;
+  operator: Exemption;
+  summary: Moral rights exemption for necessary alterations;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) Subsection (1) does not apply if...;
+  @action: ...the alteration was required by law to be made, or was otherwise necessary to avoid a breach of any law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ai-ss-1-logic-50 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ai-ss-1;
+  logic: Deontic;
+  operator: has;
+  summary: Right of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Author is the creator of the work;
+  @action: Author has a right to integrity of authorship;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ai-ss-2-logic-51 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ai-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Right not to have work subjected to derogatory treatment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aj-logic-52 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aj;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits derogatory treatment of literary, dramatic or musical work.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aj-logic-53 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aj;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies derogatory treatment as a violation of the author's honour or reputation.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ak-logic-54 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ak;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits derogatory treatment of artistic work.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ak-logic-55 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ak;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies derogatory treatment as prohibited.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195al-logic-56 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195al;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits derogatory treatment of cinematograph film.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The State prohibits derogatory treatment.;
+  @action: Derogatory treatment is prohibited.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195al-logic-57 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195al;
+  logic: DescriptionLogic;
+  operator: Classify;
+  summary: Classifies derogatory treatment as a prohibition.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: Derogatory treatment means anything that results in a material distortion of the film.;
+  @action: Derogatory treatment is a prohibition.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195al-logic-58 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195al;
+  logic: AllenInterval;
+  operator: Temporal Prohibition;
+  summary: Prohibits derogatory treatment at all times.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The State prohibits derogatory treatment.;
+  @action: Derogatory treatment is prohibited at all times.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195al-logic-59 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195al;
+  logic: CogAI;
+  operator: Entity Classification;
+  summary: Classifies derogatory treatment as a prohibition using AI.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The State prohibits derogatory treatment.;
+  @action: Derogatory treatment is a prohibition.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-1-logic-60 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-1;
+  logic: Deontic;
+  operator: continues;
+  summary: Obligation to respect author's right of integrity of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) An author’s right of integrity of authorship in respect of a cinematograph film continues in force until the author dies.;
+  @action: The author's right of integrity of authorship continues until death.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-1-logic-61 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-1;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which author's right of integrity of authorship applies;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) An author’s right of integrity of authorship in respect of a cinematograph film continues in force until the author dies.;
+  @action: The author's right of integrity of authorship applies during the period from the date of publication to the author's death.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-1-logic-62 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-1;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval until which author's right of integrity of authorship applies;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (1) An author’s right of integrity of authorship in respect of a cinematograph film continues in force until the author dies.;
+  @action: The author's right of integrity of authorship applies until the date of the author's death.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-1-logic-63 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-1;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffusion of author's right of integrity of authorship to others;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (1) An author’s right of integrity of authorship in respect of a cinematograph film continues in force until the author dies.;
+  @action: The author's right of integrity of authorship diffuses to others who are affected by the cinematograph film.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-1-logic-64 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-1;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implication of author's right of integrity of authorship on others' behavior;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (1) An author’s right of integrity of authorship in respect of a cinematograph film continues in force until the author dies.;
+  @action: Others must respect the author's right of integrity of authorship if they are affected by the cinematograph film.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-2-logic-65 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-2;
+  logic: Deontic;
+  operator: continues;
+  summary: Obligation continues;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) An author’s right of integrity of authorship in respect of a work other than a cinematograph film continues in force until copyright ceases to subsist in the work.;
+  @action: The obligation continues.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-2-logic-66 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Copyright duration interval;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) An author’s right of integrity of authorship in respect of a work other than a cinematograph film continues in force until copyright ceases to subsist in the work.;
+  @action: The copyright duration is during the author's right of integrity of authorship.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-2-logic-67 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-2;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Copyright diffusion;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) An author’s right of integrity of authorship in respect of a work other than a cinematograph film continues in force until copyright ceases to subsist in the work.;
+  @action: The copyright diffuses during the author's right of integrity of authorship.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-2-logic-68 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-2;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Author recognition;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) An author’s right of integrity of authorship in respect of a work other than a cinematograph film continues in force until copyright ceases to subsist in the work.;
+  @action: The author recognizes their right of integrity of authorship.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-2-logic-69 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-2;
+  logic: SHACL;
+  operator: validates;
+  summary: Author validation;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (2) An author’s right of integrity of authorship in respect of a work other than a cinematograph film continues in force until copyright ceases to subsist in the work.;
+  @action: The author validates their right of integrity of authorship.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195am-ss-3-logic-70 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195am-ss-3;
+  logic: Deontic;
+  operator: continues;
+  summary: Obligation continues;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) An author’s moral rights...;
+  @action: Moral rights continue until copyright ceases to subsist.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-1-logic-71 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-1;
+  logic: Deontic;
+  operator: exercise;
+  summary: Exercise of moral rights;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Author's death;
+  @action: Legal personal representative exercises moral rights;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-2-logic-72 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Author's moral rights obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-3-logic-73 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-3;
+  logic: Deontic;
+  operator: CannotTransmit;
+  summary: Prohibition on transferring moral rights;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subject to this section, a moral right in respect of a work is not transmissible by assignment, by will, or by devolution by operation of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-3-logic-74 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-3;
+  logic: AllenInterval;
+  operator: TemporalRelation;
+  summary: Requires relation between identifiable temporal intervals;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (3) Subject to this section, a moral right in respect of a work is not transmissible by assignment, by will, or by devolution by operation of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-3-logic-75 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-3;
+  logic: LTL;
+  operator: RecurringTrace;
+  summary: Requires ordered or recurring trace;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (3) Subject to this section, a moral right in respect of a work is not transmissible by assignment, by will, or by devolution by operation of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-3-logic-76 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-3;
+  logic: Deontic;
+  operator: Prohibition;
+  summary: Moral rights cannot be transferred;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subject to this section, a moral right in respect of a work is not transmissible by assignment, by will, or by devolution by operation of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-3-logic-77 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: State bears the obligation to protect moral rights;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) Subject to this section, a moral right in respect of a work is not transmissible by assignment, by will, or by devolution by operation of law.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-4-logic-78 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-4;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to agree on co-authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-5-logic-79 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-5;
+  logic: Deontic;
+  operator: holds;
+  summary: Holds true;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) A co-authorship agreement has effect according to its terms.;
+  @action: A co-authorship agreement has effect according to its terms.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-5-logic-80 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-5;
+  logic: AllenInterval;
+  operator: during;
+  summary: During the term of the agreement;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) A co-authorship agreement has effect according to its terms.;
+  @action: The agreement is in force during its term.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-5-logic-81 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-5;
+  logic: Argumentation;
+  operator: implies;
+  summary: Implies the agreement's validity;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (5) A co-authorship agreement has effect according to its terms.;
+  @action: The agreement's validity implies its effectiveness.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-5-logic-82 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-5;
+  logic: Diffusion;
+  operator: diffuses;
+  summary: Diffuses the agreement's scope;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) A co-authorship agreement has effect according to its terms.;
+  @action: The agreement's scope is diffused through its application.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195an-ss-5-logic-83 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195an-ss-5;
+  logic: CogAI;
+  operator: recognizes;
+  summary: Recognizes the agreement's authority;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (5) A co-authorship agreement has effect according to its terms.;
+  @action: The agreement is recognized as authoritative.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-1-logic-84 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Right of integrity of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-2-logic-85 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of derogatory treatment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-3-logic-86 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits derogatory treatment of a work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Derogatory treatment infringes author's right of integrity;
+  @action: Infringement of right of integrity of authorship;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-3-logic-87 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits reproduction, publication, performance, transmission, and adaptation of a work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reproduction, publication, performance, transmission, and adaptation are forms of derogatory treatment;
+  @action: Infringement of author's right of integrity of authorship;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-3-logic-88 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-3;
+  logic: AllenInterval;
+  operator: Temporal overlap;
+  summary: Requires temporal overlap between derogatory treatment and work;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Derogatory treatment must occur during the same time period as the work;
+  @action: Infringement of author's right of integrity of authorship;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-3-logic-89 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-3;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits adaptation of a work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Adaptation is a form of derogatory treatment;
+  @action: Infringement of author's right of integrity of authorship;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-5-logic-90 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits actions that infringe the author's right of integrity of authorship.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) If a cinematograph film has been subjected to derogatory treatment...;
+  @action: ...a person infringes the author’s right of integrity of authorship in respect of the film if the person does any of the following...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-5-logic-91 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-5;
+  logic: AllenInterval;
+  operator: Overlap;
+  summary: Overlaps with the definition of derogatory treatment.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (5) If a cinematograph film has been subjected to derogatory treatment...;
+  @action: ...that infringes the author’s right of integrity of authorship in respect of the film, a person...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-5-logic-92 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-5;
+  logic: LTL;
+  operator: Recurring;
+  summary: Recurring trace of actions that infringe the author's right of integrity of authorship.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (5) If a cinematograph film has been subjected to derogatory treatment...;
+  @action: ...a person does any of the following in respect of the film as so derogatorily treated:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-5-logic-93 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-5;
+  logic: Diffusion;
+  operator: Influence;
+  summary: Influences the actions of others that infringe the author's right of integrity of authorship.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (5) If a cinematograph film has been subjected to derogatory treatment...;
+  @action: ...a person does any of the following in respect of the film as so derogatorily treated:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aq-ss-5-logic-94 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aq-ss-5;
+  logic: Argumentation;
+  operator: Imply;
+  summary: Implies that making, exhibiting, or transmitting a film that has been derogatorily treated is wrong.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (5) If a cinematograph film has been subjected to derogatory treatment...;
+  @action: ...a person infringes the author’s right of integrity of authorship in respect of the film if the person does any of the following...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-1-logic-95 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-1;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemption from infringement for reasonable non-attribution;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reasonable circumstances;
+  @action: No infringement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-2-logic-96 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Duty to identify authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The matters...;
+  @action: It is reasonable not to identify the author.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-3-logic-97 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-3;
+  logic: Deontic;
+  operator: shall;
+  summary: Duty to consider matters when determining whether it was reasonable not to identify the maker of a cinematograph film.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The matters to be taken into account...;
+  @action: The matters to be considered...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-3-logic-98 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-3;
+  logic: AllenInterval;
+  operator: during;
+  summary: Temporal interval during which it was reasonable not to identify the maker of a cinematograph film.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (i) whether the film was made in the course of the employment of the director, producer or screenwriter;;
+  @action: The film was made during the employment of the director, producer or screenwriter.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-3-logic-99 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-3;
+  logic: LTL;
+  operator: until;
+  summary: Temporal interval until which it was reasonable not to identify the maker of a cinematograph film.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (h) any difficulty or expense that would have been incurred as a result of identifying the maker;;
+  @action: The difficulty or expense would have occurred until...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-3-logic-100 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-3;
+  logic: Diffusion;
+  operator: through;
+  summary: Diffusion through industry practices when determining whether it was reasonable not to identify the maker of a cinematograph film.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (f) any practice, in the industry in which the film is used, that is relevant to the film or the use of the film;;
+  @action: The practice would have diffused through the industry.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ar-ss-3-logic-101 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ar-ss-3;
+  logic: CogAI;
+  operator: using;
+  summary: Use of voluntary codes of practice when determining whether it was reasonable not to identify the maker of a cinematograph film.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (g) any practice contained in a voluntary code of practice, in the industry in which the film is used, that is relevant to the film or the use of the film;;
+  @action: The practice would have been used.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-1-logic-102 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-1;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemptions from infringement of authorship rights;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reasonable treatment;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-2-logic-103 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-2;
+  logic: Deontic;
+  operator: includes;
+  summary: List of factors to consider when determining reasonableness;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) The matters to be taken into account...;
+  @action: The following factors must be considered...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-2-logic-104 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-2;
+  logic: AllenInterval;
+  operator: during;
+  summary: Treatment required by law or necessary to avoid a breach of law;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (h) whether the treatment was required by law or was otherwise necessary...;
+  @action: The treatment was required by law or necessary to avoid a breach of law during this period;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-2-logic-105 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-2;
+  logic: Deontic;
+  operator: includes;
+  summary: Views of co-authors on treatment;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (i) if the work has 2 or more authors—their views about...;
+  @action: The views of co-authors must be considered when determining reasonableness;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-2-logic-106 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-2;
+  logic: Deontic;
+  operator: includes;
+  summary: Nature and purpose of the work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (a) the nature of the work;;
+  @action: The nature and purpose of the work must be considered when determining reasonableness;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-2-logic-107 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-2;
+  logic: Deontic;
+  operator: includes;
+  summary: Manner and context of use;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (c) the manner in which the work is used;;
+  @action: The manner and context of use must be considered when determining reasonableness;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-3-logic-108 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-3;
+  logic: Deontic;
+  operator: includes;
+  summary: List of matters to be considered;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (3) The matters to be taken into account...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-3-logic-109 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-3;
+  logic: Argumentation;
+  operator: implies;
+  summary: Reasonableness of treatment implies consideration of matters;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (3) The matters to be taken into account...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195as-ss-4-logic-110 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195as-ss-4;
+  logic: Deontic;
+  operator: exemption;
+  summary: Exemption from infringement;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Reasonable circumstances;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-1-logic-111 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Author's right of integrity of authorship;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Destruction of work without notice;
+  @action: No infringement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2-logic-112 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Owner has an obligation to comply with subsection (2A);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2-logic-113 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Change in building does not infringe author's right of integrity if owner cannot discover author's identity and location.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) A change in, or the relocation, demolition or destruction of, a building is not an infringement...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2-logic-114 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2;
+  logic: LTL;
+  operator: Recurrently;
+  summary: Change in building does not infringe author's right of integrity if owner cannot discover author's identity and location.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2) A change in, or the relocation, demolition or destruction of, a building is not an infringement...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2-logic-115 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Change in building does not infringe author's right of integrity if owner cannot discover author's identity and location.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2) A change in, or the relocation, demolition or destruction of, a building is not an infringement...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2-logic-116 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Change in building does not infringe author's right of integrity if owner cannot discover author's identity and location.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2) A change in, or the relocation, demolition or destruction of, a building is not an infringement...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-2a-logic-117 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-2a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Owner has an obligation to give written notice;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-3-logic-118 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Owner has an obligation to comply with subsection (3A);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-3a-logic-119 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-3a;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Owner has an obligation to provide notice.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Change, relocation, demolition or destruction of a building is carried out without notice.;
+  @action: No infringement occurs.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-3a-logic-120 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-3a;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Notice period overlaps with change period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Notice is given within regulations before change is carried out.;
+  @action: Change and notice periods overlap.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4-logic-121 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Exclude subsections from section 195AG;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2), (2A), (3) and (3A);
+  @action: section 195AG;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4-logic-122 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4;
+  logic: AllenInterval;
+  operator: Temporal Exclusion;
+  summary: Exclude subsections from section 195AG during certain periods;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2), (2A), (3) and (3A);
+  @action: section 195AG;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4-logic-123 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4;
+  logic: LTL;
+  operator: Temporal Exclusion;
+  summary: Exclude subsections from section 195AG during certain periods;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (2), (2A), (3) and (3A);
+  @action: section 195AG;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4-logic-124 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4;
+  logic: Diffusion;
+  operator: Temporal Exclusion;
+  summary: Exclude subsections from section 195AG during certain periods;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (2), (2A), (3) and (3A);
+  @action: section 195AG;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4-logic-125 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4;
+  logic: CogAI;
+  operator: Temporal Exclusion;
+  summary: Exclude subsections from section 195AG during certain periods;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (2), (2A), (3) and (3A);
+  @action: section 195AG;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4a-logic-126 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4a;
+  logic: Deontic;
+  operator: obligation;
+  summary: Obligation to comply with subsection (4B);
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Remover must comply with subsection (4B);
+  @action: No infringement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4b-logic-127 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4b;
+  logic: Deontic;
+  operator: MUST;
+  summary: Remover must give notice to author.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: remover has, in accordance with the regulations and before the removal or relocation is carried out;
+  @action: the remover has given the person a written notice stating the remover’s intention to carry out the removal or relocation;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4b-logic-128 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4b;
+  logic: Deontic;
+  operator: MUST;
+  summary: Remover must give author access within 3 weeks.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: the notice stated that the person to whom the notice was given may, within 3 weeks from the date of the notice, seek to have access to the work for either or both of the following purposes:;
+  @action: the remover has given the person a reasonable opportunity within a further period of 3 weeks to have such access;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4b-logic-129 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4b;
+  logic: Deontic;
+  operator: MUST;
+  summary: Remover must comply with author's request for removal of identification.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: where the person to whom the notice was given notifies the remover that the person requires the removal from the work of the author’s identification as the author of the work;
+  @action: the remover has complied with the requirement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4b-logic-130 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4b;
+  logic: Epistemic;
+  operator: CAN;
+  summary: Author can request access to work within 3 weeks.;
+  executionSurface: modalities::epistemic;
+  curationStatus: Proposed;
+  @condition: where the person to whom the notice was given notifies the remover that the person wishes to have access to the work for either or both of the purposes mentioned in paragraph (b);
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-4b-logic-131 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-4b;
+  logic: LTL;
+  operator: REPEATS;
+  summary: Remover must repeat notice and offer access within 3 weeks.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the notice stated that the person to whom the notice was given may, within 3 weeks from the date of the notice, seek to have access to the work for either or both of the following purposes:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195at-ss-5-logic-132 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195at-ss-5;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to preserve or restore a work;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-1-logic-133 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-1;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition of importing an infringing article.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Importing an infringing article into Australia.;
+  @action: is prohibited.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-1-logic-134 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-1;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Temporal relation between the importation and the infringement.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1) An author’s moral right...;
+  @action: if the article had been made in Australia, it would have been an infringing article.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-1-logic-135 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-1;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Recurring trace of the importer's knowledge about the infringement.;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: the importer knew, or ought reasonably to have known...;
+  @action: that if the article had been made in Australia, it would have been an infringing article.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-1-logic-136 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-1;
+  logic: CogAI;
+  operator: Knowledge inference;
+  summary: Inference of knowledge about the infringement from the importer's actions.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (1) An author’s moral right...;
+  @action: is infringed by a person who imports an article into Australia for the purpose of dealing with the article if...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-1-logic-137 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-1;
+  logic: SHACL;
+  operator: Validation;
+  summary: Validation of the importer's actions against the prohibition.;
+  executionSurface: modalities::logic::shacl;
+  curationStatus: Proposed;
+  @condition: (1) An author’s moral right...;
+  @action: is infringed by a person who imports an article into Australia for the purpose of dealing with the article if...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-2-logic-138 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-2;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195au-ss-2-logic-139 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195au-ss-2;
+  logic: AllenInterval;
+  operator: Temporal Interval;
+  summary: Temporal interval of prohibition;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (2) In subsection (1):;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195av-ss-1-logic-140 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195av-ss-1;
+  logic: Deontic;
+  operator: >;
+  summary: Expresses the scope of the obligation.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Dealing with an article;
+  @action: Infringement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195av-ss-2-logic-141 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195av-ss-2;
+  logic: DescriptionLogic;
+  operator: =;
+  summary: Class hierarchy;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195av-ss-2-logic-142 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195av-ss-2;
+  logic: Deontic;
+  operator: !;
+  summary: Prohibition of certain dealings and exhibitions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: None;
+  @action: None;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1a-logic-143 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1a;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires author's consent.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1a-logic-144 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1a;
+  logic: AllenInterval;
+  operator: during;
+  summary: Applicable during the creation of films or works.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (1A) This section applies to a work that is:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-145 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires author's consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Act or omission without consent;
+  @action: Obligation to obtain consent;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-146 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-147 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: !=;
+  summary: Invalid consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Consent under duress is invalid.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-148 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-149 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-3-logic-150 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-3;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires consent for specified acts/omissions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-3-logic-151 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to act or omit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-152 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Employee's consent is an obligation for the employer's benefit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer has an obligation to respect the employee's consent.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-153 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Employee's consent overlaps with works made during employment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer must respect all works made by the employee during their employment.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-154 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Employer's benefit implies obligation to respect employee's consent;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent for the employer's benefit.;
+  @action: The employer has an obligation to respect the employee's consent.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-155 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Employee's consent diffuses to all acts or omissions related to works made during employment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: All acts or omissions related to the employee's consent are subject to the employer's obligation.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-156 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: CogAI recognizes the employee's consent as a relevant factor in determining the employer's obligations;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer must consider the employee's consent when making decisions about acts or omissions related to works made during employment.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-157 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Employee's consent is an obligation for the employer.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-158 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Employee's consent overlaps with works made or to be made by the employee.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-159 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Employee's consent implies that the employer must provide a benefit.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-160 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Employee's consent diffuses to all works made or to be made by the employee.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-161 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: CogAI recognizes that employee's consent is an obligation for the employer.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-162 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: Deontic;
+  operator: presumes;
+  summary: Presumption of consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A consent given for the benefit of the owner or prospective owner;
+  @action: extends to his or her licensees and successors in title;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-163 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: Deontic;
+  operator: presumes;
+  summary: Presumption of consent extension;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Consent given for the benefit of the owner or prospective owner;
+  @action: Extends to licensees and successors;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-164 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal interval includes consent extension;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Consent given for the benefit of the owner or prospective owner;
+  @action: Temporal interval includes consent extension;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-6-logic-165 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-6;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Consent required;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (6) Subsections (2) to (5), inclusive, do not limit the operation of subsection (1).;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-6-logic-166 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-6;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Temporal overlap with subsections (2) to (5);
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (6) Subsections (2) to (5), inclusive, do not limit the operation of subsection (1).;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-6-logic-167 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-6;
+  logic: LTL;
+  operator: Until;
+  summary: Temporal relation with subsections (2) to (5);
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: (6) Subsections (2) to (5), inclusive, do not limit the operation of subsection (1).;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-6-logic-168 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-6;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Diffuse to subsections (2) to (5);
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (6) Subsections (2) to (5), inclusive, do not limit the operation of subsection (1).;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-6-logic-169 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-6;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: Recognize consent requirement;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (6) Subsections (2) to (5), inclusive, do not limit the operation of subsection (1).;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-170 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires author's consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Act or omission without consent;
+  @action: Obligation to obtain consent;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-171 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-172 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: !=;
+  summary: Invalid consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Consent under duress is invalid.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-173 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-174 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-3-logic-175 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-3;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires consent for specified acts/omissions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-3-logic-176 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-3;
+  logic: Deontic;
+  operator: may;
+  summary: Permission to act or omit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-177 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Employee's consent is an obligation for the employer's benefit;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer has an obligation to respect the employee's consent.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-178 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Employee's consent overlaps with works made during employment;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer must respect all works made by the employee during their employment.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-179 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Employer's benefit implies obligation to respect employee's consent;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent for the employer's benefit.;
+  @action: The employer has an obligation to respect the employee's consent.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-180 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Employee's consent diffuses to all acts or omissions related to works made during employment;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: All acts or omissions related to the employee's consent are subject to the employer's obligation.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-181 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: CogAI recognizes the employee's consent as a relevant factor in determining the employer's obligations;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The employee gives their consent.;
+  @action: The employer must consider the employee's consent when making decisions about acts or omissions related to works made during employment.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-182 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Employee's consent is an obligation for the employer.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-183 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: AllenInterval;
+  operator: Overlaps;
+  summary: Employee's consent overlaps with works made or to be made by the employee.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-184 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Employee's consent implies that the employer must provide a benefit.;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-185 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: Diffusion;
+  operator: Diffuses;
+  summary: Employee's consent diffuses to all works made or to be made by the employee.;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-4-logic-186 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-4;
+  logic: CogAI;
+  operator: Recognizes;
+  summary: CogAI recognizes that employee's consent is an obligation for the employer.;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: The employee has given their consent.;
+  @action: The employer must provide a benefit to the employee.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-187 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: Deontic;
+  operator: presumes;
+  summary: Presumption of consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: A consent given for the benefit of the owner or prospective owner;
+  @action: extends to his or her licensees and successors in title;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-188 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: Deontic;
+  operator: presumes;
+  summary: Presumption of consent extension;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Consent given for the benefit of the owner or prospective owner;
+  @action: Extends to licensees and successors;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-5-logic-189 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-5;
+  logic: AllenInterval;
+  operator: includes;
+  summary: Temporal interval includes consent extension;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Consent given for the benefit of the owner or prospective owner;
+  @action: Temporal interval includes consent extension;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-190 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: requires;
+  summary: Requires author's consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Act or omission without consent;
+  @action: Obligation to obtain consent;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-191 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-1-logic-192 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-1;
+  logic: Deontic;
+  operator: !=;
+  summary: Invalid consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Consent under duress is invalid.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-193 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to provide consent;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) If...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195aw-ss-2-logic-194 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195aw-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Written consent is required.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ax-logic-195 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ax;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibits infringement of moral right outside Australia;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Outside Australia;
+  @action: No infringement;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ay-ss-1-logic-196 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ay-ss-1;
+  logic: Deontic;
+  operator: defines;
+  summary: Defines key term;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (1) In this Division:;
+  @action: action means a proceeding of a civil nature between parties, and includes a counterclaim.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ay-ss-1-logic-197 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ay-ss-1;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Includes counterclaims in definition;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (1) In this Division:;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195ay-ss-2-logic-198 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195ay-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (2) In the application of this Division in relation to a counterclaim,;
+  @action: references to the defendant are taken to be references to the plaintiff.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-199 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: exercised;
+  summary: Exercise of jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Jurisdiction is to be exercised by a single Judge.;
+  @action: Obligation to exercise jurisdiction;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-200 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes effect on other remedies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-201 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 127;
+  @action: Action brought under this Part;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-202 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Court may grant certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-203 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Injunctions, damages, declaration, apology, or removal of false attribution are included in the relief.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-204 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Granting of relief is discretionary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-205 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take into account damages in another proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-206 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: presumption;
+  summary: Presumes authorship if name appears on film copies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-207 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: Damages recovered in other proceedings are to be taken into account.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-208 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider negotiating a settlement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court must decide whether to grant an injunction.;
+  @action: Negotiating a settlement is required before granting an injunction.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-209 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Court must adjourn hearing for negotiation period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Court has the power to adjourn hearings.;
+  @action: Adjournment is required for negotiation period.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-210 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: Deontic;
+  operator: hasJurisdiction;
+  summary: Federal Court has jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-211 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Screenwriter's obligation to reduce damages;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-212 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Classification of screenwriters as moral rights holders;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-213 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: Deontic;
+  operator: Restriction;
+  summary: Limits damages for prior moral rights claim;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: (5) If...;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-214 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Describes a condition for reduction of damages;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+  @condition: (a) the work is a dramatic work constituted by the screenplay or script;;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-215 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: AllenInterval;
+  operator: TemporalOverlap;
+  summary: Describes temporal overlap between actions;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (d) the person has already been granted relief by way of damages in an action for an infringement of his or her moral rights as a screenwriter of the film;;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-216 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: Argumentation;
+  operator: Implication;
+  summary: Describes implication between prior claim and current claim;
+  executionSurface: modalities::argumentation;
+  curationStatus: Proposed;
+  @condition: (b) the action is brought by a person who is an author of the screenplay or script;;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-217 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: Diffusion;
+  operator: Reduction;
+  summary: Describes reduction of damages due to prior claim;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: (c) the relief granted in the action consists of or includes damages;;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-5-logic-218 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-5;
+  logic: CogAI;
+  operator: EntityAlignment;
+  summary: Describes alignment between entities (person, work);
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: (a) the work is a dramatic work constituted by the screenplay or script;;
+  @action: ...the amount of any damages...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-6-logic-219 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-6;
+  logic: Deontic;
+  operator: devolves;
+  summary: Obligation devolves to a new party.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-220 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: exercised;
+  summary: Exercise of jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Jurisdiction is to be exercised by a single Judge.;
+  @action: Obligation to exercise jurisdiction;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-221 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes effect on other remedies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-222 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 127;
+  @action: Action brought under this Part;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-223 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Court may grant certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-224 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Injunctions, damages, declaration, apology, or removal of false attribution are included in the relief.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-225 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Granting of relief is discretionary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-226 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take into account damages in another proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-227 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: presumption;
+  summary: Presumes authorship if name appears on film copies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-228 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: Damages recovered in other proceedings are to be taken into account.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-229 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider negotiating a settlement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court must decide whether to grant an injunction.;
+  @action: Negotiating a settlement is required before granting an injunction.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-230 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Court must adjourn hearing for negotiation period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Court has the power to adjourn hearings.;
+  @action: Adjournment is required for negotiation period.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-231 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: exercised;
+  summary: Exercise of jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Jurisdiction is to be exercised by a single Judge.;
+  @action: Obligation to exercise jurisdiction;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-232 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes effect on other remedies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-233 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 127;
+  @action: Action brought under this Part;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-234 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Court may grant certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-235 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Injunctions, damages, declaration, apology, or removal of false attribution are included in the relief.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-236 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Granting of relief is discretionary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-237 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take into account damages in another proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-238 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: presumption;
+  summary: Presumes authorship if name appears on film copies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-239 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: Implies;
+  summary: Damages recovered in other proceedings are to be taken into account.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-240 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: Deontic;
+  operator: MUST;
+  summary: Obligation to consider negotiating a settlement.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Court must decide whether to grant an injunction.;
+  @action: Negotiating a settlement is required before granting an injunction.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-3-logic-241 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-3;
+  logic: AllenInterval;
+  operator: >=;
+  summary: Court must adjourn hearing for negotiation period.;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Court has the power to adjourn hearings.;
+  @action: Adjournment is required for negotiation period.;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-242 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: Deontic;
+  operator: hasJurisdiction;
+  summary: Federal Court has jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-243 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Screenwriter's obligation to reduce damages;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-4-logic-244 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-4;
+  logic: DescriptionLogic;
+  operator: ClassInclusion;
+  summary: Classification of screenwriters as moral rights holders;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-245 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: exercised;
+  summary: Exercise of jurisdiction;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Jurisdiction is to be exercised by a single Judge.;
+  @action: Obligation to exercise jurisdiction;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-246 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: Exclusion;
+  summary: Excludes effect on other remedies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-247 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: applies;
+  summary: Section applies to actions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: Section 127;
+  @action: Action brought under this Part;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-248 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: Deontic;
+  operator: may;
+  summary: Court may grant certain actions.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-1-logic-249 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-1;
+  logic: DescriptionLogic;
+  operator: includes;
+  summary: Injunctions, damages, declaration, apology, or removal of false attribution are included in the relief.;
+  executionSurface: modalities::dl;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-250 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: may;
+  summary: Granting of relief is discretionary.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-251 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Obligation to take into account damages in another proceeding;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-195az-ss-2-logic-252 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-195az-ss-2;
+  logic: Deontic;
+  operator: presumption;
+  summary: Presumes authorship if name appears on film copies;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-1-sec-3-logic-253 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-3;
+  logic: Deontic;
+  operator: CONTINUES_TO_APPLY;
+  summary: Continues to apply part of Copyright Act 1968;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-2-logic-254 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-2;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-3-logic-255 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-3;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes an obligation on the state.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-5-logic-256 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits the specified action.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-7-logic-257 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-7;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibition;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-8-logic-258 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-2-sec-8;
+  logic: Deontic;
+  operator: forbid;
+  summary: Prohibition of communication;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-10-logic-259 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: includes;
+  summary: List of matters to be considered when determining moral rights infringement authorization;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: The following matters must be taken into account...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-10-logic-260 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: AllenInterval;
+  operator: overlaps;
+  summary: Temporal relationship between steps to prevent or avoid doing the act;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: (c) Whether the person took any reasonable steps to prevent or avoid the doing of the act...;
+}
+
+copyright-amendment-moral-rights-act-2000-sch-2-sec-10-logic-261 {
+  activation: 0.5000;
+  type: LogicApplication;
+  provision: sch-2-sec-10;
+  logic: Deontic;
+  operator: includes;
+  summary: Industry codes of practice and their relevance;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: ...including whether the person complied with any relevant industry codes of practice.;
+}

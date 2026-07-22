@@ -1,0 +1,100 @@
+# CogAI proposed logic-routing chunks — Competition and Consumer Amendment (Industry Code Penalties) Act 2014
+# Machine-derived; every chunk remains cml:Proposed.
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sec-1-logic-1 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sec-1;
+  logic: Deontic;
+  operator: Applicable;
+  summary: Establishes the citation of this Act.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-5-logic-2 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-5;
+  logic: Deontic;
+  operator: Prohibit;
+  summary: Prohibits pecuniary penalties exceeding 300 penalty units.;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-7-logic-3 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-7;
+  logic: Deontic;
+  operator: =;
+  summary: Sets obligation;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-8-logic-4 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Deontic;
+  operator: Obligation;
+  summary: Imposes a duty on the state to amend civil penalty provisions;
+  executionSurface: modalities::logic::deontic;
+  curationStatus: Proposed;
+  @condition: This section applies to industry codes;
+  @action: The state must amend civil penalty provisions;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-8-logic-5 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: AllenInterval;
+  operator: Temporal relation;
+  summary: Establishes temporal relation between amendments and industry codes;
+  executionSurface: modalities::interval_reasoning;
+  curationStatus: Proposed;
+  @condition: Amendments are made in Schedule 1;
+  @action: Amendments were made in Schedule 1;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-8-logic-6 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: LTL;
+  operator: Recurring trace;
+  summary: Establishes recurring trace of amendments to industry codes;
+  executionSurface: modalities::temporal_ltl;
+  curationStatus: Proposed;
+  @condition: Amendments are made in Schedule 1;
+  @action: There is a recurring trace of amendments to industry codes;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-8-logic-7 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: Diffusion;
+  operator: Diffuse;
+  summary: Diffuses amendment provisions to industry codes;
+  executionSurface: modalities::diffusion;
+  curationStatus: Proposed;
+  @condition: Amendments are made in Schedule 1;
+  @action: Amendment provisions are diffused to industry codes;
+}
+
+competition-and-consumer-amendment-industry-code-penalties-act-2014-sch-1-sec-8-logic-8 {
+  activation: 1.0000;
+  type: LogicApplication;
+  provision: sch-1-sec-8;
+  logic: CogAI;
+  operator: Classify;
+  summary: Classifies industry codes as subject to amendment using AI;
+  executionSurface: sparql_library::parsers::chk_parser;
+  curationStatus: Proposed;
+  @condition: Industry code is a type of act or omission;
+  @action: Industry code is classified as subject to amendment using AI;
+}
