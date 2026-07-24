@@ -20,8 +20,12 @@ and **site discovery tools** that never open the network themselves.
 | Resource | URL |
 |----------|-----|
 | Agent navigation | https://ns.webcivics.net/llms.txt |
+| Conformance (must/should/must-not) | https://ns.webcivics.net/agent-conformance.md |
 | DCAT catalog (JSON) | https://ns.webcivics.net/catalog.json |
 | Catalog Turtle | https://ns.webcivics.net/catalog.ttl |
+| Title index (all) | https://ns.webcivics.net/search/title-index.json |
+| AU title index | https://ns.webcivics.net/search/au-title-index.json |
+| AU legislation corpus | https://ns.webcivics.net/au-legislation-corpus.json |
 | JSON-LD context | https://ns.webcivics.net/context.jsonld |
 | Institutions index | https://ns.webcivics.net/institutions/ |
 | UN instruments index | https://ns.webcivics.net/institutions/un/ |
@@ -68,21 +72,56 @@ and **site discovery tools** that never open the network themselves.
 
 Notifications without `id` return an empty string (JSON-RPC).
 
-### Discovery tools (new)
+### Discovery tools
 
 | Tool | Purpose |
 |------|---------|
 | `namespace_discovery_help` | Offline URL contract + recommended agent flow for this namespace |
-| `catalog_summarize` | Parse a **fetched** `catalog.json` body; filter by `categoryPrefix` |
+| `catalog_summarize` | Parse a **fetched** `catalog.json`; filter by `categoryPrefix`, `titleContains`, `idPrefix` |
+| `corpus_summarize` | Parse a **fetched** legislation corpus JSON (e.g. AU); `titleContains` / `idPrefix` |
 | `resolve_dataset_urls` | Expand `/institutions/un/api-1977` → html/n3/ttl/jsonld URLs |
+| `export_graph` | Serialise ground triples: `jsonld` (default), `rdfjson`, `turtle`, `n3`, `yamlld` |
 
-### Reasoning tools (existing)
+### Session graph + query (compile-to-runtime path)
+
+| Tool | Purpose |
+|------|---------|
+| `load_graph` | Load `n3` / `quins` / `q42lite` into a **session** graph (max 8 graphs, bounded Quins) |
+| `load_q42` | Load **Q42L** (wasm-safe) base64; native Q42 v3 memmap volumes are **rejected** with guidance |
+| `list_graphs` / `unload_graph` | Session management |
+| `query_graph` | Filter by S/P/O/C hashes and `labelContains` / `objectContains` (lexicon) |
+| `query_sparql` | **SELECT-only subset**: `SELECT * WHERE { ?s ?p ?o }` + optional `FILTER(CONTAINS(…?o…))` |
+| `export_q42lite` | Serialise a session graph to Q42L base64 for transfer |
+
+**Q42L** magic `Q42L` (version 1): header + optional JSON lexicon + packed 48-byte Quins.  
+Full native **Q42 v3** (LZ4 SuperBlocks + mmap) remains a **desktop/`qualia-cli`** path until a wasm-safe reader ships.
+
+### Deontic bridge
+
+| Tool | Purpose |
+|------|---------|
+| `compile_deontic_norms` | Build norm Quins from `{partyIri, propertyIri, actionIri, opcode, expiryUnix, isDefeater}` |
+| `evaluate_deontic_session` | Run `evaluate_deontic` on `graphId` or `quins` + `nowUnix` |
+| `evaluate_deontic` / `deontic_govern` | Direct Quin / policy-mode tools (unchanged) |
+
+### Other reasoning tools
 
 `ontology_capabilities`, `hash_iri`, `parse_n3`, `query_quins`, `validate_shacl`,
-`evaluate_deontic`, `evaluate_epistemic`, `route_paraconsistent`, `evaluate_ltl`,
-`check_subsumption`, `deontic_govern`.
+`evaluate_epistemic`, `route_paraconsistent`, `evaluate_ltl`, `check_subsumption`.
 
 **No network, no filesystem, no LLM weights** inside the WASM. Hosts must `fetch` then call tools.
+
+### Export formats (bot-readable RDF)
+
+| `format` | Media type | Notes |
+|----------|------------|--------|
+| `jsonld` | `application/ld+json` | **Default** for agents |
+| `rdfjson` | `application/rdf+json` | [RDF/JSON WG Note](https://www.w3.org/TR/rdf-json/) — no JSON-LD context required |
+| `turtle` | `text/turtle` | Conventional RDF |
+| `n3` | `text/n3` | Ground projection unless you attach native rules separately |
+| `yamlld` | `application/ld+yaml` | Same model as JSON-LD, YAML text |
+
+`logicMode` on `export_graph`: `none` | `as-data` | `evaluate` | `native-n3` — sets honesty flags in `queryMeta.dropped`. Executable N3 rules are **not** fully represented in pure RDF/JSON; use N3 or Qualia `evaluate_*` / future `.q42` load.
 
 ### Example: list UN instruments via catalog
 
@@ -102,6 +141,41 @@ const reply = JSON.parse(mcp_jsonrpc(JSON.stringify({
   }
 })));
 // reply.result.structuredContent.datasets → titles + n3Url / canonicalUrl
+```
+
+### Example: find AU Privacy / CDR by title
+
+```js
+const corpusText = await (await fetch("https://ns.webcivics.net/au-legislation-corpus.json")).text();
+const hits = JSON.parse(mcp_jsonrpc(JSON.stringify({
+  jsonrpc: "2.0", id: 21, method: "tools/call",
+  params: {
+    name: "corpus_summarize",
+    arguments: { corpusJson: corpusText, titleContains: "Consumer Data Right", limit: 10 }
+  }
+})));
+// hits.result.structuredContent.datasets → C2019A00063, F2025C00572, …
+```
+
+### Example: export a section as JSON-LD or RDF/JSON
+
+```js
+const exported = JSON.parse(mcp_jsonrpc(JSON.stringify({
+  jsonrpc: "2.0", id: 22, method: "tools/call",
+  params: {
+    name: "export_graph",
+    arguments: {
+      format: "rdfjson", // or "jsonld"
+      logicMode: "as-data",
+      triples: [{
+        s: "https://example.org/about",
+        p: "http://purl.org/dc/terms/title",
+        o: { type: "literal", value: "Anna's Homepage", lang: "en" }
+      }]
+    }
+  }
+})));
+// exported.result.structuredContent.body → graph; mediaType → application/rdf+json
 ```
 
 ### Example: parse a rights instrument

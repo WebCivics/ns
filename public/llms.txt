@@ -8,17 +8,34 @@ N3 source graphs, and derived RDF projections of human-rights instruments.
 - Catalog JSON: https://ns.webcivics.net/catalog.json
 - Catalog Turtle: https://ns.webcivics.net/catalog.ttl
 - JSON-LD context: https://ns.webcivics.net/context.jsonld
+- Title index (all datasets): https://ns.webcivics.net/search/title-index.json
+- AU title index: https://ns.webcivics.net/search/au-title-index.json
 - Sitemap: https://ns.webcivics.net/sitemap.xml
 - Source repository: https://github.com/webcivics/ns
 - Rights and AI-use policy: https://ns.webcivics.net/ai-use-policy.json
 - Legal information and rights scopes: https://ns.webcivics.net/legal-information
 - Legislation agent guide: https://ns.webcivics.net/agent-legislation-guide.md
 - MCP / Qualia WASM Lite guide: https://ns.webcivics.net/agent-mcp-guide.md
+- Agent conformance (must/should/must-not): https://ns.webcivics.net/agent-conformance.md
 - Qualia WASM Lite package: https://ns.webcivics.net/wasm/webizen-lite/
 - Australian legislation corpus manifest: https://ns.webcivics.net/au-legislation-corpus.json
 - Institutions directory: https://ns.webcivics.net/institutions/
 - UN instruments directory: https://ns.webcivics.net/institutions/un/
 - AU federal legislation directory: https://ns.webcivics.net/institutions/au-fed-legislation/
+
+## Query this namespace (no inventing URLs)
+
+1. Policy: GET /ai-use-policy.json then this file.
+2. Bootstrap: load /wasm/webizen-lite/ and call MCP tool `namespace_discovery_help`.
+3. Discover: GET /catalog.json and/or /au-legislation-corpus.json and/or /search/*-index.json.
+4. Offline filter: MCP `catalog_summarize` or `corpus_summarize` with `titleContains` / `idPrefix`.
+5. Prefer machine RDF: GET …/id.n3 (or .ttl / .jsonld), not multi-MB HTML triple viewers.
+6. load_graph (n3 or q42lite) → query_graph / query_sparql (SELECT subset) → optional deontic tools.
+7. Native Q42 v3 packages: use desktop qualia-cli, or convert to Q42L for WASM load_q42.
+8. Export results: export_graph (jsonld default | rdfjson | turtle | n3 | yamlld) or export_q42lite.
+9. Cite catalog `canonicalUrl` + official Register/ELI; treat `cml:Proposed` as hypothesis, not attested law.
+
+Do not use /catalog.rest (does not exist). Do not invent Register IDs.
 
 ## URL Contract
 
@@ -42,10 +59,17 @@ non-canonical. Prefer the short `/core/...` and `/institutions/...` paths.
 
 ## Qualia WASM Lite (browser MCP)
 
-Offline-in-process MCP (`mcp_jsonrpc`) for parse_n3, catalog_summarize,
-namespace_discovery_help, resolve_dataset_urls, deontic/SHACL helpers.
+Offline-in-process MCP (`mcp_jsonrpc`):
+
+- Discovery: namespace_discovery_help, catalog_summarize, corpus_summarize, resolve_dataset_urls
+- Session: load_graph, load_q42 (Q42L), list_graphs, unload_graph, export_q42lite
+- Query: query_graph, query_sparql (SELECT subset), parse_n3, query_quins, hash_iri
+- Deontic: compile_deontic_norms, evaluate_deontic_session, evaluate_deontic, deontic_govern
+- Modal: evaluate_epistemic, route_paraconsistent, evaluate_ltl, check_subsumption, validate_shacl
+- Export: export_graph (jsonld | rdfjson | turtle | n3 | yamlld)
+
 Host performs HTTP GET; WASM never opens the network.
-See agent-mcp-guide.md.
+See agent-mcp-guide.md and agent-conformance.md.
 
 ## Format Guidance
 
@@ -53,10 +77,13 @@ See agent-mcp-guide.md.
   matter.
 - Treat Turtle (`.ttl`) and JSON-LD (`.jsonld`) as RDF projections for agents
   that need standard RDF datasets.
+- RDF/JSON (`export_graph` format=rdfjson; W3C WG Note) for bots that cannot
+  process JSON-LD contexts. JSON-LD remains the preferred web default.
+- YAML-LD is the same JSON-LD model as YAML text.
 - If a catalog entry reports `projectedQuadCount > 0`, some N3-only terms were
   excluded from the Turtle/JSON-LD projection.
-- HTML pages advertise alternate RDF formats with canonical and alternate link
-  metadata.
+- Logic layers: (A) ground RDF; (B) logic-as-data (CML norms); (C) executable
+  N3 rules or Qualia `.q42` + evaluate_* — do not claim full N3 logic in pure RDF/JSON.
 
 ## Access Policy
 
@@ -74,3 +101,4 @@ copyright Timothy Charles Holborn and licensed CC BY-NC-ND 4.0. Consult
 
 Raw source N3 files live in `public/raw/ontologies/`. Generated public machine
 assets are produced at build time from those source files.
+Title indexes: `node scripts/generate-search-indexes.js`.
