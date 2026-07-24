@@ -42,6 +42,25 @@ export default function HomePage() {
         </ul>
       </section>
 
+      <section className="structural-panel" style={{ marginBottom: '2.5rem' }}>
+        <h2>Browse by institution</h2>
+        <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
+          Directory indexes are first-class URLs (not 404s). Start here, then open an instrument HTML page or its RDF projections.
+        </p>
+        <ul style={{ marginLeft: '1.25rem', lineHeight: 1.7 }}>
+          <li><Link href="/institutions/">/institutions/</Link> — all institutional collections</li>
+          <li><Link href="/institutions/un/">/institutions/un/</Link> — United Nations instruments</li>
+          <li><Link href="/institutions/unesco/">/institutions/unesco/</Link></li>
+          <li><Link href="/institutions/ilo/">/institutions/ilo/</Link></li>
+          <li><Link href="/institutions/eu/">/institutions/eu/</Link></li>
+          <li><Link href="/institutions/au-fed-legislation/">/institutions/au-fed-legislation/</Link></li>
+        </ul>
+        <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+          Agents: <a href="/llms.txt">llms.txt</a> · <a href="/catalog.json">catalog.json</a> ·{' '}
+          <a href="/agent-mcp-guide.md">Qualia WASM Lite MCP guide</a>
+        </p>
+      </section>
+
       <section style={{ marginBottom: '4rem' }}>
         <h2>Directory Index</h2>
         <p style={{ marginBottom: '1.5rem', color: 'var(--text-secondary)' }}>

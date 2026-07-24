@@ -13,7 +13,12 @@ N3 source graphs, and derived RDF projections of human-rights instruments.
 - Rights and AI-use policy: https://ns.webcivics.net/ai-use-policy.json
 - Legal information and rights scopes: https://ns.webcivics.net/legal-information
 - Legislation agent guide: https://ns.webcivics.net/agent-legislation-guide.md
+- MCP / Qualia WASM Lite guide: https://ns.webcivics.net/agent-mcp-guide.md
+- Qualia WASM Lite package: https://ns.webcivics.net/wasm/webizen-lite/
 - Australian legislation corpus manifest: https://ns.webcivics.net/au-legislation-corpus.json
+- Institutions directory: https://ns.webcivics.net/institutions/
+- UN instruments directory: https://ns.webcivics.net/institutions/un/
+- AU federal legislation directory: https://ns.webcivics.net/institutions/au-fed-legislation/
 
 ## URL Contract
 
@@ -26,8 +31,21 @@ The public canonical documentation path is the short namespace path:
 
 The same pattern applies under `/institutions/...`.
 
+**Directory indexes** (no trailing document id) list children and are valid HTML:
+
+- `https://ns.webcivics.net/institutions/`
+- `https://ns.webcivics.net/institutions/un/`
+- `https://ns.webcivics.net/institutions/au-fed-legislation/`
+
 Older `/ontologies/...` URLs are compatibility routes and should be treated as
 non-canonical. Prefer the short `/core/...` and `/institutions/...` paths.
+
+## Qualia WASM Lite (browser MCP)
+
+Offline-in-process MCP (`mcp_jsonrpc`) for parse_n3, catalog_summarize,
+namespace_discovery_help, resolve_dataset_urls, deontic/SHACL helpers.
+Host performs HTTP GET; WASM never opens the network.
+See agent-mcp-guide.md.
 
 ## Format Guidance
 

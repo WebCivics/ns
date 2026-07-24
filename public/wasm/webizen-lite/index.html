@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qualia WASM Lite · webizen-lite-wasm</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #0f172a; }
+    code, pre { background: #f1f5f9; border-radius: 6px; }
+    pre { padding: 0.85rem 1rem; overflow: auto; font-size: 0.82rem; }
+    .ok { color: #047857; font-weight: 600; }
+    .err { color: #b91c1c; font-weight: 600; }
+    a { color: #5b21b6; }
+  </style>
+</head>
+<body>
+  <h1>Qualia WASM Lite</h1>
+  <p>
+    Browser-local <strong>MCP</strong> endpoint for ontology sites
+    (<code>webizen-lite-wasm</code> · Qualia <code>wasm-ontology</code> profile).
+    No network inside the WASM — hosts fetch, then call tools.
+  </p>
+  <p>
+    Agent guide: <a href="/agent-mcp-guide.md">/agent-mcp-guide.md</a> ·
+    Navigation: <a href="/llms.txt">/llms.txt</a> ·
+    Catalog: <a href="/catalog.json">/catalog.json</a>
+  </p>
+  <p id="status">Loading WASM…</p>
+  <h2>tools/list</h2>
+  <pre id="tools">…</pre>
+  <h2>namespace_discovery_help</h2>
+  <pre id="help">…</pre>
+  <script type="module">
+    import init, { mcp_jsonrpc, version } from "./webizen_lite_wasm.js";
+    const status = document.getElementById("status");
+    try {
+      await init();
+      status.innerHTML = `<span class="ok">Loaded webizen-lite-wasm ${version()}</span>`;
+      const list = JSON.parse(mcp_jsonrpc(JSON.stringify({
+        jsonrpc: "2.0", id: 1, method: "tools/list"
+      })));
+      document.getElementById("tools").textContent = JSON.stringify(
+        (list.result && list.result.tools || []).map(t => t.name), null, 2
+      );
+      const help = JSON.parse(mcp_jsonrpc(JSON.stringify({
+        jsonrpc: "2.0", id: 2, method: "tools/call",
+        params: { name: "namespace_discovery_help", arguments: {} }
+      })));
+      document.getElementById("help").textContent = JSON.stringify(
+        help.result && help.result.structuredContent || help, null, 2
+      );
+    } catch (e) {
+      status.innerHTML = `<span class="err">${e}</span>`;
+    }
+  </script>
+</body>
+</html>

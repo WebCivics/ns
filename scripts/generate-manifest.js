@@ -70,9 +70,36 @@ const ensureDir = filePath => {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
 };
 
+/**
+ * Remove only generated RDF leaf projections (*.n3 / *.ttl / *.jsonld) under
+ * public/core and public/institutions. Do NOT delete directories that contain a
+ * legislation package `manifest.json` (CML/PDF bundles) — those are separate
+ * artifacts and must survive catalog regeneration.
+ */
+const cleanGeneratedLeafAssets = dir => {
+  if (!fs.existsSync(dir)) return;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (fs.existsSync(path.join(full, 'manifest.json'))) {
+        continue;
+      }
+      cleanGeneratedLeafAssets(full);
+      // Drop empty directories left after leaf cleanup (ignore errors).
+      try {
+        if (fs.readdirSync(full).length === 0) fs.rmdirSync(full);
+      } catch {
+        /* keep */
+      }
+    } else if (/\.(n3|ttl|jsonld)$/i.test(entry.name)) {
+      fs.rmSync(full, { force: true });
+    }
+  }
+};
+
 const cleanGeneratedAssets = () => {
   for (const dir of ['core', 'institutions']) {
-    fs.rmSync(path.resolve(PUBLIC_ROOT, dir), { recursive: true, force: true });
+    cleanGeneratedLeafAssets(path.resolve(PUBLIC_ROOT, dir));
   }
   for (const file of [CATALOG_JSON_FILE, CATALOG_TTL_FILE, CONTEXT_FILE]) {
     fs.rmSync(file, { force: true });
